@@ -1,0 +1,54 @@
+# ============================================================
+#  CONFIGURAÇÃO DO AGREGADOR DE NOTÍCIAS
+#  Edita este ficheiro no GitHub (ícone do lápis) e guarda.
+#  As mudanças aplicam-se na verificação seguinte.
+# ============================================================
+
+geral:
+  fuso: "Europe/Lisbon"
+  idade_max_horas: 48          # ignora notícias mais antigas
+  max_alertas_por_execucao: 5  # o excesso vai para o resumo diário
+  silencio: {inicio: 23, fim: 7}   # não envia alertas nestas horas (ficam guardados)
+  hora_resumo: 8               # hora a partir da qual sai o resumo diário
+  google_news: {hl: "pt-PT", gl: "PT", ceid: "PT:pt-150"}
+
+pesos:
+  pontos: {alta: 10, media: 4, baixa: 1}
+  fonte_confiavel: 1.5
+  fonte_desconhecida: 1.0
+  bonus_fonte_extra: 5         # por cada fonte adicional a publicar o mesmo
+  bonus_fonte_extra_max: 15
+  bonus_ultima_hora: 3         # notícia com menos de 1 hora
+
+# Fontes: usa o domínio, sem "www" nem "https://".
+fontes:
+  confiaveis: []               # ex: ["publico.pt", "rtp.pt"]
+  bloqueadas: []               # ex: ["site-de-spam.com"]
+  feeds: []                    # feeds RSS gerais. Formato:
+                               #   - {nome: "Nome do site", url: "https://exemplo.pt/rss"}
+
+# Descoberta automática de fontes: 1 vez por dia procura sites novos que
+# publicam sobre as tuas pesquisas e envia-te uma sugestão no Telegram, com
+# botões Confiável / Neutra / Bloquear. A tua escolha aplica-se sozinha.
+descoberta:
+  ativa: true
+  hora: 9                      # a partir desta hora, 1 vez por dia
+  max_sugestoes_por_dia: 5
+  max_pendentes: 10            # não sugere mais se tiveres 10 por decidir
+  min_noticias: 2              # o site tem de ter pelo menos 2 notícias relevantes
+  procurar_feeds: true         # tenta encontrar o RSS do site para o ler diretamente
+
+# Cada pesquisa procura no Google Notícias pela "consulta" e filtra
+# com as palavras-chave. Podes ter várias pesquisas.
+pesquisas:
+  - nome: "IA na saúde"
+    ativa: true
+    consulta: "inteligência artificial saúde"
+    palavras:
+      alta: ["inteligência artificial", "regulação", "aprovação clínica"]
+      media: ["triagem", "diagnóstico", "dispositivos médicos"]
+      baixa: ["startup", "investimento"]
+    excluir: ["horóscopo", "publicidade"]
+    limite_alerta: 25          # nota mínima para alerta imediato
+    limite_resumo: 10          # nota mínima para o resumo diário
+    feeds_extra: []            # feeds RSS só desta pesquisa

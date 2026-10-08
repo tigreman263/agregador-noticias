@@ -1,0 +1,66 @@
+name: Agregador de Notícias
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"
+  workflow_dispatch:
+    inputs:
+      acao:
+        description: "O que fazer"
+        type: choice
+        options:
+          - normal
+          - teste
+          - descobrir-chat
+          - simular
+          - descobrir-fontes
+        default: normal
+
+permissions:
+  contents: write
+
+concurrency:
+  group: agregador
+  cancel-in-progress: false
+
+jobs:
+  correr:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependências
+        run: pip install -r requirements.txt
+
+      - name: Executar
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          ACAO: ${{ github.event.inputs.acao || 'normal' }}
+        run: |
+          case "$ACAO" in
+            teste) python agregador.py --teste ;;
+            descobrir-chat) python agregador.py --descobrir-chat ;;
+            simular) python agregador.py --simular ;;
+            descobrir-fontes) python agregador.py --fontes ;;
+            *) python agregador.py ;;
+          esac
+
+      - name: Guardar estado
+        if: always()
+        run: |
+          git config user.name "agregador-bot"
+          git config user.email "agregador-bot@users.noreply.github.com"
+          git add estado.json
+          if git diff --cached --quiet; then
+            echo "Sem alterações no estado."
+          else
+            git commit -m "estado: $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi
