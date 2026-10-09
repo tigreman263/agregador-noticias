@@ -43,6 +43,22 @@ ESTADO = RAIZ / "estado.json"
 UA = "Mozilla/5.0 (compatible; AgregadorNoticias/1.0)"
 NIVEIS = ("alta", "media", "baixa")
 DIAS_VISTOS = 14
+
+
+def erro(msg):
+    """Mostra um erro. No GitHub Actions aparece também como anotação da execução."""
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        print("::error::" + msg.replace("\n", " "))
+    else:
+        print("Erro: " + msg)
+
+
+def segredos_em_falta(token, chat):
+    """Diz exatamente que segredos faltam (nunca mostra os valores)."""
+    falta = [n for n, v in (("TELEGRAM_BOT_TOKEN", token), ("TELEGRAM_CHAT_ID", chat)) if not v]
+    return (f"falta(m) o(s) segredo(s) {' e '.join(falta)} no GitHub "
+            "(Settings > Secrets and variables > Actions).") if falta else ""
+
 DOMINIOS_IGNORADOS = {"", "news.google.com", "google.com"}
 DECISOES = {"c": "confiavel", "n": "neutra", "b": "bloqueada"}
 ROTULOS = {"confiavel": "marcada como confiável", "neutra": "marcada como neutra",
@@ -596,7 +612,7 @@ def executar(cfg, token, chat, simular=False, forcar_fontes=False):
     podar(estado, agora_utc)
 
     if not simular and not (token and chat):
-        print("Erro: faltam TELEGRAM_BOT_TOKEN e/ou TELEGRAM_CHAT_ID.")
+        erro(segredos_em_falta(token, chat))
         return 1
 
     if not simular:
@@ -664,7 +680,7 @@ def executar(cfg, token, chat, simular=False, forcar_fontes=False):
                 enviar(token, chat, formatar_alerta(c, agora_utc))
                 marcar_visto(estado, c, agora_utc)
             except RuntimeError as e:
-                print(f"Erro ao enviar: {e}")
+                erro(f"não consegui enviar o alerta: {e}")
                 erro = True
                 estado["adiados"] = fila[pos:][:50]
                 for resto in fila[pos:]:
@@ -680,7 +696,7 @@ def executar(cfg, token, chat, simular=False, forcar_fontes=False):
             estado["resumo"] = []
             estado["ultimo_resumo"] = hoje
         except RuntimeError as e:
-            print(f"Erro ao enviar o resumo: {e}")
+            erro(f"não consegui enviar o resumo: {e}")
             erro = True
 
     if sugestoes:
@@ -690,7 +706,7 @@ def executar(cfg, token, chat, simular=False, forcar_fontes=False):
                 estado["sugeridas"][sg["dominio"]] = sg
                 estado["botoes"][sg["codigo"]] = sg["dominio"]
             except RuntimeError as e:
-                print(f"Erro ao enviar a sugestão de fonte: {e}")
+                erro(f"não consegui enviar a sugestão de fonte: {e}")
                 erro = True
                 break
     if (forcar_fontes or devida) and not erro:
@@ -720,7 +736,7 @@ def main():
     try:
         if args.descobrir_chat:
             if not token:
-                print("Erro: falta TELEGRAM_BOT_TOKEN.")
+                erro(segredos_em_falta(token, "x"))
                 return 1
             vistos = {}
             for u in telegram(token, "getUpdates",
@@ -738,7 +754,7 @@ def main():
             return 0
         if args.teste:
             if not (token and chat):
-                print("Erro: faltam TELEGRAM_BOT_TOKEN e/ou TELEGRAM_CHAT_ID.")
+                erro(segredos_em_falta(token, chat))
                 return 1
             enviar(token, chat, "✅ O agregador de notícias está ligado ao Telegram.")
             print("Mensagem de teste enviada.")
@@ -746,7 +762,7 @@ def main():
         return executar(carregar_config(), token, chat, simular=args.simular,
                         forcar_fontes=args.fontes)
     except RuntimeError as e:
-        print(f"Erro: {e}")
+        erro(str(e))
         return 1
 
 
