@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agregador de Notícias — modo teste</title>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#F6F3EE;--surface:#FFFFFF;--surface2:#FBF9F5;--line:#E6E0D5;--line2:#D9D3C7;
+  --text:#1B1A17;--muted:#5F5B52;--accent:#0F5C56;--accent-ink:#FFFFFF;
+  --accent-soft:#DDEEEA;--accent-soft-ink:#0B4741;
+  --hi-bg:#F8DAD6;--hi-ink:#8C1D18;--md-bg:#F5E4BF;--md-ink:#6B4700;--lo-bg:#E2EBD8;--lo-ink:#3F5A2E;
+  --neu-bg:#ECE8DF;--neu-ink:#4A463E;--danger:#8C1D18;--bubble:#E3F1E1;--banner:#1B1A17;--banner-ink:#F6F3EE;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#151512;--surface:#1F1E1A;--surface2:#191814;--line:#33302A;--line2:#4A453C;
+    --text:#F1EEE7;--muted:#B0AA9D;--accent:#4FB3A9;--accent-ink:#0B1F1D;
+    --accent-soft:#1F3A37;--accent-soft-ink:#9FDDD5;
+    --hi-bg:#4A2321;--hi-ink:#F5B5AF;--md-bg:#45361A;--md-ink:#F0D28A;--lo-bg:#2B3823;--lo-ink:#BFD7A9;
+    --neu-bg:#2C2A25;--neu-ink:#CFC9BB;--danger:#F0A29B;--bubble:#24382A;--banner:#F1EEE7;--banner-ink:#151512;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#151512;--surface:#1F1E1A;--surface2:#191814;--line:#33302A;--line2:#4A453C;
+  --text:#F1EEE7;--muted:#B0AA9D;--accent:#4FB3A9;--accent-ink:#0B1F1D;
+  --accent-soft:#1F3A37;--accent-soft-ink:#9FDDD5;
+  --hi-bg:#4A2321;--hi-ink:#F5B5AF;--md-bg:#45361A;--md-ink:#F0D28A;--lo-bg:#2B3823;--lo-ink:#BFD7A9;
+  --neu-bg:#2C2A25;--neu-ink:#CFC9BB;--danger:#F0A29B;--bubble:#24382A;--banner:#F1EEE7;--banner-ink:#151512;
+}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:15px;line-height:1.4}
+.app{height:100%;max-width:520px;margin:0 auto;display:flex;flex-direction:column;background:var(--bg);border-left:1px solid var(--line);border-right:1px solid var(--line)}
+.banner{background:var(--banner);color:var(--banner-ink);text-align:center;font-size:12px;font-weight:600;padding:6px 12px;letter-spacing:.02em}
+main{flex:1;min-height:0;overflow-y:auto;padding:16px 16px 24px}
+h1,h2{font-family:'Newsreader',Georgia,serif;margin:0;font-weight:600;letter-spacing:-.01em}
+h1{font-size:30px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.muted{color:var(--muted)}.sm{font-size:13px}.xs{font-size:12px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+button{font-family:inherit;font-size:14px;cursor:pointer}
+.btn{min-height:44px;padding:0 16px;border-radius:12px;border:1px solid var(--line2);background:var(--surface);color:var(--text);font-weight:500}
+.btn-primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+.btn-line{border-color:var(--accent);color:var(--accent);background:var(--surface);font-weight:600}
+.btn-dark{background:var(--text);color:var(--bg);border-color:var(--text);font-weight:600}
+.btn-danger{border-color:var(--danger);color:var(--danger);background:var(--surface);font-weight:600}
+.btn[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+.btn.block{width:100%}
+.btn:focus-visible,.chip:focus-visible,.tab:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.filter{min-height:40px;padding:0 14px;border-radius:20px;border:1px solid var(--line2);background:transparent;color:var(--text);font-weight:500}
+.filter[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:12px;display:flex;flex-direction:column;gap:10px}
+.card.sel{border:2px solid var(--accent)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.gap8{display:flex;gap:8px;flex-wrap:wrap}
+.tag{display:inline-block;padding:2px 9px;border-radius:10px;font-size:12px;font-weight:600;background:var(--neu-bg);color:var(--neu-ink)}
+.tag.ok{background:var(--accent-soft);color:var(--accent-soft-ink)}
+.tag.warn{background:var(--md-bg);color:var(--md-ink)}
+.nota{min-width:64px;height:32px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;border-radius:16px;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:14px;white-space:nowrap}
+.nota.low{background:var(--neu-bg);color:var(--neu-ink)}
+.ntitle{font-family:'Newsreader',Georgia,serif;font-size:19px;font-weight:600;line-height:1.25}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{padding:6px 12px;border-radius:14px;border:0;font-size:14px;font-weight:500;min-height:32px}
+.chip.hi{background:var(--hi-bg);color:var(--hi-ink)}.chip.md{background:var(--md-bg);color:var(--md-ink)}
+.chip.lo{background:var(--lo-bg);color:var(--lo-ink)}.chip.ex{background:var(--neu-bg);color:var(--neu-ink)}
+.tag.hi{background:var(--hi-bg);color:var(--hi-ink)}.tag.md{background:var(--md-bg);color:var(--md-ink)}.tag.lo{background:var(--lo-bg);color:var(--lo-ink)}
+.grp{display:flex;flex-direction:column;gap:8px;padding-top:14px;border-top:1px solid var(--line)}
+.grp:first-of-type{border-top:0;padding-top:0}
+.grp-t{font-weight:600;font-size:14px}
+.hi-t{color:var(--hi-ink)}.md-t{color:var(--md-ink)}.lo-t{color:var(--lo-ink)}.ex-t{color:var(--neu-ink)}
+label.f{font-size:13px;font-weight:600;color:var(--muted)}
+input[type=text],input[type=number],select{width:100%;min-height:44px;padding:0 12px;border:1px solid var(--line2);border-radius:12px;background:var(--surface2);color:var(--text);font-family:inherit;font-size:15px}
+.addrow{display:flex;gap:8px}
+.addrow input{flex:1;min-width:0}
+.field{display:flex;flex-direction:column;gap:6px}
+.numrow{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px}
+.numrow input{width:96px;text-align:right}
+.bubble{background:var(--bubble);border-radius:14px 14px 14px 4px;padding:10px 12px;font-size:14px;display:flex;flex-direction:column;gap:3px}
+.bubble a{color:inherit;font-weight:600}
+.empty{background:var(--surface);border:1px dashed var(--line2);border-radius:16px;padding:24px 16px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
+.tabs{display:flex;border-top:1px solid var(--line);background:var(--surface2)}
+.tab{flex:1;min-height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:0;background:transparent;color:var(--muted);font-size:12px;font-weight:500}
+.tab[aria-current="page"]{color:var(--accent);font-weight:600}
+.tab svg{stroke:currentColor}
+#toast{position:fixed;left:50%;transform:translateX(-50%) translateY(20px);bottom:calc(88px + env(safe-area-inset-bottom,0px));max-width:min(92vw,440px);background:var(--text);color:var(--bg);padding:12px 16px;border-radius:12px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:10}
+#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+.note{background:var(--accent-soft);color:var(--accent-soft-ink);border-radius:12px;padding:10px 12px;font-size:13px}
+@media (prefers-reduced-motion: reduce){#toast{transition:none}}
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="banner">MODO TESTE · notícias inventadas · nada é enviado</div>
+  <main id="main"></main>
+  <nav class="tabs" id="tabs" aria-label="Secções"></nav>
+</div>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+'use strict';
+var KEY='agregador-teste-v1';
+function $(s){return document.querySelector(s);}
+function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();}
+function uid(){return Math.random().toString(36).slice(2,9);}
+
+/* ---------- base de notícias de teste (inventadas) ---------- */
+var NAMES={'saudeemfoco.exemplo':'Saúde em Foco','diariotech.exemplo':'Diário Tech','mercadoagora.exemplo':'Mercado Agora','cripto24.exemplo':'Cripto 24','gazetaeconomica.exemplo':'Gazeta Económica','portalcidade.exemplo':'Portal da Cidade','desportoreal.exemplo':'Desporto Real','blogdoacaso.exemplo':'Blog do Acaso'};
+var BANK=[
+ {id:'b1',t:'Hospital testa inteligência artificial para triagem de urgências',r:'Novo sistema de diagnóstico auxilia médicos na triagem de doentes.',d:'saudeemfoco.exemplo',m:12},
+ {id:'b2',t:'Hospital testa inteligência artificial na triagem das urgências',r:'',d:'diariotech.exemplo',m:25},
+ {id:'b3',t:'Hospital testa inteligência artificial para triagem de urgências em Lisboa',r:'',d:'portalcidade.exemplo',m:40},
+ {id:'b4',t:'Consulta pública sobre regras para software médico com inteligência artificial',r:'A regulação de dispositivos médicos está em debate.',d:'diariotech.exemplo',m:47},
+ {id:'b5',t:'Estudo compara diagnóstico por imagem com e sem apoio de inteligência artificial',r:'',d:'saudeemfoco.exemplo',m:120},
+ {id:'b6',t:'Startup de saúde levanta investimento para plataforma de triagem',r:'',d:'gazetaeconomica.exemplo',m:200},
+ {id:'b7',t:'Horóscopo da semana: Touro e a inteligência artificial',r:'',d:'blogdoacaso.exemplo',m:30},
+ {id:'b8',t:'Bitcoin ultrapassa resistência e atinge máximo do mês',r:'Mercado de criptomoedas reage a entrada de capital em fundos ETF.',d:'cripto24.exemplo',m:8},
+ {id:'b9',t:'Bitcoin atinge máximo do mês e ultrapassa resistência',r:'',d:'mercadoagora.exemplo',m:20},
+ {id:'b10',t:'Regulador europeu publica regras para stablecoins',r:'Nova regulação de criptoativos entra em vigor no próximo ano.',d:'gazetaeconomica.exemplo',m:90},
+ {id:'b11',t:'Ethereum atualiza rede e reduz custos de transação',r:'',d:'cripto24.exemplo',m:300},
+ {id:'b12',t:'Exchange anuncia falha temporária e suspende levantamentos',r:'Clientes de criptomoedas afetados.',d:'cripto24.exemplo',m:15},
+ {id:'b13',t:'Nova versão do assistente de inteligência artificial promete respostas mais rápidas',r:'',d:'diariotech.exemplo',m:60},
+ {id:'b14',t:'Portugal aprova incentivos para centros de dados e energia',r:'',d:'gazetaeconomica.exemplo',m:180},
+ {id:'b15',t:'Empresa lança processador com foco em inteligência artificial no telemóvel',r:'',d:'diariotech.exemplo',m:240},
+ {id:'b16',t:'Banco de Portugal revê em alta previsão de crescimento',r:'Inflação e juros em foco.',d:'gazetaeconomica.exemplo',m:70},
+ {id:'b17',t:'Preço da eletricidade sobe no mercado ibérico',r:'',d:'mercadoagora.exemplo',m:100},
+ {id:'b18',t:'Inflação em Portugal abranda em setembro',r:'',d:'gazetaeconomica.exemplo',m:130},
+ {id:'b19',t:'Benfica vence em jogo decisivo da Liga',r:'',d:'desportoreal.exemplo',m:35},
+ {id:'b20',t:'Seleção nacional divulga convocatória',r:'',d:'desportoreal.exemplo',m:90},
+ {id:'b21',t:'Consulta pública: novas regras para arrendamento',r:'',d:'portalcidade.exemplo',m:55}
+];
+function dname(d){return NAMES[d]||d;}
+var FEEDS={'saudeemfoco.exemplo':1,'diariotech.exemplo':1,'gazetaeconomica.exemplo':1};
+
+/* ---------- estado ---------- */
+function defaults(){
+  return {
+    searches:[{id:uid(),nome:'IA na saúde',ativa:true,
+      palavras:{alta:['inteligência artificial','regulação','aprovação clínica'],media:['triagem','diagnóstico','dispositivos médicos'],baixa:['startup','investimento']},
+      excluir:['horóscopo','publicidade'],limAlerta:25,limResumo:10}],
+    src:{'saudeemfoco.exemplo':'confiavel'},
+    w:{alta:10,media:4,baixa:1,confiavel:1.5,desconhecida:1,bonusExtra:5,bonusExtraMax:15,bonusHora:3,idadeMax:48,descMin:2,descMax:5},
+    extra:[],fb:{},pend:{},feeds:{},
+    ui:{tab:'alertas',filtro:'imediatos',sel:null,edit:null,srcTab:'sugeridas',tg:{},form:{t:'',r:'',d:'',m:'10'}}
+  };
+}
+function load(){
+  var d=defaults();
+  try{
+    var s=localStorage.getItem(KEY);
+    if(s){var o=JSON.parse(s);
+      d.searches=o.searches||d.searches;d.src=o.src||d.src;d.extra=o.extra||[];d.fb=o.fb||{};d.pend=o.pend||{};d.feeds=o.feeds||{};
+      d.w=Object.assign(d.w,o.w||{});d.ui=Object.assign(d.ui,o.ui||{});
+      d.ui.form=Object.assign({t:'',r:'',d:'',m:'10'},d.ui.form||{});
+    }
+  }catch(e){}
+  return d;
+}
+var S=load(); var focusId=null; var gerando=false; var confirmar=null;
+function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
+function cur(){for(var i=0;i<S.searches.length;i++){if(S.searches[i].id===S.ui.edit)return S.searches[i];}return null;}
+function arr(s,l){return l==='excluir'?s.excluir:s.palavras[l];}
+
+/* ---------- motor de pontuação (mesma lógica da app real) ---------- */
+function allNews(){return BANK.concat(S.extra).map(function(n){return Object.assign({},n,{tn:norm(n.t),tx:norm(n.r)});});}
+function scoreKw(n,s){
+  var T=' '+n.tn+' ',X=' '+n.tx+' ',i,p;
+  for(i=0;i<s.excluir.length;i++){p=norm(s.excluir[i]);if(p&&(T.indexOf(' '+p+' ')>-1||X.indexOf(' '+p+' ')>-1))return null;}
+  var pts=0,found={alta:[],media:[],baixa:[]};
+  ['alta','media','baixa'].forEach(function(l){
+    s.palavras[l].forEach(function(k){
+      var q=norm(k);if(!q)return;
+      var key=q.length<=3?' '+q+' ':' '+q;
+      if(T.indexOf(key)>-1){pts+=S.w[l]*2;found[l].push(k);}
+      else if(X.indexOf(key)>-1){pts+=S.w[l];found[l].push(k);}
+    });
+  });
+  return {pts:pts,found:found};
+}
+function similar(a,b){
+  var A=a.split(' '),B=b.split(' '),SA={},inter=0,u;
+  A.forEach(function(x){SA[x]=1;});
+  var SB={};B.forEach(function(x){SB[x]=1;});
+  Object.keys(SA).forEach(function(x){if(SB[x])inter++;});
+  u=Object.keys(SA).length+Object.keys(SB).length-inter;
+  return u>0&&inter/u>=0.6;
+}
+function evaluate(s){
+  var cutoff=S.w.idadeMax*60,valid=[];
+  allNews().forEach(function(n){
+    if(S.src[n.d]==='bloqueada')return;
+    if(n.m>cutoff)return;
+    var r=scoreKw(n,s);if(!r||r.pts===0)return;
+    valid.push({n:n,kw:r.pts,found:r.found});
+  });
+  var groups=[];
+  valid.forEach(function(v){
+    for(var i=0;i<groups.length;i++){if(similar(groups[i].tn,v.n.tn)){groups[i].items.push(v);return;}}
+    groups.push({tn:v.n.tn,items:[v]});
+  });
+  return groups.map(function(g){
+    var doms={};g.items.forEach(function(i){doms[i.n.d]=1;});
+    var nd=Object.keys(doms).length;
+    var bonus=Math.min((nd-1)*S.w.bonusExtra,S.w.bonusExtraMax),best=null;
+    g.items.forEach(function(i){
+      var b=bonus+(i.n.m<60?S.w.bonusHora:0),conf=S.src[i.n.d]==='confiavel';
+      var nota=(i.kw+b)*(conf?S.w.confiavel:S.w.desconhecida);
+      if(!best||nota>best.nota)best={i:i,nota:nota,conf:conf};
+    });
+    var nivel=best.nota>=s.limAlerta?'alerta':(best.nota>=s.limResumo?'resumo':'abaixo');
+    return {n:best.i.n,found:best.i.found,nota:Math.round(best.nota*10)/10,conf:best.conf,nfontes:nd,nivel:nivel,search:s};
+  }).sort(function(a,b){return b.nota-a.nota;});
+}
+function ago(m){return m<1?'agora mesmo':(m<60?'há '+m+' min':(m<2880?'há '+Math.round(m/60)+' h':'há '+Math.round(m/1440)+' dias'));}
+function foundTxt(f,html){
+  var rot={alta:'alta',media:'média',baixa:'baixa'},out=[];
+  ['alta','media','baixa'].forEach(function(l){if(f[l].length)out.push(rot[l]+': '+f[l].map(esc).join(', '));});
+  return out.join(' · ');
+}
+
+/* ---------- ícones ---------- */
+var IC={
+ alertas:'<path d="M6 9a6 6 0 0 1 12 0c0 6 2 7 2 7H4s2-1 2-7"/><path d="M10 20a2 2 0 0 0 4 0"/>',
+ pesquisas:'<circle cx="11" cy="11" r="6"/><path d="M20 20l-4-4"/>',
+ fontes:'<circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c3 3 3 13 0 16M12 4c-3 3-3 13 0 16"/>',
+ defs:'<path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/>'
+};
+function svg(k){return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+IC[k]+'</svg>';}
+function tabsHtml(){
+  var t=[['alertas','Alertas','alertas'],['pesquisas','Pesquisas','pesquisas'],['fontes','Fontes','fontes'],['defs','Definições','defs']];
+  return t.map(function(x){return '<button class="tab" data-a="tab" data-p="'+x[0]+'"'+(S.ui.tab===x[0]?' aria-current="page"':'')+'>'+svg(x[2])+'<span>'+x[1]+'</span></button>';}).join('');
+}
+function head(title,right){return '<div class="top"><h1>'+title+'</h1>'+(right||'')+'</div>';}
+function toast(msg){var t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast.h);toast.h=setTimeout(function(){t.classList.remove('show');},4200);}
+
+/* ---------- ecrã: Alertas ---------- */
+function vAlertas(){
+  if(!S.searches.length){
+    return head('Alertas')+'<div class="empty"><div>Ainda não tens pesquisas.</div><button class="btn btn-primary" data-a="tab" data-p="pesquisas">Criar a primeira pesquisa</button></div>';
+  }
+  var s=null;S.searches.forEach(function(x){if(x.id===S.ui.sel)s=x;});
+  if(!s){s=S.searches[0];S.ui.sel=s.id;}
+  var res=evaluate(s);
+  var cI=res.filter(function(r){return r.nivel==='alerta';}).length,cR=res.filter(function(r){return r.nivel==='resumo';}).length;
+  var f=S.ui.filtro,list=res.filter(function(r){return f==='imediatos'?r.nivel==='alerta':(f==='resumo'?r.nivel==='resumo':true);});
+  var h=head('Alertas','<button class="btn btn-line" data-a="verificar">Verificar agora</button>');
+  h+='<div class="field" style="margin-bottom:12px"><label class="f" for="sel">Pesquisa</label><select id="sel" data-in="sel">'+
+    S.searches.map(function(x){return '<option value="'+x.id+'"'+(x.id===s.id?' selected':'')+'>'+esc(x.nome||'Sem nome')+(x.ativa?'':' (pausada)')+'</option>';}).join('')+'</select></div>';
+  if(!s.ativa)h+='<div class="note" style="margin-bottom:12px">Esta pesquisa está em pausa. Na app real não enviaria alertas.</div>';
+  h+='<div class="pillrow" role="group" aria-label="Filtrar alertas">'+
+    [['imediatos','Imediatos ('+cI+')'],['resumo','Resumo ('+cR+')'],['todas','Todas ('+res.length+')']].map(function(x){return '<button class="filter" data-a="filtro" data-p="'+x[0]+'" aria-pressed="'+(f===x[0])+'">'+x[1]+'</button>';}).join('')+'</div>';
+  if(!list.length){
+    h+='<div class="empty"><div class="muted">Nenhuma notícia neste filtro.<br>Experimenta baixar o limite da pesquisa, acrescentar palavras-chave ou mudar a fonte de confiança.</div></div>';
+    return h;
+  }
+  list.forEach(function(r){h+=card(r,s);});
+  return h;
+}
+function tgHtml(r){
+  var l=[];
+  l.push('🔔 <a href="#" data-a="noop"><strong>'+esc(r.n.t)+'</strong></a>');
+  l.push(esc(dname(r.n.d))+' ('+(r.conf?'confiável':'fonte nova')+') · nota '+r.nota+' · '+esc(r.search.nome));
+  var ft=foundTxt(r.found);if(ft)l.push('🔑 '+ft);
+  l.push('🕒 '+ago(r.n.m)+(r.nfontes>1?' · '+r.nfontes+' fontes':''));
+  return '<div class="bubble" aria-label="Pré-visualização da mensagem do Telegram">'+l.map(function(x){return '<div>'+x+'</div>';}).join('')+'</div>';
+}
+function card(r,s){
+  var key=r.n.id+':'+s.id,fb=S.fb[key],tg=S.ui.tg[key];
+  var srcTag=S.src[r.n.d]==='confiavel'?'<span class="tag ok">Confiável</span>':(S.src[r.n.d]==='neutra'?'<span class="tag">Neutra</span>':'<span class="tag">Fonte nova</span>');
+  var lvl='';
+  [['alta','hi','Alta'],['media','md','Média'],['baixa','lo','Baixa']].forEach(function(x){
+    r.found[x[0]].forEach(function(k){lvl+='<span class="tag '+x[1]+'">'+x[2]+' · '+esc(k)+'</span> ';});
+  });
+  var nivelTag=r.nivel==='abaixo'?'<span class="tag warn">Abaixo do limite</span>':(r.nivel==='resumo'?'<span class="tag warn">Vai para o resumo</span>':'');
+  return '<article class="card"><div class="row"><div class="gap8" style="align-items:center"><strong class="sm">'+esc(dname(r.n.d))+'</strong>'+srcTag+'</div>'+
+    '<span class="nota'+(r.nivel==='alerta'?'':' low')+'" title="Nota final">Nota '+r.nota+'</span></div>'+
+    '<div class="ntitle">'+esc(r.n.t)+'</div>'+
+    (lvl?'<div class="chips">'+lvl+'</div>':'')+
+    '<div class="sm muted">'+ago(r.n.m)+(r.nfontes>1?' · publicada por '+r.nfontes+' fontes':' · publicada por 1 fonte')+' '+nivelTag+'</div>'+
+    '<div class="gap8">'+
+      '<button class="btn" style="flex:1" data-a="fb" data-p="'+key+'" data-q="up" aria-pressed="'+(fb==='up')+'">Útil</button>'+
+      '<button class="btn" style="flex:1" data-a="fb" data-p="'+key+'" data-q="down" aria-pressed="'+(fb==='down')+'">Não útil</button>'+
+      '<button class="btn btn-dark" style="flex:1" data-a="tgv" data-p="'+key+'" aria-expanded="'+(!!tg)+'">Telegram</button>'+
+    '</div>'+(tg?tgHtml(r):'')+
+    (fb==='down'?'<div class="note">Na app real, vários "Não útil" da mesma fonte ou palavra fariam o sistema sugerir baixar-lhe o peso.</div>':'')+
+  '</article>';
+}
+
+/* ---------- ecrã: Pesquisas ---------- */
+function vPesquisas(){
+  var s=cur();if(s)return vEdit(s);
+  var h=head('Pesquisas','<button class="btn btn-primary" data-a="nova">Nova pesquisa</button>');
+  if(!S.searches.length)return h+'<div class="empty"><div class="muted">Ainda não tens pesquisas.<br>Cria uma para veres os alertas.</div></div>';
+  S.searches.forEach(function(x){
+    var res=evaluate(x),n=res.filter(function(r){return r.nivel==='alerta';}).length;
+    h+='<article class="card"><div class="row"><div><div style="font-weight:600;font-size:17px">'+esc(x.nome||'Sem nome')+'</div>'+
+      '<div class="sm muted">'+(x.ativa?'Ativa':'Em pausa')+' · alerta a partir de nota '+x.limAlerta+' · '+n+' alertas agora</div></div></div>'+
+      '<div class="gap8"><button class="btn btn-line" style="flex:1" data-a="editar" data-p="'+x.id+'">Editar</button>'+
+      '<button class="btn" style="flex:1" data-a="ativa" data-p="'+x.id+'">'+(x.ativa?'Pausar':'Ativar')+'</button>'+
+      '<button class="btn" style="flex:1" data-a="ver" data-p="'+x.id+'">Ver alertas</button></div></article>';
+  });
+  return h;
+}
+function grp(s,l,label,sub,cls){
+  var items=arr(s,l);
+  return '<section class="grp"><div class="row"><span class="grp-t '+cls+'-t">'+label+'</span><span class="muted xs">'+sub+'</span></div>'+
+    '<div class="chips">'+items.map(function(k,i){return '<button class="chip '+cls+'" data-a="delkw" data-p="'+l+'" data-q="'+i+'" aria-label="Remover '+esc(k)+'">'+esc(k)+' <span aria-hidden="true">×</span></button>';}).join('')+
+    (items.length?'':'<span class="muted sm">Sem palavras.</span>')+'</div>'+
+    '<div class="addrow"><label class="sr" for="kw-'+l+'">Adicionar palavra ('+label+')</label><input id="kw-'+l+'" type="text" data-kw="'+l+'" placeholder="Nova palavra…" autocomplete="off"><button class="btn btn-line" data-a="addkw" data-p="'+l+'">Adicionar</button></div></section>';
+}
+function vEdit(s){
+  var h='<div class="top"><button class="btn" data-a="voltar">‹ Voltar</button><h2>Editar pesquisa</h2></div>';
+  h+='<div class="card">'+
+    '<div class="field"><label class="f" for="in-nome">Tema da pesquisa</label><div class="addrow"><input id="in-nome" type="text" data-in="nome" value="'+esc(s.nome)+'" autocomplete="off" placeholder="ex.: Bitcoin e regulação"><button class="btn btn-line" data-a="gerar"'+(gerando?' disabled':'')+'>'+(gerando?'A gerar…':'Gerar palavras')+'</button></div></div>'+
+    '<div class="xs muted">"Gerar palavras" pede ao Claude sugestões para o tema e junta-as às que já tens.</div>'+
+    grp(s,'alta','Prioridade alta','10 pontos por defeito','hi')+
+    grp(s,'media','Prioridade média','4 pontos por defeito','md')+
+    grp(s,'baixa','Prioridade baixa','1 ponto por defeito','lo')+
+    grp(s,'excluir','Palavras a excluir','a notícia é descartada','ex')+
+    '<section class="grp"><div class="numrow"><label for="la">Alerta imediato a partir da nota</label><input id="la" type="number" min="0" step="1" data-in="limAlerta" value="'+s.limAlerta+'"></div>'+
+    '<div class="numrow"><label for="lr">Resumo diário a partir da nota</label><input id="lr" type="number" min="0" step="1" data-in="limResumo" value="'+s.limResumo+'"></div></section>'+
+  '</div>'+
+  '<div class="gap8"><button class="btn btn-primary" style="flex:1" data-a="ver" data-p="'+s.id+'">Ver alertas desta pesquisa</button>'+
+  '<button class="btn btn-danger" data-a="apagar" data-p="'+s.id+'">'+(confirmar===s.id?'Confirmar: apagar':'Apagar')+'</button></div>';
+  return h;
+}
+
+/* ---------- ecrã: Fontes ---------- */
+function domains(){
+  var m={};allNews().forEach(function(n){m[n.d]=(m[n.d]||0)+1;});return m;
+}
+function descobrir(){
+  var act=S.searches.filter(function(x){return x.ativa;});
+  if(!act.length){toast('Não há pesquisas ativas para procurar fontes.');return;}
+  var stats={};
+  act.forEach(function(sr){allNews().forEach(function(n){
+    if(S.src[n.d]==='bloqueada')return;
+    var r=scoreKw(n,sr);if(!r||r.pts===0)return;
+    var e=stats[n.d]||(stats[n.d]={ids:{},pes:{},ex:n.t});
+    e.ids[n.id]=1;e.pes[sr.nome||'Sem nome']=1;
+  });});
+  var espaco=Math.max(0,10-Object.keys(S.pend).length),lim=Math.min(S.w.descMax,espaco);
+  var c=Object.keys(stats).filter(function(d){return !S.src[d]&&!S.pend[d]&&Object.keys(stats[d].ids).length>=S.w.descMin;})
+    .sort(function(a,b){return Object.keys(stats[b].ids).length-Object.keys(stats[a].ids).length;}).slice(0,lim);
+  if(!c.length){
+    toast(espaco===0?'Já tens 10 sugestões por decidir. Decide algumas primeiro.':'Nada de novo hoje: nenhuma fonte por classificar tem '+S.w.descMin+' notícias relevantes.');
+    return;
+  }
+  c.forEach(function(d){S.pend[d]={nome:dname(d),n:Object.keys(stats[d].ids).length,pes:Object.keys(stats[d].pes).slice(0,3),ex:stats[d].ex,feed:!!FEEDS[d]};});
+  S.ui.srcTab='sugeridas';render();
+  toast(c.length+(c.length===1?' fonte nova sugerida.':' fontes novas sugeridas.')+' Decide com os botões, como no Telegram.');
+}
+function decidir(d,c){
+  var st={c:'confiavel',n:'neutra',b:'bloqueada'}[c],sug=S.pend[d];
+  if(!st)return;
+  delete S.pend[d];S.src[d]=st;delete S.feeds[d];
+  var rot={confiavel:'marcada como confiável',neutra:'marcada como neutra',bloqueada:'bloqueada'}[st];
+  if(st==='confiavel'&&sug&&sug.feed){S.feeds[d]=true;rot+=' e passa a ser lida diretamente';}
+  render();
+  toast(dname(d)+': '+rot+'. Na app real aplica-se na verificação seguinte (até 30 min).');
+}
+function sugHtml(d,x){
+  var l=['🔎 <strong>Fonte nova: '+esc(x.nome)+'</strong> ('+esc(d)+')',
+    'Apareceu em '+x.n+' notícias relevantes · '+esc(x.pes.join(', ')),
+    'Exemplo: '+esc(x.ex),
+    x.feed?'📡 Encontrei o feed dela: se a aprovares, passo a lê-la diretamente.':'📡 Sem feed próprio: continuo a vê-la pelo Google Notícias.'];
+  return '<article class="card"><div class="bubble" aria-label="Mensagem do Telegram">'+l.map(function(t){return '<div>'+t+'</div>';}).join('')+'</div>'+
+    '<div class="gap8" role="group" aria-label="Decidir sobre '+esc(dname(d))+'">'+
+    [['c','✅ Confiável'],['n','➖ Neutra'],['b','🚫 Bloquear']].map(function(b){return '<button class="btn" style="flex:1" data-a="dec" data-p="'+esc(d)+'" data-q="'+b[0]+'">'+b[1]+'</button>';}).join('')+'</div></article>';
+}
+function vFontes(){
+  var dm=domains(),tab=S.ui.srcTab,pend=Object.keys(S.pend).sort();
+  function por(st){return Object.keys(dm).filter(function(d){return S.src[d]===st;}).sort();}
+  var tabs=[['sugeridas','Sugeridas',pend.length],['confiavel','Confiáveis',por('confiavel').length],['neutra','Neutras',por('neutra').length],['bloqueada','Bloqueadas',por('bloqueada').length]];
+  var h=head('Fontes');
+  h+='<div class="card"><strong style="font-size:17px">Descoberta automática</strong>'+
+    '<div class="sm muted">Na app real, 1 vez por dia procura sites novos que publicam sobre as tuas pesquisas e envia-os para o teu Telegram com três botões. Aqui podes simular a procura de hoje.</div>'+
+    '<button class="btn btn-line block" data-a="descobrir">Simular a procura de hoje</button>'+
+    '<div class="xs muted">Só sugere sites com pelo menos '+S.w.descMin+' notícias relevantes, até '+S.w.descMax+' por dia e nunca mais de 10 por decidir. Podes mudar isto em Definições.</div></div>';
+  h+='<div class="pillrow" role="group" aria-label="Tipo de fonte">'+tabs.map(function(t){
+    return '<button class="filter" data-a="srctab" data-p="'+t[0]+'" aria-pressed="'+(tab===t[0])+'">'+t[1]+' ('+t[2]+')</button>';}).join('')+'</div>';
+  if(tab==='sugeridas'){
+    if(!pend.length)h+='<div class="empty"><div class="muted">Sem sugestões por decidir.<br>Carrega em "Simular a procura de hoje".</div></div>';
+    pend.forEach(function(d){h+=sugHtml(d,S.pend[d]);});
+    return h;
+  }
+  var list=por(tab);
+  if(!list.length)h+='<div class="empty"><div class="muted">Nenhuma fonte aqui.</div></div>';
+  list.forEach(function(d){
+    var st=S.src[d];
+    h+='<article class="card"><div class="row"><div><div style="font-weight:600;font-size:16px">'+esc(dname(d))+'</div><div class="xs muted">'+esc(d)+' · '+dm[d]+' notícias na base de teste</div></div>'+
+      (S.feeds[d]?'<span class="tag ok">Lida diretamente</span>':'')+'</div>'+
+      '<div class="gap8" role="group" aria-label="Classificar '+esc(dname(d))+'">'+
+      [['confiavel','Confiável'],['neutra','Neutra'],['bloqueada','Bloquear']].map(function(x){return '<button class="btn" style="flex:1" data-a="src" data-p="'+esc(d)+'" data-q="'+x[0]+'" aria-pressed="'+(st===x[0])+'">'+x[1]+'</button>';}).join('')+'</div></article>';
+  });
+  h+='<p class="xs muted">Confiável: nota ×'+S.w.confiavel+' · Neutra ou nova: ×'+S.w.desconhecida+' · Bloqueada: descartada.</p>';
+  return h;
+}
+
+/* ---------- ecrã: Definições ---------- */
+function num(label,key,step){
+  return '<div class="numrow"><label for="w-'+key+'">'+label+'</label><input id="w-'+key+'" type="number" min="0" step="'+step+'" data-in="w" data-p="'+key+'" value="'+S.w[key]+'"></div>';
+}
+function vDef(){
+  var f=S.ui.form;
+  var h=head('Definições');
+  h+='<div class="card"><div class="row"><strong style="font-size:17px">Telegram</strong><span class="tag warn">Modo teste</span></div>'+
+    '<div class="sm muted">Aqui nada é enviado. Na app real, os alertas chegam ao teu bot.</div>'+
+    '<button class="btn btn-line block" data-a="tgteste">Enviar mensagem de teste</button></div>';
+  h+='<div class="card"><strong style="font-size:17px">Pontuação</strong>'+
+    num('Palavra alta (pontos)','alta',1)+num('Palavra média (pontos)','media',1)+num('Palavra baixa (pontos)','baixa',1)+
+    num('Fonte confiável (multiplicador)','confiavel',0.1)+num('Fonte desconhecida (multiplicador)','desconhecida',0.1)+
+    num('Bónus por fonte extra','bonusExtra',1)+num('Bónus máximo por fontes extra','bonusExtraMax',1)+
+    num('Bónus de última hora (menos de 1 h)','bonusHora',1)+num('Ignorar notícias com mais de (horas)','idadeMax',1)+
+    num('Descoberta: notícias mínimas por fonte','descMin',1)+num('Descoberta: máximo de sugestões por dia','descMax',1)+
+    '<div class="xs muted">Muda um valor e vê os alertas mudarem no separador Alertas.</div></div>';
+  h+='<div class="card"><strong style="font-size:17px">Notícias de teste</strong>'+
+    '<div class="sm muted">A base tem '+BANK.length+' notícias inventadas. Acrescenta as tuas para experimentar situações concretas.</div>'+
+    '<div class="field"><label class="f" for="f-t">Título</label><input id="f-t" type="text" data-in="form" data-p="t" value="'+esc(f.t)+'" autocomplete="off"></div>'+
+    '<div class="field"><label class="f" for="f-r">Resumo (opcional)</label><input id="f-r" type="text" data-in="form" data-p="r" value="'+esc(f.r)+'" autocomplete="off"></div>'+
+    '<div class="field"><label class="f" for="f-d">Fonte (ex.: meusite.exemplo)</label><input id="f-d" type="text" data-in="form" data-p="d" value="'+esc(f.d)+'" autocomplete="off"></div>'+
+    '<div class="field"><label class="f" for="f-m">Publicada há quantos minutos</label><input id="f-m" type="number" min="0" step="1" data-in="form" data-p="m" value="'+esc(f.m)+'"></div>'+
+    '<button class="btn btn-primary block" data-a="addnews">Adicionar notícia de teste</button>'+
+    S.extra.map(function(n){return '<div class="row" style="border-top:1px solid var(--line);padding-top:10px"><div><div style="font-weight:600">'+esc(n.t)+'</div><div class="xs muted">'+esc(dname(n.d))+' · '+ago(n.m)+'</div></div><button class="btn btn-danger" data-a="delnews" data-p="'+n.id+'" aria-label="Apagar '+esc(n.t)+'">Apagar</button></div>';}).join('')+
+  '</div>';
+  h+='<button class="btn btn-danger block" data-a="reset">'+(confirmar==='reset'?'Confirmar: repor tudo':'Repor dados de exemplo')+'</button>';
+  return h;
+}
+
+/* ---------- geração de palavras ---------- */
+function limpa(a){
+  var seen={},out=[];
+  (Array.isArray(a)?a:[]).forEach(function(x){
+    x=String(x||'').trim();var k=norm(x);
+    if(x&&k&&!seen[k]){seen[k]=1;out.push(x);}
+  });
+  return out;
+}
+function heuristica(tema){
+  var ws=norm(tema).split(' ').filter(function(w){return w.length>=4;});
+  return {alta:ws.length>1?[tema.trim()]:ws.slice(0,1),media:ws.length>1?ws:[],baixa:[],excluir:['horóscopo','publicidade']};
+}
+function juntar(s,l,novos){
+  var cur=arr(s,l),seen={};cur.forEach(function(x){seen[norm(x)]=1;});
+  limpa(novos).slice(0,8).forEach(function(x){if(!seen[norm(x)]){cur.push(x);seen[norm(x)]=1;}});
+}
+async function gerar(){
+  var s=cur();if(!s)return;
+  var tema=(s.nome||'').trim();
+  if(!tema){toast('Escreve primeiro o tema da pesquisa.');return;}
+  gerando=true;render();
+  var res=null,via='regra';
+  try{
+    var sample=window.claude&&window.claude.use?await window.claude.use('sample'):null;
+    if(sample){
+      res=await sample.json('Vais ajudar a configurar um agregador de notícias. Tema: "'+tema+'". Gera palavras-chave em português europeu, sem repetições: "alta" = 3 a 5 termos muito específicos que indicam uma notícia importante; "media" = 4 a 6 termos relacionados; "baixa" = 3 a 5 termos gerais; "excluir" = 3 a 4 palavras que indicam ruído a ignorar. Responde apenas com JSON: {"alta":[],"media":[],"baixa":[],"excluir":[]}',{modelTier:'quick',cache:false});
+      via='claude';
+    }
+  }catch(e){res=null;}
+  if(!res||!Array.isArray(res.alta)){res=heuristica(tema);via='regra';}
+  juntar(s,'alta',res.alta);juntar(s,'media',res.media);juntar(s,'baixa',res.baixa);juntar(s,'excluir',res.excluir);
+  gerando=false;render();
+  toast(via==='claude'?'Palavras sugeridas pelo Claude. Podes remover as que não queiras.':'O Claude não está disponível aqui, por isso usei uma regra simples. Edita à vontade.');
+}
+
+/* ---------- render e eventos ---------- */
+function render(){
+  var m=$('#main'),st=m.scrollTop;
+  m.innerHTML=S.ui.tab==='alertas'?vAlertas():(S.ui.tab==='pesquisas'?vPesquisas():(S.ui.tab==='fontes'?vFontes():vDef()));
+  $('#tabs').innerHTML=tabsHtml();
+  m.scrollTop=st;
+  if(focusId){var el=document.getElementById(focusId);if(el){el.focus();}focusId=null;}
+  save();
+}
+function go(tab){S.ui.tab=tab;confirmar=null;render();$('#main').scrollTop=0;}
+document.addEventListener('click',function(e){
+  var b=e.target.closest('[data-a]');if(!b)return;
+  var a=b.dataset.a,p=b.dataset.p,q=b.dataset.q,s;
+  if(a==='noop'){e.preventDefault();return;}
+  if(a!=='apagar'&&a!=='reset')confirmar=null;
+  if(a==='tab'){go(p);return;}
+  if(a==='filtro'){S.ui.filtro=p;render();return;}
+  if(a==='verificar'){
+    var i=0,r=0;S.searches.filter(function(x){return x.ativa;}).forEach(function(x){evaluate(x).forEach(function(k){if(k.nivel==='alerta')i++;else if(k.nivel==='resumo')r++;});});
+    toast('Verificação feita: '+i+' alertas imediatos e '+r+' para o resumo. Modo teste, nada foi enviado.');return;
+  }
+  if(a==='fb'){S.fb[p]=S.fb[p]===q?null:q;render();return;}
+  if(a==='tgv'){S.ui.tg[p]=!S.ui.tg[p];render();return;}
+  if(a==='nova'){
+    s={id:uid(),nome:'',ativa:true,palavras:{alta:[],media:[],baixa:[]},excluir:[],limAlerta:25,limResumo:10};
+    S.searches.push(s);S.ui.edit=s.id;S.ui.sel=s.id;focusId='in-nome';render();return;
+  }
+  if(a==='editar'){S.ui.edit=p;render();$('#main').scrollTop=0;return;}
+  if(a==='voltar'){s=cur();if(s&&!s.nome.trim())s.nome='Pesquisa sem nome';S.ui.edit=null;render();return;}
+  if(a==='ativa'){S.searches.forEach(function(x){if(x.id===p)x.ativa=!x.ativa;});render();return;}
+  if(a==='ver'){S.ui.sel=p;S.ui.edit=null;S.ui.filtro='imediatos';go('alertas');return;}
+  if(a==='apagar'){
+    if(confirmar!==p){confirmar=p;render();return;}
+    S.searches=S.searches.filter(function(x){return x.id!==p;});S.ui.edit=null;confirmar=null;S.ui.sel=null;render();toast('Pesquisa apagada.');return;
+  }
+  if(a==='addkw'){
+    s=cur();var inp=document.getElementById('kw-'+p);if(!s||!inp)return;
+    var v=inp.value.trim();
+    if(!v){toast('Escreve uma palavra primeiro.');return;}
+    juntar(s,p,[v]);focusId='kw-'+p;render();return;
+  }
+  if(a==='delkw'){s=cur();if(s)arr(s,p).splice(Number(q),1);render();return;}
+  if(a==='gerar'){gerar();return;}
+  if(a==='srctab'){S.ui.srcTab=p;render();return;}
+  if(a==='src'){if(S.src[p]===q)delete S.src[p];else S.src[p]=q;if(S.src[p]!=='confiavel')delete S.feeds[p];render();return;}
+  if(a==='descobrir'){descobrir();return;}
+  if(a==='dec'){decidir(p,q);return;}
+  if(a==='tgteste'){toast('Modo teste: nada foi enviado. Na app real esta mensagem chegava ao teu Telegram.');return;}
+  if(a==='addnews'){
+    var f=S.ui.form;
+    if(!f.t.trim()||!f.d.trim()){toast('Preenche pelo menos o título e a fonte.');return;}
+    var d=norm(f.d).replace(/ /g,'');if(f.d.indexOf('.')>-1)d=f.d.trim().toLowerCase();
+    S.extra.push({id:'x'+uid(),t:f.t.trim(),r:f.r.trim(),d:d,m:Math.max(0,Number(f.m)||0)});
+    S.ui.form={t:'',r:'',d:'',m:'10'};render();toast('Notícia de teste adicionada. Vê o efeito em Alertas.');return;
+  }
+  if(a==='delnews'){S.extra=S.extra.filter(function(n){return n.id!==p;});render();return;}
+  if(a==='reset'){
+    if(confirmar!=='reset'){confirmar='reset';render();return;}
+    S=defaults();confirmar=null;render();toast('Dados de exemplo repostos.');return;
+  }
+});
+document.addEventListener('input',function(e){
+  var t=e.target,k=t.dataset&&t.dataset.in;if(!k)return;
+  var s;
+  if(k==='nome'){s=cur();if(s)s.nome=t.value;}
+  else if(k==='limAlerta'||k==='limResumo'){s=cur();if(s)s[k]=Number(t.value)||0;}
+  else if(k==='w'){S.w[t.dataset.p]=Number(t.value)||0;}
+  else if(k==='form'){S.ui.form[t.dataset.p]=t.value;}
+  save();
+});
+document.addEventListener('change',function(e){
+  var t=e.target,k=t.dataset&&t.dataset.in;if(!k)return;
+  if(k==='sel'){S.ui.sel=t.value;render();}
+  else if(k==='limAlerta'||k==='limResumo'||k==='w'){render();}
+});
+document.addEventListener('keydown',function(e){
+  if(e.key!=='Enter')return;
+  var t=e.target;
+  if(t&&t.dataset&&t.dataset.kw){e.preventDefault();var b=document.querySelector('[data-a="addkw"][data-p="'+t.dataset.kw+'"]');if(b)b.click();}
+});
+render();
+})();
+</script>
+</body>
+</html>

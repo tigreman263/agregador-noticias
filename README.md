@@ -62,11 +62,17 @@ Só os toques vindos da tua conversa são aceites. Para forçar a procura já: A
 - Nota ≥ limite de alerta: mensagem imediata. Entre os dois limites: resumo diário.
 - Notícias repetidas em vários sites contam como uma só e nunca são enviadas duas vezes.
 
+## Painel (protótipo)
+
+Abre `painel/index.html` no navegador (duplo clique, não precisa de instalação). Tem as secções Alertas, Pesquisas, Fontes e Definições, com notícias inventadas e a mesma pontuação da app. Serve para experimentares criar pesquisas, classificar fontes e ver a descoberta de fontes. Não envia nada nem altera o `config.yaml`.
+
+Para o contexto completo do projeto (decisões, estado e próximos passos), vê `CONTEXTO.md`.
+
 ## Limites desta primeira versão
 
 - Recolhe do Google Notícias e de feeds RSS que indiques. X, Instagram e Facebook não estão incluídos.
 - Ainda não tem os botões Útil / Não útil nos alertas.
-- Sem ecrãs: a gestão faz-se editando `config.yaml`. Os ecrãs desenhados ficam para a fase seguinte.
+- O painel (`painel/index.html`) é ainda um protótipo em modo teste, não ligado à app real. A gestão faz-se editando `config.yaml`.
 - Só Telegram. O WhatsApp fica para mais tarde.
 - O GitHub pode atrasar alguns minutos as execuções agendadas.
 
