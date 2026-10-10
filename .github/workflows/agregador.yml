@@ -25,7 +25,9 @@ concurrency:
 jobs:
   correr:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 12
+    env:
+      TS_OAUTH_CLIENT_ID: ${{ secrets.TS_OAUTH_CLIENT_ID }}
     steps:
       - uses: actions/checkout@v4
 
@@ -36,6 +38,27 @@ jobs:
 
       - name: Instalar dependências
         run: pip install -r requirements.txt
+
+      # Sites que recusam o GitHub (ex.: Câmara da Sertã) são trazidos pela internet do
+      # telemóvel, via Tailscale. Sem os segredos TS_*, ou com o telemóvel sem rede,
+      # estes passos não fazem nada e o resto corre igual.
+      - name: Ligar ao telemóvel (Tailscale)
+        id: tailscale
+        if: env.TS_OAUTH_CLIENT_ID != '' && github.event.inputs.acao != 'teste'
+        continue-on-error: true
+        timeout-minutes: 3
+        uses: tailscale/github-action@v3
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
+          args: --accept-dns=false
+
+      - name: Buscar pelo telemóvel os sites bloqueados
+        if: steps.tailscale.outcome == 'success'
+        continue-on-error: true
+        timeout-minutes: 3
+        run: python agregador.py --buscar-pelo-telemovel
 
       - name: Executar
         env:

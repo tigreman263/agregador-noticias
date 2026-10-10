@@ -415,6 +415,7 @@ function vistaAtividade() {
     h += '<div class="list-item" style="display:block"><div class="row"><b class="sm">' + esc(hora(x.ts)) + "</b>" + (x.erros && x.erros.length ? '<span class="tag bad">com erros</span>' : x.silencio ? '<span class="tag">silêncio</span>' : '<span class="tag ok">ok</span>') + "</div>";
     h += '<div class="xs muted">' + (x.pesquisas || []).map(p => esc(p.nome) + ": " + p.recolhidas + " lidas, " + p.relevantes + " novas relevantes").join(" · ") + "</div>";
     h += '<div class="xs">' + x.alertas + " alertas enviados" + (x.resumo ? ", resumo com " + x.resumo : "") + (x.sugestoes ? ", " + x.sugestoes + " fontes sugeridas" : "") + "</div>";
+    if ((x.pelo_telemovel || []).length) h += '<div class="xs"><span class="tag info">pelo telemóvel</span> ' + esc(x.pelo_telemovel.join(", ")) + "</div>";
     (x.falhas || []).forEach(f => { h += '<div class="xs err">Fonte com falha: ' + esc(f) + "</div>"; });
     (x.erros || []).forEach(f => { h += '<div class="xs err">' + esc(f) + "</div>"; });
     h += "</div>";

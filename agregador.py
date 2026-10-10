@@ -22,6 +22,7 @@ import html
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 import unicodedata
@@ -47,6 +48,10 @@ RAIZ = Path(__file__).resolve().parent
 CONFIG = RAIZ / "config.yaml"
 ESTADO = RAIZ / "estado.json"
 PAINEL = RAIZ / "painel.json"
+CACHE_TELEMOVEL = RAIZ / ".cache_telemovel"
+DIAS_BLOQUEADO = 30
+SITES_BLOQUEADOS = set()   # sites que recusaram a ligação nesta execução
+LIDOS_TELEMOVEL = []       # fontes lidas a partir da cópia trazida pelo telemóvel
 UA = "Mozilla/5.0 (compatible; AgregadorNoticias/1.0)"
 UA_NAVEGADOR = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                 "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
@@ -171,9 +176,39 @@ def _local(tag):
 
 # ------------------------------------------------------------------- recolha
 
+class SiteInacessivel(RuntimeError):
+    """O site não respondeu ou recusou a ligação (pode estar a bloquear o GitHub)."""
+
+
+class Resposta:
+    """Página ou feed trazido pelo telemóvel, com a mesma forma da resposta do requests."""
+
+    def __init__(self, url, conteudo):
+        self.url, self.content, self.status_code, self.ok = url, conteudo, 200, True
+
+    @property
+    def text(self):
+        return self.content.decode("utf-8", errors="replace")
+
+    def raise_for_status(self):
+        pass
+
+
+def ficheiro_cache(url):
+    return CACHE_TELEMOVEL / hashlib.sha1(url.encode("utf-8")).hexdigest()[:20]
+
+
+def obter(url, **kw):
+    """requests.get, mas usa a cópia trazida pelo telemóvel quando ela existe."""
+    f = ficheiro_cache(url)
+    if f.exists():
+        return Resposta(url, f.read_bytes())
+    return requests.get(url, **kw)
+
+
 def ler_feed(url, nome_fonte=None, timeout=20):
     """Lê um feed RSS ou Atom e devolve uma lista de notícias (dicionários)."""
-    r = requests.get(url, headers={"User-Agent": UA}, timeout=timeout)
+    r = obter(url, headers={"User-Agent": UA}, timeout=timeout)
     r.raise_for_status()
     raiz = ET.fromstring(r.content)
     itens = []
@@ -230,16 +265,17 @@ CONTENTOR = re.compile(r"(article|noticia|news|post|item|card|entry|destaque|blo
 
 def baixar_pagina(url):
     try:
-        r = requests.get(url, headers={"User-Agent": UA_NAVEGADOR,
-                                       "Accept-Language": "pt-PT,pt;q=0.9"}, timeout=20)
+        r = obter(url, headers={"User-Agent": UA_NAVEGADOR,
+                                "Accept-Language": "pt-PT,pt;q=0.9"}, timeout=20)
     except requests.exceptions.SSLError:
         raise RuntimeError("o certificado de segurança do site é inválido ou está "
                            "incompleto; o site não pode ser lido em segurança. Procura "
                            "um feed RSS do site ou retira-o da lista") from None
     except requests.exceptions.Timeout:
-        raise RuntimeError("o site demorou demasiado a responder") from None
+        raise SiteInacessivel("o site demorou demasiado a responder") from None
     except requests.RequestException:
-        raise RuntimeError("não consegui ligar ao site (endereço errado ou site em baixo)") from None
+        raise SiteInacessivel("não consegui ligar ao site (endereço errado, site em baixo "
+                              "ou a bloquear o GitHub)") from None
     if r.status_code >= 400:
         raise RuntimeError(f"o site respondeu com erro {r.status_code} "
                            "(página inexistente ou acesso recusado)")
@@ -533,14 +569,24 @@ def recolher(pesq, cfg, falhas=None):
             pedidos.append((p.get("nome"), ler_pagina, p))
     todas = []
     for nome, leitor, alvo in pedidos:
+        url = alvo if isinstance(alvo, str) else alvo["url"]
+        pelo_telemovel = ficheiro_cache(url).exists()
         try:
             itens = leitor(alvo, nome)
-            print(f"  fonte '{nome}': {len(itens)} notícias")
+            print(f"  fonte '{nome}': {len(itens)} notícias"
+                  + (" (trazidas pelo telemóvel)" if pelo_telemovel else ""))
+            if pelo_telemovel:
+                LIDOS_TELEMOVEL.append(nome)
+                SITES_BLOQUEADOS.add(dominio_de(url))  # continua a precisar do telemóvel
             todas += itens
         except Exception as e:  # uma fonte em baixo não pára as outras
             print(f"  aviso: falhou '{nome}' ({type(e).__name__}: {str(e)[:80]})")
             if falhas is not None:
                 falhas.append(f"{pesq['nome']} · {nome}: {type(e).__name__}: {str(e)[:120]}")
+            recusou = isinstance(e, (requests.ConnectionError, requests.Timeout, SiteInacessivel))
+            if (recusou and not isinstance(e, requests.exceptions.SSLError)
+                    and dominio_de(url) not in DOMINIOS_IGNORADOS):
+                SITES_BLOQUEADOS.add(dominio_de(url))
     return todas
 
 
@@ -670,7 +716,7 @@ def avaliar(itens, pesq, cfg, estado, agora_utc):
 def carregar_estado():
     base = {"vistos": {}, "resumo": [], "adiados": [], "ultimo_resumo": "",
             "sugeridas": {}, "sugeridas_antigas": [], "dominios": {},
-            "ultima_descoberta": "", "enviados": [], "execucoes": []}
+            "ultima_descoberta": "", "enviados": [], "execucoes": [], "bloqueados": {}}
     if ESTADO.exists():
         try:
             base.update(json.loads(ESTADO.read_text(encoding="utf-8")))
@@ -738,6 +784,9 @@ def podar(estado, agora_utc):
     limite_resumo = agora_utc - timedelta(hours=48)
     estado["resumo"] = [c for c in estado["resumo"]
                         if (parse_data(c.get("ts")) or agora_utc) > limite_resumo][-100:]
+    limite_bloq = agora_utc - timedelta(days=DIAS_BLOQUEADO)
+    estado["bloqueados"] = {d: ts for d, ts in estado.get("bloqueados", {}).items()
+                            if (parse_data(ts) or agora_utc) > limite_bloq}
     limite_rasp = agora_utc - timedelta(days=180)
     estado["raspadas"] = {k: v for k, v in estado.get("raspadas", {}).items()
                           if isinstance(v, dict)
@@ -1058,6 +1107,10 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
             "nome": pesq["nome"], "recolhidas": len(itens), "relevantes": len(cands),
             "alertas": sum(1 for c in cands if c["nivel"] == "alerta")})
         novos += cands
+    for d in SITES_BLOQUEADOS:  # da próxima vez, o telemóvel vai buscá-los
+        estado["bloqueados"][d] = agora_utc.isoformat()
+    registo["pelo_telemovel"] = sorted(set(LIDOS_TELEMOVEL))
+    registo["bloqueados"] = sorted(SITES_BLOQUEADOS)
 
     desc = cfg.get("descoberta") or {}
     hoje = agora.strftime("%Y-%m-%d")
@@ -1202,6 +1255,74 @@ def testar_pagina(args):
     return 0 if itens else 1
 
 
+def todas_as_fontes(cfg):
+    f = cfg.get("fontes") or {}
+    out = list(f.get("feeds") or []) + list(f.get("paginas") or [])
+    for p in cfg.get("pesquisas") or []:
+        if p.get("ativa", True):
+            out += list(p.get("feeds_extra") or []) + list(p.get("paginas_extra") or [])
+    return [x for x in out if x.get("url")]
+
+
+def no_tailscale(*args):
+    return subprocess.run(["sudo", "tailscale", *args], capture_output=True, text=True,
+                          timeout=60)
+
+
+def buscar_pelo_telemovel(cfg):
+    """Antes da verificação: vai buscar, pela internet do telemóvel (Tailscale, saída
+    'exit node'), os sites que recusam o GitHub. Guarda cópias que o agregador usa a
+    seguir. Se o telemóvel não estiver disponível, não faz nada."""
+    estado = carregar_estado()
+    bloqueados = list(estado.get("bloqueados") or {})
+    alvo = [x for x in todas_as_fontes(cfg)
+            if x.get("telemovel") or dominio_em(dominio_de(x["url"]), bloqueados)]
+    if not alvo:
+        print("Nenhum site precisa do telemóvel.")
+        return 0
+    try:
+        st = no_tailscale("status", "--json")
+    except (OSError, subprocess.SubprocessError) as e:
+        print(f"Tailscale indisponível ({type(e).__name__}).")
+        return 0
+    if st.returncode:
+        print("Tailscale indisponível: " + st.stderr.strip()[:200])
+        return 0
+    saidas = [p for p in (json.loads(st.stdout).get("Peer") or {}).values()
+              if p.get("ExitNodeOption") and p.get("Online")]
+    if not saidas:
+        print("O telemóvel não está disponível como saída (sem rede, ou com "
+              "'Run as exit node' desligado). Estes sites ficam de fora desta vez.")
+        return 0
+    ip, nome = saidas[0]["TailscaleIPs"][0], saidas[0].get("HostName", "?")
+    r = no_tailscale("set", "--exit-node=" + ip)
+    if r.returncode:
+        print("Não consegui sair pelo telemóvel: " + r.stderr.strip()[:200])
+        return 0
+    print(f"A sair pela internet de '{nome}' para {len(alvo)} fonte(s)…")
+    CACHE_TELEMOVEL.mkdir(exist_ok=True)
+    try:
+        time.sleep(3)
+        for x in alvo:
+            urls = [x["url"]]
+            for i, url in enumerate(urls):
+                try:
+                    resp = requests.get(url, headers={"User-Agent": UA_NAVEGADOR,
+                                                      "Accept-Language": "pt-PT,pt;q=0.9"},
+                                        timeout=30)
+                    resp.raise_for_status()
+                except requests.RequestException as e:
+                    print(f"  falhou pelo telemóvel: {x.get('nome') or url} ({type(e).__name__})")
+                    continue
+                ficheiro_cache(url).write_bytes(resp.content)
+                print(f"  {x.get('nome') or url}: trazido ({len(resp.content) // 1024} KB)")
+                if i == 0 and not x.get("item"):  # páginas: traz também o feed que anunciem
+                    urls += feeds_anunciados(resp.url, resp.text)[:2]
+    finally:
+        no_tailscale("set", "--exit-node=")
+    return 0
+
+
 def carregar_config():
     with open(CONFIG, encoding="utf-8") as f:
         return yaml.safe_load(f)
@@ -1222,6 +1343,8 @@ def main():
     ap.add_argument("--procurar-feeds", metavar="PESQUISA",
                     help="procura os feeds RSS (mesmo escondidos) dos sites que publicam "
                          "sobre um tema ou uma pesquisa do config.yaml")
+    ap.add_argument("--buscar-pelo-telemovel", action="store_true",
+                    help="(GitHub) traz pelo telemóvel os sites que bloqueiam o GitHub")
     args = ap.parse_args()
 
     telefone = re.sub(r"[^\d]", "", os.environ.get("WHATSAPP_TELEFONE", ""))
@@ -1230,6 +1353,8 @@ def main():
     try:
         if args.testar_pagina:
             return testar_pagina(args)
+        if args.buscar_pelo_telemovel:
+            return buscar_pelo_telemovel(carregar_config())
         if args.procurar_feeds:
             return procurar_feeds(args.procurar_feeds, carregar_config())
         if args.teste:

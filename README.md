@@ -38,6 +38,25 @@ Edita `config.yaml` no GitHub (ícone do lápis). Aí defines:
 - os **limites** de alerta, o horário de silêncio e a hora do resumo diário;
 - os **pesos** da pontuação.
 
+## Sites que bloqueiam o GitHub (pelo telemóvel)
+
+Alguns sites (ex.: Câmara da Sertã) recusam ligações vindas dos servidores do GitHub,
+que estão nos EUA. A app marca-os sozinha como "bloqueados" e, se tiveres o Tailscale
+configurado, vai buscá-los antes de cada verificação pela internet do teu telemóvel
+Android (que tem endereço português). Só esses sites passam pelo telemóvel; o resto
+continua direto. Sem o telemóvel disponível, esses sites ficam de fora dessa vez.
+
+Configuração (uma vez):
+1. Conta gratuita em tailscale.com; app Tailscale no telemóvel Android, com
+   **Run as exit node** ligado e a bateria sem restrições para a app.
+2. Na consola do Tailscale: aprovar o telemóvel como exit node e desligar a expiração
+   da chave dele; juntar `"tagOwners": {"tag:ci": ["autogroup:admin"]}` à política.
+3. Criar um cliente OAuth (Settings → OAuth clients) com permissão de escrita em
+   Auth Keys e a etiqueta `tag:ci`, e guardar no GitHub os segredos
+   `TS_OAUTH_CLIENT_ID` e `TS_OAUTH_SECRET`.
+
+Para forçar um site a ir sempre pelo telemóvel, junta-lhe `telemovel: true`.
+
 ## Encontrar feeds RSS escondidos
 
 Muitos sites têm feed RSS mas não o mostram. Para os encontrar a partir de uma pesquisa,
