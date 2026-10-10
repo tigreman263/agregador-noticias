@@ -1342,9 +1342,13 @@ def buscar_pelo_telemovel(cfg):
     CACHE_TELEMOVEL.mkdir(exist_ok=True)
     try:
         time.sleep(3)
+        trazidos = set()  # a mesma fonte pode estar em várias pesquisas: traz uma vez só
         for x in alvo:
             urls = [x["url"]]
             for i, url in enumerate(urls):
+                if url in trazidos:
+                    continue
+                trazidos.add(url)
                 try:
                     resp = requests.get(url, headers={"User-Agent": UA_NAVEGADOR,
                                                       "Accept-Language": "pt-PT,pt;q=0.9"},
