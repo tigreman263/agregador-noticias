@@ -31,8 +31,7 @@ fontes:
     - {nome: "Notícias de Coimbra", url: "https://www.noticiasdecoimbra.pt/feed/"}
     - {nome: "Rádio Hertz", url: "https://radiohertz.pt/feed/"}
     - {nome: "dnoticias.pt", url: "https://www.dnoticias.pt/rss.xml"}
-  paginas:
-    - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias"}
+  paginas: []
 
 # Descoberta automática de fontes: 1 vez por dia procura sites novos que
 # publicam sobre as tuas pesquisas e envia-te uma sugestão por WhatsApp.
