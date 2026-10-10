@@ -162,6 +162,8 @@ continua direto. Usa o **Tailscale** (gratuito para uso pessoal). Só funciona c
    ```
    "tagOwners": {"tag:ci": ["autogroup:admin"]},
    ```
+   Se a política já tiver uma secção `"tagOwners"`, não a repitas: junta só
+   `"tag:ci": ["autogroup:admin"]` dentro dela.
 6. **Settings → OAuth clients → Generate OAuth client**: marca **Auth Keys → Write**,
    escolhe a etiqueta **tag:ci** e gera. Copia o **Client ID** e o **Client secret**.
 
@@ -178,8 +180,11 @@ continua direto. Usa o **Tailscale** (gratuito para uso pessoal). Só funciona c
    gh secret set TS_OAUTH_CLIENT_ID -R tigreman263/agregador-noticias
    gh secret set TS_OAUTH_SECRET -R tigreman263/agregador-noticias
    ```
-8. No painel, carrega em **Simular**. Em **Atividade**, a fonte bloqueada deve aparecer
-   com a etiqueta **pelo telemóvel**.
+8. No painel, carrega em **Verificar agora** e, quando acabar, outra vez. A primeira
+   verificação marca o site como bloqueado; a seguinte já o vai buscar pelo telemóvel.
+   Em **Atividade → O que a app fez**, a fonte aparece com a etiqueta **pelo telemóvel**.
+   (O **Simular** não serve para isto: não grava nada, por isso não marca o site nem
+   mostra a etiqueta.)
 
 Sem estes segredos, ou com o telemóvel sem rede, os passos do telemóvel não fazem nada e o
 resto corre igual (os sites bloqueados ficam de fora dessa vez). O consumo é mínimo:
@@ -204,8 +209,8 @@ Notas:
   verificação seguinte. Para ver o efeito logo, usa **Simular**.
 - Ao gravar, o painel só reescreve a secção que mudaste; os comentários do resto do
   `config.yaml` mantêm-se.
-- **Descartar** (em Atividade): tira uma notícia, ou todas, dos alertas adiados ou do
-  resumo. O painel grava isso em `painel.json` e o agregador tira-as na verificação
+- **Descartar** (em Atividade): tira uma notícia dos alertas adiados ou do resumo;
+  **Descartar todos** (aparece quando há mais do que uma) tira a lista inteira. O painel grava isso em `painel.json` e o agregador tira-as na verificação
   seguinte, sem as enviar.
 - "**novas relevantes**" conta só as notícias relevantes que ainda não tinham sido
   vistas. "0 novas relevantes" não é erro: quer dizer que não apareceu nada de novo.
@@ -238,6 +243,7 @@ Cada pesquisa tem:
 - Bónus: +5 por cada fonte extra a publicar a mesma notícia (máx. +15) e +3 se tiver
   menos de 1 hora.
 - Peso: fonte confiável ×1,5; outra ×1,0; bloqueada é descartada.
+- Notícias sem nenhuma palavra das prioridades (0 pontos) são ignoradas.
 - Notícias com mais de 48 horas são ignoradas.
 
 ### Dicas
@@ -292,7 +298,8 @@ notícias em **Sites sem RSS** (`paginas` / `paginas_extra`), com nome e endere�
 - Sem mais nada, a app deteta as notícias sozinha: fica com os links que partilham o
   mesmo tipo de cartão (ignora menus e rodapés), prefere o título ao texto das imagens e
   procura a data no cartão.
-- Se a página anunciar um feed RSS escondido, a app usa-o sozinha (mais fiável).
+- Se a página anunciar um feed RSS escondido, a app usa-o sozinha (mais fiável), a não
+  ser que tenhas indicado seletores CSS.
 - Notícias sem data ficam com a data do dia em que a app as viu pela primeira vez. Na
   primeira leitura de uma página, o que já lá estava conta como antigo (não envia o
   arquivo todo).
@@ -351,10 +358,12 @@ telemóvel, junta-lhe `telemovel: true` no `config.yaml`.
 - **Resumo diário** (nota entre as duas notas): uma vez por dia, a partir das 8h
   (`hora_resumo`), com as 15 melhores. Notícias à espera há mais de 48 horas saem da fila.
 - **Fontes novas sugeridas**: uma vez por dia (secção 5.6).
-- **Horário de silêncio** (23h–7h): nada é enviado; os alertas ficam adiados e saem
-  depois.
+- **Horário de silêncio** (23h–7h): nada é enviado; os alertas ficam adiados (até 50; o
+  excesso vai para o resumo) e saem depois.
 - **Se o envio falhar** (CallMeBot em baixo, limite atingido): os alertas ficam adiados e
-  saem na verificação seguinte. Nada se perde e nada é enviado duas vezes.
+  saem na verificação seguinte, sem se perderem nem se repetirem. O resumo também volta a
+  tentar; se for tão grande que ocupe duas mensagens e só a segunda falhar, a primeira
+  parte pode chegar repetida.
 
 ---
 
