@@ -11,7 +11,6 @@ on:
         options:
           - normal
           - teste
-          - descobrir-chat
           - simular
           - descobrir-fontes
         default: normal
@@ -26,7 +25,7 @@ concurrency:
 jobs:
   correr:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
 
@@ -40,13 +39,12 @@ jobs:
 
       - name: Executar
         env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          WHATSAPP_TELEFONE: ${{ secrets.WHATSAPP_TELEFONE }}
+          WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
           ACAO: ${{ github.event.inputs.acao || 'normal' }}
         run: |
           case "$ACAO" in
             teste) python agregador.py --teste ;;
-            descobrir-chat) python agregador.py --descobrir-chat ;;
             simular) python agregador.py --simular ;;
             descobrir-fontes) python agregador.py --fontes ;;
             *) python agregador.py ;;

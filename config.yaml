@@ -22,14 +22,27 @@ pesos:
 
 # Fontes: usa o domínio, sem "www" nem "https://".
 fontes:
-  confiaveis: []               # ex: ["publico.pt", "rtp.pt"]
-  bloqueadas: []               # ex: ["site-de-spam.com"]
+  confiaveis: []               # ex: ["publico.pt", "rtp.pt"]  -> valem x1,5
+  neutras: []                  # já vistas, peso normal, deixam de ser sugeridas
+  bloqueadas: []               # ex: ["site-de-spam.com"]      -> descartadas
   feeds: []                    # feeds RSS gerais. Formato:
                                #   - {nome: "Nome do site", url: "https://exemplo.pt/rss"}
+  # Sites SEM feed RSS: a app lê a página de notícias diretamente.
+  # Só "nome" e "url" são obrigatórios; sem seletores, deteta as notícias sozinha.
+  # Para afinar, testa no computador:  python agregador.py --testar-pagina URL
+  # Formato (exemplo real na pesquisa "Sertã", em paginas_extra):
+  #   - nome: "Nome do site"
+  #     url: "https://exemplo.pt/noticias"
+  #     item: "div.noticia"    # cada notícia (opcional)
+  #     titulo: "h2 a"         # dentro do item (opcional)
+  #     resumo: "p"            # (opcional)
+  #     data: "time"           # (opcional, ativa o filtro de idade)
+  paginas: []
 
 # Descoberta automática de fontes: 1 vez por dia procura sites novos que
-# publicam sobre as tuas pesquisas e envia-te uma sugestão no Telegram, com
-# botões Confiável / Neutra / Bloquear. A tua escolha aplica-se sozinha.
+# publicam sobre as tuas pesquisas e envia-te uma sugestão por WhatsApp.
+# Para decidir, junta o domínio a fontes.confiaveis, fontes.neutras ou
+# fontes.bloqueadas. Sem decisão em 14 dias, a sugestão é esquecida.
 descoberta:
   ativa: true
   hora: 9                      # a partir desta hora, 1 vez por dia
@@ -40,10 +53,13 @@ descoberta:
 
 # Cada pesquisa procura no Google Notícias pela "consulta" e filtra
 # com as palavras-chave. Podes ter várias pesquisas.
+# "obrigatorias": a notícia só conta se tiver TODAS estas palavras
+# (ex: ["sertã"] para não apanhar notícias de outros concelhos).
 pesquisas:
   - nome: "IA na saúde"
     ativa: true
     consulta: "inteligência artificial saúde"
+    obrigatorias: []
     palavras:
       alta: ["inteligência artificial", "regulação", "aprovação clínica"]
       media: ["triagem", "diagnóstico", "dispositivos médicos"]
@@ -52,3 +68,29 @@ pesquisas:
     limite_alerta: 25          # nota mínima para alerta imediato
     limite_resumo: 10          # nota mínima para o resumo diário
     feeds_extra: []            # feeds RSS só desta pesquisa
+    paginas_extra: []          # páginas sem RSS só desta pesquisa (mesmo formato de fontes.paginas)
+
+  # Notícias locais. As obrigatórias só filtram (não dão pontos); por isso
+  # "sertã" também está em baixa, e o limite do resumo é mais baixo.
+  - nome: "Sertã"
+    ativa: true
+    consulta: "Sertã"
+    obrigatorias: ["sertã"]
+    palavras:
+      alta: ["agricultor", "agricultura", "subsídio", "apoio"]
+      media: ["câmara", "município", "municipal", "concelho", "candidatura", "incentivo"]
+      baixa: ["sertã"]
+    excluir: []
+    limite_alerta: 20
+    limite_resumo: 4
+    feeds_extra:
+      # Feed RSS escondido do site da Câmara (mais fiável do que ler a página).
+      # Tudo o que publica é da Sertã: "local" dispensa as obrigatórias. Usa
+      # "local" só em feeds_extra/paginas_extra, para não valer noutras pesquisas.
+      - nome: "Câmara da Sertã"
+        url: "https://cm-serta.pt/comunicacao/noticias?format=feed&type=rss"
+        local: true
+    paginas_extra: []
+    # Outras câmaras com feed escondido, para uma pesquisa de cada lugar:
+    #   Vila de Rei: https://www.cm-viladerei.pt/index.php/noticias?format=feed&type=rss
+    #   Oleiros:     https://cm-oleiros.pt/feed/

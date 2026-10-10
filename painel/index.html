@@ -69,6 +69,9 @@ button{font-family:inherit;font-size:14px;cursor:pointer}
 .chip{padding:6px 12px;border-radius:14px;border:0;font-size:14px;font-weight:500;min-height:32px}
 .chip.hi{background:var(--hi-bg);color:var(--hi-ink)}.chip.md{background:var(--md-bg);color:var(--md-ink)}
 .chip.lo{background:var(--lo-bg);color:var(--lo-ink)}.chip.ex{background:var(--neu-bg);color:var(--neu-ink)}
+.chip.ob{background:var(--accent-soft);color:var(--accent-soft-ink)}.ob-t{color:var(--accent-soft-ink)}
+code{font-family:ui-monospace,Consolas,monospace;font-size:12px;background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 5px;word-break:break-all}
+.bubble .wa-link{color:var(--accent);word-break:break-all}
 .tag.hi{background:var(--hi-bg);color:var(--hi-ink)}.tag.md{background:var(--md-bg);color:var(--md-ink)}.tag.lo{background:var(--lo-bg);color:var(--lo-ink)}
 .grp{display:flex;flex-direction:column;gap:8px;padding-top:14px;border-top:1px solid var(--line)}
 .grp:first-of-type{border-top:0;padding-top:0}
@@ -108,7 +111,7 @@ input[type=text],input[type=number],select{width:100%;min-height:44px;padding:0 
 var KEY='agregador-teste-v1';
 function $(s){return document.querySelector(s);}
 function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
-function norm(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();}
+function norm(s){return String(s||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();}
 function uid(){return Math.random().toString(36).slice(2,9);}
 
 /* ---------- base de notícias de teste (inventadas) ---------- */
@@ -134,52 +137,94 @@ var BANK=[
  {id:'b18',t:'Inflação em Portugal abranda em setembro',r:'',d:'gazetaeconomica.exemplo',m:130},
  {id:'b19',t:'Benfica vence em jogo decisivo da Liga',r:'',d:'desportoreal.exemplo',m:35},
  {id:'b20',t:'Seleção nacional divulga convocatória',r:'',d:'desportoreal.exemplo',m:90},
- {id:'b21',t:'Consulta pública: novas regras para arrendamento',r:'',d:'portalcidade.exemplo',m:55}
+ {id:'b21',t:'Consulta pública: novas regras para arrendamento',r:'',d:'portalcidade.exemplo',m:55},
+ /* notícias inventadas de páginas sem RSS (só contam se a página estiver na lista "Sites sem RSS") */
+ {id:'p1',t:'Câmara da Sertã apresenta projeto de inteligência artificial para apoio aos munícipes',r:'Sistema de triagem de pedidos no atendimento municipal.',d:'cm-serta.pt',m:50,pg:true},
+ {id:'p2',t:'Sertã recebe feira de investimento e emprego',r:'',d:'cm-serta.pt',m:150,pg:true}
 ];
-function dname(d){return NAMES[d]||d;}
+function dname(d){
+  if(NAMES[d])return NAMES[d];
+  for(var i=0;i<S.paginas.length;i++){if(domDe(S.paginas[i].url)===d&&S.paginas[i].nome)return S.paginas[i].nome;}
+  return d;
+}
+function domDe(url){
+  try{var h=new URL(String(url||'').trim()).hostname.toLowerCase();return h.indexOf('www.')===0?h.slice(4):h;}catch(e){return '';}
+}
 var FEEDS={'saudeemfoco.exemplo':1,'diariotech.exemplo':1,'gazetaeconomica.exemplo':1};
 
 /* ---------- estado ---------- */
 function defaults(){
   return {
     searches:[{id:uid(),nome:'IA na saúde',ativa:true,
+      obrigatorias:[],
       palavras:{alta:['inteligência artificial','regulação','aprovação clínica'],media:['triagem','diagnóstico','dispositivos médicos'],baixa:['startup','investimento']},
       excluir:['horóscopo','publicidade'],limAlerta:25,limResumo:10}],
     src:{'saudeemfoco.exemplo':'confiavel'},
     w:{alta:10,media:4,baixa:1,confiavel:1.5,desconhecida:1,bonusExtra:5,bonusExtraMax:15,bonusHora:3,idadeMax:48,descMin:2,descMax:5},
+    paginas:[{id:uid(),nome:'Câmara da Sertã',url:'https://cm-serta.pt/comunicacao/noticias',item:'div.article-container.has-media',titulo:'h2 a',resumo:'div.article-introtext',data:'.published time'}],
+    wa:{tel:''},
     extra:[],fb:{},pend:{},feeds:{},
-    ui:{tab:'alertas',filtro:'imediatos',sel:null,edit:null,srcTab:'sugeridas',tg:{},form:{t:'',r:'',d:'',m:'10'}}
+    ui:{tab:'alertas',filtro:'imediatos',sel:null,edit:null,srcTab:'sugeridas',wa:{},form:{t:'',r:'',d:'',m:'10'},pform:PFORM()}
   };
+}
+function PFORM(){return {nome:'',url:'',item:'',titulo:'',resumo:'',data:''};}
+function lista(v){return Array.isArray(v)?v.filter(function(x){return x!=null&&String(x).trim();}).map(String):[];}
+function obj(v){return v&&typeof v==='object'&&!Array.isArray(v)?v:{};}
+function fixSearch(x){
+  x=obj(x);var p=obj(x.palavras);
+  return {id:x.id?String(x.id):uid(),nome:typeof x.nome==='string'?x.nome:'',ativa:x.ativa!==false,
+    obrigatorias:lista(x.obrigatorias),palavras:{alta:lista(p.alta),media:lista(p.media),baixa:lista(p.baixa)},excluir:lista(x.excluir),
+    limAlerta:isFinite(Number(x.limAlerta))&&x.limAlerta!==''&&x.limAlerta!=null?Number(x.limAlerta):25,
+    limResumo:isFinite(Number(x.limResumo))&&x.limResumo!==''&&x.limResumo!=null?Number(x.limResumo):10};
+}
+function fixPage(x){
+  x=obj(x);function t(v){return typeof v==='string'?v:'';}
+  return {id:x.id?String(x.id):uid(),nome:t(x.nome),url:t(x.url),item:t(x.item),titulo:t(x.titulo),resumo:t(x.resumo),data:t(x.data)};
 }
 function load(){
   var d=defaults();
   try{
     var s=localStorage.getItem(KEY);
-    if(s){var o=JSON.parse(s);
-      d.searches=o.searches||d.searches;d.src=o.src||d.src;d.extra=o.extra||[];d.fb=o.fb||{};d.pend=o.pend||{};d.feeds=o.feeds||{};
-      d.w=Object.assign(d.w,o.w||{});d.ui=Object.assign(d.ui,o.ui||{});
-      d.ui.form=Object.assign({t:'',r:'',d:'',m:'10'},d.ui.form||{});
+    if(s){var o=obj(JSON.parse(s));
+      d.searches=Array.isArray(o.searches)?o.searches:d.searches;d.src=obj(o.src||d.src);d.extra=Array.isArray(o.extra)?o.extra:[];
+      d.fb=obj(o.fb);d.pend=obj(o.pend);d.feeds=obj(o.feeds);
+      if(Array.isArray(o.paginas))d.paginas=o.paginas;
+      d.wa=Object.assign(d.wa,obj(o.wa));
+      d.w=Object.assign(d.w,obj(o.w));d.ui=Object.assign(d.ui,obj(o.ui));
+      delete d.ui.tg;
+      d.ui.wa=obj(d.ui.wa);
+      d.ui.form=Object.assign({t:'',r:'',d:'',m:'10'},obj(d.ui.form));
+      d.ui.pform=Object.assign(PFORM(),obj(d.ui.pform));
     }
-  }catch(e){}
+  }catch(e){d=defaults();}
+  d.searches=d.searches.map(fixSearch);
+  d.paginas=d.paginas.map(fixPage);
+  d.wa.tel=typeof d.wa.tel==='string'?d.wa.tel:'';
   return d;
 }
-var S=load(); var focusId=null; var gerando=false; var confirmar=null;
+var S=load(); var focusId=null; var gerando=false; var confirmar=null; var waKey='';
 function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
 function cur(){for(var i=0;i<S.searches.length;i++){if(S.searches[i].id===S.ui.edit)return S.searches[i];}return null;}
-function arr(s,l){return l==='excluir'?s.excluir:s.palavras[l];}
+function arr(s,l){return l==='excluir'?s.excluir:(l==='obrigatorias'?s.obrigatorias:s.palavras[l]);}
 
 /* ---------- motor de pontuação (mesma lógica da app real) ---------- */
-function allNews(){return BANK.concat(S.extra).map(function(n){return Object.assign({},n,{tn:norm(n.t),tx:norm(n.r)});});}
+function pageDomains(){var m={};S.paginas.forEach(function(p){var d=domDe(p.url);if(d)m[d]=1;});return m;}
+function allNews(){
+  var pd=pageDomains();
+  return BANK.filter(function(n){return !n.pg||pd[n.d];}).concat(S.extra).map(function(n){return Object.assign({},n,{tn:norm(n.t),tx:norm(n.r)});});
+}
+/* igual a contem() em Python: palavras de até 3 letras só inteiras, as outras aceitam plurais */
+function contem(q,texto){return texto.indexOf(q.length<=3?' '+q+' ':' '+q)>-1;}
 function scoreKw(n,s){
   var T=' '+n.tn+' ',X=' '+n.tx+' ',i,p;
   for(i=0;i<s.excluir.length;i++){p=norm(s.excluir[i]);if(p&&(T.indexOf(' '+p+' ')>-1||X.indexOf(' '+p+' ')>-1))return null;}
+  for(i=0;i<s.obrigatorias.length;i++){p=norm(s.obrigatorias[i]);if(p&&!(contem(p,T)||contem(p,X)))return null;}
   var pts=0,found={alta:[],media:[],baixa:[]};
   ['alta','media','baixa'].forEach(function(l){
     s.palavras[l].forEach(function(k){
       var q=norm(k);if(!q)return;
-      var key=q.length<=3?' '+q+' ':' '+q;
-      if(T.indexOf(key)>-1){pts+=S.w[l]*2;found[l].push(k);}
-      else if(X.indexOf(key)>-1){pts+=S.w[l];found[l].push(k);}
+      if(contem(q,T)){pts+=S.w[l]*2;found[l].push(k);}
+      else if(contem(q,X)){pts+=S.w[l];found[l].push(k);}
     });
   });
   return {pts:pts,found:found};
@@ -218,12 +263,7 @@ function evaluate(s){
     return {n:best.i.n,found:best.i.found,nota:Math.round(best.nota*10)/10,conf:best.conf,nfontes:nd,nivel:nivel,search:s};
   }).sort(function(a,b){return b.nota-a.nota;});
 }
-function ago(m){return m<1?'agora mesmo':(m<60?'há '+m+' min':(m<2880?'há '+Math.round(m/60)+' h':'há '+Math.round(m/1440)+' dias'));}
-function foundTxt(f,html){
-  var rot={alta:'alta',media:'média',baixa:'baixa'},out=[];
-  ['alta','media','baixa'].forEach(function(l){if(f[l].length)out.push(rot[l]+': '+f[l].map(esc).join(', '));});
-  return out.join(' · ');
-}
+function ago(m){m=Math.floor(m);return m<1?'agora mesmo':(m<60?'há '+m+' min':(m<2880?'há '+Math.floor(m/60)+' h':'há '+Math.floor(m/1440)+' dias'));}
 
 /* ---------- ícones ---------- */
 var IC={
@@ -263,16 +303,28 @@ function vAlertas(){
   list.forEach(function(r){h+=card(r,s);});
   return h;
 }
-function tgHtml(r){
-  var l=[];
-  l.push('🔔 <a href="#" data-a="noop"><strong>'+esc(r.n.t)+'</strong></a>');
-  l.push(esc(dname(r.n.d))+' ('+(r.conf?'confiável':'fonte nova')+') · nota '+r.nota+' · '+esc(r.search.nome));
-  var ft=foundTxt(r.found);if(ft)l.push('🔑 '+ft);
-  l.push('🕒 '+ago(r.n.m)+(r.nfontes>1?' · '+r.nfontes+' fontes':''));
-  return '<div class="bubble" aria-label="Pré-visualização da mensagem do Telegram">'+l.map(function(x){return '<div>'+x+'</div>';}).join('')+'</div>';
+/* mensagem de WhatsApp: texto simples; *assim* aparece a negrito; links em texto */
+function waFmt(linha){
+  if(/^https?:\/\//.test(linha))return '<span class="wa-link">'+esc(linha)+'</span>';
+  return esc(linha).replace(/\*([^*\n]+)\*/g,'<strong>$1</strong>');
 }
+function waBubble(linhas,rotulo){
+  return '<div class="bubble" aria-label="'+esc(rotulo)+'">'+linhas.map(function(x){return '<div>'+waFmt(x)+'</div>';}).join('')+'</div>';
+}
+function linkTeste(n){return 'https://'+n.d+'/noticia/'+n.id;}
+/* igual a formatar_alerta() em Python */
+function alertaLinhas(r){
+  var l=['🔔 *'+r.n.t+'*',dname(r.n.d)+' ('+(r.conf?'confiável':'fonte nova')+') · nota '+r.nota+' · '+r.search.nome];
+  var rot={alta:'alta',media:'média',baixa:'baixa'},p=[];
+  ['alta','media','baixa'].forEach(function(k){if(r.found[k].length)p.push(rot[k]+': '+r.found[k].join(', '));});
+  if(p.length)l.push('🔑 '+p.join(' · '));
+  l.push('🕒 '+ago(r.n.m)+(r.nfontes>1?' · '+r.nfontes+' fontes':''));
+  l.push(linkTeste(r.n));
+  return l;
+}
+function waHtml(r){return waBubble(alertaLinhas(r),'Pré-visualização da mensagem de WhatsApp');}
 function card(r,s){
-  var key=r.n.id+':'+s.id,fb=S.fb[key],tg=S.ui.tg[key];
+  var key=r.n.id+':'+s.id,fb=S.fb[key],wa=S.ui.wa[key];
   var srcTag=S.src[r.n.d]==='confiavel'?'<span class="tag ok">Confiável</span>':(S.src[r.n.d]==='neutra'?'<span class="tag">Neutra</span>':'<span class="tag">Fonte nova</span>');
   var lvl='';
   [['alta','hi','Alta'],['media','md','Média'],['baixa','lo','Baixa']].forEach(function(x){
@@ -287,8 +339,8 @@ function card(r,s){
     '<div class="gap8">'+
       '<button class="btn" style="flex:1" data-a="fb" data-p="'+key+'" data-q="up" aria-pressed="'+(fb==='up')+'">Útil</button>'+
       '<button class="btn" style="flex:1" data-a="fb" data-p="'+key+'" data-q="down" aria-pressed="'+(fb==='down')+'">Não útil</button>'+
-      '<button class="btn btn-dark" style="flex:1" data-a="tgv" data-p="'+key+'" aria-expanded="'+(!!tg)+'">Telegram</button>'+
-    '</div>'+(tg?tgHtml(r):'')+
+      '<button class="btn btn-dark" style="flex:1" data-a="wav" data-p="'+key+'" aria-expanded="'+(!!wa)+'">WhatsApp</button>'+
+    '</div>'+(wa?waHtml(r):'')+
     (fb==='down'?'<div class="note">Na app real, vários "Não útil" da mesma fonte ou palavra fariam o sistema sugerir baixar-lhe o peso.</div>':'')+
   '</article>';
 }
@@ -301,7 +353,8 @@ function vPesquisas(){
   S.searches.forEach(function(x){
     var res=evaluate(x),n=res.filter(function(r){return r.nivel==='alerta';}).length;
     h+='<article class="card"><div class="row"><div><div style="font-weight:600;font-size:17px">'+esc(x.nome||'Sem nome')+'</div>'+
-      '<div class="sm muted">'+(x.ativa?'Ativa':'Em pausa')+' · alerta a partir de nota '+x.limAlerta+' · '+n+' alertas agora</div></div></div>'+
+      '<div class="sm muted">'+(x.ativa?'Ativa':'Em pausa')+' · alerta a partir de nota '+x.limAlerta+' · '+n+' alertas agora'+
+      (x.obrigatorias.length?'<br>Obrigatórias: '+x.obrigatorias.map(esc).join(', '):'')+'</div></div></div>'+
       '<div class="gap8"><button class="btn btn-line" style="flex:1" data-a="editar" data-p="'+x.id+'">Editar</button>'+
       '<button class="btn" style="flex:1" data-a="ativa" data-p="'+x.id+'">'+(x.ativa?'Pausar':'Ativar')+'</button>'+
       '<button class="btn" style="flex:1" data-a="ver" data-p="'+x.id+'">Ver alertas</button></div></article>';
@@ -320,6 +373,8 @@ function vEdit(s){
   h+='<div class="card">'+
     '<div class="field"><label class="f" for="in-nome">Tema da pesquisa</label><div class="addrow"><input id="in-nome" type="text" data-in="nome" value="'+esc(s.nome)+'" autocomplete="off" placeholder="ex.: Bitcoin e regulação"><button class="btn btn-line" data-a="gerar"'+(gerando?' disabled':'')+'>'+(gerando?'A gerar…':'Gerar palavras')+'</button></div></div>'+
     '<div class="xs muted">"Gerar palavras" pede ao Claude sugestões para o tema e junta-as às que já tens.</div>'+
+    grp(s,'obrigatorias','Obrigatórias','a notícia tem de ter todas','ob')+
+    '<div class="xs muted">Se faltar alguma destas palavras, a notícia é descartada. Ex.: "sertã" para não apanhar notícias de outros concelhos.</div>'+
     grp(s,'alta','Prioridade alta','10 pontos por defeito','hi')+
     grp(s,'media','Prioridade média','4 pontos por defeito','md')+
     grp(s,'baixa','Prioridade baixa','1 ponto por defeito','lo')+
@@ -346,8 +401,8 @@ function descobrir(){
     var e=stats[n.d]||(stats[n.d]={ids:{},pes:{},ex:n.t});
     e.ids[n.id]=1;e.pes[sr.nome||'Sem nome']=1;
   });});
-  var espaco=Math.max(0,10-Object.keys(S.pend).length),lim=Math.min(S.w.descMax,espaco);
-  var c=Object.keys(stats).filter(function(d){return !S.src[d]&&!S.pend[d]&&Object.keys(stats[d].ids).length>=S.w.descMin;})
+  var espaco=Math.max(0,10-Object.keys(S.pend).length),lim=Math.min(S.w.descMax,espaco),pd=pageDomains();
+  var c=Object.keys(stats).filter(function(d){return !S.src[d]&&!S.pend[d]&&!pd[d]&&Object.keys(stats[d].ids).length>=S.w.descMin;})
     .sort(function(a,b){return Object.keys(stats[b].ids).length-Object.keys(stats[a].ids).length;}).slice(0,lim);
   if(!c.length){
     toast(espaco===0?'Já tens 10 sugestões por decidir. Decide algumas primeiro.':'Nada de novo hoje: nenhuma fonte por classificar tem '+S.w.descMin+' notícias relevantes.');
@@ -355,25 +410,59 @@ function descobrir(){
   }
   c.forEach(function(d){S.pend[d]={nome:dname(d),n:Object.keys(stats[d].ids).length,pes:Object.keys(stats[d].pes).slice(0,3),ex:stats[d].ex,feed:!!FEEDS[d]};});
   S.ui.srcTab='sugeridas';render();
-  toast(c.length+(c.length===1?' fonte nova sugerida.':' fontes novas sugeridas.')+' Decide com os botões, como no Telegram.');
+  toast(c.length+(c.length===1?' fonte nova sugerida.':' fontes novas sugeridas.')+' Na app real chegam por WhatsApp e decides no config.yaml. Aqui podes decidir com os botões.');
 }
 function decidir(d,c){
   var st={c:'confiavel',n:'neutra',b:'bloqueada'}[c],sug=S.pend[d];
   if(!st)return;
   delete S.pend[d];S.src[d]=st;delete S.feeds[d];
   var rot={confiavel:'marcada como confiável',neutra:'marcada como neutra',bloqueada:'bloqueada'}[st];
-  if(st==='confiavel'&&sug&&sug.feed){S.feeds[d]=true;rot+=' e passa a ser lida diretamente';}
+  var lista={confiavel:'fontes.confiaveis',neutra:'fontes.neutras',bloqueada:'fontes.bloqueadas'}[st];
+  var extra='';
+  if(st==='confiavel'&&sug&&sug.feed){S.feeds[d]=true;rot+=' e passa a ser lida diretamente';extra=' e o feed a fontes.feeds';}
   render();
-  toast(dname(d)+': '+rot+'. Na app real aplica-se na verificação seguinte (até 30 min).');
+  toast(dname(d)+': '+rot+'. Na app real isto é juntar o domínio a '+lista+extra+' no config.yaml; aplica-se na verificação seguinte.');
 }
+/* igual a texto_sugestao() em Python */
 function sugHtml(d,x){
-  var l=['🔎 <strong>Fonte nova: '+esc(x.nome)+'</strong> ('+esc(d)+')',
-    'Apareceu em '+x.n+' notícias relevantes · '+esc(x.pes.join(', ')),
-    'Exemplo: '+esc(x.ex),
-    x.feed?'📡 Encontrei o feed dela: se a aprovares, passo a lê-la diretamente.':'📡 Sem feed próprio: continuo a vê-la pelo Google Notícias.'];
-  return '<article class="card"><div class="bubble" aria-label="Mensagem do Telegram">'+l.map(function(t){return '<div>'+t+'</div>';}).join('')+'</div>'+
+  var l=['🔎 *Fonte nova: '+x.nome+'* ('+d+')',
+    'Apareceu em '+x.n+' notícias relevantes · '+x.pes.join(', '),
+    'Exemplo: '+x.ex,
+    x.feed?'📡 Feed: https://'+d+'/feed':'📡 Sem feed próprio: continuo a vê-la pelo Google Notícias.'];
+  return '<article class="card">'+waBubble(l,'Sugestão recebida por WhatsApp')+
+    '<div class="xs muted">Decidir no painel (simula a edição do config.yaml):</div>'+
     '<div class="gap8" role="group" aria-label="Decidir sobre '+esc(dname(d))+'">'+
     [['c','✅ Confiável'],['n','➖ Neutra'],['b','🚫 Bloquear']].map(function(b){return '<button class="btn" style="flex:1" data-a="dec" data-p="'+esc(d)+'" data-q="'+b[0]+'">'+b[1]+'</button>';}).join('')+'</div></article>';
+}
+function pagCmd(p){
+  var c='python agregador.py --testar-pagina '+p.url;
+  [['item','item'],['titulo','titulo'],['resumo','resumo'],['data','data']].forEach(function(k){if(p[k[0]])c+=' --'+k[1]+' "'+p[k[0]]+'"';});
+  return c;
+}
+function paginasHtml(){
+  var f=S.ui.pform,dm=domains();
+  var h='<div class="card"><strong style="font-size:17px">Sites sem RSS</strong>'+
+    '<div class="sm muted">Para sites que não têm feed RSS, a app lê a página de notícias diretamente (no config.yaml, em fontes.paginas). Só o nome e o endereço são obrigatórios: sem seletores, a app deteta as notícias sozinha. Os seletores servem para afinar quando a deteção falha.</div>'+
+    '<div class="xs muted">Para ver o que a app encontra, corre no computador: <code>python agregador.py --testar-pagina URL</code></div>'+
+    '<div class="note">Modo teste: os sites não são lidos de verdade. Só a Câmara da Sertã tem notícias inventadas na base de teste.</div>';
+  if(!S.paginas.length)h+='<div class="muted sm">Nenhum site na lista.</div>';
+  S.paginas.forEach(function(p){
+    var d=domDe(p.url),sel=[['item','item'],['titulo','título'],['resumo','resumo'],['data','data']].filter(function(k){return p[k[0]];});
+    h+='<div style="border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:6px">'+
+      '<div class="row"><div><div style="font-weight:600">'+esc(p.nome||'Sem nome')+'</div><div class="xs muted" style="word-break:break-all">'+esc(p.url)+'</div></div>'+
+      '<button class="btn btn-danger" data-a="delpag" data-p="'+esc(p.id)+'" aria-label="Remover '+esc(p.nome)+'">Remover</button></div>'+
+      '<div class="xs muted">'+(sel.length?'Seletores: '+sel.map(function(k){return k[1]+' <code>'+esc(p[k[0]])+'</code>';}).join(' · '):'Sem seletores: deteção automática.')+
+      (d&&dm[d]?' · '+dm[d]+' notícias na base de teste':'')+'</div>'+
+      '<div class="xs muted">Testar: <code>'+esc(pagCmd(p))+'</code></div></div>';
+  });
+  function campo(k,label,ph){return '<div class="field"><label class="f" for="pg-'+k+'">'+label+'</label><input id="pg-'+k+'" type="text" data-in="pform" data-p="'+k+'" value="'+esc(f[k])+'" placeholder="'+esc(ph)+'" autocomplete="off"></div>';}
+  h+='<div style="border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:10px"><strong>Juntar site</strong>'+
+    campo('nome','Nome','ex.: Câmara de Proença-a-Nova')+campo('url','Endereço da página de notícias','https://…')+
+    '<div class="xs muted">Opcional: seletores CSS (deixa em branco para a deteção automática).</div>'+
+    campo('item','Cada notícia (item)','ex.: div.noticia')+campo('titulo','Título, dentro do item','ex.: h2 a')+
+    campo('resumo','Resumo, dentro do item','ex.: p.resumo')+campo('data','Data, dentro do item','ex.: time')+
+    '<button class="btn btn-primary block" data-a="addpag">Juntar site</button></div></div>';
+  return h;
 }
 function vFontes(){
   var dm=domains(),tab=S.ui.srcTab,pend=Object.keys(S.pend).sort();
@@ -381,7 +470,8 @@ function vFontes(){
   var tabs=[['sugeridas','Sugeridas',pend.length],['confiavel','Confiáveis',por('confiavel').length],['neutra','Neutras',por('neutra').length],['bloqueada','Bloqueadas',por('bloqueada').length]];
   var h=head('Fontes');
   h+='<div class="card"><strong style="font-size:17px">Descoberta automática</strong>'+
-    '<div class="sm muted">Na app real, 1 vez por dia procura sites novos que publicam sobre as tuas pesquisas e envia-os para o teu Telegram com três botões. Aqui podes simular a procura de hoje.</div>'+
+    '<div class="sm muted">Na app real, 1 vez por dia procura sites novos que publicam sobre as tuas pesquisas e envia-te uma sugestão por WhatsApp. A mensagem é só texto, sem botões: para decidir, juntas o domínio a fontes.confiaveis, fontes.neutras ou fontes.bloqueadas no config.yaml. Sem decisão em 14 dias, a sugestão é esquecida.</div>'+
+    '<div class="sm muted">Aqui podes simular a procura de hoje e decidir com os botões do painel, que fazem de conta que editaste o config.yaml.</div>'+
     '<button class="btn btn-line block" data-a="descobrir">Simular a procura de hoje</button>'+
     '<div class="xs muted">Só sugere sites com pelo menos '+S.w.descMin+' notícias relevantes, até '+S.w.descMax+' por dia e nunca mais de 10 por decidir. Podes mudar isto em Definições.</div></div>';
   h+='<div class="pillrow" role="group" aria-label="Tipo de fonte">'+tabs.map(function(t){
@@ -389,7 +479,7 @@ function vFontes(){
   if(tab==='sugeridas'){
     if(!pend.length)h+='<div class="empty"><div class="muted">Sem sugestões por decidir.<br>Carrega em "Simular a procura de hoje".</div></div>';
     pend.forEach(function(d){h+=sugHtml(d,S.pend[d]);});
-    return h;
+    return h+paginasHtml();
   }
   var list=por(tab);
   if(!list.length)h+='<div class="empty"><div class="muted">Nenhuma fonte aqui.</div></div>';
@@ -400,8 +490,8 @@ function vFontes(){
       '<div class="gap8" role="group" aria-label="Classificar '+esc(dname(d))+'">'+
       [['confiavel','Confiável'],['neutra','Neutra'],['bloqueada','Bloquear']].map(function(x){return '<button class="btn" style="flex:1" data-a="src" data-p="'+esc(d)+'" data-q="'+x[0]+'" aria-pressed="'+(st===x[0])+'">'+x[1]+'</button>';}).join('')+'</div></article>';
   });
-  h+='<p class="xs muted">Confiável: nota ×'+S.w.confiavel+' · Neutra ou nova: ×'+S.w.desconhecida+' · Bloqueada: descartada.</p>';
-  return h;
+  h+='<p class="xs muted">Confiável: nota ×'+S.w.confiavel+' · Neutra ou nova: ×'+S.w.desconhecida+' · Bloqueada: descartada. Na app real, estas listas ficam no config.yaml.</p>';
+  return h+paginasHtml();
 }
 
 /* ---------- ecrã: Definições ---------- */
@@ -411,9 +501,12 @@ function num(label,key,step){
 function vDef(){
   var f=S.ui.form;
   var h=head('Definições');
-  h+='<div class="card"><div class="row"><strong style="font-size:17px">Telegram</strong><span class="tag warn">Modo teste</span></div>'+
-    '<div class="sm muted">Aqui nada é enviado. Na app real, os alertas chegam ao teu bot.</div>'+
-    '<button class="btn btn-line block" data-a="tgteste">Enviar mensagem de teste</button></div>';
+  h+='<div class="card"><div class="row"><strong style="font-size:17px">WhatsApp (CallMeBot)</strong><span class="tag warn">Modo teste</span></div>'+
+    '<div class="sm muted">Aqui nada é enviado. Na app real, os alertas chegam ao teu WhatsApp através do CallMeBot (só envio, as mensagens não têm botões). O telefone e a API key ficam como segredos WHATSAPP_TELEFONE e WHATSAPP_APIKEY no GitHub.</div>'+
+    '<div class="field"><label class="f" for="wa-tel">Telefone (com indicativo)</label><input id="wa-tel" type="text" inputmode="tel" data-in="wa" data-p="tel" value="'+esc(S.wa.tel)+'" placeholder="ex.: 351912345678" autocomplete="off"></div>'+
+    '<div class="field"><label class="f" for="wa-key">API key do CallMeBot</label><input id="wa-key" type="text" data-in="wa" data-p="key" value="'+esc(waKey)+'" placeholder="a apikey que o CallMeBot te enviou" autocomplete="off"></div>'+
+    '<div class="xs muted">A API key não é guardada neste navegador.</div>'+
+    '<button class="btn btn-line block" data-a="wateste">Enviar mensagem de teste</button></div>';
   h+='<div class="card"><strong style="font-size:17px">Pontuação</strong>'+
     num('Palavra alta (pontos)','alta',1)+num('Palavra média (pontos)','media',1)+num('Palavra baixa (pontos)','baixa',1)+
     num('Fonte confiável (multiplicador)','confiavel',0.1)+num('Fonte desconhecida (multiplicador)','desconhecida',0.1)+
@@ -492,9 +585,9 @@ document.addEventListener('click',function(e){
     toast('Verificação feita: '+i+' alertas imediatos e '+r+' para o resumo. Modo teste, nada foi enviado.');return;
   }
   if(a==='fb'){S.fb[p]=S.fb[p]===q?null:q;render();return;}
-  if(a==='tgv'){S.ui.tg[p]=!S.ui.tg[p];render();return;}
+  if(a==='wav'){S.ui.wa[p]=!S.ui.wa[p];render();return;}
   if(a==='nova'){
-    s={id:uid(),nome:'',ativa:true,palavras:{alta:[],media:[],baixa:[]},excluir:[],limAlerta:25,limResumo:10};
+    s={id:uid(),nome:'',ativa:true,obrigatorias:[],palavras:{alta:[],media:[],baixa:[]},excluir:[],limAlerta:25,limResumo:10};
     S.searches.push(s);S.ui.edit=s.id;S.ui.sel=s.id;focusId='in-nome';render();return;
   }
   if(a==='editar'){S.ui.edit=p;render();$('#main').scrollTop=0;return;}
@@ -517,7 +610,20 @@ document.addEventListener('click',function(e){
   if(a==='src'){if(S.src[p]===q)delete S.src[p];else S.src[p]=q;if(S.src[p]!=='confiavel')delete S.feeds[p];render();return;}
   if(a==='descobrir'){descobrir();return;}
   if(a==='dec'){decidir(p,q);return;}
-  if(a==='tgteste'){toast('Modo teste: nada foi enviado. Na app real esta mensagem chegava ao teu Telegram.');return;}
+  if(a==='wateste'){
+    var tel=S.wa.tel.replace(/[^\d]/g,''),falta=[];
+    if(!tel)falta.push('o telefone');if(!waKey.trim())falta.push('a API key');
+    if(falta.length){toast('Falta '+falta.join(' e ')+'.');return;}
+    toast('Modo teste: nada foi enviado. Na app real chegava ao '+tel+': "✅ O agregador de notícias está ligado ao WhatsApp."');return;
+  }
+  if(a==='addpag'){
+    var pf=S.ui.pform;
+    if(!pf.nome.trim()||!pf.url.trim()){toast('Preenche pelo menos o nome e o endereço.');return;}
+    if(!/^https?:\/\//i.test(pf.url.trim())||!domDe(pf.url)){toast('O endereço tem de começar por http:// ou https://');return;}
+    S.paginas.push(fixPage({nome:pf.nome.trim(),url:pf.url.trim(),item:pf.item.trim(),titulo:pf.titulo.trim(),resumo:pf.resumo.trim(),data:pf.data.trim()}));
+    S.ui.pform=PFORM();render();toast('Site juntado. Na app real, junta-o a fontes.paginas no config.yaml.');return;
+  }
+  if(a==='delpag'){S.paginas=S.paginas.filter(function(x){return x.id!==p;});render();return;}
   if(a==='addnews'){
     var f=S.ui.form;
     if(!f.t.trim()||!f.d.trim()){toast('Preenche pelo menos o título e a fonte.');return;}
@@ -538,6 +644,8 @@ document.addEventListener('input',function(e){
   else if(k==='limAlerta'||k==='limResumo'){s=cur();if(s)s[k]=Number(t.value)||0;}
   else if(k==='w'){S.w[t.dataset.p]=Number(t.value)||0;}
   else if(k==='form'){S.ui.form[t.dataset.p]=t.value;}
+  else if(k==='pform'){S.ui.pform[t.dataset.p]=t.value;}
+  else if(k==='wa'){if(t.dataset.p==='key')waKey=t.value;else S.wa.tel=t.value;}
   save();
 });
 document.addEventListener('change',function(e){
