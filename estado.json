@@ -142,7 +142,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "27b475e17beff64f",
     "c9a14bc1814ad6b3",
     "e5aa583b9ed86a8c",
     "2eae9a0522574cea",
@@ -161,14 +160,15 @@
     "c1691193130ce6ae",
     "b77b15c40a94e66c",
     "f7902a0adec0befd",
-    "98825e53ee417738"
+    "98825e53ee417738",
+    "77fd42f582a9a6ee"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "cnnbrasil.com.br": {
    "nome": "CNN Brasil",
@@ -212,7 +212,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "antenalivre.pt": {
    "nome": "Antena Livre",
@@ -225,7 +225,7 @@
     "Sertã"
    ],
    "exemplo": "Sertã: Castanhas e Frutos secos em destaque nos Produtos da Terra",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "mediotejo.net": {
    "nome": "Médio Tejo",
@@ -254,7 +254,7 @@
     "Sertã"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
@@ -281,7 +281,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -293,7 +293,7 @@
     "Sertã"
    ],
    "exemplo": "SERTÃ: Grupo Coral do Sertanense celebra 20.º aniversário com encontro de coros",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -308,20 +308,21 @@
     "Apoio Estado"
    ],
    "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "reconquista.pt": {
    "nome": "reconquista.pt",
    "site": "https://www.reconquista.pt",
    "ids": [
     "7f725b0cfcbc1d9f",
-    "af50257c4deeb75a"
+    "af50257c4deeb75a",
+    "f38a3cf49cd905c2"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -372,7 +373,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Orçamento do Estado reforça valorização dos rendimentos e apoios às famílias e empresas",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "jornaldenegocios.pt": {
    "nome": "Jornal de Negócios",
@@ -406,7 +407,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Orçamento do Estado sem novos apoios nos combustíveis",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "expresso.pt": {
    "nome": "Expresso",
@@ -418,7 +419,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Orçamento sem medidas, sem apoios e com curta margem",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "dinheirovivo.dn.pt": {
    "nome": "Dinheiro Vivo",
@@ -431,7 +432,7 @@
     "Apoio Estado"
    ],
    "exemplo": "OE2027: No âmbito da Segurança Social, PSU terá despesa 10% maior do que apoios que substitui",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "rr.pt": {
    "nome": "Renascença",
@@ -445,7 +446,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Menos IRS, aumentos nos salários e pensões e reforço de alguns apoios sociais. O que muda com o novo Orçamento do Estado?",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -457,7 +458,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Cancro: 5 associações que dão apoio gratuito a doentes",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "pplware.sapo.pt": {
    "nome": "Pplware",
@@ -545,13 +546,14 @@
     "21d90dfba1efd2b0",
     "b0a71658cb4a8e49",
     "992848b1d86a4f75",
-    "f7902a0adec0befd"
+    "f7902a0adec0befd",
+    "faa64c9577d1513b"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "PROAGES simplificado para facilitar apoios às famílias que ficam de fora dos apoios sociais",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "24 Notícias",
@@ -613,7 +615,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Partidos que comandam ministérios no Governo de Lula declaram apoio a Flávio Bolsonaro",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T19:01:24.165845+00:00"
   },
   "oglobo.globo.com": {
    "nome": "O GLOBO",
@@ -2900,10 +2902,39 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-10-10T19:01:24.165845+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 290,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio Estado",
+     "recolhidas": 290,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-10-10T14:52:46.547040+00:00"
+  "cm-serta.pt": "2026-10-10T19:01:24.165845+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
