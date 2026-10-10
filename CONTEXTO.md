@@ -118,12 +118,14 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 - Tailscale configurado (2026-10-10): telemóvel 'Redmi Note 12 Pro+ 5G' aprovado como
   exit node; segredos TS_OAUTH_* no GitHub; a Câmara da Sertã é trazida pelo telemóvel.
 - O agendador do GitHub está a falhar muitas execuções automáticas neste repositório
-  (horas sem correr apesar do cron). Solução proposta: serviço externo (ex.: cron-job.org)
-  a chamar workflow_dispatch.
+  (horas sem correr apesar do cron). Foi preparado um despertador externo (cron-job.org a
+  chamar workflow_dispatch), mas o utilizador decidiu não o usar (2026-10-10): fica só o
+  agendador do GitHub e o botão Verificar agora.
 
 ## Próximos passos sugeridos
 
-1. Tornar fiável o agendamento (cron externo a chamar workflow_dispatch).
+1. Se os atrasos do agendador do GitHub incomodarem: despertador externo (cron-job.org ou
+   Google Apps Script) a chamar workflow_dispatch com uma ação que respeite o intervalo.
 2. Variantes de palavras ("regulação", "regulamento", "regulamentação" como o mesmo conceito).
 3. Botões "útil / não útil" para aprender o que interessa (o CallMeBot não recebe respostas;
    teria de ser no painel).

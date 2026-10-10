@@ -344,7 +344,7 @@ function estadoRun(run) {
   return '<span class="tag bad">falhou</span>';
 }
 function tipoRun(run) {
-  if (run.event === "schedule" || /automática/.test(run.display_title || "")) return "automática";
+  if (run.event === "schedule") return "automática";
   if (run.event === "workflow_dispatch") return "manual";
   return run.event;
 }
