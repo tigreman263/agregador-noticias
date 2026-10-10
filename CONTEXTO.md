@@ -118,14 +118,15 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 - Tailscale configurado (2026-10-10): telemóvel 'Redmi Note 12 Pro+ 5G' aprovado como
   exit node; segredos TS_OAUTH_* no GitHub; a Câmara da Sertã é trazida pelo telemóvel.
 - O agendador do GitHub está a falhar muitas execuções automáticas neste repositório
-  (horas sem correr apesar do cron). Foi preparado um despertador externo (cron-job.org a
-  chamar workflow_dispatch), mas o utilizador decidiu não o usar (2026-10-10): fica só o
-  agendador do GitHub e o botão Verificar agora.
+  (desde o 1.º dia, com qualquer versão do código: só 4 a 5 execuções por dia). Despertador
+  externo escolhido pelo utilizador: Google Apps Script (`extras/despertador-google.gs`),
+  com acionador de 15 em 15 min, a chamar workflow_dispatch com `acao=agendada` (respeita
+  o intervalo como o schedule). Token fine-grained só com Actions: Read and write, guardado
+  nas Propriedades do script (GITHUB_TOKEN). O cron-job.org foi posto de lado.
 
 ## Próximos passos sugeridos
 
-1. Se os atrasos do agendador do GitHub incomodarem: despertador externo (cron-job.org ou
-   Google Apps Script) a chamar workflow_dispatch com uma ação que respeite o intervalo.
+1. Confirmar que o despertador da Google está instalado e a correr.
 2. Variantes de palavras ("regulação", "regulamento", "regulamentação" como o mesmo conceito).
 3. Botões "útil / não útil" para aprender o que interessa (o CallMeBot não recebe respostas;
    teria de ser no painel).

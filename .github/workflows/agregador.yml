@@ -1,9 +1,11 @@
 name: Agregador de Notícias
-run-name: ${{ github.event_name == 'schedule' && 'automática' || github.event.inputs.acao }}
+run-name: ${{ github.event_name == 'schedule' && 'automática' || (github.event.inputs.acao == 'agendada' && 'automática (Google)' || github.event.inputs.acao) }}
 
 # O GitHub acorda o workflow de 15 em 15 minutos. O primeiro passo
 # vê no config.yaml de quantos em quantos minutos queres verificar (geral.intervalo_minutos)
-# e, se ainda não for altura, termina logo sem fazer nada.
+# e, se ainda não for altura, termina logo sem fazer nada. Como o agendador do GitHub salta
+# muitas execuções, um script da Google (extras/despertador-google.gs) chama também este
+# workflow com a ação "agendada", que respeita o mesmo intervalo.
 on:
   schedule:
     - cron: "*/15 * * * *"
@@ -17,6 +19,7 @@ on:
           - teste
           - simular
           - descobrir-fontes
+          - agendada
         default: normal
 
 permissions:
@@ -39,12 +42,14 @@ jobs:
 
       - name: Ver se já é altura de verificar
         id: hora
+        env:
+          ACAO: ${{ github.event.inputs.acao }}
         run: |
           python3 - <<'EOF'
           import json, os, re
           from datetime import datetime, timezone
           correr, motivo = True, "pedido manual"
-          if os.environ.get("GITHUB_EVENT_NAME") == "schedule":
+          if os.environ.get("GITHUB_EVENT_NAME") == "schedule" or os.environ.get("ACAO") == "agendada":
               texto = open("config.yaml", encoding="utf-8").read()
               m = re.search(r"(?m)^\s+intervalo_minutos:\s*(\d+)", texto)
               intervalo = max(30, int(m.group(1))) if m else 30

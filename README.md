@@ -45,6 +45,7 @@ corre o programa `agregador.py`, que:
 | Painel | Página para gerir tudo e ver a atividade (GitHub Pages). |
 | CallMeBot | Serviço gratuito que entrega as mensagens no teu WhatsApp. |
 | Telemóvel + Tailscale | Opcional: vai buscar os sites que bloqueiam o GitHub. |
+| Despertador da Google | Opcional: faz o agregador correr a horas (o agendador do GitHub salta execuções). |
 
 ---
 
@@ -194,6 +195,54 @@ continua direto. Usa o **Tailscale** (gratuito para uso pessoal). Só funciona c
 Sem estes segredos, ou com o telemóvel sem rede, os passos do telemóvel não fazem nada e o
 resto corre igual (os sites bloqueados ficam de fora dessa vez). O consumo é mínimo:
 alguns megabytes de dados por dia.
+
+### 2.8 Despertador da Google, para correr a horas
+
+O agendador do GitHub salta muitas execuções: em vez de 30 em 30 minutos, costuma correr
+só de 4 em 4 ou de 6 em 6 horas. Para correr com a frequência escolhida no painel, um
+pequeno script na tua conta Google (Google Apps Script, gratuito) pede ao GitHub uma
+verificação de 15 em 15 minutos; o agregador só verifica a sério quando já passou o
+intervalo escolhido. Corre nos servidores da Google: não precisa do PC nem do telemóvel.
+
+**1. Token só para o despertador** (no GitHub)
+
+1. Abre https://github.com/settings/personal-access-tokens/new.
+2. **Token name**: `despertador agregador`. **Expiration**: a mais longa que deixar
+   (anota a data, para o renovar).
+3. **Repository access**: **Only select repositories** → `agregador-noticias`.
+4. **Permissions → Repository permissions**: só **Actions: Read and write**.
+5. **Generate token** e copia-o (começa por `github_pat_`).
+
+Este token só deixa pedir verificações; não deixa ler nem mudar ficheiros.
+
+**2. O script na Google**
+
+1. Abre https://script.google.com com a tua conta Google e carrega em
+   **Novo projeto** (New project).
+2. Muda o nome no topo (Projeto sem título) para `Despertador agregador`.
+3. Apaga o que está no editor e cola todo o conteúdo do ficheiro
+   `extras/despertador-google.gs` deste repositório. Guarda (ícone da disquete).
+4. À esquerda, **Definições do projeto** (roda dentada) → no fundo, **Propriedades do
+   script** → **Adicionar propriedade do script**: nome `GITHUB_TOKEN`, valor: o token.
+   **Guardar propriedades do script**.
+5. Volta ao **Editor** (`< >`). Na barra de cima, escolhe a função **instalar** e
+   carrega em **Executar**.
+6. A Google pede autorização: **Rever permissões** → escolhe a tua conta → aparece
+   "A Google não validou esta app" → **Avançadas** → **Aceder a Despertador agregador
+   (não seguro)** → **Permitir**. É seguro: a "app" é o teu próprio script.
+7. No registo de execução deve aparecer "Despertador instalado". Para testar já,
+   escolhe a função **verificar** e carrega em **Executar**: deve aparecer
+   "Pedido enviado ao GitHub (204)". No painel, em **Atividade → Execuções no GitHub**,
+   aparece uma execução "automática".
+
+Para ver se está a correr: no script, **Acionadores** (relógio, à esquerda) e
+**Execuções**. Para parar: corre a função **desinstalar**. Se o token expirar, cria
+outro e troca o valor de `GITHUB_TOKEN` (passo 4).
+
+Erros no registo: **401** = token errado ou expirado; **403**/**404** = falta a
+permissão **Actions: Read and write** ou o repositório no token. O agendador do próprio
+GitHub continua ligado como reserva; os dois respeitam o mesmo intervalo, sem
+verificações nem mensagens repetidas.
 
 ---
 
@@ -450,12 +499,13 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 | `estado.json` | Memória do agregador, gravada pelo GitHub. Não editar. |
 | `painel.json` | Notícias descartadas e limpeza da atividade, gravadas pelo painel. |
 | `requirements.txt` | Bibliotecas Python (requests, PyYAML, defusedxml, beautifulsoup4). |
-| `.github/workflows/agregador.yml` | Acorda de 15 em 15 minutos, verifica conforme `geral.intervalo_minutos`, e ações manuais (normal, teste, simular, descobrir-fontes). |
+| `.github/workflows/agregador.yml` | Acorda de 15 em 15 minutos, verifica conforme `geral.intervalo_minutos`, e ações manuais (normal, teste, simular, descobrir-fontes, agendada). |
 | `painel/index.html` | O painel. |
 | `Abrir Painel.url` / `Abrir Painel.bat` | Abrem o painel no navegador (duplo clique no Windows). |
 | `.gitattributes` | Mantém o formato de linhas do Windows nos dois atalhos. |
 | `index.html` | Encaminha o endereço curto do GitHub Pages para o painel. |
 | `.nojekyll` | Faz o GitHub Pages servir os ficheiros tal como estão. |
+| `extras/despertador-google.gs` | Script do despertador da Google (passo 2.8). |
 | `README.md` | Este documento (também em **Ajuda** no painel). |
 | `CONTEXTO.md` | Decisões técnicas, para quem continuar o desenvolvimento. |
 | `.claude/` | Agentes e configuração do Claude Code usados no desenvolvimento. |
@@ -476,9 +526,10 @@ mensagem do CallMeBot e volta a guardar o segredo `WHATSAPP_APIKEY`. Confirma qu
 ativaste o serviço de **WhatsApp** (o CallMeBot tem serviços diferentes para chamadas).
 
 **O agregador não corre de X em X tempo**
-O agendador do GitHub atrasa ou salta execuções quando está muito ocupado (por vezes
-horas). Não depende do agregador. Em **Atividade → Execuções no GitHub** vês quando
-correu; para verificar já, usa **Verificar agora** no Início.
+O agendador do GitHub salta muitas execuções (costuma correr só de 4 em 4 ou de 6 em 6
+horas); não é do agregador. Configura o despertador da Google (passo 2.8). Em
+**Atividade → Execuções no GitHub** vês as automáticas; se o despertador estiver a
+falhar, vê **Execuções** no script da Google. Para verificar já: **Verificar agora**.
 
 **"Fonte com falha … Connection reset by peer"**
 O site recusa os servidores do GitHub. Ver secção 5.7 e passo 2.7.
@@ -515,4 +566,4 @@ O GitHub Pages demora 1 a 2 minutos a publicar mudanças ao painel; carrega em
 - O CallMeBot é gratuito e de terceiros: só envia, tem limites de envio e pode falhar.
 - Sites que bloqueiam o GitHub só são lidos com o telemóvel Android configurado e com rede.
 - Páginas que só mostram notícias com JavaScript, ou com certificado inválido, não são lidas.
-- O GitHub pode atrasar muito, ou saltar, as execuções agendadas.
+- Sem o despertador da Google (passo 2.8), o GitHub corre só algumas vezes por dia.
