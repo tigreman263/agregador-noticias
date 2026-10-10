@@ -79,4 +79,5 @@ pesquisas:
     limite_alerta: 25
     limite_resumo: 10
     feeds_extra: []
-    paginas_extra: []
+    paginas_extra:
+      - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias"}
