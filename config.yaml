@@ -30,7 +30,8 @@ fontes:
     - {nome: "Médio Tejo", url: "https://mediotejo.net/feed/"}
     - {nome: "Notícias de Coimbra", url: "https://www.noticiasdecoimbra.pt/feed/"}
     - {nome: "Rádio Hertz", url: "https://radiohertz.pt/feed/"}
-  paginas: []
+  paginas:
+    - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias"}
 
 # Descoberta automática de fontes: 1 vez por dia procura sites novos que
 # publicam sobre as tuas pesquisas e envia-te uma sugestão por WhatsApp.
