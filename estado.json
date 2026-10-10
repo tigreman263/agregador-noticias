@@ -33,7 +33,8 @@
   "98825e53ee417738": "2026-10-10T14:52:46.547040+00:00",
   "d324481ec8fe1261": "2026-10-10T14:52:46.547040+00:00",
   "eb65b3af17b31672": "2026-10-10T14:52:46.547040+00:00",
-  "f7902a0adec0befd": "2026-10-10T14:52:46.547040+00:00"
+  "f7902a0adec0befd": "2026-10-10T14:52:46.547040+00:00",
+  "dec4a58ee4d01324": "2026-10-10T21:55:21.304337+00:00"
  },
  "resumo": [
   {
@@ -58,6 +59,29 @@
     "98825e53ee417738"
    ],
    "ts": "2026-10-10T14:52:46.547040+00:00"
+  },
+  {
+   "titulo": "Quem pode receber até 500 euros",
+   "link": "http://www.dnoticias.pt/2026/10/10/508523-proages-ii-quem-pode-receber-ate-500-euros/",
+   "dominio": "dnoticias.pt",
+   "fonte": "dnoticias.pt",
+   "confiavel": true,
+   "nota": 10.5,
+   "pesquisa": "Apoio Estado",
+   "achadas": {
+    "alta": [],
+    "media": [
+     "apoio"
+    ],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-10T21:00:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "dec4a58ee4d01324"
+   ],
+   "ts": "2026-10-10T21:55:21.304337+00:00"
   }
  ],
  "adiados": [],
@@ -168,7 +192,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "cnnbrasil.com.br": {
    "nome": "CNN Brasil",
@@ -212,7 +236,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "antenalivre.pt": {
    "nome": "Antena Livre",
@@ -225,7 +249,7 @@
     "Sertã"
    ],
    "exemplo": "Sertã: Castanhas e Frutos secos em destaque nos Produtos da Terra",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "mediotejo.net": {
    "nome": "Médio Tejo",
@@ -254,7 +278,7 @@
     "Sertã"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
@@ -281,7 +305,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -293,7 +317,7 @@
     "Sertã"
    ],
    "exemplo": "SERTÃ: Grupo Coral do Sertanense celebra 20.º aniversário com encontro de coros",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -308,7 +332,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "reconquista.pt": {
    "nome": "reconquista.pt",
@@ -322,7 +346,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -373,7 +397,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Orçamento do Estado reforça valorização dos rendimentos e apoios às famílias e empresas",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "jornaldenegocios.pt": {
    "nome": "Jornal de Negócios",
@@ -432,7 +456,7 @@
     "Apoio Estado"
    ],
    "exemplo": "OE2027: No âmbito da Segurança Social, PSU terá despesa 10% maior do que apoios que substitui",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "rr.pt": {
    "nome": "Renascença",
@@ -446,7 +470,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Menos IRS, aumentos nos salários e pensões e reforço de alguns apoios sociais. O que muda com o novo Orçamento do Estado?",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -458,7 +482,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Cancro: 5 associações que dão apoio gratuito a doentes",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "pplware.sapo.pt": {
    "nome": "Pplware",
@@ -547,13 +571,14 @@
     "b0a71658cb4a8e49",
     "992848b1d86a4f75",
     "f7902a0adec0befd",
-    "faa64c9577d1513b"
+    "faa64c9577d1513b",
+    "dec4a58ee4d01324"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "PROAGES simplificado para facilitar apoios às famílias que ficam de fora dos apoios sociais",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "24 Notícias",
@@ -2630,6 +2655,18 @@
    ],
    "exemplo": "Disparada dos custos de financiamento pressiona empresas dos EUA",
    "ultima": "2026-10-10T12:38:37.658505+00:00"
+  },
+  "cm-serta.pt": {
+   "nome": "Câmara da Sertã",
+   "site": "",
+   "ids": [
+    "53a9a34228a89825"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
+   "ultima": "2026-10-10T21:55:21.304337+00:00"
   }
  },
  "ultima_descoberta": "2026-10-10",
@@ -2931,10 +2968,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-10-10T21:55:21.304337+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 308,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio Estado",
+     "recolhidas": 298,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [
+    "Câmara da Sertã",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-10-10T19:01:24.165845+00:00"
+  "cm-serta.pt": "2026-10-10T21:55:21.304337+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
