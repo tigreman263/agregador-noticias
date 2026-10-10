@@ -22,21 +22,11 @@ pesos:
 
 # Fontes: usa o domínio, sem "www" nem "https://".
 fontes:
-  confiaveis: []               # ex: ["publico.pt", "rtp.pt"]  -> valem x1,5
-  neutras: []                  # já vistas, peso normal, deixam de ser sugeridas
-  bloqueadas: []               # ex: ["site-de-spam.com"]      -> descartadas
-  feeds: []                    # feeds RSS gerais. Formato:
-                               #   - {nome: "Nome do site", url: "https://exemplo.pt/rss"}
-  # Sites SEM feed RSS: a app lê a página de notícias diretamente.
-  # Só "nome" e "url" são obrigatórios; sem seletores, deteta as notícias sozinha.
-  # Para afinar, testa no computador:  python agregador.py --testar-pagina URL
-  # Formato (exemplo real na pesquisa "Sertã", em paginas_extra):
-  #   - nome: "Nome do site"
-  #     url: "https://exemplo.pt/noticias"
-  #     item: "div.noticia"    # cada notícia (opcional)
-  #     titulo: "h2 a"         # dentro do item (opcional)
-  #     resumo: "p"            # (opcional)
-  #     data: "time"           # (opcional, ativa o filtro de idade)
+  confiaveis: ["sapo.pt"]
+  neutras: []
+  bloqueadas: []
+  feeds:
+    - {nome: "SAPO", url: "https://sapo.pt/rss/destaques"}
   paginas: []
 
 # Descoberta automática de fontes: 1 vez por dia procura sites novos que
