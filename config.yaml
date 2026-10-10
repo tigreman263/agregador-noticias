@@ -33,7 +33,8 @@ fontes:
     - {nome: "Rádio Hertz", url: "https://radiohertz.pt/feed/"}
     - {nome: "dnoticias.pt", url: "https://www.dnoticias.pt/rss.xml"}
     - {nome: "CNN Portugal", url: "https://cnnportugal.iol.pt/rss.xml"}
-  paginas: []
+  paginas:
+    - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias"}
 
 # Descoberta automática de fontes: 1 vez por dia procura sites novos que
 # publicam sobre as tuas pesquisas e envia-te uma sugestão por WhatsApp.
