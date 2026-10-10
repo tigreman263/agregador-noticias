@@ -120,7 +120,7 @@ gh secret set WHATSAPP_APIKEY -R tigreman263/agregador-noticias
    como uma app.
 
 No computador, o atalho **`Abrir Painel.url`** (na pasta do projeto) abre o painel com
-duplo clique. O endereço curto https://tigreman263.github.io/agregador-noticias/ também
+duplo clique; se não abrir, usa o **`Abrir Painel.bat`**. O endereço curto https://tigreman263.github.io/agregador-noticias/ também
 leva ao painel. Também podes abrir `painel/index.html` com duplo clique.
 
 ### 2.6 Token do painel (para editar)
@@ -443,7 +443,8 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 | `requirements.txt` | Bibliotecas Python (requests, PyYAML, defusedxml, beautifulsoup4). |
 | `.github/workflows/agregador.yml` | Agendamento de 30 em 30 minutos e ações manuais (normal, teste, simular, descobrir-fontes). |
 | `painel/index.html` | O painel. |
-| `Abrir Painel.url` | Atalho que abre o painel no navegador (duplo clique no Windows). |
+| `Abrir Painel.url` / `Abrir Painel.bat` | Abrem o painel no navegador (duplo clique no Windows). |
+| `.gitattributes` | Mantém o formato de linhas do Windows nos dois atalhos. |
 | `index.html` | Encaminha o endereço curto do GitHub Pages para o painel. |
 | `.nojekyll` | Faz o GitHub Pages servir os ficheiros tal como estão. |
 | `README.md` | Este documento (também em **Ajuda** no painel). |
