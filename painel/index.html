@@ -107,7 +107,7 @@ const S = {
   ramo: "main",
   token: lsGet(LS_TOKEN, ""),
   tab: lsGet(LS_TAB, "inicio"),
-  config: null, estado: null, runs: [], erroCarga: "",
+  config: null, estado: null, runs: [], erroCarga: "", descartados: [],
   editar: null,          // índice da pesquisa em edição (-1 = nova)
   ocupado: false, aSeguir: null,
 };
@@ -238,17 +238,43 @@ async function mudarConfig(chave, alterar, mensagem) {
 async function carregar(silencioso) {
   if (!silencioso) { S.erroCarga = ""; render(); }
   try {
-    const [c, e, r] = await Promise.all([
+    const [c, e, r, p] = await Promise.all([
       lerFicheiro("config.yaml"),
       lerFicheiro("estado.json").catch(() => ({ texto: "{}" })),
       gh("/repos/" + S.repo + "/actions/workflows/" + WORKFLOW + "/runs?per_page=12").catch(() => ({ workflow_runs: [] })),
+      lerFicheiro("painel.json").catch(() => ({ texto: "{}" })),
     ]);
     S.config = jsyaml.load(c.texto) || {};
     try { S.estado = JSON.parse(e.texto); } catch (x) { S.estado = {}; }
+    try { S.descartados = JSON.parse(p.texto).descartados || []; } catch (x) { S.descartados = []; }
+    esconderDescartados();
     S.runs = (r && r.workflow_runs) || [];
     S.erroCarga = "";
   } catch (x) { S.erroCarga = x.message; }
   render();
+}
+
+// ------------------------------------------------------------ descartar adiados / resumo
+// O painel não grava o estado.json (é do agregador). Grava os ids em painel.json e o
+// agregador tira essas notícias dos adiados e do resumo no início de cada execução.
+function esconderDescartados() {
+  const ids = new Set(S.descartados.map(x => x.id));
+  if (!S.estado || !ids.size) return;
+  ["adiados", "resumo"].forEach(k => { S.estado[k] = (S.estado[k] || []).filter(c => !(c.ids || []).some(i => ids.has(i))); });
+}
+async function descartar(ids, rotulo) {
+  if (!S.token) throw new Error("Para descartar, junta primeiro um token em Ligação.");
+  ids = ids.filter(i => /^[0-9a-f]{6,40}$/.test(i));
+  if (!ids.length) throw new Error("Esta notícia não tem identificador; não dá para a descartar.");
+  let atual = { descartados: [] }, sha;
+  try { const f = await lerFicheiro("painel.json"); atual = JSON.parse(f.texto); sha = f.sha; } catch (e) { if (!/Não encontrei/.test(e.message)) throw e; }
+  const limite = Date.now() - 30 * 86400000, agora = new Date().toISOString();
+  const lst = (atual.descartados || []).filter(x => x && x.id && new Date(x.ts).getTime() > limite);
+  const ja = new Set(lst.map(x => x.id));
+  ids.forEach(i => { if (!ja.has(i)) lst.push({ id: i, ts: agora }); });
+  atual.descartados = lst;
+  await gravarFicheiro("painel.json", JSON.stringify(atual, null, 1) + "\n", sha, "painel: descartar " + rotulo);
+  S.descartados = lst; esconderDescartados();
 }
 
 // ------------------------------------------------------------ correr no GitHub Actions
@@ -398,14 +424,22 @@ function vistaAtividade() {
   h += '<div class="card"><h3>Enviado para o WhatsApp</h3>';
   h += env.length ? env.slice(0, 30).map(itemNoticia).join("") : '<div class="empty">Ainda nada enviado.</div>';
   h += "</div>";
-  const fila = (est.adiados || []).concat(est.resumo || []);
-  h += '<div class="card"><h3>À espera</h3><div class="xs muted">Alertas adiados (horário de silêncio ou falha de envio) e notícias para o próximo resumo diário.</div>';
-  h += fila.length ? fila.sort((a, b) => b.nota - a.nota).slice(0, 30).map(itemNoticia).join("") : '<div class="empty">Nada à espera.</div>';
-  h += "</div>";
+  const espera = [
+    ["adiados", "Alertas adiados", "Ficaram retidos (horário de silêncio ou falha de envio) e saem na próxima verificação."],
+    ["resumo", "Para o resumo diário", "Saem juntas no resumo da manhã."],
+  ];
+  espera.forEach(([k, tit, dica]) => {
+    const fila = (est[k] || []).slice().sort((a, b) => b.nota - a.nota);
+    h += '<div class="card"><div class="row"><h3>' + tit + " (" + fila.length + ")</h3>" + (fila.length > 1 ? '<button class="btn btn-sm btn-danger" data-a="descartar-todos" data-p="' + k + '">Descartar todos</button>' : "") + '</div><div class="xs muted">' + dica + "</div>";
+    h += fila.length ? fila.slice(0, 40).map(c => itemNoticia(c, true)).join("") : '<div class="empty">Nada à espera.</div>';
+    h += "</div>";
+  });
   return h;
 }
-function itemNoticia(c) {
-  return '<div class="list-item" style="display:block"><a class="title-link" href="' + esc(urlSegura(c.link)) + '" target="_blank" rel="noopener">' + esc(c.titulo) + '</a><div class="xs muted">' + esc(c.fonte) + " · nota " + esc(c.nota) + " · " + esc(c.pesquisa) + (c.ts ? " · " + esc(quando(c.ts)) : "") + (c.tipo === "resumo" ? ' · <span class="tag">resumo</span>' : c.tipo === "alerta" ? ' · <span class="tag info">alerta</span>' : "") + "</div></div>";
+function itemNoticia(c, descartavel) {
+  let h = '<div class="list-item" style="display:block"><a class="title-link" href="' + esc(urlSegura(c.link)) + '" target="_blank" rel="noopener">' + esc(c.titulo) + '</a><div class="xs muted">' + esc(c.fonte) + " · nota " + esc(c.nota) + " · " + esc(c.pesquisa) + (c.ts ? " · " + esc(quando(c.ts)) : "") + (c.tipo === "resumo" ? ' · <span class="tag">resumo</span>' : c.tipo === "alerta" ? ' · <span class="tag info">alerta</span>' : "") + "</div>";
+  if (descartavel && (c.ids || []).length) h += '<button class="btn btn-sm" style="margin-top:6px" data-a="descartar" data-ids="' + esc(c.ids.join(",")) + '">Descartar</button>';
+  return h + "</div>";
 }
 
 function vistaFontes() {
@@ -563,6 +597,17 @@ async function onClick(ev) {
       res.innerHTML = S.token ? (pode ? '<span class="tag ok">Ligado: podes ler e gravar.</span>' : '<span class="err">O token liga, mas não tem permissão de escrita (Contents: Read and write).</span>') : '<span class="tag">Ligado em só leitura.</span>';
       await carregar(true);
     } catch (e) { res.innerHTML = '<span class="err">' + esc(e.message) + "</span>"; }
+    return;
+  }
+  if (a === "descartar" || a === "descartar-todos") {
+    let ids, rotulo;
+    if (a === "descartar") { ids = (el.dataset.ids || "").split(","); rotulo = "1 notícia"; }
+    else {
+      const fila = (S.estado && S.estado[p]) || [];
+      if (!confirm("Descartar " + fila.length + (p === "adiados" ? " alertas adiados?" : " notícias do resumo?") + " Não vão ser enviadas.")) return;
+      ids = [].concat.apply([], fila.map(c => c.ids || [])); rotulo = fila.length + " notícias (" + p + ")";
+    }
+    await ocupado(el, async () => { await descartar(ids, rotulo); toast("Descartado. Não vai ser enviado."); render(); });
     return;
   }
   if (a === "esquecer") { S.token = ""; lsSet(LS_TOKEN, null); toast("Token esquecido neste aparelho."); render(); return; }

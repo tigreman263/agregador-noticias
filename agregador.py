@@ -46,6 +46,7 @@ if hasattr(sys.stdout, "reconfigure"):  # consola do Windows (cp1252) não mostr
 RAIZ = Path(__file__).resolve().parent
 CONFIG = RAIZ / "config.yaml"
 ESTADO = RAIZ / "estado.json"
+PAINEL = RAIZ / "painel.json"
 UA = "Mozilla/5.0 (compatible; AgregadorNoticias/1.0)"
 UA_NAVEGADOR = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                 "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
@@ -680,6 +681,27 @@ def carregar_estado():
     return base
 
 
+def carregar_descartados():
+    """Ids das notícias que descartaste no painel (ficheiro painel.json, gravado por ele)."""
+    try:
+        dados = json.loads(PAINEL.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return set()
+    return {x["id"] if isinstance(x, dict) else str(x) for x in dados.get("descartados") or []}
+
+
+def aplicar_descartados(estado):
+    descartados = carregar_descartados()
+    if not descartados:
+        return
+    antes = len(estado["adiados"]) + len(estado["resumo"])
+    for k in ("adiados", "resumo"):
+        estado[k] = [c for c in estado[k] if not descartados.intersection(c.get("ids") or [])]
+    tirados = antes - len(estado["adiados"]) - len(estado["resumo"])
+    if tirados:
+        print(f"Descartadas no painel: {tirados} notícias tiradas dos adiados/resumo.")
+
+
 def guardar_estado(estado):
     ESTADO.write_text(json.dumps(estado, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -995,6 +1017,7 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
     estado = carregar_estado()
     podar(estado, agora_utc)
     limpar_sugeridas(cfg, estado)
+    aplicar_descartados(estado)
 
     if not simular and not (telefone and apikey):
         erro(segredos_em_falta(telefone, apikey))

@@ -132,7 +132,9 @@ GitHub e mostra os dados reais:
   correr já (verificar, simular, testar o WhatsApp, procurar fontes).
 - **Pesquisas**: criar, editar, pausar e apagar pesquisas (gravadas no `config.yaml`).
 - **Atividade**: execuções no GitHub, o que a app fez em cada uma, o que foi enviado para
-  o WhatsApp e o que está à espera do resumo.
+  o WhatsApp e o que está à espera (alertas adiados e resumo). Podes **descartar** o que
+  está à espera, uma a uma ou todas; o painel grava isso em `painel.json` e o agregador
+  tira-as na verificação seguinte, sem as enviar.
 - **Fontes**: decidir as fontes sugeridas e gerir as listas e os feeds gerais.
 - **Ligação**: o token do GitHub.
 
