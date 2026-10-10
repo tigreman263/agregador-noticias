@@ -13,11 +13,20 @@
   "2a35c2e7fc8261fd": "2026-10-10T07:12:57.629934+00:00",
   "d8ad0c2f05de3905": "2026-10-10T07:12:57.629934+00:00",
   "7ae082dc54babf69": "2026-10-10T07:12:57.629934+00:00",
-  "3c1f18806cd19fb3": "2026-10-10T07:43:29.041168+00:00"
+  "3c1f18806cd19fb3": "2026-10-10T07:43:29.041168+00:00",
+  "38e348f0eafda319": "2026-10-10T09:38:49.092208+00:00",
+  "9af87fcf1a8f3647": "2026-10-10T09:38:49.092208+00:00",
+  "e6146a13b0379320": "2026-10-10T09:38:49.092208+00:00",
+  "be93bf693288ef29": "2026-10-10T09:38:49.092208+00:00",
+  "277695630792a43f": "2026-10-10T09:38:49.092208+00:00",
+  "c7c28351ea105589": "2026-10-10T09:38:49.092208+00:00",
+  "e2a2ece2909e01b5": "2026-10-10T09:38:49.092208+00:00",
+  "b2c334f32a5c1d83": "2026-10-10T09:38:49.092208+00:00",
+  "0d43a400c85c2bb6": "2026-10-10T09:38:49.092208+00:00"
  },
  "resumo": [],
  "adiados": [],
- "ultimo_resumo": "",
+ "ultimo_resumo": "2026-10-10",
  "sugeridas": {
   "sapo.pt": {
    "dominio": "sapo.pt",
@@ -99,7 +108,7 @@
     "Sertã"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-10-10T08:47:28.216393+00:00"
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
   },
   "portal.afya.com.br": {
    "nome": "Afya | Home",
@@ -210,7 +219,7 @@
     "Sertã"
    ],
    "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
-   "ultima": "2026-10-10T08:47:28.216393+00:00"
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
   },
   "antenalivre.pt": {
    "nome": "Antena Livre",
@@ -236,7 +245,7 @@
     "Sertã"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-10-10T08:47:28.216393+00:00"
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -248,7 +257,7 @@
     "Sertã"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-10-10T08:47:28.216393+00:00"
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
@@ -285,7 +294,7 @@
     "Sertã"
    ],
    "exemplo": "SERTÃ: Grupo Coral do Sertanense celebra 20.º aniversário com encontro de coros",
-   "ultima": "2026-10-10T08:47:28.216393+00:00"
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -298,7 +307,7 @@
     "Sertã"
    ],
    "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
-   "ultima": "2026-10-10T08:47:28.216393+00:00"
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
   },
   "reconquista.pt": {
    "nome": "reconquista.pt",
@@ -348,6 +357,114 @@
    ],
    "exemplo": "VÍDEO: Delegado relata como ocorreu a prisão da ex-prefeita do município de Joca Claudino, Lucrécia Adriana",
    "ultima": "2026-10-10T08:47:28.216393+00:00"
+  },
+  "portugal.gov.pt": {
+   "nome": "XXV Governo Constitucional",
+   "site": "https://portugal.gov.pt",
+   "ids": [
+    "38e348f0eafda319"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Orçamento do Estado reforça valorização dos rendimentos e apoios às famílias e empresas",
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
+  },
+  "jornaldenegocios.pt": {
+   "nome": "Jornal de Negócios",
+   "site": "https://www.jornaldenegocios.pt",
+   "ids": [
+    "b2c334f32a5c1d83"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo volta a dar apoios à compra de carros elétricos em 2027",
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
+  },
+  "eco.sapo.pt": {
+   "nome": "ECO",
+   "site": "https://eco.sapo.pt",
+   "ids": [
+    "9af87fcf1a8f3647"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Orçamento do Estado sem novos apoios nos combustíveis",
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
+  },
+  "expresso.pt": {
+   "nome": "Expresso",
+   "site": "https://expresso.pt",
+   "ids": [
+    "e6146a13b0379320"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Orçamento sem medidas, sem apoios e com curta margem",
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
+  },
+  "dinheirovivo.dn.pt": {
+   "nome": "Dinheiro Vivo",
+   "site": "http://dinheirovivo.dn.pt",
+   "ids": [
+    "be93bf693288ef29"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "OE2027: No âmbito da Segurança Social, PSU terá despesa 10% maior do que apoios que substitui",
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
+  },
+  "rr.pt": {
+   "nome": "Renascença",
+   "site": "https://rr.pt",
+   "ids": [
+    "277695630792a43f"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Menos IRS, aumentos nos salários e pensões e reforço de alguns apoios sociais. O que muda com o novo Orçamento do Estado?",
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
+  },
+  "e-konomista.pt": {
+   "nome": "Ekonomista",
+   "site": "https://www.e-konomista.pt",
+   "ids": [
+    "c7c28351ea105589"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Cancro: 5 associações que dão apoio gratuito a doentes",
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
+  },
+  "pplware.sapo.pt": {
+   "nome": "Pplware",
+   "site": "https://pplware.sapo.pt",
+   "ids": [
+    "0d43a400c85c2bb6"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo vai voltar a dar apoios à compra de carros elétricos em 2027",
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
+  },
+  "jovempan.com.br": {
+   "nome": "Jovem Pan",
+   "site": "https://jovempan.com.br",
+   "ids": [
+    "e2a2ece2909e01b5"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Com Tarcísio, aliados de Flávio montam ‘bolsão de apoios’ em SP para ampliar vantagem sob Lula na reta final",
+   "ultima": "2026-10-10T09:38:49.092208+00:00"
   }
  },
  "ultima_descoberta": "2026-10-10",
@@ -360,6 +477,78 @@
    "fonte": "Gazeta do Interior",
    "nota": 30.0,
    "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-10-10T09:38:49.092208+00:00",
+   "titulo": "Governo volta a dar apoios à compra de carros elétricos em 2027",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPNlVwc1ltbU9pVllZMDd5bzZodnJOY0xzdzB2MjRKVVU2Q0U4ZG9PUGlFcUR4cHloVDlOemx4UVVYcDRjOS1TSTNGcnFqMzlqNjYyUno2aWlOemFvNTZOSjFWVTJHTnlXRnRGZkJRa0duRF9rbTJtU3pLdVBzeXBoWWduQWVjYmtXOHJValowRWZ6WVZBV2lQN2NQMVdkdVFod0Z4UXR0anhjY0FxRHc5RTlTZjVKWk51NmpseA?oc=5",
+   "fonte": "Jornal de Negócios",
+   "nota": 25.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-10-10T09:38:49.092208+00:00",
+   "titulo": "Orçamento do Estado reforça valorização dos rendimentos e apoios às famílias e empresas",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxOczFIMEMwSEZWb0xRemFqS0c0dHZwYktVYk8yXzdUZENpNmxoWU10bE5MY1BwNTRYQ2tLbWhEYjNqbU1VNklrRGgzUHpLdUFrc0VXLTl3WGpoZFJKRDVqZVRmbERyVXpaZ2Y1ZjZsV3NDZG52RWFYTEpJamhQYjhUekFRSjVTUkF2VzF4dEh5ZTlaLVZXTWtVelYya0t0VmtrbmRLeVZNdDBQWjVselhnV1dCVVoycHJCUmlVekR0eERqUGFERmRJNHdzLVpzSWFSZGRnSGdFQQ?oc=5",
+   "fonte": "XXV Governo Constitucional",
+   "nota": 20.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-10-10T09:38:49.092208+00:00",
+   "titulo": "Orçamento do Estado sem novos apoios nos combustíveis",
+   "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQYjJEb0pXV0U0Z211Z2ZKU2MwbHZzTUhNcTlabDN0S1o4M09mSEFFZE85M19iUkJuWkI2NVFfcFp2MVdUVmJwRGY2dFNTQnVmYXhadUhwMGRjWUE0TF9SXzRlV01wRGpENE1ibndCUGtzdGwtbTAxaUdmRUQ0MGRXQ1BJcldPRXJZV1hFcHpn?oc=5",
+   "fonte": "ECO",
+   "nota": 20.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-10-10T09:38:49.092208+00:00",
+   "titulo": "Orçamento sem medidas, sem apoios e com curta margem",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOSVF6Y0pHQ0pFNVdVX0VRNUU0OGlvcm16b2dWaFMteW4wQ0g4cVRUYXpoSUhZc25XaTgxQ1Z4TDlIYnoxYjBEMEJxaWpvcFowSmFxczRmbDFLTmZNbWRsaFpqLW50ckpSTk1UenZNVmpjdjEyZ0V2U25zSkJINHBFSm5EMzllclNqUF9fRE9vU2h4N0VpSmRGc0JCbjF6MXk0Yk4yam5PR1pCMnZiYTVEc2l4aGxGb3ZKeUJreDFFMEc0ZV95a0drUmlCRW5JY3hvYmc?oc=5",
+   "fonte": "Expresso",
+   "nota": 20.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-10-10T09:38:49.092208+00:00",
+   "titulo": "OE2027: No âmbito da Segurança Social, PSU terá despesa 10% maior do que apoios que substitui",
+   "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPUUNkbjlSRENpT09nYU1TMGc1R2dJcWtlQWJOTzFwT0VjVFd0NHhQSWFvUEFXV2RhTmY3SzJZVzRvaUl1eDdycmtPOFF3ZHNjVnF5MklXX2htTm9UcFJxYnNuT1dqNUlBLWd2S2ZjMmRHZGNMaWs2ellMZ2dpa3VFeEhIbHFkQVdXcVRDbmVrbVZwUmZwOHprcWowLVR2VkRQaVM4QmRmczJQVVhTLU43Z2ZfR1pUSE9tVnFyQXcxaw?oc=5",
+   "fonte": "Dinheiro Vivo",
+   "nota": 20.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-10-10T09:38:49.092208+00:00",
+   "titulo": "Menos IRS, aumentos nos salários e pensões e reforço de alguns apoios sociais. O que muda com o novo Orçamento do Estado?",
+   "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQd2hfY0FmZ1pyc01HT2RpWHFNYmJNUnpKdVJJQkZaZ1B2Zk42VUpOT0R3cGJ0elMzbFJnbEZHUUV5cDRsSnpMZ1otTzIzZHlFOUlRUGZEZk1kMy0yeHRZTnkzOWk0SDNDYXFRVTNmM3BaNzQ1eEdPc2JabmxJSWlsMTRWcFZqWllWMHVFTDFvRXIxWWxQd0dJaUdNVjdrQzFyNzBGdC1PXy1rRDhJSzlKcjMtQVhYTHVBM1hjaTBXYUcwTl9ZZkNpLXctNFp4YnAyeUFqUFFNeTBrZThvQmdJWEJtN05CdG1vSnZ2SG1uYU93c2dJT1lGV0dQbUc1Vlh1Mk8zYXd2cVN6WVdy0gGTAkFVX3lxTE12MThBU256VmZZYjZxSVMzNFZsaC1peHV5MGFFVFFJOWxwUVJPT2d4OW1CRmhsVVFoZXZFZTJBMVZCZ0pRYnF5YXRUbk5mTTlaVFpRSkltenFldkFRTk5VZDZmXzZiaHpaUUZWWUhBZjd0bXBoSFZrTUFrc2hPNU80SkJYWk1HU3hpQkFQbkpCa3NiZXo2WGlBYU5UdTRMbFg3aUR6N3R0UFVkNThIZWFTYWtiSksxZi1lRVpfNG5hQmNDNmZWa1QwWEh3bHQ5NEFTVXJqRUJqb19sRFI3VzBiU2p3NVhCaTFudTVQUWJVZlA1RjJOVGxvYm85cl9UU1NUazRYbTNNZHp0U0EwMEoxMnNv?oc=5",
+   "fonte": "Renascença",
+   "nota": 20.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-10-10T09:38:49.092208+00:00",
+   "titulo": "Cancro: 5 associações que dão apoio gratuito a doentes",
+   "link": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1kZW13TFg4NDVjQmVZc3UyUU56b25lQ2ZqRFRQc1BKRmJPZldZZnVrUkY4SnBxRmE0OVU4NGZEejJXT1cxQjUtOEhQUVU2MHlGSE1IaUhnSG1HV0d5ZG5yMFVXSVZlUTJfVlZYRA?oc=5",
+   "fonte": "Ekonomista",
+   "nota": 20.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-10-10T09:38:49.092208+00:00",
+   "titulo": "Com Tarcísio, aliados de Flávio montam ‘bolsão de apoios’ em SP para ampliar vantagem sob Lula na reta final",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOLTFOcUw0ZXdNd0tDUWxCTFlOZEl3MnR3djlCNDgwd1dwX0NMOG55Q1kzTjF0TUt5andpLXZwUkVJWXFzT3RTZEJOUkRhcVVQSFB3SG45aFVpOUJwVXBUbGJIV095SXg0dFJOeEFOZ3BVcTZEdDlaNjJ6TXBCMU8wbHNTYXlwQVBQRmY5cjMwenJCMXBLTEduSEVMdUl6RXdCNEluNy1lR0hVRE9NODE0RnlSMlBmVnhYaGhFZVFfaEltRWsyTHI2WWduWTg1MkItdDZsUXU4a0kzelB1UU5Ocm51cktsOXYyUGhHX2dSdWJJUQ?oc=5",
+   "fonte": "Jovem Pan",
+   "nota": 20.0,
+   "pesquisa": "Apoio Estado"
   }
  ],
  "execucoes": [
@@ -404,6 +593,31 @@
    "alertas": 0,
    "resumo": 0,
    "sugestoes": 5,
+   "silencio": false,
+   "erros": []
+  },
+  {
+   "ts": "2026-10-10T09:38:49.092208+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 100,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio Estado",
+     "recolhidas": 100,
+     "relevantes": 8,
+     "alertas": 1
+    }
+   ],
+   "falhas": [
+    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+   ],
+   "alertas": 1,
+   "resumo": 7,
+   "sugestoes": 0,
    "silencio": false,
    "erros": []
   }
