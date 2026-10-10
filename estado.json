@@ -1,1 +1,534 @@
-{"vistos": {}, "resumo": [], "adiados": [], "ultimo_resumo": ""}
+{
+ "vistos": {
+  "fc897482fb711769": "2026-10-10T07:12:57.629934+00:00",
+  "5ab3042dd219f103": "2026-10-10T07:12:57.629934+00:00",
+  "e0ff71a4f8739e58": "2026-10-10T07:12:57.629934+00:00",
+  "ad485e45ec00cce2": "2026-10-10T07:12:57.629934+00:00",
+  "671a3797d393ade5": "2026-10-10T07:12:57.629934+00:00",
+  "50561df3bd7baaf2": "2026-10-10T07:12:57.629934+00:00",
+  "a6f12173308264c8": "2026-10-10T07:12:57.629934+00:00",
+  "e7c5efe18c7031a4": "2026-10-10T07:12:57.629934+00:00",
+  "753326ad19e12e14": "2026-10-10T07:12:57.629934+00:00",
+  "2baa5cbed3c90b94": "2026-10-10T07:12:57.629934+00:00",
+  "2a35c2e7fc8261fd": "2026-10-10T07:12:57.629934+00:00",
+  "d8ad0c2f05de3905": "2026-10-10T07:12:57.629934+00:00",
+  "7ae082dc54babf69": "2026-10-10T07:12:57.629934+00:00",
+  "3c1f18806cd19fb3": "2026-10-10T07:12:57.629934+00:00"
+ },
+ "resumo": [
+  {
+   "titulo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPaWE0YW1LS2NhLU14cFdNOFhMdjlzc05KelhCRkhZSjBCaXpYd0QxZ0w1UTU1dDlXYWdWcDZwWWVUWWxOaWJPdGdBNnVqWlFCaFV6aEZMRmZ6UWhpaU1UNGx2REU2NXBQZU5UWTdtZDM1VHNYNVh5cU9NbzRqS0dLMXNMODdQM21uMF9YcHo0MFU1T1BjbE9aMEFtanFhZW5VQV9SMVdwZ180QW1WdWU3aWQyN19XUGpENU9EdWdOTHhkMU50ejRPWU5UbVZmZmtzMk5UVnd2TXBxQjA?oc=5",
+   "fonte": "SAPO",
+   "confiavel": false,
+   "nota": 23.0,
+   "pesquisa": "IA na saúde",
+   "achadas": {
+    "alta": [
+     "inteligência artificial"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-10T06:40:18+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "fc897482fb711769"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  },
+  {
+   "titulo": "Estudo avalia inteligência artificial na atenção primária",
+   "link": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOS2d3VlNUTGlLYlpzUjl5dTZwMTZpTU1lX3Z0akdsc0c3Q0JLX2R6SzA0MUlpc1R2VXhXaUZMdEdZX1VKM3E3RnZPc1lUeFhDeFc1d242UXBmQTB2VDVsblFzWGt4R29FbzdHQ3pRbXpRcW1RZnU4Y0J2Y1lhd3RrMU1PaWROM1hnaXFEbDFJN0tZdVM3?oc=5",
+   "fonte": "Afya | Home",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "IA na saúde",
+   "achadas": {
+    "alta": [
+     "inteligência artificial"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-09T17:46:45+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "5ab3042dd219f103"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  },
+  {
+   "titulo": "TJTO apresenta projeto de inteligência artificial para a saúde do trabalhador em congresso internacional de fisioterapia em Recife (PE)",
+   "link": "https://news.google.com/rss/articles/CBMihAJBVV95cUxQdHJRaWFZVmI4N0ZpVzlUeTZxeE1Kd0o3UE44bWF2UTJBemRldndhUFVPV3R3R05nR05ZdmZpUHYtbC1mVVk2NFZ6V0FGc0lLQWdTMHVYbHBMMXBHTjFPbXdVdDdmT1lxVGdIYXdCV1FBdUV4XzZrVjIxMFZVRG9QQlgtbUZPOTZQdHlCSndZQVk2bjZwTzFJZndZcVZ2TTJmcXpHNlEtSjU2NVRoREpuVVFTVGF3Sk5wREZYU0FGamFVeGctMDdRX3c2Sk1SN1F1ckFKbFFWMVRYbFZEaUt4OEFKTS12T0w5b2U4N0s3dEtuWVF1NlAteHJFSTNsT01qTnJVOA?oc=5",
+   "fonte": "Tribunal de Justiça do Tocantins",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "IA na saúde",
+   "achadas": {
+    "alta": [
+     "inteligência artificial"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-09T23:19:24+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "e0ff71a4f8739e58"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  },
+  {
+   "titulo": "Inteligência artificial do Google ajuda a prever internações por gripe",
+   "link": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPbDlMMjdHUk9IajFYLURkSGFNNTJyekxYd0c0ZzFhT3VZWEw5UUxfV3ZjaXdGV0JiT1dURThrMVVWVVd2XzUyenBxOFY1eENsSTdCeWtXVVVMcTJsdDBNcjJpMXFLX1lnYnI4Tnd6UVZzMlF0YVg0LVV0Xy0yYkp6Zk41UnpoY2VMVGNudG41R19jOHZJWmJuNGVVQTJrS25QLTdwQnJET3p4eW1zT0lpZ2d6cV94VUx2eWJ3MW9tTF9vYUtOQmFicHlUYkw2NGFBUUtpRHJR?oc=5",
+   "fonte": "CNN Brasil",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "IA na saúde",
+   "achadas": {
+    "alta": [
+     "inteligência artificial"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-09T19:16:16+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "ad485e45ec00cce2"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  },
+  {
+   "titulo": "Saúde, educação, inteligência artificial e mais: Lula e Flávio recebem dez perguntas de entidades científicas sobre propostas para o Brasil",
+   "link": "https://news.google.com/rss/articles/CBMigAJBVV95cUxQR0FicUgzN195cGluSVlnYkdpLWtpaVh6cEhmaWM3SXNRdUdUX0N4R3pIbWR1R1FlYk82eWhQcjIwTGZja1hXV0djSkFFSXJ3WTlQV21RNmc5ekZBSzg3UWphd2xZenNUYWFJNFFPc2ZoSWFkenlWdUF2X1ZrVEotalNXQ2FSNXh5WUhTRnRSeHR2NFNBN0NIVmlSZ2IzVUtvWThidDR4ODFtQWhHcG9yd1J2T2xuLS05U1IwQjFlUGNHajctUlBlYmM0SkpKQVExWWV3Y2xKelVnYm1BZkIzZnFzYkppby1pRHZTS1VhRjduUjZIVUFtYmdlUDVxNVJG?oc=5",
+   "fonte": "URB News",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "IA na saúde",
+   "achadas": {
+    "alta": [
+     "inteligência artificial"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-09T22:24:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "671a3797d393ade5"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  },
+  {
+   "titulo": "Especialista elenca 5 cuidados para usar a inteligência artificial ao tirar dúvidas sobre saúde mental",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNUm9DTHFOM0d1Wkdua2tTTjdyNUdLazJsTnVVaW0zalVFcHdWbWgzV2ZnMzJGUm1MVjdENVg4VW41SmFfVFc2MHYybEpIbHZFc2pPdURUMjREVkRQNUx1RWJJUUFwM2xOVkZfRElkZUNqSjd5a0FpLTFINUxpa3dSdHFKdjZFVW44VmFoaXdoUHQ0a0xMR1lKTTM2MlRrYy10TERncW5KdHF0T0NoMy1uMVN4MF8yaWJ3Zk11RHpGX3hWWFNtSlVrMXdONDN5YnRfNk5PXzlGSEM4b1RPcktTSmJ5UW9aZWs?oc=5",
+   "fonte": "JD1 Notícias",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "IA na saúde",
+   "achadas": {
+    "alta": [
+     "inteligência artificial"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-08T15:34:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "50561df3bd7baaf2"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  },
+  {
+   "titulo": "Inteligência Artificial poderia prever com precisão risco de câncer de fígado",
+   "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxNa2Q5R1ROdVpRYlpyeEMySE9MTFVDZzlfbzJUUnZFcDEzMlk5VTVZV3RjaldzX1NqVUh6azBoaFhzVkZWVnduY3RUNW5Wb2k1UEVOQndUb3RMZkpGbmkwdS1SendMRFhPQk9QZkxvWWFlN0VBLU92UlFyeXV3Q2I2Ql9iTmFfQ0JGQkhncW5fUnVWcHpIVk5zTEJmOHFTcC0yaGN5QzNLbFBPelBmZnp4SWV4NWFCS21JVzVJOG9YTVJ4OWNBamhDSWZ4UDJTdnByNjlfMUtYTE9TTWVhRzlMTjg1S3VmdG13c1BpeU14Z3FndmlsSlpOSEtCTFM?oc=5",
+   "fonte": "Terra",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "IA na saúde",
+   "achadas": {
+    "alta": [
+     "inteligência artificial"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-08T13:07:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "a6f12173308264c8"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  },
+  {
+   "titulo": "Inteligência artificial começa a antecipar risco de cirurgias e tratamentos de alto custo nas empresas",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOM3UwcDNkWElVTFlSamdLeG5FUl9yNDN5Zml5am1pY3ZsLUNYRGNxRDV2dXZmeFVNbGZqamZnclFZekM3c1dOZm5TOUZyekROcVhkN3VlOXJUTy1fc3hZNnU3VDNlc1dtem9Ec1ZYbnJ6VGFzYzRRekxZaGpjb19zYXp0MFR3SkZhdmlENmJKR241M0FuY05wZklHSkJuaVhzeEdhbHBSQWE4QVdkeUhwZDdUSkJiQUdDWDhuNzhkc0NEMC02YnNzMFllZ3pUQ3B6bVAwXzg5RVhXcTJJMW5z?oc=5",
+   "fonte": "Saúde Digital News",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "IA na saúde",
+   "achadas": {
+    "alta": [
+     "inteligência artificial"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-08T17:54:46+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "e7c5efe18c7031a4"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  },
+  {
+   "titulo": "Dia Mundial da Coluna: inteligência artificial reduz de quatro horas para 10 minutos análise de riscos ergonômicos em fábrica",
+   "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxNYkNYVUhXUHRidi13d2NBdENlamJiekFIckVxLUFhODh0ZjRkY2RiN1JyeVViMmZicHh1cXdpclhEd1FJa3B2VGYxYUVJT3JHV2JiUG1JVjFHWDZyRmNsUFhzSGR5NGJPZjF4cVNOQTFpcHJ3QnkyVXc4UnBsYUNzeWlEaElZZVY0bi1ka3YtNjdxazJaWkpVTGFsQlVjTHROTjY2bGlzTFFNY0l3WG1YbDRmNGxJSUN0UGxpR1FnRXFDWGIyWHVINm1aZVdJUFZWNzNSa05aVUhSZHJ5TldxUGdmV05jZw?oc=5",
+   "fonte": "ArapuaNews",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "IA na saúde",
+   "achadas": {
+    "alta": [
+     "inteligência artificial"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-10T02:44:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "753326ad19e12e14"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  },
+  {
+   "titulo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
+   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNa2dta3VKMDlyc3A1NEdENGRUaFNxM3Z1NXV0TEl0RDdQSnlJQTV3VGpHdGdLV29ZZ3dFbko3YV9fYVlxdTlZMFQ2dWlDVXpKemdSYm1qNTl6M3N4bTVsRXB0d3dxVVFGaEVyeFBJazYyb05oM1FjLXkzb1Q2Nm9fRGdCdktraXBVa0IxQWZHRkV6OXdFdnROclQ2MzZYMzNEYk16Tjg3MUdvT3dkTURkbFpORXBnT0p4QTY1RGNZZHBSa21MQzhaNHNYeGtKd2ljV1loVXhDWTlqQTMtemdv?oc=5",
+   "fonte": "Central Press",
+   "confiavel": false,
+   "nota": 12.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [],
+    "media": [],
+    "baixa": [
+     "sertã"
+    ]
+   },
+   "n_fontes": 3,
+   "data": "2026-10-09T12:59:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "2baa5cbed3c90b94",
+    "2a35c2e7fc8261fd",
+    "2a35c2e7fc8261fd"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  },
+  {
+   "titulo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNb284aGtjSFh3VDlnTnBseDBYVjF1X1BLSnFUQmYwSnZYekhUajJ1LVktdm1LRkhpUFZObTJNSGpGZnNJVWJSVU9IdXZQLUZRZzBEN2dlb3JZNThWbVVkbmtlNkdTRE5INldPYlNGSHVlRk1sQWx1eVl3dUU3R2k3dno2VE5OcFlpdTYwazNpVEtib2VlODExRlg3QTVKTU5uWXRxdnBtTGw2QjdWLW9CTlRqZw?oc=5",
+   "fonte": "Rádio Condestável",
+   "confiavel": false,
+   "nota": 10.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [],
+    "media": [
+     "concelho"
+    ],
+    "baixa": [
+     "sertã"
+    ]
+   },
+   "n_fontes": 1,
+   "data": "2026-10-09T10:49:59+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "d8ad0c2f05de3905"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  },
+  {
+   "titulo": "SERTÃ: Município distinguido com Prémios de Excelência Autárquica",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPMkNzdDQtdUxfaHVNYVFBVThsZWNtUVgxbFRFSVAwMll1RFR3SV9oblByMTB0cDhfQUpvMjJIQWNyM1gtTmpRUW9OY0NWTDNuUnhVY1NXLUZzMmZ1a2FGSWgxRVhIY19RM0NBZjVBQkZxUlBsNnppTGcyeHhhQTJvWXY0NEVqR094MkpkMUJhOC1OaExyQ2VqRVZiVXd2cGE3RlF0WXZpaVYyU2VvcE1xdnhn?oc=5",
+   "fonte": "SAPO",
+   "confiavel": false,
+   "nota": 10.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [],
+    "media": [
+     "município"
+    ],
+    "baixa": [
+     "sertã"
+    ]
+   },
+   "n_fontes": 1,
+   "data": "2026-10-09T15:16:16+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "7ae082dc54babf69"
+   ],
+   "ts": "2026-10-10T07:12:57.629934+00:00"
+  }
+ ],
+ "adiados": [
+  {
+   "titulo": "Na Sertã oito médicos já beneficiam de apoio da Câmara",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPSHdramJlWUY3emVvTl9DZWtNUlkzZUVuUmhUM2dlaHlFUVZ3cmRGNHJ4Sm5xUVVFWVJHWW9mbm5JcGp5RHBOLW9FcnJlcEktRHlib3lzR3dBOUpueFRQOS0wOUFNVHRXMTdmSmJqSFdFemZmaUZ5RWJWTV9POFpJYjJaTGhidEUzc08zU1k0d0lTN3lMUFFjdkJHUnh6Y2g5WTcyT0ZNTVhET25Fb3I1Ml9tNkVCZW82eFVqLTFHZ3BsMlFHSk1YOE1TeDJPbUhWWWc?oc=5",
+   "fonte": "Gazeta do Interior",
+   "confiavel": false,
+   "nota": 30.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [
+     "apoio"
+    ],
+    "media": [
+     "câmara"
+    ],
+    "baixa": [
+     "sertã"
+    ]
+   },
+   "n_fontes": 1,
+   "data": "2026-10-08T09:22:50+00:00",
+   "nivel": "alerta",
+   "ids": [
+    "3c1f18806cd19fb3"
+   ]
+  }
+ ],
+ "ultimo_resumo": "",
+ "sugeridas": {},
+ "sugeridas_antigas": [],
+ "dominios": {
+  "sapo.pt": {
+   "nome": "SAPO",
+   "site": "https://sapo.pt",
+   "ids": [
+    "fc897482fb711769",
+    "7ae082dc54babf69",
+    "2a35c2e7fc8261fd",
+    "f305efa66badf546"
+   ],
+   "pesquisas": [
+    "IA na saúde",
+    "Sertã"
+   ],
+   "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "portal.afya.com.br": {
+   "nome": "Afya | Home",
+   "site": "https://portal.afya.com.br",
+   "ids": [
+    "5ab3042dd219f103"
+   ],
+   "pesquisas": [
+    "IA na saúde"
+   ],
+   "exemplo": "Estudo avalia inteligência artificial na atenção primária",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "tjto.jus.br": {
+   "nome": "Tribunal de Justiça do Tocantins",
+   "site": "https://tjto.jus.br",
+   "ids": [
+    "e0ff71a4f8739e58"
+   ],
+   "pesquisas": [
+    "IA na saúde"
+   ],
+   "exemplo": "TJTO apresenta projeto de inteligência artificial para a saúde do trabalhador em congresso internacional de fisioterapia em Recife (PE)",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "cnnbrasil.com.br": {
+   "nome": "CNN Brasil",
+   "site": "https://www.cnnbrasil.com.br",
+   "ids": [
+    "ad485e45ec00cce2"
+   ],
+   "pesquisas": [
+    "IA na saúde"
+   ],
+   "exemplo": "Inteligência artificial do Google ajuda a prever internações por gripe",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "urbnews.com.br": {
+   "nome": "URB News",
+   "site": "https://urbnews.com.br",
+   "ids": [
+    "671a3797d393ade5"
+   ],
+   "pesquisas": [
+    "IA na saúde"
+   ],
+   "exemplo": "Saúde, educação, inteligência artificial e mais: Lula e Flávio recebem dez perguntas de entidades científicas sobre propostas para o Brasil",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "jd1noticias.com": {
+   "nome": "JD1 Notícias",
+   "site": "https://www.jd1noticias.com",
+   "ids": [
+    "50561df3bd7baaf2"
+   ],
+   "pesquisas": [
+    "IA na saúde"
+   ],
+   "exemplo": "Especialista elenca 5 cuidados para usar a inteligência artificial ao tirar dúvidas sobre saúde mental",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "terra.com.br": {
+   "nome": "Terra",
+   "site": "https://www.terra.com.br",
+   "ids": [
+    "a6f12173308264c8"
+   ],
+   "pesquisas": [
+    "IA na saúde"
+   ],
+   "exemplo": "Inteligência Artificial poderia prever com precisão risco de câncer de fígado",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "saudedigitalnews.com.br": {
+   "nome": "Saúde Digital News",
+   "site": "https://saudedigitalnews.com.br",
+   "ids": [
+    "e7c5efe18c7031a4"
+   ],
+   "pesquisas": [
+    "IA na saúde"
+   ],
+   "exemplo": "Inteligência artificial começa a antecipar risco de cirurgias e tratamentos de alto custo nas empresas",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "arapuanews.com.br": {
+   "nome": "ArapuaNews",
+   "site": "https://arapuanews.com.br",
+   "ids": [
+    "753326ad19e12e14"
+   ],
+   "pesquisas": [
+    "IA na saúde"
+   ],
+   "exemplo": "Dia Mundial da Coluna: inteligência artificial reduz de quatro horas para 10 minutos análise de riscos ergonômicos em fábrica",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "radiocondestavel.pt": {
+   "nome": "Rádio Condestável",
+   "site": "https://radiocondestavel.pt",
+   "ids": [
+    "d8ad0c2f05de3905",
+    "4030a76c82ecc968"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "antenalivre.pt": {
+   "nome": "Antena Livre",
+   "site": "https://www.antenalivre.pt",
+   "ids": [
+    "1e7a0471e6d4e463"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Sertã: Castanhas e Frutos secos em destaque nos Produtos da Terra",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "mediotejo.net": {
+   "nome": "Médio Tejo",
+   "site": "https://mediotejo.net",
+   "ids": [
+    "09d7777ba712fba9"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "centralpress.pt": {
+   "nome": "Central Press",
+   "site": "https://centralpress.pt",
+   "ids": [
+    "2baa5cbed3c90b94"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "gazetadointerior.pt": {
+   "nome": "Gazeta do Interior",
+   "site": "https://www.gazetadointerior.pt",
+   "ids": [
+    "3c1f18806cd19fb3"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Na Sertã oito médicos já beneficiam de apoio da Câmara",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "radiohertz.pt": {
+   "nome": "Rádio Hertz",
+   "site": "https://radiohertz.pt",
+   "ids": [
+    "1c0a27e27b84ea06"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "mag.sapo.pt": {
+   "nome": "SAPO",
+   "site": "https://mag.sapo.pt",
+   "ids": [
+    "2a35c2e7fc8261fd"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "SERTÃ: Grupo Coral do Sertanense celebra 20.º aniversário com encontro de coros",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  },
+  "noticiasdecoimbra.pt": {
+   "nome": "Notícias de Coimbra",
+   "site": "https://www.noticiasdecoimbra.pt",
+   "ids": [
+    "35b1d6d9dad7b3c1"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
+   "ultima": "2026-10-10T07:12:57.629934+00:00"
+  }
+ },
+ "ultima_descoberta": "",
+ "raspadas": {},
+ "paginas_lidas": []
+}
