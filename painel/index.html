@@ -360,7 +360,7 @@ function vistaPesquisas() {
     h += '<div class="sm muted">Procura: ' + esc(p.consulta || "—") + "</div>";
     if ((p.obrigatorias || []).length) h += '<div class="sm">Obrigatórias: ' + esc(p.obrigatorias.join(", ")) + "</div>";
     h += '<div class="wrap">' + ["alta", "media", "baixa"].map(n => (pal[n] || []).map(w => '<span class="tag ' + (n === "alta" ? "bad" : n === "media" ? "warn" : "ok") + '">' + esc(w) + "</span>").join("")).join("") + "</div>";
-    if (st) h += '<div class="xs muted">Última verificação: ' + st.recolhidas + " notícias lidas, " + st.relevantes + " relevantes, " + st.alertas + " para alerta</div>";
+    if (st) h += '<div class="xs muted">Última verificação: ' + st.recolhidas + " notícias lidas, " + st.relevantes + " novas relevantes (" + st.alertas + " para alerta). As que já viste antes não contam.</div>";
     h += '<div class="wrap"><button class="btn btn-sm" data-a="editar" data-p="' + i + '">Editar</button><button class="btn btn-sm" data-a="pausar" data-p="' + i + '">' + (p.ativa === false ? "Ativar" : "Pausar") + '</button><button class="btn btn-sm btn-danger" data-a="apagar" data-p="' + i + '">Apagar</button></div></div>';
   });
   h += '<div class="xs muted">As mudanças ficam gravadas no config.yaml do GitHub e valem a partir da verificação seguinte. Usa "Simular" no Início para ver o efeito logo.</div>';
@@ -413,7 +413,7 @@ function vistaAtividade() {
   if (!exs.length) h += '<div class="empty">Ainda sem registo. Aparece depois da próxima verificação.</div>';
   exs.slice(0, 8).forEach(x => {
     h += '<div class="list-item" style="display:block"><div class="row"><b class="sm">' + esc(hora(x.ts)) + "</b>" + (x.erros && x.erros.length ? '<span class="tag bad">com erros</span>' : x.silencio ? '<span class="tag">silêncio</span>' : '<span class="tag ok">ok</span>') + "</div>";
-    h += '<div class="xs muted">' + (x.pesquisas || []).map(p => esc(p.nome) + ": " + p.recolhidas + " lidas, " + p.relevantes + " relevantes").join(" · ") + "</div>";
+    h += '<div class="xs muted">' + (x.pesquisas || []).map(p => esc(p.nome) + ": " + p.recolhidas + " lidas, " + p.relevantes + " novas relevantes").join(" · ") + "</div>";
     h += '<div class="xs">' + x.alertas + " alertas enviados" + (x.resumo ? ", resumo com " + x.resumo : "") + (x.sugestoes ? ", " + x.sugestoes + " fontes sugeridas" : "") + "</div>";
     (x.falhas || []).forEach(f => { h += '<div class="xs err">Fonte com falha: ' + esc(f) + "</div>"; });
     (x.erros || []).forEach(f => { h += '<div class="xs err">' + esc(f) + "</div>"; });
