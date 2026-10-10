@@ -122,9 +122,25 @@ Actions → Run workflow → **descobrir-fontes**.
 - Os alertas de cada verificação vão juntos numa só mensagem, porque o CallMeBot gratuito
   limita o número de mensagens.
 
-## Painel (protótipo)
+## Painel
 
-Abre `painel/index.html` no navegador (duplo clique, não precisa de instalação). Tem as secções Alertas, Pesquisas, Fontes e Definições, com notícias inventadas e a mesma pontuação da app. Serve para experimentares criar pesquisas, classificar fontes e ver a descoberta de fontes. Não envia nada nem altera o `config.yaml`.
+Abre **https://tigreman263.github.io/agregador-noticias/painel/** no computador ou no
+telemóvel (ou `painel/index.html` com duplo clique). O painel liga-se ao repositório no
+GitHub e mostra os dados reais:
+
+- **Início**: última verificação, alertas de hoje, o que está à espera, e botões para
+  correr já (verificar, simular, testar o WhatsApp, procurar fontes).
+- **Pesquisas**: criar, editar, pausar e apagar pesquisas (gravadas no `config.yaml`).
+- **Atividade**: execuções no GitHub, o que a app fez em cada uma, o que foi enviado para
+  o WhatsApp e o que está à espera do resumo.
+- **Fontes**: decidir as fontes sugeridas e gerir as listas e os feeds gerais.
+- **Ligação**: o token do GitHub.
+
+Sem token, o painel só mostra. Para gravar e correr ações, cria um token em
+github.com/settings/personal-access-tokens/new com acesso só a este repositório e as
+permissões **Contents: Read and write** e **Actions: Read and write**, e cola-o em
+Ligação. O token fica guardado só nesse navegador. Ao gravar, os comentários do
+`config.yaml` fora da secção mudada mantêm-se.
 
 Para o contexto completo do projeto (decisões, estado e próximos passos), vê `CONTEXTO.md`.
 
@@ -134,7 +150,6 @@ Para o contexto completo do projeto (decisões, estado e próximos passos), vê 
 - O CallMeBot é um serviço gratuito de terceiros: só envia (não há botões nem respostas),
   tem limites de envio e pode ter falhas. Se uma mensagem falhar, os alertas ficam guardados
   e saem na verificação seguinte.
-- O painel (`painel/index.html`) é ainda um protótipo em modo teste, não ligado à app real.
 - Páginas que só mostram as notícias com JavaScript, ou com certificado de segurança
   inválido, não são lidas pelo raspador (o teste diz-te qual é o caso).
 - Notícias de páginas sem data ficam com a data do dia em que a app as viu pela primeira

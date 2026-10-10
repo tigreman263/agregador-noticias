@@ -47,30 +47,27 @@ Agregador de notícias pessoal:
 | `.github/workflows/agregador.yml` | Agendamento (30 min) e ações manuais: normal, teste, simular, descobrir-fontes. |
 | `.claude/agents/` | Equipa de subagentes do Claude Code: recolha-raspador, pontuacao-relevancia, notificacoes-whatsapp, painel-web, verificador e utilizador-tester. |
 | `estado.json` | Estado gravado automaticamente pelo workflow. |
-| `painel/index.html` | **Painel** (protótipo navegável, ver abaixo). |
+| `painel/index.html` | **Painel** ligado ao GitHub (ver abaixo). Publicado no GitHub Pages. |
+| `.nojekyll` | Diz ao GitHub Pages para servir os ficheiros tal como estão. |
 
 ## O painel (`painel/index.html`)
 
-Página única, sem dependências nem servidor: abre-se no navegador. Tem quatro secções:
-**Alertas**, **Pesquisas**, **Fontes** e **Definições**. Funciona em **modo teste**, com 21 notícias inventadas e a mesma lógica de pontuação do `agregador.py`, e guarda os dados no `localStorage` do navegador.
+Página única, sem servidor, publicada em https://tigreman263.github.io/agregador-noticias/painel/ (GitHub Pages a partir da raiz do ramo `main`). Fala diretamente com a API do GitHub (decisão de 2026-10-10, para manter "sem servidor e sem custos"):
+- **Lê** `config.yaml`, `estado.json` e as execuções do workflow. O repositório é público, por isso ler funciona sem token.
+- **Grava** com um token fine-grained do utilizador (só este repositório; Contents e Actions: Read and write), guardado no `localStorage` desse navegador. Cada gravação é um commit "painel: …".
+- Ao gravar, só reescreve a secção mudada (`pesquisas` ou `fontes`) e confirma, antes de gravar, que as outras secções ficaram iguais; os comentários fora dessa secção mantêm-se.
+- **Corre ações** (normal, simular, teste, descobrir-fontes) por `workflow_dispatch` e acompanha a execução.
+- Mostra o registo que o `agregador.py` guarda no `estado.json`: `execucoes` (últimas 48: notícias lidas/relevantes por pesquisa, alertas, resumo, falhas de fontes, erros) e `enviados` (últimos 100 alertas/itens de resumo enviados).
+- YAML lido com js-yaml 4.1.0 (cdnjs). Todo o texto vindo das notícias é escapado (há um token no `localStorage`).
 
-O que já faz: criar e editar pesquisas, gerar palavras-chave, classificar fontes, simular a descoberta de fontes e ver o efeito nos alertas ao mudar os pesos.
+## Estado atual (2026-10-10)
 
-**Ainda não está ligado à app real.** Para isso falta um passo, por decidir:
-- ler e gravar o `config.yaml` e o `estado.json` através da API do GitHub (com um token), ou
-- servir o painel com um pequeno backend.
-
-A função "Gerar palavras" usa o Claude quando a página corre dentro do Claude e cai numa regra simples fora dele.
-
-## Estado atual
-
-- A versão no GitHub ainda é a antiga (Telegram). A versão local já usa WhatsApp e tem de ser carregada, com os segredos `WHATSAPP_TELEFONE` e `WHATSAPP_APIKEY`.
-- `--simular` corre com notícias reais (Google Notícias + página da Câmara da Sertã). O envio real por WhatsApp ainda não foi testado (faltam a apikey do CallMeBot e os segredos).
+- A versão nova está no GitHub e a correr de 30 em 30 minutos. O teste do WhatsApp foi aceite pelo CallMeBot.
+- O site da Câmara da Sertã recusa ligações vindas dos servidores do GitHub ("Connection reset"); localmente funciona.
 
 ## Próximos passos sugeridos
 
-1. Ativar o CallMeBot, criar os dois segredos, carregar os ficheiros novos, correr **teste** e **simular**.
-2. Painel: passar de Telegram para WhatsApp e mostrar páginas sem RSS e palavras obrigatórias.
-3. Ligar o painel ao `config.yaml` e ao `estado.json`.
-4. Variantes de palavras (por exemplo "regulação", "regulamento", "regulamentação" devem contar como o mesmo conceito).
+1. Criar o token do painel e testar a gravação de uma pesquisa.
+2. Resolver o bloqueio da Câmara da Sertã a partir do GitHub (ou depender do Google Notícias).
+3. Variantes de palavras (por exemplo "regulação", "regulamento", "regulamentação" devem contar como o mesmo conceito).
 5. Mais tarde: ligar ao painel geral Olimpo (junto com o Caçador de Oportunidades e o Argos).

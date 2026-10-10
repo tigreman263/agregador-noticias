@@ -517,7 +517,7 @@ def url_google_news(consulta, cfg):
             + f"&ceid={g.get('ceid', 'PT:pt-150')}")
 
 
-def recolher(pesq, cfg):
+def recolher(pesq, cfg, falhas=None):
     """Vai buscar as notícias de todas as fontes desta pesquisa."""
     fontes = cfg.get("fontes") or {}
     pedidos = []
@@ -538,6 +538,8 @@ def recolher(pesq, cfg):
             todas += itens
         except Exception as e:  # uma fonte em baixo não pára as outras
             print(f"  aviso: falhou '{nome}' ({type(e).__name__}: {str(e)[:80]})")
+            if falhas is not None:
+                falhas.append(f"{pesq['nome']} · {nome}: {type(e).__name__}: {str(e)[:120]}")
     return todas
 
 
@@ -667,7 +669,7 @@ def avaliar(itens, pesq, cfg, estado, agora_utc):
 def carregar_estado():
     base = {"vistos": {}, "resumo": [], "adiados": [], "ultimo_resumo": "",
             "sugeridas": {}, "sugeridas_antigas": [], "dominios": {},
-            "ultima_descoberta": ""}
+            "ultima_descoberta": "", "enviados": [], "execucoes": []}
     if ESTADO.exists():
         try:
             base.update(json.loads(ESTADO.read_text(encoding="utf-8")))
@@ -998,14 +1000,20 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
         erro(segredos_em_falta(telefone, apikey))
         return 1
 
+    # registo desta execução, para o painel mostrar o que aconteceu
+    registo = {"ts": agora_utc.isoformat(), "pesquisas": [], "falhas": [], "alertas": 0,
+               "resumo": 0, "sugestoes": 0, "silencio": False, "erros": []}
     novos = []
     for pesq in cfg.get("pesquisas") or []:
         if not pesq.get("ativa", True):
             continue
         print(f"Pesquisa: {pesq['nome']}")
-        itens = recolher(pesq, cfg)
+        itens = recolher(pesq, cfg, registo["falhas"])
         cands = avaliar(itens, pesq, cfg, estado, agora_utc)
         print(f"  {len(cands)} notícias relevantes")
+        registo["pesquisas"].append({
+            "nome": pesq["nome"], "recolhidas": len(itens), "relevantes": len(cands),
+            "alertas": sum(1 for c in cands if c["nivel"] == "alerta")})
         novos += cands
 
     desc = cfg.get("descoberta") or {}
@@ -1050,7 +1058,18 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
     for c in fila:
         marcar_visto(estado, c, agora_utc)
     estado["adiados"] = []
+    def registar_envio(c, tipo):
+        estado["enviados"].append({
+            "tipo": tipo, "ts": agora_utc.isoformat(), "titulo": c["titulo"],
+            "link": c["link"], "fonte": c["fonte"], "nota": c["nota"],
+            "pesquisa": c["pesquisa"]})
+
+    def falha(msg):
+        erro(msg)
+        registo["erros"].append(msg)
+
     if silencio:
+        registo["silencio"] = True
         estado["adiados"] = fila[:50]
         for c in fila[50:]:
             c["ts"] = agora_utc.isoformat()
@@ -1065,8 +1084,11 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
         for texto, idx in juntar_mensagens([formatar_alerta(c, agora_utc) for c in a_enviar]):
             try:
                 enviar(telefone, apikey, texto)
+                for i in idx:
+                    registar_envio(a_enviar[i], "alerta")
+                registo["alertas"] += len(idx)
             except RuntimeError as e:
-                erro(f"não consegui enviar os alertas: {e}")
+                falha(f"não consegui enviar os alertas: {e}")
                 falhou = True
                 estado["adiados"] = a_enviar[idx[0]:]
                 break
@@ -1077,10 +1099,13 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
         try:
             for texto in mensagens_resumo(estado["resumo"]):
                 enviar(telefone, apikey, texto)
+            for c in sorted(estado["resumo"], key=lambda c: c["nota"], reverse=True)[:15]:
+                registar_envio(c, "resumo")
+            registo["resumo"] = len(estado["resumo"])
             estado["resumo"] = []
             estado["ultimo_resumo"] = hoje
         except RuntimeError as e:
-            erro(f"não consegui enviar o resumo: {e}")
+            falha(f"não consegui enviar o resumo: {e}")
             falhou = True
 
     if sugestoes and not falhou:
@@ -1090,12 +1115,15 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
                 enviar(telefone, apikey, texto)
             for sg in sugestoes:
                 estado["sugeridas"][sg["dominio"]] = sg
+            registo["sugestoes"] = len(sugestoes)
         except RuntimeError as e:
-            erro(f"não consegui enviar as sugestões de fontes: {e}")
+            falha(f"não consegui enviar as sugestões de fontes: {e}")
             falhou = True
     if (forcar_fontes or devida) and not falhou:
         estado["ultima_descoberta"] = hoje
 
+    estado["enviados"] = estado["enviados"][-100:]
+    estado["execucoes"] = (estado["execucoes"] + [registo])[-48:]
     guardar_estado(estado)
     print("Concluído.")
     return 1 if falhou else 0

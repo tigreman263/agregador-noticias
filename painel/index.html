@@ -3,18 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Agregador de Notícias — modo teste</title>
+<title>Agregador de Notícias</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
 <style>
 :root{
-  box-sizing:border-box;
-  padding-top:env(safe-area-inset-top,0px);
-  padding-bottom:env(safe-area-inset-bottom,0px);
   --bg:#F6F3EE;--surface:#FFFFFF;--surface2:#FBF9F5;--line:#E6E0D5;--line2:#D9D3C7;
   --text:#1B1A17;--muted:#5F5B52;--accent:#0F5C56;--accent-ink:#FFFFFF;
   --accent-soft:#DDEEEA;--accent-soft-ink:#0B4741;
   --hi-bg:#F8DAD6;--hi-ink:#8C1D18;--md-bg:#F5E4BF;--md-ink:#6B4700;--lo-bg:#E2EBD8;--lo-ink:#3F5A2E;
-  --neu-bg:#ECE8DF;--neu-ink:#4A463E;--danger:#8C1D18;--bubble:#E3F1E1;--banner:#1B1A17;--banner-ink:#F6F3EE;
+  --neu-bg:#ECE8DF;--neu-ink:#4A463E;--danger:#8C1D18;--banner:#1B1A17;--banner-ink:#F6F3EE;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
@@ -22,7 +20,7 @@
     --text:#F1EEE7;--muted:#B0AA9D;--accent:#4FB3A9;--accent-ink:#0B1F1D;
     --accent-soft:#1F3A37;--accent-soft-ink:#9FDDD5;
     --hi-bg:#4A2321;--hi-ink:#F5B5AF;--md-bg:#45361A;--md-ink:#F0D28A;--lo-bg:#2B3823;--lo-ink:#BFD7A9;
-    --neu-bg:#2C2A25;--neu-ink:#CFC9BB;--danger:#F0A29B;--bubble:#24382A;--banner:#F1EEE7;--banner-ink:#151512;
+    --neu-bg:#2C2A25;--neu-ink:#CFC9BB;--danger:#F0A29B;--banner:#F1EEE7;--banner-ink:#151512;
   }
 }
 :root[data-theme="dark"]{
@@ -30,636 +28,549 @@
   --text:#F1EEE7;--muted:#B0AA9D;--accent:#4FB3A9;--accent-ink:#0B1F1D;
   --accent-soft:#1F3A37;--accent-soft-ink:#9FDDD5;
   --hi-bg:#4A2321;--hi-ink:#F5B5AF;--md-bg:#45361A;--md-ink:#F0D28A;--lo-bg:#2B3823;--lo-ink:#BFD7A9;
-  --neu-bg:#2C2A25;--neu-ink:#CFC9BB;--danger:#F0A29B;--bubble:#24382A;--banner:#F1EEE7;--banner-ink:#151512;
+  --neu-bg:#2C2A25;--neu-ink:#CFC9BB;--danger:#F0A29B;--banner:#F1EEE7;--banner-ink:#151512;
 }
-html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:15px;line-height:1.4}
-.app{height:100%;max-width:520px;margin:0 auto;display:flex;flex-direction:column;background:var(--bg);border-left:1px solid var(--line);border-right:1px solid var(--line)}
-.banner{background:var(--banner);color:var(--banner-ink);text-align:center;font-size:12px;font-weight:600;padding:6px 12px;letter-spacing:.02em}
-main{flex:1;min-height:0;overflow-y:auto;padding:16px 16px 24px}
-h1,h2{font-family:'Newsreader',Georgia,serif;margin:0;font-weight:600;letter-spacing:-.01em}
-h1{font-size:30px}
+html,body{height:100%}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;font-size:15px;line-height:1.4}
+.app{height:100%;max-width:560px;margin:0 auto;display:flex;flex-direction:column;border-left:1px solid var(--line);border-right:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.banner{background:var(--banner);color:var(--banner-ink);text-align:center;font-size:12px;font-weight:600;padding:6px 12px}
+.banner.ok{background:var(--accent);color:var(--accent-ink)}
+main{flex:1;min-height:0;overflow-y:auto;padding:16px 16px 28px}
+h1,h2,h3{font-family:'Newsreader',Georgia,serif;margin:0;font-weight:600;letter-spacing:-.01em}
+h1{font-size:28px}h2{font-size:21px}h3{font-size:17px}
 .top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
 .muted{color:var(--muted)}.sm{font-size:13px}.xs{font-size:12px}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 button{font-family:inherit;font-size:14px;cursor:pointer}
-.btn{min-height:44px;padding:0 16px;border-radius:12px;border:1px solid var(--line2);background:var(--surface);color:var(--text);font-weight:500}
+.btn{min-height:42px;padding:0 14px;border-radius:12px;border:1px solid var(--line2);background:var(--surface);color:var(--text);font-weight:500}
+.btn:disabled{opacity:.5;cursor:default}
 .btn-primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
-.btn-line{border-color:var(--accent);color:var(--accent);background:var(--surface);font-weight:600}
-.btn-dark{background:var(--text);color:var(--bg);border-color:var(--text);font-weight:600}
-.btn-danger{border-color:var(--danger);color:var(--danger);background:var(--surface);font-weight:600}
-.btn[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
+.btn-line{border-color:var(--accent);color:var(--accent);font-weight:600}
+.btn-danger{border-color:var(--danger);color:var(--danger);font-weight:600}
+.btn-sm{min-height:34px;padding:0 10px;border-radius:10px;font-size:13px}
 .btn.block{width:100%}
-.btn:focus-visible,.chip:focus-visible,.tab:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
-.pillrow{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
-.filter{min-height:40px;padding:0 14px;border-radius:20px;border:1px solid var(--line2);background:transparent;color:var(--text);font-weight:500}
-.filter[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px;margin-bottom:12px;display:flex;flex-direction:column;gap:10px}
-.card.sel{border:2px solid var(--accent)}
+.btn:focus-visible,.tab:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:14px;margin-bottom:12px;display:flex;flex-direction:column;gap:8px}
 .row{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.gap8{display:flex;gap:8px;flex-wrap:wrap}
-.tag{display:inline-block;padding:2px 9px;border-radius:10px;font-size:12px;font-weight:600;background:var(--neu-bg);color:var(--neu-ink)}
-.tag.ok{background:var(--accent-soft);color:var(--accent-soft-ink)}
-.tag.warn{background:var(--md-bg);color:var(--md-ink)}
-.nota{min-width:64px;height:32px;padding:0 10px;display:inline-flex;align-items:center;justify-content:center;border-radius:16px;background:var(--accent);color:var(--accent-ink);font-weight:600;font-size:14px;white-space:nowrap}
-.nota.low{background:var(--neu-bg);color:var(--neu-ink)}
-.ntitle{font-family:'Newsreader',Georgia,serif;font-size:19px;font-weight:600;line-height:1.25}
-.chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip{padding:6px 12px;border-radius:14px;border:0;font-size:14px;font-weight:500;min-height:32px}
-.chip.hi{background:var(--hi-bg);color:var(--hi-ink)}.chip.md{background:var(--md-bg);color:var(--md-ink)}
-.chip.lo{background:var(--lo-bg);color:var(--lo-ink)}.chip.ex{background:var(--neu-bg);color:var(--neu-ink)}
-.chip.ob{background:var(--accent-soft);color:var(--accent-soft-ink)}.ob-t{color:var(--accent-soft-ink)}
-code{font-family:ui-monospace,Consolas,monospace;font-size:12px;background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 5px;word-break:break-all}
-.bubble .wa-link{color:var(--accent);word-break:break-all}
-.tag.hi{background:var(--hi-bg);color:var(--hi-ink)}.tag.md{background:var(--md-bg);color:var(--md-ink)}.tag.lo{background:var(--lo-bg);color:var(--lo-ink)}
-.grp{display:flex;flex-direction:column;gap:8px;padding-top:14px;border-top:1px solid var(--line)}
-.grp:first-of-type{border-top:0;padding-top:0}
-.grp-t{font-weight:600;font-size:14px}
-.hi-t{color:var(--hi-ink)}.md-t{color:var(--md-ink)}.lo-t{color:var(--lo-ink)}.ex-t{color:var(--neu-ink)}
-label.f{font-size:13px;font-weight:600;color:var(--muted)}
-input[type=text],input[type=number],select{width:100%;min-height:44px;padding:0 12px;border:1px solid var(--line2);border-radius:12px;background:var(--surface2);color:var(--text);font-family:inherit;font-size:15px}
-.addrow{display:flex;gap:8px}
-.addrow input{flex:1;min-width:0}
-.field{display:flex;flex-direction:column;gap:6px}
-.numrow{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:48px}
-.numrow input{width:96px;text-align:right}
-.bubble{background:var(--bubble);border-radius:14px 14px 14px 4px;padding:10px 12px;font-size:14px;display:flex;flex-direction:column;gap:3px}
-.bubble a{color:inherit;font-weight:600}
-.empty{background:var(--surface);border:1px dashed var(--line2);border-radius:16px;padding:24px 16px;text-align:center;display:flex;flex-direction:column;gap:12px;align-items:center}
-.tabs{display:flex;border-top:1px solid var(--line);background:var(--surface2)}
-.tab{flex:1;min-height:64px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:0;background:transparent;color:var(--muted);font-size:12px;font-weight:500}
-.tab[aria-current="page"]{color:var(--accent);font-weight:600}
-.tab svg{stroke:currentColor}
-#toast{position:fixed;left:50%;transform:translateX(-50%) translateY(20px);bottom:calc(88px + env(safe-area-inset-bottom,0px));max-width:min(92vw,440px);background:var(--text);color:var(--bg);padding:12px 16px;border-radius:12px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;z-index:10}
-#toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-.note{background:var(--accent-soft);color:var(--accent-soft-ink);border-radius:12px;padding:10px 12px;font-size:13px}
-@media (prefers-reduced-motion: reduce){#toast{transition:none}}
+.wrap{display:flex;flex-wrap:wrap;gap:8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.stat{background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:10px}
+.stat b{display:block;font-size:22px;font-family:'Newsreader',Georgia,serif}
+.tag{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--neu-bg);color:var(--neu-ink);white-space:nowrap}
+.tag.ok{background:var(--lo-bg);color:var(--lo-ink)}.tag.warn{background:var(--md-bg);color:var(--md-ink)}.tag.bad{background:var(--hi-bg);color:var(--hi-ink)}.tag.info{background:var(--accent-soft);color:var(--accent-soft-ink)}
+a{color:var(--accent)}
+.title-link{color:var(--text);font-weight:600;text-decoration:none}
+.title-link:hover{text-decoration:underline}
+label{font-size:13px;font-weight:600;display:block;margin-bottom:4px}
+.hint{font-size:12px;color:var(--muted);margin-top:3px}
+input[type=text],input[type=password],input[type=number],textarea,select{width:100%;font:inherit;font-size:15px;padding:9px 11px;border-radius:10px;border:1px solid var(--line2);background:var(--surface);color:var(--text)}
+textarea{min-height:64px;resize:vertical}
+.field{margin-bottom:12px}
+.check{display:flex;align-items:center;gap:8px;font-weight:500;font-size:14px}
+.check input{width:20px;height:20px}
+.list-item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid var(--line)}
+.list-item:last-child{border-bottom:0}
+.empty{color:var(--muted);font-size:14px;padding:4px 0}
+.err{color:var(--danger);font-size:13px}
+nav.tabs{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);background:var(--surface);padding-bottom:env(safe-area-inset-bottom,0px)}
+.tab{border:0;background:transparent;color:var(--muted);padding:10px 2px;font-size:12px;font-weight:600;display:flex;flex-direction:column;align-items:center;gap:2px;min-height:56px}
+.tab[aria-current="page"]{color:var(--accent)}
+.tab .ic{font-size:18px;line-height:1}
+.toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:10px 14px;border-radius:12px;font-size:14px;max-width:min(92vw,520px);z-index:10;box-shadow:0 6px 24px rgba(0,0,0,.2)}
+details summary{cursor:pointer;font-weight:600;font-size:14px}
+code{font-size:12px;background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 5px;word-break:break-all}
+ol{padding-left:20px;margin:6px 0}
+ol li{margin-bottom:6px}
 </style>
 </head>
 <body>
 <div class="app">
-  <div class="banner">MODO TESTE · notícias inventadas · nada é enviado</div>
-  <main id="main"></main>
-  <nav class="tabs" id="tabs" aria-label="Secções"></nav>
+  <div class="banner" id="banner">A carregar…</div>
+  <main id="main" tabindex="-1"></main>
+  <nav class="tabs" aria-label="Secções">
+    <button class="tab" data-tab="inicio"><span class="ic" aria-hidden="true">◉</span>Início</button>
+    <button class="tab" data-tab="pesquisas"><span class="ic" aria-hidden="true">⌕</span>Pesquisas</button>
+    <button class="tab" data-tab="atividade"><span class="ic" aria-hidden="true">≡</span>Atividade</button>
+    <button class="tab" data-tab="fontes"><span class="ic" aria-hidden="true">◈</span>Fontes</button>
+    <button class="tab" data-tab="ligacao"><span class="ic" aria-hidden="true">⚙</span>Ligação</button>
+  </nav>
 </div>
-<div id="toast" role="status" aria-live="polite"></div>
-
 <script>
-(function(){
-'use strict';
-var KEY='agregador-teste-v1';
-function $(s){return document.querySelector(s);}
-function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
-function norm(s){return String(s||'').toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();}
-function uid(){return Math.random().toString(36).slice(2,9);}
+"use strict";
+// ------------------------------------------------------------ armazenamento local
+const LS_LIG = "agregador.ligacao", LS_TOKEN = "agregador.token", LS_TAB = "agregador.tab";
+function lsGet(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } }
+function lsSet(k, v) { try { if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) {} }
 
-/* ---------- base de notícias de teste (inventadas) ---------- */
-var NAMES={'saudeemfoco.exemplo':'Saúde em Foco','diariotech.exemplo':'Diário Tech','mercadoagora.exemplo':'Mercado Agora','cripto24.exemplo':'Cripto 24','gazetaeconomica.exemplo':'Gazeta Económica','portalcidade.exemplo':'Portal da Cidade','desportoreal.exemplo':'Desporto Real','blogdoacaso.exemplo':'Blog do Acaso'};
-var BANK=[
- {id:'b1',t:'Hospital testa inteligência artificial para triagem de urgências',r:'Novo sistema de diagnóstico auxilia médicos na triagem de doentes.',d:'saudeemfoco.exemplo',m:12},
- {id:'b2',t:'Hospital testa inteligência artificial na triagem das urgências',r:'',d:'diariotech.exemplo',m:25},
- {id:'b3',t:'Hospital testa inteligência artificial para triagem de urgências em Lisboa',r:'',d:'portalcidade.exemplo',m:40},
- {id:'b4',t:'Consulta pública sobre regras para software médico com inteligência artificial',r:'A regulação de dispositivos médicos está em debate.',d:'diariotech.exemplo',m:47},
- {id:'b5',t:'Estudo compara diagnóstico por imagem com e sem apoio de inteligência artificial',r:'',d:'saudeemfoco.exemplo',m:120},
- {id:'b6',t:'Startup de saúde levanta investimento para plataforma de triagem',r:'',d:'gazetaeconomica.exemplo',m:200},
- {id:'b7',t:'Horóscopo da semana: Touro e a inteligência artificial',r:'',d:'blogdoacaso.exemplo',m:30},
- {id:'b8',t:'Bitcoin ultrapassa resistência e atinge máximo do mês',r:'Mercado de criptomoedas reage a entrada de capital em fundos ETF.',d:'cripto24.exemplo',m:8},
- {id:'b9',t:'Bitcoin atinge máximo do mês e ultrapassa resistência',r:'',d:'mercadoagora.exemplo',m:20},
- {id:'b10',t:'Regulador europeu publica regras para stablecoins',r:'Nova regulação de criptoativos entra em vigor no próximo ano.',d:'gazetaeconomica.exemplo',m:90},
- {id:'b11',t:'Ethereum atualiza rede e reduz custos de transação',r:'',d:'cripto24.exemplo',m:300},
- {id:'b12',t:'Exchange anuncia falha temporária e suspende levantamentos',r:'Clientes de criptomoedas afetados.',d:'cripto24.exemplo',m:15},
- {id:'b13',t:'Nova versão do assistente de inteligência artificial promete respostas mais rápidas',r:'',d:'diariotech.exemplo',m:60},
- {id:'b14',t:'Portugal aprova incentivos para centros de dados e energia',r:'',d:'gazetaeconomica.exemplo',m:180},
- {id:'b15',t:'Empresa lança processador com foco em inteligência artificial no telemóvel',r:'',d:'diariotech.exemplo',m:240},
- {id:'b16',t:'Banco de Portugal revê em alta previsão de crescimento',r:'Inflação e juros em foco.',d:'gazetaeconomica.exemplo',m:70},
- {id:'b17',t:'Preço da eletricidade sobe no mercado ibérico',r:'',d:'mercadoagora.exemplo',m:100},
- {id:'b18',t:'Inflação em Portugal abranda em setembro',r:'',d:'gazetaeconomica.exemplo',m:130},
- {id:'b19',t:'Benfica vence em jogo decisivo da Liga',r:'',d:'desportoreal.exemplo',m:35},
- {id:'b20',t:'Seleção nacional divulga convocatória',r:'',d:'desportoreal.exemplo',m:90},
- {id:'b21',t:'Consulta pública: novas regras para arrendamento',r:'',d:'portalcidade.exemplo',m:55},
- /* notícias inventadas de páginas sem RSS (só contam se a página estiver na lista "Sites sem RSS") */
- {id:'p1',t:'Câmara da Sertã apresenta projeto de inteligência artificial para apoio aos munícipes',r:'Sistema de triagem de pedidos no atendimento municipal.',d:'cm-serta.pt',m:50,pg:true},
- {id:'p2',t:'Sertã recebe feira de investimento e emprego',r:'',d:'cm-serta.pt',m:150,pg:true}
-];
-function dname(d){
-  if(NAMES[d])return NAMES[d];
-  for(var i=0;i<S.paginas.length;i++){if(domDe(S.paginas[i].url)===d&&S.paginas[i].nome)return S.paginas[i].nome;}
-  return d;
-}
-function domDe(url){
-  try{var h=new URL(String(url||'').trim()).hostname.toLowerCase();return h.indexOf('www.')===0?h.slice(4):h;}catch(e){return '';}
-}
-var FEEDS={'saudeemfoco.exemplo':1,'diariotech.exemplo':1,'gazetaeconomica.exemplo':1};
-
-/* ---------- estado ---------- */
-function defaults(){
-  return {
-    searches:[{id:uid(),nome:'IA na saúde',ativa:true,
-      obrigatorias:[],
-      palavras:{alta:['inteligência artificial','regulação','aprovação clínica'],media:['triagem','diagnóstico','dispositivos médicos'],baixa:['startup','investimento']},
-      excluir:['horóscopo','publicidade'],limAlerta:25,limResumo:10}],
-    src:{'saudeemfoco.exemplo':'confiavel'},
-    w:{alta:10,media:4,baixa:1,confiavel:1.5,desconhecida:1,bonusExtra:5,bonusExtraMax:15,bonusHora:3,idadeMax:48,descMin:2,descMax:5},
-    paginas:[{id:uid(),nome:'Câmara da Sertã',url:'https://cm-serta.pt/comunicacao/noticias',item:'div.article-container.has-media',titulo:'h2 a',resumo:'div.article-introtext',data:'.published time'}],
-    wa:{tel:''},
-    extra:[],fb:{},pend:{},feeds:{},
-    ui:{tab:'alertas',filtro:'imediatos',sel:null,edit:null,srcTab:'sugeridas',wa:{},form:{t:'',r:'',d:'',m:'10'},pform:PFORM()}
-  };
-}
-function PFORM(){return {nome:'',url:'',item:'',titulo:'',resumo:'',data:''};}
-function lista(v){return Array.isArray(v)?v.filter(function(x){return x!=null&&String(x).trim();}).map(String):[];}
-function obj(v){return v&&typeof v==='object'&&!Array.isArray(v)?v:{};}
-function fixSearch(x){
-  x=obj(x);var p=obj(x.palavras);
-  return {id:x.id?String(x.id):uid(),nome:typeof x.nome==='string'?x.nome:'',ativa:x.ativa!==false,
-    obrigatorias:lista(x.obrigatorias),palavras:{alta:lista(p.alta),media:lista(p.media),baixa:lista(p.baixa)},excluir:lista(x.excluir),
-    limAlerta:isFinite(Number(x.limAlerta))&&x.limAlerta!==''&&x.limAlerta!=null?Number(x.limAlerta):25,
-    limResumo:isFinite(Number(x.limResumo))&&x.limResumo!==''&&x.limResumo!=null?Number(x.limResumo):10};
-}
-function fixPage(x){
-  x=obj(x);function t(v){return typeof v==='string'?v:'';}
-  return {id:x.id?String(x.id):uid(),nome:t(x.nome),url:t(x.url),item:t(x.item),titulo:t(x.titulo),resumo:t(x.resumo),data:t(x.data)};
-}
-function load(){
-  var d=defaults();
-  try{
-    var s=localStorage.getItem(KEY);
-    if(s){var o=obj(JSON.parse(s));
-      d.searches=Array.isArray(o.searches)?o.searches:d.searches;d.src=obj(o.src||d.src);d.extra=Array.isArray(o.extra)?o.extra:[];
-      d.fb=obj(o.fb);d.pend=obj(o.pend);d.feeds=obj(o.feeds);
-      if(Array.isArray(o.paginas))d.paginas=o.paginas;
-      d.wa=Object.assign(d.wa,obj(o.wa));
-      d.w=Object.assign(d.w,obj(o.w));d.ui=Object.assign(d.ui,obj(o.ui));
-      delete d.ui.tg;
-      d.ui.wa=obj(d.ui.wa);
-      d.ui.form=Object.assign({t:'',r:'',d:'',m:'10'},obj(d.ui.form));
-      d.ui.pform=Object.assign(PFORM(),obj(d.ui.pform));
-    }
-  }catch(e){d=defaults();}
-  d.searches=d.searches.map(fixSearch);
-  d.paginas=d.paginas.map(fixPage);
-  d.wa.tel=typeof d.wa.tel==='string'?d.wa.tel:'';
-  return d;
-}
-var S=load(); var focusId=null; var gerando=false; var confirmar=null; var waKey='';
-function save(){try{localStorage.setItem(KEY,JSON.stringify(S));}catch(e){}}
-function cur(){for(var i=0;i<S.searches.length;i++){if(S.searches[i].id===S.ui.edit)return S.searches[i];}return null;}
-function arr(s,l){return l==='excluir'?s.excluir:(l==='obrigatorias'?s.obrigatorias:s.palavras[l]);}
-
-/* ---------- motor de pontuação (mesma lógica da app real) ---------- */
-function pageDomains(){var m={};S.paginas.forEach(function(p){var d=domDe(p.url);if(d)m[d]=1;});return m;}
-function allNews(){
-  var pd=pageDomains();
-  return BANK.filter(function(n){return !n.pg||pd[n.d];}).concat(S.extra).map(function(n){return Object.assign({},n,{tn:norm(n.t),tx:norm(n.r)});});
-}
-/* igual a contem() em Python: palavras de até 3 letras só inteiras, as outras aceitam plurais */
-function contem(q,texto){return texto.indexOf(q.length<=3?' '+q+' ':' '+q)>-1;}
-function scoreKw(n,s){
-  var T=' '+n.tn+' ',X=' '+n.tx+' ',i,p;
-  for(i=0;i<s.excluir.length;i++){p=norm(s.excluir[i]);if(p&&(T.indexOf(' '+p+' ')>-1||X.indexOf(' '+p+' ')>-1))return null;}
-  for(i=0;i<s.obrigatorias.length;i++){p=norm(s.obrigatorias[i]);if(p&&!(contem(p,T)||contem(p,X)))return null;}
-  var pts=0,found={alta:[],media:[],baixa:[]};
-  ['alta','media','baixa'].forEach(function(l){
-    s.palavras[l].forEach(function(k){
-      var q=norm(k);if(!q)return;
-      if(contem(q,T)){pts+=S.w[l]*2;found[l].push(k);}
-      else if(contem(q,X)){pts+=S.w[l];found[l].push(k);}
-    });
-  });
-  return {pts:pts,found:found};
-}
-function similar(a,b){
-  var A=a.split(' '),B=b.split(' '),SA={},inter=0,u;
-  A.forEach(function(x){SA[x]=1;});
-  var SB={};B.forEach(function(x){SB[x]=1;});
-  Object.keys(SA).forEach(function(x){if(SB[x])inter++;});
-  u=Object.keys(SA).length+Object.keys(SB).length-inter;
-  return u>0&&inter/u>=0.6;
-}
-function evaluate(s){
-  var cutoff=S.w.idadeMax*60,valid=[];
-  allNews().forEach(function(n){
-    if(S.src[n.d]==='bloqueada')return;
-    if(n.m>cutoff)return;
-    var r=scoreKw(n,s);if(!r||r.pts===0)return;
-    valid.push({n:n,kw:r.pts,found:r.found});
-  });
-  var groups=[];
-  valid.forEach(function(v){
-    for(var i=0;i<groups.length;i++){if(similar(groups[i].tn,v.n.tn)){groups[i].items.push(v);return;}}
-    groups.push({tn:v.n.tn,items:[v]});
-  });
-  return groups.map(function(g){
-    var doms={};g.items.forEach(function(i){doms[i.n.d]=1;});
-    var nd=Object.keys(doms).length;
-    var bonus=Math.min((nd-1)*S.w.bonusExtra,S.w.bonusExtraMax),best=null;
-    g.items.forEach(function(i){
-      var b=bonus+(i.n.m<60?S.w.bonusHora:0),conf=S.src[i.n.d]==='confiavel';
-      var nota=(i.kw+b)*(conf?S.w.confiavel:S.w.desconhecida);
-      if(!best||nota>best.nota)best={i:i,nota:nota,conf:conf};
-    });
-    var nivel=best.nota>=s.limAlerta?'alerta':(best.nota>=s.limResumo?'resumo':'abaixo');
-    return {n:best.i.n,found:best.i.found,nota:Math.round(best.nota*10)/10,conf:best.conf,nfontes:nd,nivel:nivel,search:s};
-  }).sort(function(a,b){return b.nota-a.nota;});
-}
-function ago(m){m=Math.floor(m);return m<1?'agora mesmo':(m<60?'há '+m+' min':(m<2880?'há '+Math.floor(m/60)+' h':'há '+Math.floor(m/1440)+' dias'));}
-
-/* ---------- ícones ---------- */
-var IC={
- alertas:'<path d="M6 9a6 6 0 0 1 12 0c0 6 2 7 2 7H4s2-1 2-7"/><path d="M10 20a2 2 0 0 0 4 0"/>',
- pesquisas:'<circle cx="11" cy="11" r="6"/><path d="M20 20l-4-4"/>',
- fontes:'<circle cx="12" cy="12" r="8"/><path d="M4 12h16M12 4c3 3 3 13 0 16M12 4c-3 3-3 13 0 16"/>',
- defs:'<path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/>'
+const S = {
+  repo: (function () { try { return JSON.parse(lsGet(LS_LIG, "{}")).repo || "tigreman263/agregador-noticias"; } catch (e) { return "tigreman263/agregador-noticias"; } })(),
+  ramo: "main",
+  token: lsGet(LS_TOKEN, ""),
+  tab: lsGet(LS_TAB, "inicio"),
+  config: null, estado: null, runs: [], erroCarga: "",
+  editar: null,          // índice da pesquisa em edição (-1 = nova)
+  ocupado: false, aSeguir: null,
 };
-function svg(k){return '<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+IC[k]+'</svg>';}
-function tabsHtml(){
-  var t=[['alertas','Alertas','alertas'],['pesquisas','Pesquisas','pesquisas'],['fontes','Fontes','fontes'],['defs','Definições','defs']];
-  return t.map(function(x){return '<button class="tab" data-a="tab" data-p="'+x[0]+'"'+(S.ui.tab===x[0]?' aria-current="page"':'')+'>'+svg(x[2])+'<span>'+x[1]+'</span></button>';}).join('');
-}
-function head(title,right){return '<div class="top"><h1>'+title+'</h1>'+(right||'')+'</div>';}
-function toast(msg){var t=$('#toast');t.textContent=msg;t.classList.add('show');clearTimeout(toast.h);toast.h=setTimeout(function(){t.classList.remove('show');},4200);}
+const WORKFLOW = "agregador.yml";
 
-/* ---------- ecrã: Alertas ---------- */
-function vAlertas(){
-  if(!S.searches.length){
-    return head('Alertas')+'<div class="empty"><div>Ainda não tens pesquisas.</div><button class="btn btn-primary" data-a="tab" data-p="pesquisas">Criar a primeira pesquisa</button></div>';
+// ------------------------------------------------------------ utilitários
+function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+function urlSegura(u) { return /^https?:\/\//i.test(String(u || "")) ? String(u) : "#"; }
+function quando(iso) {
+  if (!iso) return "—";
+  const d = new Date(iso); if (isNaN(d)) return "—";
+  const min = Math.floor((Date.now() - d) / 60000);
+  if (min < 1) return "agora mesmo";
+  if (min < 60) return "há " + min + " min";
+  if (min < 48 * 60) return "há " + Math.floor(min / 60) + " h";
+  return d.toLocaleDateString("pt-PT", { day: "numeric", month: "short" });
+}
+function hora(iso) { const d = new Date(iso); return isNaN(d) ? "" : d.toLocaleString("pt-PT", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }); }
+function lista(txt) { return String(txt || "").split(/[\n,]/).map(s => s.trim()).filter(Boolean); }
+function dominio(u) { try { return new URL(u).hostname.replace(/^www\./, ""); } catch (e) { return String(u || "").replace(/^www\./, ""); } }
+let toastT;
+function toast(msg) {
+  document.querySelectorAll(".toast").forEach(t => t.remove());
+  const t = document.createElement("div"); t.className = "toast"; t.setAttribute("role", "status"); t.textContent = msg;
+  document.body.appendChild(t); clearTimeout(toastT); toastT = setTimeout(() => t.remove(), 5000);
+}
+function b64dec(s) { const bin = atob(String(s).replace(/\s/g, "")); return new TextDecoder().decode(Uint8Array.from(bin, c => c.charCodeAt(0))); }
+function b64enc(str) { const by = new TextEncoder().encode(str); let bin = ""; for (let i = 0; i < by.length; i += 0x8000) bin += String.fromCharCode.apply(null, by.subarray(i, i + 0x8000)); return btoa(bin); }
+
+// ------------------------------------------------------------ GitHub
+async function gh(caminho, opts) {
+  opts = opts || {};
+  const h = { "Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28" };
+  if (S.token) h["Authorization"] = "Bearer " + S.token;
+  if (opts.body) h["Content-Type"] = "application/json";
+  let r;
+  try {
+    r = await fetch("https://api.github.com" + caminho, { method: opts.method || "GET", headers: h, body: opts.body ? JSON.stringify(opts.body) : undefined, cache: "no-store" });
+  } catch (e) { throw new Error("Sem ligação ao GitHub. Confirma a internet."); }
+  if (r.status === 204) return null;
+  let dados = null; try { dados = await r.json(); } catch (e) {}
+  if (!r.ok) {
+    const m = (dados && dados.message) || "";
+    if (r.status === 401) throw new Error("O token não é válido ou expirou. Cria outro em Ligação.");
+    if (r.status === 403 && /rate limit/i.test(m)) throw new Error("O GitHub limitou os pedidos sem token. Junta um token em Ligação ou espera uma hora.");
+    if (r.status === 403 || (r.status === 404 && S.token && opts.method)) throw new Error("O token não tem permissão para isto. Confirma as permissões em Ligação.");
+    if (r.status === 404) throw new Error("Não encontrei o repositório ou o ficheiro (" + caminho.split("?")[0] + ").");
+    if (r.status === 409) throw new Error("O ficheiro mudou entretanto. Tenta outra vez.");
+    throw new Error("O GitHub respondeu " + r.status + (m ? ": " + m : ""));
   }
-  var s=null;S.searches.forEach(function(x){if(x.id===S.ui.sel)s=x;});
-  if(!s){s=S.searches[0];S.ui.sel=s.id;}
-  var res=evaluate(s);
-  var cI=res.filter(function(r){return r.nivel==='alerta';}).length,cR=res.filter(function(r){return r.nivel==='resumo';}).length;
-  var f=S.ui.filtro,list=res.filter(function(r){return f==='imediatos'?r.nivel==='alerta':(f==='resumo'?r.nivel==='resumo':true);});
-  var h=head('Alertas','<button class="btn btn-line" data-a="verificar">Verificar agora</button>');
-  h+='<div class="field" style="margin-bottom:12px"><label class="f" for="sel">Pesquisa</label><select id="sel" data-in="sel">'+
-    S.searches.map(function(x){return '<option value="'+x.id+'"'+(x.id===s.id?' selected':'')+'>'+esc(x.nome||'Sem nome')+(x.ativa?'':' (pausada)')+'</option>';}).join('')+'</select></div>';
-  if(!s.ativa)h+='<div class="note" style="margin-bottom:12px">Esta pesquisa está em pausa. Na app real não enviaria alertas.</div>';
-  h+='<div class="pillrow" role="group" aria-label="Filtrar alertas">'+
-    [['imediatos','Imediatos ('+cI+')'],['resumo','Resumo ('+cR+')'],['todas','Todas ('+res.length+')']].map(function(x){return '<button class="filter" data-a="filtro" data-p="'+x[0]+'" aria-pressed="'+(f===x[0])+'">'+x[1]+'</button>';}).join('')+'</div>';
-  if(!list.length){
-    h+='<div class="empty"><div class="muted">Nenhuma notícia neste filtro.<br>Experimenta baixar o limite da pesquisa, acrescentar palavras-chave ou mudar a fonte de confiança.</div></div>';
-    return h;
+  return dados;
+}
+async function lerFicheiro(caminho) {
+  const d = await gh("/repos/" + S.repo + "/contents/" + caminho + "?ref=" + S.ramo);
+  return { texto: b64dec(d.content), sha: d.sha };
+}
+async function gravarFicheiro(caminho, texto, sha, mensagem) {
+  if (!S.token) throw new Error("Para gravar, junta primeiro um token em Ligação.");
+  return gh("/repos/" + S.repo + "/contents/" + caminho, { method: "PUT", body: { message: mensagem, content: b64enc(texto), sha: sha, branch: S.ramo } });
+}
+
+// ------------------------------------------------------------ config.yaml (mantém os comentários fora da secção mudada)
+function yv(v) {
+  if (Array.isArray(v)) return "[" + v.map(yv).join(", ") + "]";
+  if (v && typeof v === "object") return "{" + Object.keys(v).map(k => k + ": " + yv(v[k])).join(", ") + "}";
+  if (typeof v === "string") return JSON.stringify(v);
+  if (v === null || v === undefined) return '""';
+  return String(v);
+}
+function blocoLista(chave, arr, ind) {
+  arr = arr || [];
+  if (!arr.length) return ind + chave + ": []\n";
+  return ind + chave + ":\n" + arr.map(x => ind + "  - " + yv(x) + "\n").join("");
+}
+const CAMPOS_PESQ = ["nome", "ativa", "consulta", "obrigatorias", "palavras", "excluir", "limite_alerta", "limite_resumo", "feeds_extra", "paginas_extra"];
+function yamlPesquisas(ps) {
+  let o = "pesquisas:\n";
+  ps.forEach(p => {
+    const pal = p.palavras || {};
+    o += "  - nome: " + yv(p.nome) + "\n";
+    o += "    ativa: " + (p.ativa !== false) + "\n";
+    o += "    consulta: " + yv(p.consulta || "") + "\n";
+    o += "    obrigatorias: " + yv(p.obrigatorias || []) + "\n";
+    o += "    palavras:\n      alta: " + yv(pal.alta || []) + "\n      media: " + yv(pal.media || []) + "\n      baixa: " + yv(pal.baixa || []) + "\n";
+    o += "    excluir: " + yv(p.excluir || []) + "\n";
+    o += "    limite_alerta: " + Number(p.limite_alerta || 25) + "\n";
+    o += "    limite_resumo: " + Number(p.limite_resumo || 10) + "\n";
+    o += blocoLista("feeds_extra", p.feeds_extra, "    ");
+    o += blocoLista("paginas_extra", p.paginas_extra, "    ");
+    Object.keys(p).forEach(k => { if (!CAMPOS_PESQ.includes(k)) o += "    " + k + ": " + yv(p[k]) + "\n"; });
+  });
+  return o;
+}
+function yamlFontes(f) {
+  let o = "fontes:\n";
+  ["confiaveis", "neutras", "bloqueadas"].forEach(k => { o += "  " + k + ": " + yv(f[k] || []) + "\n"; });
+  o += blocoLista("feeds", f.feeds, "  ");
+  o += blocoLista("paginas", f.paginas, "  ");
+  Object.keys(f).forEach(k => { if (!["confiaveis", "neutras", "bloqueadas", "feeds", "paginas"].includes(k)) o += "  " + k + ": " + yv(f[k]) + "\n"; });
+  return o;
+}
+function substituirSecao(texto, chave, novo) {
+  const L = texto.split(/\r?\n/);
+  const ini = L.findIndex(l => l.startsWith(chave + ":"));
+  const nl = novo.replace(/\n$/, "").split("\n");
+  if (ini < 0) return texto.replace(/\s*$/, "\n\n") + nl.join("\n") + "\n";
+  let fim = L.length;
+  for (let i = ini + 1; i < L.length; i++) if (/^[A-Za-z_]/.test(L[i])) { fim = i; break; }
+  if (fim < L.length) while (fim - 1 > ini && (/^#/.test(L[fim - 1]) || L[fim - 1].trim() === "")) fim--;
+  const resto = L.slice(fim);
+  while (resto.length && resto[0].trim() === "") resto.shift();
+  return L.slice(0, ini).concat(nl, resto.length ? [""] : [], resto).join("\n").replace(/\n*$/, "\n");
+}
+// lê o config.yaml mais recente, aplica a mudança, confirma que o resto ficou igual e grava
+async function mudarConfig(chave, alterar, mensagem) {
+  const f = await lerFicheiro("config.yaml");
+  const cfg = jsyaml.load(f.texto) || {};
+  const nova = alterar(JSON.parse(JSON.stringify(cfg[chave] || (chave === "pesquisas" ? [] : {}))));
+  const texto = substituirSecao(f.texto, chave, chave === "pesquisas" ? yamlPesquisas(nova) : yamlFontes(nova));
+  const conf = jsyaml.load(texto);
+  for (const k of Object.keys(cfg)) if (k !== chave && JSON.stringify(cfg[k]) !== JSON.stringify(conf[k])) throw new Error("A gravação ia estragar a secção '" + k + "'. Nada foi gravado.");
+  if (JSON.stringify(conf[chave]) !== JSON.stringify(nova)) throw new Error("A gravação não ficou igual ao pedido. Nada foi gravado.");
+  await gravarFicheiro("config.yaml", texto, f.sha, mensagem);
+  S.config = conf;
+}
+
+// ------------------------------------------------------------ carregar
+async function carregar(silencioso) {
+  if (!silencioso) { S.erroCarga = ""; render(); }
+  try {
+    const [c, e, r] = await Promise.all([
+      lerFicheiro("config.yaml"),
+      lerFicheiro("estado.json").catch(() => ({ texto: "{}" })),
+      gh("/repos/" + S.repo + "/actions/workflows/" + WORKFLOW + "/runs?per_page=12").catch(() => ({ workflow_runs: [] })),
+    ]);
+    S.config = jsyaml.load(c.texto) || {};
+    try { S.estado = JSON.parse(e.texto); } catch (x) { S.estado = {}; }
+    S.runs = (r && r.workflow_runs) || [];
+    S.erroCarga = "";
+  } catch (x) { S.erroCarga = x.message; }
+  render();
+}
+
+// ------------------------------------------------------------ correr no GitHub Actions
+const ACOES = { normal: "Verificar agora", simular: "Simular", teste: "Testar WhatsApp", "descobrir-fontes": "Procurar fontes novas" };
+async function correr(acao) {
+  if (!S.token) { toast("Para correr ações, junta primeiro um token em Ligação."); S.tab = "ligacao"; render(); return; }
+  const antes = Date.now();
+  await gh("/repos/" + S.repo + "/actions/workflows/" + WORKFLOW + "/dispatches", { method: "POST", body: { ref: S.ramo, inputs: { acao: acao } } });
+  toast("Pedido enviado: " + ACOES[acao] + ". Demora 1 a 2 minutos.");
+  S.aSeguir = { acao: acao, desde: antes, run: null };
+  render(); seguir();
+}
+async function seguir() {
+  const s = S.aSeguir; if (!s) return;
+  for (let i = 0; i < 45 && S.aSeguir === s; i++) {
+    await new Promise(r => setTimeout(r, 8000));
+    try {
+      const r = await gh("/repos/" + S.repo + "/actions/workflows/" + WORKFLOW + "/runs?per_page=5&event=workflow_dispatch");
+      const run = (r.workflow_runs || []).find(x => new Date(x.created_at).getTime() >= s.desde - 60000);
+      if (run) { s.run = run; render(); if (run.status === "completed") break; }
+    } catch (e) { /* tenta de novo */ }
   }
-  list.forEach(function(r){h+=card(r,s);});
-  return h;
-}
-/* mensagem de WhatsApp: texto simples; *assim* aparece a negrito; links em texto */
-function waFmt(linha){
-  if(/^https?:\/\//.test(linha))return '<span class="wa-link">'+esc(linha)+'</span>';
-  return esc(linha).replace(/\*([^*\n]+)\*/g,'<strong>$1</strong>');
-}
-function waBubble(linhas,rotulo){
-  return '<div class="bubble" aria-label="'+esc(rotulo)+'">'+linhas.map(function(x){return '<div>'+waFmt(x)+'</div>';}).join('')+'</div>';
-}
-function linkTeste(n){return 'https://'+n.d+'/noticia/'+n.id;}
-/* igual a formatar_alerta() em Python */
-function alertaLinhas(r){
-  var l=['🔔 *'+r.n.t+'*',dname(r.n.d)+' ('+(r.conf?'confiável':'fonte nova')+') · nota '+r.nota+' · '+r.search.nome];
-  var rot={alta:'alta',media:'média',baixa:'baixa'},p=[];
-  ['alta','media','baixa'].forEach(function(k){if(r.found[k].length)p.push(rot[k]+': '+r.found[k].join(', '));});
-  if(p.length)l.push('🔑 '+p.join(' · '));
-  l.push('🕒 '+ago(r.n.m)+(r.nfontes>1?' · '+r.nfontes+' fontes':''));
-  l.push(linkTeste(r.n));
-  return l;
-}
-function waHtml(r){return waBubble(alertaLinhas(r),'Pré-visualização da mensagem de WhatsApp');}
-function card(r,s){
-  var key=r.n.id+':'+s.id,fb=S.fb[key],wa=S.ui.wa[key];
-  var srcTag=S.src[r.n.d]==='confiavel'?'<span class="tag ok">Confiável</span>':(S.src[r.n.d]==='neutra'?'<span class="tag">Neutra</span>':'<span class="tag">Fonte nova</span>');
-  var lvl='';
-  [['alta','hi','Alta'],['media','md','Média'],['baixa','lo','Baixa']].forEach(function(x){
-    r.found[x[0]].forEach(function(k){lvl+='<span class="tag '+x[1]+'">'+x[2]+' · '+esc(k)+'</span> ';});
-  });
-  var nivelTag=r.nivel==='abaixo'?'<span class="tag warn">Abaixo do limite</span>':(r.nivel==='resumo'?'<span class="tag warn">Vai para o resumo</span>':'');
-  return '<article class="card"><div class="row"><div class="gap8" style="align-items:center"><strong class="sm">'+esc(dname(r.n.d))+'</strong>'+srcTag+'</div>'+
-    '<span class="nota'+(r.nivel==='alerta'?'':' low')+'" title="Nota final">Nota '+r.nota+'</span></div>'+
-    '<div class="ntitle">'+esc(r.n.t)+'</div>'+
-    (lvl?'<div class="chips">'+lvl+'</div>':'')+
-    '<div class="sm muted">'+ago(r.n.m)+(r.nfontes>1?' · publicada por '+r.nfontes+' fontes':' · publicada por 1 fonte')+' '+nivelTag+'</div>'+
-    '<div class="gap8">'+
-      '<button class="btn" style="flex:1" data-a="fb" data-p="'+key+'" data-q="up" aria-pressed="'+(fb==='up')+'">Útil</button>'+
-      '<button class="btn" style="flex:1" data-a="fb" data-p="'+key+'" data-q="down" aria-pressed="'+(fb==='down')+'">Não útil</button>'+
-      '<button class="btn btn-dark" style="flex:1" data-a="wav" data-p="'+key+'" aria-expanded="'+(!!wa)+'">WhatsApp</button>'+
-    '</div>'+(wa?waHtml(r):'')+
-    (fb==='down'?'<div class="note">Na app real, vários "Não útil" da mesma fonte ou palavra fariam o sistema sugerir baixar-lhe o peso.</div>':'')+
-  '</article>';
+  if (S.aSeguir === s) {
+    const ok = s.run && s.run.conclusion === "success";
+    toast(s.run && s.run.status === "completed" ? (ok ? ACOES[s.acao] + ": concluído." : ACOES[s.acao] + ": falhou. Vê o registo.") : "Ainda a correr. Vê em Atividade.");
+    await carregar(true);
+  }
 }
 
-/* ---------- ecrã: Pesquisas ---------- */
-function vPesquisas(){
-  var s=cur();if(s)return vEdit(s);
-  var h=head('Pesquisas','<button class="btn btn-primary" data-a="nova">Nova pesquisa</button>');
-  if(!S.searches.length)return h+'<div class="empty"><div class="muted">Ainda não tens pesquisas.<br>Cria uma para veres os alertas.</div></div>';
-  S.searches.forEach(function(x){
-    var res=evaluate(x),n=res.filter(function(r){return r.nivel==='alerta';}).length;
-    h+='<article class="card"><div class="row"><div><div style="font-weight:600;font-size:17px">'+esc(x.nome||'Sem nome')+'</div>'+
-      '<div class="sm muted">'+(x.ativa?'Ativa':'Em pausa')+' · alerta a partir de nota '+x.limAlerta+' · '+n+' alertas agora'+
-      (x.obrigatorias.length?'<br>Obrigatórias: '+x.obrigatorias.map(esc).join(', '):'')+'</div></div></div>'+
-      '<div class="gap8"><button class="btn btn-line" style="flex:1" data-a="editar" data-p="'+x.id+'">Editar</button>'+
-      '<button class="btn" style="flex:1" data-a="ativa" data-p="'+x.id+'">'+(x.ativa?'Pausar':'Ativar')+'</button>'+
-      '<button class="btn" style="flex:1" data-a="ver" data-p="'+x.id+'">Ver alertas</button></div></article>';
-  });
-  return h;
+// ------------------------------------------------------------ vistas
+function estadoRun(run) {
+  if (!run) return '<span class="tag">—</span>';
+  if (run.status !== "completed") return '<span class="tag info">a correr</span>';
+  if (run.conclusion === "success") return '<span class="tag ok">correu bem</span>';
+  if (run.conclusion === "cancelled") return '<span class="tag">cancelada</span>';
+  return '<span class="tag bad">falhou</span>';
 }
-function grp(s,l,label,sub,cls){
-  var items=arr(s,l);
-  return '<section class="grp"><div class="row"><span class="grp-t '+cls+'-t">'+label+'</span><span class="muted xs">'+sub+'</span></div>'+
-    '<div class="chips">'+items.map(function(k,i){return '<button class="chip '+cls+'" data-a="delkw" data-p="'+l+'" data-q="'+i+'" aria-label="Remover '+esc(k)+'">'+esc(k)+' <span aria-hidden="true">×</span></button>';}).join('')+
-    (items.length?'':'<span class="muted sm">Sem palavras.</span>')+'</div>'+
-    '<div class="addrow"><label class="sr" for="kw-'+l+'">Adicionar palavra ('+label+')</label><input id="kw-'+l+'" type="text" data-kw="'+l+'" placeholder="Nova palavra…" autocomplete="off"><button class="btn btn-line" data-a="addkw" data-p="'+l+'">Adicionar</button></div></section>';
+function tipoRun(run) {
+  if (run.event === "schedule") return "automática";
+  if (run.event === "workflow_dispatch") return "manual";
+  return run.event;
 }
-function vEdit(s){
-  var h='<div class="top"><button class="btn" data-a="voltar">‹ Voltar</button><h2>Editar pesquisa</h2></div>';
-  h+='<div class="card">'+
-    '<div class="field"><label class="f" for="in-nome">Tema da pesquisa</label><div class="addrow"><input id="in-nome" type="text" data-in="nome" value="'+esc(s.nome)+'" autocomplete="off" placeholder="ex.: Bitcoin e regulação"><button class="btn btn-line" data-a="gerar"'+(gerando?' disabled':'')+'>'+(gerando?'A gerar…':'Gerar palavras')+'</button></div></div>'+
-    '<div class="xs muted">"Gerar palavras" pede ao Claude sugestões para o tema e junta-as às que já tens.</div>'+
-    grp(s,'obrigatorias','Obrigatórias','a notícia tem de ter todas','ob')+
-    '<div class="xs muted">Se faltar alguma destas palavras, a notícia é descartada. Ex.: "sertã" para não apanhar notícias de outros concelhos.</div>'+
-    grp(s,'alta','Prioridade alta','10 pontos por defeito','hi')+
-    grp(s,'media','Prioridade média','4 pontos por defeito','md')+
-    grp(s,'baixa','Prioridade baixa','1 ponto por defeito','lo')+
-    grp(s,'excluir','Palavras a excluir','a notícia é descartada','ex')+
-    '<section class="grp"><div class="numrow"><label for="la">Alerta imediato a partir da nota</label><input id="la" type="number" min="0" step="1" data-in="limAlerta" value="'+s.limAlerta+'"></div>'+
-    '<div class="numrow"><label for="lr">Resumo diário a partir da nota</label><input id="lr" type="number" min="0" step="1" data-in="limResumo" value="'+s.limResumo+'"></div></section>'+
-  '</div>'+
-  '<div class="gap8"><button class="btn btn-primary" style="flex:1" data-a="ver" data-p="'+s.id+'">Ver alertas desta pesquisa</button>'+
-  '<button class="btn btn-danger" data-a="apagar" data-p="'+s.id+'">'+(confirmar===s.id?'Confirmar: apagar':'Apagar')+'</button></div>';
+function vistaInicio() {
+  const est = S.estado || {}, ex = (est.execucoes || []).slice(-1)[0];
+  const run = S.runs[0];
+  const hoje = new Date().toDateString();
+  const alertasHoje = (est.enviados || []).filter(x => x.tipo === "alerta" && new Date(x.ts).toDateString() === hoje).length;
+  let h = '<div class="top"><h1>Agregador</h1><button class="btn btn-sm" data-a="recarregar">Atualizar</button></div>';
+  h += '<div class="card"><div class="row"><h3>Última verificação</h3>' + estadoRun(run) + '</div>';
+  h += run ? '<div class="sm muted">' + esc(quando(run.created_at)) + " · " + esc(tipoRun(run)) + ' · <a href="' + esc(urlSegura(run.html_url)) + '" target="_blank" rel="noopener">ver registo</a></div>' : '<div class="sm muted">Ainda não há execuções.</div>';
+  if (run && run.status === "completed" && run.conclusion === "failure") h += '<div class="err">A última execução falhou. Abre o registo para ver porquê (muitas vezes é o WhatsApp ou um segredo em falta).</div>';
+  h += '<div class="grid2"><div class="stat"><b>' + alertasHoje + '</b><span class="xs muted">alertas hoje</span></div><div class="stat"><b>' + (est.resumo || []).length + '</b><span class="xs muted">à espera do resumo</span></div>';
+  h += '<div class="stat"><b>' + (est.adiados || []).length + '</b><span class="xs muted">alertas adiados</span></div><div class="stat"><b>' + Object.keys(est.sugeridas || {}).length + '</b><span class="xs muted">fontes por decidir</span></div></div>';
+  if (ex) h += '<div class="xs muted">Registo da app: ' + esc(quando(ex.ts)) + ", " + ex.alertas + " alertas enviados" + (ex.falhas && ex.falhas.length ? ", " + ex.falhas.length + " fonte(s) com falha" : "") + "</div>";
+  h += "</div>";
+  h += '<div class="card"><h3>Correr agora</h3><div class="sm muted">O agregador corre sozinho de 30 em 30 minutos. Podes pedir uma execução já:</div><div class="grid2">';
+  Object.keys(ACOES).forEach(a => { h += '<button class="btn ' + (a === "normal" ? "btn-primary" : "btn-line") + '" data-a="correr" data-p="' + a + '"' + (S.aSeguir && !(S.aSeguir.run && S.aSeguir.run.status === "completed") ? " disabled" : "") + ">" + esc(ACOES[a]) + "</button>"; });
+  h += "</div>";
+  if (S.aSeguir) {
+    const r = S.aSeguir.run;
+    h += '<div class="sm">' + esc(ACOES[S.aSeguir.acao]) + ": " + (r ? estadoRun(r) + ' · <a href="' + esc(urlSegura(r.html_url)) + '" target="_blank" rel="noopener">ver registo</a>' : '<span class="tag info">à espera de começar…</span>') + "</div>";
+  }
+  h += '<div class="xs muted">"Simular" mostra no registo o que seria enviado, sem enviar nada.</div></div>';
+  const ps = (S.config && S.config.pesquisas) || [];
+  h += '<div class="card"><div class="row"><h3>Pesquisas</h3><button class="btn btn-sm" data-a="tab" data-p="pesquisas">Gerir</button></div>';
+  h += ps.length ? ps.map(p => '<div class="list-item"><span>' + esc(p.nome) + "</span>" + (p.ativa === false ? '<span class="tag">em pausa</span>' : '<span class="tag ok">ativa</span>') + "</div>").join("") : '<div class="empty">Ainda não tens pesquisas.</div>';
+  h += "</div>";
   return h;
 }
 
-/* ---------- ecrã: Fontes ---------- */
-function domains(){
-  var m={};allNews().forEach(function(n){m[n.d]=(m[n.d]||0)+1;});return m;
+function statsPesquisa(nome) {
+  const ex = ((S.estado || {}).execucoes || []).slice(-1)[0];
+  return ex && (ex.pesquisas || []).find(p => p.nome === nome);
 }
-function descobrir(){
-  var act=S.searches.filter(function(x){return x.ativa;});
-  if(!act.length){toast('Não há pesquisas ativas para procurar fontes.');return;}
-  var stats={};
-  act.forEach(function(sr){allNews().forEach(function(n){
-    if(S.src[n.d]==='bloqueada')return;
-    var r=scoreKw(n,sr);if(!r||r.pts===0)return;
-    var e=stats[n.d]||(stats[n.d]={ids:{},pes:{},ex:n.t});
-    e.ids[n.id]=1;e.pes[sr.nome||'Sem nome']=1;
-  });});
-  var espaco=Math.max(0,10-Object.keys(S.pend).length),lim=Math.min(S.w.descMax,espaco),pd=pageDomains();
-  var c=Object.keys(stats).filter(function(d){return !S.src[d]&&!S.pend[d]&&!pd[d]&&Object.keys(stats[d].ids).length>=S.w.descMin;})
-    .sort(function(a,b){return Object.keys(stats[b].ids).length-Object.keys(stats[a].ids).length;}).slice(0,lim);
-  if(!c.length){
-    toast(espaco===0?'Já tens 10 sugestões por decidir. Decide algumas primeiro.':'Nada de novo hoje: nenhuma fonte por classificar tem '+S.w.descMin+' notícias relevantes.');
+function vistaPesquisas() {
+  if (S.editar !== null) return vistaEditor();
+  const ps = (S.config && S.config.pesquisas) || [];
+  let h = '<div class="top"><h1>Pesquisas</h1><button class="btn btn-primary btn-sm" data-a="nova">+ Nova</button></div>';
+  if (!ps.length) h += '<div class="card"><div class="empty">Ainda não tens pesquisas. Cria a primeira.</div></div>';
+  ps.forEach((p, i) => {
+    const st = statsPesquisa(p.nome), pal = p.palavras || {};
+    h += '<div class="card"><div class="row"><h3>' + esc(p.nome) + "</h3>" + (p.ativa === false ? '<span class="tag">em pausa</span>' : '<span class="tag ok">ativa</span>') + "</div>";
+    h += '<div class="sm muted">Procura: ' + esc(p.consulta || "—") + "</div>";
+    if ((p.obrigatorias || []).length) h += '<div class="sm">Obrigatórias: ' + esc(p.obrigatorias.join(", ")) + "</div>";
+    h += '<div class="wrap">' + ["alta", "media", "baixa"].map(n => (pal[n] || []).map(w => '<span class="tag ' + (n === "alta" ? "bad" : n === "media" ? "warn" : "ok") + '">' + esc(w) + "</span>").join("")).join("") + "</div>";
+    if (st) h += '<div class="xs muted">Última verificação: ' + st.recolhidas + " notícias lidas, " + st.relevantes + " relevantes, " + st.alertas + " para alerta</div>";
+    h += '<div class="wrap"><button class="btn btn-sm" data-a="editar" data-p="' + i + '">Editar</button><button class="btn btn-sm" data-a="pausar" data-p="' + i + '">' + (p.ativa === false ? "Ativar" : "Pausar") + '</button><button class="btn btn-sm btn-danger" data-a="apagar" data-p="' + i + '">Apagar</button></div></div>';
+  });
+  h += '<div class="xs muted">As mudanças ficam gravadas no config.yaml do GitHub e valem a partir da verificação seguinte. Usa "Simular" no Início para ver o efeito logo.</div>';
+  return h;
+}
+function linhasFontes(arr) { return (arr || []).map(f => [f.nome || "", f.url || ""].concat(f.local ? ["local"] : []).join(" | ")).join("\n"); }
+function lerLinhasFontes(txt, antigas) {
+  return String(txt || "").split("\n").map(l => l.trim()).filter(Boolean).map(l => {
+    const p = l.split("|").map(s => s.trim());
+    let nome = p[0], url = p[1] || "";
+    if (!url && /^https?:\/\//i.test(nome)) { url = nome; nome = dominio(nome); }
+    const ant = (antigas || []).find(a => a.url === url) || {};
+    const o = Object.assign({}, ant, { nome: nome || dominio(url), url: url });
+    if (p.slice(2).some(x => /^local$/i.test(x))) o.local = true; else delete o.local;
+    return o;
+  });
+}
+function vistaEditor() {
+  const ps = (S.config && S.config.pesquisas) || [];
+  const p = S.editar >= 0 ? ps[S.editar] : { nome: "", ativa: true, consulta: "", obrigatorias: [], palavras: { alta: [], media: [], baixa: [] }, excluir: [], limite_alerta: 25, limite_resumo: 10, feeds_extra: [], paginas_extra: [] };
+  const pal = p.palavras || {};
+  const campo = (id, rot, val, dica, tipo) => '<div class="field"><label for="' + id + '">' + rot + "</label>" + (tipo === "area" ? '<textarea id="' + id + '">' + esc(val) + "</textarea>" : '<input type="' + (tipo || "text") + '" id="' + id + '" value="' + esc(val) + '">') + (dica ? '<div class="hint">' + dica + "</div>" : "") + "</div>";
+  let h = '<div class="top"><h1>' + (S.editar >= 0 ? "Editar" : "Nova pesquisa") + '</h1><button class="btn btn-sm" data-a="cancelar">Cancelar</button></div><div class="card">';
+  h += campo("f-nome", "Nome", p.nome, "Ex: Sertã, Apoios à agricultura");
+  h += campo("f-consulta", "O que procurar no Google Notícias", p.consulta || "", "Ex: Sertã ou \"apoios agricultura\"");
+  h += campo("f-obrig", "Palavras obrigatórias", (p.obrigatorias || []).join(", "), "A notícia só conta se tiver todas estas palavras. Deixa vazio para aceitar notícias de qualquer lugar.");
+  h += campo("f-alta", "Prioridade alta (10 pontos)", (pal.alta || []).join(", "), "Separa por vírgulas. No título valem o dobro.", "area");
+  h += campo("f-media", "Prioridade média (4 pontos)", (pal.media || []).join(", "), "", "area");
+  h += campo("f-baixa", "Prioridade baixa (1 ponto)", (pal.baixa || []).join(", "), "", "area");
+  h += campo("f-excluir", "Palavras a excluir", (p.excluir || []).join(", "), "Se aparecer uma, a notícia é descartada.");
+  h += '<div class="grid2">' + campo("f-lalerta", "Nota para alerta", p.limite_alerta || 25, "Mensagem imediata", "number") + campo("f-lresumo", "Nota para resumo", p.limite_resumo || 10, "Vai no resumo diário", "number") + "</div>";
+  h += '<details><summary>Fontes só desta pesquisa</summary><div style="margin-top:10px">';
+  h += campo("f-feeds", "Feeds RSS", linhasFontes(p.feeds_extra), "Um por linha: <code>Nome | https://endereço-do-feed</code>. Junta <code>| local</code> se a fonte só publica deste lugar (dispensa as obrigatórias).", "area");
+  h += campo("f-paginas", "Sites sem RSS", linhasFontes(p.paginas_extra), "Um por linha: <code>Nome | https://página-de-notícias</code>. A app deteta as notícias sozinha.", "area");
+  h += "</div></details>";
+  h += '<label class="check"><input type="checkbox" id="f-ativa"' + (p.ativa !== false ? " checked" : "") + "> Ativa</label>";
+  h += '<div class="err" id="f-erro" role="alert"></div>';
+  h += '<button class="btn btn-primary block" data-a="guardar">Guardar no GitHub</button></div>';
+  return h;
+}
+
+function vistaAtividade() {
+  const est = S.estado || {};
+  let h = '<div class="top"><h1>Atividade</h1><button class="btn btn-sm" data-a="recarregar">Atualizar</button></div>';
+  h += '<div class="card"><h3>Execuções no GitHub</h3>';
+  h += S.runs.length ? S.runs.slice(0, 10).map(r => '<div class="list-item"><span class="sm">' + esc(hora(r.created_at)) + " · " + esc(tipoRun(r)) + '</span><span class="wrap">' + estadoRun(r) + ' <a class="sm" href="' + esc(urlSegura(r.html_url)) + '" target="_blank" rel="noopener">registo</a></span></div>').join("") : '<div class="empty">Sem execuções.</div>';
+  h += "</div>";
+  const exs = (est.execucoes || []).slice().reverse();
+  h += '<div class="card"><h3>O que a app fez</h3>';
+  if (!exs.length) h += '<div class="empty">Ainda sem registo. Aparece depois da próxima verificação.</div>';
+  exs.slice(0, 8).forEach(x => {
+    h += '<div class="list-item" style="display:block"><div class="row"><b class="sm">' + esc(hora(x.ts)) + "</b>" + (x.erros && x.erros.length ? '<span class="tag bad">com erros</span>' : x.silencio ? '<span class="tag">silêncio</span>' : '<span class="tag ok">ok</span>') + "</div>";
+    h += '<div class="xs muted">' + (x.pesquisas || []).map(p => esc(p.nome) + ": " + p.recolhidas + " lidas, " + p.relevantes + " relevantes").join(" · ") + "</div>";
+    h += '<div class="xs">' + x.alertas + " alertas enviados" + (x.resumo ? ", resumo com " + x.resumo : "") + (x.sugestoes ? ", " + x.sugestoes + " fontes sugeridas" : "") + "</div>";
+    (x.falhas || []).forEach(f => { h += '<div class="xs err">Fonte com falha: ' + esc(f) + "</div>"; });
+    (x.erros || []).forEach(f => { h += '<div class="xs err">' + esc(f) + "</div>"; });
+    h += "</div>";
+  });
+  h += "</div>";
+  const env = (est.enviados || []).slice().reverse();
+  h += '<div class="card"><h3>Enviado para o WhatsApp</h3>';
+  h += env.length ? env.slice(0, 30).map(itemNoticia).join("") : '<div class="empty">Ainda nada enviado.</div>';
+  h += "</div>";
+  const fila = (est.adiados || []).concat(est.resumo || []);
+  h += '<div class="card"><h3>À espera</h3><div class="xs muted">Alertas adiados (horário de silêncio ou falha de envio) e notícias para o próximo resumo diário.</div>';
+  h += fila.length ? fila.sort((a, b) => b.nota - a.nota).slice(0, 30).map(itemNoticia).join("") : '<div class="empty">Nada à espera.</div>';
+  h += "</div>";
+  return h;
+}
+function itemNoticia(c) {
+  return '<div class="list-item" style="display:block"><a class="title-link" href="' + esc(urlSegura(c.link)) + '" target="_blank" rel="noopener">' + esc(c.titulo) + '</a><div class="xs muted">' + esc(c.fonte) + " · nota " + esc(c.nota) + " · " + esc(c.pesquisa) + (c.ts ? " · " + esc(quando(c.ts)) : "") + (c.tipo === "resumo" ? ' · <span class="tag">resumo</span>' : c.tipo === "alerta" ? ' · <span class="tag info">alerta</span>' : "") + "</div></div>";
+}
+
+function vistaFontes() {
+  const f = (S.config && S.config.fontes) || {}, sug = (S.estado || {}).sugeridas || {};
+  let h = '<div class="top"><h1>Fontes</h1></div>';
+  const ks = Object.keys(sug);
+  h += '<div class="card"><h3>Sugeridas pela app</h3><div class="xs muted">Sites que publicaram notícias relevantes. Decide aqui; a escolha fica no config.yaml.</div>';
+  if (!ks.length) h += '<div class="empty">Nenhuma fonte por decidir.</div>';
+  ks.forEach(d => {
+    const s = sug[d];
+    h += '<div class="list-item" style="display:block"><b>' + esc(s.nome) + '</b> <span class="xs muted">(' + esc(d) + ")</span>";
+    h += '<div class="xs muted">' + esc(s.n) + " notícias relevantes · ex.: " + esc(s.exemplo) + "</div>";
+    h += '<div class="xs">' + (s.feed ? "Tem feed: " + esc(s.feed) : "Sem feed próprio") + "</div>";
+    h += '<div class="wrap" style="margin-top:6px"><button class="btn btn-sm btn-line" data-a="decidir" data-p="confiaveis" data-d="' + esc(d) + '">Confiável</button><button class="btn btn-sm" data-a="decidir" data-p="neutras" data-d="' + esc(d) + '">Neutra</button><button class="btn btn-sm btn-danger" data-a="decidir" data-p="bloqueadas" data-d="' + esc(d) + '">Bloquear</button></div></div>';
+  });
+  h += "</div>";
+  const nomes = { confiaveis: ["Confiáveis", "Valem ×1,5."], neutras: ["Neutras", "Peso normal, deixam de ser sugeridas."], bloqueadas: ["Bloqueadas", "As notícias delas são descartadas."] };
+  Object.keys(nomes).forEach(k => {
+    h += '<div class="card"><div class="row"><h3>' + nomes[k][0] + '</h3><span class="xs muted">' + nomes[k][1] + "</span></div>";
+    h += (f[k] || []).length ? f[k].map(d => '<div class="list-item"><span>' + esc(d) + '</span><button class="btn btn-sm" data-a="tirar" data-p="' + k + '" data-d="' + esc(d) + '">Tirar</button></div>').join("") : '<div class="empty">Nenhuma.</div>';
+    h += '<div class="row"><input type="text" id="add-' + k + '" placeholder="ex: publico.pt" aria-label="Juntar domínio a ' + nomes[k][0] + '"><button class="btn btn-sm" data-a="juntar" data-p="' + k + '">Juntar</button></div></div>';
+  });
+  h += '<div class="card"><h3>Feeds e sites para todas as pesquisas</h3>';
+  h += '<div class="field"><label for="g-feeds">Feeds RSS</label><textarea id="g-feeds">' + esc(linhasFontes(f.feeds)) + '</textarea><div class="hint">Um por linha: <code>Nome | https://endereço-do-feed</code></div></div>';
+  h += '<div class="field"><label for="g-paginas">Sites sem RSS</label><textarea id="g-paginas">' + esc(linhasFontes(f.paginas)) + '</textarea><div class="hint">Um por linha: <code>Nome | https://página-de-notícias</code>. Para encontrar feeds escondidos de uma pesquisa, no computador: <code>python agregador.py --procurar-feeds "Sertã"</code></div></div>';
+  h += '<button class="btn btn-primary block" data-a="gravar-gerais">Guardar no GitHub</button></div>';
+  return h;
+}
+
+function vistaLigacao() {
+  let h = '<div class="top"><h1>Ligação</h1></div>';
+  h += '<div class="card"><h3>Repositório</h3><div class="field"><label for="l-repo">Dono/nome no GitHub</label><input type="text" id="l-repo" value="' + esc(S.repo) + '"></div>';
+  h += '<div class="field"><label for="l-token">Token do GitHub</label><input type="password" id="l-token" autocomplete="off" placeholder="' + (S.token ? "guardado neste aparelho" : "github_pat_…") + '"><div class="hint">Sem token, o painel só mostra. Com token, também grava pesquisas e corre ações. Fica guardado só neste navegador.</div></div>';
+  h += '<div class="wrap"><button class="btn btn-primary" data-a="ligar">Guardar e testar</button>' + (S.token ? '<button class="btn btn-danger" data-a="esquecer">Esquecer token</button>' : "") + "</div>";
+  h += '<div id="l-res" class="sm" role="status"></div></div>';
+  h += '<div class="card"><h3>Como criar o token (uma vez)</h3><ol class="sm">';
+  h += '<li>Abre <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a>.</li>';
+  h += "<li>Nome: <code>painel agregador</code>. Validade: a que preferires (ex.: 1 ano).</li>";
+  h += "<li>Repository access: <b>Only select repositories</b> → <code>" + esc(S.repo.split("/")[1] || "") + "</code>.</li>";
+  h += "<li>Permissions → Repository permissions: <b>Contents: Read and write</b> e <b>Actions: Read and write</b>.</li>";
+  h += "<li>Generate token, copia-o e cola-o acima.</li></ol>";
+  h += '<div class="xs muted">Este token só dá acesso a este repositório. Quem usar este navegador consegue mudar as pesquisas; num aparelho partilhado, usa "Esquecer token" no fim.</div></div>';
+  h += '<div class="card"><h3>Atalhos</h3><div class="sm"><a href="https://github.com/' + esc(S.repo) + '/blob/main/config.yaml" target="_blank" rel="noopener">config.yaml no GitHub</a> · <a href="https://github.com/' + esc(S.repo) + '/actions" target="_blank" rel="noopener">Actions</a> · <a href="https://github.com/' + esc(S.repo) + '/settings/secrets/actions" target="_blank" rel="noopener">Segredos</a></div></div>';
+  return h;
+}
+
+function render() {
+  const b = document.getElementById("banner");
+  if (S.erroCarga) { b.className = "banner"; b.textContent = S.erroCarga; }
+  else if (!S.config) { b.className = "banner"; b.textContent = "A carregar do GitHub…"; }
+  else if (!S.token) { b.className = "banner"; b.textContent = "Só leitura · junta um token em Ligação para editar"; }
+  else { b.className = "banner ok"; b.textContent = "Ligado a " + S.repo; }
+  document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-current", t.dataset.tab === S.tab ? "page" : "false"));
+  const m = document.getElementById("main");
+  if (!S.config && S.tab !== "ligacao") {
+    m.innerHTML = S.erroCarga ? '<div class="card"><div class="err">' + esc(S.erroCarga) + '</div><button class="btn" data-a="recarregar">Tentar outra vez</button></div>' : '<div class="card"><div class="empty">A carregar…</div></div>';
     return;
   }
-  c.forEach(function(d){S.pend[d]={nome:dname(d),n:Object.keys(stats[d].ids).length,pes:Object.keys(stats[d].pes).slice(0,3),ex:stats[d].ex,feed:!!FEEDS[d]};});
-  S.ui.srcTab='sugeridas';render();
-  toast(c.length+(c.length===1?' fonte nova sugerida.':' fontes novas sugeridas.')+' Na app real chegam por WhatsApp e decides no config.yaml. Aqui podes decidir com os botões.');
-}
-function decidir(d,c){
-  var st={c:'confiavel',n:'neutra',b:'bloqueada'}[c],sug=S.pend[d];
-  if(!st)return;
-  delete S.pend[d];S.src[d]=st;delete S.feeds[d];
-  var rot={confiavel:'marcada como confiável',neutra:'marcada como neutra',bloqueada:'bloqueada'}[st];
-  var lista={confiavel:'fontes.confiaveis',neutra:'fontes.neutras',bloqueada:'fontes.bloqueadas'}[st];
-  var extra='';
-  if(st==='confiavel'&&sug&&sug.feed){S.feeds[d]=true;rot+=' e passa a ser lida diretamente';extra=' e o feed a fontes.feeds';}
-  render();
-  toast(dname(d)+': '+rot+'. Na app real isto é juntar o domínio a '+lista+extra+' no config.yaml; aplica-se na verificação seguinte.');
-}
-/* igual a texto_sugestao() em Python */
-function sugHtml(d,x){
-  var l=['🔎 *Fonte nova: '+x.nome+'* ('+d+')',
-    'Apareceu em '+x.n+' notícias relevantes · '+x.pes.join(', '),
-    'Exemplo: '+x.ex,
-    x.feed?'📡 Feed: https://'+d+'/feed':'📡 Sem feed próprio: continuo a vê-la pelo Google Notícias.'];
-  return '<article class="card">'+waBubble(l,'Sugestão recebida por WhatsApp')+
-    '<div class="xs muted">Decidir no painel (simula a edição do config.yaml):</div>'+
-    '<div class="gap8" role="group" aria-label="Decidir sobre '+esc(dname(d))+'">'+
-    [['c','✅ Confiável'],['n','➖ Neutra'],['b','🚫 Bloquear']].map(function(b){return '<button class="btn" style="flex:1" data-a="dec" data-p="'+esc(d)+'" data-q="'+b[0]+'">'+b[1]+'</button>';}).join('')+'</div></article>';
-}
-function pagCmd(p){
-  var c='python agregador.py --testar-pagina '+p.url;
-  [['item','item'],['titulo','titulo'],['resumo','resumo'],['data','data']].forEach(function(k){if(p[k[0]])c+=' --'+k[1]+' "'+p[k[0]]+'"';});
-  return c;
-}
-function paginasHtml(){
-  var f=S.ui.pform,dm=domains();
-  var h='<div class="card"><strong style="font-size:17px">Sites sem RSS</strong>'+
-    '<div class="sm muted">Para sites que não têm feed RSS, a app lê a página de notícias diretamente (no config.yaml, em fontes.paginas). Só o nome e o endereço são obrigatórios: sem seletores, a app deteta as notícias sozinha. Os seletores servem para afinar quando a deteção falha.</div>'+
-    '<div class="xs muted">Para ver o que a app encontra, corre no computador: <code>python agregador.py --testar-pagina URL</code></div>'+
-    '<div class="note">Modo teste: os sites não são lidos de verdade. Só a Câmara da Sertã tem notícias inventadas na base de teste.</div>';
-  if(!S.paginas.length)h+='<div class="muted sm">Nenhum site na lista.</div>';
-  S.paginas.forEach(function(p){
-    var d=domDe(p.url),sel=[['item','item'],['titulo','título'],['resumo','resumo'],['data','data']].filter(function(k){return p[k[0]];});
-    h+='<div style="border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:6px">'+
-      '<div class="row"><div><div style="font-weight:600">'+esc(p.nome||'Sem nome')+'</div><div class="xs muted" style="word-break:break-all">'+esc(p.url)+'</div></div>'+
-      '<button class="btn btn-danger" data-a="delpag" data-p="'+esc(p.id)+'" aria-label="Remover '+esc(p.nome)+'">Remover</button></div>'+
-      '<div class="xs muted">'+(sel.length?'Seletores: '+sel.map(function(k){return k[1]+' <code>'+esc(p[k[0]])+'</code>';}).join(' · '):'Sem seletores: deteção automática.')+
-      (d&&dm[d]?' · '+dm[d]+' notícias na base de teste':'')+'</div>'+
-      '<div class="xs muted">Testar: <code>'+esc(pagCmd(p))+'</code></div></div>';
-  });
-  function campo(k,label,ph){return '<div class="field"><label class="f" for="pg-'+k+'">'+label+'</label><input id="pg-'+k+'" type="text" data-in="pform" data-p="'+k+'" value="'+esc(f[k])+'" placeholder="'+esc(ph)+'" autocomplete="off"></div>';}
-  h+='<div style="border-top:1px solid var(--line);padding-top:10px;display:flex;flex-direction:column;gap:10px"><strong>Juntar site</strong>'+
-    campo('nome','Nome','ex.: Câmara de Proença-a-Nova')+campo('url','Endereço da página de notícias','https://…')+
-    '<div class="xs muted">Opcional: seletores CSS (deixa em branco para a deteção automática).</div>'+
-    campo('item','Cada notícia (item)','ex.: div.noticia')+campo('titulo','Título, dentro do item','ex.: h2 a')+
-    campo('resumo','Resumo, dentro do item','ex.: p.resumo')+campo('data','Data, dentro do item','ex.: time')+
-    '<button class="btn btn-primary block" data-a="addpag">Juntar site</button></div></div>';
-  return h;
-}
-function vFontes(){
-  var dm=domains(),tab=S.ui.srcTab,pend=Object.keys(S.pend).sort();
-  function por(st){return Object.keys(dm).filter(function(d){return S.src[d]===st;}).sort();}
-  var tabs=[['sugeridas','Sugeridas',pend.length],['confiavel','Confiáveis',por('confiavel').length],['neutra','Neutras',por('neutra').length],['bloqueada','Bloqueadas',por('bloqueada').length]];
-  var h=head('Fontes');
-  h+='<div class="card"><strong style="font-size:17px">Descoberta automática</strong>'+
-    '<div class="sm muted">Na app real, 1 vez por dia procura sites novos que publicam sobre as tuas pesquisas e envia-te uma sugestão por WhatsApp. A mensagem é só texto, sem botões: para decidir, juntas o domínio a fontes.confiaveis, fontes.neutras ou fontes.bloqueadas no config.yaml. Sem decisão em 14 dias, a sugestão é esquecida.</div>'+
-    '<div class="sm muted">Aqui podes simular a procura de hoje e decidir com os botões do painel, que fazem de conta que editaste o config.yaml.</div>'+
-    '<button class="btn btn-line block" data-a="descobrir">Simular a procura de hoje</button>'+
-    '<div class="xs muted">Só sugere sites com pelo menos '+S.w.descMin+' notícias relevantes, até '+S.w.descMax+' por dia e nunca mais de 10 por decidir. Podes mudar isto em Definições.</div></div>';
-  h+='<div class="pillrow" role="group" aria-label="Tipo de fonte">'+tabs.map(function(t){
-    return '<button class="filter" data-a="srctab" data-p="'+t[0]+'" aria-pressed="'+(tab===t[0])+'">'+t[1]+' ('+t[2]+')</button>';}).join('')+'</div>';
-  if(tab==='sugeridas'){
-    if(!pend.length)h+='<div class="empty"><div class="muted">Sem sugestões por decidir.<br>Carrega em "Simular a procura de hoje".</div></div>';
-    pend.forEach(function(d){h+=sugHtml(d,S.pend[d]);});
-    return h+paginasHtml();
-  }
-  var list=por(tab);
-  if(!list.length)h+='<div class="empty"><div class="muted">Nenhuma fonte aqui.</div></div>';
-  list.forEach(function(d){
-    var st=S.src[d];
-    h+='<article class="card"><div class="row"><div><div style="font-weight:600;font-size:16px">'+esc(dname(d))+'</div><div class="xs muted">'+esc(d)+' · '+dm[d]+' notícias na base de teste</div></div>'+
-      (S.feeds[d]?'<span class="tag ok">Lida diretamente</span>':'')+'</div>'+
-      '<div class="gap8" role="group" aria-label="Classificar '+esc(dname(d))+'">'+
-      [['confiavel','Confiável'],['neutra','Neutra'],['bloqueada','Bloquear']].map(function(x){return '<button class="btn" style="flex:1" data-a="src" data-p="'+esc(d)+'" data-q="'+x[0]+'" aria-pressed="'+(st===x[0])+'">'+x[1]+'</button>';}).join('')+'</div></article>';
-  });
-  h+='<p class="xs muted">Confiável: nota ×'+S.w.confiavel+' · Neutra ou nova: ×'+S.w.desconhecida+' · Bloqueada: descartada. Na app real, estas listas ficam no config.yaml.</p>';
-  return h+paginasHtml();
+  m.innerHTML = { inicio: vistaInicio, pesquisas: vistaPesquisas, atividade: vistaAtividade, fontes: vistaFontes, ligacao: vistaLigacao }[S.tab]();
 }
 
-/* ---------- ecrã: Definições ---------- */
-function num(label,key,step){
-  return '<div class="numrow"><label for="w-'+key+'">'+label+'</label><input id="w-'+key+'" type="number" min="0" step="'+step+'" data-in="w" data-p="'+key+'" value="'+S.w[key]+'"></div>';
+// ------------------------------------------------------------ ações
+async function ocupado(btn, fn) {
+  if (S.ocupado) return;
+  S.ocupado = true; const txt = btn ? btn.textContent : ""; if (btn) { btn.disabled = true; btn.textContent = "A gravar…"; }
+  try { await fn(); } catch (e) { toast(e.message); const fe = document.getElementById("f-erro"); if (fe) fe.textContent = e.message; if (btn) { btn.disabled = false; btn.textContent = txt; } }
+  finally { S.ocupado = false; }
 }
-function vDef(){
-  var f=S.ui.form;
-  var h=head('Definições');
-  h+='<div class="card"><div class="row"><strong style="font-size:17px">WhatsApp (CallMeBot)</strong><span class="tag warn">Modo teste</span></div>'+
-    '<div class="sm muted">Aqui nada é enviado. Na app real, os alertas chegam ao teu WhatsApp através do CallMeBot (só envio, as mensagens não têm botões). O telefone e a API key ficam como segredos WHATSAPP_TELEFONE e WHATSAPP_APIKEY no GitHub.</div>'+
-    '<div class="field"><label class="f" for="wa-tel">Telefone (com indicativo)</label><input id="wa-tel" type="text" inputmode="tel" data-in="wa" data-p="tel" value="'+esc(S.wa.tel)+'" placeholder="ex.: 351912345678" autocomplete="off"></div>'+
-    '<div class="field"><label class="f" for="wa-key">API key do CallMeBot</label><input id="wa-key" type="text" data-in="wa" data-p="key" value="'+esc(waKey)+'" placeholder="a apikey que o CallMeBot te enviou" autocomplete="off"></div>'+
-    '<div class="xs muted">A API key não é guardada neste navegador.</div>'+
-    '<button class="btn btn-line block" data-a="wateste">Enviar mensagem de teste</button></div>';
-  h+='<div class="card"><strong style="font-size:17px">Pontuação</strong>'+
-    num('Palavra alta (pontos)','alta',1)+num('Palavra média (pontos)','media',1)+num('Palavra baixa (pontos)','baixa',1)+
-    num('Fonte confiável (multiplicador)','confiavel',0.1)+num('Fonte desconhecida (multiplicador)','desconhecida',0.1)+
-    num('Bónus por fonte extra','bonusExtra',1)+num('Bónus máximo por fontes extra','bonusExtraMax',1)+
-    num('Bónus de última hora (menos de 1 h)','bonusHora',1)+num('Ignorar notícias com mais de (horas)','idadeMax',1)+
-    num('Descoberta: notícias mínimas por fonte','descMin',1)+num('Descoberta: máximo de sugestões por dia','descMax',1)+
-    '<div class="xs muted">Muda um valor e vê os alertas mudarem no separador Alertas.</div></div>';
-  h+='<div class="card"><strong style="font-size:17px">Notícias de teste</strong>'+
-    '<div class="sm muted">A base tem '+BANK.length+' notícias inventadas. Acrescenta as tuas para experimentar situações concretas.</div>'+
-    '<div class="field"><label class="f" for="f-t">Título</label><input id="f-t" type="text" data-in="form" data-p="t" value="'+esc(f.t)+'" autocomplete="off"></div>'+
-    '<div class="field"><label class="f" for="f-r">Resumo (opcional)</label><input id="f-r" type="text" data-in="form" data-p="r" value="'+esc(f.r)+'" autocomplete="off"></div>'+
-    '<div class="field"><label class="f" for="f-d">Fonte (ex.: meusite.exemplo)</label><input id="f-d" type="text" data-in="form" data-p="d" value="'+esc(f.d)+'" autocomplete="off"></div>'+
-    '<div class="field"><label class="f" for="f-m">Publicada há quantos minutos</label><input id="f-m" type="number" min="0" step="1" data-in="form" data-p="m" value="'+esc(f.m)+'"></div>'+
-    '<button class="btn btn-primary block" data-a="addnews">Adicionar notícia de teste</button>'+
-    S.extra.map(function(n){return '<div class="row" style="border-top:1px solid var(--line);padding-top:10px"><div><div style="font-weight:600">'+esc(n.t)+'</div><div class="xs muted">'+esc(dname(n.d))+' · '+ago(n.m)+'</div></div><button class="btn btn-danger" data-a="delnews" data-p="'+n.id+'" aria-label="Apagar '+esc(n.t)+'">Apagar</button></div>';}).join('')+
-  '</div>';
-  h+='<button class="btn btn-danger block" data-a="reset">'+(confirmar==='reset'?'Confirmar: repor tudo':'Repor dados de exemplo')+'</button>';
-  return h;
-}
-
-/* ---------- geração de palavras ---------- */
-function limpa(a){
-  var seen={},out=[];
-  (Array.isArray(a)?a:[]).forEach(function(x){
-    x=String(x||'').trim();var k=norm(x);
-    if(x&&k&&!seen[k]){seen[k]=1;out.push(x);}
+async function guardarPesquisa(btn) {
+  const v = id => document.getElementById(id).value;
+  const nome = v("f-nome").trim();
+  const ps = (S.config.pesquisas || []), orig = S.editar >= 0 ? ps[S.editar] : null;
+  const la = Number(v("f-lalerta")), lr = Number(v("f-lresumo"));
+  const fe = document.getElementById("f-erro");
+  const falha = m => { fe.textContent = m; fe.scrollIntoView({ block: "center" }); };
+  if (!nome) return falha("Dá um nome à pesquisa.");
+  if (ps.some((p, i) => i !== S.editar && String(p.nome).toLowerCase() === nome.toLowerCase())) return falha("Já existe uma pesquisa com este nome.");
+  const nova = Object.assign({}, orig || {}, {
+    nome: nome, ativa: document.getElementById("f-ativa").checked, consulta: v("f-consulta").trim(),
+    obrigatorias: lista(v("f-obrig")), palavras: { alta: lista(v("f-alta")), media: lista(v("f-media")), baixa: lista(v("f-baixa")) },
+    excluir: lista(v("f-excluir")), limite_alerta: la, limite_resumo: lr,
+    feeds_extra: lerLinhasFontes(v("f-feeds"), orig && orig.feeds_extra), paginas_extra: lerLinhasFontes(v("f-paginas"), orig && orig.paginas_extra),
   });
-  return out;
+  if (!nova.consulta && !nova.feeds_extra.length && !nova.paginas_extra.length) return falha("Diz o que procurar no Google Notícias, ou junta pelo menos um feed ou site.");
+  if (!(la > 0) || !(lr > 0) || lr >= la) return falha("As notas têm de ser números, e a do resumo menor do que a do alerta.");
+  if (![...nova.feeds_extra, ...nova.paginas_extra].every(f => /^https?:\/\//i.test(f.url))) return falha("Há uma fonte sem endereço válido (tem de começar por https://).");
+  if (!nova.palavras.alta.length && !nova.palavras.media.length && !nova.palavras.baixa.length) return falha("Junta pelo menos uma palavra de prioridade, senão nenhuma notícia tem pontos.");
+  const nomeOrig = orig ? orig.nome : null;
+  await ocupado(btn, async () => {
+    await mudarConfig("pesquisas", lst => {
+      const i = nomeOrig === null ? -1 : lst.findIndex(p => p.nome === nomeOrig);
+      if (i >= 0) lst[i] = nova; else lst.push(nova);
+      return lst;
+    }, (orig ? "painel: editar a pesquisa " : "painel: criar a pesquisa ") + nome);
+    S.editar = null; toast("Pesquisa guardada no GitHub. Vale a partir da próxima verificação."); render();
+  });
 }
-function heuristica(tema){
-  var ws=norm(tema).split(' ').filter(function(w){return w.length>=4;});
-  return {alta:ws.length>1?[tema.trim()]:ws.slice(0,1),media:ws.length>1?ws:[],baixa:[],excluir:['horóscopo','publicidade']};
+async function onClick(ev) {
+  const el = ev.target.closest("[data-a],[data-tab]"); if (!el) return;
+  if (el.dataset.tab) { S.tab = el.dataset.tab; S.editar = null; lsSet(LS_TAB, S.tab); render(); document.getElementById("main").scrollTop = 0; return; }
+  const a = el.dataset.a, p = el.dataset.p, d = el.dataset.d;
+  const ps = (S.config && S.config.pesquisas) || [];
+  if (a === "tab") { S.tab = p; render(); return; }
+  if (a === "recarregar") { await carregar(); toast("Atualizado."); return; }
+  if (a === "correr") { try { await correr(p); } catch (e) { toast(e.message); } return; }
+  if (a === "nova") { if (!S.token) { toast("Para criar pesquisas, junta primeiro um token em Ligação."); return; } S.editar = -1; render(); return; }
+  if (a === "editar") { if (!S.token) { toast("Para editar, junta primeiro um token em Ligação."); return; } S.editar = Number(p); render(); return; }
+  if (a === "cancelar") { S.editar = null; render(); return; }
+  if (a === "guardar") { await guardarPesquisa(el); return; }
+  if (a === "pausar") {
+    const alvo = ps[Number(p)];
+    await ocupado(el, async () => { await mudarConfig("pesquisas", lst => { lst.forEach(x => { if (x.nome === alvo.nome) x.ativa = x.ativa === false; }); return lst; }, "painel: " + (alvo.ativa === false ? "ativar" : "pausar") + " a pesquisa " + alvo.nome); toast("Feito."); render(); });
+    return;
+  }
+  if (a === "apagar") {
+    const alvo = ps[Number(p)];
+    if (!confirm('Apagar a pesquisa "' + alvo.nome + '"? Isto não se pode desfazer no painel.')) return;
+    await ocupado(el, async () => { await mudarConfig("pesquisas", lst => lst.filter(x => x.nome !== alvo.nome), "painel: apagar a pesquisa " + alvo.nome); toast("Pesquisa apagada."); render(); });
+    return;
+  }
+  if (a === "decidir" || a === "juntar" || a === "tirar") {
+    let dom = d;
+    if (a === "juntar") { dom = dominio(/^https?:/i.test(document.getElementById("add-" + p).value.trim()) ? document.getElementById("add-" + p).value.trim() : "https://" + document.getElementById("add-" + p).value.trim()).toLowerCase(); if (!/^[a-z0-9.-]+\.[a-z]{2,}$/.test(dom)) { toast("Escreve um domínio, por exemplo publico.pt"); return; } }
+    const sug = ((S.estado || {}).sugeridas || {})[dom];
+    await ocupado(el, async () => {
+      await mudarConfig("fontes", f => {
+        ["confiaveis", "neutras", "bloqueadas"].forEach(k => { f[k] = (f[k] || []).filter(x => x !== dom); });
+        if (a !== "tirar") f[p] = (f[p] || []).concat([dom]);
+        if (a === "decidir" && p === "confiaveis" && sug && sug.feed && !(f.feeds || []).some(x => x.url === sug.feed)) f.feeds = (f.feeds || []).concat([{ nome: sug.nome, url: sug.feed }]);
+        return f;
+      }, "painel: " + (a === "tirar" ? "tirar " + dom + " de " + p : dom + " em " + p));
+      if (a === "decidir" && S.estado && S.estado.sugeridas) delete S.estado.sugeridas[dom];
+      toast(a === "tirar" ? "Retirado." : dom + " guardado em " + p + "."); render();
+    });
+    return;
+  }
+  if (a === "gravar-gerais") {
+    const feeds = lerLinhasFontes(document.getElementById("g-feeds").value, (S.config.fontes || {}).feeds);
+    const pags = lerLinhasFontes(document.getElementById("g-paginas").value, (S.config.fontes || {}).paginas);
+    if (![...feeds, ...pags].every(f => /^https?:\/\//i.test(f.url))) { toast("Há uma fonte sem endereço válido (tem de começar por https://)."); return; }
+    await ocupado(el, async () => { await mudarConfig("fontes", f => { f.feeds = feeds; f.paginas = pags; return f; }, "painel: feeds e sites gerais"); toast("Guardado no GitHub."); render(); });
+    return;
+  }
+  if (a === "ligar") {
+    const repo = document.getElementById("l-repo").value.trim().replace(/^https?:\/\/github\.com\//i, "").replace(/\/$/, "");
+    const tok = document.getElementById("l-token").value.trim();
+    const res = document.getElementById("l-res");
+    if (!/^[\w.-]+\/[\w.-]+$/.test(repo)) { res.innerHTML = '<span class="err">Escreve o repositório como dono/nome.</span>'; return; }
+    S.repo = repo; lsSet(LS_LIG, JSON.stringify({ repo: repo }));
+    if (tok) { S.token = tok; lsSet(LS_TOKEN, tok); }
+    res.textContent = "A testar…";
+    try {
+      const info = await gh("/repos/" + S.repo);
+      const pode = info.permissions && info.permissions.push;
+      res.innerHTML = S.token ? (pode ? '<span class="tag ok">Ligado: podes ler e gravar.</span>' : '<span class="err">O token liga, mas não tem permissão de escrita (Contents: Read and write).</span>') : '<span class="tag">Ligado em só leitura.</span>';
+      await carregar(true);
+    } catch (e) { res.innerHTML = '<span class="err">' + esc(e.message) + "</span>"; }
+    return;
+  }
+  if (a === "esquecer") { S.token = ""; lsSet(LS_TOKEN, null); toast("Token esquecido neste aparelho."); render(); return; }
 }
-function juntar(s,l,novos){
-  var cur=arr(s,l),seen={};cur.forEach(function(x){seen[norm(x)]=1;});
-  limpa(novos).slice(0,8).forEach(function(x){if(!seen[norm(x)]){cur.push(x);seen[norm(x)]=1;}});
-}
-async function gerar(){
-  var s=cur();if(!s)return;
-  var tema=(s.nome||'').trim();
-  if(!tema){toast('Escreve primeiro o tema da pesquisa.');return;}
-  gerando=true;render();
-  var res=null,via='regra';
-  try{
-    var sample=window.claude&&window.claude.use?await window.claude.use('sample'):null;
-    if(sample){
-      res=await sample.json('Vais ajudar a configurar um agregador de notícias. Tema: "'+tema+'". Gera palavras-chave em português europeu, sem repetições: "alta" = 3 a 5 termos muito específicos que indicam uma notícia importante; "media" = 4 a 6 termos relacionados; "baixa" = 3 a 5 termos gerais; "excluir" = 3 a 4 palavras que indicam ruído a ignorar. Responde apenas com JSON: {"alta":[],"media":[],"baixa":[],"excluir":[]}',{modelTier:'quick',cache:false});
-      via='claude';
-    }
-  }catch(e){res=null;}
-  if(!res||!Array.isArray(res.alta)){res=heuristica(tema);via='regra';}
-  juntar(s,'alta',res.alta);juntar(s,'media',res.media);juntar(s,'baixa',res.baixa);juntar(s,'excluir',res.excluir);
-  gerando=false;render();
-  toast(via==='claude'?'Palavras sugeridas pelo Claude. Podes remover as que não queiras.':'O Claude não está disponível aqui, por isso usei uma regra simples. Edita à vontade.');
-}
-
-/* ---------- render e eventos ---------- */
-function render(){
-  var m=$('#main'),st=m.scrollTop;
-  m.innerHTML=S.ui.tab==='alertas'?vAlertas():(S.ui.tab==='pesquisas'?vPesquisas():(S.ui.tab==='fontes'?vFontes():vDef()));
-  $('#tabs').innerHTML=tabsHtml();
-  m.scrollTop=st;
-  if(focusId){var el=document.getElementById(focusId);if(el){el.focus();}focusId=null;}
-  save();
-}
-function go(tab){S.ui.tab=tab;confirmar=null;render();$('#main').scrollTop=0;}
-document.addEventListener('click',function(e){
-  var b=e.target.closest('[data-a]');if(!b)return;
-  var a=b.dataset.a,p=b.dataset.p,q=b.dataset.q,s;
-  if(a==='noop'){e.preventDefault();return;}
-  if(a!=='apagar'&&a!=='reset')confirmar=null;
-  if(a==='tab'){go(p);return;}
-  if(a==='filtro'){S.ui.filtro=p;render();return;}
-  if(a==='verificar'){
-    var i=0,r=0;S.searches.filter(function(x){return x.ativa;}).forEach(function(x){evaluate(x).forEach(function(k){if(k.nivel==='alerta')i++;else if(k.nivel==='resumo')r++;});});
-    toast('Verificação feita: '+i+' alertas imediatos e '+r+' para o resumo. Modo teste, nada foi enviado.');return;
-  }
-  if(a==='fb'){S.fb[p]=S.fb[p]===q?null:q;render();return;}
-  if(a==='wav'){S.ui.wa[p]=!S.ui.wa[p];render();return;}
-  if(a==='nova'){
-    s={id:uid(),nome:'',ativa:true,obrigatorias:[],palavras:{alta:[],media:[],baixa:[]},excluir:[],limAlerta:25,limResumo:10};
-    S.searches.push(s);S.ui.edit=s.id;S.ui.sel=s.id;focusId='in-nome';render();return;
-  }
-  if(a==='editar'){S.ui.edit=p;render();$('#main').scrollTop=0;return;}
-  if(a==='voltar'){s=cur();if(s&&!s.nome.trim())s.nome='Pesquisa sem nome';S.ui.edit=null;render();return;}
-  if(a==='ativa'){S.searches.forEach(function(x){if(x.id===p)x.ativa=!x.ativa;});render();return;}
-  if(a==='ver'){S.ui.sel=p;S.ui.edit=null;S.ui.filtro='imediatos';go('alertas');return;}
-  if(a==='apagar'){
-    if(confirmar!==p){confirmar=p;render();return;}
-    S.searches=S.searches.filter(function(x){return x.id!==p;});S.ui.edit=null;confirmar=null;S.ui.sel=null;render();toast('Pesquisa apagada.');return;
-  }
-  if(a==='addkw'){
-    s=cur();var inp=document.getElementById('kw-'+p);if(!s||!inp)return;
-    var v=inp.value.trim();
-    if(!v){toast('Escreve uma palavra primeiro.');return;}
-    juntar(s,p,[v]);focusId='kw-'+p;render();return;
-  }
-  if(a==='delkw'){s=cur();if(s)arr(s,p).splice(Number(q),1);render();return;}
-  if(a==='gerar'){gerar();return;}
-  if(a==='srctab'){S.ui.srcTab=p;render();return;}
-  if(a==='src'){if(S.src[p]===q)delete S.src[p];else S.src[p]=q;if(S.src[p]!=='confiavel')delete S.feeds[p];render();return;}
-  if(a==='descobrir'){descobrir();return;}
-  if(a==='dec'){decidir(p,q);return;}
-  if(a==='wateste'){
-    var tel=S.wa.tel.replace(/[^\d]/g,''),falta=[];
-    if(!tel)falta.push('o telefone');if(!waKey.trim())falta.push('a API key');
-    if(falta.length){toast('Falta '+falta.join(' e ')+'.');return;}
-    toast('Modo teste: nada foi enviado. Na app real chegava ao '+tel+': "✅ O agregador de notícias está ligado ao WhatsApp."');return;
-  }
-  if(a==='addpag'){
-    var pf=S.ui.pform;
-    if(!pf.nome.trim()||!pf.url.trim()){toast('Preenche pelo menos o nome e o endereço.');return;}
-    if(!/^https?:\/\//i.test(pf.url.trim())||!domDe(pf.url)){toast('O endereço tem de começar por http:// ou https://');return;}
-    S.paginas.push(fixPage({nome:pf.nome.trim(),url:pf.url.trim(),item:pf.item.trim(),titulo:pf.titulo.trim(),resumo:pf.resumo.trim(),data:pf.data.trim()}));
-    S.ui.pform=PFORM();render();toast('Site juntado. Na app real, junta-o a fontes.paginas no config.yaml.');return;
-  }
-  if(a==='delpag'){S.paginas=S.paginas.filter(function(x){return x.id!==p;});render();return;}
-  if(a==='addnews'){
-    var f=S.ui.form;
-    if(!f.t.trim()||!f.d.trim()){toast('Preenche pelo menos o título e a fonte.');return;}
-    var d=norm(f.d).replace(/ /g,'');if(f.d.indexOf('.')>-1)d=f.d.trim().toLowerCase();
-    S.extra.push({id:'x'+uid(),t:f.t.trim(),r:f.r.trim(),d:d,m:Math.max(0,Number(f.m)||0)});
-    S.ui.form={t:'',r:'',d:'',m:'10'};render();toast('Notícia de teste adicionada. Vê o efeito em Alertas.');return;
-  }
-  if(a==='delnews'){S.extra=S.extra.filter(function(n){return n.id!==p;});render();return;}
-  if(a==='reset'){
-    if(confirmar!=='reset'){confirmar='reset';render();return;}
-    S=defaults();confirmar=null;render();toast('Dados de exemplo repostos.');return;
-  }
-});
-document.addEventListener('input',function(e){
-  var t=e.target,k=t.dataset&&t.dataset.in;if(!k)return;
-  var s;
-  if(k==='nome'){s=cur();if(s)s.nome=t.value;}
-  else if(k==='limAlerta'||k==='limResumo'){s=cur();if(s)s[k]=Number(t.value)||0;}
-  else if(k==='w'){S.w[t.dataset.p]=Number(t.value)||0;}
-  else if(k==='form'){S.ui.form[t.dataset.p]=t.value;}
-  else if(k==='pform'){S.ui.pform[t.dataset.p]=t.value;}
-  else if(k==='wa'){if(t.dataset.p==='key')waKey=t.value;else S.wa.tel=t.value;}
-  save();
-});
-document.addEventListener('change',function(e){
-  var t=e.target,k=t.dataset&&t.dataset.in;if(!k)return;
-  if(k==='sel'){S.ui.sel=t.value;render();}
-  else if(k==='limAlerta'||k==='limResumo'||k==='w'){render();}
-});
-document.addEventListener('keydown',function(e){
-  if(e.key!=='Enter')return;
-  var t=e.target;
-  if(t&&t.dataset&&t.dataset.kw){e.preventDefault();var b=document.querySelector('[data-a="addkw"][data-p="'+t.dataset.kw+'"]');if(b)b.click();}
-});
+document.addEventListener("click", onClick);
 render();
-})();
+carregar();
+setInterval(() => { if (!S.ocupado && S.editar === null && !document.hidden) carregar(true); }, 5 * 60000);
 </script>
 </body>
 </html>
