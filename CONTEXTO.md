@@ -18,7 +18,8 @@ Agregador de notícias pessoal:
   `tigreman263/agregador-noticias`. Público porque o Actions é ilimitado (o workflow acorda
   de 15 em 15 minutos) e o painel lê sem token; os segredos ficam protegidos.
 - **Frequência configurável (2026-10-10)**: o cron do GitHub não pode ler o config, por
-  isso o workflow corre `*/15 * * * *` e o 1.º passo (Python sem dependências) compara a
+  isso o workflow corre `*/15 * * * *`; um job "decidir" sem fila (`.github/ja_e_altura.py`,
+  só biblioteca padrão; repetido no início do job "correr", que tem a fila) compara a
   última `estado.execucoes[-1].ts` com `geral.intervalo_minutos` (por omissão 30, mínimo 30,
   folga de 2,5 min). Se não for altura, os passos seguintes são saltados (sem commit).
   Execuções manuais correm sempre. O painel muda o valor em Início → Frequência.

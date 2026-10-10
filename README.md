@@ -517,6 +517,7 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 | `painel.json` | Notícias descartadas e limpeza da atividade, gravadas pelo painel. |
 | `requirements.txt` | Bibliotecas Python (requests, PyYAML, defusedxml, beautifulsoup4). |
 | `.github/workflows/agregador.yml` | Acorda de 15 em 15 minutos, verifica conforme `geral.intervalo_minutos`, e ações manuais (normal, teste, simular, descobrir-fontes, agendada). |
+| `.github/ja_e_altura.py` | Decide, em cada execução automática, se já passou o intervalo escolhido. |
 | `painel/index.html` | O painel. |
 | `Abrir Painel.url` / `Abrir Painel.bat` | Abrem o painel no navegador (duplo clique no Windows). |
 | `.gitattributes` | Mantém o formato de linhas do Windows nos dois atalhos. |
