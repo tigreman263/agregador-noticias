@@ -158,6 +158,54 @@
    "site": "https://www.dn.pt",
    "feed": "https://www.dn.pt/feed/",
    "em": "2026-10-10T12:38:37.658505+00:00"
+  },
+  "valor.globo.com": {
+   "dominio": "valor.globo.com",
+   "nome": "Valor Econômico",
+   "n": 5,
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo zera tributos federais sobre a gasolina e cria subsídio extra para diesel importado",
+   "site": "https://valor.globo.com",
+   "feed": "https://valor.globo.com/rss/valor",
+   "em": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "oglobo.globo.com": {
+   "dominio": "oglobo.globo.com",
+   "nome": "O GLOBO",
+   "n": 4,
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Campanhas de Flávio e Lula tentam atrair governadores, e senador sai na frente na disputa por apoios",
+   "site": "https://oglobo.globo.com",
+   "feed": "https://oglobo.globo.com/rss/oglobo",
+   "em": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "pt.euronews.com": {
+   "dominio": "pt.euronews.com",
+   "nome": "Euronews.com",
+   "n": 4,
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Chipre cria subsídio mensal para doentes vulneráveis com cancro da mama",
+   "site": "https://pt.euronews.com",
+   "feed": "https://pt.euronews.com/rss",
+   "em": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "vietnam.vn": {
+   "dominio": "vietnam.vn",
+   "nome": "Vietnam.vn",
+   "n": 4,
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Com um aumento de 55% nos subsídios, os funcionários das comunas em áreas montanhosas têm mais segurança em seus cargos.",
+   "site": "https://www.vietnam.vn",
+   "feed": null,
+   "em": "2026-10-10T22:00:07.311755+00:00"
   }
  },
  "sugeridas_antigas": [],
@@ -166,15 +214,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "c9a14bc1814ad6b3",
-    "e5aa583b9ed86a8c",
-    "2eae9a0522574cea",
-    "2c1ebce669a1f783",
-    "8d88b27f4ead2fbb",
-    "7ae082dc54babf69",
-    "2a35c2e7fc8261fd",
-    "f945827fb36371d6",
-    "1e7a0471e6d4e463",
     "bce19c10d1c354a8",
     "6d8d0802786648b1",
     "494368cb4e6f5878",
@@ -185,14 +224,23 @@
     "b77b15c40a94e66c",
     "f7902a0adec0befd",
     "98825e53ee417738",
-    "77fd42f582a9a6ee"
+    "77fd42f582a9a6ee",
+    "c202c49daba535ee",
+    "88329ce104d77bf9",
+    "c9a14bc1814ad6b3",
+    "e5aa583b9ed86a8c",
+    "27b475e17beff64f",
+    "2c1ebce669a1f783",
+    "2eae9a0522574cea",
+    "862cb8a105a6d225",
+    "8d88b27f4ead2fbb"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "cnnbrasil.com.br": {
    "nome": "CNN Brasil",
@@ -213,13 +261,14 @@
    "ids": [
     "a6f12173308264c8",
     "81b919b406b93204",
-    "1963599712f569d3"
+    "1963599712f569d3",
+    "143874dd4d5468ef"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Inteligência Artificial poderia prever com precisão risco de câncer de fígado",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -236,7 +285,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "antenalivre.pt": {
    "nome": "Antena Livre",
@@ -249,7 +298,7 @@
     "Sertã"
    ],
    "exemplo": "Sertã: Castanhas e Frutos secos em destaque nos Produtos da Terra",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "mediotejo.net": {
    "nome": "Médio Tejo",
@@ -266,7 +315,7 @@
     "Apoio Estado"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -278,7 +327,7 @@
     "Sertã"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
@@ -290,7 +339,7 @@
     "Sertã"
    ],
    "exemplo": "Na Sertã oito médicos já beneficiam de apoio da Câmara",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "radiohertz.pt": {
    "nome": "Rádio Hertz",
@@ -305,7 +354,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -317,7 +366,7 @@
     "Sertã"
    ],
    "exemplo": "SERTÃ: Grupo Coral do Sertanense celebra 20.º aniversário com encontro de coros",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -332,7 +381,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "reconquista.pt": {
    "nome": "reconquista.pt",
@@ -346,7 +395,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -384,7 +433,7 @@
     "Sertã"
    ],
    "exemplo": "VÍDEO: Delegado relata como ocorreu a prisão da ex-prefeita do município de Joca Claudino, Lucrécia Adriana",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "portugal.gov.pt": {
    "nome": "XXV Governo Constitucional",
@@ -397,7 +446,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Orçamento do Estado reforça valorização dos rendimentos e apoios às famílias e empresas",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "jornaldenegocios.pt": {
    "nome": "Jornal de Negócios",
@@ -414,7 +463,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo volta a dar apoios à compra de carros elétricos em 2027",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "eco.sapo.pt": {
    "nome": "ECO",
@@ -425,13 +474,14 @@
     "341159b848fd8a05",
     "605d20ea5b26b2ce",
     "894897da4233457c",
-    "5e4454eaf96b738b"
+    "5e4454eaf96b738b",
+    "ae67d7688c528ad7"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Orçamento do Estado sem novos apoios nos combustíveis",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "expresso.pt": {
    "nome": "Expresso",
@@ -443,7 +493,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Orçamento sem medidas, sem apoios e com curta margem",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "dinheirovivo.dn.pt": {
    "nome": "Dinheiro Vivo",
@@ -456,7 +506,7 @@
     "Apoio Estado"
    ],
    "exemplo": "OE2027: No âmbito da Segurança Social, PSU terá despesa 10% maior do que apoios que substitui",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "rr.pt": {
    "nome": "Renascença",
@@ -470,7 +520,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Menos IRS, aumentos nos salários e pensões e reforço de alguns apoios sociais. O que muda com o novo Orçamento do Estado?",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -482,7 +532,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Cancro: 5 associações que dão apoio gratuito a doentes",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "pplware.sapo.pt": {
    "nome": "Pplware",
@@ -494,7 +544,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo vai voltar a dar apoios à compra de carros elétricos em 2027",
-   "ultima": "2026-10-10T14:52:46.547040+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "jovempan.com.br": {
    "nome": "Jovem Pan",
@@ -506,7 +556,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Com Tarcísio, aliados de Flávio montam ‘bolsão de apoios’ em SP para ampliar vantagem sob Lula na reta final",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "rtp.pt": {
    "nome": "RTP",
@@ -524,7 +574,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Banca deve 70% dos apoios que Estado mobilizou desde 2008",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -540,7 +590,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Banca ainda deve 70% dos 30 mil milhões de euros em apoios dos contribuintes",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "publico.pt": {
    "nome": "Público",
@@ -557,7 +607,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Seguro promulga apoios para transportes e sector social face subida dos combustíveis",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "dnoticias.pt": {
    "nome": "dnoticias.pt",
@@ -578,7 +628,7 @@
     "Apoio Estado"
    ],
    "exemplo": "PROAGES simplificado para facilitar apoios às famílias que ficam de fora dos apoios sociais",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "24 Notícias",
@@ -591,20 +641,21 @@
     "Apoio Estado"
    ],
    "exemplo": "Tem abelhas? Governo prolonga apoios à apicultura com 3,3 milhões de euros",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "odigital.sapo.pt": {
    "nome": "ODigital.pt",
    "site": "https://odigital.sapo.pt",
    "ids": [
     "63c02e74bd2ea920",
-    "8d88b27f4ead2fbb"
+    "8d88b27f4ead2fbb",
+    "862cb8a105a6d225"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Governo cria apoios de 39,5 milhões de euros para compensar custos dos combustíveis",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "executivedigest.sapo.pt": {
    "nome": "Executive Digest",
@@ -621,7 +672,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Empresas de ambulâncias ameaçam suspender transportes ao SNS: Governo deixa setor fora dos apoios aos combustíveis",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "cnnportugal.iol.pt": {
    "nome": "CNN Portugal",
@@ -640,7 +691,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Partidos que comandam ministérios no Governo de Lula declaram apoio a Flávio Bolsonaro",
-   "ultima": "2026-10-10T19:01:24.165845+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "oglobo.globo.com": {
    "nome": "O GLOBO",
@@ -648,13 +699,14 @@
    "ids": [
     "69edd7cbda24ec73",
     "f3be5d7d9a556107",
-    "7991a8cfc14155a0"
+    "7991a8cfc14155a0",
+    "fe8ac73fd98cd2de"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Campanhas de Flávio e Lula tentam atrair governadores, e senador sai na frente na disputa por apoios",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "g1.globo.com": {
    "nome": "G1",
@@ -666,7 +718,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Partidos e lideranças políticas começam a definir apoios para o segundo turno no AM; veja cenário",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "brasil61.com": {
    "nome": "Brasil 61",
@@ -678,7 +730,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Campanhas presidenciais disputam apoios estaduais para o 2º turno",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "082noticias.com": {
    "nome": "082noticias.com",
@@ -690,7 +742,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Rui Palmeira amplia apoios em todo o estado e encerra grande campanha como favorito à Câmara dos Deputados",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "estadao.com.br": {
    "nome": "Estadão",
@@ -702,7 +754,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Nikolas Ferreira distribui apoios e elege ‘bancada de jovens seguidores’; veja quem são",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "trbn.com.br": {
    "nome": "Tribuna da Bahia",
@@ -714,7 +766,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Lula recorre a líderes do Centrão em busca de apoios pessoais para 2º turno",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "band.com.br": {
    "nome": "Band",
@@ -726,7 +778,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Flávio x Lula: veja mapa de alianças, apoios e neutralidades para 2º turno",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "cartacapital.com.br": {
    "nome": "CartaCapital",
@@ -738,7 +790,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Centrão se divide entre apoio a Flávio e neutralidade no segundo turno",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "pebsp.com": {
    "nome": "PEBSP - Portal de Educação",
@@ -750,7 +802,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo do Rio de Janeiro autoriza contratação de 2,8 mil apoios à Educação Especial",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "poderparaiba.com.br": {
    "nome": "Poder Paraíba",
@@ -762,7 +814,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Zezé consolida apoios em mais de 50 municípios e ganha força entre os cotados do Republicanos para conquistar vaga na ALPB",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "psd.org.br": {
    "nome": "PSD - Partido Social Democrático",
@@ -774,7 +826,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Omar Aziz ganha novos apoios para o segundo turno",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "tribunadopovoto.com.br": {
    "nome": "Tribuna do Povo",
@@ -786,7 +838,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Vicentinho amplia base de apoio em Gurupi com a chegada de oito vereadores e mantém foco na disputa pelo Governo",
-   "ultima": "2026-10-10T09:43:51.845248+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "oestadoce.com.br": {
    "nome": "O Estado CE",
@@ -804,13 +856,15 @@
    "nome": "AF Notícias",
    "site": "https://afnoticias.com.br",
    "ids": [
-    "3e65a8be3b4fa791"
+    "3e65a8be3b4fa791",
+    "4cf9aab895d986c4",
+    "bad24a4748777cc5"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Eleições | Vicentinho Júnior amplia apoios políticos em Darcinópolis no segundo turno",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "agora-to.com.br": {
    "nome": "Portal Agora Tocantins",
@@ -840,13 +894,14 @@
    "nome": "T1 Notícias",
    "site": "https://t1noticias.com.br",
    "ids": [
-    "741bc0e814e45614"
+    "741bc0e814e45614",
+    "07bc7a9fd7fc1434"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Estado | Vicentinho soma apoio de Júnior Diamantino na disputa pelo Governo do Tocantins",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "folhadoestado.com.br": {
    "nome": "Folha do Estado",
@@ -858,7 +913,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Flávio amplia articulação política em busca de apoio para o 2º turno",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "araguainanoticias.com.br": {
    "nome": "Araguaína Notícias",
@@ -922,7 +977,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Powerdot reivindica 25 milhões para apoio à compra de carros elétricos no OE2027",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "sabado.pt": {
    "nome": "SÁBADO",
@@ -960,7 +1015,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Putin oferece apoio a Presidente iraniano para terminar guerra no Médio Oriente",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "sicnoticias.pt": {
    "nome": "SIC Notícias",
@@ -986,7 +1041,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Freguesia de Aradas distinguida com o Prémio Autarquia do Ano no apoio social",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "healthnews.pt": {
    "nome": "HealthNews",
@@ -999,7 +1054,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Cuidados paliativos pediátricos: associação pede reforço de equipas e apoio em casa",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "acores.rtp.pt": {
    "nome": "RTP Açores",
@@ -1031,7 +1086,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Brasil/Eleições: Flávio Bolsonaro conquista apoio de cinco partidos e Lula recalcula rota de campanha",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "agroportal.pt": {
    "nome": "Agroportal",
@@ -1044,7 +1099,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo atribui apoio a uva por vindimar para mitigar crise no Douro",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -1076,7 +1131,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Decreto-lei publicado esta quinta-feira fixa os detalhes do apoio de 100 a 200 euros para pensionistas com reformas até 1.611 euros. Pagamento entre 7 e 8 de dezembro.",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "abrilabril.pt": {
    "nome": "AbrilAbril",
@@ -1154,7 +1209,7 @@
     "Apoio Estado"
    ],
    "exemplo": "É o grande apoio de Jorge Jesus nos momentos difíceis. E é ainda amigo de um famoso ator português",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -1216,7 +1271,7 @@
     "Apoio Estado"
    ],
    "exemplo": "OE2027: Pequenos agricultores e pescadores com apoio de 0,06 euros/litro no gasóleo colorido",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "jornaldemafra.pt": {
    "nome": "Jornal de Mafra",
@@ -1260,7 +1315,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Augusto Cury declara apoio a Flávio Bolsonaro, que promete cumprir lista de exigências",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "idealista.pt": {
    "nome": "Idealista",
@@ -1274,7 +1329,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Ex-ministra defende apoios à habitação inspirados no turismo",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "flash.pt": {
    "nome": "Flash.pt",
@@ -1311,7 +1366,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Milhares de alunos com necessidades especiais sem apoio",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "campeaoprovincias.pt": {
    "nome": "Campeão das Províncias",
@@ -1433,7 +1488,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Portimão renova programa de apoio a crianças com necessidades específicas nas escolas",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "noticiasdeaveiro.pt": {
    "nome": "Notícias de Aveiro",
@@ -1453,13 +1508,14 @@
    "ids": [
     "990b3183c54d6e6a",
     "e3cae2846774cfec",
-    "d73c6e7ab4392803"
+    "d73c6e7ab4392803",
+    "e317622c392e95a4"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Chipre cria subsídio mensal para doentes vulneráveis com cancro da mama",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "deco.proteste.pt": {
    "nome": "DECO PROteste",
@@ -1484,7 +1540,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Pequena agricultura e pesca com subsídio de 0,06 euros/litro no gasóleo colorido",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "xtb.com": {
    "nome": "XTB.com",
@@ -1536,7 +1592,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo zera tributos federais sobre a gasolina e cria subsídio extra para diesel importado",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "4gnews.pt": {
    "nome": "4gnews",
@@ -1567,13 +1623,14 @@
    "nome": "A Verdade",
    "site": "https://averdade.com",
    "ids": [
-    "f396b9e1bff9b543"
+    "f396b9e1bff9b543",
+    "a5f85cb0553fb279"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Felgueiras: Gestão do Subsídio de Educação Especial já pode ser feita online na Segurança Social",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "portalmie.com": {
    "nome": "Portal Mie",
@@ -1597,7 +1654,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Ações de usinas de etanol sobem na B3 com aumento no subsídio",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "portal.ifce.edu.br": {
    "nome": "Home — IFCE",
@@ -1621,7 +1678,7 @@
     "Apoio Estado"
    ],
    "exemplo": "'Se é para estourar o país, que seja em benefício do povo', diz leitor sobre subsídio do governo para gasolina",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "agenciainfra.com": {
    "nome": "Agência iNFRA",
@@ -1633,7 +1690,7 @@
     "Apoio Estado"
    ],
    "exemplo": "ABTP contesta subsídio cruzado na concessão da Lagoa Mirim",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "mundologistica.com.br": {
    "nome": "Mundo Logística",
@@ -1645,7 +1702,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo eleva subsídio ao diesel para R$ 3,52 por litro",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "itatiaia.com.br": {
    "nome": "Rádio Itatiaia",
@@ -1669,7 +1726,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo amplia em R$ 1,6 bilhão subsídio ao diesel importado",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "alochapada.com.br": {
    "nome": "Alochapada",
@@ -1705,7 +1762,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo zera imposto federal da gasolina e renova subsídio do etanol; custo é de R$ 5,2 bi",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "pontapora.ms.gov.br": {
    "nome": "Prefeitura Municipal de Ponta Porã",
@@ -1729,7 +1786,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Morar Bem Pernambuco chega a 28 mil famílias beneficiadas com subsídio para entrada de imóveis",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "plural.jor.br": {
    "nome": "Jornal Plural",
@@ -1771,13 +1828,14 @@
    "nome": "O TEMPO",
    "site": "https://www.otempo.com.br",
    "ids": [
-    "ccfca015205c3452"
+    "ccfca015205c3452",
+    "6dfac6a93fe33012"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Diesel sobe até 44 centavos em Minas mesmo com subsídio de R$ 2,12 por litro",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "aracaju.se.gov.br": {
    "nome": "Prefeitura de Aracaju",
@@ -1801,7 +1859,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo eleva subsídio ao diesel para R$ 3,52 por litro",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "atlaspublico.com.br": {
    "nome": "atlaspublico.com.br",
@@ -1825,7 +1883,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo zera impostos federais sobre gasolina e amplia subsídio ao diesel",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "amazonasatual.com.br": {
    "nome": "amazonas atual",
@@ -1837,7 +1895,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo espera que subsídio ao diesel reduza o preço ao consumidor",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "ahoradosul.com.br": {
    "nome": "A Hora do Sul",
@@ -1849,7 +1907,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo Federal amplia subsídio ao diesel importado em meio à alta dos preços na Zona Sul",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "fortim.ce.gov.br": {
    "nome": "Governo Municipal de Fortim",
@@ -1885,7 +1943,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo zera tributos federais da gasolina e mantém subsídio a etanol e diesel",
-   "ultima": "2026-10-10T09:43:51.845248+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "metro1.com.br": {
    "nome": "Rádio Metrópole",
@@ -1897,7 +1955,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo Lula zera impostos federais sobre gasolina e amplia subsídio ao diesel",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "takta.com.br": {
    "nome": "Taktá No AR",
@@ -1909,7 +1967,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo Lula Amplia Subsídio à Gasolina E Zera Impostos Federais Por 30 Dias",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "olhardireto.com.br": {
    "nome": "Olhar Direto",
@@ -1922,7 +1980,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Mãe e duas filhas conquistam casa própria com subsídio em Sinop",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "amazonas1.com.br": {
    "nome": "Amazonas1",
@@ -1934,7 +1992,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo Federal espera que subsídio ao diesel reduza preço nas bombas",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "fonte83.com.br": {
    "nome": "Fonte 83",
@@ -1946,7 +2004,7 @@
     "Apoio Estado"
    ],
    "exemplo": "A 16 dias do segundo turno, governo Lula amplia subsídio à gasolina para R$ 0,89 por litro",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "technibus.com.br": {
    "nome": "technibus.com.br",
@@ -1994,7 +2052,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo zera tributos da gasolina e amplia subsídio ao diesel",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "opotiguar.com.br": {
    "nome": "O Potiguar",
@@ -2019,7 +2077,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo zera imposto sobre gasolina e renova subsídio ao etanol",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "gazetadoparana.com.br": {
    "nome": "Gazeta do Paraná",
@@ -2046,7 +2104,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo Lula zera impostos federais sobre gasolina, amplia subsídio ao diesel para R$ 3,52 por litro e libera R$ 7,5 bilhões para conter alta dos combustíveis",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "bahianoticias.com.br": {
    "nome": "Bahia Notícias",
@@ -2070,7 +2128,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo zera imposto federal da gasolina e renova subsídio do etanol",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "pimenta.blog.br": {
    "nome": "Pimenta Blog",
@@ -2094,7 +2152,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Ações de usinas de etanol sobem na B3 com aumento no subsídio",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "cenarioenergia.com.br": {
    "nome": "Cenário Energia",
@@ -2106,7 +2164,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo Zera Tributos Federais Sobre Gasolina Por Um Mês E Amplia Subsídio Ao Diesel",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "cearaagora.com.br": {
    "nome": "Ceará Agora",
@@ -2118,7 +2176,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo Lula amplia subsídio aos combustíveis e zera tributos federais sobre gasolina",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "fanf1.com.br": {
    "nome": "Fan F1",
@@ -2142,7 +2200,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Crédito de R$ 7,5 bi reforça subsídio a combustíveis",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "portalimpactto.com.br": {
    "nome": "Impactto News",
@@ -2398,7 +2456,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Financiamento de vendas e tecnologia para fabricantes de eletrônicos",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "tecnico.ulisboa.pt": {
    "nome": "Técnico ULisboa",
@@ -2410,7 +2468,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Professores do Técnico recebem financiamento europeu para divulgar ciência junto dos mais novos",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "sulinformacao.pt": {
    "nome": "Sul Informação",
@@ -2422,7 +2480,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Oportunidades de financiamento do programa EEA Grants apresentadas em Faro",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "vidaimobiliaria.com": {
    "nome": "Vida Imobiliária",
@@ -2447,7 +2505,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Grupo Banco Africano de Desenvolvimento apoia a transição da Somália, da recuperação ao financiamento do desenvolvimento sustentável",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "infarmed.pt": {
    "nome": "INFARMED, I.P.",
@@ -2460,7 +2518,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Rinvoq (Upadacitinib) | Relatórios de avaliação de financiamento público disponível na Infomed | Deferimento",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "algarvevivo.pt": {
    "nome": "Algarve Vivo",
@@ -2472,7 +2530,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Ministra do Ambiente presidiu a ato de assinatura de financiamento do ciclo urbano da água através do Fundo Ambiental",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "diarioaveiro.pt": {
    "nome": "Diário de Aveiro",
@@ -2485,7 +2543,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Ribau Esteves confiante no financiamento do eixo Aveiro-Águeda",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "greensavers.sapo.pt": {
    "nome": "SAPO",
@@ -2497,7 +2555,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Greenvolt com financiamento de 284 ME para projeto eólico de 253 MW na Roménia",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "ominho.pt": {
    "nome": "o minho",
@@ -2509,7 +2567,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Braga e Terras de Bouro disputam Polo Arqueológico com financiamento garantido de 600 mil euros",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "forbesafricalusofona.com": {
    "nome": "Forbes África Lusofona",
@@ -2521,7 +2579,7 @@
     "Apoio Estado"
    ],
    "exemplo": "CPLP reforça mobilização de financiamento para ciência, tecnologia e inovação",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "rna.ao": {
    "nome": "RNA - Unimos o País",
@@ -2533,7 +2591,7 @@
     "Apoio Estado"
    ],
    "exemplo": "FADA reforça financiamento para 44 mulheres associadas em cooperativas para o reforço da actividade agrícola",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "umsoplaneta.globo.com": {
    "nome": "Um só Planeta",
@@ -2545,7 +2603,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Brasil é o 4º maior provedor de financiamento climático entre economias emergentes",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "bantumen.com": {
    "nome": "Bantumen",
@@ -2581,7 +2639,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Banco Português de Fomento aprova financiamento para fábrica de cenouras bebé em Santarém",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "jn.pt": {
    "nome": "Jornal de Notícias",
@@ -2606,7 +2664,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Lula zera imposto federal da gasolina e renova subsídio do etanol",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "redeutv.com.br": {
    "nome": "redeutv.com.br",
@@ -2618,7 +2676,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Lula zera imposto federal da gasolina e renova subsídio do etanol",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "blogsilverioalves.com": {
    "nome": "Blog Silverio Alves",
@@ -2642,7 +2700,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Fresh 52 obtém financiamento para projeto de 100 milhões em Santarém",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   },
   "exame.com": {
    "nome": "Exame",
@@ -2666,7 +2724,583 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-10-10T21:55:21.304337+00:00"
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "bra1.com.br": {
+   "nome": "bra1.com.br",
+   "site": "https://www.bra1.com.br",
+   "ids": [
+    "a11c703220e7b891",
+    "81b0ebe1a1d3b7dd"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Aliados de Flávio montam forte rede de apoio em São Paulo para bater Lula",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "rondoniadinamica.com": {
+   "nome": "Rondônia Dinâmica",
+   "site": "https://www.rondoniadinamica.com",
+   "ids": [
+    "ce659db1086c15c0"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Fúria fez campanha solitária e perdeu apoios; Hildon esbarrou no interior; e Mosquini sonha com Governo",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "portaldoholanda.com.br": {
+   "nome": "Portal do Holanda",
+   "site": "https://www.portaldoholanda.com.br",
+   "ids": [
+    "f9d5e83e0d92bc32"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Federação União Progressista no Amazonas declara apoio a Flávio Bolsonaro no segundo turno",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "contacto.lu": {
+   "nome": "contacto.lu",
+   "site": "https://www.contacto.lu",
+   "ids": [
+    "06c1c78659f89257"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Obrigada a recorrer às poupanças para pagar a renda: falha informática na Adem atrasa pagamento de subsídios",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "tviplayer.iol.pt": {
+   "nome": "TVI Player",
+   "site": "https://tviplayer.iol.pt",
+   "ids": [
+    "2608f238b97d1e8c",
+    "cc3cf3a2fe21e6a1",
+    "eaaece4069584e4c"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Há menos jovens a receber subsídio de desemprego e peso dos mais velhos subiu na última década",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "tdm.com.mo": {
+   "nome": "澳門廣播電視股份有限公司",
+   "site": "https://www.tdm.com.mo",
+   "ids": [
+    "954aa4b7e3b25c96"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Subsídios para idosos e pessoas com deficiência ascendem a 1,73 mil milhões de patacas em 2026",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "vietnam.vn": {
+   "nome": "Vietnam.vn",
+   "site": "https://www.vietnam.vn",
+   "ids": [
+    "5961b011e7490abe",
+    "37016018c61e173c",
+    "3d1a5bfadccc358d",
+    "0544c6ab4e4e7eff"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Com um aumento de 55% nos subsídios, os funcionários das comunas em áreas montanhosas têm mais segurança em seus cargos.",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "extra.globo.com": {
+   "nome": "Extra online",
+   "site": "https://extra.globo.com",
+   "ids": [
+    "5dd3a1cede6a4818"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo Lula amplia subsídio para gasolina, zerando PIS/Cofins e Cide",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "forbes.com.br": {
+   "nome": "Forbes Brasil",
+   "site": "https://forbes.com.br",
+   "ids": [
+    "16d46fc06d4bc354"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo Lula Amplia Subsídios sobre Gasolina, Etanol e Diesel a Duas Semanas do 2º Turno",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "agenciabrasil.ebc.com.br": {
+   "nome": "Agência Brasil",
+   "site": "https://agenciabrasil.ebc.com.br",
+   "ids": [
+    "c89c4dfa6a99a670",
+    "26fce51a67f1bfbf"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Tributos da gasolina são zerados e subsídios a combustíveis, ampliados",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "infomoney.com.br": {
+   "nome": "InfoMoney",
+   "site": "https://www.infomoney.com.br",
+   "ids": [
+    "36a24cc490d8a55e"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo Lula amplia subsídios sobre gasolina, etanol e diesel a 2 semanas do 2º turno",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "br.beincrypto.com": {
+   "nome": "BeInCrypto",
+   "site": "https://br.beincrypto.com",
+   "ids": [
+    "904a737626de5e7f"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo zera tributos federais da gasolina e amplia subsídios ao diesel e ao etanol",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "jornaldaparaiba.com.br": {
+   "nome": "Jornal da Paraíba",
+   "site": "https://jornaldaparaiba.com.br",
+   "ids": [
+    "20ad40a37603a84c"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo zera impostos sobre gasolina por 30 dias e amplia subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "poder360.com.br": {
+   "nome": "Poder360",
+   "site": "https://www.poder360.com.br",
+   "ids": [
+    "29a09dfb737f65c0"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo reforça subsídios a combustíveis com crédito de R$ 7,5 bi",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "francesnews.com.br": {
+   "nome": "Francês News",
+   "site": "https://francesnews.com.br",
+   "ids": [
+    "b474ecb4a1952273"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo zera impostos federais da gasolina e amplia subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "monitormercantil.com.br": {
+   "nome": "Monitor Mercantil",
+   "site": "https://monitormercantil.com.br",
+   "ids": [
+    "2e8832b0ba0c1352"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo zera tributos da gasolina e amplia subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "acreaovivo.com": {
+   "nome": "www.acreaovivo.com",
+   "site": "https://www.acreaovivo.com",
+   "ids": [
+    "9bad54c444050a4f"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Lula zera imposto federal da gasolina e renova subsídio do etanol",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "correiobraziliense.com.br": {
+   "nome": "Correio Braziliense",
+   "site": "https://www.correiobraziliense.com.br",
+   "ids": [
+    "7402d2183262ff6f"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Gorverno zera tributo federal na gasolina e amplia subsídios",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "painelnoticias.com.br": {
+   "nome": "Painel Notícias",
+   "site": "https://painelnoticias.com.br",
+   "ids": [
+    "78be9390c7e69545"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Medida provisória libera R$ 7,52 bilhões para custear subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "folhaestado.com.br": {
+   "nome": "folhaestado.com.br",
+   "site": "https://folhaestado.com.br",
+   "ids": [
+    "26fce51a67f1bfbf"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Crédito extraordinário de R$ 7,5 bi reforça subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "kinvo.com.br": {
+   "nome": "Kinvo",
+   "site": "https://kinvo.com.br",
+   "ids": [
+    "92fd887ba28aac3e"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Notícia Governo Lula amplia subsídios sobre gasolina, etanol e diesel a duas semanas do segundo turno",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "mtagora.com.br": {
+   "nome": "mtagora.com.br",
+   "site": "https://mtagora.com.br",
+   "ids": [
+    "78be9390c7e69545",
+    "c89c4dfa6a99a670"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Medida provisória libera R$ 7,52 bilhões para custear subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "oestadoonline.com.br": {
+   "nome": "O Estado Online",
+   "site": "https://oestadoonline.com.br",
+   "ids": [
+    "77efbfc4c06d8bf3"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Preços na bomba: gasolina tem impostos zerados e diesel recebe subsídio de R$ 1,40 por litro",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "rbtv.com.br": {
+   "nome": "REDE BRASIL DE TELEVISÃO",
+   "site": "https://rbtv.com.br",
+   "ids": [
+    "78be9390c7e69545",
+    "c89c4dfa6a99a670"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Medida provisória libera R$ 7,52 bilhões para custear subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "clickguarulhos.com.br": {
+   "nome": "Click Guarulhos",
+   "site": "https://www.clickguarulhos.com.br",
+   "ids": [
+    "22e68c603ba82d81"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo amplia redução de impostos sobre gasolina e aumenta subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "piauihoje.com": {
+   "nome": "Portal Piauí Hoje",
+   "site": "https://piauihoje.com",
+   "ids": [
+    "af7b524aeee28ef4"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo libera R$ 7,52 bilhões para subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "jornalocandeeiro.com.br": {
+   "nome": "Jornal O candeeiro",
+   "site": "https://www.jornalocandeeiro.com.br",
+   "ids": [
+    "c89c4dfa6a99a670"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Tributos da gasolina são zerados e subsídios a combustíveis, ampliados",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "portalvv8.com.br": {
+   "nome": "Portal VV8",
+   "site": "https://portalvv8.com.br",
+   "ids": [
+    "78be9390c7e69545",
+    "26fce51a67f1bfbf",
+    "eafc0f9133ff0929"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Medida provisória libera R$ 7,52 bilhões para custear subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "tribunadonorte.com": {
+   "nome": "Tribuna do Norte Apucarana",
+   "site": "https://tribunadonorte.com",
+   "ids": [
+    "2f63dec42b2d32df"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Crédito extraordinário de R$ 7,5 bi reforça subsídios a combustíveis - Tribuna do Norte Apucarana",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "movimentoeconomico.com.br": {
+   "nome": "Movimento Econômico",
+   "site": "https://movimentoeconomico.com.br",
+   "ids": [
+    "7515a7374b2560e8"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Pacote de R$ 5,2 bilhões amplia desoneração da gasolina e subsídios ao diesel",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "moneytimes.com.br": {
+   "nome": "Money Times",
+   "site": "https://www.moneytimes.com.br",
+   "ids": [
+    "a54dbe704b81d979"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo Lula amplia subsídios sobre gasolina, etanol e diesel a duas semanas do segundo turno",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "economia.ig.com.br": {
+   "nome": "iG Economia",
+   "site": "https://economia.ig.com.br",
+   "ids": [
+    "88f99276bd17c659"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Tributos da gasolina são zerados e subsídios ampliados",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "folhabv.com.br": {
+   "nome": "Folha BV",
+   "site": "https://www.folhabv.com.br",
+   "ids": [
+    "25f36239ccb666cb"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo zera impostos federais sobre gasolina por 30 dias e amplia subsídios aos combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "agenciatocantins.com.br": {
+   "nome": "Agência Tocantins",
+   "site": "https://www.agenciatocantins.com.br",
+   "ids": [
+    "c89c4dfa6a99a670",
+    "26fce51a67f1bfbf"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Tributos da gasolina são zerados e subsídios a combustíveis, ampliados",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "maringapost.com.br": {
+   "nome": "Maringá Post",
+   "site": "https://maringapost.com.br",
+   "ids": [
+    "39feb2471530a133"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo zera tributos federais sobre gasolina por 30 dias e amplia subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "acionista.com.br": {
+   "nome": "Acionista.com.br",
+   "site": "https://acionista.com.br",
+   "ids": [
+    "f2c5770d5f3289bb"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Combustíveis: subsídios e impactos na gasolina e etanol",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "bpmoney.com.br": {
+   "nome": "BPMoney",
+   "site": "https://bpmoney.com.br",
+   "ids": [
+    "e57f0968d81c8351"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo Lula amplia subsídios a gasolina, etanol e diesel",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "jornaldeuberaba.com.br": {
+   "nome": "Jornal de Uberaba",
+   "site": "https://www.jornaldeuberaba.com.br",
+   "ids": [
+    "26fce51a67f1bfbf"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Crédito extraordinário de R$ 7,5 bi reforça subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "metronews.com.br": {
+   "nome": "Metrô News Jornal",
+   "site": "https://metronews.com.br",
+   "ids": [
+    "a258c98591d97fa4"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo libera R$ 7,52 bilhões para subsídios de combustíveis em nova medida",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "rrmais.com.br": {
+   "nome": "RRMAIS",
+   "site": "https://rrmais.com.br",
+   "ids": [
+    "6f80644fe8c21b8a"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo amplia redução de impostos sobre gasolina e reforça subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "noticiatodahora.com.br": {
+   "nome": "Notícia Toda Hora",
+   "site": "https://noticiatodahora.com.br",
+   "ids": [
+    "916a2963efb37936"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo zera tributos sobre gasolina e amplia subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "focuspoder.com.br": {
+   "nome": "Focus Poder",
+   "site": "https://focuspoder.com.br",
+   "ids": [
+    "9b754cfd0acb8e03"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo amplia desoneração da gasolina e subsídios a combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "portalbenews.com.br": {
+   "nome": "Portal BE News",
+   "site": "https://portalbenews.com.br",
+   "ids": [
+    "655b8f9ee13798b9"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo zera tributos da gasolina e amplia subsídios aos combustíveis",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "poligrafo.sapo.pt": {
+   "nome": "Polígrafo",
+   "site": "https://poligrafo.sapo.pt",
+   "ids": [
+    "a7337baa2d6783c5"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Mariana Leitão diz que Governo gastou 526 milhões de euros em subsídios sem conseguir explicar a quem e porque foram atribuídos. É verdade?",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "correiopaulista.com": {
+   "nome": "Correio Paulista",
+   "site": "https://correiopaulista.com",
+   "ids": [
+    "537615e15ff8cf9a"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Feirão Casa Paulista oferece subsídios de até R$ 13 mil para compra do primeiro imóvel em Carapicuíba",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "forbespt.com": {
+   "nome": "Forbes Portugal",
+   "site": "https://www.forbespt.com",
+   "ids": [
+    "c9a14bc1814ad6b3"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "“A banca está preparada para ser mais relevante como fonte de financiamento“, defende CEO do Crédito Agrícola",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "diariodominho.pt": {
+   "nome": "Diário do Minho",
+   "site": "https://www.diariodominho.pt",
+   "ids": [
+    "e0c4ed211993b97c"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Concelho de Barcelos é o que tem o maior financiamento da região para as freguesias",
+   "ultima": "2026-10-10T22:00:07.311755+00:00"
   }
  },
  "ultima_descoberta": "2026-10-10",
@@ -2998,10 +3632,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-10-10T22:00:07.311755+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 308,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio Estado",
+     "recolhidas": 298,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 4,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "Câmara da Sertã",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-10-10T21:55:21.304337+00:00"
+  "cm-serta.pt": "2026-10-10T22:00:07.311755+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
