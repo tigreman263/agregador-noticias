@@ -24,7 +24,7 @@ pesos:
 fontes:
   confiaveis: ["sapo.pt", "mediotejo.net", "radiocondestavel.pt", "noticiasdecoimbra.pt", "radiohertz.pt", "cmjornal.pt", "dnoticias.pt", "rtp.pt", "cnnportugal.iol.pt"]
   neutras: []
-  bloqueadas: []
+  bloqueadas: ["br"]
   feeds:
     - {nome: "SAPO", url: "https://sapo.pt/rss/destaques"}
     - {nome: "Médio Tejo", url: "https://mediotejo.net/feed/"}
@@ -70,10 +70,10 @@ pesquisas:
     consulta: "Apoios do estado"
     obrigatorias: []
     palavras:
-      alta: ["Apoio", "subsidio", "financiamento", "fundo perdido"]
-      media: ["agricultura", "floresta"]
+      alta: ["subsídio", "fundo perdido", "financiamento", "candidaturas", "aviso de abertura", "PRR", "Portugal 2030", "PEPAC", "incentivo"]
+      media: ["apoio", "agricultura", "floresta", "agricultor", "IFAP", "CCDR"]
       baixa: []
-    excluir: ["publicidade"]
+    excluir: ["publicidade", "eleição", "eleições", "candidato", "campanha eleitoral", "sondagem"]
     limite_alerta: 25
     limite_resumo: 10
     feeds_extra: []

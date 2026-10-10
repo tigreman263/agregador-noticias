@@ -562,7 +562,7 @@ async function onClick(ev) {
   }
   if (a === "decidir" || a === "juntar" || a === "tirar") {
     let dom = d;
-    if (a === "juntar") { dom = dominio(/^https?:/i.test(document.getElementById("add-" + p).value.trim()) ? document.getElementById("add-" + p).value.trim() : "https://" + document.getElementById("add-" + p).value.trim()).toLowerCase(); if (!/^[a-z0-9.-]+\.[a-z]{2,}$/.test(dom)) { toast("Escreve um domínio, por exemplo publico.pt"); return; } }
+    if (a === "juntar") { dom = dominio(/^https?:/i.test(document.getElementById("add-" + p).value.trim()) ? document.getElementById("add-" + p).value.trim() : "https://" + document.getElementById("add-" + p).value.trim()).toLowerCase(); if (!/^([a-z0-9-]+\.)*[a-z]{2,}$/.test(dom)) { toast("Escreve um domínio, por exemplo publico.pt (ou só br para todos os sites .br)"); return; } }
     const sug = ((S.estado || {}).sugeridas || {})[dom];
     await ocupado(el, async () => {
       await mudarConfig("fontes", f => {

@@ -654,7 +654,7 @@ def avaliar(itens, pesq, cfg, estado, agora_utc):
         else:
             continue
         candidatos.append({
-            "titulo": melhor["titulo"], "link": melhor["link"],
+            "titulo": melhor["titulo"], "link": melhor["link"], "dominio": melhor["dominio"],
             "fonte": melhor["fonte"], "confiavel": melhor_conf,
             "nota": round(melhor_nota, 1), "pesquisa": pesq["nome"],
             "achadas": melhor["achadas"], "n_fontes": len(dominios),
@@ -1018,6 +1018,9 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
     podar(estado, agora_utc)
     limpar_sugeridas(cfg, estado)
     aplicar_descartados(estado)
+    bloqueadas = (cfg.get("fontes") or {}).get("bloqueadas")
+    for k in ("adiados", "resumo"):  # fontes bloqueadas depois de a notícia entrar na fila
+        estado[k] = [c for c in estado[k] if not dominio_em(c.get("dominio", ""), bloqueadas)]
 
     if not simular and not (telefone and apikey):
         erro(segredos_em_falta(telefone, apikey))
