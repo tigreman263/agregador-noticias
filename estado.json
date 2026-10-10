@@ -29,157 +29,40 @@
   "05e371a004e71752": "2026-10-10T09:43:51.845248+00:00",
   "1e4c0a0e0c7c2792": "2026-10-10T09:43:51.845248+00:00",
   "f945827fb36371d6": "2026-10-10T12:38:37.658505+00:00",
-  "21d90dfba1efd2b0": "2026-10-10T12:38:37.658505+00:00"
+  "21d90dfba1efd2b0": "2026-10-10T12:38:37.658505+00:00",
+  "98825e53ee417738": "2026-10-10T14:52:46.547040+00:00",
+  "d324481ec8fe1261": "2026-10-10T14:52:46.547040+00:00",
+  "eb65b3af17b31672": "2026-10-10T14:52:46.547040+00:00",
+  "f7902a0adec0befd": "2026-10-10T14:52:46.547040+00:00"
  },
  "resumo": [
   {
-   "titulo": "ULS recebem 14 mil milhões com prémios por metas",
-   "link": "https://sapo.pt/artigo/uls-recebem-14-mil-milhoes-com-premios-por-metas-6aca02eb936fde01554dfc74",
+   "titulo": "Grécia resgata 102 migrantes em duas operações ao largo de Creta",
+   "link": "https://sapo.pt/artigo/grecia-resgata-102-migrantes-em-duas-operacoes-ao-largo-de-creta-6aca4983936fde01555a2aa0",
+   "dominio": "sapo.pt",
    "fonte": "SAPO",
    "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio Estado",
-   "achadas": {
-    "alta": [
-     "financiamento"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-10T09:17:41+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "751a13b8d9f6ebfa"
-   ],
-   "ts": "2026-10-10T09:43:51.845248+00:00"
-  },
-  {
-   "titulo": "Douro: Governo disponibiliza 12 milhões de euros a viticultores que deixaram uvas por vindimar",
-   "link": "https://sapo.pt/artigo/douro-governo-disponibiliza-12-milhoes-de-euros-a-viticultores-que-deixaram-uvas-por-vindimar-6aca0293ded6b2a5e3d2f4c7",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio Estado",
-   "achadas": {
-    "alta": [
-     "Apoio"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-10T09:15:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "95553f18205ae728"
-   ],
-   "ts": "2026-10-10T09:43:51.845248+00:00"
-  },
-  {
-   "titulo": "Bem-estar nas empresas: não basta comunicar, é preciso remover barreiras",
-   "link": "https://sapo.pt/artigo/bem-estar-nas-empresas-nao-basta-comunicar-e-preciso-remover-barreiras-6ac9ff41110b8560262c7e94",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio Estado",
-   "achadas": {
-    "alta": [
-     "Apoio"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-10T09:00:17+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "45084d7abfba68d4"
-   ],
-   "ts": "2026-10-10T09:43:51.845248+00:00"
-  },
-  {
-   "titulo": "Ourém | PJ detém homem de 52 anos suspeito de atear dois incêndios florestais em Boleiros",
-   "link": "https://mediotejo.net/ourem-pj-detem-homem-de-52-anos-suspeito-de-atear-dois-incendios-florestais-em-boleiros/",
-   "fonte": "Médio Tejo",
-   "confiavel": true,
-   "nota": 12.0,
+   "nota": 10.5,
    "pesquisa": "Apoio Estado",
    "achadas": {
     "alta": [],
     "media": [
-     "floresta"
+     "apoio"
     ],
     "baixa": []
    },
    "n_fontes": 1,
-   "data": "2026-10-09T14:19:41+00:00",
+   "data": "2026-10-10T14:11:29+00:00",
    "nivel": "resumo",
    "ids": [
-    "05e371a004e71752"
+    "98825e53ee417738"
    ],
-   "ts": "2026-10-10T09:43:51.845248+00:00"
-  },
-  {
-   "titulo": "ISMT e Fundação Mata do Bussaco juntam-se para estudar os benefícios da floresta para a saúde",
-   "link": "https://www.noticiasdecoimbra.pt/ismt-e-fundacao-mata-do-bussaco-juntam-se-para-estudar-os-beneficios-da-floresta-para-a-saude/",
-   "fonte": "Notícias de Coimbra",
-   "confiavel": true,
-   "nota": 12.0,
-   "pesquisa": "Apoio Estado",
-   "achadas": {
-    "alta": [],
-    "media": [
-     "floresta"
-    ],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-10T01:48:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "1e4c0a0e0c7c2792"
-   ],
-   "ts": "2026-10-10T09:43:51.845248+00:00"
-  },
-  {
-   "titulo": "Moody’s melhora ‘rating’ do Gana para B3, abaixo da recomendação de investimento",
-   "link": "https://sapo.pt/artigo/moody-s-melhora-rating-do-gana-para-b3-abaixo-da-recomendacao-de-investimento-6aca2c37ded6b2a5e3dbc497",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio Estado",
-   "achadas": {
-    "alta": [
-     "financiamento"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-10T12:09:56+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "f945827fb36371d6"
-   ],
-   "ts": "2026-10-10T12:38:37.658505+00:00"
+   "ts": "2026-10-10T14:52:46.547040+00:00"
   }
  ],
  "adiados": [],
  "ultimo_resumo": "2026-10-10",
  "sugeridas": {
-  "rtp.pt": {
-   "dominio": "rtp.pt",
-   "nome": "RTP",
-   "n": 7,
-   "pesquisas": [
-    "Apoio Estado"
-   ],
-   "exemplo": "Banca deve 70% dos apoios que Estado mobilizou desde 2008",
-   "site": "https://www.rtp.pt",
-   "feed": null,
-   "em": "2026-10-10T09:43:51.845248+00:00"
-  },
   "publico.pt": {
    "dominio": "publico.pt",
    "nome": "Público",
@@ -190,18 +73,6 @@
    "exemplo": "Seguro promulga apoios para transportes e sector social face subida dos combustíveis",
    "site": "https://www.publico.pt",
    "feed": null,
-   "em": "2026-10-10T09:43:51.845248+00:00"
-  },
-  "cnnportugal.iol.pt": {
-   "dominio": "cnnportugal.iol.pt",
-   "nome": "CNN Portugal",
-   "n": 6,
-   "pesquisas": [
-    "Apoio Estado"
-   ],
-   "exemplo": "Partidos que comandam ministérios no Governo de Lula declaram apoio a Flávio Bolsonaro",
-   "site": "https://cnnportugal.iol.pt",
-   "feed": "https://cnnportugal.iol.pt/rss.xml",
    "em": "2026-10-10T09:43:51.845248+00:00"
   },
   "noticiasaominuto.com": {
@@ -271,8 +142,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "c202c49daba535ee",
-    "88329ce104d77bf9",
     "27b475e17beff64f",
     "c9a14bc1814ad6b3",
     "e5aa583b9ed86a8c",
@@ -290,39 +159,16 @@
     "0e03ef275fae85c6",
     "2e8c669a632b53e1",
     "c1691193130ce6ae",
-    "b77b15c40a94e66c"
+    "b77b15c40a94e66c",
+    "f7902a0adec0befd",
+    "98825e53ee417738"
    ],
    "pesquisas": [
-    "IA na saúde",
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
-  },
-  "portal.afya.com.br": {
-   "nome": "Afya | Home",
-   "site": "https://portal.afya.com.br",
-   "ids": [
-    "5ab3042dd219f103"
-   ],
-   "pesquisas": [
-    "IA na saúde"
-   ],
-   "exemplo": "Estudo avalia inteligência artificial na atenção primária",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
-  },
-  "tjto.jus.br": {
-   "nome": "Tribunal de Justiça do Tocantins",
-   "site": "https://tjto.jus.br",
-   "ids": [
-    "e0ff71a4f8739e58"
-   ],
-   "pesquisas": [
-    "IA na saúde"
-   ],
-   "exemplo": "TJTO apresenta projeto de inteligência artificial para a saúde do trabalhador em congresso internacional de fisioterapia em Recife (PE)",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "cnnbrasil.com.br": {
    "nome": "CNN Brasil",
@@ -332,35 +178,10 @@
     "4cd838b5a0090b0b"
    ],
    "pesquisas": [
-    "IA na saúde",
     "Apoio Estado"
    ],
    "exemplo": "Inteligência artificial do Google ajuda a prever internações por gripe",
    "ultima": "2026-10-10T12:38:37.658505+00:00"
-  },
-  "urbnews.com.br": {
-   "nome": "URB News",
-   "site": "https://urbnews.com.br",
-   "ids": [
-    "671a3797d393ade5"
-   ],
-   "pesquisas": [
-    "IA na saúde"
-   ],
-   "exemplo": "Saúde, educação, inteligência artificial e mais: Lula e Flávio recebem dez perguntas de entidades científicas sobre propostas para o Brasil",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
-  },
-  "jd1noticias.com": {
-   "nome": "JD1 Notícias",
-   "site": "https://www.jd1noticias.com",
-   "ids": [
-    "50561df3bd7baaf2"
-   ],
-   "pesquisas": [
-    "IA na saúde"
-   ],
-   "exemplo": "Especialista elenca 5 cuidados para usar a inteligência artificial ao tirar dúvidas sobre saúde mental",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
   },
   "terra.com.br": {
    "nome": "Terra",
@@ -371,35 +192,10 @@
     "1963599712f569d3"
    ],
    "pesquisas": [
-    "IA na saúde",
     "Apoio Estado"
    ],
    "exemplo": "Inteligência Artificial poderia prever com precisão risco de câncer de fígado",
    "ultima": "2026-10-10T12:38:37.658505+00:00"
-  },
-  "saudedigitalnews.com.br": {
-   "nome": "Saúde Digital News",
-   "site": "https://saudedigitalnews.com.br",
-   "ids": [
-    "e7c5efe18c7031a4"
-   ],
-   "pesquisas": [
-    "IA na saúde"
-   ],
-   "exemplo": "Inteligência artificial começa a antecipar risco de cirurgias e tratamentos de alto custo nas empresas",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
-  },
-  "arapuanews.com.br": {
-   "nome": "ArapuaNews",
-   "site": "https://arapuanews.com.br",
-   "ids": [
-    "753326ad19e12e14"
-   ],
-   "pesquisas": [
-    "IA na saúde"
-   ],
-   "exemplo": "Dia Mundial da Coluna: inteligência artificial reduz de quatro horas para 10 minutos análise de riscos ergonômicos em fábrica",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -416,7 +212,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "antenalivre.pt": {
    "nome": "Antena Livre",
@@ -429,7 +225,7 @@
     "Sertã"
    ],
    "exemplo": "Sertã: Castanhas e Frutos secos em destaque nos Produtos da Terra",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "mediotejo.net": {
    "nome": "Médio Tejo",
@@ -458,7 +254,7 @@
     "Sertã"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
@@ -477,13 +273,15 @@
    "site": "https://radiohertz.pt",
    "ids": [
     "1c0a27e27b84ea06",
-    "d841d4240ced90e3"
+    "d841d4240ced90e3",
+    "d324481ec8fe1261"
    ],
    "pesquisas": [
-    "Sertã"
+    "Sertã",
+    "Apoio Estado"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -495,7 +293,7 @@
     "Sertã"
    ],
    "exemplo": "SERTÃ: Grupo Coral do Sertanense celebra 20.º aniversário com encontro de coros",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -510,7 +308,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "reconquista.pt": {
    "nome": "reconquista.pt",
@@ -574,7 +372,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Orçamento do Estado reforça valorização dos rendimentos e apoios às famílias e empresas",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "jornaldenegocios.pt": {
    "nome": "Jornal de Negócios",
@@ -591,7 +389,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo volta a dar apoios à compra de carros elétricos em 2027",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "eco.sapo.pt": {
    "nome": "ECO",
@@ -608,7 +406,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Orçamento do Estado sem novos apoios nos combustíveis",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "expresso.pt": {
    "nome": "Expresso",
@@ -620,7 +418,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Orçamento sem medidas, sem apoios e com curta margem",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "dinheirovivo.dn.pt": {
    "nome": "Dinheiro Vivo",
@@ -633,7 +431,7 @@
     "Apoio Estado"
    ],
    "exemplo": "OE2027: No âmbito da Segurança Social, PSU terá despesa 10% maior do que apoios que substitui",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "rr.pt": {
    "nome": "Renascença",
@@ -647,7 +445,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Menos IRS, aumentos nos salários e pensões e reforço de alguns apoios sociais. O que muda com o novo Orçamento do Estado?",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -659,7 +457,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Cancro: 5 associações que dão apoio gratuito a doentes",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "pplware.sapo.pt": {
    "nome": "Pplware",
@@ -671,7 +469,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo vai voltar a dar apoios à compra de carros elétricos em 2027",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "jovempan.com.br": {
    "nome": "Jovem Pan",
@@ -746,13 +544,14 @@
     "6b4de5788e67450c",
     "21d90dfba1efd2b0",
     "b0a71658cb4a8e49",
-    "992848b1d86a4f75"
+    "992848b1d86a4f75",
+    "f7902a0adec0befd"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "PROAGES simplificado para facilitar apoios às famílias que ficam de fora dos apoios sociais",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "24 Notícias",
@@ -807,13 +606,14 @@
     "64de726f6f4c8d77",
     "472bbb461affe0ea",
     "1f8260ef2337aca9",
-    "015a1b891f0da248"
+    "015a1b891f0da248",
+    "eb65b3af17b31672"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Partidos que comandam ministérios no Governo de Lula declaram apoio a Flávio Bolsonaro",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-10-10T14:52:46.547040+00:00"
   },
   "oglobo.globo.com": {
    "nome": "O GLOBO",
@@ -2921,6 +2721,33 @@
    "fonte": "dnoticias.pt",
    "nota": 30.0,
    "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-10-10T14:52:46.547040+00:00",
+   "titulo": "TOMAR – Atenção. Candidaturas a bolsas de estudo para o Ensino Superior estão abertas até 31 de Outubro",
+   "link": "https://radiohertz.pt/tomar-atencao-candidaturas-a-bolsas-de-estudo-para-o-ensino-superior-estao-abertas-ate-31-de-outubro/",
+   "fonte": "Rádio Hertz",
+   "nota": 30.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-10-10T14:52:46.547040+00:00",
+   "titulo": "Governo quer avançar com linhas de financiamento para proteção de ataques de lobos",
+   "link": "https://cnnportugal.iol.pt/medidas/financiamento/governo-quer-avancar-com-linhas-de-financiamento-para-protecao-de-ataques-de-lobos/20261010/6aca222dd34e53c759c75cb6",
+   "fonte": "CNN Portugal",
+   "nota": 30.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-10-10T14:52:46.547040+00:00",
+   "titulo": "PS diz que \"Orçamento do Estado é mau para a Madeira\"",
+   "link": "https://sapo.pt/artigo/ps-diz-que-orcamento-do-estado-e-mau-para-a-madeira-6aca4b1a71bdbe0b74c0e3b4",
+   "fonte": "SAPO",
+   "nota": 27.0,
+   "pesquisa": "Apoio Estado"
   }
  ],
  "execucoes": [
@@ -3044,8 +2871,40 @@
    "sugestoes": 5,
    "silencio": false,
    "erros": []
+  },
+  {
+   "ts": "2026-10-10T14:52:46.547040+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 288,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio Estado",
+     "recolhidas": 288,
+     "relevantes": 4,
+     "alertas": 3
+    }
+   ],
+   "falhas": [
+    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+   ],
+   "alertas": 3,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
+ "bloqueados": {
+  "cm-serta.pt": "2026-10-10T14:52:46.547040+00:00"
+ },
  "raspadas": {},
  "paginas_lidas": []
 }
