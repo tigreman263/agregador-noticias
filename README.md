@@ -195,6 +195,56 @@ Sem estes segredos, ou com o telemóvel sem rede, os passos do telemóvel não f
 resto corre igual (os sites bloqueados ficam de fora dessa vez). O consumo é mínimo:
 alguns megabytes de dados por dia.
 
+### 2.8 Despertador externo (cron-job.org), para correr a horas
+
+O agendador do GitHub falha muitas vezes: há dias em que passa horas sem lançar o
+agregador. Para correr mesmo com a frequência escolhida, um serviço gratuito
+(cron-job.org) pede ao GitHub uma verificação de 15 em 15 minutos, e o agregador só
+verifica a sério quando já passou o intervalo escolhido no painel.
+
+**1. Token só para o despertador** (no GitHub)
+
+1. Abre https://github.com/settings/personal-access-tokens/new.
+2. **Token name**: `cron agregador`. **Expiration**: a mais longa que deixar (e anota a
+   data, para o renovar).
+3. **Repository access**: **Only select repositories** → `agregador-noticias`.
+4. **Permissions → Repository permissions**: só **Actions: Read and write**.
+5. **Generate token** e copia-o (começa por `github_pat_`).
+
+Este token só deixa lançar o agregador; não deixa ler nem mudar ficheiros.
+
+**2. Tarefa no cron-job.org**
+
+1. Cria uma conta gratuita em https://cron-job.org e entra.
+2. **Create cronjob** (Criar tarefa). Separador **Common**:
+   - **Title**: `Agregador de Notícias`
+   - **URL**:
+     ```
+     https://api.github.com/repos/tigreman263/agregador-noticias/actions/workflows/agregador.yml/dispatches
+     ```
+   - **Execution schedule**: **Every 15 minutes**.
+3. Separador **Advanced**:
+   - **Request method**: `POST`
+   - **Headers** (carrega em **Add** para cada um):
+
+     | Key | Value |
+     |---|---|
+     | `Accept` | `application/vnd.github+json` |
+     | `Authorization` | `Bearer ` seguido do token (ex.: `Bearer github_pat_…`) |
+     | `X-GitHub-Api-Version` | `2022-11-28` |
+     | `Content-Type` | `application/json` |
+   - **Request body**:
+     ```
+     {"ref":"main","inputs":{"acao":"agendada"}}
+     ```
+4. **Create** (guardar). Depois, na lista, usa **Test run**: a resposta deve ser
+   **204 No Content**. No painel, em **Atividade**, aparece uma execução "automática".
+
+Se o teste der **401**, o token está mal copiado (confirma o `Bearer ` com espaço); se
+der **403** ou **404**, falta a permissão **Actions: Read and write** ou o repositório
+no token. O agendador do próprio GitHub continua ligado como reserva; os dois respeitam
+o mesmo intervalo e não há verificações nem mensagens repetidas.
+
 ---
 
 ## 3. Usar o painel
@@ -447,7 +497,7 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 | `estado.json` | Memória do agregador, gravada pelo GitHub. Não editar. |
 | `painel.json` | Notícias descartadas no painel. |
 | `requirements.txt` | Bibliotecas Python (requests, PyYAML, defusedxml, beautifulsoup4). |
-| `.github/workflows/agregador.yml` | Acorda de 15 em 15 minutos, verifica conforme `geral.intervalo_minutos`, e ações manuais (normal, teste, simular, descobrir-fontes). |
+| `.github/workflows/agregador.yml` | Acorda de 15 em 15 minutos (GitHub e cron-job.org), verifica conforme `geral.intervalo_minutos`, e ações manuais (normal, teste, simular, descobrir-fontes, agendada). |
 | `painel/index.html` | O painel. |
 | `Abrir Painel.url` / `Abrir Painel.bat` | Abrem o painel no navegador (duplo clique no Windows). |
 | `.gitattributes` | Mantém o formato de linhas do Windows nos dois atalhos. |
@@ -472,9 +522,10 @@ A apikey guardada está errada. Copia só o código que vem a seguir a "APIKEY i
 mensagem do CallMeBot e volta a guardar o segredo `WHATSAPP_APIKEY`. Confirma que
 ativaste o serviço de **WhatsApp** (o CallMeBot tem serviços diferentes para chamadas).
 
-**As execuções automáticas atrasam ou falham uma vez por outra**
-O GitHub atrasa as execuções agendadas quando está muito ocupado. É normal; a seguinte
-apanha o que ficou para trás.
+**O agregador não corre de X em X tempo**
+O agendador do GitHub falha muitas vezes. Configura o despertador externo (passo 2.8).
+Em **Atividade → Execuções no GitHub** vês as automáticas; se só houver manuais, o
+despertador não está a funcionar (no cron-job.org, vê o histórico da tarefa).
 
 **"Fonte com falha … Connection reset by peer"**
 O site recusa os servidores do GitHub. Ver secção 5.7 e passo 2.7.
@@ -511,4 +562,4 @@ O GitHub Pages demora 1 a 2 minutos a publicar mudanças ao painel; carrega em
 - O CallMeBot é gratuito e de terceiros: só envia, tem limites de envio e pode falhar.
 - Sites que bloqueiam o GitHub só são lidos com o telemóvel Android configurado e com rede.
 - Páginas que só mostram notícias com JavaScript, ou com certificado inválido, não são lidas.
-- O GitHub pode atrasar as execuções agendadas.
+- Sem o despertador externo (passo 2.8), o GitHub pode atrasar muito as execuções agendadas.
