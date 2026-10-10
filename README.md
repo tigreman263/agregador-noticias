@@ -63,7 +63,9 @@ que te falta. Para montar de raiz noutra conta, segue todos.
    notícias guardadas ficam visíveis.
 3. Carrega todos os ficheiros deste projeto, mantendo as pastas: `agregador.py`,
    `config.yaml`, `requirements.txt`, `estado.json`, `README.md`, `.nojekyll`,
-   `.gitignore`, `painel/index.html` e `.github/workflows/agregador.yml`.
+   `.gitignore`, `index.html`, `Abrir Painel.url`, `painel/index.html` e
+   `.github/workflows/agregador.yml`. (Noutra conta, troca no `Abrir Painel.url` o
+   endereço do painel pelo teu.)
    No site do GitHub: **Add file → Upload files** para os ficheiros normais; para o
    workflow, **Add file → Create new file**, escreve o nome
    `.github/workflows/agregador.yml` (as barras criam as pastas) e cola o conteúdo.
@@ -117,7 +119,9 @@ gh secret set WHATSAPP_APIKEY -R tigreman263/agregador-noticias
 4. No telemóvel, abre o endereço e usa **Adicionar ao ecrã principal** para o teres
    como uma app.
 
-Também podes abrir `painel/index.html` no computador com duplo clique.
+No computador, o atalho **`Abrir Painel.url`** (na pasta do projeto) abre o painel com
+duplo clique. O endereço curto https://tigreman263.github.io/agregador-noticias/ também
+leva ao painel. Também podes abrir `painel/index.html` com duplo clique.
 
 ### 2.6 Token do painel (para editar)
 
@@ -439,6 +443,8 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 | `requirements.txt` | Bibliotecas Python (requests, PyYAML, defusedxml, beautifulsoup4). |
 | `.github/workflows/agregador.yml` | Agendamento de 30 em 30 minutos e ações manuais (normal, teste, simular, descobrir-fontes). |
 | `painel/index.html` | O painel. |
+| `Abrir Painel.url` | Atalho que abre o painel no navegador (duplo clique no Windows). |
+| `index.html` | Encaminha o endereço curto do GitHub Pages para o painel. |
 | `.nojekyll` | Faz o GitHub Pages servir os ficheiros tal como estão. |
 | `README.md` | Este documento (também em **Ajuda** no painel). |
 | `CONTEXTO.md` | Decisões técnicas, para quem continuar o desenvolvimento. |
