@@ -714,7 +714,7 @@ def podar(estado, agora_utc):
 
 def whatsapp(telefone, apikey, texto):
     try:
-        r = requests.get(CALLMEBOT, params={"phone": telefone, "text": texto,
+        r = requests.get(CALLMEBOT, params={"phone": "+" + telefone, "text": texto,
                                             "apikey": apikey}, timeout=30)
     except requests.RequestException:
         raise RuntimeError("falha de rede ao contactar o CallMeBot") from None

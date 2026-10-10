@@ -60,5 +60,8 @@ jobs:
             echo "Sem alterações no estado."
           else
             git commit -m "estado: $(date -u +%Y-%m-%dT%H:%MZ)"
-            git push
+            for tentativa in 1 2 3; do
+              git pull --rebase -X theirs origin main && git push && break
+              sleep 5
+            done
           fi
