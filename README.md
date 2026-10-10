@@ -217,6 +217,9 @@ Notas:
 - **Descartar** (em Atividade): tira uma notícia dos alertas adiados ou do resumo;
   **Descartar todos** (aparece quando há mais do que uma) tira a lista inteira. O painel grava isso em `painel.json` e o agregador tira-as na verificação
   seguinte, sem as enviar.
+- **Limpar** (em Atividade → O que a app fez): esconde o que já lá estava, para veres só
+  o que acontecer a seguir. Nada é apagado: **Mostrar tudo** volta a mostrar o histórico.
+  Com o token, a limpeza fica gravada em `painel.json` e vale em todos os aparelhos.
 - "**novas relevantes**" conta só as notícias relevantes que ainda não tinham sido
   vistas. "0 novas relevantes" não é erro: quer dizer que não apareceu nada de novo.
 - O painel atualiza sozinho de 5 em 5 minutos; usa **Atualizar** para ver já.
@@ -445,7 +448,7 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 | `agregador.py` | Todo o programa: recolha, leitor de páginas, pontuação, WhatsApp, descoberta, telemóvel. |
 | `config.yaml` | Pesquisas, fontes e regras. |
 | `estado.json` | Memória do agregador, gravada pelo GitHub. Não editar. |
-| `painel.json` | Notícias descartadas no painel. |
+| `painel.json` | Notícias descartadas e limpeza da atividade, gravadas pelo painel. |
 | `requirements.txt` | Bibliotecas Python (requests, PyYAML, defusedxml, beautifulsoup4). |
 | `.github/workflows/agregador.yml` | Acorda de 15 em 15 minutos, verifica conforme `geral.intervalo_minutos`, e ações manuais (normal, teste, simular, descobrir-fontes). |
 | `painel/index.html` | O painel. |

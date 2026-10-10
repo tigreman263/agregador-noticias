@@ -111,7 +111,7 @@ ol li{margin-bottom:6px}
 <script>
 "use strict";
 // ------------------------------------------------------------ armazenamento local
-const LS_LIG = "agregador.ligacao", LS_TOKEN = "agregador.token", LS_TAB = "agregador.tab";
+const LS_LIG = "agregador.ligacao", LS_TOKEN = "agregador.token", LS_TAB = "agregador.tab", LS_LIMPO = "agregador.limpoAte";
 function lsGet(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } }
 function lsSet(k, v) { try { if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) {} }
 
@@ -277,7 +277,9 @@ async function carregar(silencioso) {
     ]);
     S.config = jsyaml.load(c.texto) || {};
     try { S.estado = JSON.parse(e.texto); } catch (x) { S.estado = {}; }
-    try { S.descartados = JSON.parse(p.texto).descartados || []; } catch (x) { S.descartados = []; }
+    let pj = {}; try { pj = JSON.parse(p.texto) || {}; } catch (x) { pj = {}; }
+    S.descartados = pj.descartados || [];
+    S.limpoAte = pj.atividade_limpa_ate || lsGet(LS_LIMPO, "") || "";
     esconderDescartados();
     S.runs = (r && r.workflow_runs) || [];
     S.erroCarga = "";
@@ -444,10 +446,14 @@ function vistaAtividade() {
   h += '<div class="card"><h3>Execuções no GitHub</h3>';
   h += S.runs.length ? S.runs.slice(0, 10).map(r => '<div class="list-item"><span class="sm">' + esc(hora(r.created_at)) + " · " + esc(tipoRun(r)) + '</span><span class="wrap">' + estadoRun(r) + ' <a class="sm" href="' + esc(urlSegura(r.html_url)) + '" target="_blank" rel="noopener">registo</a></span></div>').join("") : '<div class="empty">Sem execuções.</div>';
   h += "</div>";
-  const exs = (est.execucoes || []).slice().reverse();
-  h += '<div class="card"><h3>O que a app fez</h3>';
-  if (!exs.length) h += '<div class="empty">Ainda sem registo. Aparece depois da próxima verificação.</div>';
-  exs.slice(0, 8).forEach(x => {
+  const todas = (est.execucoes || []).slice().reverse();
+  const limite = S.limpoAte ? new Date(S.limpoAte).getTime() : 0;
+  const exs = S.verTudo ? todas : todas.filter(x => new Date(x.ts).getTime() > limite);
+  const escondidas = todas.length - exs.length;
+  h += '<div class="card"><div class="row"><h3>O que a app fez</h3>' + (exs.length ? '<button class="btn btn-sm" data-a="limpar-atividade">Limpar</button>' : "") + "</div>";
+  if (S.limpoAte) h += '<div class="xs muted">' + (S.verTudo ? "A mostrar tudo. " : "Limpo em " + esc(hora(S.limpoAte)) + (escondidas ? " (" + escondidas + " antigas escondidas). " : ". ")) + '<a href="#" data-a="ver-tudo">' + (S.verTudo ? "Esconder as antigas" : "Mostrar tudo") + "</a></div>";
+  if (!exs.length) h += '<div class="empty">' + (todas.length ? "Nada de novo desde que limpaste. A próxima verificação aparece aqui." : "Ainda sem registo. Aparece depois da próxima verificação.") + "</div>";
+  exs.slice(0, S.verTudo ? 48 : 8).forEach(x => {
     h += '<div class="list-item" style="display:block"><div class="row"><b class="sm">' + esc(hora(x.ts)) + "</b>" + (x.erros && x.erros.length ? '<span class="tag bad">com erros</span>' : x.silencio ? '<span class="tag">silêncio</span>' : '<span class="tag ok">ok</span>') + "</div>";
     h += '<div class="xs muted">' + (x.pesquisas || []).map(p => esc(p.nome) + ": " + p.recolhidas + " lidas, " + p.relevantes + " novas relevantes").join(" · ") + "</div>";
     h += '<div class="xs">' + x.alertas + " alertas enviados" + (x.resumo ? ", resumo com " + x.resumo : "") + (x.sugestoes ? ", " + x.sugestoes + " fontes sugeridas" : "") + "</div>";
@@ -670,6 +676,21 @@ async function onClick(ev) {
       res.innerHTML = S.token ? (pode ? '<span class="tag ok">Ligado: podes ler e gravar.</span>' : '<span class="err">O token liga, mas não tem permissão de escrita (Contents: Read and write).</span>') : '<span class="tag">Ligado em só leitura.</span>';
       await carregar(true);
     } catch (e) { res.innerHTML = '<span class="err">' + esc(e.message) + "</span>"; }
+    return;
+  }
+  if (a === "ver-tudo") { ev.preventDefault(); S.verTudo = !S.verTudo; render(); return; }
+  if (a === "limpar-atividade") {
+    const agora = new Date().toISOString();
+    S.verTudo = false;
+    if (!S.token) { S.limpoAte = agora; lsSet(LS_LIMPO, agora); toast("Limpo neste aparelho. Com o token, a limpeza vale em todos."); render(); return; }
+    await ocupado(el, async () => {
+      let atual = {}, sha;
+      try { const f = await lerFicheiro("painel.json"); atual = JSON.parse(f.texto) || {}; sha = f.sha; } catch (e) { if (!/Não encontrei/.test(e.message)) throw e; }
+      atual.atividade_limpa_ate = agora;
+      await gravarFicheiro("painel.json", JSON.stringify(atual, null, 1) + "\n", sha, "painel: limpar a atividade");
+      S.limpoAte = agora; lsSet(LS_LIMPO, agora);
+      toast("Limpo. Só aparece o que acontecer a partir de agora."); render();
+    });
     return;
   }
   if (a === "descartar" || a === "descartar-todos") {
