@@ -115,12 +115,15 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 
 - A correr no GitHub (frequência configurável, 30 min por omissão); envios por WhatsApp a funcionar.
 - O utilizador usa o painel com token: pesquisas "Sertã" e "Apoio Estado".
-- Falta o utilizador configurar o Tailscale no telemóvel (README, passo 2.7) para a
-  Câmara da Sertã ser lida.
+- Tailscale configurado (2026-10-10): telemóvel 'Redmi Note 12 Pro+ 5G' aprovado como
+  exit node; segredos TS_OAUTH_* no GitHub; a Câmara da Sertã é trazida pelo telemóvel.
+- O agendador do GitHub está a falhar muitas execuções automáticas neste repositório
+  (horas sem correr apesar do cron). Solução proposta: serviço externo (ex.: cron-job.org)
+  a chamar workflow_dispatch.
 
 ## Próximos passos sugeridos
 
-1. Confirmar a leitura da Câmara da Sertã pelo telemóvel depois de configurado o Tailscale.
+1. Tornar fiável o agendamento (cron externo a chamar workflow_dispatch).
 2. Variantes de palavras ("regulação", "regulamento", "regulamentação" como o mesmo conceito).
 3. Botões "útil / não útil" para aprender o que interessa (o CallMeBot não recebe respostas;
    teria de ser no painel).
