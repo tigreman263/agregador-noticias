@@ -214,8 +214,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "bce19c10d1c354a8",
-    "6d8d0802786648b1",
     "494368cb4e6f5878",
     "428c10ea67eee23d",
     "0e03ef275fae85c6",
@@ -233,14 +231,16 @@
     "2c1ebce669a1f783",
     "2eae9a0522574cea",
     "862cb8a105a6d225",
-    "8d88b27f4ead2fbb"
+    "8d88b27f4ead2fbb",
+    "7ae082dc54babf69",
+    "2a35c2e7fc8261fd"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-10-10T22:17:10.008873+00:00"
   },
   "cnnbrasil.com.br": {
    "nome": "CNN Brasil",
@@ -285,7 +285,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-10-10T22:17:10.008873+00:00"
   },
   "antenalivre.pt": {
    "nome": "Antena Livre",
@@ -298,7 +298,7 @@
     "Sertã"
    ],
    "exemplo": "Sertã: Castanhas e Frutos secos em destaque nos Produtos da Terra",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-10-10T22:17:10.008873+00:00"
   },
   "mediotejo.net": {
    "nome": "Médio Tejo",
@@ -327,7 +327,7 @@
     "Sertã"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-10-10T22:17:10.008873+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
@@ -366,7 +366,7 @@
     "Sertã"
    ],
    "exemplo": "SERTÃ: Grupo Coral do Sertanense celebra 20.º aniversário com encontro de coros",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-10-10T22:17:10.008873+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -381,7 +381,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-10-10T22:17:10.008873+00:00"
   },
   "reconquista.pt": {
    "nome": "reconquista.pt",
@@ -395,7 +395,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-10-10T22:17:10.008873+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -2724,7 +2724,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-10-10T22:17:10.008873+00:00"
   },
   "bra1.com.br": {
    "nome": "bra1.com.br",
@@ -3662,10 +3662,34 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-10-10T22:17:10.008873+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 308,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "Câmara da Sertã",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-10-10T22:00:07.311755+00:00"
+  "cm-serta.pt": "2026-10-10T22:17:10.008873+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
