@@ -68,7 +68,7 @@ pesquisas:
       - {nome: "Câmara da Sertã", url: "https://cm-serta.pt/comunicacao/noticias?format=feed&type=rss", local: true}
     paginas_extra: []
   - nome: "Apoio Estado"
-    ativa: false
+    ativa: true
     consulta: "Apoios do estado"
     obrigatorias: []
     palavras:
