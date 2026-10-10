@@ -1288,11 +1288,17 @@ def buscar_pelo_telemovel(cfg):
     if st.returncode:
         print("Tailscale indisponível: " + st.stderr.strip()[:200])
         return 0
-    saidas = [p for p in (json.loads(st.stdout).get("Peer") or {}).values()
-              if p.get("ExitNodeOption") and p.get("Online")]
+    pares = list((json.loads(st.stdout).get("Peer") or {}).values())
+    saidas = [p for p in pares if p.get("ExitNodeOption") and p.get("Online")]
     if not saidas:
-        print("O telemóvel não está disponível como saída (sem rede, ou com "
-              "'Run as exit node' desligado). Estes sites ficam de fora desta vez.")
+        print("O telemóvel não está disponível como saída. Estes sites ficam de fora desta vez.")
+        if not pares:
+            print("  Não vejo nenhum aparelho na rede Tailscale (confirma que o telemóvel usa a "
+                  "mesma conta e que a política deixa a etiqueta tag:ci ver os aparelhos).")
+        for p in pares:
+            print(f"  aparelho '{p.get('HostName', '?')}' ({p.get('OS', '?')}): "
+                  f"{'ligado' if p.get('Online') else 'DESLIGADO (abre a app e liga o Tailscale)'}, "
+                  f"{'saída aprovada' if p.get('ExitNodeOption') else 'NÃO é saída (liga Run as exit node na app e aprova em Machines > Edit route settings > Use as exit node)'}")
         return 0
     ip, nome = saidas[0]["TailscaleIPs"][0], saidas[0].get("HostName", "?")
     r = no_tailscale("set", "--exit-node=" + ip)
