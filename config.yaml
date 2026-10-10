@@ -70,3 +70,16 @@ pesquisas:
     feeds_extra:
       - {nome: "Câmara da Sertã", url: "https://cm-serta.pt/comunicacao/noticias?format=feed&type=rss", local: true}
     paginas_extra: []
+  - nome: "Apoio Estado"
+    ativa: true
+    consulta: "Apoios do estado"
+    obrigatorias: []
+    palavras:
+      alta: ["Apoio", "subsidio", "financiamento", "fundo perdido"]
+      media: ["agricultura", "floresta"]
+      baixa: []
+    excluir: ["publicidade"]
+    limite_alerta: 25
+    limite_resumo: 10
+    feeds_extra: []
+    paginas_extra: []
