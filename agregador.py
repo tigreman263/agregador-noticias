@@ -702,6 +702,22 @@ def aplicar_descartados(estado):
         print(f"Descartadas no painel: {tirados} notícias tiradas dos adiados/resumo.")
 
 
+def esquecer_pesquisas_apagadas(cfg, estado):
+    """Quando apagas uma pesquisa, o que ela deixou no estado deixa de contar."""
+    nomes = {p.get("nome") for p in cfg.get("pesquisas") or []}
+    if not nomes:
+        return
+    for k in ("adiados", "resumo"):
+        estado[k] = [c for c in estado[k] if c.get("pesquisa") in nomes]
+    for d, r in list(estado.get("dominios", {}).items()):
+        r["pesquisas"] = [p for p in r.get("pesquisas", []) if p in nomes]
+        if not r["pesquisas"]:
+            del estado["dominios"][d]
+    for d, s in list(estado["sugeridas"].items()):
+        if not any(p in nomes for p in s.get("pesquisas", [])):
+            del estado["sugeridas"][d]
+
+
 def guardar_estado(estado):
     ESTADO.write_text(json.dumps(estado, ensure_ascii=False, indent=1), encoding="utf-8")
 
@@ -1017,6 +1033,7 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
     estado = carregar_estado()
     podar(estado, agora_utc)
     limpar_sugeridas(cfg, estado)
+    esquecer_pesquisas_apagadas(cfg, estado)
     aplicar_descartados(estado)
     bloqueadas = (cfg.get("fontes") or {}).get("bloqueadas")
     for k in ("adiados", "resumo"):  # fontes bloqueadas depois de a notícia entrar na fila
