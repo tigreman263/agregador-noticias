@@ -18,7 +18,69 @@
  "resumo": [],
  "adiados": [],
  "ultimo_resumo": "",
- "sugeridas": {},
+ "sugeridas": {
+  "sapo.pt": {
+   "dominio": "sapo.pt",
+   "nome": "SAPO",
+   "n": 6,
+   "pesquisas": [
+    "IA na saúde",
+    "Sertã"
+   ],
+   "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
+   "site": "https://sapo.pt",
+   "feed": "https://sapo.pt/rss/destaques",
+   "em": "2026-10-10T08:47:28.216393+00:00"
+  },
+  "radiocondestavel.pt": {
+   "dominio": "radiocondestavel.pt",
+   "nome": "Rádio Condestável",
+   "n": 4,
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
+   "site": "https://radiocondestavel.pt",
+   "feed": null,
+   "em": "2026-10-10T08:47:28.216393+00:00"
+  },
+  "mediotejo.net": {
+   "dominio": "mediotejo.net",
+   "nome": "Médio Tejo",
+   "n": 3,
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
+   "site": "https://mediotejo.net",
+   "feed": "https://mediotejo.net/feed/",
+   "em": "2026-10-10T08:47:28.216393+00:00"
+  },
+  "radiohertz.pt": {
+   "dominio": "radiohertz.pt",
+   "nome": "Rádio Hertz",
+   "n": 2,
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
+   "site": "https://radiohertz.pt",
+   "feed": "https://radiohertz.pt/feed/",
+   "em": "2026-10-10T08:47:28.216393+00:00"
+  },
+  "noticiasdecoimbra.pt": {
+   "dominio": "noticiasdecoimbra.pt",
+   "nome": "Notícias de Coimbra",
+   "n": 2,
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
+   "site": "https://www.noticiasdecoimbra.pt",
+   "feed": "https://www.noticiasdecoimbra.pt/feed/",
+   "em": "2026-10-10T08:47:28.216393+00:00"
+  }
+ },
  "sugeridas_antigas": [],
  "dominios": {
   "sapo.pt": {
@@ -28,14 +90,16 @@
     "fc897482fb711769",
     "7ae082dc54babf69",
     "2a35c2e7fc8261fd",
-    "f305efa66badf546"
+    "f305efa66badf546",
+    "1e7a0471e6d4e463",
+    "bce19c10d1c354a8"
    ],
    "pesquisas": [
     "IA na saúde",
     "Sertã"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
   },
   "portal.afya.com.br": {
    "nome": "Afya | Home",
@@ -138,13 +202,15 @@
    "site": "https://radiocondestavel.pt",
    "ids": [
     "d8ad0c2f05de3905",
-    "4030a76c82ecc968"
+    "4030a76c82ecc968",
+    "4a424c25a2efdbba",
+    "442e026c2fb5e560"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
   },
   "antenalivre.pt": {
    "nome": "Antena Livre",
@@ -156,19 +222,21 @@
     "Sertã"
    ],
    "exemplo": "Sertã: Castanhas e Frutos secos em destaque nos Produtos da Terra",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
   },
   "mediotejo.net": {
    "nome": "Médio Tejo",
    "site": "https://mediotejo.net",
    "ids": [
-    "09d7777ba712fba9"
+    "09d7777ba712fba9",
+    "fe1ac4d8f8e426e7",
+    "6a6a4a70f87b9399"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -180,7 +248,7 @@
     "Sertã"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
@@ -192,19 +260,20 @@
     "Sertã"
    ],
    "exemplo": "Na Sertã oito médicos já beneficiam de apoio da Câmara",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
   },
   "radiohertz.pt": {
    "nome": "Rádio Hertz",
    "site": "https://radiohertz.pt",
    "ids": [
-    "1c0a27e27b84ea06"
+    "1c0a27e27b84ea06",
+    "d841d4240ced90e3"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -216,22 +285,72 @@
     "Sertã"
    ],
    "exemplo": "SERTÃ: Grupo Coral do Sertanense celebra 20.º aniversário com encontro de coros",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
    "site": "https://www.noticiasdecoimbra.pt",
    "ids": [
-    "35b1d6d9dad7b3c1"
+    "35b1d6d9dad7b3c1",
+    "34717d6a62b7054f"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
-   "ultima": "2026-10-10T07:43:29.041168+00:00"
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
+  },
+  "reconquista.pt": {
+   "nome": "reconquista.pt",
+   "site": "https://www.reconquista.pt",
+   "ids": [
+    "7f725b0cfcbc1d9f",
+    "af50257c4deeb75a"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Concurso desafia a imaginar Sertã em 2050",
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
+  },
+  "jornaldeabrantes.sapo.pt": {
+   "nome": "Jornal de Abrantes",
+   "site": "https://jornaldeabrantes.sapo.pt",
+   "ids": [
+    "70e732614cdd1d4e"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Sertã - Projeto piloto de telemetria residencial moderniza gestão do abastecimento de água",
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
+  },
+  "diariodigitalcastelobranco.pt": {
+   "nome": "Diário Digital Castelo Branco",
+   "site": "https://www.diariodigitalcastelobranco.pt",
+   "ids": [
+    "bd31022563ea0805"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Sertã: Ricardo Barbosa e Lídia Carolina apresentam \"Portugal: Um país em Canções\" a 11 de outubro",
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
+  },
+  "diariodosertao.com.br": {
+   "nome": "Diário do Sertão",
+   "site": "https://www.diariodosertao.com.br",
+   "ids": [
+    "fb2cb40f0c49cac4"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "VÍDEO: Delegado relata como ocorreu a prisão da ex-prefeita do município de Joca Claudino, Lucrécia Adriana",
+   "ultima": "2026-10-10T08:47:28.216393+00:00"
   }
  },
- "ultima_descoberta": "",
+ "ultima_descoberta": "2026-10-10",
  "enviados": [
   {
    "tipo": "alerta",
@@ -266,6 +385,25 @@
    "alertas": 1,
    "resumo": 0,
    "sugestoes": 0,
+   "silencio": false,
+   "erros": []
+  },
+  {
+   "ts": "2026-10-10T08:47:28.216393+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 100,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 5,
    "silencio": false,
    "erros": []
   }
