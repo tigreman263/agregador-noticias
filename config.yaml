@@ -56,22 +56,6 @@ descoberta:
 # "obrigatorias": a notícia só conta se tiver TODAS estas palavras
 # (ex: ["sertã"] para não apanhar notícias de outros concelhos).
 pesquisas:
-  - nome: "IA na saúde"
-    ativa: true
-    consulta: "inteligência artificial saúde"
-    obrigatorias: []
-    palavras:
-      alta: ["inteligência artificial", "regulação", "aprovação clínica"]
-      media: ["triagem", "diagnóstico", "dispositivos médicos"]
-      baixa: ["startup", "investimento"]
-    excluir: ["horóscopo", "publicidade"]
-    limite_alerta: 25          # nota mínima para alerta imediato
-    limite_resumo: 10          # nota mínima para o resumo diário
-    feeds_extra: []            # feeds RSS só desta pesquisa
-    paginas_extra: []          # páginas sem RSS só desta pesquisa (mesmo formato de fontes.paginas)
-
-  # Notícias locais. As obrigatórias só filtram (não dão pontos); por isso
-  # "sertã" também está em baixa, e o limite do resumo é mais baixo.
   - nome: "Sertã"
     ativa: true
     consulta: "Sertã"
@@ -84,13 +68,5 @@ pesquisas:
     limite_alerta: 20
     limite_resumo: 4
     feeds_extra:
-      # Feed RSS escondido do site da Câmara (mais fiável do que ler a página).
-      # Tudo o que publica é da Sertã: "local" dispensa as obrigatórias. Usa
-      # "local" só em feeds_extra/paginas_extra, para não valer noutras pesquisas.
-      - nome: "Câmara da Sertã"
-        url: "https://cm-serta.pt/comunicacao/noticias?format=feed&type=rss"
-        local: true
+      - {nome: "Câmara da Sertã", url: "https://cm-serta.pt/comunicacao/noticias?format=feed&type=rss", local: true}
     paginas_extra: []
-    # Outras câmaras com feed escondido, para uma pesquisa de cada lugar:
-    #   Vila de Rei: https://www.cm-viladerei.pt/index.php/noticias?format=feed&type=rss
-    #   Oleiros:     https://cm-oleiros.pt/feed/
