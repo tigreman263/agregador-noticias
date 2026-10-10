@@ -13,6 +13,6 @@ Regras:
 - Nunca uses um token real nem grave no repositório durante testes; testa a leitura sem token e a gravação com funções extraídas e o `config.yaml` numa pasta temporária.
 - Mantém o texto em português de Portugal, simples, para um utilizador não técnico.
 - Valida o JavaScript extraindo o `<script>` para um ficheiro temporário fora do projeto e correndo `node --check` (se o Node existir).
-- Se tiveres as ferramentas do Chrome DevTools MCP, abre o ficheiro no navegador e percorre as cinco secções, vendo a consola por erros.
+- Se tiveres as ferramentas do Chrome DevTools MCP, abre o ficheiro no navegador e percorre as seis secções (incluindo Ajuda, que mostra o README.md), vendo a consola por erros.
 
 Responde com: o que mudaste, como validaste e o que viste no navegador (ou que não conseguiste testá-lo).

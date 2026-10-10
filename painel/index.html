@@ -6,6 +6,8 @@
 <title>Agregador de Notícias</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
 <style>
 :root{
   --bg:#F6F3EE;--surface:#FFFFFF;--surface2:#FBF9F5;--line:#E6E0D5;--line2:#D9D3C7;
@@ -72,7 +74,17 @@ textarea{min-height:64px;resize:vertical}
 .list-item:last-child{border-bottom:0}
 .empty{color:var(--muted);font-size:14px;padding:4px 0}
 .err{color:var(--danger);font-size:13px}
-nav.tabs{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--line);background:var(--surface);padding-bottom:env(safe-area-inset-bottom,0px)}
+.doc{font-size:15px;line-height:1.55;overflow-wrap:anywhere}
+.doc h1{font-size:26px;margin:4px 0 10px}.doc h2{font-size:21px;margin:26px 0 8px;padding-top:12px;border-top:1px solid var(--line)}.doc h3{font-size:17px;margin:18px 0 6px}
+.doc p,.doc ul,.doc ol{margin:8px 0}.doc li{margin-bottom:4px}
+.doc pre{background:var(--surface2);border:1px solid var(--line);border-radius:10px;padding:10px;overflow-x:auto;font-size:12px}
+.doc pre code{border:0;padding:0;background:none;word-break:normal;white-space:pre}
+.doc hr{border:0;border-top:1px solid var(--line);margin:18px 0}
+.doc .tabela{overflow-x:auto;margin:8px 0}
+.doc table{border-collapse:collapse;font-size:13px;min-width:100%}
+.doc th,.doc td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.doc th{background:var(--surface2)}
+nav.tabs{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--line);background:var(--surface);padding-bottom:env(safe-area-inset-bottom,0px)}
 .tab{border:0;background:transparent;color:var(--muted);padding:10px 2px;font-size:12px;font-weight:600;display:flex;flex-direction:column;align-items:center;gap:2px;min-height:56px}
 .tab[aria-current="page"]{color:var(--accent)}
 .tab .ic{font-size:18px;line-height:1}
@@ -93,6 +105,7 @@ ol li{margin-bottom:6px}
     <button class="tab" data-tab="atividade"><span class="ic" aria-hidden="true">≡</span>Atividade</button>
     <button class="tab" data-tab="fontes"><span class="ic" aria-hidden="true">◈</span>Fontes</button>
     <button class="tab" data-tab="ligacao"><span class="ic" aria-hidden="true">⚙</span>Ligação</button>
+    <button class="tab" data-tab="ajuda"><span class="ic" aria-hidden="true">?</span>Ajuda</button>
   </nav>
 </div>
 <script>
@@ -342,6 +355,7 @@ function vistaInicio() {
   h += '<div class="card"><div class="row"><h3>Pesquisas</h3><button class="btn btn-sm" data-a="tab" data-p="pesquisas">Gerir</button></div>';
   h += ps.length ? ps.map(p => '<div class="list-item"><span>' + esc(p.nome) + "</span>" + (p.ativa === false ? '<span class="tag">em pausa</span>' : '<span class="tag ok">ativa</span>') + "</div>").join("") : '<div class="empty">Ainda não tens pesquisas.</div>';
   h += "</div>";
+  h += '<div class="xs muted">Dúvidas sobre como funciona ou como configurar? Vê a <a href="#" data-a="tab" data-p="ajuda">Ajuda</a>.</div>';
   return h;
 }
 
@@ -483,8 +497,36 @@ function vistaLigacao() {
   h += "<li>Permissions → Repository permissions: <b>Contents: Read and write</b> e <b>Actions: Read and write</b>.</li>";
   h += "<li>Generate token, copia-o e cola-o acima.</li></ol>";
   h += '<div class="xs muted">Este token só dá acesso a este repositório. Quem usar este navegador consegue mudar as pesquisas; num aparelho partilhado, usa "Esquecer token" no fim.</div></div>';
-  h += '<div class="card"><h3>Atalhos</h3><div class="sm"><a href="https://github.com/' + esc(S.repo) + '/blob/main/config.yaml" target="_blank" rel="noopener">config.yaml no GitHub</a> · <a href="https://github.com/' + esc(S.repo) + '/actions" target="_blank" rel="noopener">Actions</a> · <a href="https://github.com/' + esc(S.repo) + '/settings/secrets/actions" target="_blank" rel="noopener">Segredos</a></div></div>';
+  h += '<div class="card"><h3>Atalhos</h3><div class="sm"><a href="https://github.com/' + esc(S.repo) + '/blob/main/config.yaml" target="_blank" rel="noopener">config.yaml no GitHub</a> · <a href="https://github.com/' + esc(S.repo) + '/actions" target="_blank" rel="noopener">Actions</a> · <a href="https://github.com/' + esc(S.repo) + '/settings/secrets/actions" target="_blank" rel="noopener">Segredos</a></div><button class="btn btn-sm" data-a="tab" data-p="ajuda">Ver a Ajuda (instalação e configuração passo a passo)</button></div>';
   return h;
+}
+
+// ------------------------------------------------------------ ajuda (README.md do repositório)
+function slug(t) { return t.toLowerCase().trim().replace(/[^\p{L}\p{N}\s-]/gu, "").replace(/\s/g, "-"); }
+async function carregarAjuda() {
+  S.ajuda = { aCarregar: true };
+  try {
+    const f = await lerFicheiro("README.md");
+    const div = document.createElement("div");
+    div.innerHTML = DOMPurify.sanitize(marked.parse(f.texto));
+    div.querySelectorAll("h1,h2,h3,h4").forEach(h => { h.id = "doc-" + slug(h.textContent); });
+    div.querySelectorAll("a[href]").forEach(a => {
+      const href = a.getAttribute("href");
+      if (href.startsWith("#")) { let alvo = href.slice(1); try { alvo = decodeURIComponent(alvo); } catch (e) {} a.setAttribute("href", "#doc-" + alvo); }
+      else { a.target = "_blank"; a.rel = "noopener"; }
+    });
+    div.querySelectorAll("table").forEach(t => { const w = document.createElement("div"); w.className = "tabela"; t.replaceWith(w); w.appendChild(t); });
+    S.ajuda = { html: div.innerHTML };
+  } catch (e) { S.ajuda = { erro: e.message }; }
+  if (S.tab === "ajuda") render();
+}
+function vistaAjuda() {
+  if (!S.ajuda) carregarAjuda();
+  const a = S.ajuda || {};
+  const h = '<div class="top"><h1>Ajuda</h1><button class="btn btn-sm" data-a="recarregar-ajuda">Atualizar</button></div>';
+  if (a.erro) return h + '<div class="card"><div class="err">' + esc(a.erro) + '</div><div class="sm">Podes ler o mesmo texto no GitHub: <a href="https://github.com/' + esc(S.repo) + '#readme" target="_blank" rel="noopener">abrir o README</a>.</div></div>';
+  if (!a.html) return h + '<div class="card"><div class="empty">A carregar o README…</div></div>';
+  return h + '<div class="card doc">' + a.html + "</div>";
 }
 
 function render() {
@@ -495,11 +537,11 @@ function render() {
   else { b.className = "banner ok"; b.textContent = "Ligado a " + S.repo; }
   document.querySelectorAll(".tab").forEach(t => t.setAttribute("aria-current", t.dataset.tab === S.tab ? "page" : "false"));
   const m = document.getElementById("main");
-  if (!S.config && S.tab !== "ligacao") {
+  if (!S.config && S.tab !== "ligacao" && S.tab !== "ajuda") {
     m.innerHTML = S.erroCarga ? '<div class="card"><div class="err">' + esc(S.erroCarga) + '</div><button class="btn" data-a="recarregar">Tentar outra vez</button></div>' : '<div class="card"><div class="empty">A carregar…</div></div>';
     return;
   }
-  m.innerHTML = { inicio: vistaInicio, pesquisas: vistaPesquisas, atividade: vistaAtividade, fontes: vistaFontes, ligacao: vistaLigacao }[S.tab]();
+  m.innerHTML = { inicio: vistaInicio, pesquisas: vistaPesquisas, atividade: vistaAtividade, fontes: vistaFontes, ligacao: vistaLigacao, ajuda: vistaAjuda }[S.tab]();
 }
 
 // ------------------------------------------------------------ ações
@@ -543,8 +585,9 @@ async function onClick(ev) {
   if (el.dataset.tab) { S.tab = el.dataset.tab; S.editar = null; lsSet(LS_TAB, S.tab); render(); document.getElementById("main").scrollTop = 0; return; }
   const a = el.dataset.a, p = el.dataset.p, d = el.dataset.d;
   const ps = (S.config && S.config.pesquisas) || [];
-  if (a === "tab") { S.tab = p; render(); return; }
+  if (a === "tab") { ev.preventDefault(); S.tab = p; S.editar = null; lsSet(LS_TAB, p); render(); document.getElementById("main").scrollTop = 0; return; }
   if (a === "recarregar") { await carregar(); toast("Atualizado."); return; }
+  if (a === "recarregar-ajuda") { S.ajuda = null; render(); return; }
   if (a === "correr") { try { await correr(p); } catch (e) { toast(e.message); } return; }
   if (a === "nova") { if (!S.token) { toast("Para criar pesquisas, junta primeiro um token em Ligação."); return; } S.editar = -1; render(); return; }
   if (a === "editar") { if (!S.token) { toast("Para editar, junta primeiro um token em Ligação."); return; } S.editar = Number(p); render(); return; }

@@ -1,73 +1,122 @@
 # Contexto do projeto (para quem continuar o desenvolvimento)
 
-Este ficheiro resume tudo o que foi decidido até agora, para que outra ferramenta
-ou pessoa consiga continuar sem ter o histórico da conversa.
+Resume as decisões técnicas, para que outra ferramenta ou pessoa consiga continuar sem o
+histórico da conversa. O guia de utilização, passo a passo, está no `README.md`.
 
 ## Objetivo
 
 Agregador de notícias pessoal:
-1. Crias uma **pesquisa** (tema). O sistema gera palavras-chave por prioridade (alta, média, baixa) e palavras a excluir.
-2. Recolhe notícias de várias fontes e procura **fontes novas** regularmente.
-3. Filtra e pontua pelo interesse e pela confiança da fonte. Tu manténs a lista de fontes confiáveis, neutras e bloqueadas.
-4. Envia **alertas por WhatsApp** (CallMeBot).
+1. O utilizador cria **pesquisas** (temas) no painel, com palavras-chave por prioridade
+   (alta, média, baixa), palavras obrigatórias e palavras a excluir.
+2. O agregador recolhe notícias de várias fontes e procura **fontes novas** todos os dias.
+3. Filtra e pontua pelo interesse e pela confiança da fonte (confiáveis, neutras, bloqueadas).
+4. Envia **alertas e um resumo diário por WhatsApp** (CallMeBot).
 
 ## Decisões já tomadas
 
-- **Sem custos.** Corre no GitHub Actions, num repositório **privado**, de 30 em 30 minutos.
-- **WhatsApp via CallMeBot (2026-10-09).** Substituiu o Telegram. É gratuito e funciona com um simples pedido HTTP, mas só envia: não há botões nem leitura de respostas. Por isso as decisões sobre fontes passaram para o `config.yaml` (`confiaveis`, `neutras`, `bloqueadas`). Como tem limites de envio apertados, os alertas de cada execução vão juntos em poucas mensagens. A API oficial da Meta e a Twilio foram postas de lado por custo; bibliotecas não oficiais por risco de bloqueio do número e por precisarem de um processo sempre ligado.
-- **Fontes abertas** (Google Notícias, feeds RSS e páginas de notícias sem RSS). X, Instagram e Facebook estão fora por acesso restrito ou pago.
-- **Páginas sem RSS**: lidas com BeautifulSoup (`ler_pagina`). Com seletores CSS (`item`, `titulo`, `resumo`, `data`) ou, sem eles, por deteção automática: agrupa os links pelo tipo de cartão e fica com o grupo que mais parece notícias (maior média de pontos, depois o maior; assim ignora menus), prefere títulos de cabeçalhos ao `alt` das imagens e procura a data subindo no cartão (datas futuras são ignoradas). Notícias sem data ficam com a data da 1.ª vez vistas; na 1.ª leitura de uma página contam como antigas. A opção `local: true` (em `paginas_extra`/`feeds_extra`) dispensa as palavras obrigatórias. Se a página anunciar um feed (`<link type=rss/atom>`), `ler_pagina` usa-o em vez de raspar (desliga-se com `usar_feed: false` ou `--sem-feed`).
-- **Feeds escondidos**: `descobrir_feed` tenta os feeds anunciados na página, links com rss/feed/atom, `?format=feed&type=rss` (Joomla) e caminhos habituais (`/feed/`, `/rss`, `/rss.xml`, `/atom.xml`, `/index.xml`, `/feeds/posts/default`). `python agregador.py --procurar-feeds "<pesquisa ou texto>"` pesquisa no Google Notícias (30 dias), junta os sites e procura o feed de cada um em paralelo, mostrando YAML pronto a colar. As câmaras da Sertã, Vila de Rei e Oleiros têm feeds escondidos; a Sertã já é lida pelo feed.
-- **Sem base de dados.** O estado vive em `estado.json`, que o workflow grava no repositório a cada execução.
-- Configuração em `config.yaml`, sem mexer no código.
+- **Sem custos e sem servidor.** Corre no GitHub Actions, no repositório **público**
+  `tigreman263/agregador-noticias`, de 30 em 30 minutos. Público porque o Actions é
+  ilimitado e o painel lê sem token; os segredos ficam protegidos.
+- **WhatsApp via CallMeBot (2026-10-09).** Substituiu o Telegram. Gratuito, um pedido HTTP,
+  mas só envia (sem botões nem respostas). Por isso as decisões sobre fontes fazem-se no
+  painel, que grava no `config.yaml`. Como tem limites de envio apertados, os alertas de
+  cada execução vão juntos (`juntar_mensagens`, `MAX_MSG`, `PAUSA_ENVIO`). A API da Meta e a
+  Twilio foram postas de lado por custo; bibliotecas não oficiais por risco de bloqueio do
+  número e por precisarem de um processo sempre ligado. O telefone segue com "+".
+- **Fontes abertas**: Google Notícias, feeds RSS e páginas de notícias sem RSS. X,
+  Instagram e Facebook estão fora por acesso restrito ou pago. Domínios `.br` bloqueados
+  no config (`bloqueadas: ["br"]`; `dominio_em` faz correspondência por sufixo).
+- **Páginas sem RSS**: lidas com BeautifulSoup (`ler_pagina`). Com seletores CSS (`item`,
+  `titulo`, `resumo`, `data`) ou por deteção automática: agrupa os links pelo tipo de cartão
+  e fica com o grupo que mais parece notícias (maior média de pontos, depois o maior),
+  prefere títulos de cabeçalhos ao `alt` das imagens e procura a data subindo no cartão
+  (datas futuras ignoradas). Notícias sem data ficam com a data da 1.ª vez vistas
+  (`estado.raspadas`); na 1.ª leitura de uma página contam como antigas. Se a página
+  anunciar um feed, usa-o (`usar_feed: false` ou `--sem-feed` desligam).
+- **`local: true`** (só em `feeds_extra`/`paginas_extra`): dispensa as palavras obrigatórias.
+- **Feeds escondidos**: `descobrir_feed` tenta os feeds anunciados, links com rss/feed/atom,
+  `?format=feed&type=rss` (Joomla) e caminhos habituais. `--procurar-feeds` faz isto para
+  os sites que aparecem numa pesquisa do Google Notícias.
+- **Sites que bloqueiam o GitHub (2026-10-10)**: a Câmara da Sertã corta as ligações dos
+  servidores do GitHub (EUA, Microsoft) em qualquer User-Agent; testado com um workflow de
+  diagnóstico. Solução gratuita escolhida pelo utilizador: o telemóvel Android dele como
+  saída Tailscale (exit node). Quando uma fonte recusa a ligação, o agregador marca o
+  domínio em `estado.bloqueados` (30 dias). O workflow liga-se ao Tailscale (segredos
+  `TS_OAUTH_CLIENT_ID`/`TS_OAUTH_SECRET`, etiqueta `tag:ci`, `--accept-dns=false`), corre
+  `--buscar-pelo-telemovel` (usa o telemóvel como saída só durante esse passo e guarda
+  cópias em `.cache_telemovel/`), e o agregador lê essas cópias (`obter`). Sem os segredos
+  ou sem o telemóvel, os passos não fazem nada. NordVPN/VPN paga e Amnezia foram postos de
+  lado (custo, ou servidores de centro de dados que podem ser bloqueados à mesma).
+- **Sem base de dados.** O estado vive em `estado.json` (gravado só pelo workflow, com
+  `git pull --rebase -X theirs` antes do push). O painel nunca o grava: as notícias
+  descartadas vão para `painel.json`, que o agregador aplica no início de cada execução.
+- **O GitHub é a fonte de verdade** do `config.yaml`: o utilizador edita-o no painel. Não
+  copiar versões locais por cima.
 
 ## Como pontua (em `agregador.py`)
 
 `nota = (pontos das palavras + bónus) × peso da fonte`
 
 - Palavra: alta 10, média 4, baixa 1. No título vale ×2. Cada palavra conta uma vez por notícia.
-- Palavras de até 3 letras só valem inteiras; as outras aceitam plurais.
-- Palavra de exclusão: a notícia é descartada. Falta de uma palavra **obrigatória**: também.
-- Bónus: +5 por cada fonte extra a publicar o mesmo (máx. +15) e +3 se tiver menos de 1 hora.
-- Fonte confiável ×1,5, desconhecida ×1,0, bloqueada descartada.
-- Duplicados: títulos muito parecidos contam como uma só notícia.
-- Nota ≥ `limite_alerta` da pesquisa (por omissão 25): mensagem imediata. Entre `limite_resumo` (por omissão 10) e o limite de alerta: resumo diário. Abaixo: ignorada.
-- Horário de silêncio (23h–7h): os alertas ficam guardados e saem depois. Se o WhatsApp falhar, nada se perde.
+- Comparação sem acentos nem maiúsculas. Palavras de até 3 letras só valem inteiras; as
+  outras aceitam plurais.
+- Palavra de exclusão: a notícia é descartada. Falta de uma palavra obrigatória: também.
+- Bónus: +5 por cada fonte extra com a mesma notícia (máx. +15) e +3 se tiver menos de 1 hora.
+- Fonte confiável ×1,5, desconhecida ×1,0, bloqueada descartada (também na fila).
+- Duplicados: títulos muito parecidos contam como uma só notícia; `vistos` guarda 14 dias.
+- Nota ≥ `limite_alerta` (por omissão 25): alerta. Entre `limite_resumo` (por omissão 10)
+  e o limite de alerta: resumo diário. Abaixo: ignorada.
+- Silêncio (23h–7h): os alertas ficam adiados. Se o envio falhar, ficam adiados e marcados
+  como vistos (não duplicam).
 
 ## Descoberta de fontes
 
-1 vez por dia, a partir das 9h: pesquisa variações de cada tema, regista que sites publicam notícias relevantes, escolhe os que têm pelo menos 2 (máx. 5 por dia, 10 por decidir), tenta encontrar o RSS e envia a lista por WhatsApp. A decisão faz-se juntando o domínio a `fontes.confiaveis`, `fontes.neutras` ou `fontes.bloqueadas`; a sugestão sai da lista de pendentes na execução seguinte. Sem decisão em 14 dias, é esquecida e não volta.
+1 vez por dia, a partir das 9h: pesquisa variações de cada tema, regista que sites publicam
+notícias relevantes (`estado.dominios`), escolhe os que têm pelo menos 2 (máx. 5 por dia,
+10 por decidir), procura o feed e envia a lista por WhatsApp. A decisão faz-se no painel
+(Confiável junta também o feed aos feeds gerais). Sem decisão em 14 dias, é esquecida.
+Ao apagar uma pesquisa, `esquecer_pesquisas_apagadas` limpa o que ela deixou no estado.
 
 ## Estrutura
 
 | Ficheiro | O que é |
 |---|---|
-| `agregador.py` | Toda a lógica (recolha, raspador de páginas, pontuação, WhatsApp, descoberta). |
-| `config.yaml` | Pesquisas, palavras-chave, fontes, páginas sem RSS, pesos e horários. |
-| `.github/workflows/agregador.yml` | Agendamento (30 min) e ações manuais: normal, teste, simular, descobrir-fontes. |
-| `.claude/agents/` | Equipa de subagentes do Claude Code: recolha-raspador, pontuacao-relevancia, notificacoes-whatsapp, painel-web, verificador e utilizador-tester. |
-| `estado.json` | Estado gravado automaticamente pelo workflow. |
-| `painel/index.html` | **Painel** ligado ao GitHub (ver abaixo). Publicado no GitHub Pages. |
-| `.nojekyll` | Diz ao GitHub Pages para servir os ficheiros tal como estão. |
+| `agregador.py` | Toda a lógica (recolha, raspador, pontuação, WhatsApp, descoberta, telemóvel). |
+| `config.yaml` | Pesquisas, fontes, pesos e horários. Editado sobretudo pelo painel. |
+| `estado.json` | Estado gravado pelo workflow: `vistos`, `resumo`, `adiados`, `sugeridas`, `dominios`, `raspadas`, `bloqueados`, `execucoes` (48), `enviados` (100). |
+| `painel.json` | Notícias descartadas no painel (`descartados`: id + data; o painel apaga as com mais de 30 dias). |
+| `.github/workflows/agregador.yml` | Agendamento (30 min), Tailscale opcional e ações manuais: normal, teste, simular, descobrir-fontes. |
+| `painel/index.html` | Painel (ver abaixo). |
+| `.nojekyll` | O GitHub Pages serve os ficheiros tal como estão. |
+| `README.md` | Guia passo a passo para o utilizador; mostrado também na secção Ajuda do painel. |
+| `.claude/agents/` | Subagentes do Claude Code: recolha-raspador, pontuacao-relevancia, notificacoes-whatsapp, painel-web, verificador e utilizador-tester. |
 
 ## O painel (`painel/index.html`)
 
-Página única, sem servidor, publicada em https://tigreman263.github.io/agregador-noticias/painel/ (GitHub Pages a partir da raiz do ramo `main`). Fala diretamente com a API do GitHub (decisão de 2026-10-10, para manter "sem servidor e sem custos"):
-- **Lê** `config.yaml`, `estado.json` e as execuções do workflow. O repositório é público, por isso ler funciona sem token.
-- **Grava** com um token fine-grained do utilizador (só este repositório; Contents e Actions: Read and write), guardado no `localStorage` desse navegador. Cada gravação é um commit "painel: …".
-- Ao gravar, só reescreve a secção mudada (`pesquisas` ou `fontes`) e confirma, antes de gravar, que as outras secções ficaram iguais; os comentários fora dessa secção mantêm-se.
-- **Corre ações** (normal, simular, teste, descobrir-fontes) por `workflow_dispatch` e acompanha a execução.
-- Mostra o registo que o `agregador.py` guarda no `estado.json`: `execucoes` (últimas 48: notícias lidas/relevantes por pesquisa, alertas, resumo, falhas de fontes, erros) e `enviados` (últimos 100 alertas/itens de resumo enviados).
-- YAML lido com js-yaml 4.1.0 (cdnjs). Todo o texto vindo das notícias é escapado (há um token no `localStorage`).
+Página única, sem servidor, em https://tigreman263.github.io/agregador-noticias/painel/
+(GitHub Pages a partir da raiz do ramo `main`). Fala diretamente com a API do GitHub:
+- **Lê** `config.yaml`, `estado.json`, `painel.json`, `README.md` e as execuções do
+  workflow (sem token, porque o repositório é público).
+- **Grava** com um token fine-grained do utilizador (só este repositório; Contents e
+  Actions: Read and write), guardado no `localStorage`. Cada gravação é um commit "painel: …".
+  Só reescreve a secção mudada (`pesquisas` ou `fontes`) e confirma que o resto ficou igual.
+- **Corre ações** por `workflow_dispatch` e acompanha a execução.
+- Secções: Início, Pesquisas, Atividade (com Descartar), Fontes, Ligação, Ajuda (README
+  renderizado com marked 12.0.2 + DOMPurify 3.1.6).
+- Bibliotecas por cdnjs: js-yaml 4.1.0, marked, DOMPurify. Todo o texto vindo das notícias
+  é escapado e o README é sanitizado (há um token no `localStorage`).
 
 ## Estado atual (2026-10-10)
 
-- A versão nova está no GitHub e a correr de 30 em 30 minutos. O teste do WhatsApp foi aceite pelo CallMeBot.
-- O site da Câmara da Sertã recusa ligações vindas dos servidores do GitHub ("Connection reset"); localmente funciona.
+- A correr no GitHub de 30 em 30 minutos; envios por WhatsApp a funcionar.
+- O utilizador usa o painel com token: pesquisas "Sertã" e "Apoio Estado".
+- Falta o utilizador configurar o Tailscale no telemóvel (README, passo 2.7) para a
+  Câmara da Sertã ser lida.
 
 ## Próximos passos sugeridos
 
-1. Criar o token do painel e testar a gravação de uma pesquisa.
-2. Resolver o bloqueio da Câmara da Sertã a partir do GitHub (ou depender do Google Notícias).
-3. Variantes de palavras (por exemplo "regulação", "regulamento", "regulamentação" devem contar como o mesmo conceito).
-5. Mais tarde: ligar ao painel geral Olimpo (junto com o Caçador de Oportunidades e o Argos).
+1. Confirmar a leitura da Câmara da Sertã pelo telemóvel depois de configurado o Tailscale.
+2. Variantes de palavras ("regulação", "regulamento", "regulamentação" como o mesmo conceito).
+3. Botões "útil / não útil" para aprender o que interessa (o CallMeBot não recebe respostas;
+   teria de ser no painel).
+4. Mais tarde: ligar ao painel geral Olimpo (junto com o Caçador de Oportunidades e o Argos).

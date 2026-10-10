@@ -1,188 +1,492 @@
 # Agregador de Notícias
 
-Procura notícias sobre os temas que definires, dá-lhes uma nota e avisa-te por WhatsApp.
-Corre sozinho no GitHub, de 30 em 30 minutos, sem servidor e sem custos.
+Procura notícias sobre os temas que escolheres, dá a cada uma uma nota e envia-te as mais
+importantes por **WhatsApp**. Corre sozinho no GitHub, de 30 em 30 minutos, sem servidor e
+sem custos. Geres tudo num **painel** que abres no computador ou no telemóvel.
 
-## Instalação (uma vez)
+- Repositório: https://github.com/tigreman263/agregador-noticias
+- Painel: https://tigreman263.github.io/agregador-noticias/painel/
 
-**1. Carregar os ficheiros para o repositório privado `agregador-noticias`**
-- No GitHub: **Add file → Upload files** e carrega `agregador.py`, `config.yaml`,
-  `requirements.txt` e `estado.json`.
-- O agendamento vive numa pasta escondida. Cria-o assim: **Add file → Create new file**,
-  no nome escreve `.github/workflows/agregador.yml` (as barras criam as pastas),
-  cola lá o conteúdo do ficheiro `.github/workflows/agregador.yml` e faz **Commit changes**.
+## Índice
 
-**2. Ativar o WhatsApp (CallMeBot, gratuito)**
-- Guarda nos contactos do telemóvel o número do CallMeBot indicado em callmebot.com
-  (secção WhatsApp) e envia-lhe por WhatsApp a frase de ativação que lá aparece.
-- Em poucos minutos recebes a resposta "API Activated for your phone number. Your APIKEY is …".
-  Se não chegar em 2 minutos, tenta de novo daí a 24 horas.
+1. [Como funciona](#1-como-funciona)
+2. [Instalação passo a passo](#2-instalação-passo-a-passo)
+3. [Usar o painel](#3-usar-o-painel)
+4. [Criar e afinar pesquisas](#4-criar-e-afinar-pesquisas)
+5. [Fontes de notícias](#5-fontes-de-notícias)
+6. [O que recebes no WhatsApp](#6-o-que-recebes-no-whatsapp)
+7. [Referência do config.yaml](#7-referência-do-configyaml)
+8. [Usar no computador (opcional)](#8-usar-no-computador-opcional)
+9. [Ficheiros do projeto](#9-ficheiros-do-projeto)
+10. [Resolução de problemas](#10-resolução-de-problemas)
+11. [Limites](#11-limites)
 
-**3. Guardar os segredos no GitHub**
-- Settings → Secrets and variables → Actions → New repository secret
-- `WHATSAPP_TELEFONE`: o teu número com indicativo, só algarismos (ex: `351912345678`).
-- `WHATSAPP_APIKEY`: a apikey que o CallMeBot te enviou.
+---
 
-**4. Testar**
-- Actions → Agregador de Notícias → Run workflow → **teste**. Deves receber uma mensagem no WhatsApp.
-- Depois **simular**: mostra no registo o que enviaria, sem enviar nada.
-- A partir daí corre sozinho de 30 em 30 minutos.
+## 1. Como funciona
 
-## Personalizar
+De 30 em 30 minutos, o GitHub corre o programa `agregador.py`, que:
 
-Edita `config.yaml` no GitHub (ícone do lápis). Aí defines:
-- as **pesquisas**, com palavras-chave de prioridade alta, média e baixa, palavras a excluir
-  e palavras **obrigatórias** (ex: `["sertã"]` para só aceitar notícias que falem da Sertã);
-- as **fontes** confiáveis, neutras e bloqueadas, feeds RSS e **páginas sem RSS**
-  (usa o domínio, ex: `publico.pt`);
-- os **limites** de alerta, o horário de silêncio e a hora do resumo diário;
-- os **pesos** da pontuação.
+1. **Recolhe** notícias do Google Notícias (uma pesquisa por tema), dos feeds RSS que
+   indicares e de sites sem RSS (lê a página de notícias diretamente).
+2. **Filtra e dá nota** a cada notícia, pelas tuas palavras-chave e pela confiança da fonte.
+   Notícias repetidas em vários sites contam como uma só.
+3. **Envia por WhatsApp**: as de nota alta logo (alerta), as médias num resumo diário.
+4. **Guarda** o que já viu e o que fez no `estado.json`, para não repetir nada.
+5. Uma vez por dia, **procura fontes novas** e sugere-tas.
 
-## Sites que bloqueiam o GitHub (pelo telemóvel)
+| Peça | O que é |
+|---|---|
+| GitHub Actions | Corre o agregador de 30 em 30 minutos (gratuito). |
+| `config.yaml` | As tuas pesquisas, fontes e regras. Editas no painel. |
+| `estado.json` | A memória do agregador (o que já viu, o que enviou, o que está à espera). Gravado pelo GitHub a cada execução; não o edites. |
+| `painel.json` | Notícias que descartaste no painel. Gravado pelo painel. |
+| Painel | Página para gerir tudo e ver a atividade (GitHub Pages). |
+| CallMeBot | Serviço gratuito que entrega as mensagens no teu WhatsApp. |
+| Telemóvel + Tailscale | Opcional: vai buscar os sites que bloqueiam o GitHub. |
 
-Alguns sites (ex.: Câmara da Sertã) recusam ligações vindas dos servidores do GitHub,
-que estão nos EUA. A app marca-os sozinha como "bloqueados" e, se tiveres o Tailscale
+---
+
+## 2. Instalação passo a passo
+
+Se o repositório `tigreman263/agregador-noticias` já existe e funciona, salta para o passo
+que te falta. Para montar de raiz noutra conta, segue todos.
+
+### 2.1 Repositório no GitHub
+
+1. Cria uma conta em github.com (se não tiveres).
+2. Cria um repositório novo (**New repository**), por exemplo `agregador-noticias`.
+   Pode ser **público** (recomendado: o GitHub Actions é ilimitado e o painel funciona sem
+   token para ler) ou **privado** (2000 minutos por mês grátis; correr de 30 em 30 minutos
+   gasta perto disso, e o GitHub Pages em privado precisa de plano pago).
+   Os segredos ficam sempre protegidos; num repositório público, as tuas pesquisas e as
+   notícias guardadas ficam visíveis.
+3. Carrega todos os ficheiros deste projeto, mantendo as pastas: `agregador.py`,
+   `config.yaml`, `requirements.txt`, `estado.json`, `README.md`, `.nojekyll`,
+   `.gitignore`, `painel/index.html` e `.github/workflows/agregador.yml`.
+   No site do GitHub: **Add file → Upload files** para os ficheiros normais; para o
+   workflow, **Add file → Create new file**, escreve o nome
+   `.github/workflows/agregador.yml` (as barras criam as pastas) e cola o conteúdo.
+
+### 2.2 Ativar o WhatsApp (CallMeBot, gratuito)
+
+1. Abre https://www.callmebot.com/blog/free-api-whatsapp-messages/ e segue as instruções
+   da secção WhatsApp: guarda o número do CallMeBot nos contactos do telemóvel e envia-lhe
+   por WhatsApp a frase de ativação indicada no site.
+2. Em poucos minutos recebes "API Activated for your phone number. Your APIKEY is …".
+   Se não chegar em 2 minutos, tenta de novo 24 horas depois.
+3. Guarda o número da **apikey** (só os algarismos).
+
+O CallMeBot só envia mensagens: não há botões nem respostas. É um serviço gratuito de
+terceiros, com limites de envio (por isso os alertas vão agrupados).
+
+### 2.3 Guardar os segredos no GitHub
+
+No repositório: **Settings → Secrets and variables → Actions → New repository secret**.
+
+| Nome | Valor |
+|---|---|
+| `WHATSAPP_TELEFONE` | O teu número com indicativo, só algarismos (ex.: `351912345678`). |
+| `WHATSAPP_APIKEY` | A apikey do CallMeBot. |
+
+Ou no terminal, com o GitHub CLI (`gh`), colando o valor quando pedir:
+
+```
+gh secret set WHATSAPP_TELEFONE -R tigreman263/agregador-noticias
+gh secret set WHATSAPP_APIKEY -R tigreman263/agregador-noticias
+```
+
+### 2.4 Primeiro teste
+
+1. No repositório: **Actions → Agregador de Notícias → Run workflow**.
+2. Escolhe **teste** e carrega em **Run workflow**. Deves receber no WhatsApp
+   "✅ O agregador de notícias está ligado ao WhatsApp".
+3. Corre de novo com **simular**: abre a execução e vê no registo o que seria enviado,
+   sem enviar nada.
+4. A partir daqui o agregador corre sozinho de 30 em 30 minutos (o GitHub pode atrasar
+   as execuções agendadas alguns minutos, por vezes mais).
+
+### 2.5 Publicar o painel (GitHub Pages)
+
+1. No repositório: **Settings → Pages**.
+2. Em **Build and deployment → Source**, escolhe **Deploy from a branch**; em **Branch**,
+   `main` e `/ (root)`. Guarda.
+3. Ao fim de 1 a 2 minutos o painel fica em
+   `https://<o-teu-utilizador>.github.io/<repositório>/painel/`.
+   Neste projeto: https://tigreman263.github.io/agregador-noticias/painel/
+4. No telemóvel, abre o endereço e usa **Adicionar ao ecrã principal** para o teres
+   como uma app.
+
+Também podes abrir `painel/index.html` no computador com duplo clique.
+
+### 2.6 Token do painel (para editar)
+
+Sem token, o painel só mostra. Para criar pesquisas, decidir fontes, descartar notícias e
+correr ações, precisa de um token do GitHub:
+
+1. Abre https://github.com/settings/personal-access-tokens/new.
+2. **Token name**: `painel agregador`. **Expiration**: a que preferires (ex.: 1 ano).
+3. **Repository access**: **Only select repositories** → escolhe `agregador-noticias`.
+4. **Permissions → Repository permissions**:
+   **Contents: Read and write** e **Actions: Read and write**.
+5. **Generate token** e copia-o.
+6. No painel, secção **Ligação**: cola o token e carrega em **Guardar e testar**.
+   Deve aparecer "Ligado: podes ler e gravar".
+
+O token fica guardado só nesse navegador. Num aparelho partilhado, usa
+**Esquecer token** no fim. Quando o token expirar, cria outro da mesma forma.
+
+### 2.7 (Opcional) Telemóvel para sites que bloqueiam o GitHub
+
+Alguns sites (como o da Câmara da Sertã) recusam ligações vindas dos servidores do
+GitHub, que estão nos EUA. O agregador marca-os sozinho como bloqueados e, com isto
 configurado, vai buscá-los antes de cada verificação pela internet do teu telemóvel
-Android (que tem endereço português). Só esses sites passam pelo telemóvel; o resto
-continua direto. Sem o telemóvel disponível, esses sites ficam de fora dessa vez.
+Android, que tem endereço português. Só esses sites passam pelo telemóvel; tudo o resto
+continua direto. Usa o **Tailscale** (gratuito para uso pessoal). Só funciona com
+**Android** (o iPhone não deixa o Tailscale servir de saída).
 
-Configuração (uma vez):
-1. Conta gratuita em tailscale.com; app Tailscale no telemóvel Android, com
-   **Run as exit node** ligado e a bateria sem restrições para a app.
-2. Na consola do Tailscale: aprovar o telemóvel como exit node e desligar a expiração
-   da chave dele; juntar `"tagOwners": {"tag:ci": ["autogroup:admin"]}` à política.
-3. Criar um cliente OAuth (Settings → OAuth clients) com permissão de escrita em
-   Auth Keys e a etiqueta `tag:ci`, e guardar no GitHub os segredos
-   `TS_OAUTH_CLIENT_ID` e `TS_OAUTH_SECRET`.
+**No telemóvel**
 
-Para forçar um site a ir sempre pelo telemóvel, junta-lhe `telemovel: true`.
+1. Instala o **Tailscale** (Play Store) e entra com uma conta (Google, GitHub…).
+2. Na app, abre o menu e liga **Run as exit node**.
+3. Nas definições do Android: **Apps → Tailscale → Bateria → Sem restrições**, para o
+   sistema não a desligar.
 
-## Encontrar feeds RSS escondidos
+**Na consola do Tailscale** (https://login.tailscale.com/admin, no computador)
 
-Muitos sites têm feed RSS mas não o mostram. Para os encontrar a partir de uma pesquisa,
-no teu computador:
+4. **Machines** → no telemóvel, menu **…**:
+   - **Edit route settings** → marca **Use as exit node**;
+   - **Disable key expiry** (senão terias de voltar a entrar de 180 em 180 dias).
+5. **Access controls**: junta esta linha dentro das chavetas principais da política e
+   guarda:
+   ```
+   "tagOwners": {"tag:ci": ["autogroup:admin"]},
+   ```
+6. **Settings → OAuth clients → Generate OAuth client**: marca **Auth Keys → Write**,
+   escolhe a etiqueta **tag:ci** e gera. Copia o **Client ID** e o **Client secret**.
+
+**No GitHub**
+
+7. Guarda os dois valores como segredos:
+
+   | Nome | Valor |
+   |---|---|
+   | `TS_OAUTH_CLIENT_ID` | Client ID do Tailscale |
+   | `TS_OAUTH_SECRET` | Client secret do Tailscale |
+
+   ```
+   gh secret set TS_OAUTH_CLIENT_ID -R tigreman263/agregador-noticias
+   gh secret set TS_OAUTH_SECRET -R tigreman263/agregador-noticias
+   ```
+8. No painel, carrega em **Simular**. Em **Atividade**, a fonte bloqueada deve aparecer
+   com a etiqueta **pelo telemóvel**.
+
+Sem estes segredos, ou com o telemóvel sem rede, os passos do telemóvel não fazem nada e o
+resto corre igual (os sites bloqueados ficam de fora dessa vez). O consumo é mínimo:
+alguns megabytes de dados por dia.
+
+---
+
+## 3. Usar o painel
+
+| Secção | O que tem |
+|---|---|
+| **Início** | Última verificação (correu bem / falhou, com link para o registo), alertas de hoje, notícias à espera, fontes por decidir. Botões para correr já: **Verificar agora**, **Simular** (mostra no registo o que seria enviado, sem enviar), **Testar WhatsApp** e **Procurar fontes novas**. |
+| **Pesquisas** | Criar, editar, pausar e apagar pesquisas. Mostra o resultado da última verificação de cada uma. |
+| **Atividade** | Execuções no GitHub, o que a app fez em cada uma (notícias lidas, novas relevantes, alertas, fontes com falha, fontes trazidas pelo telemóvel), o que foi enviado para o WhatsApp, e o que está à espera (alertas adiados e resumo). |
+| **Fontes** | Fontes sugeridas pela app (Confiável / Neutra / Bloquear), listas de confiáveis, neutras e bloqueadas, e feeds e sites gerais. |
+| **Ligação** | Repositório e token do GitHub, com as instruções para o criar. |
+| **Ajuda** | Este documento. |
+
+Notas:
+
+- Tudo o que gravas no painel fica no `config.yaml` do GitHub e vale a partir da
+  verificação seguinte. Para ver o efeito logo, usa **Simular**.
+- Ao gravar, o painel só reescreve a secção que mudaste; os comentários do resto do
+  `config.yaml` mantêm-se.
+- **Descartar** (em Atividade): tira uma notícia, ou todas, dos alertas adiados ou do
+  resumo. O painel grava isso em `painel.json` e o agregador tira-as na verificação
+  seguinte, sem as enviar.
+- "**novas relevantes**" conta só as notícias relevantes que ainda não tinham sido
+  vistas. "0 novas relevantes" não é erro: quer dizer que não apareceu nada de novo.
+- O painel atualiza sozinho de 5 em 5 minutos; usa **Atualizar** para ver já.
+
+---
+
+## 4. Criar e afinar pesquisas
+
+Cada pesquisa tem:
+
+| Campo | Para que serve |
+|---|---|
+| Nome | Como aparece nas mensagens. |
+| O que procurar | A consulta no Google Notícias (ex.: `Sertã`, `apoios agricultura`). |
+| Palavras obrigatórias | A notícia só conta se tiver **todas**. Servem para filtrar um lugar (ex.: `sertã`). Deixa vazio para aceitar qualquer lugar. **Não dão pontos.** |
+| Prioridade alta / média / baixa | Palavras que dão pontos: alta 10, média 4, baixa 1. No título valem o dobro. |
+| Palavras a excluir | Se aparecer uma, a notícia é descartada. |
+| Nota para alerta | A partir desta nota, a notícia é enviada logo (por omissão 25). |
+| Nota para resumo | A partir desta nota, vai para o resumo diário (por omissão 10). |
+| Fontes só desta pesquisa | Feeds RSS e sites sem RSS só para este tema (ver secção 5). |
+
+### Como é calculada a nota
+
+`nota = (pontos das palavras + bónus) × peso da fonte`
+
+- Cada palavra conta uma vez por notícia. No título vale o dobro.
+- A comparação ignora maiúsculas e acentos ("subsídio" = "subsidio"). Palavras de até 3
+  letras só contam inteiras; as outras aceitam plurais ("apoio" apanha "apoios").
+- Bónus: +5 por cada fonte extra a publicar a mesma notícia (máx. +15) e +3 se tiver
+  menos de 1 hora.
+- Peso: fonte confiável ×1,5; outra ×1,0; bloqueada é descartada.
+- Notícias com mais de 48 horas são ignoradas.
+
+### Dicas
+
+- **Evita palavras genéricas em alta.** "apoio" sozinha em alta apanhava notícias de
+  "apoio político". Põe-nas em média e usa em alta termos específicos
+  (ex.: "fundo perdido", "candidaturas", "PRR", "Portugal 2030", "PEPAC").
+- **Não repitas a mesma palavra com e sem acento**: conta como a mesma e soma a dobrar.
+- **Para notícias de um lugar**, usa a obrigatória com o nome do lugar e põe-no também
+  em baixa (para dar algum ponto), e baixa a nota do resumo (a pesquisa "Sertã" usa 20 e 4).
+- **Notícias brasileiras**: o Google Notícias mistura-as. Bloqueia `br` nas fontes
+  (secção 5.2).
+- **Para ver o efeito** de uma mudança, carrega em **Simular** e abre o registo.
+- Quando apagas uma pesquisa, o que ela deixou no estado (notícias à espera, sites
+  registados para sugestões) é esquecido sozinho.
+
+---
+
+## 5. Fontes de notícias
+
+### 5.1 Google Notícias
+
+Cada pesquisa procura no Google Notícias pela sua consulta, em português de Portugal
+(`geral.google_news`). Não tens de fazer nada.
+
+### 5.2 Confiáveis, neutras e bloqueadas
+
+Listas de domínios (sem `www` nem `https://`), no painel em **Fontes**:
+
+- **Confiáveis**: valem ×1,5.
+- **Neutras**: peso normal; deixam de ser sugeridas.
+- **Bloqueadas**: as notícias delas são descartadas (também as que já estavam à espera).
+
+Um domínio apanha também os subdomínios e o que acaba nele: `sapo.pt` inclui
+`jornaldeabrantes.sapo.pt`; **`br` bloqueia todos os sites `.br`** (Brasil).
+
+### 5.3 Feeds RSS
+
+- **Gerais** (`fontes.feeds`, painel **Fontes**): lidos em todas as pesquisas.
+- **Só de uma pesquisa** (`feeds_extra`, painel **Pesquisas → Editar → Fontes só desta
+  pesquisa**): um por linha, `Nome | https://endereço-do-feed`.
+- **`local`**: junta `| local` à linha (ou `local: true` no `config.yaml`) quando a fonte só
+  publica sobre um lugar, como a de uma câmara municipal. As notícias dela dispensam as
+  palavras obrigatórias (nem todas dizem o nome do lugar no título). Usa `local` só nas
+  fontes de uma pesquisa, nunca nas gerais.
+
+### 5.4 Sites sem RSS
+
+Para sites sem feed (câmaras, jornais regionais), junta a página com a **lista** de
+notícias em **Sites sem RSS** (`paginas` / `paginas_extra`), com nome e endereço.
+
+- Sem mais nada, a app deteta as notícias sozinha: fica com os links que partilham o
+  mesmo tipo de cartão (ignora menus e rodapés), prefere o título ao texto das imagens e
+  procura a data no cartão.
+- Se a página anunciar um feed RSS escondido, a app usa-o sozinha (mais fiável).
+- Notícias sem data ficam com a data do dia em que a app as viu pela primeira vez. Na
+  primeira leitura de uma página, o que já lá estava conta como antigo (não envia o
+  arquivo todo).
+- Se a deteção não for boa, indica seletores CSS no `config.yaml`: `item` (cada notícia),
+  e dentro dele `titulo`, `resumo` e `data`. Outras opções: `max` (quantas notícias ler,
+  por omissão 30) e `usar_feed: false` (não usar o feed escondido).
+
+Para testar um site no computador (secção 8):
+
+```
+python agregador.py --testar-pagina https://cm-serta.pt/comunicacao/noticias
+python agregador.py --testar-pagina URL --item "div.noticia" --titulo "h2 a" --data "time"
+python agregador.py --testar-pagina URL --sem-feed
+```
+
+Se der 0 notícias, o teste diz o que tentar. Não dá para ler páginas que só mostram as
+notícias com JavaScript, nem sites com o certificado de segurança inválido.
+
+### 5.5 Encontrar feeds RSS escondidos
+
+Muitos sites têm feed mas não o mostram. No computador:
 
 ```
 python agregador.py --procurar-feeds "Sertã"
 ```
 
-Se o texto for o nome de uma pesquisa do `config.yaml`, usa a consulta e as palavras
-obrigatórias dela; senão, pesquisa o texto tal como está. A app vê que sites publicaram
-sobre o tema no último mês, procura o feed de cada um (os que a página anuncia, os
-endereços habituais do WordPress, Joomla, Blogger…) e mostra-te as linhas prontas a
-colar em `feeds_extra` da pesquisa (ou em `fontes.feeds`).
+Se o texto for o nome de uma pesquisa, usa a consulta e as obrigatórias dela. A app vê
+que sites publicaram sobre o tema no último mês, procura o feed de cada um (os que a
+página anuncia e os endereços habituais do WordPress, Joomla, Blogger…) e mostra as
+linhas prontas a colar. Feeds de sites nacionais (SAPO, Observador…) trazem notícias de
+tudo; para temas locais prefere os regionais.
 
-A descoberta automática diária usa a mesma procura, por isso as fontes novas sugeridas
-por WhatsApp já trazem o feed quando ele existe.
+### 5.6 Descoberta automática de fontes
 
-## Sites sem RSS
+Uma vez por dia (a partir das 9h), a app volta a pesquisar cada tema, vê que sites
+publicam notícias relevantes, escolhe os que tiveram pelo menos 2 (até 5 por dia e nunca
+mais de 10 por decidir), procura o feed de cada um e envia-te a lista por WhatsApp.
+Decide-as no painel, em **Fontes → Sugeridas pela app**: **Confiável** (se tiver feed, é
+juntado aos feeds gerais), **Neutra** ou **Bloquear**. Sem decisão em 14 dias, a sugestão
+é esquecida. Para procurar já: **Procurar fontes novas** no Início.
 
-Muitos sites (câmaras municipais, jornais regionais) não têm feed RSS. Junta-os em
-`fontes.paginas` e a app lê a página de notícias diretamente:
+### 5.7 Sites que bloqueiam o GitHub
 
-```yaml
-  paginas:
-    - nome: "Câmara da Sertã"
-      url: "https://cm-serta.pt/comunicacao/noticias"
-```
+Quando um site recusa a ligação ("Connection reset", "não consegui ligar ao site"), o
+agregador marca-o como bloqueado durante 30 dias. Com o telemóvel configurado
+(passo 2.7), passa a ser trazido por ele. Para obrigar um site a ir sempre pelo
+telemóvel, junta-lhe `telemovel: true` no `config.yaml`.
 
-Só com `nome` e `url`, a app deteta sozinha as notícias da página (fica com os links que
-partilham o mesmo tipo de cartão e ignora menus e rodapés; nos links que só têm imagem,
-vai buscar o título ao cartão). Se o resultado não for bom, podes indicar seletores CSS:
-`item` (cada notícia), `titulo`, `resumo` e `data` (estes três dentro do item).
+---
 
-Para ver o que a app encontra antes de guardar, no teu computador:
+## 6. O que recebes no WhatsApp
 
-```
-python agregador.py --testar-pagina https://cm-serta.pt/comunicacao/noticias
-python agregador.py --testar-pagina URL --item "div.noticia" --titulo "h2 a" --data "time"
-```
+- **Alertas** (nota ≥ nota de alerta): numa só mensagem por verificação, até 5
+  (`max_alertas_por_execucao`); o excesso vai para o resumo. Cada alerta traz o título, a
+  fonte, a nota, a pesquisa, as palavras encontradas, há quanto tempo saiu e o link.
+- **Resumo diário** (nota entre as duas notas): uma vez por dia, a partir das 8h
+  (`hora_resumo`), com as 15 melhores. Notícias à espera há mais de 48 horas saem da fila.
+- **Fontes novas sugeridas**: uma vez por dia (secção 5.6).
+- **Horário de silêncio** (23h–7h): nada é enviado; os alertas ficam adiados e saem
+  depois.
+- **Se o envio falhar** (CallMeBot em baixo, limite atingido): os alertas ficam adiados e
+  saem na verificação seguinte. Nada se perde e nada é enviado duas vezes.
 
-Se a página anunciar um feed RSS escondido, a app usa-o sozinha (é mais fiável e traz
-datas e resumos); para ver a leitura da página em vez do feed, junta `--sem-feed`.
-Se der 0 notícias, o teste diz-te o que podes tentar.
+---
 
-Se uma página (ou feed) só publica notícias de um sítio, como a da Câmara da Sertã,
-junta-lhe `local: true`: as notícias dela dispensam as palavras obrigatórias, porque
-nem todas dizem "Sertã" no título. Põe estas fontes em `paginas_extra` ou `feeds_extra`
-da pesquisa a que dizem respeito (como na pesquisa "Sertã"), e não em `fontes`, senão
-dispensam as obrigatórias de todas as pesquisas.
+## 7. Referência do config.yaml
 
-## Descoberta automática de fontes
+O painel edita as secções `pesquisas` e `fontes`. As outras editas no GitHub (ícone do
+lápis no ficheiro).
 
-Uma vez por dia (a partir da hora definida em `config.yaml`, secção `descoberta`), a app:
+| Chave | Por omissão | Significado |
+|---|---|---|
+| `geral.fuso` | `Europe/Lisbon` | Fuso horário. |
+| `geral.idade_max_horas` | 48 | Ignora notícias mais antigas. |
+| `geral.max_alertas_por_execucao` | 5 | Alertas por verificação; o excesso vai para o resumo. |
+| `geral.silencio` | `{inicio: 23, fim: 7}` | Horas sem envios. |
+| `geral.hora_resumo` | 8 | Hora a partir da qual sai o resumo. |
+| `geral.google_news` | `pt-PT`, `PT` | Língua e país do Google Notícias. |
+| `pesos.pontos` | alta 10, média 4, baixa 1 | Pontos por palavra. |
+| `pesos.fonte_confiavel` | 1.5 | Multiplicador das confiáveis. |
+| `pesos.fonte_desconhecida` | 1.0 | Multiplicador das outras. |
+| `pesos.bonus_fonte_extra` / `bonus_fonte_extra_max` | 5 / 15 | Bónus por fonte extra com a mesma notícia. |
+| `pesos.bonus_ultima_hora` | 3 | Bónus para notícias com menos de 1 hora. |
+| `fontes.confiaveis` / `neutras` / `bloqueadas` | — | Listas de domínios (secção 5.2). |
+| `fontes.feeds` | — | Feeds gerais: `{nome, url, local?, telemovel?}`. |
+| `fontes.paginas` | — | Sites sem RSS gerais: `{nome, url, item?, titulo?, resumo?, data?, max?, usar_feed?, local?, telemovel?}`. |
+| `descoberta.ativa` | true | Liga a descoberta diária. |
+| `descoberta.hora` | 9 | A partir desta hora. |
+| `descoberta.max_sugestoes_por_dia` | 5 | Sugestões por dia. |
+| `descoberta.max_pendentes` | 10 | Não sugere mais se tiveres estas por decidir. |
+| `descoberta.min_noticias` | 2 | Notícias relevantes mínimas para sugerir um site. |
+| `descoberta.procurar_feeds` | true | Procura o feed dos sites sugeridos. |
+| `pesquisas[]` | — | `nome`, `ativa`, `consulta`, `obrigatorias`, `palavras.alta/media/baixa`, `excluir`, `limite_alerta`, `limite_resumo`, `feeds_extra`, `paginas_extra` (secção 4). |
 
-1. Volta a pesquisar cada tema com variações da consulta e das palavras de prioridade alta.
-2. Regista que sites publicam notícias relevantes e ignora os que já classificaste.
-3. Escolhe os que apareceram em pelo menos 2 notícias (até 5 por dia, e nunca mais de 10 por decidir).
-4. Tenta encontrar o feed RSS de cada um.
-5. Envia-te por WhatsApp a lista das fontes novas.
+---
 
-Para decidir, junta o domínio no `config.yaml`:
-- `fontes.confiaveis`: a fonte passa a valer ×1,5 (se tinha feed, junta-o também a `fontes.feeds`).
-- `fontes.neutras`: deixa de ser sugerida, sem mudar o peso.
-- `fontes.bloqueadas`: as notícias dela são descartadas.
+## 8. Usar no computador (opcional)
 
-Sem decisão em 14 dias, a sugestão é esquecida e não volta. Para forçar a procura já:
-Actions → Run workflow → **descobrir-fontes**.
+Não é preciso para o dia a dia; serve para testar sites e procurar feeds.
 
-## Como decide o que enviar
+1. Instala o Python 3.12 (python.org) e, numa pasta com os ficheiros do projeto:
+   ```
+   pip install -r requirements.txt
+   ```
+2. Comandos:
 
-`nota = (pontos das palavras + bónus) × peso da fonte`
+| Comando | O que faz |
+|---|---|
+| `python agregador.py --simular` | Mostra o que seria enviado, sem enviar nem gravar. |
+| `python agregador.py` | Execução normal (envia; precisa dos segredos como variáveis de ambiente). |
+| `python agregador.py --teste` | Envia uma mensagem de teste. |
+| `python agregador.py --fontes` | Execução normal + procura de fontes novas já. |
+| `python agregador.py --testar-pagina URL` | Mostra o que a app lê de um site (opções `--item`, `--titulo`, `--resumo`, `--data`, `--sem-feed`). |
+| `python agregador.py --procurar-feeds "TEXTO"` | Procura feeds RSS escondidos dos sites que publicam sobre um tema. |
 
-- Palavra no título vale o dobro da que aparece só no texto. Cada palavra conta uma vez.
-- Se faltar uma palavra obrigatória ou aparecer uma a excluir, a notícia é descartada.
-  As obrigatórias só filtram, não dão pontos: se quiseres que contem, põe-nas também
-  numa prioridade (vê a pesquisa "Sertã" no `config.yaml`, que tem "sertã" nas duas).
-- Bónus: +5 por cada fonte extra a publicar o mesmo (máx. +15) e +3 se tiver menos de 1 hora.
-- Fonte confiável ×1,5, desconhecida ×1,0, bloqueada é descartada.
-- Nota ≥ limite de alerta: mensagem imediata. Entre os dois limites: resumo diário.
-- Notícias repetidas em vários sites contam como uma só e nunca são enviadas duas vezes.
-- Os alertas de cada verificação vão juntos numa só mensagem, porque o CallMeBot gratuito
-  limita o número de mensagens.
-
-## Painel
-
-Abre **https://tigreman263.github.io/agregador-noticias/painel/** no computador ou no
-telemóvel (ou `painel/index.html` com duplo clique). O painel liga-se ao repositório no
-GitHub e mostra os dados reais:
-
-- **Início**: última verificação, alertas de hoje, o que está à espera, e botões para
-  correr já (verificar, simular, testar o WhatsApp, procurar fontes).
-- **Pesquisas**: criar, editar, pausar e apagar pesquisas (gravadas no `config.yaml`).
-- **Atividade**: execuções no GitHub, o que a app fez em cada uma, o que foi enviado para
-  o WhatsApp e o que está à espera (alertas adiados e resumo). Podes **descartar** o que
-  está à espera, uma a uma ou todas; o painel grava isso em `painel.json` e o agregador
-  tira-as na verificação seguinte, sem as enviar.
-- **Fontes**: decidir as fontes sugeridas e gerir as listas e os feeds gerais.
-- **Ligação**: o token do GitHub.
-
-Sem token, o painel só mostra. Para gravar e correr ações, cria um token em
-github.com/settings/personal-access-tokens/new com acesso só a este repositório e as
-permissões **Contents: Read and write** e **Actions: Read and write**, e cola-o em
-Ligação. O token fica guardado só nesse navegador. Ao gravar, os comentários do
-`config.yaml` fora da secção mudada mantêm-se.
-
-Para o contexto completo do projeto (decisões, estado e próximos passos), vê `CONTEXTO.md`.
-
-## Limites desta versão
-
-- Recolhe do Google Notícias, de feeds RSS e de páginas de notícias. X, Instagram e Facebook não estão incluídos.
-- O CallMeBot é um serviço gratuito de terceiros: só envia (não há botões nem respostas),
-  tem limites de envio e pode ter falhas. Se uma mensagem falhar, os alertas ficam guardados
-  e saem na verificação seguinte.
-- Páginas que só mostram as notícias com JavaScript, ou com certificado de segurança
-  inválido, não são lidas pelo raspador (o teste diz-te qual é o caso).
-- Notícias de páginas sem data ficam com a data do dia em que a app as viu pela primeira
-  vez. Na primeira leitura de uma página, o que já lá estava conta como antigo.
-- O GitHub pode atrasar alguns minutos as execuções agendadas.
-
-## Correr no teu computador (opcional)
+Para enviar a partir do computador, define antes as variáveis (PowerShell):
 
 ```
-pip install -r requirements.txt
-python agregador.py --simular
+$env:WHATSAPP_TELEFONE="351912345678"; $env:WHATSAPP_APIKEY="123456"
 ```
 
-Para enviar de verdade a partir do computador, define antes as variáveis de ambiente
-`WHATSAPP_TELEFONE` e `WHATSAPP_APIKEY`.
+Atenção: o `config.yaml` e o `estado.json` verdadeiros estão no GitHub (o painel grava
+lá). Antes de usar o computador, descarrega a versão atual do repositório.
+
+---
+
+## 9. Ficheiros do projeto
+
+| Ficheiro | O que é |
+|---|---|
+| `agregador.py` | Todo o programa: recolha, leitor de páginas, pontuação, WhatsApp, descoberta, telemóvel. |
+| `config.yaml` | Pesquisas, fontes e regras. |
+| `estado.json` | Memória do agregador, gravada pelo GitHub. Não editar. |
+| `painel.json` | Notícias descartadas no painel. |
+| `requirements.txt` | Bibliotecas Python (requests, PyYAML, defusedxml, beautifulsoup4). |
+| `.github/workflows/agregador.yml` | Agendamento de 30 em 30 minutos e ações manuais (normal, teste, simular, descobrir-fontes). |
+| `painel/index.html` | O painel. |
+| `.nojekyll` | Faz o GitHub Pages servir os ficheiros tal como estão. |
+| `README.md` | Este documento (também em **Ajuda** no painel). |
+| `CONTEXTO.md` | Decisões técnicas, para quem continuar o desenvolvimento. |
+| `.claude/` | Agentes e configuração do Claude Code usados no desenvolvimento. |
+
+---
+
+## 10. Resolução de problemas
+
+**Não recebo nada no WhatsApp**
+1. No painel, **Início → Última verificação**: se falhou, abre **ver registo**.
+2. Carrega em **Testar WhatsApp**. Se não chegar, confirma os segredos
+   `WHATSAPP_TELEFONE` e `WHATSAPP_APIKEY` (passo 2.3).
+3. Pode simplesmente não haver notícias novas com nota suficiente: vê **Atividade**.
+
+**"CallMeBot respondeu …: apikey can not be empty or it has an invalid format"**
+A apikey guardada está errada. Copia só o código que vem a seguir a "APIKEY is" na
+mensagem do CallMeBot e volta a guardar o segredo `WHATSAPP_APIKEY`. Confirma que
+ativaste o serviço de **WhatsApp** (o CallMeBot tem serviços diferentes para chamadas).
+
+**As execuções automáticas atrasam ou falham uma vez por outra**
+O GitHub atrasa as execuções agendadas quando está muito ocupado. É normal; a seguinte
+apanha o que ficou para trás.
+
+**"Fonte com falha … Connection reset by peer"**
+O site recusa os servidores do GitHub. Ver secção 5.7 e passo 2.7.
+
+**"0 novas relevantes"**
+Não apareceu nada de novo com pontos suficientes; as notícias já vistas não contam.
+
+**Chegam notícias fora do tema**
+Vê em **Atividade** que pesquisa as trouxe e afina as palavras (secção 4): tira palavras
+genéricas de alta, junta palavras a excluir, ou bloqueia a fonte. As que já estão à
+espera podes **Descartar**.
+
+**O painel diz "Só leitura"**
+Falta o token (passo 2.6). Se diz que o token não é válido ou não tem permissão, cria
+outro com **Contents** e **Actions** em **Read and write**.
+
+**O painel diz que o GitHub limitou os pedidos**
+Sem token, o GitHub só deixa 60 pedidos por hora. Junta o token, ou espera uma hora.
+
+**Um site sem RSS dá 0 notícias**
+Corre `--testar-pagina` (secção 5.4): confirma que é a página com a lista de notícias;
+se o site usa JavaScript ou tem o certificado inválido, procura um feed ou retira-o.
+
+**Mudei algo e o painel não mostra**
+O GitHub Pages demora 1 a 2 minutos a publicar mudanças ao painel; carrega em
+**Atualizar** ou recarrega a página.
+
+---
+
+## 11. Limites
+
+- Fontes: Google Notícias, feeds RSS e páginas de notícias. X, Instagram e Facebook não
+  estão incluídos (acesso restrito ou pago).
+- O CallMeBot é gratuito e de terceiros: só envia, tem limites de envio e pode falhar.
+- Sites que bloqueiam o GitHub só são lidos com o telemóvel Android configurado e com rede.
+- Páginas que só mostram notícias com JavaScript, ou com certificado inválido, não são lidas.
+- O GitHub pode atrasar as execuções agendadas.
