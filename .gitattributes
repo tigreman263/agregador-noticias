@@ -1,0 +1,3 @@
+# Atalhos do Windows: manter as linhas em CRLF tal como estao gravadas
+*.url -text
+*.bat -text
