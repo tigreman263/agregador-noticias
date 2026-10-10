@@ -5,7 +5,7 @@
 # ============================================================
 
 geral:
-  intervalo_minutos: 30         # de quantos em quantos minutos procura (mínimo 5); muda-se no painel
+  intervalo_minutos: 30         # de quantos em quantos minutos procura (mínimo 30); muda-se no painel
   fuso: "Europe/Lisbon"
   idade_max_horas: 48          # ignora notícias mais antigas
   max_alertas_por_execucao: 5  # o excesso vai para o resumo diário

@@ -1,11 +1,11 @@
 name: Agregador de Notícias
 
-# O GitHub acorda o workflow de 5 em 5 minutos (o mínimo que permite). O primeiro passo
+# O GitHub acorda o workflow de 15 em 15 minutos. O primeiro passo
 # vê no config.yaml de quantos em quantos minutos queres verificar (geral.intervalo_minutos)
 # e, se ainda não for altura, termina logo sem fazer nada.
 on:
   schedule:
-    - cron: "*/5 * * * *"
+    - cron: "*/15 * * * *"
   workflow_dispatch:
     inputs:
       acao:
@@ -44,7 +44,7 @@ jobs:
           if os.environ.get("GITHUB_EVENT_NAME") == "schedule":
               texto = open("config.yaml", encoding="utf-8").read()
               m = re.search(r"(?m)^\s+intervalo_minutos:\s*(\d+)", texto)
-              intervalo = max(5, int(m.group(1))) if m else 30
+              intervalo = max(30, int(m.group(1))) if m else 30
               try:
                   execucoes = json.load(open("estado.json", encoding="utf-8")).get("execucoes") or []
                   ultima = datetime.fromisoformat(execucoes[-1]["ts"]) if execucoes else None
