@@ -22,7 +22,7 @@ pesos:
 
 # Fontes: usa o domínio, sem "www" nem "https://".
 fontes:
-  confiaveis: ["sapo.pt", "mediotejo.net", "radiocondestavel.pt", "noticiasdecoimbra.pt", "radiohertz.pt", "cmjornal.pt"]
+  confiaveis: ["sapo.pt", "mediotejo.net", "radiocondestavel.pt", "noticiasdecoimbra.pt", "radiohertz.pt", "cmjornal.pt", "dnoticias.pt"]
   neutras: []
   bloqueadas: []
   feeds:
@@ -30,6 +30,7 @@ fontes:
     - {nome: "Médio Tejo", url: "https://mediotejo.net/feed/"}
     - {nome: "Notícias de Coimbra", url: "https://www.noticiasdecoimbra.pt/feed/"}
     - {nome: "Rádio Hertz", url: "https://radiohertz.pt/feed/"}
+    - {nome: "dnoticias.pt", url: "https://www.dnoticias.pt/rss.xml"}
   paginas:
     - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias"}
 
