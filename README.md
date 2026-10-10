@@ -1,8 +1,8 @@
 # Agregador de Notícias
 
 Procura notícias sobre os temas que escolheres, dá a cada uma uma nota e envia-te as mais
-importantes por **WhatsApp**. Corre sozinho no GitHub, de 30 em 30 minutos, sem servidor e
-sem custos. Geres tudo num **painel** que abres no computador ou no telemóvel.
+importantes por **WhatsApp**. Corre sozinho no GitHub, de 30 em 30 minutos (ou com a
+frequência que escolheres), sem servidor e sem custos. Geres tudo num **painel** que abres no computador ou no telemóvel.
 
 - Repositório: https://github.com/tigreman263/agregador-noticias
 - Painel: https://tigreman263.github.io/agregador-noticias/painel/
@@ -25,7 +25,8 @@ sem custos. Geres tudo num **painel** que abres no computador ou no telemóvel.
 
 ## 1. Como funciona
 
-De 30 em 30 minutos, o GitHub corre o programa `agregador.py`, que:
+De 30 em 30 minutos (por omissão; mudas no painel, em **Início → Frequência**), o GitHub
+corre o programa `agregador.py`, que:
 
 1. **Recolhe** notícias do Google Notícias (uma pesquisa por tema), dos feeds RSS que
    indicares e de sites sem RSS (lê a página de notícias diretamente).
@@ -37,7 +38,7 @@ De 30 em 30 minutos, o GitHub corre o programa `agregador.py`, que:
 
 | Peça | O que é |
 |---|---|
-| GitHub Actions | Corre o agregador de 30 em 30 minutos (gratuito). |
+| GitHub Actions | Corre o agregador com a frequência escolhida (gratuito). |
 | `config.yaml` | As tuas pesquisas, fontes e regras. Editas no painel. |
 | `estado.json` | A memória do agregador (o que já viu, o que enviou, o que está à espera). Gravado pelo GitHub a cada execução; não o edites. |
 | `painel.json` | Notícias que descartaste no painel. Gravado pelo painel. |
@@ -56,9 +57,9 @@ que te falta. Para montar de raiz noutra conta, segue todos.
 
 1. Cria uma conta em github.com (se não tiveres).
 2. Cria um repositório novo (**New repository**), por exemplo `agregador-noticias`.
-   Pode ser **público** (recomendado: o GitHub Actions é ilimitado e o painel funciona sem
-   token para ler) ou **privado** (2000 minutos por mês grátis; correr de 30 em 30 minutos
-   gasta perto disso, e o GitHub Pages em privado precisa de plano pago).
+   Tem de ser **público**: o GitHub Actions só é ilimitado em repositórios públicos (o
+   workflow acorda de 5 em 5 minutos, o que num privado esgota os 2000 minutos grátis por
+   mês), o GitHub Pages grátis exige público e o painel lê sem token.
    Os segredos ficam sempre protegidos; num repositório público, as tuas pesquisas e as
    notícias guardadas ficam visíveis.
 3. Carrega todos os ficheiros deste projeto, mantendo as pastas: `agregador.py`,
@@ -105,8 +106,8 @@ gh secret set WHATSAPP_APIKEY -R tigreman263/agregador-noticias
    "✅ O agregador de notícias está ligado ao WhatsApp".
 3. Corre de novo com **simular**: abre a execução e vê no registo o que seria enviado,
    sem enviar nada.
-4. A partir daqui o agregador corre sozinho de 30 em 30 minutos (o GitHub pode atrasar
-   as execuções agendadas alguns minutos, por vezes mais).
+4. A partir daqui o agregador corre sozinho de 30 em 30 minutos (podes mudar no painel,
+   secção 3). O GitHub pode atrasar as execuções agendadas alguns minutos, por vezes mais.
 
 ### 2.5 Publicar o painel (GitHub Pages)
 
@@ -200,7 +201,7 @@ alguns megabytes de dados por dia.
 
 | Secção | O que tem |
 |---|---|
-| **Início** | Última verificação (correu bem / falhou, com link para o registo), alertas de hoje, notícias à espera, fontes por decidir. Botões para correr já: **Verificar agora**, **Simular** (mostra no registo o que seria enviado, sem enviar), **Testar WhatsApp** e **Procurar fontes novas**. |
+| **Início** | Última verificação (correu bem / falhou, com link para o registo), alertas de hoje, notícias à espera, fontes por decidir. **Frequência**: de quanto em quanto tempo o agregador procura (5 minutos a 1 vez por dia). Botões para correr já: **Verificar agora**, **Simular** (mostra no registo o que seria enviado, sem enviar), **Testar WhatsApp** e **Procurar fontes novas**. |
 | **Pesquisas** | Criar, editar, pausar e apagar pesquisas. Mostra o resultado da última verificação de cada uma. |
 | **Atividade** | Execuções no GitHub, o que a app fez em cada uma (notícias lidas, novas relevantes, alertas, fontes com falha, fontes trazidas pelo telemóvel), o que foi enviado para o WhatsApp, e o que está à espera (alertas adiados e resumo). |
 | **Fontes** | Fontes sugeridas pela app (Confiável / Neutra / Bloquear), listas de confiáveis, neutras e bloqueadas, e feeds e sites gerais. |
@@ -219,6 +220,10 @@ Notas:
 - "**novas relevantes**" conta só as notícias relevantes que ainda não tinham sido
   vistas. "0 novas relevantes" não é erro: quer dizer que não apareceu nada de novo.
 - O painel atualiza sozinho de 5 em 5 minutos; usa **Atualizar** para ver já.
+- **Frequência**: o GitHub acorda o agregador de 5 em 5 minutos; se ainda não passou o
+  intervalo que escolheste, ele termina logo, sem fazer nada (no separador Actions do
+  GitHub vês muitas execuções curtas, é normal). Os botões de **Correr agora** não
+  esperam pelo intervalo.
 
 ---
 
@@ -378,6 +383,7 @@ lápis no ficheiro).
 
 | Chave | Por omissão | Significado |
 |---|---|---|
+| `geral.intervalo_minutos` | 30 | De quantos em quantos minutos procura (mínimo 5). Muda-se no painel, em Início → Frequência. |
 | `geral.fuso` | `Europe/Lisbon` | Fuso horário. |
 | `geral.idade_max_horas` | 48 | Ignora notícias mais antigas. |
 | `geral.max_alertas_por_execucao` | 5 | Alertas por verificação; o excesso vai para o resumo. |
@@ -441,7 +447,7 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 | `estado.json` | Memória do agregador, gravada pelo GitHub. Não editar. |
 | `painel.json` | Notícias descartadas no painel. |
 | `requirements.txt` | Bibliotecas Python (requests, PyYAML, defusedxml, beautifulsoup4). |
-| `.github/workflows/agregador.yml` | Agendamento de 30 em 30 minutos e ações manuais (normal, teste, simular, descobrir-fontes). |
+| `.github/workflows/agregador.yml` | Acorda de 5 em 5 minutos, verifica conforme `geral.intervalo_minutos`, e ações manuais (normal, teste, simular, descobrir-fontes). |
 | `painel/index.html` | O painel. |
 | `Abrir Painel.url` / `Abrir Painel.bat` | Abrem o painel no navegador (duplo clique no Windows). |
 | `.gitattributes` | Mantém o formato de linhas do Windows nos dois atalhos. |

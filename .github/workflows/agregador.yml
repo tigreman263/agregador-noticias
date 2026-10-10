@@ -1,8 +1,11 @@
 name: Agregador de Notícias
 
+# O GitHub acorda o workflow de 5 em 5 minutos (o mínimo que permite). O primeiro passo
+# vê no config.yaml de quantos em quantos minutos queres verificar (geral.intervalo_minutos)
+# e, se ainda não for altura, termina logo sem fazer nada.
 on:
   schedule:
-    - cron: "*/30 * * * *"
+    - cron: "*/5 * * * *"
   workflow_dispatch:
     inputs:
       acao:
@@ -31,12 +34,42 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Ver se já é altura de verificar
+        id: hora
+        run: |
+          python3 - <<'EOF'
+          import json, os, re
+          from datetime import datetime, timezone
+          correr, motivo = True, "pedido manual"
+          if os.environ.get("GITHUB_EVENT_NAME") == "schedule":
+              texto = open("config.yaml", encoding="utf-8").read()
+              m = re.search(r"(?m)^\s+intervalo_minutos:\s*(\d+)", texto)
+              intervalo = max(5, int(m.group(1))) if m else 30
+              try:
+                  execucoes = json.load(open("estado.json", encoding="utf-8")).get("execucoes") or []
+                  ultima = datetime.fromisoformat(execucoes[-1]["ts"]) if execucoes else None
+              except (OSError, ValueError, KeyError):
+                  ultima = None
+              if ultima is None:
+                  motivo = f"primeira verificação (intervalo {intervalo} min)"
+              else:
+                  passou = (datetime.now(timezone.utc) - ultima).total_seconds() / 60
+                  # 2,5 min de folga: o GitHub não acorda o workflow ao segundo
+                  correr = passou >= intervalo - 2.5
+                  motivo = f"última verificação há {passou:.0f} min; intervalo {intervalo} min"
+          print(("A verificar: " if correr else "Ainda não é altura: ") + motivo)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write("correr=" + ("sim" if correr else "nao") + "\n")
+          EOF
+
       - uses: actions/setup-python@v5
+        if: steps.hora.outputs.correr == 'sim'
         with:
           python-version: "3.12"
           cache: pip
 
       - name: Instalar dependências
+        if: steps.hora.outputs.correr == 'sim'
         run: pip install -r requirements.txt
 
       # Sites que recusam o GitHub (ex.: Câmara da Sertã) são trazidos pela internet do
@@ -44,7 +77,7 @@ jobs:
       # estes passos não fazem nada e o resto corre igual.
       - name: Ligar ao telemóvel (Tailscale)
         id: tailscale
-        if: env.TS_OAUTH_CLIENT_ID != '' && github.event.inputs.acao != 'teste'
+        if: steps.hora.outputs.correr == 'sim' && env.TS_OAUTH_CLIENT_ID != '' && github.event.inputs.acao != 'teste'
         continue-on-error: true
         timeout-minutes: 3
         uses: tailscale/github-action@v3
@@ -55,12 +88,13 @@ jobs:
           args: --accept-dns=false
 
       - name: Buscar pelo telemóvel os sites bloqueados
-        if: steps.tailscale.outcome == 'success'
+        if: steps.hora.outputs.correr == 'sim' && steps.tailscale.outcome == 'success'
         continue-on-error: true
         timeout-minutes: 3
         run: python agregador.py --buscar-pelo-telemovel
 
       - name: Executar
+        if: steps.hora.outputs.correr == 'sim'
         env:
           WHATSAPP_TELEFONE: ${{ secrets.WHATSAPP_TELEFONE }}
           WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
@@ -74,7 +108,7 @@ jobs:
           esac
 
       - name: Guardar estado
-        if: always()
+        if: always() && steps.hora.outputs.correr == 'sim'
         run: |
           git config user.name "agregador-bot"
           git config user.email "agregador-bot@users.noreply.github.com"

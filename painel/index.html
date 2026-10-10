@@ -235,6 +235,24 @@ function substituirSecao(texto, chave, novo) {
   return L.slice(0, ini).concat(nl, resto.length ? [""] : [], resto).join("\n").replace(/\n*$/, "\n");
 }
 // lê o config.yaml mais recente, aplica a mudança, confirma que o resto ficou igual e grava
+// frequência: geral.intervalo_minutos (o workflow acorda de 5 em 5 min e respeita isto)
+const INTERVALOS = [[5, "5 minutos"], [10, "10 minutos"], [15, "15 minutos"], [20, "20 minutos"], [30, "30 minutos"], [45, "45 minutos"], [60, "1 hora"], [120, "2 horas"], [180, "3 horas"], [360, "6 horas"], [720, "12 horas"], [1440, "1 vez por dia"]];
+function intervaloAtual() { const v = Number(((S.config || {}).geral || {}).intervalo_minutos); return v >= 5 ? v : 30; }
+async function mudarIntervalo(min) {
+  const f = await lerFicheiro("config.yaml");
+  const cfg = jsyaml.load(f.texto) || {};
+  let texto;
+  if (/^\s+intervalo_minutos:/m.test(f.texto)) texto = f.texto.replace(/^(\s+intervalo_minutos:[ \t]*)\d+/m, "$1" + min);
+  else if (/^geral:[ \t]*\r?$/m.test(f.texto)) texto = f.texto.replace(/^geral:[ \t]*\r?$/m, m => m + "\n  intervalo_minutos: " + min + "           # de quantos em quantos minutos procura (mínimo 5)");
+  else throw new Error("Não encontrei a secção 'geral' no config.yaml. Muda o intervalo diretamente no GitHub.");
+  const conf = jsyaml.load(texto);
+  const geralAntes = Object.assign({}, cfg.geral || {}), geralDepois = Object.assign({}, conf.geral || {});
+  delete geralAntes.intervalo_minutos; delete geralDepois.intervalo_minutos;
+  for (const k of Object.keys(cfg)) if (k !== "geral" && JSON.stringify(cfg[k]) !== JSON.stringify(conf[k])) throw new Error("A gravação ia estragar a secção '" + k + "'. Nada foi gravado.");
+  if (JSON.stringify(geralAntes) !== JSON.stringify(geralDepois) || conf.geral.intervalo_minutos !== min) throw new Error("A gravação ia mudar mais do que o intervalo. Nada foi gravado.");
+  await gravarFicheiro("config.yaml", texto, f.sha, "painel: verificar de " + min + " em " + min + " minutos");
+  S.config = conf;
+}
 async function mudarConfig(chave, alterar, mensagem) {
   const f = await lerFicheiro("config.yaml");
   const cfg = jsyaml.load(f.texto) || {};
@@ -343,7 +361,11 @@ function vistaInicio() {
   h += '<div class="stat"><b>' + (est.adiados || []).length + '</b><span class="xs muted">alertas adiados</span></div><div class="stat"><b>' + Object.keys(est.sugeridas || {}).length + '</b><span class="xs muted">fontes por decidir</span></div></div>';
   if (ex) h += '<div class="xs muted">Registo da app: ' + esc(quando(ex.ts)) + ", " + ex.alertas + " alertas enviados" + (ex.falhas && ex.falhas.length ? ", " + ex.falhas.length + " fonte(s) com falha" : "") + "</div>";
   h += "</div>";
-  h += '<div class="card"><h3>Correr agora</h3><div class="sm muted">O agregador corre sozinho de 30 em 30 minutos. Podes pedir uma execução já:</div><div class="grid2">';
+  const intv = intervaloAtual();
+  h += '<div class="card"><h3>Frequência</h3><div class="sm muted">De quanto em quanto tempo o agregador procura notícias sozinho.</div>';
+  h += '<div class="row"><select id="intervalo" aria-label="Intervalo entre verificações">' + INTERVALOS.map(([m, t]) => '<option value="' + m + '"' + (m === intv ? " selected" : "") + ">" + t + "</option>").join("") + (INTERVALOS.some(([m]) => m === intv) ? "" : '<option value="' + intv + '" selected>' + intv + " minutos</option>") + '</select><button class="btn btn-sm btn-primary" data-a="gravar-intervalo">Guardar</button></div>';
+  h += '<div class="xs muted">Vale a partir da verificação seguinte. O GitHub pode atrasar alguns minutos. Intervalos curtos gastam mais mensagens do WhatsApp se houver muitas notícias.</div></div>';
+  h += '<div class="card"><h3>Correr agora</h3><div class="sm muted">Sem esperar pelo intervalo, podes pedir uma execução já:</div><div class="grid2">';
   Object.keys(ACOES).forEach(a => { h += '<button class="btn ' + (a === "normal" ? "btn-primary" : "btn-line") + '" data-a="correr" data-p="' + a + '"' + (S.aSeguir && !(S.aSeguir.run && S.aSeguir.run.status === "completed") ? " disabled" : "") + ">" + esc(ACOES[a]) + "</button>"; });
   h += "</div>";
   if (S.aSeguir) {
@@ -618,6 +640,13 @@ async function onClick(ev) {
       if (a === "decidir" && S.estado && S.estado.sugeridas) delete S.estado.sugeridas[dom];
       toast(a === "tirar" ? "Retirado." : dom + " guardado em " + p + "."); render();
     });
+    return;
+  }
+  if (a === "gravar-intervalo") {
+    if (!S.token) { toast("Para mudar a frequência, junta primeiro um token em Ligação."); return; }
+    const min = Number(document.getElementById("intervalo").value);
+    if (!(min >= 5 && min <= 1440)) { toast("Escolhe um intervalo entre 5 minutos e 1 dia."); return; }
+    await ocupado(el, async () => { await mudarIntervalo(min); toast("Guardado. Nova frequência: " + (INTERVALOS.find(([m]) => m === min) || [0, min + " minutos"])[1] + "."); render(); });
     return;
   }
   if (a === "gravar-gerais") {

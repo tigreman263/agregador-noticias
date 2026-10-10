@@ -15,8 +15,13 @@ Agregador de notícias pessoal:
 ## Decisões já tomadas
 
 - **Sem custos e sem servidor.** Corre no GitHub Actions, no repositório **público**
-  `tigreman263/agregador-noticias`, de 30 em 30 minutos. Público porque o Actions é
-  ilimitado e o painel lê sem token; os segredos ficam protegidos.
+  `tigreman263/agregador-noticias`. Público porque o Actions é ilimitado (o workflow acorda
+  de 5 em 5 minutos) e o painel lê sem token; os segredos ficam protegidos.
+- **Frequência configurável (2026-10-10)**: o cron do GitHub não pode ler o config, por
+  isso o workflow corre `*/5 * * * *` e o 1.º passo (Python sem dependências) compara a
+  última `estado.execucoes[-1].ts` com `geral.intervalo_minutos` (por omissão 30, mínimo 5,
+  folga de 2,5 min). Se não for altura, os passos seguintes são saltados (sem commit).
+  Execuções manuais correm sempre. O painel muda o valor em Início → Frequência.
 - **WhatsApp via CallMeBot (2026-10-09).** Substituiu o Telegram. Gratuito, um pedido HTTP,
   mas só envia (sem botões nem respostas). Por isso as decisões sobre fontes fazem-se no
   painel, que grava no `config.yaml`. Como tem limites de envio apertados, os alertas de
@@ -85,7 +90,7 @@ Ao apagar uma pesquisa, `esquecer_pesquisas_apagadas` limpa o que ela deixou no 
 | `config.yaml` | Pesquisas, fontes, pesos e horários. Editado sobretudo pelo painel. |
 | `estado.json` | Estado gravado pelo workflow: `vistos`, `resumo`, `adiados`, `sugeridas`, `dominios`, `raspadas`, `bloqueados`, `execucoes` (48), `enviados` (100). |
 | `painel.json` | Notícias descartadas no painel (`descartados`: id + data; o painel apaga as com mais de 30 dias). |
-| `.github/workflows/agregador.yml` | Agendamento (30 min), Tailscale opcional e ações manuais: normal, teste, simular, descobrir-fontes. |
+| `.github/workflows/agregador.yml` | Acorda de 5 em 5 min, verifica se é altura (`intervalo_minutos`), Tailscale opcional e ações manuais: normal, teste, simular, descobrir-fontes. |
 | `painel/index.html` | Painel (ver abaixo). |
 | `.nojekyll` | O GitHub Pages serve os ficheiros tal como estão. |
 | `README.md` | Guia passo a passo para o utilizador; mostrado também na secção Ajuda do painel. |
@@ -108,7 +113,7 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 
 ## Estado atual (2026-10-10)
 
-- A correr no GitHub de 30 em 30 minutos; envios por WhatsApp a funcionar.
+- A correr no GitHub (frequência configurável, 30 min por omissão); envios por WhatsApp a funcionar.
 - O utilizador usa o painel com token: pesquisas "Sertã" e "Apoio Estado".
 - Falta o utilizador configurar o Tailscale no telemóvel (README, passo 2.7) para a
   Câmara da Sertã ser lida.
