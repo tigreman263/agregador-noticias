@@ -50,6 +50,7 @@ ESTADO = RAIZ / "estado.json"
 PAINEL = RAIZ / "painel.json"
 CACHE_TELEMOVEL = RAIZ / ".cache_telemovel"
 DIAS_BLOQUEADO = 30
+FUSO_PT = ZoneInfo("Europe/Lisbon")
 SITES_BLOQUEADOS = set()   # sites que recusaram a ligação nesta execução
 LIDOS_TELEMOVEL = []       # fontes lidas a partir da cópia trazida pelo telemóvel
 UA = "Mozilla/5.0 (compatible; AgregadorNoticias/1.0)"
@@ -133,7 +134,7 @@ def parse_data(s):
         except ValueError:
             return data_em_texto(s)
     if d.tzinfo is None:
-        d = d.replace(tzinfo=timezone.utc)
+        d = d.replace(tzinfo=FUSO_PT)  # datas sem fuso vêm de sites portugueses
     return d.astimezone(timezone.utc)
 
 
@@ -151,7 +152,8 @@ def data_em_texto(texto):
     for a, mes, dia in cands:
         if 2000 <= a <= 2100:
             try:
-                return datetime(a, mes, dia, 12, tzinfo=timezone.utc)
+                # só o dia: conta desde a meia-noite (senão de manhã ficava "no futuro")
+                return datetime(a, mes, dia, tzinfo=FUSO_PT).astimezone(timezone.utc)
             except ValueError:
                 continue
     return None
@@ -276,6 +278,9 @@ def baixar_pagina(url):
     except requests.RequestException:
         raise SiteInacessivel("não consegui ligar ao site (endereço errado, site em baixo "
                               "ou a bloquear o GitHub)") from None
+    if r.status_code in (403, 429, 451):
+        raise SiteInacessivel(f"o site recusou o acesso (erro {r.status_code}); pode estar a "
+                              "bloquear o GitHub")
     if r.status_code >= 400:
         raise RuntimeError(f"o site respondeu com erro {r.status_code} "
                            "(página inexistente ou acesso recusado)")
@@ -573,6 +578,9 @@ def recolher(pesq, cfg, falhas=None):
         pelo_telemovel = ficheiro_cache(url).exists()
         try:
             itens = leitor(alvo, nome)
+            for it in itens:  # sem data: fica com a da 1.ª vez vista (datar_raspadas)
+                if not it["data"]:
+                    it.setdefault("pagina", url)
             print(f"  fonte '{nome}': {len(itens)} notícias"
                   + (" (trazidas pelo telemóvel)" if pelo_telemovel else ""))
             if pelo_telemovel:
@@ -583,7 +591,9 @@ def recolher(pesq, cfg, falhas=None):
             print(f"  aviso: falhou '{nome}' ({type(e).__name__}: {str(e)[:80]})")
             if falhas is not None:
                 falhas.append(f"{pesq['nome']} · {nome}: {type(e).__name__}: {str(e)[:120]}")
-            recusou = isinstance(e, (requests.ConnectionError, requests.Timeout, SiteInacessivel))
+            recusou = (isinstance(e, (requests.ConnectionError, requests.Timeout, SiteInacessivel))
+                       or (isinstance(e, requests.HTTPError) and e.response is not None
+                           and e.response.status_code in (403, 429, 451)))
             if (recusou and not isinstance(e, requests.exceptions.SSLError)
                     and dominio_de(url) not in DOMINIOS_IGNORADOS):
                 SITES_BLOQUEADOS.add(dominio_de(url))
@@ -683,7 +693,7 @@ def avaliar(itens, pesq, cfg, estado, agora_utc):
         melhor, melhor_nota, melhor_conf = None, -1, False
         for i in g["itens"]:
             b = bonus
-            if i["data"] and agora_utc - i["data"] < timedelta(hours=1):
+            if i["data"] and timedelta(0) <= agora_utc - i["data"] < timedelta(hours=1):
                 b += pesos["bonus_ultima_hora"]
             confiavel = dominio_em(i["dominio"], fontes.get("confiaveis"))
             peso = pesos["fonte_confiavel"] if confiavel else pesos["fonte_desconhecida"]
@@ -733,7 +743,15 @@ def carregar_descartados():
         dados = json.loads(PAINEL.read_text(encoding="utf-8"))
     except (OSError, json.JSONDecodeError):
         return set()
-    return {x["id"] if isinstance(x, dict) else str(x) for x in dados.get("descartados") or []}
+    lista = dados.get("descartados") if isinstance(dados, dict) else None
+    if not isinstance(lista, list):
+        return set()
+    out = set()
+    for x in lista:
+        i = x.get("id") if isinstance(x, dict) else x
+        if isinstance(i, (str, int)) and str(i):
+            out.add(str(i))
+    return out
 
 
 def aplicar_descartados(estado):
@@ -815,7 +833,13 @@ def whatsapp(telefone, apikey, texto):
     if r.ok and not re.search(r"\b(error|invalid|apikey|limit|wait|blocked)\b|not activ",
                               baixo):
         return
-    raise RuntimeError(f"CallMeBot respondeu {r.status_code}: {corpo[:200]}")
+    # o erro vai para o estado.json (público): nunca com o número nem a apikey
+    limpo = corpo
+    for segredo in (telefone, apikey):
+        if segredo:
+            limpo = limpo.replace(segredo, "***")
+    limpo = re.sub(r"\+?\d{9,}", "***", limpo)
+    raise RuntimeError(f"CallMeBot respondeu {r.status_code}: {limpo[:200]}")
 
 
 def enviar(telefone, apikey, texto):
@@ -854,6 +878,7 @@ def formatar_alerta(c, agora_utc):
 
 
 def mensagens_resumo(itens):
+    """Devolve [(texto, [notícias nessa mensagem])], com as 15 melhores."""
     total = len(itens)
     itens = sorted(itens, key=lambda c: c["nota"], reverse=True)[:15]
     blocos = [f'{n}. {c["titulo"]}\n   {c["fonte"]} · nota {c["nota"]} · {c["pesquisa"]}\n'
@@ -861,7 +886,7 @@ def mensagens_resumo(itens):
     if blocos:
         resto = f" (as 15 melhores de {total})" if total > len(itens) else ""
         blocos[0] = f"📰 *Resumo — {len(itens)} notícias{resto}*\n\n" + blocos[0]
-    return [t for t, _ in juntar_mensagens(blocos)]
+    return [(t, [itens[i] for i in idx]) for t, idx in juntar_mensagens(blocos)]
 
 
 def em_silencio(hora, silencio):
@@ -1189,29 +1214,37 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
                 estado["adiados"] = a_enviar[idx[0]:]
                 break
 
-    if (not falhou and not silencio and estado["resumo"]
-            and agora.hour >= geral.get("hora_resumo", 8)
+    # o resumo do dia sai na 1.ª verificação depois da hora_resumo; se nesse momento não
+    # houver nada, o dia fica dado como tratado (senão o 1.º item que aparecesse à tarde
+    # disparava logo o "resumo do dia")
+    if (not falhou and not silencio and agora.hour >= geral.get("hora_resumo", 8)
             and estado["ultimo_resumo"] != hoje):
+        total = len(estado["resumo"])
         try:
-            for texto in mensagens_resumo(estado["resumo"]):
+            for texto, itens_msg in mensagens_resumo(estado["resumo"]):
                 enviar(telefone, apikey, texto)
-            for c in sorted(estado["resumo"], key=lambda c: c["nota"], reverse=True)[:15]:
-                registar_envio(c, "resumo")
-            registo["resumo"] = len(estado["resumo"])
-            estado["resumo"] = []
+                ids_msg = {i for c in itens_msg for i in c["ids"]}
+                estado["resumo"] = [c for c in estado["resumo"]
+                                    if not ids_msg.intersection(c["ids"])]
+                for c in itens_msg:
+                    registar_envio(c, "resumo")
+            registo["resumo"] = total
+            estado["resumo"] = []  # as que ficaram fora das 15 melhores
             estado["ultimo_resumo"] = hoje
         except RuntimeError as e:
+            # o que já seguiu saiu da fila; o resto vai na verificação seguinte
             falha(f"não consegui enviar o resumo: {e}")
             falhou = True
 
     if sugestoes and not falhou:
         blocos = [texto_sugestao(sg) for sg in sugestoes] + [INSTRUCOES_FONTES]
         try:
-            for texto, _ in juntar_mensagens(blocos):
+            for texto, idx in juntar_mensagens(blocos):
                 enviar(telefone, apikey, texto)
-            for sg in sugestoes:
-                estado["sugeridas"][sg["dominio"]] = sg
-            registo["sugestoes"] = len(sugestoes)
+                for i in idx:  # cada sugestão fica registada logo que a mensagem dela segue
+                    if i < len(sugestoes):
+                        estado["sugeridas"][sugestoes[i]["dominio"]] = sugestoes[i]
+                        registo["sugestoes"] += 1
         except RuntimeError as e:
             falha(f"não consegui enviar as sugestões de fontes: {e}")
             falhou = True
@@ -1325,7 +1358,10 @@ def buscar_pelo_telemovel(cfg):
                 if i == 0 and not x.get("item"):  # páginas: traz também o feed que anunciem
                     urls += feeds_anunciados(resp.url, resp.text)[:2]
     finally:
-        no_tailscale("set", "--exit-node=")
+        r = no_tailscale("set", "--exit-node=")
+        if r.returncode:  # sem isto, o resto da execução sairia toda pelo telemóvel
+            print("Não consegui deixar de sair pelo telemóvel; a desligar o Tailscale.")
+            no_tailscale("down")
     return 0
 
 

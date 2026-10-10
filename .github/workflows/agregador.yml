@@ -1,11 +1,10 @@
 name: Agregador de Notícias
 run-name: ${{ github.event_name == 'schedule' && 'automática' || (github.event.inputs.acao == 'agendada' && 'automática (Google)' || github.event.inputs.acao) }}
 
-# O GitHub acorda o workflow de 15 em 15 minutos. O primeiro passo
-# vê no config.yaml de quantos em quantos minutos queres verificar (geral.intervalo_minutos)
-# e, se ainda não for altura, termina logo sem fazer nada. Como o agendador do GitHub salta
-# muitas execuções, um script da Google (extras/despertador-google.gs) chama também este
-# workflow com a ação "agendada", que respeita o mesmo intervalo.
+# O GitHub acorda o workflow de 15 em 15 minutos e um script da Google
+# (extras/despertador-google.gs) chama-o também com a ação "agendada", porque o agendador do
+# GitHub salta muitas execuções. O job "decidir" vê se já passou geral.intervalo_minutos
+# (.github/ja_e_altura.py); só então corre o job "correr". Os pedidos manuais correm sempre.
 on:
   schedule:
     - cron: "*/15 * * * *"
@@ -25,14 +24,33 @@ on:
 permissions:
   contents: write
 
-concurrency:
-  group: agregador
-  cancel-in-progress: false
-
 jobs:
+  # Sem fila: as execuções que acabam em "ainda não é altura" não ficam à espera nem
+  # cancelam um pedido manual que esteja na fila do job "correr".
+  decidir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    outputs:
+      correr: ${{ steps.hora.outputs.correr }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Ver se já é altura de verificar
+        id: hora
+        env:
+          ACAO: ${{ github.event.inputs.acao }}
+        run: python3 .github/ja_e_altura.py
+
   correr:
+    needs: decidir
+    if: needs.decidir.outputs.correr == 'sim'
     runs-on: ubuntu-latest
     timeout-minutes: 12
+    # uma execução de cada vez, para o estado.json não ser gravado por duas ao mesmo tempo
+    concurrency:
+      group: agregador
+      cancel-in-progress: false
     env:
       TS_OAUTH_CLIENT_ID: ${{ secrets.TS_OAUTH_CLIENT_ID }}
     steps:
@@ -40,35 +58,13 @@ jobs:
         with:
           ref: main   # o estado mais recente, mesmo que outra execução tenha acabado de o gravar
 
-      - name: Ver se já é altura de verificar
+      # Volta a confirmar com o estado mais recente (outra execução pode ter corrido
+      # enquanto esta esperava na fila).
+      - name: Confirmar que ainda é altura
         id: hora
         env:
           ACAO: ${{ github.event.inputs.acao }}
-        run: |
-          python3 - <<'EOF'
-          import json, os, re
-          from datetime import datetime, timezone
-          correr, motivo = True, "pedido manual"
-          if os.environ.get("GITHUB_EVENT_NAME") == "schedule" or os.environ.get("ACAO") == "agendada":
-              texto = open("config.yaml", encoding="utf-8").read()
-              m = re.search(r"(?m)^\s+intervalo_minutos:\s*(\d+)", texto)
-              intervalo = max(30, int(m.group(1))) if m else 30
-              try:
-                  execucoes = json.load(open("estado.json", encoding="utf-8")).get("execucoes") or []
-                  ultima = datetime.fromisoformat(execucoes[-1]["ts"]) if execucoes else None
-              except (OSError, ValueError, KeyError):
-                  ultima = None
-              if ultima is None:
-                  motivo = f"primeira verificação (intervalo {intervalo} min)"
-              else:
-                  passou = (datetime.now(timezone.utc) - ultima).total_seconds() / 60
-                  # 2,5 min de folga: o GitHub não acorda o workflow ao segundo
-                  correr = passou >= intervalo - 2.5
-                  motivo = f"última verificação há {passou:.0f} min; intervalo {intervalo} min"
-          print(("A verificar: " if correr else "Ainda não é altura: ") + motivo)
-          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-              f.write("correr=" + ("sim" if correr else "nao") + "\n")
-          EOF
+        run: python3 .github/ja_e_altura.py
 
       - uses: actions/setup-python@v5
         if: steps.hora.outputs.correr == 'sim'
@@ -123,10 +119,16 @@ jobs:
           git add estado.json
           if git diff --cached --quiet; then
             echo "Sem alterações no estado."
-          else
-            git commit -m "estado: $(date -u +%Y-%m-%dT%H:%MZ)"
-            for tentativa in 1 2 3; do
-              git pull --rebase -X theirs origin main && git push && break
-              sleep 5
-            done
+            exit 0
           fi
+          git commit -m "estado: $(date -u +%Y-%m-%dT%H:%MZ)"
+          for tentativa in 1 2 3; do
+            if git pull --rebase -X theirs origin main && git push; then
+              echo "Estado gravado."
+              exit 0
+            fi
+            git rebase --abort 2>/dev/null || true
+            sleep 5
+          done
+          echo "::error::Não consegui gravar o estado.json no repositório (3 tentativas)."
+          exit 1

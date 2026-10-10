@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Agregador de Notícias</title>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&amp;family=Newsreader:opsz,wght@6..72,500;6..72,600&amp;display=swap" rel="stylesheet">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/js-yaml/4.1.0/js-yaml.min.js" integrity="sha512-CSBhVREyzHAjAFfBlIBakjoRUKp5h7VSweP0InR/pAJyptH7peuhCsqAI/snV+TwZmXZqoUklpXp6R6wMnYf5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/12.0.2/marked.min.js" integrity="sha512-xeUh+KxNyTufZOje++oQHstlMQ8/rpyzPuM+gjMFYK3z5ILJGE7l2NvYL+XfliKURMpBIKKp1XoPN/qswlSMFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.1.6/purify.min.js" integrity="sha512-jB0TkTBeQC9ZSkBqDhdmfTv1qdfbWpGE72yJ/01Srq6hEzZIz2xkz1e57p9ai7IeHMwEG7HpzG6NdptChif5Pg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <style>
 :root{
   --bg:#F6F3EE;--surface:#FFFFFF;--surface2:#FBF9F5;--line:#E6E0D5;--line2:#D9D3C7;
@@ -128,6 +128,7 @@ const WORKFLOW = "agregador.yml";
 
 // ------------------------------------------------------------ utilitários
 function esc(s) { return String(s == null ? "" : s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c])); }
+function num(v) { const n = Number(v); return isFinite(n) ? n : 0; }
 function urlSegura(u) { return /^https?:\/\//i.test(String(u || "")) ? String(u) : "#"; }
 function quando(iso) {
   if (!iso) return "—";
@@ -183,9 +184,10 @@ async function gravarFicheiro(caminho, texto, sha, mensagem) {
 }
 
 // ------------------------------------------------------------ config.yaml (mantém os comentários fora da secção mudada)
+function ychave(k) { return /^[A-Za-z_][\w-]*$/.test(k) ? k : JSON.stringify(String(k)); }
 function yv(v) {
   if (Array.isArray(v)) return "[" + v.map(yv).join(", ") + "]";
-  if (v && typeof v === "object") return "{" + Object.keys(v).map(k => k + ": " + yv(v[k])).join(", ") + "}";
+  if (v && typeof v === "object") return "{" + Object.keys(v).map(k => ychave(k) + ": " + yv(v[k])).join(", ") + "}";
   if (typeof v === "string") return JSON.stringify(v);
   if (v === null || v === undefined) return '""';
   return String(v);
@@ -197,6 +199,7 @@ function blocoLista(chave, arr, ind) {
 }
 const CAMPOS_PESQ = ["nome", "ativa", "consulta", "obrigatorias", "palavras", "excluir", "limite_alerta", "limite_resumo", "feeds_extra", "paginas_extra"];
 function yamlPesquisas(ps) {
+  if (!ps.length) return "pesquisas: []\n";
   let o = "pesquisas:\n";
   ps.forEach(p => {
     const pal = p.palavras || {};
@@ -210,7 +213,7 @@ function yamlPesquisas(ps) {
     o += "    limite_resumo: " + Number(p.limite_resumo || 10) + "\n";
     o += blocoLista("feeds_extra", p.feeds_extra, "    ");
     o += blocoLista("paginas_extra", p.paginas_extra, "    ");
-    Object.keys(p).forEach(k => { if (!CAMPOS_PESQ.includes(k)) o += "    " + k + ": " + yv(p[k]) + "\n"; });
+    Object.keys(p).forEach(k => { if (!CAMPOS_PESQ.includes(k)) o += "    " + ychave(k) + ": " + yv(p[k]) + "\n"; });
   });
   return o;
 }
@@ -219,7 +222,7 @@ function yamlFontes(f) {
   ["confiaveis", "neutras", "bloqueadas"].forEach(k => { o += "  " + k + ": " + yv(f[k] || []) + "\n"; });
   o += blocoLista("feeds", f.feeds, "  ");
   o += blocoLista("paginas", f.paginas, "  ");
-  Object.keys(f).forEach(k => { if (!["confiaveis", "neutras", "bloqueadas", "feeds", "paginas"].includes(k)) o += "  " + k + ": " + yv(f[k]) + "\n"; });
+  Object.keys(f).forEach(k => { if (!["confiaveis", "neutras", "bloqueadas", "feeds", "paginas"].includes(k)) o += "  " + ychave(k) + ": " + yv(f[k]) + "\n"; });
   return o;
 }
 function substituirSecao(texto, chave, novo) {
@@ -234,6 +237,14 @@ function substituirSecao(texto, chave, novo) {
   while (resto.length && resto[0].trim() === "") resto.shift();
   return L.slice(0, ini).concat(nl, resto.length ? [""] : [], resto).join("\n").replace(/\n*$/, "\n");
 }
+// o que foi pedido está no que ficou gravado? (sem ligar à ordem das chaves, a valores que
+// o painel completa por omissão, nem a "20" vs 20)
+function contido(pedido, obtido) {
+  if (pedido === null || pedido === undefined) return true;
+  if (Array.isArray(pedido)) return Array.isArray(obtido) && pedido.length === obtido.length && pedido.every((x, i) => contido(x, obtido[i]));
+  if (typeof pedido === "object") return !!obtido && typeof obtido === "object" && Object.keys(pedido).every(k => contido(pedido[k], obtido[k]));
+  return String(pedido) === String(obtido);
+}
 // lê o config.yaml mais recente, aplica a mudança, confirma que o resto ficou igual e grava
 // frequência: geral.intervalo_minutos (o workflow acorda de 15 em 15 min e respeita isto; mínimo 30)
 const INTERVALOS = [[30, "30 minutos"], [45, "45 minutos"], [60, "1 hora"], [120, "2 horas"], [180, "3 horas"], [360, "6 horas"], [720, "12 horas"], [1440, "1 vez por dia"]];
@@ -241,11 +252,18 @@ function intervaloAtual() { const v = Number(((S.config || {}).geral || {}).inte
 async function mudarIntervalo(min) {
   const f = await lerFicheiro("config.yaml");
   const cfg = jsyaml.load(f.texto) || {};
-  let texto;
-  if (/^\s+intervalo_minutos:/m.test(f.texto)) texto = f.texto.replace(/^(\s+intervalo_minutos:[ \t]*)\d+/m, "$1" + min);
-  else if (/^geral:[ \t]*\r?$/m.test(f.texto)) texto = f.texto.replace(/^geral:[ \t]*\r?$/m, m => m + "\n  intervalo_minutos: " + min + "           # de quantos em quantos minutos procura (mínimo 30)");
-  else throw new Error("Não encontrei a secção 'geral' no config.yaml. Muda o intervalo diretamente no GitHub.");
-  const conf = jsyaml.load(texto);
+  // só mexe dentro da secção "geral:" (do seu início até à próxima chave do topo)
+  const L = f.texto.split(/\r?\n/);
+  const ini = L.findIndex(l => /^geral:[ \t]*(#.*)?$/.test(l));
+  if (ini < 0) throw new Error("Não encontrei a secção 'geral' no config.yaml. Muda o intervalo diretamente no GitHub.");
+  let fim = L.length;
+  for (let i = ini + 1; i < L.length; i++) if (/^[A-Za-z_]/.test(L[i])) { fim = i; break; }
+  const j = L.slice(ini + 1, fim).findIndex(l => /^\s+intervalo_minutos:/.test(l));
+  if (j >= 0) L[ini + 1 + j] = L[ini + 1 + j].replace(/^(\s+intervalo_minutos:[ \t]*)\d*/, "$1" + min);
+  else L.splice(ini + 1, 0, "  intervalo_minutos: " + min + "           # de quantos em quantos minutos procura (mínimo 30)");
+  const texto = L.join("\n");
+  const conf = jsyaml.load(texto) || {};
+  if (!conf.geral) throw new Error("Não consegui ler a secção 'geral' depois da mudança. Nada foi gravado.");
   const geralAntes = Object.assign({}, cfg.geral || {}), geralDepois = Object.assign({}, conf.geral || {});
   delete geralAntes.intervalo_minutos; delete geralDepois.intervalo_minutos;
   for (const k of Object.keys(cfg)) if (k !== "geral" && JSON.stringify(cfg[k]) !== JSON.stringify(conf[k])) throw new Error("A gravação ia estragar a secção '" + k + "'. Nada foi gravado.");
@@ -260,7 +278,7 @@ async function mudarConfig(chave, alterar, mensagem) {
   const texto = substituirSecao(f.texto, chave, chave === "pesquisas" ? yamlPesquisas(nova) : yamlFontes(nova));
   const conf = jsyaml.load(texto);
   for (const k of Object.keys(cfg)) if (k !== chave && JSON.stringify(cfg[k]) !== JSON.stringify(conf[k])) throw new Error("A gravação ia estragar a secção '" + k + "'. Nada foi gravado.");
-  if (JSON.stringify(conf[chave]) !== JSON.stringify(nova)) throw new Error("A gravação não ficou igual ao pedido. Nada foi gravado.");
+  if (!contido(nova, conf[chave])) throw new Error("A gravação não ficou igual ao pedido. Nada foi gravado.");
   await gravarFicheiro("config.yaml", texto, f.sha, mensagem);
   S.config = conf;
 }
@@ -304,7 +322,7 @@ async function descartar(ids, rotulo) {
   const limite = Date.now() - 30 * 86400000, agora = new Date().toISOString();
   const lst = (atual.descartados || []).filter(x => x && x.id && new Date(x.ts).getTime() > limite);
   const ja = new Set(lst.map(x => x.id));
-  ids.forEach(i => { if (!ja.has(i)) lst.push({ id: i, ts: agora }); });
+  ids.forEach(i => { if (!ja.has(i)) { lst.push({ id: i, ts: agora }); ja.add(i); } });
   atual.descartados = lst;
   await gravarFicheiro("painel.json", JSON.stringify(atual, null, 1) + "\n", sha, "painel: descartar " + rotulo);
   S.descartados = lst; esconderDescartados();
@@ -326,7 +344,7 @@ async function seguir() {
     await new Promise(r => setTimeout(r, 8000));
     try {
       const r = await gh("/repos/" + S.repo + "/actions/workflows/" + WORKFLOW + "/runs?per_page=5&event=workflow_dispatch");
-      const run = (r.workflow_runs || []).find(x => new Date(x.created_at).getTime() >= s.desde - 60000);
+      const run = (r.workflow_runs || []).find(x => x.display_title === s.acao && new Date(x.created_at).getTime() >= s.desde - 60000);
       if (run) { s.run = run; render(); if (run.status === "completed") break; }
     } catch (e) { /* tenta de novo */ }
   }
@@ -361,7 +379,7 @@ function vistaInicio() {
   if (run && run.status === "completed" && run.conclusion === "failure") h += '<div class="err">A última execução falhou. Abre o registo para ver porquê (muitas vezes é o WhatsApp ou um segredo em falta).</div>';
   h += '<div class="grid2"><div class="stat"><b>' + alertasHoje + '</b><span class="xs muted">alertas hoje</span></div><div class="stat"><b>' + (est.resumo || []).length + '</b><span class="xs muted">à espera do resumo</span></div>';
   h += '<div class="stat"><b>' + (est.adiados || []).length + '</b><span class="xs muted">alertas adiados</span></div><div class="stat"><b>' + Object.keys(est.sugeridas || {}).length + '</b><span class="xs muted">fontes por decidir</span></div></div>';
-  if (ex) h += '<div class="xs muted">Registo da app: ' + esc(quando(ex.ts)) + ", " + ex.alertas + " alertas enviados" + (ex.falhas && ex.falhas.length ? ", " + ex.falhas.length + " fonte(s) com falha" : "") + "</div>";
+  if (ex) h += '<div class="xs muted">Registo da app: ' + esc(quando(ex.ts)) + ", " + num(ex.alertas) + " alertas enviados" + (ex.falhas && ex.falhas.length ? ", " + ex.falhas.length + " fonte(s) com falha" : "") + "</div>";
   h += "</div>";
   const intv = intervaloAtual();
   h += '<div class="card"><h3>Frequência</h3><div class="sm muted">De quanto em quanto tempo o agregador procura notícias sozinho.</div>';
@@ -398,7 +416,7 @@ function vistaPesquisas() {
     h += '<div class="sm muted">Procura: ' + esc(p.consulta || "—") + "</div>";
     if ((p.obrigatorias || []).length) h += '<div class="sm">Obrigatórias: ' + esc(p.obrigatorias.join(", ")) + "</div>";
     h += '<div class="wrap">' + ["alta", "media", "baixa"].map(n => (pal[n] || []).map(w => '<span class="tag ' + (n === "alta" ? "bad" : n === "media" ? "warn" : "ok") + '">' + esc(w) + "</span>").join("")).join("") + "</div>";
-    if (st) h += '<div class="xs muted">Última verificação: ' + st.recolhidas + " notícias lidas, " + st.relevantes + " novas relevantes (" + st.alertas + " para alerta). As que já viste antes não contam.</div>";
+    if (st) h += '<div class="xs muted">Última verificação: ' + num(st.recolhidas) + " notícias lidas, " + num(st.relevantes) + " novas relevantes (" + num(st.alertas) + " para alerta). As que já viste antes não contam.</div>";
     h += '<div class="wrap"><button class="btn btn-sm" data-a="editar" data-p="' + i + '">Editar</button><button class="btn btn-sm" data-a="pausar" data-p="' + i + '">' + (p.ativa === false ? "Ativar" : "Pausar") + '</button><button class="btn btn-sm btn-danger" data-a="apagar" data-p="' + i + '">Apagar</button></div></div>';
   });
   h += '<div class="xs muted">As mudanças ficam gravadas no config.yaml do GitHub e valem a partir da verificação seguinte. Usa "Simular" no Início para ver o efeito logo.</div>';
@@ -407,12 +425,18 @@ function vistaPesquisas() {
 function linhasFontes(arr) { return (arr || []).map(f => [f.nome || "", f.url || ""].concat(f.local ? ["local"] : []).join(" | ")).join("\n"); }
 function lerLinhasFontes(txt, antigas) {
   return String(txt || "").split("\n").map(l => l.trim()).filter(Boolean).map(l => {
-    const p = l.split("|").map(s => s.trim());
-    let nome = p[0], url = p[1] || "";
-    if (!url && /^https?:\/\//i.test(nome)) { url = nome; nome = dominio(nome); }
+    // "Nome | https://endereço | local": o endereço vai do "http" até ao "| local" final,
+    // por isso pode ter "|" lá dentro
+    let local = false;
+    let resto = l.replace(/\s*\|\s*local\s*$/i, () => { local = true; return ""; });
+    let nome = "", url = "";
+    const m = resto.match(/^(.*?)\|\s*(https?:\/\/.*)$/i);
+    if (m) { nome = m[1].trim(); url = m[2].trim(); }
+    else if (/^https?:\/\//i.test(resto)) { url = resto.trim(); }
+    else { nome = resto.trim(); }
     const ant = (antigas || []).find(a => a.url === url) || {};
     const o = Object.assign({}, ant, { nome: nome || dominio(url), url: url });
-    if (p.slice(2).some(x => /^local$/i.test(x))) o.local = true; else delete o.local;
+    if (local) o.local = true; else delete o.local;
     return o;
   });
 }
@@ -455,8 +479,8 @@ function vistaAtividade() {
   if (!exs.length) h += '<div class="empty">' + (todas.length ? "Nada de novo desde que limpaste. A próxima verificação aparece aqui." : "Ainda sem registo. Aparece depois da próxima verificação.") + "</div>";
   exs.slice(0, S.verTudo ? 48 : 8).forEach(x => {
     h += '<div class="list-item" style="display:block"><div class="row"><b class="sm">' + esc(hora(x.ts)) + "</b>" + (x.erros && x.erros.length ? '<span class="tag bad">com erros</span>' : x.silencio ? '<span class="tag">silêncio</span>' : '<span class="tag ok">ok</span>') + "</div>";
-    h += '<div class="xs muted">' + (x.pesquisas || []).map(p => esc(p.nome) + ": " + p.recolhidas + " lidas, " + p.relevantes + " novas relevantes").join(" · ") + "</div>";
-    h += '<div class="xs">' + x.alertas + " alertas enviados" + (x.resumo ? ", resumo com " + x.resumo : "") + (x.sugestoes ? ", " + x.sugestoes + " fontes sugeridas" : "") + "</div>";
+    h += '<div class="xs muted">' + (x.pesquisas || []).map(p => esc(p.nome) + ": " + num(p.recolhidas) + " lidas, " + num(p.relevantes) + " novas relevantes").join(" · ") + "</div>";
+    h += '<div class="xs">' + num(x.alertas) + " alertas enviados" + (x.resumo ? ", resumo com " + num(x.resumo) : "") + (x.sugestoes ? ", " + num(x.sugestoes) + " fontes sugeridas" : "") + "</div>";
     if ((x.pelo_telemovel || []).length) h += '<div class="xs"><span class="tag info">pelo telemóvel</span> ' + esc(x.pelo_telemovel.join(", ")) + "</div>";
     (x.falhas || []).forEach(f => { h += '<div class="xs err">Fonte com falha: ' + esc(f) + "</div>"; });
     (x.erros || []).forEach(f => { h += '<div class="xs err">' + esc(f) + "</div>"; });
@@ -709,7 +733,12 @@ async function onClick(ev) {
 document.addEventListener("click", onClick);
 render();
 carregar();
-setInterval(() => { if (!S.ocupado && S.editar === null && !document.hidden) carregar(true); }, 5 * 60000);
+setInterval(() => {
+  const foco = document.activeElement;
+  if (S.ocupado || S.editar !== null || document.hidden || ["fontes", "ligacao"].includes(S.tab)) return;
+  if (foco && /^(INPUT|TEXTAREA|SELECT)$/.test(foco.tagName)) return;
+  carregar(true);
+}, 5 * 60000);
 </script>
 </body>
 </html>
