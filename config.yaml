@@ -22,7 +22,7 @@ pesos:
 
 # Fontes: usa o domínio, sem "www" nem "https://".
 fontes:
-  confiaveis: ["sapo.pt", "mediotejo.net"]
+  confiaveis: ["sapo.pt", "mediotejo.net", "radiocondestavel.pt"]
   neutras: []
   bloqueadas: []
   feeds:
