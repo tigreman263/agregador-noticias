@@ -22,12 +22,13 @@ pesos:
 
 # Fontes: usa o domínio, sem "www" nem "https://".
 fontes:
-  confiaveis: ["sapo.pt", "mediotejo.net", "radiocondestavel.pt"]
+  confiaveis: ["sapo.pt", "mediotejo.net", "radiocondestavel.pt", "noticiasdecoimbra.pt"]
   neutras: []
   bloqueadas: []
   feeds:
     - {nome: "SAPO", url: "https://sapo.pt/rss/destaques"}
     - {nome: "Médio Tejo", url: "https://mediotejo.net/feed/"}
+    - {nome: "Notícias de Coimbra", url: "https://www.noticiasdecoimbra.pt/feed/"}
   paginas: []
 
 # Descoberta automática de fontes: 1 vez por dia procura sites novos que
