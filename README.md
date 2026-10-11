@@ -281,6 +281,24 @@ verificações nem mensagens repetidas.
 
 ---
 
+### 2.9 Despertador da Cloudflare (alternativa mais robusta à da Google)
+
+Faz o mesmo que o da secção 2.8: pede ao GitHub uma verificação de 15 em 15 minutos. Os
+Cron Triggers da Cloudflare são gratuitos e muito pontuais. Podes ter os dois ligados: o
+agregador só verifica a sério quando passou o intervalo, por isso não há envios a dobrar.
+
+1. Cria o token como no passo 1 da secção 2.8 (só **Actions: Read and write**). Podes
+   reutilizar o mesmo.
+2. Em https://dash.cloudflare.com cria conta (grátis) → **Workers & Pages → Create →
+   Create Worker** → nome `despertador-agregador` → **Deploy**.
+3. **Edit code**: apaga tudo, cola o ficheiro `extras/despertador-cloudflare.js` → **Deploy**.
+4. Worker → **Settings → Variables and Secrets → Add**: tipo **Secret**, nome
+   `GITHUB_TOKEN`, valor o token → **Deploy**.
+5. Worker → **Settings → Trigger Events → Add → Cron Triggers**: `*/15 * * * *`.
+6. Confirma: no GitHub, em **Actions**, passam a aparecer execuções chamadas
+   "automática (Google)" de 15 em 15 minutos (o nome é o mesmo para as duas origens).
+   Em caso de erro, o Worker mostra-o em **Observability / Logs**.
+
 ## 3. Usar o painel
 
 | Secção | O que tem |
