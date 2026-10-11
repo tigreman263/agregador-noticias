@@ -827,18 +827,22 @@ def whatsapp(telefone, apikey, texto):
         raise RuntimeError("falha de rede ao contactar o CallMeBot") from None
     corpo = limpar_html(r.text)
     baixo = corpo.lower()
-    # a resposta pode repetir o texto enviado: só "queued" prova que seguiu
-    if r.ok and "queued" in baixo:
-        return
-    if r.ok and not re.search(r"\b(error|invalid|apikey|limit|wait|blocked)\b|not activ",
-                              baixo):
-        return
-    # o erro vai para o estado.json (público): nunca com o número nem a apikey
+    # a resposta vai para o registo e para o estado.json (públicos): nunca com o número
+    # nem a apikey
     limpo = corpo
     for segredo in (telefone, apikey):
         if segredo:
             limpo = limpo.replace(segredo, "***")
     limpo = re.sub(r"\+?\d{9,}", "***", limpo)
+    if os.environ.get("GITHUB_ACTIONS") == "true":
+        # diagnóstico: mostra o que o CallMeBot respondeu, mesmo quando parece ter corrido bem
+        print(f"::notice::CallMeBot respondeu {r.status_code}: {limpo[:160]}")
+    # a resposta pode repetir o texto enviado: só "queued" prova que seguiu
+    if r.ok and "queued" in baixo:
+        return
+    if r.ok and not re.search(r"\b(error|invalid|apikey|limit|wait|blocked|failed)\b|not activ|not sent",
+                              baixo):
+        return
     raise RuntimeError(f"CallMeBot respondeu {r.status_code}: {limpo[:200]}")
 
 
