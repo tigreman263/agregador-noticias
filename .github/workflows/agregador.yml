@@ -16,6 +16,7 @@ on:
         options:
           - normal
           - teste
+          - descobrir-chat
           - simular
           - descobrir-fontes
           - agendada
@@ -81,7 +82,7 @@ jobs:
       # estes passos não fazem nada e o resto corre igual.
       - name: Ligar ao telemóvel (Tailscale)
         id: tailscale
-        if: steps.hora.outputs.correr == 'sim' && env.TS_OAUTH_CLIENT_ID != '' && github.event.inputs.acao != 'teste'
+        if: steps.hora.outputs.correr == 'sim' && env.TS_OAUTH_CLIENT_ID != '' && github.event.inputs.acao != 'teste' && github.event.inputs.acao != 'descobrir-chat'
         continue-on-error: true
         timeout-minutes: 3
         uses: tailscale/github-action@v3
@@ -102,10 +103,13 @@ jobs:
         env:
           WHATSAPP_TELEFONE: ${{ secrets.WHATSAPP_TELEFONE }}
           WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ACAO: ${{ github.event.inputs.acao || 'normal' }}
         run: |
           case "$ACAO" in
             teste) python agregador.py --teste ;;
+            descobrir-chat) python agregador.py --descobrir-chat ;;
             simular) python agregador.py --simular ;;
             descobrir-fontes) python agregador.py --fontes ;;
             *) python agregador.py ;;

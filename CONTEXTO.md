@@ -29,6 +29,13 @@ Agregador de notícias pessoal:
   cada execução vão juntos (`juntar_mensagens`, `MAX_MSG`, `PAUSA_ENVIO`). A API da Meta e a
   Twilio foram postas de lado por custo; bibliotecas não oficiais por risco de bloqueio do
   número e por precisarem de um processo sempre ligado. O telefone segue com "+".
+- **Telegram como segundo canal (2026-10-11)**: o CallMeBot aceitava ("queued") mas deixou
+  de entregar. `enviar()` manda por todos os canais configurados (WhatsApp se
+  `WHATSAPP_TELEFONE`+`WHATSAPP_APIKEY`; Telegram se `TELEGRAM_BOT_TOKEN`+`TELEGRAM_CHAT_ID`,
+  texto simples via `sendMessage`, partido a 4000 caracteres). Conta como enviado se um
+  entregar; só falha (e adia) se todos falharem. Falhas parciais vão para `registo.erros`
+  ("canal com falha: …"). Token/chat nunca aparecem em logs (`_sem_segredos`). Ação
+  `descobrir-chat` (`--descobrir-chat`) mostra o chat id via `getUpdates`.
 - **Fontes abertas**: Google Notícias, feeds RSS e páginas de notícias sem RSS. X,
   Instagram e Facebook estão fora por acesso restrito ou pago. Domínios `.br` bloqueados
   no config (`bloqueadas: ["br"]`; `dominio_em` faz correspondência por sufixo).

@@ -329,7 +329,7 @@ async function descartar(ids, rotulo) {
 }
 
 // ------------------------------------------------------------ correr no GitHub Actions
-const ACOES = { normal: "Verificar agora", simular: "Simular", teste: "Testar WhatsApp", "descobrir-fontes": "Procurar fontes novas" };
+const ACOES = { normal: "Verificar agora", simular: "Simular", teste: "Testar avisos", "descobrir-chat": "Descobrir chat do Telegram", "descobrir-fontes": "Procurar fontes novas" };
 async function correr(acao) {
   if (!S.token) { toast("Para correr ações, junta primeiro um token em Ligação."); S.tab = "ligacao"; render(); return; }
   const antes = Date.now();
@@ -376,7 +376,7 @@ function vistaInicio() {
   let h = '<div class="top"><h1>Agregador</h1><button class="btn btn-sm" data-a="recarregar">Atualizar</button></div>';
   h += '<div class="card"><div class="row"><h3>Última verificação</h3>' + estadoRun(run) + '</div>';
   h += run ? '<div class="sm muted">' + esc(quando(run.created_at)) + " · " + esc(tipoRun(run)) + ' · <a href="' + esc(urlSegura(run.html_url)) + '" target="_blank" rel="noopener">ver registo</a></div>' : '<div class="sm muted">Ainda não há execuções.</div>';
-  if (run && run.status === "completed" && run.conclusion === "failure") h += '<div class="err">A última execução falhou. Abre o registo para ver porquê (muitas vezes é o WhatsApp ou um segredo em falta).</div>';
+  if (run && run.status === "completed" && run.conclusion === "failure") h += '<div class="err">A última execução falhou. Abre o registo para ver porquê (muitas vezes é um canal de avisos ou um segredo em falta).</div>';
   h += '<div class="grid2"><div class="stat"><b>' + alertasHoje + '</b><span class="xs muted">alertas hoje</span></div><div class="stat"><b>' + (est.resumo || []).length + '</b><span class="xs muted">à espera do resumo</span></div>';
   h += '<div class="stat"><b>' + (est.adiados || []).length + '</b><span class="xs muted">alertas adiados</span></div><div class="stat"><b>' + Object.keys(est.sugeridas || {}).length + '</b><span class="xs muted">fontes por decidir</span></div></div>';
   if (ex) h += '<div class="xs muted">Registo da app: ' + esc(quando(ex.ts)) + ", " + num(ex.alertas) + " alertas enviados" + (ex.falhas && ex.falhas.length ? ", " + ex.falhas.length + " fonte(s) com falha" : "") + "</div>";
@@ -488,7 +488,7 @@ function vistaAtividade() {
   });
   h += "</div>";
   const env = (est.enviados || []).slice().reverse();
-  h += '<div class="card"><h3>Enviado para o WhatsApp</h3>';
+  h += '<div class="card"><h3>Avisos enviados</h3>';
   h += env.length ? env.slice(0, 30).map(itemNoticia).join("") : '<div class="empty">Ainda nada enviado.</div>';
   h += "</div>";
   const espera = [

@@ -62,6 +62,11 @@ DIAS_SUGESTAO = 14
 CALLMEBOT = "https://api.callmebot.com/whatsapp.php"
 MAX_MSG = 3000
 PAUSA_ENVIO = 4
+MAX_TELEGRAM = 4000
+# Telegram (opcional, define-se em main() a partir dos segredos) e avisos de canais que
+# falharam enquanto outro canal entregou a mensagem.
+TELEGRAM = {"token": "", "chat": ""}
+AVISOS_CANAL = []
 
 
 def erro(msg):
@@ -72,25 +77,22 @@ def erro(msg):
         print("Erro: " + msg)
 
 
+def telegram_ativo():
+    return bool(TELEGRAM["token"] and TELEGRAM["chat"])
+
+
 def segredos_em_falta(telefone, apikey):
-    """Diz exatamente que segredos faltam (nunca mostra os valores)."""
-    falta = [n for n, v in (("WHATSAPP_TELEFONE", telefone), ("WHATSAPP_APIKEY", apikey))
-             if not v]
-    if not falta:
+    """Diz o que falta para haver pelo menos um canal de avisos (nunca mostra valores)."""
+    if (telefone and apikey) or telegram_ativo():
         return ""
     if os.environ.get("GITHUB_ACTIONS") == "true":
-        return (f"falta(m) o(s) segredo(s) {' e '.join(falta)} no GitHub "
-                "(Settings > Secrets and variables > Actions).")
-    return (f"falta(m) {' e '.join(falta)}. No computador, define-as antes de correr, "
-            "por exemplo no PowerShell: $env:WHATSAPP_TELEFONE=\"351912345678\"; "
-            "$env:WHATSAPP_APIKEY=\"123456\". No GitHub, são segredos em "
-            "Settings > Secrets and variables > Actions.")
+        return ("não há nenhum canal de avisos. Cria no GitHub (Settings > Secrets and "
+                "variables > Actions) os segredos TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID "
+                "e/ou WHATSAPP_TELEFONE e WHATSAPP_APIKEY.")
+    return ("não há nenhum canal de avisos. Define TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID "
+            "e/ou WHATSAPP_TELEFONE e WHATSAPP_APIKEY (no PowerShell: "
+            "$env:TELEGRAM_BOT_TOKEN=\"...\").")
 
-
-DOMINIOS_IGNORADOS = {"", "news.google.com", "google.com"}
-
-
-# ---------------------------------------------------------------- utilitários
 
 def normalizar(texto):
     """Minúsculas, sem acentos, só letras e números separados por espaços."""
@@ -846,9 +848,57 @@ def whatsapp(telefone, apikey, texto):
     raise RuntimeError(f"CallMeBot respondeu {r.status_code}: {limpo[:200]}")
 
 
+def _sem_segredos(texto):
+    """Tira o token e o chat de qualquer texto que vá para logs públicos."""
+    for segredo in (TELEGRAM["token"], TELEGRAM["chat"]):
+        if segredo:
+            texto = texto.replace(segredo, "***")
+    return re.sub(r"bot\d+:[\w-]+", "bot***", texto)
+
+
+def telegram(texto):
+    """Envia por Telegram (texto simples, partido se passar o limite)."""
+    url = f"https://api.telegram.org/bot{TELEGRAM['token']}/sendMessage"
+    pedacos = [texto[i:i + MAX_TELEGRAM] for i in range(0, len(texto), MAX_TELEGRAM)] or [""]
+    for parte in pedacos:
+        try:
+            r = requests.post(url, json={"chat_id": TELEGRAM["chat"], "text": parte,
+                                         "disable_web_page_preview": True}, timeout=30)
+        except requests.RequestException:
+            raise RuntimeError("falha de rede ao contactar o Telegram") from None
+        try:
+            dados = r.json()
+        except ValueError:
+            dados = {}
+        if not (r.ok and dados.get("ok")):
+            motivo = _sem_segredos(str(dados.get("description") or r.text[:120]))
+            raise RuntimeError(f"Telegram respondeu {r.status_code}: {motivo}")
+
+
 def enviar(telefone, apikey, texto):
-    whatsapp(telefone, apikey, texto)
-    time.sleep(PAUSA_ENVIO)  # o CallMeBot gratuito bloqueia envios seguidos
+    """Envia por todos os canais configurados. Conta como enviado se pelo menos um
+    entregar; só falha se todos falharem."""
+    canais, falhas, ok = [], [], 0
+    if telefone and apikey:
+        canais.append(("WhatsApp", lambda: whatsapp(telefone, apikey, texto)))
+    if telegram_ativo():
+        canais.append(("Telegram", lambda: telegram(texto)))
+    if not canais:
+        raise RuntimeError(segredos_em_falta(telefone, apikey))
+    for nome, fn in canais:
+        try:
+            fn()
+            ok += 1
+        except RuntimeError as e:
+            falhas.append(f"{nome}: {e}")
+    if ok == 0:
+        raise RuntimeError("; ".join(falhas))
+    for f in falhas:  # um canal falhou mas outro entregou: avisa sem parar
+        erro(f"aviso, canal com falha ({f})")
+        if f not in AVISOS_CANAL:
+            AVISOS_CANAL.append(f)
+    if telefone and apikey:
+        time.sleep(PAUSA_ENVIO)  # o CallMeBot gratuito bloqueia envios seguidos
 
 
 def juntar_mensagens(blocos, maximo=MAX_MSG):
@@ -1117,7 +1167,7 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
     for k in ("adiados", "resumo"):  # fontes bloqueadas depois de a notícia entrar na fila
         estado[k] = [c for c in estado[k] if not dominio_em(c.get("dominio", ""), bloqueadas)]
 
-    if not simular and not (telefone and apikey):
+    if not simular and segredos_em_falta(telefone, apikey):
         erro(segredos_em_falta(telefone, apikey))
         return 1
 
@@ -1256,6 +1306,8 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
         estado["ultima_descoberta"] = hoje
 
     estado["enviados"] = estado["enviados"][-100:]
+    for f in AVISOS_CANAL:
+        registo["erros"].append("canal com falha: " + f)
     estado["execucoes"] = (estado["execucoes"] + [registo])[-48:]
     guardar_estado(estado)
     print("Concluído.")
@@ -1378,10 +1430,45 @@ def carregar_config():
         return yaml.safe_load(f)
 
 
+def descobrir_chat():
+    """Lê as mensagens enviadas ao bot e mostra o chat id (não é segredo por si só)."""
+    if not TELEGRAM["token"]:
+        erro("falta o segredo TELEGRAM_BOT_TOKEN no GitHub.")
+        return 1
+    try:
+        r = requests.get(f"https://api.telegram.org/bot{TELEGRAM['token']}/getUpdates",
+                         timeout=30)
+        dados = r.json()
+    except (requests.RequestException, ValueError):
+        erro("não consegui falar com o Telegram.")
+        return 1
+    if not dados.get("ok"):
+        erro("o Telegram recusou o token: " + _sem_segredos(str(dados.get("description"))))
+        return 1
+    chats = {}
+    for u in dados.get("result", []):
+        m = u.get("message") or u.get("channel_post") or {}
+        c = m.get("chat") or {}
+        if c.get("id") is not None:
+            chats[c["id"]] = c.get("first_name") or c.get("title") or ""
+    if not chats:
+        erro("o bot ainda não recebeu mensagens. Abre o bot no Telegram, carrega em "
+             "Iniciar, escreve 'olá' e corre esta ação outra vez.")
+        return 1
+    for cid, nome in chats.items():
+        msg = f"chat id do Telegram: {cid} ({nome}). Guarda-o no segredo TELEGRAM_CHAT_ID."
+        print(msg)
+        if os.environ.get("GITHUB_ACTIONS") == "true":
+            print("::notice::" + msg)
+    return 0
+
+
 def main():
     ap = argparse.ArgumentParser(description="Agregador de Notícias")
     ap.add_argument("--simular", action="store_true", help="não envia nem guarda nada")
     ap.add_argument("--teste", action="store_true", help="envia uma mensagem de teste")
+    ap.add_argument("--descobrir-chat", action="store_true",
+                    help="mostra o chat id do Telegram (envia 'olá' ao bot antes)")
     ap.add_argument("--fontes", action="store_true", help="procura fontes novas agora")
     ap.add_argument("--testar-pagina", metavar="URL", help="testa o leitor de páginas")
     ap.add_argument("--item", help="seletor CSS de cada notícia (com --testar-pagina)")
@@ -1399,8 +1486,12 @@ def main():
 
     telefone = re.sub(r"[^\d]", "", os.environ.get("WHATSAPP_TELEFONE", ""))
     apikey = os.environ.get("WHATSAPP_APIKEY", "").strip()
+    TELEGRAM["token"] = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+    TELEGRAM["chat"] = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 
     try:
+        if args.descobrir_chat:
+            return descobrir_chat()
         if args.testar_pagina:
             return testar_pagina(args)
         if args.buscar_pelo_telemovel:
@@ -1408,12 +1499,28 @@ def main():
         if args.procurar_feeds:
             return procurar_feeds(args.procurar_feeds, carregar_config())
         if args.teste:
-            if not (telefone and apikey):
+            if segredos_em_falta(telefone, apikey):
                 erro(segredos_em_falta(telefone, apikey))
                 return 1
-            whatsapp(telefone, apikey, "✅ O agregador de notícias está ligado ao WhatsApp.")
-            print("Mensagem de teste enviada.")
-            return 0
+            resultados, ok = [], 0
+            msg = "✅ O agregador de notícias está ligado."
+            if telefone and apikey:
+                try:
+                    whatsapp(telefone, apikey, msg + " (WhatsApp)")
+                    resultados.append("WhatsApp: pedido aceite pelo CallMeBot")
+                    ok += 1
+                except RuntimeError as e:
+                    erro(f"WhatsApp falhou: {e}")
+            if telegram_ativo():
+                try:
+                    telegram(msg + " (Telegram)")
+                    resultados.append("Telegram: mensagem entregue")
+                    ok += 1
+                except RuntimeError as e:
+                    erro(f"Telegram falhou: {e}")
+            for r in resultados:
+                print(r)
+            return 0 if ok else 1
         return executar(carregar_config(), telefone, apikey, simular=args.simular,
                         forcar_fontes=args.fontes)
     except (RuntimeError, ValueError, requests.RequestException) as e:

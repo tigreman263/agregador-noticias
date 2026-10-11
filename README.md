@@ -101,6 +101,20 @@ que te falta. Para montar de raiz noutra conta, segue todos.
 O CallMeBot só envia mensagens: não há botões nem respostas. É um serviço gratuito de
 terceiros, com limites de envio (por isso os alertas vão agrupados).
 
+### 2.2b Ativar o Telegram (recomendado, fiável e gratuito)
+
+O Telegram é o canal de segurança: a API oficial entrega sempre. Se configurares os dois
+canais, cada aviso segue pelos dois; basta um chegar para contar como enviado.
+
+1. No Telegram, procura **@BotFather**, escreve `/newbot`, escolhe um nome e um utilizador
+   (terminado em `bot`). Ele devolve o **token** (`123456:ABC…`). É secreto: não o partilhes.
+2. Abre o teu bot novo, carrega em **Iniciar** e escreve `olá`.
+3. Guarda o token no GitHub como segredo `TELEGRAM_BOT_TOKEN` (passo 2.3).
+4. Em **Actions → Agregador de Notícias → Run workflow** escolhe **descobrir-chat** (ou, no
+   painel, **Descobrir chat do Telegram**). Abre a execução: nas anotações aparece
+   "chat id do Telegram: 123456789". Guarda esse número no segredo `TELEGRAM_CHAT_ID`.
+5. Corre **teste**: deves receber a mensagem no Telegram.
+
 ### 2.3 Guardar os segredos no GitHub
 
 No repositório: **Settings → Secrets and variables → Actions → New repository secret**.
@@ -109,6 +123,10 @@ No repositório: **Settings → Secrets and variables → Actions → New reposi
 |---|---|
 | `WHATSAPP_TELEFONE` | O teu número com indicativo, só algarismos (ex.: `351912345678`). |
 | `WHATSAPP_APIKEY` | A apikey do CallMeBot. |
+| `TELEGRAM_BOT_TOKEN` | O token dado pelo @BotFather (opcional, ver 2.2b). |
+| `TELEGRAM_CHAT_ID` | O número do teu chat (opcional, ver 2.2b). |
+
+Basta ter **um** canal completo (WhatsApp ou Telegram); com os dois, a fiabilidade é maior.
 
 Ou no terminal, com o GitHub CLI (`gh`), colando o valor quando pedir:
 
@@ -121,7 +139,7 @@ gh secret set WHATSAPP_APIKEY -R tigreman263/agregador-noticias
 
 1. No repositório: **Actions → Agregador de Notícias → Run workflow**.
 2. Escolhe **teste** e carrega em **Run workflow**. Deves receber no WhatsApp
-   "✅ O agregador de notícias está ligado ao WhatsApp".
+   "✅ O agregador de notícias está ligado" em cada canal configurado.
 3. Corre de novo com **simular**: abre a execução e vê no registo o que seria enviado,
    sem enviar nada.
 4. A partir daqui o agregador corre sozinho de 30 em 30 minutos (podes mudar no painel,
@@ -534,8 +552,8 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 
 **Não recebo nada no WhatsApp**
 1. No painel, **Início → Última verificação**: se falhou, abre **ver registo**.
-2. Carrega em **Testar WhatsApp**. Se não chegar, confirma os segredos
-   `WHATSAPP_TELEFONE` e `WHATSAPP_APIKEY` (passo 2.3).
+2. Carrega em **Testar avisos**. Se o WhatsApp não chegar, usa o Telegram (2.2b); o
+   registo da execução diz qual canal falhou.
 3. Pode simplesmente não haver notícias novas com nota suficiente: vê **Atividade**.
 
 **"CallMeBot respondeu …: apikey can not be empty or it has an invalid format"**
