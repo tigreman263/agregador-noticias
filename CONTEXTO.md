@@ -132,12 +132,6 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
   o intervalo como o schedule). Token fine-grained só com Actions: Read and write, guardado
   nas Propriedades do script (GITHUB_TOKEN). O cron-job.org foi posto de lado.
 
-- **Despertador Cloudflare (2026-10-11)**: `extras/despertador-cloudflare.js`, Worker com
-  Cron Trigger `*/15` que chama `workflow_dispatch` (`acao=agendada`), com 3 tentativas.
-  Pode coexistir com o da Google (o `ja_e_altura.py` evita duplicados). O agregador em si
-  não foi para a Cloudflare: está em Python, faz muitos pedidos por execução e depende do
-  Tailscale/estado no repositório.
-
 ## Próximos passos sugeridos
 
 1. Confirmar que o despertador da Google está instalado e a correr.
