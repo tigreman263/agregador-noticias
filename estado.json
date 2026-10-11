@@ -195,7 +195,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-10-11T07:22:31.525614+00:00"
   },
   "cnnbrasil.com.br": {
    "nome": "CNN Brasil",
@@ -240,7 +240,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-10-11T07:22:31.525614+00:00"
   },
   "antenalivre.pt": {
    "nome": "Antena Livre",
@@ -253,7 +253,7 @@
     "Sertã"
    ],
    "exemplo": "Sertã: Castanhas e Frutos secos em destaque nos Produtos da Terra",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-10-11T07:22:31.525614+00:00"
   },
   "mediotejo.net": {
    "nome": "Médio Tejo",
@@ -282,7 +282,7 @@
     "Sertã"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-10-11T07:22:31.525614+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
@@ -309,19 +309,20 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-10-11T07:22:31.525614+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
    "site": "https://mag.sapo.pt",
    "ids": [
-    "2a35c2e7fc8261fd"
+    "2a35c2e7fc8261fd",
+    "7ae082dc54babf69"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "SERTÃ: Grupo Coral do Sertanense celebra 20.º aniversário com encontro de coros",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-10-11T07:22:31.525614+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -350,7 +351,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-10-11T07:22:31.525614+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -401,7 +402,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Orçamento do Estado reforça valorização dos rendimentos e apoios às famílias e empresas",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-10-11T07:22:31.525614+00:00"
   },
   "jornaldenegocios.pt": {
    "nome": "Jornal de Negócios",
@@ -475,7 +476,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Menos IRS, aumentos nos salários e pensões e reforço de alguns apoios sociais. O que muda com o novo Orçamento do Estado?",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-10-11T07:22:31.525614+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -487,7 +488,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Cancro: 5 associações que dão apoio gratuito a doentes",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-10-11T07:22:31.525614+00:00"
   },
   "pplware.sapo.pt": {
    "nome": "Pplware",
@@ -585,7 +586,7 @@
     "Apoio Estado"
    ],
    "exemplo": "PROAGES simplificado para facilitar apoios às famílias que ficam de fora dos apoios sociais",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-10-11T07:22:31.525614+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "24 Notícias",
@@ -3721,10 +3722,41 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-10-11T07:22:31.525614+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 288,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio Estado",
+     "recolhidas": 288,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio Estado · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-10-11T07:15:12.378523+00:00"
+  "cm-serta.pt": "2026-10-11T07:22:31.525614+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
