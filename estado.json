@@ -35,34 +35,12 @@
   "eb65b3af17b31672": "2026-10-10T14:52:46.547040+00:00",
   "f7902a0adec0befd": "2026-10-10T14:52:46.547040+00:00",
   "dec4a58ee4d01324": "2026-10-10T21:55:21.304337+00:00",
-  "ef096bbe294af047": "2026-10-11T01:26:19.130215+00:00"
+  "ef096bbe294af047": "2026-10-11T07:15:12.378523+00:00",
+  "27e8ffcfc22df15d": "2026-10-11T07:15:12.378523+00:00"
  },
  "resumo": [],
- "adiados": [
-  {
-   "titulo": "Financiamento público: a regra europeia que a ARDITI acompanha",
-   "link": "http://www.dnoticias.pt/2026/10/10/508533-financiamento-publico-a-regra-europeia-que-a-arditi-acompanha/",
-   "dominio": "dnoticias.pt",
-   "fonte": "dnoticias.pt",
-   "confiavel": true,
-   "nota": 34.5,
-   "pesquisa": "Apoio Estado",
-   "achadas": {
-    "alta": [
-     "financiamento"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-11T01:00:00+00:00",
-   "nivel": "alerta",
-   "ids": [
-    "ef096bbe294af047"
-   ]
-  }
- ],
- "ultimo_resumo": "2026-10-10",
+ "adiados": [],
+ "ultimo_resumo": "2026-10-11",
  "sugeridas": {
   "publico.pt": {
    "dominio": "publico.pt",
@@ -191,7 +169,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "494368cb4e6f5878",
     "428c10ea67eee23d",
     "0e03ef275fae85c6",
     "2e8c669a632b53e1",
@@ -210,14 +187,15 @@
     "862cb8a105a6d225",
     "8d88b27f4ead2fbb",
     "7ae082dc54babf69",
-    "2a35c2e7fc8261fd"
+    "2a35c2e7fc8261fd",
+    "27e8ffcfc22df15d"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "cnnbrasil.com.br": {
    "nome": "CNN Brasil",
@@ -262,7 +240,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "antenalivre.pt": {
    "nome": "Antena Livre",
@@ -275,7 +253,7 @@
     "Sertã"
    ],
    "exemplo": "Sertã: Castanhas e Frutos secos em destaque nos Produtos da Terra",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "mediotejo.net": {
    "nome": "Médio Tejo",
@@ -304,7 +282,7 @@
     "Sertã"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
@@ -331,7 +309,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -343,7 +321,7 @@
     "Sertã"
    ],
    "exemplo": "SERTÃ: Grupo Coral do Sertanense celebra 20.º aniversário com encontro de coros",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -372,7 +350,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -423,7 +401,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Orçamento do Estado reforça valorização dos rendimentos e apoios às famílias e empresas",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "jornaldenegocios.pt": {
    "nome": "Jornal de Negócios",
@@ -497,7 +475,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Menos IRS, aumentos nos salários e pensões e reforço de alguns apoios sociais. O que muda com o novo Orçamento do Estado?",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -509,7 +487,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Cancro: 5 associações que dão apoio gratuito a doentes",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "pplware.sapo.pt": {
    "nome": "Pplware",
@@ -607,7 +585,7 @@
     "Apoio Estado"
    ],
    "exemplo": "PROAGES simplificado para facilitar apoios às famílias que ficam de fora dos apoios sociais",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "24 Notícias",
@@ -2703,7 +2681,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-10-11T07:15:12.378523+00:00"
   },
   "bra1.com.br": {
    "nome": "bra1.com.br",
@@ -3400,6 +3378,24 @@
    "fonte": "SAPO",
    "nota": 27.0,
    "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-10-11T07:15:12.378523+00:00",
+   "titulo": "Financiamento público: a regra europeia que a ARDITI acompanha",
+   "link": "http://www.dnoticias.pt/2026/10/10/508533-financiamento-publico-a-regra-europeia-que-a-arditi-acompanha/",
+   "fonte": "dnoticias.pt",
+   "nota": 34.5,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-10-11T07:15:12.378523+00:00",
+   "titulo": "Instituto Superior Miguel Torga e Fundação Mata do Bussaco unem esforços para desenvolver projeto “Floresta Terapêutica”",
+   "link": "https://sapo.pt/artigo/instituto-superior-miguel-torga-e-fundacao-mata-do-bussaco-unem-esforcos-para-desenvolver-projeto-floresta-terapeutica-6acb302067f99269c840f779",
+   "fonte": "SAPO",
+   "nota": 16.5,
+   "pesquisa": "Apoio Estado"
   }
  ],
  "execucoes": [
@@ -3695,10 +3691,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-10-11T07:15:12.378523+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 308,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio Estado",
+     "recolhidas": 298,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 1,
+   "resumo": 1,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [
+    "Câmara da Sertã",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-10-11T01:26:19.130215+00:00"
+  "cm-serta.pt": "2026-10-11T07:15:12.378523+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
