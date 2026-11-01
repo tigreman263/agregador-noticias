@@ -90,7 +90,12 @@ nav.tabs{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid v
 .tab .ic{font-size:18px;line-height:1}
 .toast{position:fixed;left:50%;bottom:84px;transform:translateX(-50%);background:var(--text);color:var(--bg);padding:10px 14px;border-radius:12px;font-size:14px;max-width:min(92vw,520px);z-index:10;box-shadow:0 6px 24px rgba(0,0,0,.2)}
 details summary{cursor:pointer;font-weight:600;font-size:14px}
-code{font-size:12px;background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 5px;word-break:break-all}
+code{font-size:12px;background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 5px;overflow-wrap:anywhere}
+.guia{background:var(--accent-soft);color:var(--accent-soft-ink);border-radius:12px;padding:10px 12px;margin-bottom:14px;font-size:13px}
+.guia summary{color:inherit}
+.guia ol{margin:8px 0 6px}
+.passo{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin:18px 0 8px;padding-top:12px;border-top:1px solid var(--line)}
+::placeholder{color:var(--muted);opacity:.7}
 ol{padding-left:20px;margin:6px 0}
 ol li{margin-bottom:6px}
 </style>
@@ -455,17 +460,30 @@ function vistaEditor() {
   const ps = (S.config && S.config.pesquisas) || [];
   const p = S.editar >= 0 ? ps[S.editar] : { nome: "", ativa: true, consulta: "", obrigatorias: [], palavras: { alta: [], media: [], baixa: [] }, excluir: [], limite_alerta: 25, limite_resumo: 10, feeds_extra: [], paginas_extra: [] };
   const pal = p.palavras || {};
-  const campo = (id, rot, val, dica, tipo) => '<div class="field"><label for="' + id + '">' + rot + "</label>" + (tipo === "area" ? '<textarea id="' + id + '">' + esc(val) + "</textarea>" : '<input type="' + (tipo || "text") + '" id="' + id + '" value="' + esc(val) + '">') + (dica ? '<div class="hint">' + dica + "</div>" : "") + "</div>";
+  const campo = (id, rot, val, dica, tipo, exemplo) => '<div class="field"><label for="' + id + '">' + rot + "</label>" + (tipo === "area" ? '<textarea id="' + id + '"' + (exemplo ? ' placeholder="' + esc(exemplo) + '"' : "") + ">" + esc(val) + "</textarea>" : '<input type="' + (tipo || "text") + '" id="' + id + '" value="' + esc(val) + '"' + (exemplo ? ' placeholder="' + esc(exemplo) + '"' : "") + ">") + (dica ? '<div class="hint">' + dica + "</div>" : "") + "</div>";
+  const passo = t => '<div class="passo">' + t + "</div>";
   let h = '<div class="top"><h1>' + (S.editar >= 0 ? "Editar" : "Nova pesquisa") + '</h1><button class="btn btn-sm" data-a="cancelar">Cancelar</button></div><div class="card">';
-  h += campo("f-nome", "Nome", p.nome, "Ex: Sertã, Apoios à agricultura");
-  h += campo("f-consulta", "O que procurar no Google Notícias", p.consulta || "", "Ex: Sertã ou \"apoios agricultura\"");
-  h += campo("f-obrig", "Palavras obrigatórias", (p.obrigatorias || []).join(", "), "A notícia só conta se tiver todas estas palavras. Deixa vazio para aceitar notícias de qualquer lugar. Com variantes (<code>sertã / sertanense</code>) basta uma.");
-  h += campo("f-alta", "Prioridade alta (10 pontos)", (pal.alta || []).join(", "), "Separa por vírgulas. No título valem o dobro. Singular e plural já contam como a mesma palavra. Variantes do mesmo conceito juntam-se com <code>/</code> e contam uma só vez: <code>regulação / regulamento / regulamentação</code>.", "area");
-  h += campo("f-media", "Prioridade média (4 pontos)", (pal.media || []).join(", "), "", "area");
-  h += campo("f-baixa", "Prioridade baixa (1 ponto)", (pal.baixa || []).join(", "), "", "area");
-  h += campo("f-excluir", "Palavras a excluir", (p.excluir || []).join(", "), "Se aparecer uma, a notícia é descartada.");
-  h += '<div class="grid2">' + campo("f-lalerta", "Nota para alerta", p.limite_alerta || 25, "Mensagem imediata", "number") + campo("f-lresumo", "Nota para resumo", p.limite_resumo || 10, "Vai no resumo diário", "number") + "</div>";
-  h += '<details><summary>Fontes só desta pesquisa</summary><div style="margin-top:10px">';
+  h += '<details class="guia"' + (S.editar >= 0 ? "" : " open") + "><summary>Como preencher (4 perguntas)</summary><ol>"
+    + "<li><b>Onde ou o quê?</b> → o que procurar no Google Notícias.</li>"
+    + "<li><b>O que a notícia <u>tem</u> de ter?</b> → obrigatórias (normalmente o <b>sítio</b> e o <b>tipo de coisa</b>).</li>"
+    + "<li><b>O que a torna mais importante?</b> → prioridades.</li>"
+    + "<li><b>O que nunca te interessa?</b> → excluir (pode ficar vazio).</li></ol>"
+    + "Regra prática: <b>condição</b> (“tem de ser da Sertã”) vai para as obrigatórias; <b>preferência</b> (“melhor se for agrícola”) vai para as prioridades. Os exemplos a cinzento são para a pesquisa “apoios do município da Sertã”.</details>";
+  h += campo("f-nome", "Nome", p.nome, "Só serve para reconheceres a pesquisa nas mensagens do Telegram. Pode ser qualquer coisa.", "text", "Apoios Sertã");
+  h += passo("1 · Onde procurar");
+  h += campo("f-consulta", "O que procurar no Google Notícias", p.consulta || "", "O essencial, em 1 ou 2 palavras — normalmente o sítio. Isto só decide o que é <b>recolhido</b>, não filtra: se escreveres só <code>apoios</code>, vêm apoios de todo o país.", "text", "Sertã");
+  h += passo("2 · O que a notícia tem de ter");
+  h += campo("f-obrig", "Palavras obrigatórias", (p.obrigatorias || []).join(", "), "A notícia só passa se tiver <b>todas</b> (separadas por vírgulas). Com <code>/</code> escreves variantes da mesma ideia, e basta uma. Ex: <code>sertã / sertanense, apoio / subsídio</code> = tem de falar da Sertã <b>e</b> de apoios. Vazio = aceita notícias de qualquer lugar.", "text", "sertã / sertanense, apoio / subsídio / incentivo / candidatura");
+  h += passo("3 · O que a torna mais importante");
+  h += '<div class="hint" style="margin:-4px 0 10px">Separa por vírgulas. Cada palavra encontrada dá pontos; <b>no título vale o dobro</b>. Singular e plural contam como a mesma. Variantes com <code>/</code> contam uma só vez. Notícia com 0 pontos é descartada.</div>';
+  h += campo("f-alta", "Muito importante (10 pontos)", (pal.alta || []).join(", "), "O tema central do que procuras.", "area", "agricultura / agrícola, floresta / florestal, apoio / subsídio");
+  h += campo("f-media", "Importante (4 pontos)", (pal.media || []).join(", "), "Ajuda a confirmar que é do teu interesse.", "area", "município / câmara municipal, candidatura / inscrições, regulamento");
+  h += campo("f-baixa", "Um pouco (1 ponto)", (pal.baixa || []).join(", "), "Extras que só servem para desempatar.", "area", "famílias, empresas, associações");
+  h += passo("4 · O que nunca te interessa");
+  h += campo("f-excluir", "Palavras a excluir", (p.excluir || []).join(", "), "Se aparecer uma (palavra inteira), a notícia é deitada fora. Podes deixar vazio e juntar quando começar a aparecer lixo.", "text", "futebol, acidente");
+  h += passo("Quando avisar");
+  h += '<div class="grid2">' + campo("f-lalerta", "Nota para alerta", p.limite_alerta || 25, "A partir desta nota: mensagem imediata. Duas palavras “muito importantes” no título (20+20) já chegam.", "number") + campo("f-lresumo", "Nota para resumo", p.limite_resumo || 10, "Entre esta e a do alerta: resumo diário. Abaixo: ignorada.", "number") + "</div>";
+  h += '<details><summary>Fontes só desta pesquisa (opcional)</summary><div style="margin-top:10px">';
   h += campo("f-feeds", "Feeds RSS", linhasFontes(p.feeds_extra), "Um por linha: <code>Nome | https://endereço-do-feed</code>. Junta <code>| local</code> se a fonte só publica deste lugar (dispensa as obrigatórias).", "area");
   h += campo("f-paginas", "Sites sem RSS", linhasFontes(p.paginas_extra), "Um por linha: <code>Nome | https://página-de-notícias</code>. A app deteta as notícias sozinha.", "area");
   h += "</div></details>";
