@@ -74,7 +74,13 @@
   "fc416c7429fd6c43": "2026-11-01T20:45:44.317593+00:00",
   "485b09ebd8104f44": "2026-11-01T20:45:44.317593+00:00",
   "4e196b3fd6bfde2d": "2026-11-01T20:45:44.317593+00:00",
-  "19d9876f04b9933e": "2026-11-01T20:45:44.317593+00:00"
+  "19d9876f04b9933e": "2026-11-01T20:45:44.317593+00:00",
+  "5f6f6095337e1510": "2026-11-01T21:45:48.326067+00:00",
+  "df423e1e578b5516": "2026-11-01T21:45:48.326067+00:00",
+  "5e5353928b0fbcc4": "2026-11-01T21:45:48.326067+00:00",
+  "ec6c144a33747e6f": "2026-11-01T21:45:48.326067+00:00",
+  "e6b29974d1ae411c": "2026-11-01T21:45:48.326067+00:00",
+  "0acfc3a3f243437f": "2026-11-01T21:45:48.326067+00:00"
  },
  "resumo": [
   {
@@ -1092,6 +1098,75 @@
     "4e196b3fd6bfde2d"
    ],
    "ts": "2026-11-01T20:45:44.317593+00:00"
+  },
+  {
+   "titulo": "Bombeiros alertam para falta de apoio a corporações",
+   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQeDJkWUxtMVZWQWNDcVB6dllFTzRIZ0FYc2V6TXNrejBhcWpsNjVPVmZZSUlZV0lXTnJQQnVTaUtXTWlNa0VLNWJVU2thclIwQ09GRkI4V1poZkVJWTN5MEtSMGo2NzZmMGEzREFwa3h4bEs5cXpsYUFnYWRwLTEyTk56YlF5Qkx2b2c4X1JnUGJsTGJndGRPUEE4NHROTWdyWm11SkEwQ3hvc2h3TVpWRjlYZmlfSzRnWUVSNVBUblBHa29EampVMUdqaTdUcXc5aWJkMG1sSk05UGU0LUhWQTZHcUhCeVBmMFd0cGladVVLN2JNNGc?oc=5",
+   "dominio": "observador.pt",
+   "fonte": "Observador",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [
+     "Apoios"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T13:58:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "5f6f6095337e1510"
+   ],
+   "ts": "2026-11-01T21:45:48.326067+00:00"
+  },
+  {
+   "titulo": "Condutores punidos por buzinar em protesto no Rossio",
+   "link": "https://sapo.pt/artigo/condutores-punidos-por-buzinar-em-protesto-no-rossio-6ae7aeef7a19de6f9c2e4900",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 19.5,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [
+     "Apoios"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T21:11:47+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "df423e1e578b5516"
+   ],
+   "ts": "2026-11-01T21:45:48.326067+00:00"
+  },
+  {
+   "titulo": "Centro Municipal de Recolha Temporária de Volumosos entra em funcionamento a partir de 4 de novembro, junto ao Largo de Machede Velho",
+   "link": "https://sapo.pt/artigo/centro-municipal-de-recolha-temporaria-de-volumosos-entra-em-funcionamento-a-partir-de-4-de-novembro-junto-ao-largo-de-machede-velho-6ae7a565767278ab51380452",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 15.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [
+     "Camara municipal"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T20:41:37+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "5e5353928b0fbcc4"
+   ],
+   "ts": "2026-11-01T21:45:48.326067+00:00"
   }
  ],
  "adiados": [],
@@ -1139,8 +1214,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "6e0def7c1e222cec",
-    "403dab70166a97ba",
     "027be376b2d4f80f",
     "f56a792d50590ce3",
     "43009cf9b5dba1ca",
@@ -1158,14 +1231,16 @@
     "2a265a785668d0f4",
     "fc416c7429fd6c43",
     "485b09ebd8104f44",
-    "4e196b3fd6bfde2d"
+    "4e196b3fd6bfde2d",
+    "df423e1e578b5516",
+    "5e5353928b0fbcc4"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -1222,7 +1297,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -1275,7 +1350,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -1320,7 +1395,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -1401,7 +1476,7 @@
     "Sertã"
    ],
    "exemplo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "contacto.lu": {
    "nome": "contacto.lu",
@@ -1413,7 +1488,7 @@
     "Sertã"
    ],
    "exemplo": "Quem beneficia realmente dos apoios à energia?",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "radionovaantena.com": {
    "nome": "Rádio Nova Antena",
@@ -1425,7 +1500,7 @@
     "Sertã"
    ],
    "exemplo": "Montemor-o-Novo reforça apoios às famílias e prepara recuperação da Escola Básica n.º 1",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "alentejo.sulinformacao.pt": {
    "nome": "Sul Informação Alentejo",
@@ -1437,7 +1512,7 @@
     "Sertã"
    ],
    "exemplo": "Odemira dá 515 mil euros em apoios a clubes e associações desportivas do concelho",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "impala.pt": {
    "nome": "Portal Impala",
@@ -1473,7 +1548,7 @@
     "Sertã"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -1486,7 +1561,7 @@
     "Sertã"
    ],
    "exemplo": "Agricultores dos Açores pedem 23 milhões de euros em apoios do Governo",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "ambienteonline.pt": {
    "nome": "Água&Ambiente Online",
@@ -1529,13 +1604,14 @@
    "nome": "Observador",
    "site": "https://observador.pt",
    "ids": [
-    "b72879cdb7c92c7f"
+    "b72879cdb7c92c7f",
+    "5f6f6095337e1510"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "jm-madeira.pt": {
    "nome": "JM Madeira",
@@ -1547,7 +1623,7 @@
     "Sertã"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -1559,7 +1635,7 @@
     "Sertã"
    ],
    "exemplo": "João Lopes Aleixo questionou apoios para os territórios de baixa densidade (C/VÍDEO)",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "portal-energia.com": {
    "nome": "Portal Energia",
@@ -1573,7 +1649,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1585,7 +1661,7 @@
     "Sertã"
    ],
    "exemplo": "O paradoxo do novo apoio elétrico: quem ganha o salário mínimo fica de fora",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "turbo.pt": {
    "nome": "Revista Turbo",
@@ -1609,7 +1685,7 @@
     "Sertã"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -1625,7 +1701,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Estado vai comparticipar até 80% da compra de carros elétricos para famílias com baixos rendimentos",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "dnoticias.pt": {
    "nome": "dnoticias.pt",
@@ -1639,7 +1715,7 @@
     "Sertã"
    ],
    "exemplo": "Mau tempo põe abastecimento de água em alerta nos Prazeres",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "eco.sapo.pt": {
    "nome": "SAPO",
@@ -1663,7 +1739,7 @@
     "Sertã"
    ],
    "exemplo": "Município português investe em apoios financeiros aos estudantes",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   },
   "jornaldenegocios.pt": {
    "nome": "Jornal de Negócios",
@@ -1687,7 +1763,21 @@
     "Sertã"
    ],
    "exemplo": "Município de Vila Viçosa entrega novo apoio financeiro a família no âmbito do Programa de Apoio à Natalidade",
-   "ultima": "2026-11-01T20:45:44.317593+00:00"
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
+  },
+  "cnnportugal.iol.pt": {
+   "nome": "CNN Portugal",
+   "site": "https://cnnportugal.iol.pt",
+   "ids": [
+    "ec6c144a33747e6f",
+    "e6b29974d1ae411c"
+   ],
+   "pesquisas": [
+    "Sertã",
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "Polícia está a multar condutores que buzinam em apoio à manifestação no Rossio",
+   "ultima": "2026-11-01T21:45:48.326067+00:00"
   }
  },
  "ultima_descoberta": "2026-11-01",
@@ -2095,6 +2185,33 @@
    "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQeHpoSXgyVWE1ZVVfRmNLdXpERnJEOXZLQ1NSTVZGZi1GMEozcXExRlFySTNmV09nalBFN2hfeDFncENCZ1pXRThyd2VuZmZudkJrSnNLeHA0UkloUWRDNTFtN2FySWtodXNFNzNuZ2d0RG1rNVR6dHdTRWVobGpQS2tKbGVoLXN6RGpXUHd0S1BGNE9od2pkTE5fZ2JwdkxidUM1SkxwWkxfT0laNWRqZDZBR1pnX3lqdGhsUnMtb2NzcVEyZkJmNUtOcjZaQ3c3bVdHZ2ExYmdJc1k?oc=5",
    "fonte": "Rádio Elvas",
    "nota": 40.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T21:45:48.326067+00:00",
+   "titulo": "Polícia está a multar condutores que buzinam em apoio à manifestação no Rossio",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOc3N1bXlYNGcybHR5eXNyZHpDUWFNVExWYlhOa3lQYUM0SEMxM2RsdkxHcVFNVHJIb3pYLWJfQUdNdGotVFVZaTZPbVluTEFCS2l5SFk1cFNqWURBSmdfcDBqdjNZM1BEb2NmcmtEOFpkWXBTY3h4RTkwcUNCdVZoUXh5QzNfWWNFbjN6cWdpM2dEZ1lzVFF3alc3aG5pcEQ3V0lJdEFCMVd1ZmxXOXFDbDRjOXlXYlJuZU05YnR2NlktUUIyVXZfMXV0LWZOOG5UMzIw?oc=5",
+   "fonte": "CNN Portugal",
+   "nota": 34.5,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T21:45:48.326067+00:00",
+   "titulo": "Polícia está a multar condutores que buzinam em apoio à manifestação no Rossio",
+   "link": "https://cnnportugal.iol.pt/videos/policia-esta-a-multar-condutores-que-buzinam-em-apoio-a-manifestacao-no-rossio/6ae7aa960cf2e5e7f37cba56",
+   "fonte": "CNN Portugal",
+   "nota": 34.5,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T21:45:48.326067+00:00",
+   "titulo": "Bombeiros de Leiria alertam para falta de apoio às corporações afetadas pelas tempestades",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeWZQTjVoUElTTGNYd1lBY2hRZm1DUVpZYmZoRzl5X3I1aWZsWFpEakstVlBWY1lkZ0J5cGZCcUhWei0wT19uN1duU1l5UTFzdlhEOHVVN3AzeUQzT2dUWFpsTGVvRGo2dVhyQmlqLUU0OU14QVgzMWxpMWxLakNDYUd4X3pUZXBEdTB6VVNqUV96SnlOYjlXTFJldWNCNkV1bTlSQ0VXMGxVX2lkQzR6YmtIc0R0VEJ0OHhJbW5aSUplUVRnTk9QaXE1TUllcFkyV2xj?oc=5",
+   "fonte": "SAPO",
+   "nota": 30.0,
    "pesquisa": "Sertã"
   }
  ],
@@ -2768,10 +2885,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-01T21:45:48.326067+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 285,
+     "relevantes": 5,
+     "alertas": 2
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 267,
+     "relevantes": 1,
+     "alertas": 1
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 3,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-01T20:45:44.317593+00:00"
+  "cm-serta.pt": "2026-11-01T21:45:48.326067+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
