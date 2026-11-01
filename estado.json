@@ -80,7 +80,8 @@
   "5e5353928b0fbcc4": "2026-11-01T21:45:48.326067+00:00",
   "ec6c144a33747e6f": "2026-11-01T21:45:48.326067+00:00",
   "e6b29974d1ae411c": "2026-11-01T21:45:48.326067+00:00",
-  "0acfc3a3f243437f": "2026-11-01T21:45:48.326067+00:00"
+  "0acfc3a3f243437f": "2026-11-01T21:45:48.326067+00:00",
+  "adc06d5f8b52e038": "2026-11-01T23:45:45.028406+00:00"
  },
  "resumo": [
   {
@@ -1169,7 +1170,30 @@
    "ts": "2026-11-01T21:45:48.326067+00:00"
   }
  ],
- "adiados": [],
+ "adiados": [
+  {
+   "titulo": "Polícia multou condutores que buzinaram em apoio no Rossio. \"Vamos ver se não vão acicatar ainda mais os manifestantes\"",
+   "link": "https://cnnportugal.iol.pt/videos/policia-multou-condutores-que-buzinaram-em-apoio-no-rossio-vamos-ver-se-nao-vao-acicatar-ainda-mais-os-manifestantes/6ae7bd020cf22b9f8905364d",
+   "dominio": "cnnportugal.iol.pt",
+   "fonte": "CNN Portugal",
+   "confiavel": true,
+   "nota": 34.5,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Apoios"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T23:06:00+00:00",
+   "nivel": "alerta",
+   "ids": [
+    "adc06d5f8b52e038"
+   ]
+  }
+ ],
  "ultimo_resumo": "2026-11-01",
  "sugeridas": {
   "centralpress.pt": {
@@ -1350,7 +1374,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-01T22:45:50.326590+00:00"
+   "ultima": "2026-11-01T23:45:45.028406+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -1701,7 +1725,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Estado vai comparticipar até 80% da compra de carros elétricos para famílias com baixos rendimentos",
-   "ultima": "2026-11-01T22:45:50.326590+00:00"
+   "ultima": "2026-11-01T23:45:45.028406+00:00"
   },
   "dnoticias.pt": {
    "nome": "dnoticias.pt",
@@ -1770,14 +1794,15 @@
    "site": "https://cnnportugal.iol.pt",
    "ids": [
     "ec6c144a33747e6f",
-    "e6b29974d1ae411c"
+    "e6b29974d1ae411c",
+    "adc06d5f8b52e038"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Polícia está a multar condutores que buzinam em apoio à manifestação no Rossio",
-   "ultima": "2026-11-01T22:45:50.326590+00:00"
+   "ultima": "2026-11-01T23:45:45.028406+00:00"
   }
  },
  "ultima_descoberta": "2026-11-01",
@@ -2945,10 +2970,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-01T23:45:45.028406+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 285,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 221,
+     "relevantes": 1,
+     "alertas": 1
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-01T22:45:50.326590+00:00"
+  "cm-serta.pt": "2026-11-01T23:45:45.028406+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
