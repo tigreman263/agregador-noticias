@@ -68,7 +68,13 @@
   "86e21b6273ef5fd5": "2026-11-01T18:45:59.659204+00:00",
   "30d90b08fb70f0c7": "2026-11-01T19:45:47.037734+00:00",
   "e7f29046192abf85": "2026-11-01T19:45:47.037734+00:00",
-  "0cccb15b90e9a1b5": "2026-11-01T19:45:47.037734+00:00"
+  "0cccb15b90e9a1b5": "2026-11-01T19:45:47.037734+00:00",
+  "d3484237e17209f8": "2026-11-01T20:45:44.317593+00:00",
+  "2a265a785668d0f4": "2026-11-01T20:45:44.317593+00:00",
+  "fc416c7429fd6c43": "2026-11-01T20:45:44.317593+00:00",
+  "485b09ebd8104f44": "2026-11-01T20:45:44.317593+00:00",
+  "4e196b3fd6bfde2d": "2026-11-01T20:45:44.317593+00:00",
+  "19d9876f04b9933e": "2026-11-01T20:45:44.317593+00:00"
  },
  "resumo": [
   {
@@ -971,6 +977,121 @@
     "86e21b6273ef5fd5"
    ],
    "ts": "2026-11-01T18:45:59.659204+00:00"
+  },
+  {
+   "titulo": "Apoio a 80% para famílias carenciadas só permite comprar três modelos",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxORGtESEtKZld5NE9PT2xMMC1vdnVNcHdkblU2SHN4aU5HQ2NkZ1ZUczVmalQ5RlVBdkZMbFdCM19DWlEzSnhsY2pSblNoWFlFU2lwbUFILUx0ak1GYVZaZnZmZGd3SFBpNzZGR0JNRnFSQnRXdzREZHZGUnZQc1VBREhXNzQ2Nm9yYl9rUFhUZU9XUUtKTURHUXdTUGN3alN1UzY1OG9uUVZ5bzFDd18zMnlOM3RpZ3ZPS3BwZ3VCRGtNRG1weHc?oc=5",
+   "dominio": "jornaldenegocios.pt",
+   "fonte": "Jornal de Negócios",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [
+     "Apoios"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T17:01:32+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "d3484237e17209f8"
+   ],
+   "ts": "2026-11-01T20:45:44.317593+00:00"
+  },
+  {
+   "titulo": "EUA/Eleições: Democrata apoia candidato republicano ao Senado e Trump aplaude",
+   "link": "https://sapo.pt/artigo/eua-eleicoes-democrata-apoia-candidato-republicano-ao-senado-e-trump-aplaude-6ae79bd97a19de6f9c2bfb61",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 19.5,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [
+     "Apoios"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T20:04:18+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "2a265a785668d0f4"
+   ],
+   "ts": "2026-11-01T20:45:44.317593+00:00"
+  },
+  {
+   "titulo": "Reviravolta: ex-rival democrata de Sayed apoia republicanos",
+   "link": "https://sapo.pt/artigo/reviravolta-ex-rival-democrata-de-sayed-apoia-republicanos-6ae796bd7a19de6f9c2afee5",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 15.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [
+     "Apoios"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T19:40:36+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "fc416c7429fd6c43"
+   ],
+   "ts": "2026-11-01T20:45:44.317593+00:00"
+  },
+  {
+   "titulo": "EUA/Eleições: Democrata apoia candidato republicano ao Senado e Trump aplaude",
+   "link": "https://sapo.pt/artigo/eua-eleicoes-democrata-apoia-candidato-republicano-ao-senado-e-trump-aplaude-6ae79bd97a19de6f9c2bfb61",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 19.5,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Apoios"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T20:04:18+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "485b09ebd8104f44"
+   ],
+   "ts": "2026-11-01T20:45:44.317593+00:00"
+  },
+  {
+   "titulo": "Reviravolta: ex-rival democrata de Sayed apoia republicanos",
+   "link": "https://sapo.pt/artigo/reviravolta-ex-rival-democrata-de-sayed-apoia-republicanos-6ae796bd7a19de6f9c2afee5",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 15.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Apoios"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T19:40:36+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "4e196b3fd6bfde2d"
+   ],
+   "ts": "2026-11-01T20:45:44.317593+00:00"
   }
  ],
  "adiados": [],
@@ -1018,10 +1139,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "d1fe5320dafc19b7",
-    "73bff08f4210ccad",
-    "873b8fe6457d304e",
-    "18cc34ff33731493",
     "6e0def7c1e222cec",
     "403dab70166a97ba",
     "027be376b2d4f80f",
@@ -1037,14 +1154,18 @@
     "86e21b6273ef5fd5",
     "30d90b08fb70f0c7",
     "e7f29046192abf85",
-    "0cccb15b90e9a1b5"
+    "0cccb15b90e9a1b5",
+    "2a265a785668d0f4",
+    "fc416c7429fd6c43",
+    "485b09ebd8104f44",
+    "4e196b3fd6bfde2d"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -1101,7 +1222,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -1154,7 +1275,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -1199,7 +1320,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -1280,7 +1401,7 @@
     "Sertã"
    ],
    "exemplo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "contacto.lu": {
    "nome": "contacto.lu",
@@ -1292,7 +1413,7 @@
     "Sertã"
    ],
    "exemplo": "Quem beneficia realmente dos apoios à energia?",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "radionovaantena.com": {
    "nome": "Rádio Nova Antena",
@@ -1304,7 +1425,7 @@
     "Sertã"
    ],
    "exemplo": "Montemor-o-Novo reforça apoios às famílias e prepara recuperação da Escola Básica n.º 1",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "alentejo.sulinformacao.pt": {
    "nome": "Sul Informação Alentejo",
@@ -1316,7 +1437,7 @@
     "Sertã"
    ],
    "exemplo": "Odemira dá 515 mil euros em apoios a clubes e associações desportivas do concelho",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "impala.pt": {
    "nome": "Portal Impala",
@@ -1328,7 +1449,7 @@
     "Sertã"
    ],
    "exemplo": "Bombeiros de Leiria alertam para falta de apoio às corporações",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "jn.pt": {
    "nome": "Jornal de Notícias",
@@ -1340,7 +1461,7 @@
     "Sertã"
    ],
    "exemplo": "Quem ganha o salário mínimo já não tem acesso a novo apoio para carros elétricos",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "publico.pt": {
    "nome": "Público",
@@ -1352,7 +1473,7 @@
     "Sertã"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -1365,7 +1486,7 @@
     "Sertã"
    ],
    "exemplo": "Agricultores dos Açores pedem 23 milhões de euros em apoios do Governo",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "ambienteonline.pt": {
    "nome": "Água&Ambiente Online",
@@ -1402,7 +1523,7 @@
     "Sertã"
    ],
    "exemplo": "Regiões autónomas integram apoios nacionais à agricultura devido aos custos de produção",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "observador.pt": {
    "nome": "Observador",
@@ -1414,7 +1535,7 @@
     "Sertã"
    ],
    "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "jm-madeira.pt": {
    "nome": "JM Madeira",
@@ -1426,7 +1547,7 @@
     "Sertã"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -1438,7 +1559,7 @@
     "Sertã"
    ],
    "exemplo": "João Lopes Aleixo questionou apoios para os territórios de baixa densidade (C/VÍDEO)",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "portal-energia.com": {
    "nome": "Portal Energia",
@@ -1452,7 +1573,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1464,7 +1585,7 @@
     "Sertã"
    ],
    "exemplo": "O paradoxo do novo apoio elétrico: quem ganha o salário mínimo fica de fora",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "turbo.pt": {
    "nome": "Revista Turbo",
@@ -1488,7 +1609,7 @@
     "Sertã"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -1504,7 +1625,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Estado vai comparticipar até 80% da compra de carros elétricos para famílias com baixos rendimentos",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "dnoticias.pt": {
    "nome": "dnoticias.pt",
@@ -1518,7 +1639,7 @@
     "Sertã"
    ],
    "exemplo": "Mau tempo põe abastecimento de água em alerta nos Prazeres",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   },
   "eco.sapo.pt": {
    "nome": "SAPO",
@@ -1542,7 +1663,31 @@
     "Sertã"
    ],
    "exemplo": "Município português investe em apoios financeiros aos estudantes",
-   "ultima": "2026-11-01T19:45:47.037734+00:00"
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
+  },
+  "jornaldenegocios.pt": {
+   "nome": "Jornal de Negócios",
+   "site": "https://www.jornaldenegocios.pt",
+   "ids": [
+    "d3484237e17209f8"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Apoio a 80% para famílias carenciadas só permite comprar três modelos",
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
+  },
+  "radioelvas.com": {
+   "nome": "Rádio Elvas",
+   "site": "https://radioelvas.com",
+   "ids": [
+    "19d9876f04b9933e"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Município de Vila Viçosa entrega novo apoio financeiro a família no âmbito do Programa de Apoio à Natalidade",
+   "ultima": "2026-11-01T20:45:44.317593+00:00"
   }
  },
  "ultima_descoberta": "2026-11-01",
@@ -1942,6 +2087,15 @@
    "fonte": "SAPO",
    "nota": 34.5,
    "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T20:45:44.317593+00:00",
+   "titulo": "Município de Vila Viçosa entrega novo apoio financeiro a família no âmbito do Programa de Apoio à Natalidade",
+   "link": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQeHpoSXgyVWE1ZVVfRmNLdXpERnJEOXZLQ1NSTVZGZi1GMEozcXExRlFySTNmV09nalBFN2hfeDFncENCZ1pXRThyd2VuZmZudkJrSnNLeHA0UkloUWRDNTFtN2FySWtodXNFNzNuZ2d0RG1rNVR6dHdTRWVobGpQS2tKbGVoLXN6RGpXUHd0S1BGNE9od2pkTE5fZ2JwdkxidUM1SkxwWkxfT0laNWRqZDZBR1pnX3lqdGhsUnMtb2NzcVEyZkJmNUtOcjZaQ3c3bVdHZ2ExYmdJc1k?oc=5",
+   "fonte": "Rádio Elvas",
+   "nota": 40.0,
+   "pesquisa": "Sertã"
   }
  ],
  "execucoes": [
@@ -2584,10 +2738,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-01T20:45:44.317593+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 285,
+     "relevantes": 4,
+     "alertas": 1
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 220,
+     "relevantes": 2,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 1,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-01T19:45:47.037734+00:00"
+  "cm-serta.pt": "2026-11-01T20:45:44.317593+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
