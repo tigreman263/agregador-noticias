@@ -8,6 +8,10 @@ gratuito do Cloudflare, sem servidor e sem custos. Geres tudo num **painel** que
 - Repositório: https://github.com/tigreman263/agregador-noticias
 - Painel: https://tigreman263.github.io/agregador-noticias/painel/
 
+> **Depois de instalado, só há uma coisa a vigiar: as datas de validade dos tokens do
+> GitHub.** Vê a [secção 12](#12-manutenção-o-que-expira-e-como-renovar) e põe lembretes
+> no calendário, para o agregador nunca parar.
+
 ## Índice
 
 1. [Como funciona](#1-como-funciona)
@@ -38,6 +42,7 @@ gratuito do Cloudflare, sem servidor e sem custos. Geres tudo num **painel** que
 9. [Ficheiros do projeto](#9-ficheiros-do-projeto)
 10. [Resolução de problemas](#10-resolução-de-problemas)
 11. [Limites](#11-limites)
+12. [Manutenção: o que expira e como renovar](#12-manutenção-o-que-expira-e-como-renovar)
 
 ---
 
@@ -156,8 +161,15 @@ correr ações, precisa de um token do GitHub:
 6. No painel, secção **Ligação**: cola o token e carrega em **Guardar e testar**.
    Deve aparecer "Ligado: podes ler e gravar".
 
-O token fica guardado só nesse navegador. Num aparelho partilhado, usa
-**Esquecer token** no fim. Quando o token expirar, cria outro da mesma forma.
+O token fica guardado **só nesse navegador**: o painel no telemóvel e o painel no
+computador precisam cada um de ter o token colado em **Ligação** (podes usar o mesmo
+token nos dois, ou um para cada; se o painel disser "para correr ações, junta primeiro um
+token em Ligação", é isto que falta nesse aparelho). Para passar o token para o
+telemóvel, cola-o nas **Mensagens guardadas** do Telegram, copia-o de lá e apaga a
+mensagem. Num aparelho partilhado, usa **Esquecer token** no fim.
+
+**Anota a data de validade** e põe um lembrete uma semana antes: quando o token expira, o
+painel passa a "só leitura". Como renovar: [secção 12](#12-manutenção-o-que-expira-e-como-renovar).
 
 ### 2.7 (Opcional) Telemóvel para sites que bloqueiam o GitHub
 
@@ -627,12 +639,20 @@ Foi criado sem a caixa **Segredo** marcada, e o Worker publicou-se de novo a par
 GitHub. Cria-o outra vez, com a caixa marcada.
 
 **Um token expirou**
-- Token do Worker (`GITHUB_TOKEN`): o bot avisa às 9h e as execuções "automática
-  (Cloudflare)" param. Cria outro (passo 2.8, ponto 1) e troca-o no Cloudflare.
-- Token do painel: o painel diz que o token não é válido. Cria outro (passo 2.6) e cola-o em
-  **Ligação**.
-- Token do bot (se o trocares com `/revoke` no @BotFather): atualiza `TELEGRAM_BOT_TOKEN`
-  no GitHub e no Cloudflare e abre de novo o endereço do Worker.
+Segue a [secção 12](#12-manutenção-o-que-expira-e-como-renovar). Sinais: o bot avisa às
+9h que o despertador falhou (token do Worker), o painel diz que o token não é válido ou
+fica em "só leitura" (token do painel).
+
+**As notícias da Câmara deixaram de chegar / o registo diz "telemóvel DESLIGADO" ou "NÃO é saída"**
+No registo da execução, no passo **Buscar pelo telemóvel os sites bloqueados**, aparece o
+estado do telemóvel:
+- **DESLIGADO**: abre a app Tailscale no telemóvel e liga-a.
+- **NÃO é saída**: na app, menu **⋮ → Run as exit node**. Se continuar, na consola do
+  Tailscale (**Machines → telemóvel → … → Edit route settings**) marca **Use as exit node**.
+- Para não voltar a acontecer: **Apps → Tailscale → Bateria → Sem restrições** no Android.
+
+Depois, **Verificar agora** no painel: em **Atividade**, a fonte volta a aparecer com
+**pelo telemóvel**.
 
 **"0 novas relevantes"**
 Não apareceu nada de novo com pontos suficientes; as notícias já vistas não contam.
@@ -670,3 +690,51 @@ O GitHub Pages demora 1 a 2 minutos a publicar mudanças ao painel; carrega em
 - Páginas que só mostram notícias com JavaScript, ou com certificado inválido, não são lidas.
 - Sem o Worker do Cloudflare (passo 2.8), o GitHub corre só algumas vezes por dia e os
   botões do Telegram não fazem nada.
+
+---
+
+## 12. Manutenção: o que expira e como renovar
+
+Quase tudo funciona sem prazo. **Só os tokens do GitHub expiram**, e quando expiram uma
+parte do agregador para. Anota as datas e põe lembretes no calendário (uma semana antes).
+O GitHub costuma também mandar um email uns dias antes de um token expirar.
+
+| O quê | Expira? | O que deixa de funcionar | Sinal |
+|---|---|---|---|
+| Token do GitHub do **Worker** (`GITHUB_TOKEN` no Cloudflare) | **Sim**, na data escolhida | O despertador (o GitHub volta a correr só algumas vezes por dia), os botões e os comandos do bot | O bot avisa às 9h; no painel, **Início → Frequência** fica a vermelho |
+| Token do **painel no computador** | **Sim** | Gravar pesquisas e fontes e correr ações no computador | O painel diz que o token não é válido ou fica em "só leitura" |
+| Token do **painel no telemóvel** | **Sim** (se for outro token) | O mesmo, no telemóvel | O mesmo, no telemóvel |
+| Token do **bot do Telegram** | Não (só se o revogares) | — | — |
+| `TELEGRAM_CHAT_ID` | Não | — | — |
+| Tailscale (telemóvel) | Não, se desligaste o **key expiry** (passo 2.7) | As notícias da Câmara | Registo: "telemóvel DESLIGADO" (ver secção 10) |
+| Tailscale OAuth (`TS_OAUTH_*`) | Não (só se o apagares) | — | — |
+| Cloudflare, GitHub Pages, Telegram | Não (gratuitos, sem prazo) | — | — |
+
+Os alertas e o resumo **não dependem de nenhum token que expire**: mesmo com tudo
+expirado, o GitHub continua a enviar (só que poucas vezes por dia).
+
+### Renovar um token do GitHub (5 minutos)
+
+O mais simples é **regenerar** o token: fica com as mesmas permissões e só muda o valor e
+a data.
+
+1. Abre https://github.com/settings/personal-access-tokens (Settings → Developer
+   settings → Personal access tokens → Fine-grained tokens).
+2. Carrega no token (`worker agregador` ou `painel agregador`).
+3. **Regenerate token** → escolhe a nova **Expiration** (a mais longa que deixar) →
+   **Regenerate token**. Copia o valor novo (`github_pat_…`): só aparece esta vez.
+   (Se o token já tiver sido apagado, cria um novo como no passo 2.6, com **Contents** e
+   **Actions** em **Read and write** e só o repositório `agregador-noticias`.)
+4. Cola-o onde ele é usado:
+   - **Token do Worker**: Cloudflare → **Workers e Pages → agregador-noticias →
+     Configurações → Variáveis e segredos** → `GITHUB_TOKEN` → editar → cola →
+     **Implantar**. Confirma abrindo o endereço do Worker (três ✅).
+   - **Token do painel**: em cada aparelho onde usas o painel, **Ligação** → cola no campo
+     do token → **Guardar e testar** ("Ligado: podes ler e gravar").
+5. **Atualiza o lembrete** no calendário com a nova data.
+
+### Verificação rápida (uma vez por semana, 1 minuto)
+
+- No Telegram, `/estado`: a última verificação deve ser de há menos de uma hora.
+- No painel, **Início**: "despertador ligado" a verde e a última verificação "correu bem".
+- Em **Atividade**: as fontes com falha (se a Câmara aparecer, vê o telemóvel, secção 10).
