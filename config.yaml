@@ -23,7 +23,7 @@ pesos:
 
 # Fontes: usa o domínio, sem "www" nem "https://".
 fontes:
-  confiaveis: ["sapo.pt", "mediotejo.net", "radiocondestavel.pt", "noticiasdecoimbra.pt", "radiohertz.pt", "cmjornal.pt", "dnoticias.pt", "rtp.pt", "cnnportugal.iol.pt", "gazetadointerior.pt"]
+  confiaveis: ["sapo.pt", "mediotejo.net", "radiocondestavel.pt", "noticiasdecoimbra.pt", "radiohertz.pt", "cmjornal.pt", "dnoticias.pt", "rtp.pt", "cnnportugal.iol.pt", "gazetadointerior.pt", "antenalivre.pt"]
   neutras: []
   bloqueadas: ["br"]
   feeds:
