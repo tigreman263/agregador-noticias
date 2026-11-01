@@ -63,7 +63,9 @@
   "1b892d34bda6706e": "2026-11-01T17:46:06.009199+00:00",
   "40e4deaa7e744190": "2026-11-01T17:46:06.009199+00:00",
   "b7cc1c6f08db7977": "2026-11-01T17:46:06.009199+00:00",
-  "2ebddc8f6582ce2d": "2026-11-01T17:46:06.009199+00:00"
+  "2ebddc8f6582ce2d": "2026-11-01T17:46:06.009199+00:00",
+  "607a60efa2ab6b9d": "2026-11-01T18:45:59.659204+00:00",
+  "86e21b6273ef5fd5": "2026-11-01T18:45:59.659204+00:00"
  },
  "resumo": [
   {
@@ -920,6 +922,52 @@
     "2ebddc8f6582ce2d"
    ],
    "ts": "2026-11-01T17:46:06.009199+00:00"
+  },
+  {
+   "titulo": "CASTRO DAIRE: Paulo Almeida participa no 51.º Congresso dos Poderes Locais e Regionais",
+   "link": "https://sapo.pt/artigo/castro-daire-paulo-almeida-participa-no-51-congresso-dos-poderes-locais-e-regionais-6ae77b08767278ab5130f790",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 15.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [
+     "Camara municipal"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T17:33:35+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "607a60efa2ab6b9d"
+   ],
+   "ts": "2026-11-01T18:45:59.659204+00:00"
+  },
+  {
+   "titulo": "Argentina, ex-Mossad e carrinhas: Como fugiu Flávio Bolsonaro até os EUA?",
+   "link": "https://sapo.pt/artigo/argentina-ex-mossad-e-carrinhas-como-fugiu-flavio-bolsonaro-ate-os-eua-6ae77e6a767278ab5131ce64",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 19.5,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "famílias"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T17:47:57+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "86e21b6273ef5fd5"
+   ],
+   "ts": "2026-11-01T18:45:59.659204+00:00"
   }
  ],
  "adiados": [],
@@ -967,8 +1015,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "d5678edb24d17c48",
-    "8896ae6ace700f65",
     "1e5f68dd9b199849",
     "d283d80270d988a1",
     "1fac94321f6eb42d",
@@ -986,14 +1032,16 @@
     "8f9c1a58f29a608c",
     "1b892d34bda6706e",
     "b7cc1c6f08db7977",
-    "2ebddc8f6582ce2d"
+    "2ebddc8f6582ce2d",
+    "607a60efa2ab6b9d",
+    "86e21b6273ef5fd5"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -1050,7 +1098,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -1103,7 +1151,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -1148,7 +1196,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -1203,7 +1251,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -1229,7 +1277,7 @@
     "Sertã"
    ],
    "exemplo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "contacto.lu": {
    "nome": "contacto.lu",
@@ -1241,7 +1289,7 @@
     "Sertã"
    ],
    "exemplo": "Quem beneficia realmente dos apoios à energia?",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "radionovaantena.com": {
    "nome": "Rádio Nova Antena",
@@ -1253,7 +1301,7 @@
     "Sertã"
    ],
    "exemplo": "Montemor-o-Novo reforça apoios às famílias e prepara recuperação da Escola Básica n.º 1",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "alentejo.sulinformacao.pt": {
    "nome": "Sul Informação Alentejo",
@@ -1265,7 +1313,7 @@
     "Sertã"
    ],
    "exemplo": "Odemira dá 515 mil euros em apoios a clubes e associações desportivas do concelho",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "impala.pt": {
    "nome": "Portal Impala",
@@ -1277,7 +1325,7 @@
     "Sertã"
    ],
    "exemplo": "Bombeiros de Leiria alertam para falta de apoio às corporações",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "jn.pt": {
    "nome": "Jornal de Notícias",
@@ -1289,7 +1337,7 @@
     "Sertã"
    ],
    "exemplo": "Quem ganha o salário mínimo já não tem acesso a novo apoio para carros elétricos",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "publico.pt": {
    "nome": "Público",
@@ -1301,7 +1349,7 @@
     "Sertã"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -1314,7 +1362,7 @@
     "Sertã"
    ],
    "exemplo": "Agricultores dos Açores pedem 23 milhões de euros em apoios do Governo",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "ambienteonline.pt": {
    "nome": "Água&Ambiente Online",
@@ -1351,7 +1399,7 @@
     "Sertã"
    ],
    "exemplo": "Regiões autónomas integram apoios nacionais à agricultura devido aos custos de produção",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "observador.pt": {
    "nome": "Observador",
@@ -1363,7 +1411,7 @@
     "Sertã"
    ],
    "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "jm-madeira.pt": {
    "nome": "JM Madeira",
@@ -1375,7 +1423,7 @@
     "Sertã"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -1387,7 +1435,7 @@
     "Sertã"
    ],
    "exemplo": "João Lopes Aleixo questionou apoios para os territórios de baixa densidade (C/VÍDEO)",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "portal-energia.com": {
    "nome": "Portal Energia",
@@ -1401,7 +1449,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1413,7 +1461,7 @@
     "Sertã"
    ],
    "exemplo": "O paradoxo do novo apoio elétrico: quem ganha o salário mínimo fica de fora",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "turbo.pt": {
    "nome": "Revista Turbo",
@@ -1437,7 +1485,7 @@
     "Sertã"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-01T16:21:24.533325+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -1453,7 +1501,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Estado vai comparticipar até 80% da compra de carros elétricos para famílias com baixos rendimentos",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "dnoticias.pt": {
    "nome": "dnoticias.pt",
@@ -1467,7 +1515,7 @@
     "Sertã"
    ],
    "exemplo": "Mau tempo põe abastecimento de água em alerta nos Prazeres",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "eco.sapo.pt": {
    "nome": "SAPO",
@@ -1479,7 +1527,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Galp move ação de 523 mil euros contra ex-gestor e família",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   },
   "theportugalnews.com": {
    "nome": "The Portugal News",
@@ -1491,7 +1539,7 @@
     "Sertã"
    ],
    "exemplo": "Município português investe em apoios financeiros aos estudantes",
-   "ultima": "2026-11-01T17:46:06.009199+00:00"
+   "ultima": "2026-11-01T18:45:59.659204+00:00"
   }
  },
  "ultima_descoberta": "2026-11-01",
@@ -2447,10 +2495,39 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-01T18:45:59.659204+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 295,
+     "relevantes": 1,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 278,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-01T17:46:06.009199+00:00"
+  "cm-serta.pt": "2026-11-01T18:45:59.659204+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
