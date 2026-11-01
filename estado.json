@@ -13,7 +13,8 @@
   "3faef908246d1fe0": "2026-11-01T15:15:46.655037+00:00",
   "154d9b73069cee6c": "2026-11-01T15:15:46.655037+00:00",
   "b01081c371e8dd81": "2026-11-01T15:15:46.655037+00:00",
-  "7f11013b1c2d5a88": "2026-11-01T15:24:10.443027+00:00"
+  "7f11013b1c2d5a88": "2026-11-01T15:24:10.443027+00:00",
+  "6e0def7c1e222cec": "2026-11-01T15:25:27.485951+00:00"
  },
  "resumo": [
   {
@@ -122,7 +123,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "9573eefe423a8b1a",
     "c2aed4b2b8536f04",
     "cb3811169de2b86d",
     "180fd7511e91ca0e",
@@ -141,14 +141,15 @@
     "d1fe5320dafc19b7",
     "73bff08f4210ccad",
     "873b8fe6457d304e",
-    "18cc34ff33731493"
+    "18cc34ff33731493",
+    "6e0def7c1e222cec"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "cnnbrasil.com.br": {
    "nome": "CNN Brasil",
@@ -232,7 +233,7 @@
     "Apoio Estado"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -248,7 +249,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
@@ -283,7 +284,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -313,7 +314,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "reconquista.pt": {
    "nome": "reconquista.pt",
@@ -328,7 +329,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -581,7 +582,7 @@
     "Apoio Estado"
    ],
    "exemplo": "PROAGES simplificado para facilitar apoios às famílias que ficam de fora dos apoios sociais",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "24 Notícias",
@@ -596,7 +597,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Tem abelhas? Governo prolonga apoios à apicultura com 3,3 milhões de euros",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "odigital.sapo.pt": {
    "nome": "ODigital.pt",
@@ -959,7 +960,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Powerdot reivindica 25 milhões para apoio à compra de carros elétricos no OE2027",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "sabado.pt": {
    "nome": "SÁBADO",
@@ -1001,7 +1002,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Putin oferece apoio a Presidente iraniano para terminar guerra no Médio Oriente",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "sicnoticias.pt": {
    "nome": "SIC Notícias",
@@ -1096,7 +1097,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo atribui apoio a uva por vindimar para mitigar crise no Douro",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -1120,7 +1121,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Apoio à renda é pago hoje: Saiba se tem direito a receber",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "facebook.com": {
    "nome": "Facebook",
@@ -1329,7 +1330,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Augusto Cury declara apoio a Flávio Bolsonaro, que promete cumprir lista de exigências",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "idealista.pt": {
    "nome": "Idealista",
@@ -1629,7 +1630,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Este apoio da Segurança Social para recibos verdes pode chegar aos 1.342 euros por mês",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "theportugalnews.com": {
    "nome": "The Portugal News",
@@ -3372,7 +3373,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
-   "ultima": "2026-11-01T15:24:10.443027+00:00"
+   "ultima": "2026-11-01T15:25:27.485951+00:00"
   },
   "acp.pt": {
    "nome": "Automóvel Club de Portugal | ACP",
@@ -4517,6 +4518,15 @@
    "fonte": "Rádio Hertz",
    "nota": 12.0,
    "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T15:25:27.485951+00:00",
+   "titulo": "Câmara da Chamusca aumenta valor das bolsas de estudo para alunos do Ensino Superior",
+   "link": "https://sapo.pt/artigo/camara-da-chamusca-aumenta-valor-das-bolsas-de-estudo-para-alunos-do-ensino-superior-6ae756077853f8c5643d0152",
+   "fonte": "SAPO",
+   "nota": 25.5,
+   "pesquisa": "Apoio Estado"
   }
  ],
  "execucoes": [
@@ -4935,10 +4945,41 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-01T15:25:27.485951+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 256,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio Estado",
+     "recolhidas": 285,
+     "relevantes": 1,
+     "alertas": 1
+    }
+   ],
+   "falhas": [
+    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio Estado · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 1,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-01T15:24:10.443027+00:00"
+  "cm-serta.pt": "2026-11-01T15:25:27.485951+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
