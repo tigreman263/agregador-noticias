@@ -8,9 +8,10 @@ gratuito do Cloudflare, sem servidor e sem custos. Geres tudo num **painel** que
 - Repositório: https://github.com/tigreman263/agregador-noticias
 - Painel: https://tigreman263.github.io/agregador-noticias/painel/
 
-> **Depois de instalado, só há uma coisa a vigiar: as datas de validade dos tokens do
-> GitHub.** Vê a [secção 12](#12-manutenção-o-que-expira-e-como-renovar) e põe lembretes
-> no calendário, para o agregador nunca parar.
+> **Neste projeto, os três tokens do GitHub (Worker, painel no computador e painel no
+> telemóvel) estão sem validade (No expiration): não há nada a renovar.** Se criares
+> tokens novos, escolhe também **No expiration**; se escolheres uma data, vê a
+> [secção 12](#12-manutenção-o-que-expira-e-como-renovar) e põe um lembrete.
 
 ## Índice
 
@@ -153,7 +154,8 @@ Sem token, o painel só mostra. Para criar pesquisas, decidir fontes, descartar 
 correr ações, precisa de um token do GitHub:
 
 1. Abre https://github.com/settings/personal-access-tokens/new.
-2. **Token name**: `painel agregador`. **Expiration**: a que preferires (ex.: 1 ano).
+2. **Token name**: `painel agregador`. **Expiration**: **No expiration** (recomendado:
+   o token só dá acesso a este repositório e assim nunca expira).
 3. **Repository access**: **Only select repositories** → escolhe `agregador-noticias`.
 4. **Permissions → Repository permissions**:
    **Contents: Read and write** e **Actions: Read and write**.
@@ -168,8 +170,9 @@ token em Ligação", é isto que falta nesse aparelho). Para passar o token para
 telemóvel, cola-o nas **Mensagens guardadas** do Telegram, copia-o de lá e apaga a
 mensagem. Num aparelho partilhado, usa **Esquecer token** no fim.
 
-**Anota a data de validade** e põe um lembrete uma semana antes: quando o token expira, o
-painel passa a "só leitura". Como renovar: [secção 12](#12-manutenção-o-que-expira-e-como-renovar).
+Se escolheste uma data de validade em vez de **No expiration**, põe um lembrete uma
+semana antes: quando o token expira, o painel passa a "só leitura". Como renovar:
+[secção 12](#12-manutenção-o-que-expira-e-como-renovar).
 
 ### 2.7 (Opcional) Telemóvel para sites que bloqueiam o GitHub
 
@@ -242,8 +245,8 @@ O código é um só ficheiro, `extras/cloudflare/worker.js`, sem dependências.
 **1. Token do GitHub para o Worker**
 
 1. Abre https://github.com/settings/personal-access-tokens/new.
-2. **Token name**: `worker agregador`. **Expiration**: a mais longa que deixar (anota a
-   data, para o renovar).
+2. **Token name**: `worker agregador`. **Expiration**: **No expiration** (recomendado;
+   com uma data, o despertador e o bot param quando ela chegar).
 3. **Repository access**: **Only select repositories** → `agregador-noticias`.
 4. **Permissions → Repository permissions**: **Contents: Read and write** e
    **Actions: Read and write**.
@@ -695,15 +698,25 @@ O GitHub Pages demora 1 a 2 minutos a publicar mudanças ao painel; carrega em
 
 ## 12. Manutenção: o que expira e como renovar
 
-Quase tudo funciona sem prazo. **Só os tokens do GitHub expiram**, e quando expiram uma
-parte do agregador para. Anota as datas e põe lembretes no calendário (uma semana antes).
-O GitHub costuma também mandar um email uns dias antes de um token expirar.
+Quase tudo funciona sem prazo. **Só os tokens do GitHub podem expirar**, e só se lhes
+deres uma data de validade.
+
+**Situação atual (2026-11-01):** os três tokens (`worker agregador`, `painel telemovel` e
+`Agregador de Noticias`, o do painel no computador) estão **sem validade** (No
+expiration). Vês isto em https://github.com/settings/personal-access-tokens (aparece "This
+token has no expiration date"; o aviso amarelo é só o GitHub a lembrar que é menos
+seguro, o que aqui não é problema porque cada token só dá acesso a este repositório).
+**Não há nada a renovar.**
+
+Se um dia criares ou regenerares um token **com data**, anota-a e põe um lembrete uma
+semana antes (o GitHub também costuma mandar um email uns dias antes). A tabela diz o que
+pararia:
 
 | O quê | Expira? | O que deixa de funcionar | Sinal |
 |---|---|---|---|
-| Token do GitHub do **Worker** (`GITHUB_TOKEN` no Cloudflare) | **Sim**, na data escolhida | O despertador (o GitHub volta a correr só algumas vezes por dia), os botões e os comandos do bot | O bot avisa às 9h; no painel, **Início → Frequência** fica a vermelho |
-| Token do **painel no computador** | **Sim** | Gravar pesquisas e fontes e correr ações no computador | O painel diz que o token não é válido ou fica em "só leitura" |
-| Token do **painel no telemóvel** | **Sim** (se for outro token) | O mesmo, no telemóvel | O mesmo, no telemóvel |
+| Token do GitHub do **Worker** (`GITHUB_TOKEN` no Cloudflare) | Não (sem validade); só se lhe deres uma data | O despertador (o GitHub volta a correr só algumas vezes por dia), os botões e os comandos do bot | O bot avisa às 9h; no painel, **Início → Frequência** fica a vermelho |
+| Token do **painel no computador** | Não (sem validade); só se lhe deres uma data | Gravar pesquisas e fontes e correr ações no computador | O painel diz que o token não é válido ou fica em "só leitura" |
+| Token do **painel no telemóvel** | Não (sem validade); só se lhe deres uma data | O mesmo, no telemóvel | O mesmo, no telemóvel |
 | Token do **bot do Telegram** | Não (só se o revogares) | — | — |
 | `TELEGRAM_CHAT_ID` | Não | — | — |
 | Tailscale (telemóvel) | Não, se desligaste o **key expiry** (passo 2.7) | As notícias da Câmara | Registo: "telemóvel DESLIGADO" (ver secção 10) |
@@ -713,15 +726,16 @@ O GitHub costuma também mandar um email uns dias antes de um token expirar.
 Os alertas e o resumo **não dependem de nenhum token que expire**: mesmo com tudo
 expirado, o GitHub continua a enviar (só que poucas vezes por dia).
 
-### Renovar um token do GitHub (5 minutos)
+### Renovar ou substituir um token do GitHub (5 minutos)
 
-O mais simples é **regenerar** o token: fica com as mesmas permissões e só muda o valor e
-a data.
+Serve quando um token expirou, foi apagado, ou queres trocá-lo por segurança. O mais
+simples é **regenerar** o token: fica com as mesmas permissões e só muda o valor e a data.
+O valor antigo deixa logo de funcionar, por isso cola o novo de seguida (passo 4).
 
 1. Abre https://github.com/settings/personal-access-tokens (Settings → Developer
    settings → Personal access tokens → Fine-grained tokens).
 2. Carrega no token (`worker agregador` ou `painel agregador`).
-3. **Regenerate token** → escolhe a nova **Expiration** (a mais longa que deixar) →
+3. **Regenerate token** → em **Expiration** escolhe **No expiration** →
    **Regenerate token**. Copia o valor novo (`github_pat_…`): só aparece esta vez.
    (Se o token já tiver sido apagado, cria um novo como no passo 2.6, com **Contents** e
    **Actions** em **Read and write** e só o repositório `agregador-noticias`.)
@@ -731,7 +745,7 @@ a data.
      **Implantar**. Confirma abrindo o endereço do Worker (três ✅).
    - **Token do painel**: em cada aparelho onde usas o painel, **Ligação** → cola no campo
      do token → **Guardar e testar** ("Ligado: podes ler e gravar").
-5. **Atualiza o lembrete** no calendário com a nova data.
+5. Se escolheste uma data em vez de **No expiration**, põe um lembrete no calendário.
 
 ### Verificação rápida (uma vez por semana, 1 minuto)
 

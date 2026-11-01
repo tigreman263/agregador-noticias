@@ -555,7 +555,7 @@ function vistaLigacao() {
   h += '<div id="l-res" class="sm" role="status"></div></div>';
   h += '<div class="card"><h3>Como criar o token (uma vez)</h3><ol class="sm">';
   h += '<li>Abre <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a>.</li>';
-  h += "<li>Nome: <code>painel agregador</code>. Validade: a que preferires (ex.: 1 ano).</li>";
+  h += "<li>Nome: <code>painel agregador</code>. Validade: <b>No expiration</b> (recomendado).</li>";
   h += "<li>Repository access: <b>Only select repositories</b> → <code>" + esc(S.repo.split("/")[1] || "") + "</code>.</li>";
   h += "<li>Permissions → Repository permissions: <b>Contents: Read and write</b> e <b>Actions: Read and write</b>.</li>";
   h += "<li>Generate token, copia-o e cola-o acima.</li></ol>";
@@ -567,7 +567,7 @@ function vistaLigacao() {
   h += '<div class="sm" style="margin-top:8px"><b>Onde estão os segredos</b></div><ul class="sm">';
   h += '<li>GitHub (<a href="https://github.com/' + esc(S.repo) + '/settings/secrets/actions" target="_blank" rel="noopener">Segredos</a>): <code>TELEGRAM_BOT_TOKEN</code> e <code>TELEGRAM_CHAT_ID</code>.</li>';
   h += '<li>Cloudflare (<a href="https://dash.cloudflare.com/?to=/:account/workers-and-pages" target="_blank" rel="noopener">Workers e Pages</a> → agregador-noticias → Configurações → Variáveis e segredos): <code>GITHUB_TOKEN</code>, <code>TELEGRAM_BOT_TOKEN</code> e <code>TELEGRAM_CHAT_ID</code>, todos do tipo Segredo.</li></ul>';
-  h += '<div class="xs muted">O token do GitHub do Worker e o deste painel têm validade. Quando expirarem, cria outros com as mesmas permissões e troca-os (o bot avisa-te às 9h se o do Worker deixar de funcionar). Se trocares o token do bot, atualiza-o nos dois sítios e abre de novo o endereço do Worker.</div></div>';
+  h += '<div class="xs muted">Os tokens do GitHub (do Worker e deste painel) estão sem validade. Se um dia lhes deres uma data, quando expirarem regenera-os em github.com/settings/personal-access-tokens e troca-os (o bot avisa-te às 9h se o do Worker deixar de funcionar; ver Ajuda, secção 12). Se trocares o token do bot, atualiza-o nos dois sítios e abre de novo o endereço do Worker.</div></div>';
   h += '<div class="card"><h3>Atalhos</h3><div class="sm"><a href="https://github.com/' + esc(S.repo) + '/blob/main/config.yaml" target="_blank" rel="noopener">config.yaml no GitHub</a> · <a href="https://github.com/' + esc(S.repo) + '/actions" target="_blank" rel="noopener">Actions</a> · <a href="https://github.com/' + esc(S.repo) + '/settings/secrets/actions" target="_blank" rel="noopener">Segredos</a></div><button class="btn btn-sm" data-a="tab" data-p="ajuda">Ver a Ajuda (instalação e configuração passo a passo)</button></div>';
   return h;
 }
