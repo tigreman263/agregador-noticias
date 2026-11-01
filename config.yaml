@@ -56,11 +56,11 @@ pesquisas:
   - nome: "Sertã"
     ativa: true
     consulta: "Apoios"
-    obrigatorias: []
+    obrigatorias: ["Sertã"]
     palavras:
-      alta: ["Camara municipal", "município", "agricultura", "florestal", "Apoios", "subsidio"]
-      media: ["avaliação"]
-      baixa: ["negativo"]
+      alta: ["Camara Municipal", "Apoios", "Subsidio", "Agricultura", "Florestal"]
+      media: ["Apoio"]
+      baixa: []
     excluir: []
     limite_alerta: 25
     limite_resumo: 10
