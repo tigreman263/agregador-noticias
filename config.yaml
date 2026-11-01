@@ -52,17 +52,4 @@ descoberta:
 # com as palavras-chave. Podes ter várias pesquisas.
 # "obrigatorias": a notícia só conta se tiver TODAS estas palavras
 # (ex: ["sertã"] para não apanhar notícias de outros concelhos).
-pesquisas:
-  - nome: "Apoio Estado"
-    ativa: true
-    consulta: "Apoios do estado"
-    obrigatorias: []
-    palavras:
-      alta: ["subsídio", "fundo perdido", "financiamento", "candidaturas", "aviso de abertura", "PRR", "Portugal 2030", "PEPAC", "incentivo"]
-      media: ["apoio", "agricultura", "floresta", "agricultor", "IFAP", "CCDR"]
-      baixa: []
-    excluir: ["publicidade", "eleição", "eleições", "candidato", "campanha eleitoral", "sondagem"]
-    limite_alerta: 25
-    limite_resumo: 10
-    feeds_extra: []
-    paginas_extra: []
+pesquisas: []
