@@ -3,6 +3,7 @@
 name = "agregador-noticias"
 main = "worker.js"
 compatibility_date = "2026-10-01"
+workers_dev = true   # endereço https://agregador-noticias.<conta>.workers.dev (precisa dele o bot)
 
 [triggers]
 crons = ["*/15 * * * *"]
