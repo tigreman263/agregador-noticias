@@ -37,14 +37,16 @@ Agregador de notícias pessoal:
   dependências (colado no painel do Cloudflare, ou `wrangler deploy`). (1) Cron
   `*/15 * * * *` → `workflow_dispatch` com `acao=agendada` (substitui o Google Apps
   Script; se falhar, avisa no Telegram 1 vez por dia, às 9h). (2) Webhook `/telegram`
-  (cabeçalho `X-Telegram-Bot-Api-Secret-Token` = `WEBHOOK_SECRET`; só obedece a
+  (cabeçalho `X-Telegram-Bot-Api-Secret-Token` = SHA-256 de "agregador-webhook:" + token do
+  bot, `segredoWebhook`, para não haver mais um segredo; só obedece a
   `TELEGRAM_CHAT_ID`): botões → `decidirFonte` edita linha a linha a secção `fontes:` do
   `config.yaml` (listas de uma linha, como o painel grava; Confiável junta o feed da
   sugestão em `estado.sugeridas`), PUT na API de conteúdos com repetição em 409; commit
   "telegram: …". Comandos `/verificar`, `/estado`, `/fontes`, `/ajuda`; `/start` diz o chat
-  id a qualquer pessoa. `/instalar?chave=…` faz `setWebhook` + `setMyCommands` e testa o
-  token do GitHub. Segredos do Worker: `GITHUB_TOKEN` (Contents + Actions RW),
-  `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `WEBHOOK_SECRET`. A recolha ficou no GitHub de
+  id a qualquer pessoa. Abrir a raiz do Worker (GET `/`) faz `setWebhook` + `setMyCommands`
+  e testa o token do GitHub (é idempotente). Segredos do Worker: `GITHUB_TOKEN` (Contents +
+  Actions RW), `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`. Pedido de 2026-11-01: o
+  utilizador quer regularidade (fica o Cloudflare) mas com menos passos. A recolha ficou no GitHub de
   propósito: o plano gratuito dos Workers dá 10 ms de CPU e 50 pedidos por invocação (não
   chega para ler e analisar dezenas de fontes) e não permite o Tailscale do telemóvel.
 - **Fontes abertas**: Google Notícias, feeds RSS e páginas de notícias sem RSS. X,
@@ -148,7 +150,7 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 
 ## Próximos passos sugeridos
 
-1. Confirmar que o Worker do Cloudflare está instalado (`/instalar` com três ✅) e que
+1. Confirmar que o Worker do Cloudflare está instalado (a raiz do Worker mostra três ✅) e que
    aparecem execuções "automática (Cloudflare)".
 2. Variantes de palavras ("regulação", "regulamento", "regulamentação" como o mesmo conceito).
 3. Botões "útil / não útil" nos alertas para aprender o que interessa (agora possível, via

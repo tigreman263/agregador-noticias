@@ -7,4 +7,4 @@ compatibility_date = "2026-10-01"
 [triggers]
 crons = ["*/15 * * * *"]
 
-# Os segredos definem-se com: npx wrangler secret put GITHUB_TOKEN (e os outros três)
+# Os segredos definem-se com: npx wrangler secret put GITHUB_TOKEN (e os outros dois)

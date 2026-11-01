@@ -10,10 +10,10 @@
 //   GITHUB_TOKEN        token fine-grained só deste repositório (Contents e Actions: Read and write)
 //   TELEGRAM_BOT_TOKEN  token do bot (BotFather)
 //   TELEGRAM_CHAT_ID    o teu chat id (o bot diz-to quando lhe mandas /start)
-//   WEBHOOK_SECRET      uma palavra-passe inventada por ti (letras, números, _ e -)
 // Opcional (texto): REPO, por omissão tigreman263/agregador-noticias.
 //
-// Depois de publicar, abre uma vez https://<o-teu-worker>.workers.dev/instalar?chave=<WEBHOOK_SECRET>
+// Depois de publicar, abre uma vez o endereço do Worker (https://<o-teu-worker>.workers.dev):
+// liga o bot a este Worker e mostra se está tudo bem configurado.
 
 const REPO_OMISSAO = "tigreman263/agregador-noticias";
 const RAMO = "main";
@@ -35,7 +35,7 @@ export default {
   async fetch(pedido, env) {
     const url = new URL(pedido.url);
     if (url.pathname === "/telegram" && pedido.method === "POST") {
-      if (!env.WEBHOOK_SECRET || pedido.headers.get("X-Telegram-Bot-Api-Secret-Token") !== env.WEBHOOK_SECRET) {
+      if (!env.TELEGRAM_BOT_TOKEN || pedido.headers.get("X-Telegram-Bot-Api-Secret-Token") !== await segredoWebhook(env)) {
         return new Response("proibido", { status: 403 });
       }
       let update;
@@ -47,8 +47,8 @@ export default {
       }
       return new Response("ok"); // sempre 200, senão o Telegram repete o mesmo update
     }
-    if (url.pathname === "/instalar") return instalar(env, url);
-    return new Response("Agregador de Notícias: o Worker está ligado.\n", { headers: { "content-type": "text/plain; charset=utf-8" } });
+    if (pedido.method === "GET" && (url.pathname === "/" || url.pathname === "/instalar")) return instalar(env, url);
+    return new Response("não encontrado", { status: 404 });
   },
 
   decidirFonte, // só para os testes
@@ -345,19 +345,21 @@ async function enviarFontes(env, chat) {
 
 // ------------------------------------------------------------------ instalação
 
+// Palavra-passe que o Telegram junta a cada pedido ao webhook. É tirada do token do bot,
+// para não ser preciso mais um segredo: só quem conhece o token a consegue calcular.
+async function segredoWebhook(env) {
+  const by = await crypto.subtle.digest("SHA-256", new TextEncoder().encode("agregador-webhook:" + env.TELEGRAM_BOT_TOKEN));
+  return [...new Uint8Array(by)].map(b => b.toString(16).padStart(2, "0")).join("").slice(0, 48);
+}
+
 async function instalar(env, url) {
   const txt = (s, status = 200) => new Response(s + "\n", { status, headers: { "content-type": "text/plain; charset=utf-8" } });
-  if (!env.WEBHOOK_SECRET || url.searchParams.get("chave") !== env.WEBHOOK_SECRET) {
-    return txt("Chave errada. Abre /instalar?chave=<o teu WEBHOOK_SECRET>.", 403);
-  }
-  if (!/^[A-Za-z0-9_-]{1,256}$/.test(env.WEBHOOK_SECRET)) {
-    return txt("O WEBHOOK_SECRET só pode ter letras, números, _ e - (é uma regra do Telegram).", 400);
-  }
-  const res = [];
+  const res = ["Agregador de Notícias — Worker do Cloudflare", ""];
   try {
+    if (!env.TELEGRAM_BOT_TOKEN) throw new Error("falta o segredo TELEGRAM_BOT_TOKEN");
     await tg(env, "setWebhook", {
-      url: url.origin + "/telegram", secret_token: env.WEBHOOK_SECRET,
-      allowed_updates: ["message", "callback_query"], drop_pending_updates: true,
+      url: url.origin + "/telegram", secret_token: await segredoWebhook(env),
+      allowed_updates: ["message", "callback_query"],
     });
     await tg(env, "setMyCommands", { commands: COMANDOS });
     res.push("✅ Telegram: o bot passa a falar com este Worker.");

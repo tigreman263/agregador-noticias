@@ -243,7 +243,7 @@ O código é um só ficheiro, `extras/cloudflare/worker.js`, sem dependências.
    Nome: `agregador-noticias`. **Deploy**.
 3. **Edit code**: apaga o que lá está, cola todo o `extras/cloudflare/worker.js` e carrega
    em **Deploy**.
-4. Volta ao Worker → **Settings → Variables and secrets → Add**, quatro vezes, do tipo
+4. Volta ao Worker → **Settings → Variables and secrets → Add**, três vezes, do tipo
    **Secret**:
 
    | Nome | Valor |
@@ -251,18 +251,16 @@ O código é um só ficheiro, `extras/cloudflare/worker.js`, sem dependências.
    | `GITHUB_TOKEN` | O token do passo 1. |
    | `TELEGRAM_BOT_TOKEN` | O token do bot (o mesmo do GitHub). |
    | `TELEGRAM_CHAT_ID` | O teu chat id (o mesmo do GitHub). |
-   | `WEBHOOK_SECRET` | Uma palavra-passe inventada por ti, só com letras, números, `_` e `-` (ex.: `noticias_Xk29fP`). |
 
 5. **Settings → Trigger events → Add → Cron Triggers**: `*/15 * * * *`. **Add**.
-6. Copia o endereço do Worker (algo como `https://agregador-noticias.<a-tua-conta>.workers.dev`)
-   e abre no navegador, uma vez:
-   `https://agregador-noticias.<a-tua-conta>.workers.dev/instalar?chave=<WEBHOOK_SECRET>`.
-   Deve mostrar três ✅ (Telegram, chat id e GitHub).
+6. Abre no navegador o endereço do Worker (algo como
+   `https://agregador-noticias.<a-tua-conta>.workers.dev`). Isto liga o bot ao Worker e
+   deve mostrar três ✅ (Telegram, chat id e GitHub).
 7. No Telegram, escreve `/estado` ao bot: deve responder com a última verificação.
 
 Quem preferir o terminal pode publicar com o Wrangler, dentro de `extras/cloudflare`:
 `npx wrangler deploy` (o `wrangler.toml` já tem o Cron) e `npx wrangler secret put
-GITHUB_TOKEN` (e os outros três).
+GITHUB_TOKEN` (e os outros dois).
 
 O agendador do próprio GitHub continua ligado como reserva; os dois respeitam o mesmo
 intervalo, sem verificações nem mensagens repetidas. Se o pedido ao GitHub falhar (token
@@ -563,7 +561,7 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 3. Pode simplesmente não haver notícias novas com nota suficiente: vê **Atividade**.
 
 **Os botões não fazem nada / o bot não responde aos comandos**
-Abre de novo `…workers.dev/instalar?chave=<WEBHOOK_SECRET>` (passo 2.8) e vê qual dos três
+Abre de novo o endereço do Worker (`…workers.dev`, passo 2.8) e vê qual dos três
 pontos tem ❌. No Cloudflare, **Workers → agregador-noticias → Logs** mostra os erros. Se o
 bot diz "Não consegui gravar … permissão", o `GITHUB_TOKEN` do Worker precisa de
 **Contents: Read and write**.
