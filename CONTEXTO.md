@@ -145,6 +145,10 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
   https://agregador-noticias.investrade-telmosilva.workers.dev (o interruptor workers.dev
   teve de ser ligado à mão no Cloudflare; `workers_dev = true` no toml não chegou).
   Webhook do Telegram aponta para `/telegram`; as execuções "automática (Cloudflare)" correm.
+- Palavras-chave (2026-11-01): singular e plural contam como a mesma (`singular()`, só na
+  última palavra, só acrescenta variantes) e variantes do mesmo conceito juntam-se com "/"
+  (`variantes()`/`achar()`), contando uma só vez; nas obrigatórias basta uma, no excluir
+  qualquer uma (à palavra inteira). O utilizador não quer trocar os tokens.
 - O painel mostra o estado do despertador (Início → Frequência e Ligação → Telegram e
   Cloudflare), a partir do título das execuções; o endereço do Worker fica no localStorage.
 - O utilizador usa o painel com token: pesquisas "Sertã" e "Apoio Estado".
@@ -157,10 +161,7 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 
 ## Próximos passos sugeridos
 
-1. Confirmar com o utilizador o caminho de observação `extras/cloudflare/*` no Cloudflare
-   (senão cada commit do estado volta a publicar o Worker) e, se quiser, trocar o token do
-   bot (apareceu numa captura de ecrã).
-2. Variantes de palavras ("regulação", "regulamento", "regulamentação" como o mesmo conceito).
-3. Botões "útil / não útil" nos alertas para aprender o que interessa (agora possível, via
+1. Rever a leitura de sites sem RSS (pedido do utilizador em 2026-11-01).
+2. Botões "útil / não útil" nos alertas para aprender o que interessa (agora possível, via
    Worker).
-4. Mais tarde: ligar ao painel geral Olimpo (junto com o Caçador de Oportunidades e o Argos).
+3. Mais tarde: ligar ao painel geral Olimpo (junto com o Caçador de Oportunidades e o Argos).

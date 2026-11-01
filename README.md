@@ -335,8 +335,8 @@ Cada pesquisa tem:
 |---|---|
 | Nome | Como aparece nas mensagens. |
 | O que procurar | A consulta no Google Notícias (ex.: `Sertã`, `apoios agricultura`). |
-| Palavras obrigatórias | A notícia só conta se tiver **todas**. Servem para filtrar um lugar (ex.: `sertã`). Deixa vazio para aceitar qualquer lugar. **Não dão pontos.** |
-| Prioridade alta / média / baixa | Palavras que dão pontos: alta 10, média 4, baixa 1. No título valem o dobro. |
+| Palavras obrigatórias | A notícia só conta se tiver **todas**. Servem para filtrar um lugar (ex.: `sertã`). Deixa vazio para aceitar qualquer lugar. **Não dão pontos.** Com variantes (`sertã / sertanense`) basta uma delas. |
+| Prioridade alta / média / baixa | Palavras que dão pontos: alta 10, média 4, baixa 1. No título valem o dobro. Separa por vírgulas; variantes do mesmo conceito juntam-se com `/` (ver abaixo). |
 | Palavras a excluir | Se aparecer uma, a notícia é descartada. |
 | Nota para alerta | A partir desta nota, a notícia é enviada logo (por omissão 25). |
 | Nota para resumo | A partir desta nota, vai para o resumo diário (por omissão 10). |
@@ -348,7 +348,16 @@ Cada pesquisa tem:
 
 - Cada palavra conta uma vez por notícia. No título vale o dobro.
 - A comparação ignora maiúsculas e acentos ("subsídio" = "subsidio"). Palavras de até 3
-  letras só contam inteiras; as outras aceitam plurais ("apoio" apanha "apoios").
+  letras só contam inteiras; as outras apanham as palavras que começam por elas
+  ("apoio" apanha "apoios").
+- **Singular e plural são a mesma palavra**, nos dois sentidos: "candidaturas" apanha
+  "candidatura", "agricultores" apanha "agricultor", "ações" apanha "ação".
+- **Variantes do mesmo conceito**: escreve-as juntas, separadas por `/`, numa só
+  palavra-chave: `regulação / regulamento / regulamentação`. Basta aparecer uma delas, e
+  o conceito conta **uma só vez** (se estivessem separadas por vírgulas, uma notícia com
+  "regulamento" e "regulamentação" somava os pontos duas vezes). No alerta do Telegram
+  aparece a variante encontrada. Também funciona nas obrigatórias (basta uma) e nas
+  palavras a excluir (qualquer uma descarta).
 - Bónus: +5 por cada fonte extra a publicar a mesma notícia (máx. +15) e +3 se tiver
   menos de 1 hora.
 - Peso: fonte confiável ×1,5; outra ×1,0; bloqueada é descartada.
@@ -360,7 +369,10 @@ Cada pesquisa tem:
 - **Evita palavras genéricas em alta.** "apoio" sozinha em alta apanhava notícias de
   "apoio político". Põe-nas em média e usa em alta termos específicos
   (ex.: "fundo perdido", "candidaturas", "PRR", "Portugal 2030", "PEPAC").
-- **Não repitas a mesma palavra com e sem acento**: conta como a mesma e soma a dobrar.
+- **Não repitas a mesma palavra com e sem acento, nem em singular e plural**: conta
+  como a mesma e soma a dobrar. Para palavras parecidas mas diferentes
+  ("agricultura", "agricultor", "agrícola"), junta-as com `/`:
+  `agricultura / agricultor / agrícola`.
 - **Para notícias de um lugar**, usa a obrigatória com o nome do lugar e põe-no também
   em baixa (para dar algum ponto), e baixa a nota do resumo (a pesquisa "Sertã" usa 20 e 4).
 - **Notícias brasileiras**: o Google Notícias mistura-as. Bloqueia `br` nas fontes

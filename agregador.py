@@ -610,33 +610,72 @@ def contem(chave_norm, texto_norm):
     return chave in texto_norm
 
 
+# Plurais comuns em português -> singular (só na última palavra da expressão). Como a
+# comparação aceita palavras que começam pela chave, o singular apanha os dois:
+# "candidaturas" passa a apanhar também "candidatura", "agricultores" apanha "agricultor".
+PLURAIS = (("oes", "ao"), ("aes", "ao"), ("ais", "al"), ("res", "r"), ("zes", "z"),
+           ("ns", "m"), ("s", ""))
+
+
+def singular(chave_norm):
+    *antes, ultima = chave_norm.split(" ")
+    if len(ultima) <= 4:
+        return chave_norm
+    for fim, novo in PLURAIS:
+        if ultima.endswith(fim):
+            return " ".join(antes + [ultima[: -len(fim)] + novo])
+    return chave_norm
+
+
+def variantes(entrada):
+    """Uma palavra-chave pode juntar variantes do mesmo conceito separadas por "/":
+    "regulação / regulamento / regulamentação". Devolve [(texto original, normalizado)],
+    já com o singular de cada plural."""
+    out = []
+    for v in str(entrada or "").split("/"):
+        vn = normalizar(v)
+        for x in (vn, singular(vn)):
+            if x and all(x != n for _, n in out):
+                out.append((v.strip(), x))
+    return out
+
+
+def achar(entrada, *textos):
+    """Índice do primeiro texto onde aparece alguma variante, e a variante; ou (None, None)."""
+    vs = variantes(entrada)
+    for i, t in enumerate(textos):
+        for orig, vn in vs:
+            if contem(vn, t):
+                return i, orig
+    return None, None
+
+
 def pontos_palavras(item, pesq, pesos):
     """Devolve (pontos, palavras encontradas), ou None se tem palavra de exclusão
     ou lhe falta uma palavra obrigatória."""
     titulo = " " + normalizar(item["titulo"]) + " "
     texto = " " + normalizar(item["resumo"]) + " "
     for x in pesq.get("excluir") or []:
-        xn = normalizar(x)
-        if xn and (f" {xn} " in titulo or f" {xn} " in texto):
-            return None
+        # excluir é à palavra inteira (cada variante separada por "/")
+        for xv in str(x).split("/"):
+            xn = normalizar(xv)
+            if xn and (f" {xn} " in titulo or f" {xn} " in texto):
+                return None
     for o in [] if item.get("local") else pesq.get("obrigatorias") or []:
-        on = normalizar(o)  # fontes "local" já são do sítio: dispensam as obrigatórias
-        if on and not (contem(on, titulo) or contem(on, texto)):
+        # fontes "local" já são do sítio: dispensam as obrigatórias; numa obrigatória com
+        # variantes ("sertã / sertanense") basta uma delas
+        if variantes(o) and achar(o, titulo, texto)[0] is None:
             return None
     total = 0
     achadas = {n: [] for n in NIVEIS}
     for nivel in NIVEIS:
         for p in (pesq.get("palavras") or {}).get(nivel) or []:
-            pn = normalizar(p)
-            if not pn:
+            # as variantes do mesmo conceito contam uma só vez (no título, o dobro)
+            onde, qual = achar(p, titulo, texto)
+            if onde is None:
                 continue
-            valor = pesos["pontos"][nivel]
-            if contem(pn, titulo):
-                total += valor * 2
-                achadas[nivel].append(p)
-            elif contem(pn, texto):
-                total += valor
-                achadas[nivel].append(p)
+            total += pesos["pontos"][nivel] * (2 if onde == 0 else 1)
+            achadas[nivel].append(qual)
     return total, achadas
 
 
@@ -1104,7 +1143,8 @@ def descobrir(cfg, estado, agora_utc):
         if not pesq.get("ativa", True):
             continue
         consultas = [pesq["consulta"]] if pesq.get("consulta") else []
-        consultas += list((pesq.get("palavras") or {}).get("alta") or [])[:3]
+        consultas += [str(p).split("/")[0].strip() for p in  # 1.ª variante de cada
+                      list((pesq.get("palavras") or {}).get("alta") or [])[:3]]
         for c in dict.fromkeys(consultas):
             try:
                 itens = ler_feed(url_google_news(c + " when:7d", cfg), "Google Notícias")

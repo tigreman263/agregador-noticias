@@ -459,8 +459,8 @@ function vistaEditor() {
   let h = '<div class="top"><h1>' + (S.editar >= 0 ? "Editar" : "Nova pesquisa") + '</h1><button class="btn btn-sm" data-a="cancelar">Cancelar</button></div><div class="card">';
   h += campo("f-nome", "Nome", p.nome, "Ex: Sertã, Apoios à agricultura");
   h += campo("f-consulta", "O que procurar no Google Notícias", p.consulta || "", "Ex: Sertã ou \"apoios agricultura\"");
-  h += campo("f-obrig", "Palavras obrigatórias", (p.obrigatorias || []).join(", "), "A notícia só conta se tiver todas estas palavras. Deixa vazio para aceitar notícias de qualquer lugar.");
-  h += campo("f-alta", "Prioridade alta (10 pontos)", (pal.alta || []).join(", "), "Separa por vírgulas. No título valem o dobro.", "area");
+  h += campo("f-obrig", "Palavras obrigatórias", (p.obrigatorias || []).join(", "), "A notícia só conta se tiver todas estas palavras. Deixa vazio para aceitar notícias de qualquer lugar. Com variantes (<code>sertã / sertanense</code>) basta uma.");
+  h += campo("f-alta", "Prioridade alta (10 pontos)", (pal.alta || []).join(", "), "Separa por vírgulas. No título valem o dobro. Singular e plural já contam como a mesma palavra. Variantes do mesmo conceito juntam-se com <code>/</code> e contam uma só vez: <code>regulação / regulamento / regulamentação</code>.", "area");
   h += campo("f-media", "Prioridade média (4 pontos)", (pal.media || []).join(", "), "", "area");
   h += campo("f-baixa", "Prioridade baixa (1 ponto)", (pal.baixa || []).join(", "), "", "area");
   h += campo("f-excluir", "Palavras a excluir", (p.excluir || []).join(", "), "Se aparecer uma, a notícia é descartada.");
