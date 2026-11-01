@@ -10,7 +10,7 @@ Agregador de notícias pessoal:
    (alta, média, baixa), palavras obrigatórias e palavras a excluir.
 2. O agregador recolhe notícias de várias fontes e procura **fontes novas** todos os dias.
 3. Filtra e pontua pelo interesse e pela confiança da fonte (confiáveis, neutras, bloqueadas).
-4. Envia **alertas e um resumo diário por WhatsApp** (CallMeBot).
+4. Envia **alertas e um resumo diário por Telegram**, com botões para decidir as fontes.
 
 ## Decisões já tomadas
 
@@ -23,19 +23,30 @@ Agregador de notícias pessoal:
   última `estado.execucoes[-1].ts` com `geral.intervalo_minutos` (por omissão 30, mínimo 30,
   folga de 2,5 min). Se não for altura, os passos seguintes são saltados (sem commit).
   Execuções manuais correm sempre. O painel muda o valor em Início → Frequência.
-- **WhatsApp via CallMeBot (2026-10-09).** Substituiu o Telegram. Gratuito, um pedido HTTP,
-  mas só envia (sem botões nem respostas). Por isso as decisões sobre fontes fazem-se no
-  painel, que grava no `config.yaml`. Como tem limites de envio apertados, os alertas de
-  cada execução vão juntos (`juntar_mensagens`, `MAX_MSG`, `PAUSA_ENVIO`). A API da Meta e a
-  Twilio foram postas de lado por custo; bibliotecas não oficiais por risco de bloqueio do
-  número e por precisarem de um processo sempre ligado. O telefone segue com "+".
-- **Telegram como segundo canal (2026-10-11)**: o CallMeBot aceitava ("queued") mas deixou
-  de entregar. `enviar()` manda por todos os canais configurados (WhatsApp se
-  `WHATSAPP_TELEFONE`+`WHATSAPP_APIKEY`; Telegram se `TELEGRAM_BOT_TOKEN`+`TELEGRAM_CHAT_ID`,
-  texto simples via `sendMessage`, partido a 4000 caracteres). Conta como enviado se um
-  entregar; só falha (e adia) se todos falharem. Falhas parciais vão para `registo.erros`
-  ("canal com falha: …"). Token/chat nunca aparecem em logs (`_sem_segredos`). Ação
-  `descobrir-chat` (`--descobrir-chat`) mostra o chat id via `getUpdates`.
+- **Só Telegram (2026-11-01).** O WhatsApp (CallMeBot, 2026-10-09) aceitava os pedidos
+  mas deixou de entregar; foi retirado. `enviar(texto, botoes)` usa a API oficial
+  (`sendMessage`, `parse_mode: HTML`, texto escapado com `h()`/`ligacao()`), espera
+  `PAUSA_ENVIO` (1 s) entre mensagens e repete após um 429. Segredos `TELEGRAM_BOT_TOKEN` e
+  `TELEGRAM_CHAT_ID`; nunca aparecem em logs (`_sem_segredos`). Cada alerta é uma mensagem
+  com botões (`botoes_alerta`: ⭐ Confiável / 🚫 Bloquear a fonte); cada fonte sugerida é uma
+  mensagem com Confiável / Neutra / Bloquear (`botoes_sugestao`). O resumo é agrupado
+  (`juntar_mensagens`, `MAX_MSG` 4000). Dados dos botões: `f|<c|n|b>|<domínio>` (máx. 64
+  bytes; acima disso o botão não aparece). Não há "Descartar" no Telegram: o que lá chega já
+  saiu da fila; o Descartar continua no painel.
+- **Worker do Cloudflare (2026-11-01)**, `extras/cloudflare/worker.js`, um só ficheiro sem
+  dependências (colado no painel do Cloudflare, ou `wrangler deploy`). (1) Cron
+  `*/15 * * * *` → `workflow_dispatch` com `acao=agendada` (substitui o Google Apps
+  Script; se falhar, avisa no Telegram 1 vez por dia, às 9h). (2) Webhook `/telegram`
+  (cabeçalho `X-Telegram-Bot-Api-Secret-Token` = `WEBHOOK_SECRET`; só obedece a
+  `TELEGRAM_CHAT_ID`): botões → `decidirFonte` edita linha a linha a secção `fontes:` do
+  `config.yaml` (listas de uma linha, como o painel grava; Confiável junta o feed da
+  sugestão em `estado.sugeridas`), PUT na API de conteúdos com repetição em 409; commit
+  "telegram: …". Comandos `/verificar`, `/estado`, `/fontes`, `/ajuda`; `/start` diz o chat
+  id a qualquer pessoa. `/instalar?chave=…` faz `setWebhook` + `setMyCommands` e testa o
+  token do GitHub. Segredos do Worker: `GITHUB_TOKEN` (Contents + Actions RW),
+  `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`, `WEBHOOK_SECRET`. A recolha ficou no GitHub de
+  propósito: o plano gratuito dos Workers dá 10 ms de CPU e 50 pedidos por invocação (não
+  chega para ler e analisar dezenas de fontes) e não permite o Tailscale do telemóvel.
 - **Fontes abertas**: Google Notícias, feeds RSS e páginas de notícias sem RSS. X,
   Instagram e Facebook estão fora por acesso restrito ou pago. Domínios `.br` bloqueados
   no config (`bloqueadas: ["br"]`; `dominio_em` faz correspondência por sufixo).
@@ -86,23 +97,24 @@ Agregador de notícias pessoal:
 
 1 vez por dia, a partir das 9h: pesquisa variações de cada tema, regista que sites publicam
 notícias relevantes (`estado.dominios`), escolhe os que têm pelo menos 2 (máx. 5 por dia,
-10 por decidir), procura o feed e envia a lista por WhatsApp. A decisão faz-se no painel
-(Confiável junta também o feed aos feeds gerais). Sem decisão em 14 dias, é esquecida.
+10 por decidir), procura o feed e envia cada uma pelo Telegram com botões. A decisão faz-se
+no botão (Worker) ou no painel (Confiável junta também o feed aos feeds gerais). Sem decisão em 14 dias, é esquecida.
 Ao apagar uma pesquisa, `esquecer_pesquisas_apagadas` limpa o que ela deixou no estado.
 
 ## Estrutura
 
 | Ficheiro | O que é |
 |---|---|
-| `agregador.py` | Toda a lógica (recolha, raspador, pontuação, WhatsApp, descoberta, telemóvel). |
+| `agregador.py` | Toda a lógica (recolha, raspador, pontuação, Telegram, descoberta, telemóvel). |
 | `config.yaml` | Pesquisas, fontes, pesos e horários. Editado sobretudo pelo painel. |
 | `estado.json` | Estado gravado pelo workflow: `vistos`, `resumo`, `adiados`, `sugeridas`, `dominios`, `raspadas`, `bloqueados`, `execucoes` (48), `enviados` (100). |
 | `painel.json` | Notícias descartadas no painel (`descartados`: id + data; o painel apaga as com mais de 30 dias). |
 | `.github/workflows/agregador.yml` | Acorda de 15 em 15 min, verifica se é altura (`intervalo_minutos`), Tailscale opcional e ações manuais: normal, teste, simular, descobrir-fontes. |
 | `painel/index.html` | Painel (ver abaixo). |
+| `extras/cloudflare/` | Worker do Cloudflare (`worker.js`) e `wrangler.toml`: despertador e bot do Telegram. |
 | `.nojekyll` | O GitHub Pages serve os ficheiros tal como estão. |
 | `README.md` | Guia passo a passo para o utilizador; mostrado também na secção Ajuda do painel. |
-| `.claude/agents/` | Subagentes do Claude Code: recolha-raspador, pontuacao-relevancia, notificacoes-whatsapp, painel-web, verificador e utilizador-tester. |
+| `.claude/agents/` | Subagentes do Claude Code: recolha-raspador, pontuacao-relevancia, notificacoes-telegram, painel-web, verificador e utilizador-tester. |
 
 ## O painel (`painel/index.html`)
 
@@ -119,23 +131,26 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 - Bibliotecas por cdnjs: js-yaml 4.1.0, marked, DOMPurify. Todo o texto vindo das notícias
   é escapado e o README é sanitizado (há um token no `localStorage`).
 
-## Estado atual (2026-10-10)
+## Estado atual (2026-11-01)
 
-- A correr no GitHub (frequência configurável, 30 min por omissão); envios por WhatsApp a funcionar.
+- De 2026-10-11 a 2026-11-01 todas as execuções falharam (`NameError: DOMINIOS_IGNORADOS`,
+  constante apagada sem querer no commit do Telegram); corrigido. A ação do Tailscale
+  também falhava com o nome do anfitrião vazio; o workflow passa agora `hostname`.
+- Envios só por Telegram; o Worker do Cloudflare tem de ser instalado pelo utilizador
+  (README 2.8).
 - O utilizador usa o painel com token: pesquisas "Sertã" e "Apoio Estado".
 - Tailscale configurado (2026-10-10): telemóvel 'Redmi Note 12 Pro+ 5G' aprovado como
   exit node; segredos TS_OAUTH_* no GitHub; a Câmara da Sertã é trazida pelo telemóvel.
 - O agendador do GitHub está a falhar muitas execuções automáticas neste repositório
-  (desde o 1.º dia, com qualquer versão do código: só 4 a 5 execuções por dia). Despertador
-  externo escolhido pelo utilizador: Google Apps Script (`extras/despertador-google.gs`),
-  com acionador de 15 em 15 min, a chamar workflow_dispatch com `acao=agendada` (respeita
-  o intervalo como o schedule). Token fine-grained só com Actions: Read and write, guardado
-  nas Propriedades do script (GITHUB_TOKEN). O cron-job.org foi posto de lado.
+  (desde o 1.º dia, com qualquer versão do código: só 4 a 5 execuções por dia). O
+  despertador passou a ser o Worker do Cloudflare (2026-11-01), escolhido pelo utilizador;
+  o Google Apps Script e o cron-job.org foram postos de lado. O `schedule` fica como reserva.
 
 ## Próximos passos sugeridos
 
-1. Confirmar que o despertador da Google está instalado e a correr.
+1. Confirmar que o Worker do Cloudflare está instalado (`/instalar` com três ✅) e que
+   aparecem execuções "automática (Cloudflare)".
 2. Variantes de palavras ("regulação", "regulamento", "regulamentação" como o mesmo conceito).
-3. Botões "útil / não útil" para aprender o que interessa (o CallMeBot não recebe respostas;
-   teria de ser no painel).
+3. Botões "útil / não útil" nos alertas para aprender o que interessa (agora possível, via
+   Worker).
 4. Mais tarde: ligar ao painel geral Olimpo (junto com o Caçador de Oportunidades e o Argos).

@@ -1,8 +1,9 @@
 # Agregador de Notícias
 
 Procura notícias sobre os temas que escolheres, dá a cada uma uma nota e envia-te as mais
-importantes por **WhatsApp**. Corre sozinho no GitHub, de 30 em 30 minutos (ou com a
-frequência que escolheres), sem servidor e sem custos. Geres tudo num **painel** que abres no computador ou no telemóvel.
+importantes por **Telegram**, com botões para decidires as fontes. Corre sozinho no
+GitHub, de 30 em 30 minutos (ou com a frequência que escolheres), acordado por um Worker
+gratuito do Cloudflare, sem servidor e sem custos. Geres tudo num **painel** que abres no computador ou no telemóvel.
 
 - Repositório: https://github.com/tigreman263/agregador-noticias
 - Painel: https://tigreman263.github.io/agregador-noticias/painel/
@@ -12,13 +13,13 @@ frequência que escolheres), sem servidor e sem custos. Geres tudo num **painel*
 1. [Como funciona](#1-como-funciona)
 2. [Instalação passo a passo](#2-instalação-passo-a-passo)
    - [2.1 Repositório no GitHub](#21-repositório-no-github)
-   - [2.2 Ativar o WhatsApp (CallMeBot, gratuito)](#22-ativar-o-whatsapp-callmebot-gratuito)
+   - [2.2 Criar o bot do Telegram](#22-criar-o-bot-do-telegram)
    - [2.3 Guardar os segredos no GitHub](#23-guardar-os-segredos-no-github)
    - [2.4 Primeiro teste](#24-primeiro-teste)
    - [2.5 Publicar o painel (GitHub Pages)](#25-publicar-o-painel-github-pages)
    - [2.6 Token do painel (para editar)](#26-token-do-painel-para-editar)
    - [2.7 (Opcional) Telemóvel para sites que bloqueiam o GitHub](#27-opcional-telemóvel-para-sites-que-bloqueiam-o-github)
-   - [2.8 Despertador da Google, para correr a horas](#28-despertador-da-google-para-correr-a-horas)
+   - [2.8 Cloudflare: despertador e botões do Telegram](#28-cloudflare-despertador-e-botões-do-telegram)
 3. [Usar o painel](#3-usar-o-painel)
 4. [Criar e afinar pesquisas](#4-criar-e-afinar-pesquisas)
    - [Como é calculada a nota](#como-é-calculada-a-nota)
@@ -31,7 +32,7 @@ frequência que escolheres), sem servidor e sem custos. Geres tudo num **painel*
    - [5.5 Encontrar feeds RSS escondidos](#55-encontrar-feeds-rss-escondidos)
    - [5.6 Descoberta automática de fontes](#56-descoberta-automática-de-fontes)
    - [5.7 Sites que bloqueiam o GitHub](#57-sites-que-bloqueiam-o-github)
-6. [O que recebes no WhatsApp](#6-o-que-recebes-no-whatsapp)
+6. [O que recebes no Telegram](#6-o-que-recebes-no-telegram)
 7. [Referência do config.yaml](#7-referência-do-configyaml)
 8. [Usar no computador (opcional)](#8-usar-no-computador-opcional)
 9. [Ficheiros do projeto](#9-ficheiros-do-projeto)
@@ -49,7 +50,7 @@ corre o programa `agregador.py`, que:
    indicares e de sites sem RSS (lê a página de notícias diretamente).
 2. **Filtra e dá nota** a cada notícia, pelas tuas palavras-chave e pela confiança da fonte.
    Notícias repetidas em vários sites contam como uma só.
-3. **Envia por WhatsApp**: as de nota alta logo (alerta), as médias num resumo diário.
+3. **Envia por Telegram**: as de nota alta logo (alerta), as médias num resumo diário.
 4. **Guarda** o que já viu e o que fez no `estado.json`, para não repetir nada.
 5. Uma vez por dia, **procura fontes novas** e sugere-tas.
 
@@ -60,9 +61,9 @@ corre o programa `agregador.py`, que:
 | `estado.json` | A memória do agregador (o que já viu, o que enviou, o que está à espera). Gravado pelo GitHub a cada execução; não o edites. |
 | `painel.json` | Notícias que descartaste no painel. Gravado pelo painel. |
 | Painel | Página para gerir tudo e ver a atividade (GitHub Pages). |
-| CallMeBot | Serviço gratuito que entrega as mensagens no teu WhatsApp. |
+| Bot do Telegram | Entrega os alertas, o resumo e as fontes sugeridas (gratuito). |
+| Worker do Cloudflare | Acorda o agregador de 15 em 15 minutos (o agendador do GitHub salta execuções) e trata os botões e comandos do bot (gratuito). |
 | Telemóvel + Tailscale | Opcional: vai buscar os sites que bloqueiam o GitHub. |
-| Despertador da Google | Opcional: faz o agregador correr a horas (o agendador do GitHub salta execuções). |
 
 ---
 
@@ -89,31 +90,15 @@ que te falta. Para montar de raiz noutra conta, segue todos.
    workflow, **Add file → Create new file**, escreve o nome
    `.github/workflows/agregador.yml` (as barras criam as pastas) e cola o conteúdo.
 
-### 2.2 Ativar o WhatsApp (CallMeBot, gratuito)
-
-1. Abre https://www.callmebot.com/blog/free-api-whatsapp-messages/ e segue as instruções
-   da secção WhatsApp: guarda o número do CallMeBot nos contactos do telemóvel e envia-lhe
-   por WhatsApp a frase de ativação indicada no site.
-2. Em poucos minutos recebes "API Activated for your phone number. Your APIKEY is …".
-   Se não chegar em 2 minutos, tenta de novo 24 horas depois.
-3. Guarda o número da **apikey** (só os algarismos).
-
-O CallMeBot só envia mensagens: não há botões nem respostas. É um serviço gratuito de
-terceiros, com limites de envio (por isso os alertas vão agrupados).
-
-### 2.2b Ativar o Telegram (recomendado, fiável e gratuito)
-
-O Telegram é o canal de segurança: a API oficial entrega sempre. Se configurares os dois
-canais, cada aviso segue pelos dois; basta um chegar para contar como enviado.
+### 2.2 Criar o bot do Telegram
 
 1. No Telegram, procura **@BotFather**, escreve `/newbot`, escolhe um nome e um utilizador
    (terminado em `bot`). Ele devolve o **token** (`123456:ABC…`). É secreto: não o partilhes.
 2. Abre o teu bot novo, carrega em **Iniciar** e escreve `olá`.
-3. Guarda o token no GitHub como segredo `TELEGRAM_BOT_TOKEN` (passo 2.3).
-4. Em **Actions → Agregador de Notícias → Run workflow** escolhe **descobrir-chat** (ou, no
-   painel, **Descobrir chat do Telegram**). Abre a execução: nas anotações aparece
-   "chat id do Telegram: 123456789". Guarda esse número no segredo `TELEGRAM_CHAT_ID`.
-5. Corre **teste**: deves receber a mensagem no Telegram.
+3. No navegador, abre `https://api.telegram.org/bot<TOKEN>/getUpdates` (troca `<TOKEN>`
+   pelo token). Procura `"chat":{"id":123456789` — esse número é o teu **chat id**.
+   (Se aparecer `"result":[]`, escreve outra mensagem ao bot e recarrega.) Depois de
+   instalares o Worker (passo 2.8), basta mandar `/start` ao bot para ele te dizer o número.
 
 ### 2.3 Guardar os segredos no GitHub
 
@@ -121,29 +106,25 @@ No repositório: **Settings → Secrets and variables → Actions → New reposi
 
 | Nome | Valor |
 |---|---|
-| `WHATSAPP_TELEFONE` | O teu número com indicativo, só algarismos (ex.: `351912345678`). |
-| `WHATSAPP_APIKEY` | A apikey do CallMeBot. |
-| `TELEGRAM_BOT_TOKEN` | O token dado pelo @BotFather (opcional, ver 2.2b). |
-| `TELEGRAM_CHAT_ID` | O número do teu chat (opcional, ver 2.2b). |
-
-Basta ter **um** canal completo (WhatsApp ou Telegram); com os dois, a fiabilidade é maior.
+| `TELEGRAM_BOT_TOKEN` | O token dado pelo @BotFather. |
+| `TELEGRAM_CHAT_ID` | O teu chat id (passo 2.2). |
 
 Ou no terminal, com o GitHub CLI (`gh`), colando o valor quando pedir:
 
 ```
-gh secret set WHATSAPP_TELEFONE -R tigreman263/agregador-noticias
-gh secret set WHATSAPP_APIKEY -R tigreman263/agregador-noticias
+gh secret set TELEGRAM_BOT_TOKEN -R tigreman263/agregador-noticias
+gh secret set TELEGRAM_CHAT_ID -R tigreman263/agregador-noticias
 ```
 
 ### 2.4 Primeiro teste
 
 1. No repositório: **Actions → Agregador de Notícias → Run workflow**.
-2. Escolhe **teste** e carrega em **Run workflow**. Deves receber no WhatsApp
-   "✅ O agregador de notícias está ligado" em cada canal configurado.
+2. Escolhe **teste** e carrega em **Run workflow**. Deves receber no Telegram
+   "✅ O agregador de notícias está ligado ao Telegram".
 3. Corre de novo com **simular**: abre a execução e vê no registo o que seria enviado,
    sem enviar nada.
 4. A partir daqui o agregador corre sozinho de 30 em 30 minutos (podes mudar no painel,
-   secção 3). O GitHub pode atrasar as execuções agendadas alguns minutos, por vezes mais.
+   secção 3). Sem o Worker do Cloudflare (passo 2.8), o GitHub salta muitas execuções.
 
 ### 2.5 Publicar o painel (GitHub Pages)
 
@@ -231,53 +212,62 @@ Sem estes segredos, ou com o telemóvel sem rede, os passos do telemóvel não f
 resto corre igual (os sites bloqueados ficam de fora dessa vez). O consumo é mínimo:
 alguns megabytes de dados por dia.
 
-### 2.8 Despertador da Google, para correr a horas
+### 2.8 Cloudflare: despertador e botões do Telegram
 
-O agendador do GitHub salta muitas execuções: em vez de 30 em 30 minutos, costuma correr
-só de 4 em 4 ou de 6 em 6 horas. Para correr com a frequência escolhida no painel, um
-pequeno script na tua conta Google (Google Apps Script, gratuito) pede ao GitHub uma
-verificação de 15 em 15 minutos; o agregador só verifica a sério quando já passou o
-intervalo escolhido. Corre nos servidores da Google: não precisa do PC nem do telemóvel.
+O agendador do GitHub salta muitas execuções (em vez de 30 em 30 minutos, corre só algumas
+vezes por dia). Um **Worker do Cloudflare** (gratuito, sempre ligado, não precisa do PC nem
+do telemóvel) faz duas coisas:
 
-**1. Token só para o despertador** (no GitHub)
+- de 15 em 15 minutos pede ao GitHub uma verificação; o agregador só verifica a sério
+  quando já passou o intervalo escolhido no painel;
+- recebe os toques nos **botões** das mensagens (Confiável / Neutra / Bloquear) e grava a
+  decisão no `config.yaml`, e responde aos comandos `/verificar`, `/estado`, `/fontes` e
+  `/ajuda`.
+
+O código é um só ficheiro, `extras/cloudflare/worker.js`, sem dependências.
+
+**1. Token do GitHub para o Worker**
 
 1. Abre https://github.com/settings/personal-access-tokens/new.
-2. **Token name**: `despertador agregador`. **Expiration**: a mais longa que deixar
-   (anota a data, para o renovar).
+2. **Token name**: `worker agregador`. **Expiration**: a mais longa que deixar (anota a
+   data, para o renovar).
 3. **Repository access**: **Only select repositories** → `agregador-noticias`.
-4. **Permissions → Repository permissions**: só **Actions: Read and write**.
+4. **Permissions → Repository permissions**: **Contents: Read and write** e
+   **Actions: Read and write**.
 5. **Generate token** e copia-o (começa por `github_pat_`).
 
-Este token só deixa pedir verificações; não deixa ler nem mudar ficheiros.
+**2. Criar o Worker**
 
-**2. O script na Google**
+1. Cria uma conta gratuita em https://dash.cloudflare.com (não pede cartão).
+2. **Compute (Workers) → Workers & Pages → Create → Create Worker** (modelo "Hello World").
+   Nome: `agregador-noticias`. **Deploy**.
+3. **Edit code**: apaga o que lá está, cola todo o `extras/cloudflare/worker.js` e carrega
+   em **Deploy**.
+4. Volta ao Worker → **Settings → Variables and secrets → Add**, quatro vezes, do tipo
+   **Secret**:
 
-1. Abre https://script.google.com com a tua conta Google e carrega em
-   **Novo projeto** (New project).
-2. Muda o nome no topo (Projeto sem título) para `Despertador agregador`.
-3. Apaga o que está no editor e cola todo o conteúdo do ficheiro
-   `extras/despertador-google.gs` deste repositório. Guarda (ícone da disquete).
-4. À esquerda, **Definições do projeto** (roda dentada) → no fundo, **Propriedades do
-   script** → **Adicionar propriedade do script**: nome `GITHUB_TOKEN`, valor: o token.
-   **Guardar propriedades do script**.
-5. Volta ao **Editor** (`< >`). Na barra de cima, escolhe a função **instalar** e
-   carrega em **Executar**.
-6. A Google pede autorização: **Rever permissões** → escolhe a tua conta → aparece
-   "A Google não validou esta app" → **Avançadas** → **Aceder a Despertador agregador
-   (não seguro)** → **Permitir**. É seguro: a "app" é o teu próprio script.
-7. No registo de execução deve aparecer "Despertador instalado". Para testar já,
-   escolhe a função **verificar** e carrega em **Executar**: deve aparecer
-   "Pedido enviado ao GitHub (204)". No painel, em **Atividade → Execuções no GitHub**,
-   aparece uma execução "automática".
+   | Nome | Valor |
+   |---|---|
+   | `GITHUB_TOKEN` | O token do passo 1. |
+   | `TELEGRAM_BOT_TOKEN` | O token do bot (o mesmo do GitHub). |
+   | `TELEGRAM_CHAT_ID` | O teu chat id (o mesmo do GitHub). |
+   | `WEBHOOK_SECRET` | Uma palavra-passe inventada por ti, só com letras, números, `_` e `-` (ex.: `noticias_Xk29fP`). |
 
-Para ver se está a correr: no script, **Acionadores** (relógio, à esquerda) e
-**Execuções**. Para parar: corre a função **desinstalar**. Se o token expirar, cria
-outro e troca o valor de `GITHUB_TOKEN` (passo 4).
+5. **Settings → Trigger events → Add → Cron Triggers**: `*/15 * * * *`. **Add**.
+6. Copia o endereço do Worker (algo como `https://agregador-noticias.<a-tua-conta>.workers.dev`)
+   e abre no navegador, uma vez:
+   `https://agregador-noticias.<a-tua-conta>.workers.dev/instalar?chave=<WEBHOOK_SECRET>`.
+   Deve mostrar três ✅ (Telegram, chat id e GitHub).
+7. No Telegram, escreve `/estado` ao bot: deve responder com a última verificação.
 
-Erros no registo: **401** = token errado ou expirado; **403**/**404** = falta a
-permissão **Actions: Read and write** ou o repositório no token. O agendador do próprio
-GitHub continua ligado como reserva; os dois respeitam o mesmo intervalo, sem
-verificações nem mensagens repetidas.
+Quem preferir o terminal pode publicar com o Wrangler, dentro de `extras/cloudflare`:
+`npx wrangler deploy` (o `wrangler.toml` já tem o Cron) e `npx wrangler secret put
+GITHUB_TOKEN` (e os outros três).
+
+O agendador do próprio GitHub continua ligado como reserva; os dois respeitam o mesmo
+intervalo, sem verificações nem mensagens repetidas. Se o pedido ao GitHub falhar (token
+expirado), o bot avisa-te uma vez por dia, por volta das 9h. O bot só obedece ao teu chat
+id; a outras pessoas responde apenas com o chat id delas.
 
 ---
 
@@ -285,9 +275,9 @@ verificações nem mensagens repetidas.
 
 | Secção | O que tem |
 |---|---|
-| **Início** | Última verificação (correu bem / falhou, com link para o registo), alertas de hoje, notícias à espera, fontes por decidir. **Frequência**: de quanto em quanto tempo o agregador procura (30 minutos a 1 vez por dia). Botões para correr já: **Verificar agora**, **Simular** (mostra no registo o que seria enviado, sem enviar), **Testar WhatsApp** e **Procurar fontes novas**. |
+| **Início** | Última verificação (correu bem / falhou, com link para o registo), alertas de hoje, notícias à espera, fontes por decidir. **Frequência**: de quanto em quanto tempo o agregador procura (30 minutos a 1 vez por dia). Botões para correr já: **Verificar agora**, **Simular** (mostra no registo o que seria enviado, sem enviar), **Testar Telegram** e **Procurar fontes novas**. |
 | **Pesquisas** | Criar, editar, pausar e apagar pesquisas. Mostra o resultado da última verificação de cada uma. |
-| **Atividade** | Execuções no GitHub, o que a app fez em cada uma (notícias lidas, novas relevantes, alertas, fontes com falha, fontes trazidas pelo telemóvel), o que foi enviado para o WhatsApp, e o que está à espera (alertas adiados e resumo). |
+| **Atividade** | Execuções no GitHub, o que a app fez em cada uma (notícias lidas, novas relevantes, alertas, fontes com falha, fontes trazidas pelo telemóvel), o que foi enviado para o Telegram, e o que está à espera (alertas adiados e resumo). |
 | **Fontes** | Fontes sugeridas pela app (Confiável / Neutra / Bloquear), listas de confiáveis, neutras e bloqueadas, e feeds e sites gerais. |
 | **Ligação** | Repositório e token do GitHub, com as instruções para o criar. |
 | **Ajuda** | Este documento. |
@@ -432,9 +422,10 @@ tudo; para temas locais prefere os regionais.
 
 Uma vez por dia (a partir das 9h), a app volta a pesquisar cada tema, vê que sites
 publicam notícias relevantes, escolhe os que tiveram pelo menos 2 (até 5 por dia e nunca
-mais de 10 por decidir), procura o feed de cada um e envia-te a lista por WhatsApp.
-Decide-as no painel, em **Fontes → Sugeridas pela app**: **Confiável** (se tiver feed, é
-juntado aos feeds gerais), **Neutra** ou **Bloquear**. Sem decisão em 14 dias, a sugestão
+mais de 10 por decidir), procura o feed de cada um e envia-te cada site numa mensagem do
+Telegram com três botões: **Confiável** (se tiver feed, é juntado aos feeds gerais),
+**Neutra** ou **Bloquear**. Também podes decidir no painel, em **Fontes → Sugeridas pela
+app**, ou pedir a lista outra vez com `/fontes`. Sem decisão em 14 dias, a sugestão
 é esquecida. Para procurar já: **Procurar fontes novas** no Início.
 
 ### 5.7 Sites que bloqueiam o GitHub
@@ -446,20 +437,33 @@ telemóvel, junta-lhe `telemovel: true` no `config.yaml`.
 
 ---
 
-## 6. O que recebes no WhatsApp
+## 6. O que recebes no Telegram
 
-- **Alertas** (nota ≥ nota de alerta): numa só mensagem por verificação, até 5
-  (`max_alertas_por_execucao`); o excesso vai para o resumo. Cada alerta traz o título, a
-  fonte, a nota, a pesquisa, as palavras encontradas, há quanto tempo saiu e o link.
+- **Alertas** (nota ≥ nota de alerta): uma mensagem por notícia, até 5 por verificação
+  (`max_alertas_por_execucao`); o excesso vai para o resumo. Cada alerta traz o título (com
+  o link), a fonte, a nota, a pesquisa, as palavras encontradas e há quanto tempo saiu. Os
+  botões **⭐ Confiável** e **🚫 Bloquear fonte** decidem logo a fonte dessa notícia (numa
+  fonte já confiável, só aparece Bloquear).
 - **Resumo diário** (nota entre as duas notas): uma vez por dia, a partir das 8h
   (`hora_resumo`), com as 15 melhores. Notícias à espera há mais de 48 horas saem da fila.
-- **Fontes novas sugeridas**: uma vez por dia (secção 5.6).
+- **Fontes novas sugeridas**: uma vez por dia, com botões (secção 5.6).
 - **Horário de silêncio** (23h–7h): nada é enviado; os alertas ficam adiados (até 50; o
   excesso vai para o resumo) e saem depois.
-- **Se o envio falhar** (CallMeBot em baixo, limite atingido): os alertas ficam adiados e
-  saem na verificação seguinte, sem se perderem nem se repetirem. O resumo também volta a
-  tentar; se for tão grande que ocupe duas mensagens e só a segunda falhar, a primeira
-  parte pode chegar repetida.
+- **Se o envio falhar** (Telegram em baixo, token errado): os alertas ficam adiados e saem
+  na verificação seguinte, sem se perderem nem se repetirem. O resumo também volta a
+  tentar; se ocupar duas mensagens e só a segunda falhar, a primeira pode chegar repetida.
+
+Comandos do bot (precisam do Worker, passo 2.8):
+
+| Comando | O que faz |
+|---|---|
+| `/verificar` | Procura notícias já (os alertas chegam em 2 a 3 minutos). |
+| `/estado` | Última verificação, notícias à espera e fontes por decidir. |
+| `/fontes` | Volta a mostrar as fontes sugeridas por decidir, com botões. |
+| `/ajuda` | Lista os comandos. |
+
+Ao tocar num botão, a decisão fica gravada no `config.yaml` (commit "telegram: …") e vale
+a partir da verificação seguinte. Para desfazer, usa o painel (**Fontes**).
 
 ---
 
@@ -517,7 +521,7 @@ Não é preciso para o dia a dia; serve para testar sites e procurar feeds.
 Para enviar a partir do computador, define antes as variáveis (PowerShell):
 
 ```
-$env:WHATSAPP_TELEFONE="351912345678"; $env:WHATSAPP_APIKEY="123456"
+$env:TELEGRAM_BOT_TOKEN="123456:ABC..."; $env:TELEGRAM_CHAT_ID="123456789"
 ```
 
 Atenção: o `config.yaml` e o `estado.json` verdadeiros estão no GitHub (o painel grava
@@ -529,7 +533,7 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 
 | Ficheiro | O que é |
 |---|---|
-| `agregador.py` | Todo o programa: recolha, leitor de páginas, pontuação, WhatsApp, descoberta, telemóvel. |
+| `agregador.py` | Todo o programa: recolha, leitor de páginas, pontuação, Telegram, descoberta, telemóvel. |
 | `config.yaml` | Pesquisas, fontes e regras. |
 | `estado.json` | Memória do agregador, gravada pelo GitHub. Não editar. |
 | `painel.json` | Notícias descartadas e limpeza da atividade, gravadas pelo painel. |
@@ -541,7 +545,8 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 | `.gitattributes` | Mantém o formato de linhas do Windows nos dois atalhos. |
 | `index.html` | Encaminha o endereço curto do GitHub Pages para o painel. |
 | `.nojekyll` | Faz o GitHub Pages servir os ficheiros tal como estão. |
-| `extras/despertador-google.gs` | Script do despertador da Google (passo 2.8). |
+| `extras/cloudflare/worker.js` | Worker do Cloudflare: despertador e bot do Telegram (passo 2.8). |
+| `extras/cloudflare/wrangler.toml` | Configuração para publicar o Worker com o Wrangler (opcional). |
 | `README.md` | Este documento (também em **Ajuda** no painel). |
 | `CONTEXTO.md` | Decisões técnicas, para quem continuar o desenvolvimento. |
 | `.claude/` | Agentes e configuração do Claude Code usados no desenvolvimento. |
@@ -550,22 +555,25 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 
 ## 10. Resolução de problemas
 
-**Não recebo nada no WhatsApp**
+**Não recebo nada no Telegram**
 1. No painel, **Início → Última verificação**: se falhou, abre **ver registo**.
-2. Carrega em **Testar avisos**. Se o WhatsApp não chegar, usa o Telegram (2.2b); o
-   registo da execução diz qual canal falhou.
+2. Carrega em **Testar Telegram**. Se falhar, o registo diz porquê: "Unauthorized" = o
+   `TELEGRAM_BOT_TOKEN` está errado; "chat not found" = o `TELEGRAM_CHAT_ID` está errado ou
+   ainda não carregaste em **Iniciar** no bot.
 3. Pode simplesmente não haver notícias novas com nota suficiente: vê **Atividade**.
 
-**"CallMeBot respondeu …: apikey can not be empty or it has an invalid format"**
-A apikey guardada está errada. Copia só o código que vem a seguir a "APIKEY is" na
-mensagem do CallMeBot e volta a guardar o segredo `WHATSAPP_APIKEY`. Confirma que
-ativaste o serviço de **WhatsApp** (o CallMeBot tem serviços diferentes para chamadas).
+**Os botões não fazem nada / o bot não responde aos comandos**
+Abre de novo `…workers.dev/instalar?chave=<WEBHOOK_SECRET>` (passo 2.8) e vê qual dos três
+pontos tem ❌. No Cloudflare, **Workers → agregador-noticias → Logs** mostra os erros. Se o
+bot diz "Não consegui gravar … permissão", o `GITHUB_TOKEN` do Worker precisa de
+**Contents: Read and write**.
 
 **O agregador não corre de X em X tempo**
 O agendador do GitHub salta muitas execuções (costuma correr só de 4 em 4 ou de 6 em 6
-horas); não é do agregador. Configura o despertador da Google (passo 2.8). Em
-**Atividade → Execuções no GitHub** vês as automáticas; se o despertador estiver a
-falhar, vê **Execuções** no script da Google. Para verificar já: **Verificar agora**.
+horas); não é do agregador. Configura o Worker do Cloudflare (passo 2.8). Em
+**Atividade → Execuções no GitHub** vês as automáticas ("automática (Cloudflare)"); se não
+aparecerem, confirma o Cron Trigger e o `GITHUB_TOKEN` do Worker. Para verificar já:
+**Verificar agora** no painel, ou `/verificar` no Telegram.
 
 **"Fonte com falha … Connection reset by peer"**
 O site recusa os servidores do GitHub. Ver secção 5.7 e passo 2.7.
@@ -575,8 +583,8 @@ Não apareceu nada de novo com pontos suficientes; as notícias já vistas não 
 
 **Chegam notícias fora do tema**
 Vê em **Atividade** que pesquisa as trouxe e afina as palavras (secção 4): tira palavras
-genéricas de alta, junta palavras a excluir, ou bloqueia a fonte. As que já estão à
-espera podes **Descartar**.
+genéricas de alta, junta palavras a excluir, ou bloqueia a fonte (botão **🚫 Bloquear
+fonte** no próprio alerta). As que já estão à espera podes **Descartar** no painel.
 
 **O painel diz "Só leitura"**
 Falta o token (passo 2.6). Se diz que o token não é válido ou não tem permissão, cria
@@ -599,7 +607,10 @@ O GitHub Pages demora 1 a 2 minutos a publicar mudanças ao painel; carrega em
 
 - Fontes: Google Notícias, feeds RSS e páginas de notícias. X, Instagram e Facebook não
   estão incluídos (acesso restrito ou pago).
-- O CallMeBot é gratuito e de terceiros: só envia, tem limites de envio e pode falhar.
+- O plano gratuito do Cloudflare chega com folga (100 000 pedidos por dia; o Worker usa
+  cerca de 100). A recolha continua no GitHub, porque o Worker gratuito não tem tempo de
+  processamento para ler e analisar dezenas de sites, nem pode usar o telemóvel.
 - Sites que bloqueiam o GitHub só são lidos com o telemóvel Android configurado e com rede.
 - Páginas que só mostram notícias com JavaScript, ou com certificado inválido, não são lidas.
-- Sem o despertador da Google (passo 2.8), o GitHub corre só algumas vezes por dia.
+- Sem o Worker do Cloudflare (passo 2.8), o GitHub corre só algumas vezes por dia e os
+  botões do Telegram não fazem nada.

@@ -1,0 +1,10 @@
+# Só é preciso se publicares com o Wrangler (npx wrangler deploy, dentro desta pasta).
+# Pelo painel do Cloudflare basta colar o worker.js e criar o Cron Trigger à mão.
+name = "agregador-noticias"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[triggers]
+crons = ["*/15 * * * *"]
+
+# Os segredos definem-se com: npx wrangler secret put GITHUB_TOKEN (e os outros três)

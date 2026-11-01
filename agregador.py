@@ -3,7 +3,8 @@
 
 Recolhe notícias (Google Notícias, feeds RSS e páginas sem RSS), remove duplicados,
 pontua cada uma pelas palavras-chave e pela confiança da fonte, e envia alertas
-por WhatsApp (CallMeBot).
+por Telegram. Os botões das mensagens são tratados pelo Worker do Cloudflare
+(extras/cloudflare/worker.js), que grava as decisões no config.yaml.
 
 Uso:
     python agregador.py                    # execução normal
@@ -13,7 +14,7 @@ Uso:
     python agregador.py --testar-pagina URL [--item CSS --titulo CSS ...]
                                            # mostra o que o leitor de páginas encontra
 
-Variáveis de ambiente: WHATSAPP_TELEFONE, WHATSAPP_APIKEY
+Variáveis de ambiente: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 """
 import argparse
 import difflib
@@ -59,14 +60,11 @@ UA_NAVEGADOR = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
 NIVEIS = ("alta", "media", "baixa")
 DIAS_VISTOS = 14
 DIAS_SUGESTAO = 14
-CALLMEBOT = "https://api.callmebot.com/whatsapp.php"
-MAX_MSG = 3000
-PAUSA_ENVIO = 4
-MAX_TELEGRAM = 4000
-# Telegram (opcional, define-se em main() a partir dos segredos) e avisos de canais que
-# falharam enquanto outro canal entregou a mensagem.
+MAX_MSG = 4000         # o Telegram aceita até 4096 caracteres por mensagem
+PAUSA_ENVIO = 1        # o Telegram limita a ~1 mensagem por segundo no mesmo chat
+MAX_BOTAO = 64         # tamanho máximo (bytes) dos dados de um botão do Telegram
+# Definido em main() a partir dos segredos TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID.
 TELEGRAM = {"token": "", "chat": ""}
-AVISOS_CANAL = []
 
 
 def erro(msg):
@@ -77,22 +75,24 @@ def erro(msg):
         print("Erro: " + msg)
 
 
-def telegram_ativo():
-    return bool(TELEGRAM["token"] and TELEGRAM["chat"])
-
-
-def segredos_em_falta(telefone, apikey):
-    """Diz o que falta para haver pelo menos um canal de avisos (nunca mostra valores)."""
-    if (telefone and apikey) or telegram_ativo():
+def segredos_em_falta():
+    """Diz exatamente que segredos faltam (nunca mostra os valores)."""
+    falta = [n for n, v in (("TELEGRAM_BOT_TOKEN", TELEGRAM["token"]),
+                            ("TELEGRAM_CHAT_ID", TELEGRAM["chat"])) if not v]
+    if not falta:
         return ""
     if os.environ.get("GITHUB_ACTIONS") == "true":
-        return ("não há nenhum canal de avisos. Cria no GitHub (Settings > Secrets and "
-                "variables > Actions) os segredos TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID "
-                "e/ou WHATSAPP_TELEFONE e WHATSAPP_APIKEY.")
-    return ("não há nenhum canal de avisos. Define TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID "
-            "e/ou WHATSAPP_TELEFONE e WHATSAPP_APIKEY (no PowerShell: "
-            "$env:TELEGRAM_BOT_TOKEN=\"...\").")
+        return (f"falta(m) o(s) segredo(s) {' e '.join(falta)} no GitHub "
+                "(Settings > Secrets and variables > Actions).")
+    return (f"falta(m) {' e '.join(falta)}. No computador, define-as antes de correr, "
+            "por exemplo no PowerShell: $env:TELEGRAM_BOT_TOKEN=\"123:ABC\"; "
+            "$env:TELEGRAM_CHAT_ID=\"123456789\".")
 
+
+DOMINIOS_IGNORADOS = {"", "news.google.com", "google.com"}
+
+
+# ---------------------------------------------------------------- utilitários
 
 def normalizar(texto):
     """Minúsculas, sem acentos, só letras e números separados por espaços."""
@@ -819,34 +819,7 @@ def podar(estado, agora_utc):
                 estado["sugeridas_antigas"].append(d)
 
 
-# ---------------------------------------------------------------- WhatsApp
-
-def whatsapp(telefone, apikey, texto):
-    try:
-        r = requests.get(CALLMEBOT, params={"phone": "+" + telefone, "text": texto,
-                                            "apikey": apikey}, timeout=30)
-    except requests.RequestException:
-        raise RuntimeError("falha de rede ao contactar o CallMeBot") from None
-    corpo = limpar_html(r.text)
-    baixo = corpo.lower()
-    # a resposta vai para o registo e para o estado.json (públicos): nunca com o número
-    # nem a apikey
-    limpo = corpo
-    for segredo in (telefone, apikey):
-        if segredo:
-            limpo = limpo.replace(segredo, "***")
-    limpo = re.sub(r"\+?\d{9,}", "***", limpo)
-    if os.environ.get("GITHUB_ACTIONS") == "true":
-        # diagnóstico: mostra o que o CallMeBot respondeu, mesmo quando parece ter corrido bem
-        print(f"::notice::CallMeBot respondeu {r.status_code}: {limpo[:160]}")
-    # a resposta pode repetir o texto enviado: só "queued" prova que seguiu
-    if r.ok and "queued" in baixo:
-        return
-    if r.ok and not re.search(r"\b(error|invalid|apikey|limit|wait|blocked|failed)\b|not activ|not sent",
-                              baixo):
-        return
-    raise RuntimeError(f"CallMeBot respondeu {r.status_code}: {limpo[:200]}")
-
+# ---------------------------------------------------------------- Telegram
 
 def _sem_segredos(texto):
     """Tira o token e o chat de qualquer texto que vá para logs públicos."""
@@ -856,53 +829,60 @@ def _sem_segredos(texto):
     return re.sub(r"bot\d+:[\w-]+", "bot***", texto)
 
 
-def telegram(texto):
-    """Envia por Telegram (texto simples, partido se passar o limite)."""
-    url = f"https://api.telegram.org/bot{TELEGRAM['token']}/sendMessage"
-    pedacos = [texto[i:i + MAX_TELEGRAM] for i in range(0, len(texto), MAX_TELEGRAM)] or [""]
-    for parte in pedacos:
-        try:
-            r = requests.post(url, json={"chat_id": TELEGRAM["chat"], "text": parte,
-                                         "disable_web_page_preview": True}, timeout=30)
-        except requests.RequestException:
-            raise RuntimeError("falha de rede ao contactar o Telegram") from None
-        try:
-            dados = r.json()
-        except ValueError:
-            dados = {}
-        if not (r.ok and dados.get("ok")):
-            motivo = _sem_segredos(str(dados.get("description") or r.text[:120]))
-            raise RuntimeError(f"Telegram respondeu {r.status_code}: {motivo}")
+def botao(texto, dados):
+    """Botão do Telegram; None se os dados passarem o limite (ex.: domínio enorme)."""
+    if len(dados.encode("utf-8")) > MAX_BOTAO:
+        return None
+    return {"text": texto, "callback_data": dados}
 
 
-def enviar(telefone, apikey, texto):
-    """Envia por todos os canais configurados. Conta como enviado se pelo menos um
-    entregar; só falha se todos falharem."""
-    canais, falhas, ok = [], [], 0
-    if telefone and apikey:
-        canais.append(("WhatsApp", lambda: whatsapp(telefone, apikey, texto)))
-    if telegram_ativo():
-        canais.append(("Telegram", lambda: telegram(texto)))
-    if not canais:
-        raise RuntimeError(segredos_em_falta(telefone, apikey))
-    for nome, fn in canais:
-        try:
-            fn()
-            ok += 1
-        except RuntimeError as e:
-            falhas.append(f"{nome}: {e}")
-    if ok == 0:
-        raise RuntimeError("; ".join(falhas))
-    for f in falhas:  # um canal falhou mas outro entregou: avisa sem parar
-        erro(f"aviso, canal com falha ({f})")
-        if f not in AVISOS_CANAL:
-            AVISOS_CANAL.append(f)
-    if telefone and apikey:
-        time.sleep(PAUSA_ENVIO)  # o CallMeBot gratuito bloqueia envios seguidos
+def teclado(*linhas):
+    """Junta linhas de botões, sem os que ficaram de fora (None)."""
+    linhas = [[b for b in linha if b] for linha in linhas]
+    linhas = [l for l in linhas if l]
+    return {"inline_keyboard": linhas} if linhas else None
+
+
+def _pedir_envio(corpo):
+    try:
+        r = requests.post(f"https://api.telegram.org/bot{TELEGRAM['token']}/sendMessage",
+                          json=corpo, timeout=30)
+    except requests.RequestException:
+        raise RuntimeError("falha de rede ao contactar o Telegram") from None
+    try:
+        dados = r.json()
+    except ValueError:
+        dados = {}
+    return r, dados
+
+
+def enviar(texto, botoes=None):
+    """Envia uma mensagem (HTML) pelo Telegram, com botões opcionais."""
+    if segredos_em_falta():
+        raise RuntimeError(segredos_em_falta())
+    corpo = {"chat_id": TELEGRAM["chat"], "text": texto[:MAX_MSG], "parse_mode": "HTML",
+             "disable_web_page_preview": True}
+    if botoes:
+        corpo["reply_markup"] = botoes
+    for _ in range(3):  # demasiadas mensagens seguidas (429): espera o que o Telegram pede
+        r, dados = _pedir_envio(corpo)
+        if r.status_code != 429:
+            break
+        time.sleep(min(int((dados.get("parameters") or {}).get("retry_after") or 5), 30))
+    if r.status_code == 400 and "parse_mode" in corpo:
+        # o Telegram recusou o HTML ou os botões: manda em texto simples, para esta notícia
+        # não ficar presa nos adiados a bloquear todas as outras
+        simples = html.unescape(re.sub(r"<[^>]+>", "", texto))[:MAX_MSG]
+        r, dados = _pedir_envio({"chat_id": TELEGRAM["chat"], "text": simples,
+                                 "disable_web_page_preview": True})
+    if not (r.ok and dados.get("ok")):
+        motivo = _sem_segredos(str(dados.get("description") or r.text[:120]))
+        raise RuntimeError(f"Telegram respondeu {r.status_code}: {motivo}")
+    time.sleep(PAUSA_ENVIO)
 
 
 def juntar_mensagens(blocos, maximo=MAX_MSG):
-    """Junta blocos de texto em poucas mensagens (o CallMeBot limita o nº de envios).
+    """Junta blocos de texto em poucas mensagens.
     Devolve [(texto, [índices dos blocos incluídos])]."""
     msgs = []
     for i, b in enumerate(blocos):
@@ -913,33 +893,54 @@ def juntar_mensagens(blocos, maximo=MAX_MSG):
     return msgs
 
 
+def h(texto):
+    """Escapa texto para as mensagens em HTML do Telegram."""
+    return html.escape(str(texto or ""), quote=True)
+
+
+def ligacao(titulo, url):
+    if re.match(r"https?://", url or ""):
+        return f'<a href="{h(url)}">{h(titulo)}</a>'
+    return h(titulo)
+
+
 def formatar_alerta(c, agora_utc):
     estado_fonte = "confiável" if c["confiavel"] else "fonte nova"
-    linhas = [f'🔔 *{c["titulo"]}*',
-              f'{c["fonte"]} ({estado_fonte}) · nota {c["nota"]} · {c["pesquisa"]}']
+    linhas = [f'🔔 <b>{ligacao(c["titulo"], c["link"])}</b>',
+              f'{h(c["fonte"])} ({estado_fonte}) · nota {c["nota"]} · {h(c["pesquisa"])}']
     palavras = []
     rot = {"alta": "alta", "media": "média", "baixa": "baixa"}
     for n in NIVEIS:
         if c["achadas"].get(n):
-            palavras.append(f'{rot[n]}: {", ".join(c["achadas"][n])}')
+            palavras.append(f'{rot[n]}: {h(", ".join(c["achadas"][n]))}')
     if palavras:
         linhas.append("🔑 " + " · ".join(palavras))
     quando = ha_quanto_tempo(parse_data(c["data"]), agora_utc)
     extra = f' · {c["n_fontes"]} fontes' if c["n_fontes"] > 1 else ""
     linhas.append(f"🕒 {quando}{extra}")
-    linhas.append(c["link"])
     return "\n".join(linhas)
+
+
+def botoes_alerta(c):
+    """Decidir a fonte da notícia logo no alerta (o Worker grava no config.yaml)."""
+    d = c.get("dominio") or ""
+    if not d or d in DOMINIOS_IGNORADOS or ":" in d:  # com porta, o Worker não o aceita
+        return None
+    if c.get("confiavel"):
+        return teclado([botao("🚫 Bloquear " + d, "f|b|" + d)])
+    return teclado([botao("⭐ Confiável", "f|c|" + d), botao("🚫 Bloquear fonte", "f|b|" + d)])
 
 
 def mensagens_resumo(itens):
     """Devolve [(texto, [notícias nessa mensagem])], com as 15 melhores."""
     total = len(itens)
     itens = sorted(itens, key=lambda c: c["nota"], reverse=True)[:15]
-    blocos = [f'{n}. {c["titulo"]}\n   {c["fonte"]} · nota {c["nota"]} · {c["pesquisa"]}\n'
-              f'   {c["link"]}' for n, c in enumerate(itens, 1)]
+    blocos = [f'{n}. {ligacao(c["titulo"], c["link"])}\n'
+              f'   {h(c["fonte"])} · nota {c["nota"]} · {h(c["pesquisa"])}'
+              for n, c in enumerate(itens, 1)]
     if blocos:
         resto = f" (as 15 melhores de {total})" if total > len(itens) else ""
-        blocos[0] = f"📰 *Resumo — {len(itens)} notícias{resto}*\n\n" + blocos[0]
+        blocos[0] = f"📰 <b>Resumo — {len(itens)} notícias{resto}</b>\n\n" + blocos[0]
     return [(t, [itens[i] for i in idx]) for t, idx in juntar_mensagens(blocos)]
 
 
@@ -1138,22 +1139,28 @@ def descobrir(cfg, estado, agora_utc):
 
 
 def texto_sugestao(s):
-    linhas = [f'🔎 *Fonte nova: {s["nome"]}* ({s["dominio"]})',
-              f'Apareceu em {s["n"]} notícias relevantes · {", ".join(s["pesquisas"])}',
-              f'Exemplo: {s["exemplo"]}']
-    linhas.append(f'📡 Feed: {s["feed"]}' if s["feed"] else
+    nome = ligacao(s["nome"], s.get("site") or "")
+    linhas = [f'🔎 <b>Fonte nova: {nome}</b> ({h(s["dominio"])})',
+              f'Apareceu em {s["n"]} notícias relevantes · {h(", ".join(s["pesquisas"]))}',
+              f'Exemplo: {h(s["exemplo"])}']
+    linhas.append(f'📡 Feed: {h(s["feed"])}' if s["feed"] else
                   "📡 Sem feed próprio: continuo a vê-la pelo Google Notícias.")
+    linhas.append("Escolhe abaixo (ou no painel, em Fontes).")
     return "\n".join(linhas)
 
 
-INSTRUCOES_FONTES = ("Para decidir, edita o config.yaml e junta o domínio a "
-                     "fontes.confiaveis, fontes.neutras ou fontes.bloqueadas. "
-                     "Se tiver feed e confiares nela, junta-o também a fontes.feeds.")
+def botoes_sugestao(s):
+    """Confiável (junta também o feed), Neutra ou Bloquear; o Worker grava no config.yaml."""
+    d = s["dominio"]
+    if ":" in d:
+        return None
+    return teclado([botao("⭐ Confiável", "f|c|" + d), botao("😐 Neutra", "f|n|" + d),
+                    botao("🚫 Bloquear", "f|b|" + d)])
 
 
 # ---------------------------------------------------------------- execução
 
-def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
+def executar(cfg, simular=False, forcar_fontes=False):
     geral = cfg.get("geral") or {}
     tz = ZoneInfo(geral.get("fuso", "Europe/Lisbon"))
     agora_utc = datetime.now(timezone.utc)
@@ -1167,8 +1174,8 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
     for k in ("adiados", "resumo"):  # fontes bloqueadas depois de a notícia entrar na fila
         estado[k] = [c for c in estado[k] if not dominio_em(c.get("dominio", ""), bloqueadas)]
 
-    if not simular and segredos_em_falta(telefone, apikey):
-        erro(segredos_em_falta(telefone, apikey))
+    if not simular and segredos_em_falta():
+        erro(segredos_em_falta())
         return 1
 
     # registo desta execução, para o painel mostrar o que aconteceu
@@ -1256,16 +1263,16 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
         for c in excesso:
             c["ts"] = agora_utc.isoformat()
             estado["resumo"].append(c)
-        for texto, idx in juntar_mensagens([formatar_alerta(c, agora_utc) for c in a_enviar]):
+        # uma mensagem por alerta, cada uma com os botões da sua fonte
+        for i, c in enumerate(a_enviar):
             try:
-                enviar(telefone, apikey, texto)
-                for i in idx:
-                    registar_envio(a_enviar[i], "alerta")
-                registo["alertas"] += len(idx)
+                enviar(formatar_alerta(c, agora_utc), botoes_alerta(c))
+                registar_envio(c, "alerta")
+                registo["alertas"] += 1
             except RuntimeError as e:
                 falha(f"não consegui enviar os alertas: {e}")
                 falhou = True
-                estado["adiados"] = a_enviar[idx[0]:]
+                estado["adiados"] = a_enviar[i:]
                 break
 
     # o resumo do dia sai na 1.ª verificação depois da hora_resumo; se nesse momento não
@@ -1276,7 +1283,7 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
         total = len(estado["resumo"])
         try:
             for texto, itens_msg in mensagens_resumo(estado["resumo"]):
-                enviar(telefone, apikey, texto)
+                enviar(texto)
                 ids_msg = {i for c in itens_msg for i in c["ids"]}
                 estado["resumo"] = [c for c in estado["resumo"]
                                     if not ids_msg.intersection(c["ids"])]
@@ -1291,14 +1298,11 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
             falhou = True
 
     if sugestoes and not falhou:
-        blocos = [texto_sugestao(sg) for sg in sugestoes] + [INSTRUCOES_FONTES]
         try:
-            for texto, idx in juntar_mensagens(blocos):
-                enviar(telefone, apikey, texto)
-                for i in idx:  # cada sugestão fica registada logo que a mensagem dela segue
-                    if i < len(sugestoes):
-                        estado["sugeridas"][sugestoes[i]["dominio"]] = sugestoes[i]
-                        registo["sugestoes"] += 1
+            for sg in sugestoes:  # cada sugestão fica registada logo que a mensagem dela segue
+                enviar(texto_sugestao(sg), botoes_sugestao(sg))
+                estado["sugeridas"][sg["dominio"]] = sg
+                registo["sugestoes"] += 1
         except RuntimeError as e:
             falha(f"não consegui enviar as sugestões de fontes: {e}")
             falhou = True
@@ -1306,8 +1310,6 @@ def executar(cfg, telefone, apikey, simular=False, forcar_fontes=False):
         estado["ultima_descoberta"] = hoje
 
     estado["enviados"] = estado["enviados"][-100:]
-    for f in AVISOS_CANAL:
-        registo["erros"].append("canal com falha: " + f)
     estado["execucoes"] = (estado["execucoes"] + [registo])[-48:]
     guardar_estado(estado)
     print("Concluído.")
@@ -1430,45 +1432,10 @@ def carregar_config():
         return yaml.safe_load(f)
 
 
-def descobrir_chat():
-    """Lê as mensagens enviadas ao bot e mostra o chat id (não é segredo por si só)."""
-    if not TELEGRAM["token"]:
-        erro("falta o segredo TELEGRAM_BOT_TOKEN no GitHub.")
-        return 1
-    try:
-        r = requests.get(f"https://api.telegram.org/bot{TELEGRAM['token']}/getUpdates",
-                         timeout=30)
-        dados = r.json()
-    except (requests.RequestException, ValueError):
-        erro("não consegui falar com o Telegram.")
-        return 1
-    if not dados.get("ok"):
-        erro("o Telegram recusou o token: " + _sem_segredos(str(dados.get("description"))))
-        return 1
-    chats = {}
-    for u in dados.get("result", []):
-        m = u.get("message") or u.get("channel_post") or {}
-        c = m.get("chat") or {}
-        if c.get("id") is not None:
-            chats[c["id"]] = c.get("first_name") or c.get("title") or ""
-    if not chats:
-        erro("o bot ainda não recebeu mensagens. Abre o bot no Telegram, carrega em "
-             "Iniciar, escreve 'olá' e corre esta ação outra vez.")
-        return 1
-    for cid, nome in chats.items():
-        msg = f"chat id do Telegram: {cid} ({nome}). Guarda-o no segredo TELEGRAM_CHAT_ID."
-        print(msg)
-        if os.environ.get("GITHUB_ACTIONS") == "true":
-            print("::notice::" + msg)
-    return 0
-
-
 def main():
     ap = argparse.ArgumentParser(description="Agregador de Notícias")
     ap.add_argument("--simular", action="store_true", help="não envia nem guarda nada")
     ap.add_argument("--teste", action="store_true", help="envia uma mensagem de teste")
-    ap.add_argument("--descobrir-chat", action="store_true",
-                    help="mostra o chat id do Telegram (envia 'olá' ao bot antes)")
     ap.add_argument("--fontes", action="store_true", help="procura fontes novas agora")
     ap.add_argument("--testar-pagina", metavar="URL", help="testa o leitor de páginas")
     ap.add_argument("--item", help="seletor CSS de cada notícia (com --testar-pagina)")
@@ -1484,14 +1451,10 @@ def main():
                     help="(GitHub) traz pelo telemóvel os sites que bloqueiam o GitHub")
     args = ap.parse_args()
 
-    telefone = re.sub(r"[^\d]", "", os.environ.get("WHATSAPP_TELEFONE", ""))
-    apikey = os.environ.get("WHATSAPP_APIKEY", "").strip()
     TELEGRAM["token"] = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
     TELEGRAM["chat"] = os.environ.get("TELEGRAM_CHAT_ID", "").strip()
 
     try:
-        if args.descobrir_chat:
-            return descobrir_chat()
         if args.testar_pagina:
             return testar_pagina(args)
         if args.buscar_pelo_telemovel:
@@ -1499,30 +1462,10 @@ def main():
         if args.procurar_feeds:
             return procurar_feeds(args.procurar_feeds, carregar_config())
         if args.teste:
-            if segredos_em_falta(telefone, apikey):
-                erro(segredos_em_falta(telefone, apikey))
-                return 1
-            resultados, ok = [], 0
-            msg = "✅ O agregador de notícias está ligado."
-            if telefone and apikey:
-                try:
-                    whatsapp(telefone, apikey, msg + " (WhatsApp)")
-                    resultados.append("WhatsApp: pedido aceite pelo CallMeBot")
-                    ok += 1
-                except RuntimeError as e:
-                    erro(f"WhatsApp falhou: {e}")
-            if telegram_ativo():
-                try:
-                    telegram(msg + " (Telegram)")
-                    resultados.append("Telegram: mensagem entregue")
-                    ok += 1
-                except RuntimeError as e:
-                    erro(f"Telegram falhou: {e}")
-            for r in resultados:
-                print(r)
-            return 0 if ok else 1
-        return executar(carregar_config(), telefone, apikey, simular=args.simular,
-                        forcar_fontes=args.fontes)
+            enviar("✅ O agregador de notícias está ligado ao Telegram.")
+            print("Mensagem de teste enviada.")
+            return 0
+        return executar(carregar_config(), simular=args.simular, forcar_fontes=args.fontes)
     except (RuntimeError, ValueError, requests.RequestException) as e:
         erro(str(e))
         return 1

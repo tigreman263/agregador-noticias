@@ -37,9 +37,9 @@ fontes:
     - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias"}
 
 # Descoberta automática de fontes: 1 vez por dia procura sites novos que
-# publicam sobre as tuas pesquisas e envia-te uma sugestão por WhatsApp.
-# Para decidir, junta o domínio a fontes.confiaveis, fontes.neutras ou
-# fontes.bloqueadas. Sem decisão em 14 dias, a sugestão é esquecida.
+# publicam sobre as tuas pesquisas e envia-te uma sugestão pelo Telegram, com
+# botões Confiável / Neutra / Bloquear (ou decide no painel, em Fontes).
+# Sem decisão em 14 dias, a sugestão é esquecida.
 descoberta:
   ativa: true
   hora: 9                      # a partir desta hora, 1 vez por dia

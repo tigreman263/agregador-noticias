@@ -1,10 +1,11 @@
 name: Agregador de Notícias
-run-name: ${{ github.event_name == 'schedule' && 'automática' || (github.event.inputs.acao == 'agendada' && 'automática (Google)' || github.event.inputs.acao) }}
+run-name: ${{ github.event_name == 'schedule' && 'automática' || (github.event.inputs.acao == 'agendada' && 'automática (Cloudflare)' || github.event.inputs.acao) }}
 
-# O GitHub acorda o workflow de 15 em 15 minutos e um script da Google
-# (extras/despertador-google.gs) chama-o também com a ação "agendada", porque o agendador do
-# GitHub salta muitas execuções. O job "decidir" vê se já passou geral.intervalo_minutos
-# (.github/ja_e_altura.py); só então corre o job "correr". Os pedidos manuais correm sempre.
+# O Worker do Cloudflare (extras/cloudflare/worker.js) chama o workflow de 15 em 15 minutos
+# com a ação "agendada", porque o agendador do GitHub salta muitas execuções; o "schedule"
+# fica como reserva. O job "decidir" vê se já passou geral.intervalo_minutos
+# (.github/ja_e_altura.py); só então corre o job "correr". Os pedidos manuais (painel, ou
+# /verificar no Telegram) correm sempre.
 on:
   schedule:
     - cron: "*/15 * * * *"
@@ -16,7 +17,6 @@ on:
         options:
           - normal
           - teste
-          - descobrir-chat
           - simular
           - descobrir-fontes
           - agendada
@@ -82,7 +82,7 @@ jobs:
       # estes passos não fazem nada e o resto corre igual.
       - name: Ligar ao telemóvel (Tailscale)
         id: tailscale
-        if: steps.hora.outputs.correr == 'sim' && env.TS_OAUTH_CLIENT_ID != '' && github.event.inputs.acao != 'teste' && github.event.inputs.acao != 'descobrir-chat'
+        if: steps.hora.outputs.correr == 'sim' && env.TS_OAUTH_CLIENT_ID != '' && github.event.inputs.acao != 'teste'
         continue-on-error: true
         timeout-minutes: 3
         uses: tailscale/github-action@v3
@@ -90,6 +90,7 @@ jobs:
           oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
           oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
           tags: tag:ci
+          hostname: github-${{ github.run_id }}   # sem isto, a ação fica com um nome vazio e falha
           args: --accept-dns=false
 
       - name: Buscar pelo telemóvel os sites bloqueados
@@ -101,15 +102,12 @@ jobs:
       - name: Executar
         if: steps.hora.outputs.correr == 'sim'
         env:
-          WHATSAPP_TELEFONE: ${{ secrets.WHATSAPP_TELEFONE }}
-          WHATSAPP_APIKEY: ${{ secrets.WHATSAPP_APIKEY }}
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ACAO: ${{ github.event.inputs.acao || 'normal' }}
         run: |
           case "$ACAO" in
             teste) python agregador.py --teste ;;
-            descobrir-chat) python agregador.py --descobrir-chat ;;
             simular) python agregador.py --simular ;;
             descobrir-fontes) python agregador.py --fontes ;;
             *) python agregador.py ;;
