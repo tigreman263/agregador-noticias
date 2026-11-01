@@ -52,4 +52,17 @@ descoberta:
 # com as palavras-chave. Podes ter várias pesquisas.
 # "obrigatorias": a notícia só conta se tiver TODAS estas palavras
 # (ex: ["sertã"] para não apanhar notícias de outros concelhos).
-pesquisas: []
+pesquisas:
+  - nome: "Sertã"
+    ativa: true
+    consulta: "Apoios"
+    obrigatorias: ["Sertã"]
+    palavras:
+      alta: ["Camara municipal", "município", "agricultura", "florestal", "Apoios", "subsidio"]
+      media: ["avaliação"]
+      baixa: ["negativo"]
+    excluir: []
+    limite_alerta: 25
+    limite_resumo: 10
+    feeds_extra: []
+    paginas_extra: []
