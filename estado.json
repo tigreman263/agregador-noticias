@@ -12,9 +12,35 @@
   "18ddbfa07a415739": "2026-11-01T15:15:46.655037+00:00",
   "3faef908246d1fe0": "2026-11-01T15:15:46.655037+00:00",
   "154d9b73069cee6c": "2026-11-01T15:15:46.655037+00:00",
-  "b01081c371e8dd81": "2026-11-01T15:15:46.655037+00:00"
+  "b01081c371e8dd81": "2026-11-01T15:15:46.655037+00:00",
+  "7f11013b1c2d5a88": "2026-11-01T15:24:10.443027+00:00"
  },
- "resumo": [],
+ "resumo": [
+  {
+   "titulo": "Regiões autónomas integram apoios nacionais à agricultura devido aos custos de produção",
+   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQWXEtY1I4ekkwbXdTSU91TkdiRElSOUNIbkQxV05QNWpYUUx2dzlidmZtR3B1WEtkTDVoR2ZncjRVa1VaTGQ5Ym5halo0VklfQXc1MklWNXoyeFpCUWM4Z01uR2ZPM1FETXNxdEdLRmMzbkk0ZVA1cEN0ZG9IcExtWmtoUVFkZFBPZF9UUXRGV3RSMGhMSzRkX2NoR1hlTW9XVFpmeXJ3Yl9QdlpPb0lUMjRyZFE1Qm1OdXMwOHd6bGl3dTjSAcMBQVVfeXFMUFlxLWNSOHpJMG13U0lPdU5HYkRJUjlDSG5EMVdOUDVqWFFMdnc5YnZmbUdwdVhLZEw1aEdmZ3I0VWtVWkxkOWJuYWpaNFZJX0F3NTJJVjV6MnhaQlFjOGdNbkdmTzNRRE1zcXRHS0ZjM25JNGVQNXBDdGRvSHBMbVpraFFRZGRQT2RfVFF0Rld0UjBoTEs0ZF9jaEdYZU1vV1RaZnlyd2JfUHZaT29JVDI0cmRRNUJtTnVzMDh3emxpd3U4?oc=5",
+   "dominio": "cmjornal.pt",
+   "fonte": "Correio da Manhã",
+   "confiavel": true,
+   "nota": 24.0,
+   "pesquisa": "Apoio Estado",
+   "achadas": {
+    "alta": [],
+    "media": [
+     "apoio",
+     "agricultura"
+    ],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-30T17:04:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "7f11013b1c2d5a88"
+   ],
+   "ts": "2026-11-01T15:24:10.443027+00:00"
+  }
+ ],
  "adiados": [],
  "ultimo_resumo": "2026-11-01",
  "sugeridas": {
@@ -96,8 +122,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "18cc34ff33731493",
-    "67cba9e3d6b58f36",
     "9573eefe423a8b1a",
     "c2aed4b2b8536f04",
     "cb3811169de2b86d",
@@ -115,14 +139,16 @@
     "d283d80270d988a1",
     "1fac94321f6eb42d",
     "d1fe5320dafc19b7",
-    "73bff08f4210ccad"
+    "73bff08f4210ccad",
+    "873b8fe6457d304e",
+    "18cc34ff33731493"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "cnnbrasil.com.br": {
    "nome": "CNN Brasil",
@@ -172,7 +198,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "antenalivre.pt": {
    "nome": "Antena Livre",
@@ -206,7 +232,7 @@
     "Apoio Estado"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -222,7 +248,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
@@ -257,7 +283,7 @@
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -287,7 +313,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "reconquista.pt": {
    "nome": "reconquista.pt",
@@ -302,7 +328,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -555,7 +581,7 @@
     "Apoio Estado"
    ],
    "exemplo": "PROAGES simplificado para facilitar apoios às famílias que ficam de fora dos apoios sociais",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "24 Notícias",
@@ -570,7 +596,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Tem abelhas? Governo prolonga apoios à apicultura com 3,3 milhões de euros",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "odigital.sapo.pt": {
    "nome": "ODigital.pt",
@@ -933,7 +959,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Powerdot reivindica 25 milhões para apoio à compra de carros elétricos no OE2027",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "sabado.pt": {
    "nome": "SÁBADO",
@@ -975,7 +1001,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Putin oferece apoio a Presidente iraniano para terminar guerra no Médio Oriente",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "sicnoticias.pt": {
    "nome": "SIC Notícias",
@@ -1070,7 +1096,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo atribui apoio a uva por vindimar para mitigar crise no Douro",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -1094,7 +1120,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Apoio à renda é pago hoje: Saiba se tem direito a receber",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "facebook.com": {
    "nome": "Facebook",
@@ -1296,13 +1322,14 @@
     "478c9085ca91f6e6",
     "8d652031a71b2b78",
     "5fa3a34de072e09f",
-    "7bde5df19eb27980"
+    "7bde5df19eb27980",
+    "7f11013b1c2d5a88"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Augusto Cury declara apoio a Flávio Bolsonaro, que promete cumprir lista de exigências",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "idealista.pt": {
    "nome": "Idealista",
@@ -1602,7 +1629,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Este apoio da Segurança Social para recibos verdes pode chegar aos 1.342 euros por mês",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "theportugalnews.com": {
    "nome": "The Portugal News",
@@ -3345,7 +3372,7 @@
     "Apoio Estado"
    ],
    "exemplo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
-   "ultima": "2026-11-01T15:15:46.655037+00:00"
+   "ultima": "2026-11-01T15:24:10.443027+00:00"
   },
   "acp.pt": {
    "nome": "Automóvel Club de Portugal | ACP",
@@ -4877,10 +4904,41 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-01T15:24:10.443027+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 285,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio Estado",
+     "recolhidas": 285,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio Estado · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-01T15:15:46.655037+00:00"
+  "cm-serta.pt": "2026-11-01T15:24:10.443027+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
