@@ -111,12 +111,14 @@ ol li{margin-bottom:6px}
 <script>
 "use strict";
 // ------------------------------------------------------------ armazenamento local
+const WORKER_OMISSAO = "https://agregador-noticias.investrade-telmosilva.workers.dev";
 const LS_LIG = "agregador.ligacao", LS_TOKEN = "agregador.token", LS_TAB = "agregador.tab", LS_LIMPO = "agregador.limpoAte";
 function lsGet(k, d) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } }
 function lsSet(k, v) { try { if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) {} }
 
 const S = {
   repo: (function () { try { return JSON.parse(lsGet(LS_LIG, "{}")).repo || "tigreman263/agregador-noticias"; } catch (e) { return "tigreman263/agregador-noticias"; } })(),
+  worker: (function () { try { return JSON.parse(lsGet(LS_LIG, "{}")).worker || WORKER_OMISSAO; } catch (e) { return WORKER_OMISSAO; } })(),
   ramo: "main",
   token: lsGet(LS_TOKEN, ""),
   tab: lsGet(LS_TAB, "inicio"),
@@ -364,9 +366,18 @@ function estadoRun(run) {
   return '<span class="tag bad">falhou</span>';
 }
 function tipoRun(run) {
-  if (run.event === "schedule" || /automática/.test(run.display_title || "")) return "automática";
+  if (/Cloudflare/.test(run.display_title || "")) return "automática (Cloudflare)";
+  if (run.event === "schedule" || /automática/.test(run.display_title || "")) return "automática (GitHub)";
   if (run.event === "workflow_dispatch") return "manual";
   return run.event;
+}
+// O Worker do Cloudflare pede uma verificação de 15 em 15 minutos ("automática (Cloudflare)").
+function linhaDespertador() {
+  if (!S.runs.length) return "";
+  const cf = S.runs.find(r => /Cloudflare/.test(r.display_title || ""));
+  const min = cf ? Math.floor((Date.now() - new Date(cf.created_at)) / 60000) : Infinity;
+  if (min <= 45) return '<div class="xs"><span class="tag ok">despertador ligado</span> O Worker do Cloudflare acordou o agregador ' + esc(quando(cf.created_at)) + ".</div>";
+  return '<div class="xs err">O despertador do Cloudflare ' + (cf ? "não acorda o agregador desde " + esc(hora(cf.created_at)) : "não aparece nas últimas execuções") + '. Sem ele o GitHub salta muitas verificações. Vê <a href="#" data-a="tab" data-p="ligacao">Ligação → Telegram e Cloudflare</a>.</div>';
 }
 function vistaInicio() {
   const est = S.estado || {}, ex = (est.execucoes || []).slice(-1)[0];
@@ -384,7 +395,7 @@ function vistaInicio() {
   const intv = intervaloAtual();
   h += '<div class="card"><h3>Frequência</h3><div class="sm muted">De quanto em quanto tempo o agregador procura notícias sozinho.</div>';
   h += '<div class="row"><select id="intervalo" aria-label="Intervalo entre verificações">' + INTERVALOS.map(([m, t]) => '<option value="' + m + '"' + (m === intv ? " selected" : "") + ">" + t + "</option>").join("") + (INTERVALOS.some(([m]) => m === intv) ? "" : '<option value="' + intv + '" selected>' + intv + " minutos</option>") + '</select><button class="btn btn-sm btn-primary" data-a="gravar-intervalo">Guardar</button></div>';
-  h += '<div class="xs muted">Vale a partir da verificação seguinte. O GitHub pode atrasar as verificações automáticas, por vezes bastante.</div></div>';
+  h += '<div class="xs muted">Vale a partir da verificação seguinte.</div>' + linhaDespertador() + "</div>";
   h += '<div class="card"><h3>Correr agora</h3><div class="sm muted">Sem esperar pelo intervalo, podes pedir uma execução já:</div><div class="grid2">';
   Object.keys(ACOES).forEach(a => { h += '<button class="btn ' + (a === "normal" ? "btn-primary" : "btn-line") + '" data-a="correr" data-p="' + a + '"' + (S.aSeguir && !(S.aSeguir.run && S.aSeguir.run.status === "completed") ? " disabled" : "") + ">" + esc(ACOES[a]) + "</button>"; });
   h += "</div>";
@@ -392,7 +403,7 @@ function vistaInicio() {
     const r = S.aSeguir.run;
     h += '<div class="sm">' + esc(ACOES[S.aSeguir.acao]) + ": " + (r ? estadoRun(r) + ' · <a href="' + esc(urlSegura(r.html_url)) + '" target="_blank" rel="noopener">ver registo</a>' : '<span class="tag info">à espera de começar…</span>') + "</div>";
   }
-  h += '<div class="xs muted">"Simular" mostra no registo o que seria enviado, sem enviar nada.</div></div>';
+  h += '<div class="xs muted">"Simular" mostra no registo o que seria enviado, sem enviar nada. No Telegram, <code>/verificar</code> faz o mesmo que "Verificar agora" e <code>/estado</code> mostra a última verificação.</div></div>';
   const ps = (S.config && S.config.pesquisas) || [];
   h += '<div class="card"><div class="row"><h3>Pesquisas</h3><button class="btn btn-sm" data-a="tab" data-p="pesquisas">Gerir</button></div>';
   h += ps.length ? ps.map(p => '<div class="list-item"><span>' + esc(p.nome) + "</span>" + (p.ativa === false ? '<span class="tag">em pausa</span>' : '<span class="tag ok">ativa</span>') + "</div>").join("") : '<div class="empty">Ainda não tens pesquisas.</div>';
@@ -513,7 +524,7 @@ function vistaFontes() {
   const f = (S.config && S.config.fontes) || {}, sug = (S.estado || {}).sugeridas || {};
   let h = '<div class="top"><h1>Fontes</h1></div>';
   const ks = Object.keys(sug);
-  h += '<div class="card"><h3>Sugeridas pela app</h3><div class="xs muted">Sites que publicaram notícias relevantes. Decide aqui; a escolha fica no config.yaml.</div>';
+  h += '<div class="card"><h3>Sugeridas pela app</h3><div class="xs muted">Sites que publicaram notícias relevantes. Decide aqui ou nos botões da mensagem do Telegram (<code>/fontes</code> volta a mostrá-las); a escolha fica no config.yaml.</div>';
   if (!ks.length) h += '<div class="empty">Nenhuma fonte por decidir.</div>';
   ks.forEach(d => {
     const s = sug[d];
@@ -549,6 +560,14 @@ function vistaLigacao() {
   h += "<li>Permissions → Repository permissions: <b>Contents: Read and write</b> e <b>Actions: Read and write</b>.</li>";
   h += "<li>Generate token, copia-o e cola-o acima.</li></ol>";
   h += '<div class="xs muted">Este token só dá acesso a este repositório. Quem usar este navegador consegue mudar as pesquisas; num aparelho partilhado, usa "Esquecer token" no fim.</div></div>';
+  h += '<div class="card"><h3>Telegram e Cloudflare</h3><div class="sm muted">O GitHub envia os alertas pelo bot do Telegram. O Worker do Cloudflare acorda o agregador de 15 em 15 minutos e trata dos botões e dos comandos do bot.</div>';
+  h += '<div class="field"><label for="l-worker">Endereço do Worker</label><input type="url" id="l-worker" value="' + esc(S.worker) + '" placeholder="https://agregador-noticias.&lt;conta&gt;.workers.dev"><div class="hint">Abrir este endereço volta a ligar o bot ao Worker e mostra três ✅ se estiver tudo bem.</div></div>';
+  h += '<div class="wrap"><button class="btn btn-sm" data-a="gravar-worker">Guardar</button>' + (/^https:\/\//.test(S.worker) ? '<a class="btn btn-sm btn-line" href="' + esc(urlSegura(S.worker)) + '" target="_blank" rel="noopener">Verificar o Worker</a>' : "") + "</div>";
+  h += linhaDespertador();
+  h += '<div class="sm" style="margin-top:8px"><b>Onde estão os segredos</b></div><ul class="sm">';
+  h += '<li>GitHub (<a href="https://github.com/' + esc(S.repo) + '/settings/secrets/actions" target="_blank" rel="noopener">Segredos</a>): <code>TELEGRAM_BOT_TOKEN</code> e <code>TELEGRAM_CHAT_ID</code>.</li>';
+  h += '<li>Cloudflare (<a href="https://dash.cloudflare.com/?to=/:account/workers-and-pages" target="_blank" rel="noopener">Workers e Pages</a> → agregador-noticias → Configurações → Variáveis e segredos): <code>GITHUB_TOKEN</code>, <code>TELEGRAM_BOT_TOKEN</code> e <code>TELEGRAM_CHAT_ID</code>, todos do tipo Segredo.</li></ul>';
+  h += '<div class="xs muted">O token do GitHub do Worker e o deste painel têm validade. Quando expirarem, cria outros com as mesmas permissões e troca-os (o bot avisa-te às 9h se o do Worker deixar de funcionar). Se trocares o token do bot, atualiza-o nos dois sítios e abre de novo o endereço do Worker.</div></div>';
   h += '<div class="card"><h3>Atalhos</h3><div class="sm"><a href="https://github.com/' + esc(S.repo) + '/blob/main/config.yaml" target="_blank" rel="noopener">config.yaml no GitHub</a> · <a href="https://github.com/' + esc(S.repo) + '/actions" target="_blank" rel="noopener">Actions</a> · <a href="https://github.com/' + esc(S.repo) + '/settings/secrets/actions" target="_blank" rel="noopener">Segredos</a></div><button class="btn btn-sm" data-a="tab" data-p="ajuda">Ver a Ajuda (instalação e configuração passo a passo)</button></div>';
   return h;
 }
@@ -686,12 +705,17 @@ async function onClick(ev) {
     await ocupado(el, async () => { await mudarConfig("fontes", f => { f.feeds = feeds; f.paginas = pags; return f; }, "painel: feeds e sites gerais"); toast("Guardado no GitHub."); render(); });
     return;
   }
+  if (a === "gravar-worker") {
+    const w = document.getElementById("l-worker").value.trim().replace(/\/+$/, "");
+    if (w && !/^https:\/\/[\w.-]+$/i.test(w)) { toast("Escreve o endereço completo, a começar por https://"); return; }
+    S.worker = w; lsSet(LS_LIG, JSON.stringify({ repo: S.repo, worker: w })); toast("Guardado neste navegador."); render(); return;
+  }
   if (a === "ligar") {
     const repo = document.getElementById("l-repo").value.trim().replace(/^https?:\/\/github\.com\//i, "").replace(/\/$/, "");
     const tok = document.getElementById("l-token").value.trim();
     const res = document.getElementById("l-res");
     if (!/^[\w.-]+\/[\w.-]+$/.test(repo)) { res.innerHTML = '<span class="err">Escreve o repositório como dono/nome.</span>'; return; }
-    S.repo = repo; lsSet(LS_LIG, JSON.stringify({ repo: repo }));
+    S.repo = repo; lsSet(LS_LIG, JSON.stringify({ repo: repo, worker: S.worker }));
     if (tok) { S.token = tok; lsSet(LS_TOKEN, tok); }
     res.textContent = "A testar…";
     try {

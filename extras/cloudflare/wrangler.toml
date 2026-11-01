@@ -1,5 +1,6 @@
-# Só é preciso se publicares com o Wrangler (npx wrangler deploy, dentro desta pasta).
-# Pelo painel do Cloudflare basta colar o worker.js e criar o Cron Trigger à mão.
+# Usado quando o Cloudflare publica o Worker a partir do GitHub (Workers Builds, comando
+# "cd extras/cloudflare && npx wrangler deploy") ou com o Wrangler no computador.
+# Quem colar o worker.js à mão no painel do Cloudflare cria o Cron Trigger lá.
 name = "agregador-noticias"
 main = "worker.js"
 compatibility_date = "2026-10-01"

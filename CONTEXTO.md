@@ -138,8 +138,15 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 - De 2026-10-11 a 2026-11-01 todas as execuções falharam (`NameError: DOMINIOS_IGNORADOS`,
   constante apagada sem querer no commit do Telegram); corrigido. A ação do Tailscale
   também falhava com o nome do anfitrião vazio; o workflow passa agora `hostname`.
-- Envios só por Telegram; o Worker do Cloudflare tem de ser instalado pelo utilizador
-  (README 2.8).
+- Envios só por Telegram (bot @Agregador_telmo_bot; segredos TELEGRAM_* no GitHub desde
+  2026-11-01). Os segredos WHATSAPP_* foram apagados.
+- Worker do Cloudflare instalado (2026-11-01) por Workers Builds ligado ao repositório:
+  comando `cd extras/cloudflare && npx wrangler deploy`, endereço
+  https://agregador-noticias.investrade-telmosilva.workers.dev (o interruptor workers.dev
+  teve de ser ligado à mão no Cloudflare; `workers_dev = true` no toml não chegou).
+  Webhook do Telegram aponta para `/telegram`; as execuções "automática (Cloudflare)" correm.
+- O painel mostra o estado do despertador (Início → Frequência e Ligação → Telegram e
+  Cloudflare), a partir do título das execuções; o endereço do Worker fica no localStorage.
 - O utilizador usa o painel com token: pesquisas "Sertã" e "Apoio Estado".
 - Tailscale configurado (2026-10-10): telemóvel 'Redmi Note 12 Pro+ 5G' aprovado como
   exit node; segredos TS_OAUTH_* no GitHub; a Câmara da Sertã é trazida pelo telemóvel.
@@ -150,8 +157,9 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 
 ## Próximos passos sugeridos
 
-1. Confirmar que o Worker do Cloudflare está instalado (a raiz do Worker mostra três ✅) e que
-   aparecem execuções "automática (Cloudflare)".
+1. Confirmar com o utilizador o caminho de observação `extras/cloudflare/*` no Cloudflare
+   (senão cada commit do estado volta a publicar o Worker) e, se quiser, trocar o token do
+   bot (apareceu numa captura de ecrã).
 2. Variantes de palavras ("regulação", "regulamento", "regulamentação" como o mesmo conceito).
 3. Botões "útil / não útil" nos alertas para aprender o que interessa (agora possível, via
    Worker).

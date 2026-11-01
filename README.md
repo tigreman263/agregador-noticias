@@ -97,7 +97,8 @@ que te falta. Para montar de raiz noutra conta, segue todos.
 2. Abre o teu bot novo, carrega em **Iniciar** e escreve `olá`.
 3. No navegador, abre `https://api.telegram.org/bot<TOKEN>/getUpdates` (troca `<TOKEN>`
    pelo token). Procura `"chat":{"id":123456789` — esse número é o teu **chat id**.
-   (Se aparecer `"result":[]`, escreve outra mensagem ao bot e recarrega.) Depois de
+   (Se aparecer só `"ok":true` e `"result":[]`, o token está certo mas o bot ainda não
+   recebeu nenhuma mensagem tua: escreve-lhe outra vez e recarrega.) Depois de
    instalares o Worker (passo 2.8), basta mandar `/start` ao bot para ele te dizer o número.
 
 ### 2.3 Guardar os segredos no GitHub
@@ -236,15 +237,24 @@ O código é um só ficheiro, `extras/cloudflare/worker.js`, sem dependências.
    **Actions: Read and write**.
 5. **Generate token** e copia-o (começa por `github_pat_`).
 
-**2. Criar o Worker**
+**2. Criar o Worker ligado ao GitHub** (recomendado: atualiza-se sozinho quando o
+`worker.js` muda)
 
 1. Cria uma conta gratuita em https://dash.cloudflare.com (não pede cartão).
-2. **Compute (Workers) → Workers & Pages → Create → Create Worker** (modelo "Hello World").
-   Nome: `agregador-noticias`. **Deploy**.
-3. **Edit code**: apaga o que lá está, cola todo o `extras/cloudflare/worker.js` e carrega
-   em **Deploy**.
-4. Volta ao Worker → **Settings → Variables and secrets → Add**, três vezes, do tipo
-   **Secret**:
+2. **Computação → Workers e Pages → Criar → Importar um repositório** (Import a
+   repository). Liga a tua conta do GitHub e escolhe `agregador-noticias`.
+3. Em **Configure seu aplicativo**:
+   - **Nome do projeto**: `agregador-noticias`;
+   - **Comando da build**: vazio;
+   - **Comando de implantação**: `cd extras/cloudflare && npx wrangler deploy`
+     (o Worker está nessa pasta; sem o `cd`, a implantação falha).
+
+   Carrega em **Implantar** e espera pelo ✅. O Cron de 15 em 15 minutos vem no
+   `wrangler.toml`, não é preciso criá-lo.
+4. No Worker → **Configurações → Variáveis e segredos → Adicionar**. Junta as três de uma
+   vez (botão **+ Adicionar** para mais linhas) e **marca a caixa "Segredo" em cada uma**:
+   uma variável sem essa caixa é apagada sempre que o Worker se publica de novo a partir
+   do GitHub.
 
    | Nome | Valor |
    |---|---|
@@ -252,15 +262,29 @@ O código é um só ficheiro, `extras/cloudflare/worker.js`, sem dependências.
    | `TELEGRAM_BOT_TOKEN` | O token do bot (o mesmo do GitHub). |
    | `TELEGRAM_CHAT_ID` | O teu chat id (o mesmo do GitHub). |
 
-5. **Settings → Trigger events → Add → Cron Triggers**: `*/15 * * * *`. **Add**.
-6. Abre no navegador o endereço do Worker (algo como
-   `https://agregador-noticias.<a-tua-conta>.workers.dev`). Isto liga o bot ao Worker e
-   deve mostrar três ✅ (Telegram, chat id e GitHub).
-7. No Telegram, escreve `/estado` ao bot: deve responder com a última verificação.
+5. **Configurações → Domínios e rotas → URL do Worker**: liga o interruptor da linha
+   **Produção** (`agregador-noticias.<a-tua-conta>.workers.dev`). Se ficar desligado, o
+   painel do Worker diz "Nenhum URL habilitado" e o bot não consegue falar com ele.
+6. **Configurações → Compilação → Caminhos de observação de build → Incluir**:
+   `extras/cloudflare/*`. Assim o Worker só se publica de novo quando o código dele muda,
+   e não sempre que o agregador grava o `estado.json`.
+7. Abre no navegador o endereço do Worker
+   (`https://agregador-noticias.<a-tua-conta>.workers.dev`). Isto liga o bot ao Worker e
+   deve mostrar três ✅ (Telegram, chat id e GitHub). Guarda o endereço no painel, em
+   **Ligação → Telegram e Cloudflare**.
+8. No Telegram, escreve `/estado` ao bot: deve responder com a última verificação. No
+   painel, **Início → Frequência** passa a mostrar "despertador ligado".
+
+**Alternativa: colar o código à mão** (não se atualiza sozinho)
+
+**Workers e Pages → Criar → Create Worker** (modelo "Hello World"), nome
+`agregador-noticias`, **Deploy** → **Editar código**: cola todo o
+`extras/cloudflare/worker.js` e **Deploy**. Depois, os passos 4, 5 e 7 de cima, e ainda
+**Configurações → Trigger events → Adicionar → Cron Triggers**: `*/15 * * * *`. Sempre que
+o `worker.js` mudar no repositório, tens de o colar de novo.
 
 Quem preferir o terminal pode publicar com o Wrangler, dentro de `extras/cloudflare`:
-`npx wrangler deploy` (o `wrangler.toml` já tem o Cron) e `npx wrangler secret put
-GITHUB_TOKEN` (e os outros dois).
+`npx wrangler deploy` e `npx wrangler secret put GITHUB_TOKEN` (e os outros dois).
 
 O agendador do próprio GitHub continua ligado como reserva; os dois respeitam o mesmo
 intervalo, sem verificações nem mensagens repetidas. Se o pedido ao GitHub falhar (token
@@ -273,11 +297,11 @@ id; a outras pessoas responde apenas com o chat id delas.
 
 | Secção | O que tem |
 |---|---|
-| **Início** | Última verificação (correu bem / falhou, com link para o registo), alertas de hoje, notícias à espera, fontes por decidir. **Frequência**: de quanto em quanto tempo o agregador procura (30 minutos a 1 vez por dia). Botões para correr já: **Verificar agora**, **Simular** (mostra no registo o que seria enviado, sem enviar), **Testar Telegram** e **Procurar fontes novas**. |
+| **Início** | Última verificação (correu bem / falhou, com link para o registo), alertas de hoje, notícias à espera, fontes por decidir. **Frequência**: de quanto em quanto tempo o agregador procura (30 minutos a 1 vez por dia), e se o despertador do Cloudflare está ligado. Botões para correr já: **Verificar agora**, **Simular** (mostra no registo o que seria enviado, sem enviar), **Testar Telegram** e **Procurar fontes novas**. |
 | **Pesquisas** | Criar, editar, pausar e apagar pesquisas. Mostra o resultado da última verificação de cada uma. |
 | **Atividade** | Execuções no GitHub, o que a app fez em cada uma (notícias lidas, novas relevantes, alertas, fontes com falha, fontes trazidas pelo telemóvel), o que foi enviado para o Telegram, e o que está à espera (alertas adiados e resumo). |
-| **Fontes** | Fontes sugeridas pela app (Confiável / Neutra / Bloquear), listas de confiáveis, neutras e bloqueadas, e feeds e sites gerais. |
-| **Ligação** | Repositório e token do GitHub, com as instruções para o criar. |
+| **Fontes** | Fontes sugeridas pela app (Confiável / Neutra / Bloquear; também se decide nos botões do Telegram), listas de confiáveis, neutras e bloqueadas, e feeds e sites gerais. |
+| **Ligação** | Repositório e token do GitHub, com as instruções para o criar. **Telegram e Cloudflare**: endereço do Worker (botão **Verificar o Worker**), estado do despertador e onde estão os segredos. |
 | **Ajuda** | Este documento. |
 
 Notas:
@@ -295,7 +319,8 @@ Notas:
 - "**novas relevantes**" conta só as notícias relevantes que ainda não tinham sido
   vistas. "0 novas relevantes" não é erro: quer dizer que não apareceu nada de novo.
 - O painel atualiza sozinho de 5 em 5 minutos; usa **Atualizar** para ver já.
-- **Frequência**: o GitHub acorda o agregador de 15 em 15 minutos; se ainda não passou o
+- **Frequência**: o Worker do Cloudflare acorda o agregador de 15 em 15 minutos (o
+  agendador do GitHub fica de reserva); se ainda não passou o
   intervalo que escolheste, ele termina logo, sem fazer nada (no separador Actions do
   GitHub vês muitas execuções curtas, é normal). Os botões de **Correr agora** não
   esperam pelo intervalo.
@@ -544,7 +569,7 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 | `index.html` | Encaminha o endereço curto do GitHub Pages para o painel. |
 | `.nojekyll` | Faz o GitHub Pages servir os ficheiros tal como estão. |
 | `extras/cloudflare/worker.js` | Worker do Cloudflare: despertador e bot do Telegram (passo 2.8). |
-| `extras/cloudflare/wrangler.toml` | Configuração para publicar o Worker com o Wrangler (opcional). |
+| `extras/cloudflare/wrangler.toml` | Configuração do Worker (nome, Cron de 15 em 15 minutos, endereço workers.dev), usada quando o Cloudflare o publica a partir do GitHub. |
 | `README.md` | Este documento (também em **Ajuda** no painel). |
 | `CONTEXTO.md` | Decisões técnicas, para quem continuar o desenvolvimento. |
 | `.claude/` | Agentes e configuração do Claude Code usados no desenvolvimento. |
@@ -575,6 +600,27 @@ aparecerem, confirma o Cron Trigger e o `GITHUB_TOKEN` do Worker. Para verificar
 
 **"Fonte com falha … Connection reset by peer"**
 O site recusa os servidores do GitHub. Ver secção 5.7 e passo 2.7.
+
+**O Worker diz "Nenhum URL habilitado" ou o endereço `…workers.dev` não abre**
+No Cloudflare, **Configurações → Domínios e rotas → URL do Worker**: liga o interruptor
+da linha **Produção** e espera um minuto.
+
+**A implantação do Worker falha no passo "Deploying"**
+O comando de implantação tem de entrar na pasta do Worker:
+`cd extras/cloudflare && npx wrangler deploy` (**Configurações → Compilação**). Depois,
+**Implantações → Tentar compilar novamente**.
+
+**Um segredo do Worker desapareceu**
+Foi criado sem a caixa **Segredo** marcada, e o Worker publicou-se de novo a partir do
+GitHub. Cria-o outra vez, com a caixa marcada.
+
+**Um token expirou**
+- Token do Worker (`GITHUB_TOKEN`): o bot avisa às 9h e as execuções "automática
+  (Cloudflare)" param. Cria outro (passo 2.8, ponto 1) e troca-o no Cloudflare.
+- Token do painel: o painel diz que o token não é válido. Cria outro (passo 2.6) e cola-o em
+  **Ligação**.
+- Token do bot (se o trocares com `/revoke` no @BotFather): atualiza `TELEGRAM_BOT_TOKEN`
+  no GitHub e no Cloudflare e abre de novo o endereço do Worker.
 
 **"0 novas relevantes"**
 Não apareceu nada de novo com pontos suficientes; as notícias já vistas não contam.
