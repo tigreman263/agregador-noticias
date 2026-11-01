@@ -65,7 +65,10 @@
   "b7cc1c6f08db7977": "2026-11-01T17:46:06.009199+00:00",
   "2ebddc8f6582ce2d": "2026-11-01T17:46:06.009199+00:00",
   "607a60efa2ab6b9d": "2026-11-01T18:45:59.659204+00:00",
-  "86e21b6273ef5fd5": "2026-11-01T18:45:59.659204+00:00"
+  "86e21b6273ef5fd5": "2026-11-01T18:45:59.659204+00:00",
+  "30d90b08fb70f0c7": "2026-11-01T19:45:47.037734+00:00",
+  "e7f29046192abf85": "2026-11-01T19:45:47.037734+00:00",
+  "0cccb15b90e9a1b5": "2026-11-01T19:45:47.037734+00:00"
  },
  "resumo": [
   {
@@ -1015,9 +1018,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "1e5f68dd9b199849",
-    "d283d80270d988a1",
-    "1fac94321f6eb42d",
     "d1fe5320dafc19b7",
     "73bff08f4210ccad",
     "873b8fe6457d304e",
@@ -1034,14 +1034,17 @@
     "b7cc1c6f08db7977",
     "2ebddc8f6582ce2d",
     "607a60efa2ab6b9d",
-    "86e21b6273ef5fd5"
+    "86e21b6273ef5fd5",
+    "30d90b08fb70f0c7",
+    "e7f29046192abf85",
+    "0cccb15b90e9a1b5"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -1098,7 +1101,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -1151,7 +1154,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -1196,7 +1199,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -1277,7 +1280,7 @@
     "Sertã"
    ],
    "exemplo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "contacto.lu": {
    "nome": "contacto.lu",
@@ -1289,7 +1292,7 @@
     "Sertã"
    ],
    "exemplo": "Quem beneficia realmente dos apoios à energia?",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "radionovaantena.com": {
    "nome": "Rádio Nova Antena",
@@ -1301,7 +1304,7 @@
     "Sertã"
    ],
    "exemplo": "Montemor-o-Novo reforça apoios às famílias e prepara recuperação da Escola Básica n.º 1",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "alentejo.sulinformacao.pt": {
    "nome": "Sul Informação Alentejo",
@@ -1313,7 +1316,7 @@
     "Sertã"
    ],
    "exemplo": "Odemira dá 515 mil euros em apoios a clubes e associações desportivas do concelho",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "impala.pt": {
    "nome": "Portal Impala",
@@ -1325,7 +1328,7 @@
     "Sertã"
    ],
    "exemplo": "Bombeiros de Leiria alertam para falta de apoio às corporações",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "jn.pt": {
    "nome": "Jornal de Notícias",
@@ -1337,7 +1340,7 @@
     "Sertã"
    ],
    "exemplo": "Quem ganha o salário mínimo já não tem acesso a novo apoio para carros elétricos",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "publico.pt": {
    "nome": "Público",
@@ -1349,7 +1352,7 @@
     "Sertã"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -1362,7 +1365,7 @@
     "Sertã"
    ],
    "exemplo": "Agricultores dos Açores pedem 23 milhões de euros em apoios do Governo",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "ambienteonline.pt": {
    "nome": "Água&Ambiente Online",
@@ -1399,7 +1402,7 @@
     "Sertã"
    ],
    "exemplo": "Regiões autónomas integram apoios nacionais à agricultura devido aos custos de produção",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "observador.pt": {
    "nome": "Observador",
@@ -1411,7 +1414,7 @@
     "Sertã"
    ],
    "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "jm-madeira.pt": {
    "nome": "JM Madeira",
@@ -1423,7 +1426,7 @@
     "Sertã"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -1435,7 +1438,7 @@
     "Sertã"
    ],
    "exemplo": "João Lopes Aleixo questionou apoios para os territórios de baixa densidade (C/VÍDEO)",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "portal-energia.com": {
    "nome": "Portal Energia",
@@ -1449,7 +1452,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1461,7 +1464,7 @@
     "Sertã"
    ],
    "exemplo": "O paradoxo do novo apoio elétrico: quem ganha o salário mínimo fica de fora",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "turbo.pt": {
    "nome": "Revista Turbo",
@@ -1501,7 +1504,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Estado vai comparticipar até 80% da compra de carros elétricos para famílias com baixos rendimentos",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "dnoticias.pt": {
    "nome": "dnoticias.pt",
@@ -1515,7 +1518,7 @@
     "Sertã"
    ],
    "exemplo": "Mau tempo põe abastecimento de água em alerta nos Prazeres",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   },
   "eco.sapo.pt": {
    "nome": "SAPO",
@@ -1539,7 +1542,7 @@
     "Sertã"
    ],
    "exemplo": "Município português investe em apoios financeiros aos estudantes",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-01T19:45:47.037734+00:00"
   }
  },
  "ultima_descoberta": "2026-11-01",
@@ -1911,6 +1914,33 @@
    "link": "https://sapo.pt/artigo/bombeiros-em-alerta-falta-de-apoio-ameaca-seguranca-6ae76e867a19de6f9c23a66b",
    "fonte": "SAPO",
    "nota": 30.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T19:45:47.037734+00:00",
+   "titulo": "Governo moçambicano cria unidade de apoio a doentes oncológicos após incêndio",
+   "link": "https://sapo.pt/artigo/governo-mocambicano-cria-unidade-de-apoio-a-doentes-oncologicos-apos-incendio-6ae78bb3767278ab5134213e",
+   "fonte": "SAPO",
+   "nota": 34.5,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T19:45:47.037734+00:00",
+   "titulo": "Quer comprar a dona da Ray-Ban por 30 mil milhões. Só há um problema: a família não quer vender",
+   "link": "https://sapo.pt/artigo/quer-comprar-a-dona-da-ray-ban-por-30-mil-milhoes-so-ha-um-problema-a-familia-nao-quer-vender-6ae78d75f8020b05950d5d1c",
+   "fonte": "SAPO",
+   "nota": 34.5,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T19:45:47.037734+00:00",
+   "titulo": "Governo moçambicano cria unidade de apoio a doentes oncológicos após incêndio",
+   "link": "https://sapo.pt/artigo/governo-mocambicano-cria-unidade-de-apoio-a-doentes-oncologicos-apos-incendio-6ae78bb3767278ab5134213e",
+   "fonte": "SAPO",
+   "nota": 34.5,
    "pesquisa": "Apoio fundo ambiental"
   }
  ],
@@ -2524,10 +2554,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-01T19:45:47.037734+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 285,
+     "relevantes": 1,
+     "alertas": 1
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 220,
+     "relevantes": 2,
+     "alertas": 2
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 3,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-01T18:45:59.659204+00:00"
+  "cm-serta.pt": "2026-11-01T19:45:47.037734+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
