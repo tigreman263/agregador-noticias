@@ -14,9 +14,82 @@
   "154d9b73069cee6c": "2026-11-01T15:15:46.655037+00:00",
   "b01081c371e8dd81": "2026-11-01T15:15:46.655037+00:00",
   "7f11013b1c2d5a88": "2026-11-01T15:24:10.443027+00:00",
-  "6e0def7c1e222cec": "2026-11-01T15:25:27.485951+00:00"
+  "6e0def7c1e222cec": "2026-11-01T15:25:27.485951+00:00",
+  "13cd5ff993a82d4b": "2026-11-01T16:13:44.900325+00:00",
+  "ea3b54856b251a0b": "2026-11-01T16:13:44.900325+00:00",
+  "da5971435552497c": "2026-11-01T16:13:44.900325+00:00"
  },
- "resumo": [],
+ "resumo": [
+  {
+   "titulo": "IC8 com condicionamentos de trânsito de 2 a 13 de novembro entre nós Sertã Este e Várzea dos Cavaleiros",
+   "link": "https://cm-serta.pt/comunicacao/noticias/ic8-condicionamentos-de-transito-2-13-de-novembro-serta-este-e-varzea-dos-cavaleiros-nov26",
+   "dominio": "cm-serta.pt",
+   "fonte": "cm-serta.pt",
+   "confiavel": false,
+   "nota": 10.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [
+     "Camara municipal"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-30T19:33:15+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "13cd5ff993a82d4b"
+   ],
+   "ts": "2026-11-01T16:13:44.900325+00:00"
+  },
+  {
+   "titulo": "Avaria em estação elevatória da Valada resolvida",
+   "link": "https://cm-serta.pt/comunicacao/noticias/avaria-em-estacao-elevatoria-da-valada-resolvida-out-26",
+   "dominio": "cm-serta.pt",
+   "fonte": "cm-serta.pt",
+   "confiavel": false,
+   "nota": 10.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [
+     "município"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-30T16:57:53+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "ea3b54856b251a0b"
+   ],
+   "ts": "2026-11-01T16:13:44.900325+00:00"
+  },
+  {
+   "titulo": "SertÃgenda - Agenda Cultural novembro e dezembro",
+   "link": "https://cm-serta.pt/comunicacao/noticias/agenda-cultural-novembro-dezembro-26",
+   "dominio": "cm-serta.pt",
+   "fonte": "cm-serta.pt",
+   "confiavel": false,
+   "nota": 10.0,
+   "pesquisa": "Sertã",
+   "achadas": {
+    "alta": [
+     "município"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-10-30T16:30:04+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "da5971435552497c"
+   ],
+   "ts": "2026-11-01T16:13:44.900325+00:00"
+  }
+ ],
  "adiados": [],
  "ultimo_resumo": "2026-11-01",
  "sugeridas": {
@@ -41,42 +114,6 @@
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
    "site": "https://www.reconquista.pt",
-   "feed": null,
-   "em": "2026-11-01T15:55:59.894612+00:00"
-  },
-  "diariodigitalcastelobranco.pt": {
-   "dominio": "diariodigitalcastelobranco.pt",
-   "nome": "Diário Digital Castelo Branco",
-   "n": 3,
-   "pesquisas": [
-    "Sertã"
-   ],
-   "exemplo": "Sertã: Ricardo Barbosa e Lídia Carolina apresentam \"Portugal: Um país em Canções\" a 11 de outubro",
-   "site": "https://www.diariodigitalcastelobranco.pt",
-   "feed": null,
-   "em": "2026-11-01T15:55:59.894612+00:00"
-  },
-  "antenalivre.pt": {
-   "dominio": "antenalivre.pt",
-   "nome": "Antena Livre",
-   "n": 2,
-   "pesquisas": [
-    "Sertã"
-   ],
-   "exemplo": "Sertã: Castanhas e Frutos secos em destaque nos Produtos da Terra",
-   "site": "https://www.antenalivre.pt",
-   "feed": null,
-   "em": "2026-11-01T15:55:59.894612+00:00"
-  },
-  "gazetadointerior.pt": {
-   "dominio": "gazetadointerior.pt",
-   "nome": "Gazeta do Interior",
-   "n": 2,
-   "pesquisas": [
-    "Sertã"
-   ],
-   "exemplo": "Na Sertã oito médicos já beneficiam de apoio da Câmara",
-   "site": "https://www.gazetadointerior.pt",
    "feed": null,
    "em": "2026-11-01T15:55:59.894612+00:00"
   }
@@ -315,13 +352,16 @@
    "nome": "Câmara da Sertã",
    "site": "",
    "ids": [
-    "53a9a34228a89825"
+    "53a9a34228a89825",
+    "13cd5ff993a82d4b",
+    "ea3b54856b251a0b",
+    "da5971435552497c"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-10-11T07:15:12.378523+00:00"
+   "ultima": "2026-11-01T16:13:44.900325+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -1071,10 +1111,33 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-01T16:13:44.900325+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 295,
+     "relevantes": 3,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-01T15:55:59.894612+00:00"
+  "cm-serta.pt": "2026-11-01T16:13:44.900325+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
