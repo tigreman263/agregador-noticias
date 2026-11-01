@@ -53,20 +53,6 @@ descoberta:
 # "obrigatorias": a notícia só conta se tiver TODAS estas palavras
 # (ex: ["sertã"] para não apanhar notícias de outros concelhos).
 pesquisas:
-  - nome: "Sertã"
-    ativa: true
-    consulta: "Sertã"
-    obrigatorias: ["sertã"]
-    palavras:
-      alta: ["agricultor", "agricultura", "subsídio", "apoio"]
-      media: ["câmara", "município", "municipal", "concelho", "candidatura", "incentivo"]
-      baixa: ["sertã"]
-    excluir: []
-    limite_alerta: 20
-    limite_resumo: 4
-    feeds_extra:
-      - {nome: "Câmara da Sertã", url: "https://cm-serta.pt/comunicacao/noticias?format=feed&type=rss", local: true}
-    paginas_extra: []
   - nome: "Apoio Estado"
     ativa: true
     consulta: "Apoios do estado"
