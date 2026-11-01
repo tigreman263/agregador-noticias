@@ -57,7 +57,13 @@
   "f62b6368e5fb1d83": "2026-11-01T16:21:24.533325+00:00",
   "ceb21775edb3c9a1": "2026-11-01T16:21:24.533325+00:00",
   "c4a20b6d0c2c7923": "2026-11-01T16:42:09.256889+00:00",
-  "43009cf9b5dba1ca": "2026-11-01T16:42:09.256889+00:00"
+  "43009cf9b5dba1ca": "2026-11-01T16:42:09.256889+00:00",
+  "8f9c1a58f29a608c": "2026-11-01T17:46:06.009199+00:00",
+  "abf531314cb8539b": "2026-11-01T17:46:06.009199+00:00",
+  "1b892d34bda6706e": "2026-11-01T17:46:06.009199+00:00",
+  "40e4deaa7e744190": "2026-11-01T17:46:06.009199+00:00",
+  "b7cc1c6f08db7977": "2026-11-01T17:46:06.009199+00:00",
+  "2ebddc8f6582ce2d": "2026-11-01T17:46:06.009199+00:00"
  },
  "resumo": [
   {
@@ -891,6 +897,29 @@
     "ceb21775edb3c9a1"
    ],
    "ts": "2026-11-01T16:21:24.533325+00:00"
+  },
+  {
+   "titulo": "Bombeiros de Leiria alertam para falta de apoio às corporações afetadas pelas tempestades",
+   "link": "https://sapo.pt/artigo/bombeiros-de-leiria-alertam-para-falta-de-apoio-as-corporacoes-afetadas-pelas-tempestades-6ae769e8665d772d9607600a",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 30.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Apoios"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-01T16:33:29+00:00",
+   "nivel": "alerta",
+   "ids": [
+    "2ebddc8f6582ce2d"
+   ],
+   "ts": "2026-11-01T17:46:06.009199+00:00"
   }
  ],
  "adiados": [],
@@ -938,12 +967,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "3b3e312bdf8dc9f4",
-    "11aea7b73ff71814",
-    "f33cfd64372ffd1f",
-    "cdb1a3c33b68c9c6",
-    "00a4f7bb6bdba77f",
-    "0fc6d370c5a32b7a",
     "d5678edb24d17c48",
     "8896ae6ace700f65",
     "1e5f68dd9b199849",
@@ -957,14 +980,20 @@
     "403dab70166a97ba",
     "027be376b2d4f80f",
     "f56a792d50590ce3",
-    "43009cf9b5dba1ca"
+    "43009cf9b5dba1ca",
+    "40e4deaa7e744190",
+    "0acfc3a3f243437f",
+    "8f9c1a58f29a608c",
+    "1b892d34bda6706e",
+    "b7cc1c6f08db7977",
+    "2ebddc8f6582ce2d"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -1021,7 +1050,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -1074,7 +1103,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -1119,7 +1148,7 @@
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
@@ -1174,7 +1203,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -1200,7 +1229,7 @@
     "Sertã"
    ],
    "exemplo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "contacto.lu": {
    "nome": "contacto.lu",
@@ -1212,7 +1241,7 @@
     "Sertã"
    ],
    "exemplo": "Quem beneficia realmente dos apoios à energia?",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "radionovaantena.com": {
    "nome": "Rádio Nova Antena",
@@ -1224,7 +1253,7 @@
     "Sertã"
    ],
    "exemplo": "Montemor-o-Novo reforça apoios às famílias e prepara recuperação da Escola Básica n.º 1",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "alentejo.sulinformacao.pt": {
    "nome": "Sul Informação Alentejo",
@@ -1236,7 +1265,7 @@
     "Sertã"
    ],
    "exemplo": "Odemira dá 515 mil euros em apoios a clubes e associações desportivas do concelho",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "impala.pt": {
    "nome": "Portal Impala",
@@ -1248,7 +1277,7 @@
     "Sertã"
    ],
    "exemplo": "Bombeiros de Leiria alertam para falta de apoio às corporações",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "jn.pt": {
    "nome": "Jornal de Notícias",
@@ -1260,7 +1289,7 @@
     "Sertã"
    ],
    "exemplo": "Quem ganha o salário mínimo já não tem acesso a novo apoio para carros elétricos",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "publico.pt": {
    "nome": "Público",
@@ -1272,7 +1301,7 @@
     "Sertã"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -1285,7 +1314,7 @@
     "Sertã"
    ],
    "exemplo": "Agricultores dos Açores pedem 23 milhões de euros em apoios do Governo",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "ambienteonline.pt": {
    "nome": "Água&Ambiente Online",
@@ -1322,7 +1351,7 @@
     "Sertã"
    ],
    "exemplo": "Regiões autónomas integram apoios nacionais à agricultura devido aos custos de produção",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "observador.pt": {
    "nome": "Observador",
@@ -1334,7 +1363,7 @@
     "Sertã"
    ],
    "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "jm-madeira.pt": {
    "nome": "JM Madeira",
@@ -1346,7 +1375,7 @@
     "Sertã"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -1358,7 +1387,7 @@
     "Sertã"
    ],
    "exemplo": "João Lopes Aleixo questionou apoios para os territórios de baixa densidade (C/VÍDEO)",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "portal-energia.com": {
    "nome": "Portal Energia",
@@ -1372,7 +1401,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1384,7 +1413,7 @@
     "Sertã"
    ],
    "exemplo": "O paradoxo do novo apoio elétrico: quem ganha o salário mínimo fica de fora",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "turbo.pt": {
    "nome": "Revista Turbo",
@@ -1396,7 +1425,7 @@
     "Sertã"
    ],
    "exemplo": "Apoio de 80% à compra de elétricos: quem tem direito?",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "correiodelagos.com": {
    "nome": "Correio de Lagos",
@@ -1415,14 +1444,16 @@
    "site": "",
    "ids": [
     "0f26fb1dbeefc40a",
-    "4552a735d979a298"
+    "4552a735d979a298",
+    "8f9c1a58f29a608c",
+    "abf531314cb8539b"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Estado vai comparticipar até 80% da compra de carros elétricos para famílias com baixos rendimentos",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "dnoticias.pt": {
    "nome": "dnoticias.pt",
@@ -1436,7 +1467,7 @@
     "Sertã"
    ],
    "exemplo": "Mau tempo põe abastecimento de água em alerta nos Prazeres",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "eco.sapo.pt": {
    "nome": "SAPO",
@@ -1448,7 +1479,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Galp move ação de 523 mil euros contra ex-gestor e família",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   },
   "theportugalnews.com": {
    "nome": "The Portugal News",
@@ -1460,7 +1491,7 @@
     "Sertã"
    ],
    "exemplo": "Município português investe em apoios financeiros aos estudantes",
-   "ultima": "2026-11-01T16:42:09.256889+00:00"
+   "ultima": "2026-11-01T17:46:06.009199+00:00"
   }
  },
  "ultima_descoberta": "2026-11-01",
@@ -1788,6 +1819,51 @@
    "fonte": "dnoticias.pt",
    "nota": 37.5,
    "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T17:46:06.009199+00:00",
+   "titulo": "Flávio Bolsonaro terá fugido do Brasil com ajuda de antigo agente da Mossad e apoio na Argentina",
+   "link": "https://24noticias.sapo.pt/atualidade/artigos/flavio-bolsonaro-tera-fugido-do-brasil-com-ajuda-de-antigo-agente-da-mossad-e-apoio-na-argentina",
+   "fonte": "SAPO",
+   "nota": 42.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T17:46:06.009199+00:00",
+   "titulo": "Flávio Bolsonaro terá fugido do Brasil com ajuda de antigo agente da Mossad e apoio na Argentina",
+   "link": "https://24noticias.sapo.pt/atualidade/artigos/flavio-bolsonaro-tera-fugido-do-brasil-com-ajuda-de-antigo-agente-da-mossad-e-apoio-na-argentina",
+   "fonte": "SAPO",
+   "nota": 34.5,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T17:46:06.009199+00:00",
+   "titulo": "Crédito à habitação: variáveis que podem mudar a prestação da sua casa",
+   "link": "https://sapo.pt/artigo/credito-a-habitacao-variaveis-que-podem-mudar-a-prestacao-da-sua-casa-6ae77147665d772d96086f0a",
+   "fonte": "SAPO",
+   "nota": 34.5,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T17:46:06.009199+00:00",
+   "titulo": "Bombeiros em alerta: falta de apoio ameaça segurança",
+   "link": "https://sapo.pt/artigo/bombeiros-em-alerta-falta-de-apoio-ameaca-seguranca-6ae76e867a19de6f9c23a66b",
+   "fonte": "SAPO",
+   "nota": 30.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T17:46:06.009199+00:00",
+   "titulo": "Bombeiros em alerta: falta de apoio ameaça segurança",
+   "link": "https://sapo.pt/artigo/bombeiros-em-alerta-falta-de-apoio-ameaca-seguranca-6ae76e867a19de6f9c23a66b",
+   "fonte": "SAPO",
+   "nota": 30.0,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
@@ -2342,10 +2418,39 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-01T17:46:06.009199+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 295,
+     "relevantes": 2,
+     "alertas": 2
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 278,
+     "relevantes": 4,
+     "alertas": 4
+    }
+   ],
+   "falhas": [],
+   "alertas": 5,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-01T16:42:09.256889+00:00"
+  "cm-serta.pt": "2026-11-01T17:46:06.009199+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
