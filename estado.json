@@ -1,214 +1,142 @@
 {
  "vistos": {
-  "fc897482fb711769": "2026-10-10T07:12:57.629934+00:00",
-  "5ab3042dd219f103": "2026-10-10T07:12:57.629934+00:00",
-  "e0ff71a4f8739e58": "2026-10-10T07:12:57.629934+00:00",
-  "ad485e45ec00cce2": "2026-10-10T07:12:57.629934+00:00",
-  "671a3797d393ade5": "2026-10-10T07:12:57.629934+00:00",
-  "50561df3bd7baaf2": "2026-10-10T07:12:57.629934+00:00",
-  "a6f12173308264c8": "2026-10-10T07:12:57.629934+00:00",
-  "e7c5efe18c7031a4": "2026-10-10T07:12:57.629934+00:00",
-  "753326ad19e12e14": "2026-10-10T07:12:57.629934+00:00",
-  "2baa5cbed3c90b94": "2026-10-10T07:12:57.629934+00:00",
-  "2a35c2e7fc8261fd": "2026-10-10T07:12:57.629934+00:00",
-  "d8ad0c2f05de3905": "2026-10-10T07:12:57.629934+00:00",
-  "7ae082dc54babf69": "2026-10-10T07:12:57.629934+00:00",
-  "3c1f18806cd19fb3": "2026-10-10T07:43:29.041168+00:00",
-  "38e348f0eafda319": "2026-10-10T09:38:49.092208+00:00",
-  "9af87fcf1a8f3647": "2026-10-10T09:38:49.092208+00:00",
-  "e6146a13b0379320": "2026-10-10T09:38:49.092208+00:00",
-  "be93bf693288ef29": "2026-10-10T09:38:49.092208+00:00",
-  "277695630792a43f": "2026-10-10T09:38:49.092208+00:00",
-  "c7c28351ea105589": "2026-10-10T09:38:49.092208+00:00",
-  "e2a2ece2909e01b5": "2026-10-10T09:38:49.092208+00:00",
-  "b2c334f32a5c1d83": "2026-10-10T09:38:49.092208+00:00",
-  "0d43a400c85c2bb6": "2026-10-10T09:38:49.092208+00:00",
-  "751a13b8d9f6ebfa": "2026-10-10T09:43:51.845248+00:00",
-  "95553f18205ae728": "2026-10-10T09:43:51.845248+00:00",
-  "45084d7abfba68d4": "2026-10-10T09:43:51.845248+00:00",
-  "05e371a004e71752": "2026-10-10T09:43:51.845248+00:00",
-  "1e4c0a0e0c7c2792": "2026-10-10T09:43:51.845248+00:00",
-  "f945827fb36371d6": "2026-10-10T12:38:37.658505+00:00",
-  "21d90dfba1efd2b0": "2026-10-10T12:38:37.658505+00:00",
-  "98825e53ee417738": "2026-10-10T14:52:46.547040+00:00",
-  "d324481ec8fe1261": "2026-10-10T14:52:46.547040+00:00",
-  "eb65b3af17b31672": "2026-10-10T14:52:46.547040+00:00",
-  "f7902a0adec0befd": "2026-10-10T14:52:46.547040+00:00",
-  "dec4a58ee4d01324": "2026-10-10T21:55:21.304337+00:00",
-  "ef096bbe294af047": "2026-10-11T07:15:12.378523+00:00",
-  "27e8ffcfc22df15d": "2026-10-11T07:15:12.378523+00:00"
+  "d884c5ef52c56765": "2026-11-01T15:15:46.655037+00:00",
+  "873b8fe6457d304e": "2026-11-01T15:15:46.655037+00:00",
+  "b2307c46b2987a8f": "2026-11-01T15:15:46.655037+00:00",
+  "8e46791d1126ddaf": "2026-11-01T15:15:46.655037+00:00",
+  "67cba9e3d6b58f36": "2026-11-01T15:15:46.655037+00:00",
+  "a5bc479611ff8fcd": "2026-11-01T15:15:46.655037+00:00",
+  "c7ffccc6ebc68aa2": "2026-11-01T15:15:46.655037+00:00",
+  "f771392f723d8f3c": "2026-11-01T15:15:46.655037+00:00",
+  "c2aed4b2b8536f04": "2026-11-01T15:15:46.655037+00:00",
+  "18ddbfa07a415739": "2026-11-01T15:15:46.655037+00:00",
+  "3faef908246d1fe0": "2026-11-01T15:15:46.655037+00:00",
+  "154d9b73069cee6c": "2026-11-01T15:15:46.655037+00:00",
+  "b01081c371e8dd81": "2026-11-01T15:15:46.655037+00:00"
  },
  "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-10-11",
+ "ultimo_resumo": "2026-11-01",
  "sugeridas": {
-  "publico.pt": {
-   "dominio": "publico.pt",
-   "nome": "Público",
-   "n": 6,
-   "pesquisas": [
-    "Apoio Estado"
-   ],
-   "exemplo": "Seguro promulga apoios para transportes e sector social face subida dos combustíveis",
-   "site": "https://www.publico.pt",
-   "feed": null,
-   "em": "2026-10-10T09:43:51.845248+00:00"
-  },
-  "noticiasaominuto.com": {
-   "dominio": "noticiasaominuto.com",
-   "nome": "Notícias ao Minuto",
-   "n": 8,
-   "pesquisas": [
-    "Apoio Estado"
-   ],
-   "exemplo": "Apoio à renda é pago hoje: Saiba se tem direito a receber",
-   "site": "https://www.noticiasaominuto.com",
-   "feed": "https://www.noticiasaominuto.com/rss/ultima-hora",
-   "em": "2026-10-10T12:38:37.658505+00:00"
-  },
-  "lusa.pt": {
-   "dominio": "lusa.pt",
-   "nome": "LUSA",
+  "g1.globo.com": {
+   "dominio": "g1.globo.com",
+   "nome": "G1",
    "n": 7,
    "pesquisas": [
     "Apoio Estado"
    ],
-   "exemplo": "Brasil/Eleições: Flávio Bolsonaro conquista apoio de cinco partidos e Lula recalcula rota de campanha",
-   "site": "https://www.lusa.pt",
+   "exemplo": "Partidos e lideranças políticas começam a definir apoios para o segundo turno no AM; veja cenário",
+   "site": "https://g1.globo.com",
    "feed": null,
-   "em": "2026-10-10T12:38:37.658505+00:00"
+   "em": "2026-11-01T15:15:46.655037+00:00"
   },
-  "jornaldenegocios.pt": {
-   "dominio": "jornaldenegocios.pt",
-   "nome": "Jornal de Negócios",
+  "agroportal.pt": {
+   "dominio": "agroportal.pt",
+   "nome": "Agroportal",
    "n": 6,
    "pesquisas": [
     "Apoio Estado"
    ],
-   "exemplo": "Governo volta a dar apoios à compra de carros elétricos em 2027",
-   "site": "https://www.jornaldenegocios.pt",
-   "feed": "https://www.jornaldenegocios.pt/rss",
-   "em": "2026-10-10T12:38:37.658505+00:00"
+   "exemplo": "Governo atribui apoio a uva por vindimar para mitigar crise no Douro",
+   "site": "https://www.agroportal.pt",
+   "feed": null,
+   "em": "2026-11-01T15:15:46.655037+00:00"
   },
-  "tvi.iol.pt": {
-   "dominio": "tvi.iol.pt",
-   "nome": "TVI",
+  "razaoautomovel.com": {
+   "dominio": "razaoautomovel.com",
+   "nome": "Razão Automóvel",
    "n": 6,
    "pesquisas": [
     "Apoio Estado"
    ],
-   "exemplo": "É o grande apoio de Jorge Jesus nos momentos difíceis. E é ainda amigo de um famoso ator português",
-   "site": "https://tvi.iol.pt",
-   "feed": "https://tvi.iol.pt/rss.xml",
-   "em": "2026-10-10T12:38:37.658505+00:00"
+   "exemplo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
+   "site": "https://www.razaoautomovel.com",
+   "feed": "https://www.razaoautomovel.com/feed/",
+   "em": "2026-11-01T15:15:46.655037+00:00"
   },
-  "dn.pt": {
-   "dominio": "dn.pt",
-   "nome": "Diário de Notícias",
+  "observador.pt": {
+   "dominio": "observador.pt",
+   "nome": "Observador",
    "n": 5,
    "pesquisas": [
     "Apoio Estado"
    ],
-   "exemplo": "Banca ainda deve 70% dos 30 mil milhões de euros em apoios dos contribuintes",
-   "site": "https://www.dn.pt",
-   "feed": "https://www.dn.pt/feed/",
-   "em": "2026-10-10T12:38:37.658505+00:00"
+   "exemplo": "Putin oferece apoio a Presidente iraniano para terminar guerra no Médio Oriente",
+   "site": "https://observador.pt",
+   "feed": "https://observador.pt/feed/",
+   "em": "2026-11-01T15:15:46.655037+00:00"
   },
-  "valor.globo.com": {
-   "dominio": "valor.globo.com",
-   "nome": "Valor Econômico",
+  "ovilaverdense.pt": {
+   "dominio": "ovilaverdense.pt",
+   "nome": "O Vilaverdense",
    "n": 5,
    "pesquisas": [
     "Apoio Estado"
    ],
-   "exemplo": "Governo zera tributos federais sobre a gasolina e cria subsídio extra para diesel importado",
-   "site": "https://valor.globo.com",
-   "feed": "https://valor.globo.com/rss/valor",
-   "em": "2026-10-10T22:00:07.311755+00:00"
-  },
-  "oglobo.globo.com": {
-   "dominio": "oglobo.globo.com",
-   "nome": "O GLOBO",
-   "n": 4,
-   "pesquisas": [
-    "Apoio Estado"
-   ],
-   "exemplo": "Campanhas de Flávio e Lula tentam atrair governadores, e senador sai na frente na disputa por apoios",
-   "site": "https://oglobo.globo.com",
-   "feed": "https://oglobo.globo.com/rss/oglobo",
-   "em": "2026-10-10T22:00:07.311755+00:00"
-  },
-  "pt.euronews.com": {
-   "dominio": "pt.euronews.com",
-   "nome": "Euronews.com",
-   "n": 4,
-   "pesquisas": [
-    "Apoio Estado"
-   ],
-   "exemplo": "Chipre cria subsídio mensal para doentes vulneráveis com cancro da mama",
-   "site": "https://pt.euronews.com",
-   "feed": "https://pt.euronews.com/rss",
-   "em": "2026-10-10T22:00:07.311755+00:00"
-  },
-  "vietnam.vn": {
-   "dominio": "vietnam.vn",
-   "nome": "Vietnam.vn",
-   "n": 4,
-   "pesquisas": [
-    "Apoio Estado"
-   ],
-   "exemplo": "Com um aumento de 55% nos subsídios, os funcionários das comunas em áreas montanhosas têm mais segurança em seus cargos.",
-   "site": "https://www.vietnam.vn",
+   "exemplo": "Governo prevê apoios para mais de 20 mil veículos elétricos destinados a famílias carenciadas",
+   "site": "https://ovilaverdense.pt",
    "feed": null,
-   "em": "2026-10-10T22:00:07.311755+00:00"
+   "em": "2026-11-01T15:15:46.655037+00:00"
   }
  },
- "sugeridas_antigas": [],
+ "sugeridas_antigas": [
+  "publico.pt",
+  "noticiasaominuto.com",
+  "lusa.pt",
+  "jornaldenegocios.pt",
+  "tvi.iol.pt",
+  "dn.pt",
+  "valor.globo.com",
+  "oglobo.globo.com",
+  "pt.euronews.com",
+  "vietnam.vn"
+ ],
  "dominios": {
   "sapo.pt": {
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "428c10ea67eee23d",
-    "0e03ef275fae85c6",
-    "2e8c669a632b53e1",
-    "c1691193130ce6ae",
-    "b77b15c40a94e66c",
-    "f7902a0adec0befd",
-    "98825e53ee417738",
-    "77fd42f582a9a6ee",
-    "c202c49daba535ee",
-    "88329ce104d77bf9",
-    "c9a14bc1814ad6b3",
-    "e5aa583b9ed86a8c",
-    "27b475e17beff64f",
-    "2c1ebce669a1f783",
-    "2eae9a0522574cea",
-    "862cb8a105a6d225",
-    "8d88b27f4ead2fbb",
-    "7ae082dc54babf69",
-    "2a35c2e7fc8261fd",
-    "27e8ffcfc22df15d"
+    "18cc34ff33731493",
+    "67cba9e3d6b58f36",
+    "9573eefe423a8b1a",
+    "c2aed4b2b8536f04",
+    "cb3811169de2b86d",
+    "180fd7511e91ca0e",
+    "9e3ed9592a66279a",
+    "3b3e312bdf8dc9f4",
+    "11aea7b73ff71814",
+    "f33cfd64372ffd1f",
+    "cdb1a3c33b68c9c6",
+    "00a4f7bb6bdba77f",
+    "0fc6d370c5a32b7a",
+    "d5678edb24d17c48",
+    "8896ae6ace700f65",
+    "1e5f68dd9b199849",
+    "d283d80270d988a1",
+    "1fac94321f6eb42d",
+    "d1fe5320dafc19b7",
+    "73bff08f4210ccad"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-10-11T07:22:31.525614+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "cnnbrasil.com.br": {
    "nome": "CNN Brasil",
    "site": "https://www.cnnbrasil.com.br",
    "ids": [
     "ad485e45ec00cce2",
-    "4cd838b5a0090b0b"
+    "4cd838b5a0090b0b",
+    "ab0e64b61c5dbc92"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Inteligência artificial do Google ajuda a prever internações por gripe",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "terra.com.br": {
    "nome": "Terra",
@@ -233,14 +161,18 @@
     "4030a76c82ecc968",
     "4a424c25a2efdbba",
     "442e026c2fb5e560",
-    "e5103510dac35cdc"
+    "e5103510dac35cdc",
+    "63d002d5e70da49d",
+    "2b36a2f1a648c7bd",
+    "4c1ff64f4484f6fa",
+    "581f2240e4c7fbc3"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ: Descida do Picoto voltou a marcar o calendário desportivo do concelho (🎤 Áudio)",
-   "ultima": "2026-10-11T07:22:31.525614+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "antenalivre.pt": {
    "nome": "Antena Livre",
@@ -263,38 +195,47 @@
     "fe1ac4d8f8e426e7",
     "6a6a4a70f87b9399",
     "05e371a004e71752",
-    "5b7a94d85f40e328"
+    "5b7a94d85f40e328",
+    "c7ffccc6ebc68aa2",
+    "b01081c371e8dd81",
+    "f771392f723d8f3c",
+    "ebb9b9d40f005f19"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
    "site": "https://centralpress.pt",
    "ids": [
-    "2baa5cbed3c90b94"
+    "2baa5cbed3c90b94",
+    "0c9ad60da8933162",
+    "7e25ee6f100322a3",
+    "79b6e164e6500d6d"
    ],
    "pesquisas": [
-    "Sertã"
+    "Sertã",
+    "Apoio Estado"
    ],
    "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "ultima": "2026-10-11T07:22:31.525614+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "gazetadointerior.pt": {
    "nome": "Gazeta do Interior",
    "site": "https://www.gazetadointerior.pt",
    "ids": [
-    "3c1f18806cd19fb3"
+    "3c1f18806cd19fb3",
+    "e678f688081bed1c"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "Na Sertã oito médicos já beneficiam de apoio da Câmara",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "radiohertz.pt": {
    "nome": "Rádio Hertz",
@@ -302,14 +243,21 @@
    "ids": [
     "1c0a27e27b84ea06",
     "d841d4240ced90e3",
-    "d324481ec8fe1261"
+    "d324481ec8fe1261",
+    "d884c5ef52c56765",
+    "b2307c46b2987a8f",
+    "8e46791d1126ddaf",
+    "436b89431d6399c3",
+    "154d9b73069cee6c",
+    "22b6e352f9e43773",
+    "c8559c2bc46b8621"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-10-11T07:22:31.525614+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -330,14 +278,16 @@
    "ids": [
     "35b1d6d9dad7b3c1",
     "34717d6a62b7054f",
-    "1e4c0a0e0c7c2792"
+    "1e4c0a0e0c7c2792",
+    "7805bd5806939531",
+    "de978a1bea327a81"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "Luís Osório é o autor em destaque este mês na Biblioteca da Sertã",
-   "ultima": "2026-10-11T01:26:19.130215+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "reconquista.pt": {
    "nome": "reconquista.pt",
@@ -345,64 +295,70 @@
    "ids": [
     "7f725b0cfcbc1d9f",
     "af50257c4deeb75a",
-    "f38a3cf49cd905c2"
+    "f38a3cf49cd905c2",
+    "a796882e67f6561e"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "Concurso desafia a imaginar Sertã em 2050",
-   "ultima": "2026-10-11T07:22:31.525614+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "jornaldeabrantes.sapo.pt": {
    "nome": "Jornal de Abrantes",
    "site": "https://jornaldeabrantes.sapo.pt",
    "ids": [
-    "70e732614cdd1d4e"
+    "70e732614cdd1d4e",
+    "2af18b98b5db34e3"
    ],
    "pesquisas": [
-    "Sertã"
+    "Sertã",
+    "Apoio Estado"
    ],
    "exemplo": "Sertã - Projeto piloto de telemetria residencial moderniza gestão do abastecimento de água",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "diariodigitalcastelobranco.pt": {
    "nome": "Diário Digital Castelo Branco",
    "site": "https://www.diariodigitalcastelobranco.pt",
    "ids": [
     "bd31022563ea0805",
-    "6d8d0802786648b1"
+    "6d8d0802786648b1",
+    "eb0cffc2132108a6"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio Estado"
    ],
    "exemplo": "Sertã: Ricardo Barbosa e Lídia Carolina apresentam \"Portugal: Um país em Canções\" a 11 de outubro",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "diariodosertao.com.br": {
    "nome": "Diário do Sertão",
    "site": "https://www.diariodosertao.com.br",
    "ids": [
-    "fb2cb40f0c49cac4"
+    "fb2cb40f0c49cac4",
+    "ef8a4cd10979a5d8"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "VÍDEO: Delegado relata como ocorreu a prisão da ex-prefeita do município de Joca Claudino, Lucrécia Adriana",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "portugal.gov.pt": {
    "nome": "XXV Governo Constitucional",
    "site": "https://portugal.gov.pt",
    "ids": [
     "38e348f0eafda319",
-    "497719191d9a1ed7"
+    "497719191d9a1ed7",
+    "329164370b98338f"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Orçamento do Estado reforça valorização dos rendimentos e apoios às famílias e empresas",
-   "ultima": "2026-10-11T07:22:31.525614+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "jornaldenegocios.pt": {
    "nome": "Jornal de Negócios",
@@ -413,13 +369,16 @@
     "e70b755a6dc70dd0",
     "d9f7c978d7348a94",
     "acc6a7189f07c989",
-    "eb65b3af17b31672"
+    "eb65b3af17b31672",
+    "3a680989f19fad11",
+    "499113c1b2bae675",
+    "f9e98f6c9e2b8500"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Governo volta a dar apoios à compra de carros elétricos em 2027",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "eco.sapo.pt": {
    "nome": "ECO",
@@ -431,13 +390,14 @@
     "605d20ea5b26b2ce",
     "894897da4233457c",
     "5e4454eaf96b738b",
-    "ae67d7688c528ad7"
+    "ae67d7688c528ad7",
+    "9b4deb33346b7473"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Orçamento do Estado sem novos apoios nos combustíveis",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "expresso.pt": {
    "nome": "Expresso",
@@ -470,25 +430,27 @@
    "ids": [
     "277695630792a43f",
     "634fd801db6ad44a",
-    "9615328b28a18876"
+    "9615328b28a18876",
+    "2c0438d8bc0f3684"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Menos IRS, aumentos nos salários e pensões e reforço de alguns apoios sociais. O que muda com o novo Orçamento do Estado?",
-   "ultima": "2026-10-11T07:22:31.525614+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
    "site": "https://www.e-konomista.pt",
    "ids": [
-    "c7c28351ea105589"
+    "c7c28351ea105589",
+    "538851abc74bcf5b"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Cancro: 5 associações que dão apoio gratuito a doentes",
-   "ultima": "2026-10-11T07:22:31.525614+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "pplware.sapo.pt": {
    "nome": "Pplware",
@@ -524,13 +486,16 @@
     "a8021b9a65bcd047",
     "6e579249c62b7fd8",
     "6ba027d0df6f7d08",
-    "98a155ad69702c82"
+    "98a155ad69702c82",
+    "7bde5df19eb27980",
+    "c9688432379f0ef4",
+    "7ae20b8bd76953d4"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Banca deve 70% dos apoios que Estado mobilizou desde 2008",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -557,13 +522,16 @@
     "e162e3fe5a574446",
     "16c041a5b5a26f43",
     "95cf0fb1c5876812",
-    "590a6b1b588b237d"
+    "590a6b1b588b237d",
+    "36bdf72da799b6d4",
+    "036e66b77d489c3b",
+    "80ed9641173eb5bc"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Seguro promulga apoios para transportes e sector social face subida dos combustíveis",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "dnoticias.pt": {
    "nome": "dnoticias.pt",
@@ -580,26 +548,29 @@
     "faa64c9577d1513b",
     "dec4a58ee4d01324",
     "ef096bbe294af047",
-    "1943e84672e6605b"
+    "1943e84672e6605b",
+    "57bcfda46f9eaad4"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "PROAGES simplificado para facilitar apoios às famílias que ficam de fora dos apoios sociais",
-   "ultima": "2026-10-11T07:22:31.525614+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "24 Notícias",
    "site": "https://24noticias.sapo.pt",
    "ids": [
     "aa6eedf4407da334",
-    "e7b68947e927143e"
+    "e7b68947e927143e",
+    "a5bc479611ff8fcd",
+    "866e7d831e8b161c"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Tem abelhas? Governo prolonga apoios à apicultura com 3,3 milhões de euros",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "odigital.sapo.pt": {
    "nome": "ODigital.pt",
@@ -607,13 +578,15 @@
    "ids": [
     "63c02e74bd2ea920",
     "8d88b27f4ead2fbb",
-    "862cb8a105a6d225"
+    "862cb8a105a6d225",
+    "00a4f7bb6bdba77f",
+    "73bff08f4210ccad"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Governo cria apoios de 39,5 milhões de euros para compensar custos dos combustíveis",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "executivedigest.sapo.pt": {
    "nome": "Executive Digest",
@@ -624,13 +597,16 @@
     "b77b15c40a94e66c",
     "390f55dbb6069adb",
     "0b9354a3e75c4830",
-    "675ee6794f682a69"
+    "675ee6794f682a69",
+    "ca802cac7ee48891",
+    "431f342bbb27861c",
+    "e09a5d67dc42a900"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Empresas de ambulâncias ameaçam suspender transportes ao SNS: Governo deixa setor fora dos apoios aos combustíveis",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "cnnportugal.iol.pt": {
    "nome": "CNN Portugal",
@@ -643,13 +619,15 @@
     "472bbb461affe0ea",
     "1f8260ef2337aca9",
     "015a1b891f0da248",
-    "eb65b3af17b31672"
+    "eb65b3af17b31672",
+    "f7604458bfce216e",
+    "b7541e87ebca05d5"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Partidos que comandam ministérios no Governo de Lula declaram apoio a Flávio Bolsonaro",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "oglobo.globo.com": {
    "nome": "O GLOBO",
@@ -658,25 +636,35 @@
     "69edd7cbda24ec73",
     "f3be5d7d9a556107",
     "7991a8cfc14155a0",
-    "fe8ac73fd98cd2de"
+    "fe8ac73fd98cd2de",
+    "f73f6688f049e2ce",
+    "26466ef15e355b61",
+    "b567d6ca68b3e996",
+    "a659e68b0d05159b"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Campanhas de Flávio e Lula tentam atrair governadores, e senador sai na frente na disputa por apoios",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "g1.globo.com": {
    "nome": "G1",
    "site": "https://g1.globo.com",
    "ids": [
-    "97f1c05f1e12c563"
+    "97f1c05f1e12c563",
+    "f9b4f93780d80135",
+    "732a28e6268af8d3",
+    "d0801275f75dc9d7",
+    "3b3f68663fe9a134",
+    "d10a414ca944805d",
+    "2c18cc6a6ce833b7"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Partidos e lideranças políticas começam a definir apoios para o segundo turno no AM; veja cenário",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "brasil61.com": {
    "nome": "Brasil 61",
@@ -929,13 +917,23 @@
     "7e6c7bc0af90d310",
     "d5cce1c8c7731df0",
     "9c3c8ff12e9ec904",
-    "0af13ea90bee4eb8"
+    "0af13ea90bee4eb8",
+    "1b4092fc3ddc53a1",
+    "1a58c6e6c761f1db",
+    "5b26c972d91bbb04",
+    "43950fb996cd65a0",
+    "3829a3ce2ad6f7a4",
+    "2e1fbceaa02864b0",
+    "27fa23d47b26298c",
+    "92de2897651783cc",
+    "5fa3a34de072e09f",
+    "a15d2775ab8af123"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Powerdot reivindica 25 milhões para apoio à compra de carros elétricos no OE2027",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "sabado.pt": {
    "nome": "SÁBADO",
@@ -954,26 +952,30 @@
    "nome": "JM Madeira",
    "site": "https://www.jm-madeira.pt",
    "ids": [
-    "b33f9762eab57f8c"
+    "b33f9762eab57f8c",
+    "ee922c7bbc3040d9"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Aberto convite europeu para apoio especializado às Regiões Ultraperiféricas",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "observador.pt": {
    "nome": "Observador",
    "site": "https://observador.pt",
    "ids": [
     "cbb14b107ec7fae9",
-    "e9f03793feab535f"
+    "e9f03793feab535f",
+    "d0397b94fda60111",
+    "81201af6805dc438",
+    "03b3250592cb4ff5"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Putin oferece apoio a Presidente iraniano para terminar guerra no Médio Oriente",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "sicnoticias.pt": {
    "nome": "SIC Notícias",
@@ -1006,13 +1008,15 @@
    "site": "https://healthnews.pt",
    "ids": [
     "76bd7fd9771e7e32",
-    "830b134b9517ef8f"
+    "830b134b9517ef8f",
+    "811a91ecaf962b8f",
+    "2921fa630af02006"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Cuidados paliativos pediátricos: associação pede reforço de equipas e apoio em casa",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "acores.rtp.pt": {
    "nome": "RTP Açores",
@@ -1020,13 +1024,15 @@
    "ids": [
     "8df4515b97e6e01f",
     "ac41e65b497824df",
-    "698419b18cf0d4e0"
+    "698419b18cf0d4e0",
+    "51ad194ef9eb73bf",
+    "22ae7da6f402356b"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Liga Portuguesa Contra Cancro inaugura primeiro Gabinete de Apoio de Voluntariado nos Açores",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "lusa.pt": {
    "nome": "LUSA",
@@ -1038,26 +1044,33 @@
     "5942ec7b5f448e21",
     "b4f3dd4cb4eedd26",
     "cbb14b107ec7fae9",
-    "eb65b3af17b31672"
+    "eb65b3af17b31672",
+    "7246c3a9088e2af9",
+    "5fa3a34de072e09f",
+    "bf421dbbf04fe211"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Brasil/Eleições: Flávio Bolsonaro conquista apoio de cinco partidos e Lula recalcula rota de campanha",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "agroportal.pt": {
    "nome": "Agroportal",
    "site": "https://www.agroportal.pt",
    "ids": [
     "4c9d27ad234379dc",
-    "6ce9a0c5f1bd9cea"
+    "6ce9a0c5f1bd9cea",
+    "3faef908246d1fe0",
+    "88ff629feb391418",
+    "55bc211f4d29d0f9",
+    "45a55460ec80e063"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Governo atribui apoio a uva por vindimar para mitigar crise no Douro",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -1070,26 +1083,32 @@
     "8aaa80a07d2cf7e6",
     "5ed17d7b91f6b60b",
     "d88d47f18f289637",
-    "2d1fac1b578b0cb4"
+    "2d1fac1b578b0cb4",
+    "18ddbfa07a415739",
+    "050ad6671f0c1f2f",
+    "e93236694869ab77",
+    "a82253d131f47446",
+    "5d94a0b6b2bbc4c0"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Apoio à renda é pago hoje: Saiba se tem direito a receber",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "facebook.com": {
    "nome": "Facebook",
    "site": "https://www.facebook.com",
    "ids": [
     "c6332c21917dcc88",
-    "0d67029ec27cbba4"
+    "0d67029ec27cbba4",
+    "d61656fdf2eaf905"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Decreto-lei publicado esta quinta-feira fixa os detalhes do apoio de 100 a 200 euros para pensionistas com reformas até 1.611 euros. Pagamento entre 7 e 8 de dezembro.",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "abrilabril.pt": {
    "nome": "AbrilAbril",
@@ -1185,13 +1204,14 @@
    "nome": "O Mirante",
    "site": "https://omirante.pt",
    "ids": [
-    "cd390d712febfafc"
+    "cd390d712febfafc",
+    "5b6994472f1cb080"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Grupo Desportivo de Benavente recebe apoio para requalificar Campo das Portas do Sol",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "abola.pt": {
    "nome": "A Bola",
@@ -1223,13 +1243,14 @@
    "ids": [
     "c650f927536898b2",
     "c202c49daba535ee",
-    "2c1ebce669a1f783"
+    "2c1ebce669a1f783",
+    "508c503130cb5030"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "OE2027: Pequenos agricultores e pescadores com apoio de 0,06 euros/litro no gasóleo colorido",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "jornaldemafra.pt": {
    "nome": "Jornal de Mafra",
@@ -1267,13 +1288,21 @@
     "447042d792a7c878",
     "8c0a2ff8c87861e3",
     "f0f6bc1df9082570",
-    "eb65b3af17b31672"
+    "eb65b3af17b31672",
+    "83045116429522e7",
+    "8671ada841f4b13e",
+    "88ff160824c192e0",
+    "7df24acf761ebd46",
+    "478c9085ca91f6e6",
+    "8d652031a71b2b78",
+    "5fa3a34de072e09f",
+    "7bde5df19eb27980"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Augusto Cury declara apoio a Flávio Bolsonaro, que promete cumprir lista de exigências",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "idealista.pt": {
    "nome": "Idealista",
@@ -1342,13 +1371,14 @@
    "nome": "24Horas.pt",
    "site": "https://24horas.pt",
    "ids": [
-    "99167bffc2e98c2d"
+    "99167bffc2e98c2d",
+    "72e88fbf44947454"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "SIC RECEBEU APOIO DE 250 MIL E NÃO CUMPRIU COM CÂMARA DE LISBOA",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "expressodefafe.pt": {
    "nome": "Expresso de Fafe",
@@ -1390,13 +1420,14 @@
    "nome": "Açoriano Oriental",
    "site": "https://www.acorianooriental.pt",
    "ids": [
-    "63be800f70f4bb55"
+    "63be800f70f4bb55",
+    "555b2b3797df7523"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Milhares de alunos em risco de perder apoio especializado",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "netfarma.pt": {
    "nome": "netfarma.pt",
@@ -1440,13 +1471,14 @@
    "ids": [
     "b9ebe9992d38e888",
     "5eaa2e5bb2f1544b",
-    "c3a8b7e69004c3c4"
+    "c3a8b7e69004c3c4",
+    "ae9ed6c43db8a0c8"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Portimão renova programa de apoio a crianças com necessidades específicas nas escolas",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "noticiasdeaveiro.pt": {
    "nome": "Notícias de Aveiro",
@@ -1479,13 +1511,14 @@
    "nome": "DECO PROteste",
    "site": "https://www.deco.proteste.pt",
    "ids": [
-    "5437db257d58bd49"
+    "5437db257d58bd49",
+    "0c571902982358e9"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Subsídio parental: quem tem direito, quanto recebe e como pedir",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "tsf.pt": {
    "nome": "TSF",
@@ -1528,13 +1561,14 @@
    "nome": "Human Resources Portugal",
    "site": "https://hrportugal.sapo.pt",
    "ids": [
-    "f6c02fa24cab342e"
+    "f6c02fa24cab342e",
+    "2fe3db02726dc326"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Portal da Segurança Social tem uma nova funcionalidade (para um subsídio específico)",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "valor.globo.com": {
    "nome": "Valor Econômico",
@@ -1544,25 +1578,31 @@
     "de74c955bbfcd4e0",
     "04958a602bc12eba",
     "a6cc7363f89cb4bb",
-    "b58c843ea9be2a3f"
+    "b58c843ea9be2a3f",
+    "6de36ef3ba8d0ed1",
+    "d7d690aa8d15204b",
+    "89c128aa9c5750e4",
+    "92ffcf9dff72cc5f"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Governo zera tributos federais sobre a gasolina e cria subsídio extra para diesel importado",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "4gnews.pt": {
    "nome": "4gnews",
    "site": "https://4gnews.pt",
    "ids": [
-    "f5f304bf804b63b4"
+    "f5f304bf804b63b4",
+    "d579829ce8e7fb1f",
+    "ecc9b1d0c51e55a2"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Este apoio da Segurança Social para recibos verdes pode chegar aos 1.342 euros por mês",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "theportugalnews.com": {
    "nome": "The Portugal News",
@@ -1606,13 +1646,15 @@
    "nome": "Globo Rural",
    "site": "https://globorural.globo.com",
    "ids": [
-    "d38189d5f20d6bda"
+    "d38189d5f20d6bda",
+    "cc442d3f222fa357",
+    "aae93764c7a3e812"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Ações de usinas de etanol sobem na B3 com aumento no subsídio",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "portal.ifce.edu.br": {
    "nome": "Home — IFCE",
@@ -1630,13 +1672,15 @@
    "nome": "Folha de S.Paulo",
    "site": "https://www1.folha.uol.com.br",
    "ids": [
-    "1128bc6b0b9e8e63"
+    "1128bc6b0b9e8e63",
+    "8f475fb4dae4dc45",
+    "b6a3f6e4dbe086a6"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "'Se é para estourar o país, que seja em benefício do povo', diz leitor sobre subsídio do governo para gasolina",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "agenciainfra.com": {
    "nome": "Agência iNFRA",
@@ -1702,13 +1746,14 @@
    "nome": "MZNews",
    "site": "https://mznews.co.mz",
    "ids": [
-    "eb497cf52edc62ca"
+    "eb497cf52edc62ca",
+    "f46463704f257760"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Nuvunga pede revisão urgente do subsídio de funeral pago pelo INSS",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "jornaldocomercio.com": {
    "nome": "Jornal do Comércio",
@@ -1774,13 +1819,15 @@
    "nome": "TV Sim Brasil",
    "site": "https://tvsimbrasil.com.br",
    "ids": [
-    "88890332e223f2b3"
+    "88890332e223f2b3",
+    "5bbc2e391e49353e",
+    "ec94a57502217663"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Subsídio ao combustível custou R$ 40 bi e não segurou o preço",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "otempo.com.br": {
    "nome": "O TEMPO",
@@ -1811,13 +1858,14 @@
    "nome": "Transporte Moderno",
    "site": "https://transportemoderno.com.br",
    "ids": [
-    "dd74f9da75e30afd"
+    "dd74f9da75e30afd",
+    "cc4d56e2075e49ef"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Governo eleva subsídio ao diesel para R$ 3,52 por litro",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "atlaspublico.com.br": {
    "nome": "atlaspublico.com.br",
@@ -1919,13 +1967,14 @@
    "nome": "Taktá No AR",
    "site": "https://takta.com.br",
    "ids": [
-    "4289f53b14c284f7"
+    "4289f53b14c284f7",
+    "e56189cea6055bd6"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Governo Lula Amplia Subsídio à Gasolina E Zera Impostos Federais Por 30 Dias",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "olhardireto.com.br": {
    "nome": "Olhar Direto",
@@ -2177,13 +2226,14 @@
    "nome": "ND Mais",
    "site": "https://ndmais.com.br",
    "ids": [
-    "a36e94442204d2bc"
+    "a36e94442204d2bc",
+    "7c6221208546e54e"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Após desvantagem no 1° turno, Lula zera impostos da gasolina e renova subsídio do etanol a 16 dias das eleições",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "diariodotransporte.com.br": {
    "nome": "Diário do Transporte",
@@ -2432,13 +2482,14 @@
    "nome": "Sul Informação",
    "site": "https://www.sulinformacao.pt",
    "ids": [
-    "36fb1afa3d378874"
+    "36fb1afa3d378874",
+    "1ca12db57a5c8095"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Oportunidades de financiamento do programa EEA Grants apresentadas em Faro",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "vidaimobiliaria.com": {
    "nome": "Vida Imobiliária",
@@ -2457,13 +2508,15 @@
    "site": "https://www.afdb.org",
    "ids": [
     "79b44428001f740a",
-    "00f0bc7de46e7712"
+    "00f0bc7de46e7712",
+    "5f49c565a090a447",
+    "87c76f7f042d3255"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Grupo Banco Africano de Desenvolvimento apoia a transição da Somália, da recuperação ao financiamento do desenvolvimento sustentável",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "infarmed.pt": {
    "nome": "INFARMED, I.P.",
@@ -2519,13 +2572,14 @@
    "nome": "o minho",
    "site": "https://ominho.pt",
    "ids": [
-    "5a30dcd830342162"
+    "5a30dcd830342162",
+    "80ed9641173eb5bc"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Braga e Terras de Bouro disputam Polo Arqueológico com financiamento garantido de 600 mil euros",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "forbesafricalusofona.com": {
    "nome": "Forbes África Lusofona",
@@ -2604,25 +2658,28 @@
    "site": "https://www.jn.pt",
    "ids": [
     "1eb3c953fe5dc093",
-    "f806f0c279d58186"
+    "f806f0c279d58186",
+    "40cbe26a64a1c4da",
+    "4da94e628fd1132a"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Chumbado apoio ao arrendamento pedido pelo PS",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "noticiasaominuto.com.br": {
    "nome": "Notícias ao Minuto Brasil",
    "site": "https://www.noticiasaominuto.com.br",
    "ids": [
-    "9bad54c444050a4f"
+    "9bad54c444050a4f",
+    "b6a3f6e4dbe086a6"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Lula zera imposto federal da gasolina e renova subsídio do etanol",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "redeutv.com.br": {
    "nome": "redeutv.com.br",
@@ -2664,13 +2721,16 @@
    "nome": "Exame",
    "site": "https://exame.com",
    "ids": [
-    "3af0221765cf869a"
+    "3af0221765cf869a",
+    "c883a9ed9edbfb6c",
+    "97b02e73d2de62b7",
+    "53bcc4301716e662"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Disparada dos custos de financiamento pressiona empresas dos EUA",
-   "ultima": "2026-10-10T12:38:37.658505+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "cm-serta.pt": {
    "nome": "Câmara da Sertã",
@@ -2725,13 +2785,14 @@
    "nome": "contacto.lu",
    "site": "https://www.contacto.lu",
    "ids": [
-    "06c1c78659f89257"
+    "06c1c78659f89257",
+    "b4badfa80ed96e13"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Obrigada a recorrer às poupanças para pagar a renda: falha informática na Adem atrasa pagamento de subsídios",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "tviplayer.iol.pt": {
    "nome": "TVI Player",
@@ -2766,13 +2827,19 @@
     "5961b011e7490abe",
     "37016018c61e173c",
     "3d1a5bfadccc358d",
-    "0544c6ab4e4e7eff"
+    "0544c6ab4e4e7eff",
+    "d51f9832362e1c7f",
+    "3bf5c43eed6e7138",
+    "af94ae8b71a83f40",
+    "d131be9b35ee11a3",
+    "1ffece5ddf810f52",
+    "5ca59ce05582d9e0"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Com um aumento de 55% nos subsídios, os funcionários das comunas em áreas montanhosas têm mais segurança em seus cargos.",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "extra.globo.com": {
    "nome": "Extra online",
@@ -2863,13 +2930,14 @@
    "nome": "Francês News",
    "site": "https://francesnews.com.br",
    "ids": [
-    "b474ecb4a1952273"
+    "b474ecb4a1952273",
+    "ffc2003b31b03e79"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Governo zera impostos federais da gasolina e amplia subsídios a combustíveis",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "monitormercantil.com.br": {
    "nome": "Monitor Mercantil",
@@ -3047,13 +3115,14 @@
    "nome": "Movimento Econômico",
    "site": "https://movimentoeconomico.com.br",
    "ids": [
-    "7515a7374b2560e8"
+    "7515a7374b2560e8",
+    "6016e24451606833"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Pacote de R$ 5,2 bilhões amplia desoneração da gasolina e subsídios ao diesel",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "moneytimes.com.br": {
    "nome": "Money Times",
@@ -3108,13 +3177,14 @@
    "nome": "Maringá Post",
    "site": "https://maringapost.com.br",
    "ids": [
-    "39feb2471530a133"
+    "39feb2471530a133",
+    "8fc42fbf367c051e"
    ],
    "pesquisas": [
     "Apoio Estado"
    ],
    "exemplo": "Governo zera tributos federais sobre gasolina por 30 dias e amplia subsídios a combustíveis",
-   "ultima": "2026-10-10T22:00:07.311755+00:00"
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   },
   "acionista.com.br": {
    "nome": "Acionista.com.br",
@@ -3259,9 +3329,915 @@
    ],
    "exemplo": "Concelho de Barcelos é o que tem o maior financiamento da região para as freguesias",
    "ultima": "2026-10-10T22:00:07.311755+00:00"
+  },
+  "razaoautomovel.com": {
+   "nome": "Razão Automóvel",
+   "site": "https://www.razaoautomovel.com",
+   "ids": [
+    "6766f9b82841c946",
+    "54289e7bc6094c87",
+    "b8469fa0a0147c7d",
+    "4a8461dc0a8c3b0e",
+    "3affca73d51adc7e",
+    "8b2a5dcea90f809f"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "acp.pt": {
+   "nome": "Automóvel Club de Portugal | ACP",
+   "site": "https://www.acp.pt",
+   "ids": [
+    "8d5ed6faeef63df1"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo anuncia novos apoios à compra de carros elétricos",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "montepio.org": {
+   "nome": "Montepio Associação Mutualista",
+   "site": "https://www.montepio.org",
+   "ids": [
+    "07a482eef9999690",
+    "a5367ef952abf416"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Pessoas com deficiência: conheça 13 apoios",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "diarioviseu.pt": {
+   "nome": "Diário de Viseu",
+   "site": "https://www.diarioviseu.pt",
+   "ids": [
+    "e26440ab5a15d369"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo anuncia apoios de até 80% para aquisição de veículos elétricos a mais carenciados",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "theblindspot.pt": {
+   "nome": "The Blind Spot",
+   "site": "https://theblindspot.pt",
+   "ids": [
+    "0f92981397884cc6"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Apoios à compra de veículos elétricos poderão atingir 390 milhões de euros",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "zap.aeiou.pt": {
+   "nome": "ZAP Notícias",
+   "site": "https://zap.aeiou.pt",
+   "ids": [
+    "028fb088177e1f0f"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo anuncia apoio de 16 mil euros a famílias carenciadas para comprar carro elétrico",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "ovilaverdense.pt": {
+   "nome": "O Vilaverdense",
+   "site": "https://ovilaverdense.pt",
+   "ids": [
+    "d9f078983ff9062e",
+    "287d89666955c501",
+    "788e32638be53911",
+    "de40e860c20b6beb",
+    "3a555592aba8330d"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo prevê apoios para mais de 20 mil veículos elétricos destinados a famílias carenciadas",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "techbit.pt": {
+   "nome": "TechBit",
+   "site": "https://techbit.pt",
+   "ids": [
+    "6184c22cd56f8cc1"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Com o apoio de 80% do Governo, estes carros elétricos podem custar menos de 7.000€",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "tugatech.com.pt": {
+   "nome": "TugaTech",
+   "site": "https://tugatech.com.pt",
+   "ids": [
+    "a3f7d4ff864f4c03"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo reforça apoios para carros elétricos com verba de 50 milhões de euros e descontos até 80%",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "autogear.pt": {
+   "nome": "Auto Gear",
+   "site": "https://autogear.pt",
+   "ids": [
+    "383592c88f9b0328"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo prepara apoio de até 16 mil euros para a compra de carros elétricos em 2027",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "rfm.pt": {
+   "nome": "RFM",
+   "site": "https://rfm.pt",
+   "ids": [
+    "12b85abc1c052d3a"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Subsídio de Natal 2026: há reformados que recebem em novembro e outros em dezembro",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "ecija.com": {
+   "nome": "www.ecija.com",
+   "site": "https://www.ecija.com",
+   "ids": [
+    "e43346bcbbf37065"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Revogação da redução de subsidio de desemprego após 180 dias",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "expressodasilhas.cv": {
+   "nome": "Expresso das Ilhas",
+   "site": "https://expressodasilhas.cv",
+   "ids": [
+    "1b81ea67caabe2f8"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "CNE aumenta para mil escudos subsídio de alimentação dos membros das mesas de voto",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "foreveryoung.sapo.pt": {
+   "nome": "SAPO",
+   "site": "https://foreveryoung.sapo.pt",
+   "ids": [
+    "21b1adb59e9eb003"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Subsídio de Natal dos reformados: quando chega e quanto é",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "secretldn.com": {
+   "nome": "Secret London",
+   "site": "https://secretldn.com",
+   "ids": [
+    "2afc224ec080607d"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Desde o subsídio parental para parceiros que trabalham por conta própria até compras de comida mais baratas, eis as 5 «medidas para o dia a dia» que o governo acabou de anunciar, numa tentativa de ajudar milhões de famílias por todo o Reino Unido",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "plataformamedia.com": {
+   "nome": "Plataforma Media",
+   "site": "https://www.plataformamedia.com",
+   "ids": [
+    "4c65d75cfd1b4500",
+    "f17f82b4fd267f7e"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "China regista quarto ano de queda populacional. Subsídios à natalidade continuam insuficientes",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "br.advfn.com": {
+   "nome": "ADVFN",
+   "site": "https://br.advfn.com",
+   "ids": [
+    "5896484ab2731d91"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo renovará subsídio ao diesel por mais um mês",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "fr.tradingview.com": {
+   "nome": "TradingView",
+   "site": "https://fr.tradingview.com",
+   "ids": [
+    "79d36206655848a6"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Co-fundador da Zcash pede o fim do programa de subsídios “com mais de US$ 125 milhões”",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "veja.abril.com.br": {
+   "nome": "VEJA",
+   "site": "https://veja.abril.com.br",
+   "ids": [
+    "cc05dc52680a3ca7",
+    "b6e239eb78a5a990"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo prorroga subsídio ao diesel por 30 dias; Abicom não prevê reajuste nos combustíveis",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "jota.info": {
+   "nome": "JOTA Info",
+   "site": "https://www.jota.info",
+   "ids": [
+    "e091f4c71ae22d32"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo Lula renovará subsídio ao diesel de R$ 2,12",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "timesbrasil.com.br": {
+   "nome": "Times Brasil | CNBC",
+   "site": "https://timesbrasil.com.br",
+   "ids": [
+    "ae12dae354806957"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Subsídio de R$ 2,12 por litro de diesel é renovado por mais um mês e custará R$ 10,5 bilhões",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "www12.senado.leg.br": {
+   "nome": "Senado",
+   "site": "https://www12.senado.leg.br",
+   "ids": [
+    "389d0c1291043212",
+    "02d912af5a73c659"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo prorroga subsídio ao diesel",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "provincia.tn.it": {
+   "nome": "Provincia autonoma di Trento",
+   "site": "https://www.provincia.tn.it",
+   "ids": [
+    "413652c4ef4bfc88"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Subsídios para novas empresas em 2022",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "rede98.com.br": {
+   "nome": "Rede 98",
+   "site": "https://rede98.com.br",
+   "ids": [
+    "f56f7b7685530353"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Subsídio ao diesel tenta conter alta dos alimentos",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "migalhas.com.br": {
+   "nome": "Migalhas",
+   "site": "https://www.migalhas.com.br",
+   "ids": [
+    "85260dd733865633"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Subsídio ao diesel gera alerta jurídico, avaliam advogados",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "diariodistrito.sapo.pt": {
+   "nome": "Diário do Distrito",
+   "site": "https://diariodistrito.sapo.pt",
+   "ids": [
+    "0fc6d370c5a32b7a"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Segurança Social alerta para SMS falsas que anunciam a suspensão de subsídios",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "indexbox.io": {
+   "nome": "IndexBox",
+   "site": "https://www.indexbox.io",
+   "ids": [
+    "c825105d8825cb7b"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Porto de Avoyelles recebe subsídio federal de US$ 4 milhões para instalação de transbordo de grãos",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "dataportuaria.com": {
+   "nome": "Data Portuaria",
+   "site": "https://dataportuaria.com",
+   "ids": [
+    "3f0942cc805cee08",
+    "ad1fcb0d9fd72c6b"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Port Everglades recebe US$ 30,75 milhões em subsídio federal para modernização de operações de combustível",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "portalgazetarn.com": {
+   "nome": "Portal Gazeta RN",
+   "site": "https://portalgazetarn.com",
+   "ids": [
+    "51c7414790269880"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Diesel pode ficar mais caro com vencimento de subsídio federal",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "gov.br": {
+   "nome": "www.gov.br",
+   "site": "https://www.gov.br",
+   "ids": [
+    "40d5a47db54d37b4"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "UFCG abre vagas remanescentes para subsídio parcial nos RUs",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "mundoba.com.br": {
+   "nome": "MundoBA",
+   "site": "https://mundoba.com.br",
+   "ids": [
+    "65bb85964fa37c73"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo renova por um mês subsídio de R$ 2,12 por litro de diesel",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "revistaoeste.com": {
+   "nome": "Revista Oeste",
+   "site": "https://revistaoeste.com",
+   "ids": [
+    "019daee055216843"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo prorroga subsídio ao diesel por mais 30 dias",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "milkpoint.com.br": {
+   "nome": "MilkPoint",
+   "site": "https://www.milkpoint.com.br",
+   "ids": [
+    "a323fc49dbcf06df"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Subsídio de R$ 2,12 no litro do diesel é renovado pelo governo federal",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "democrata.es": {
+   "nome": "Demócrata",
+   "site": "https://www.democrata.es",
+   "ids": [
+    "aefda91adc75e0f8"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Quando se recebe o subsídio de desemprego em novembro: datas confirmadas e adiantamentos pendentes por banco",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "imagemdailha.com.br": {
+   "nome": "Imagem da Ilha",
+   "site": "https://www.imagemdailha.com.br",
+   "ids": [
+    "50b94fc862c8bd56"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo renova subsídio de R$ 2,12 ao óleo diesel",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "biodieselbr.com": {
+   "nome": "BiodieselBR",
+   "site": "https://www.biodieselbr.com",
+   "ids": [
+    "acaee7009becd52b"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "FPA defende subsídio ao diesel, mas pondera preocupação com endividamento do governo",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "noticias.r7.com": {
+   "nome": "R7",
+   "site": "https://noticias.r7.com",
+   "ids": [
+    "bd61b3af4bceb103",
+    "a6f7834824bca655"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo federal renova subsídio de R$ 2,12 por litro de diesel importado",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "grupoahora.net.br": {
+   "nome": "Grupo A Hora",
+   "site": "https://grupoahora.net.br",
+   "ids": [
+    "858242cd503e49a2"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo federal prorroga subsídio ao diesel por mais 30 dias",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "veronoticias.com": {
+   "nome": "Vero Notícias",
+   "site": "https://veronoticias.com",
+   "ids": [
+    "5309d4ec74293497"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo prorroga subsídio de R$ 2,12 por litro de diesel por mais 30 dias",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "canalrural.com.br": {
+   "nome": "Canal Rural",
+   "site": "https://www.canalrural.com.br",
+   "ids": [
+    "b03586f3f748772d"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Congresso aprova subsídio de R$ 12 por tonelada de cana-de-açúcar",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "folhapopular.info": {
+   "nome": "Jornal - Folha Popular",
+   "site": "https://folhapopular.info",
+   "ids": [
+    "c83b40190fb95166"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo Federal renova subsídio de R$ 2,12 por litro de diesel por mais um mês",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "correiodamanha.com.br": {
+   "nome": "www.correiodamanha.com.br",
+   "site": "https://www.correiodamanha.com.br",
+   "ids": [
+    "492079d4442ff3c8",
+    "51acb7a260e68236"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo prorroga subsídio ao diesel por mais 30 dias e mantém valor de R$ 2,12",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "congressoemfoco.com.br": {
+   "nome": "Congresso em Foco",
+   "site": "https://www.congressoemfoco.com.br",
+   "ids": [
+    "bd9cbc8f04982de7"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Câmara aprova subsídio de R$ 12 por tonelada de cana no Nordeste",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "comprerural.com": {
+   "nome": "CompreRural",
+   "site": "https://www.comprerural.com",
+   "ids": [
+    "352e65950f6ed572"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Subsídio de R$ 2,12 ao diesel vence hoje e coloca custos do agro em alerta",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "brasil.perfil.com": {
+   "nome": "Perfil Brasil",
+   "site": "https://brasil.perfil.com",
+   "ids": [
+    "ba9cdaba81260796"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo mantém subsídio ao diesel de R$ 2,12 por mais 30 dias",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "acritica.net": {
+   "nome": "A Crítica de Campo Grande",
+   "site": "https://acritica.net",
+   "ids": [
+    "5fea820e70ee620e"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo Lula renova subsídio do diesel por 30 dias, custando R$ 10,5 bilhões mensais",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "abcmais.com": {
+   "nome": "abc+",
+   "site": "https://www.abcmais.com",
+   "ids": [
+    "916074ad374c6993"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Subsídio ao diesel é prorrogado por mais 30 dias pelo governo federal; saiba como fica",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "ocp.news": {
+   "nome": "OCP News",
+   "site": "https://ocp.news",
+   "ids": [
+    "f6714c1bcf0fff54"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo renova subsídio de R$ 2,12 por litro do diesel por mais 30 dias",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "bahiaeconomica.com.br": {
+   "nome": "Bahia Econômica",
+   "site": "https://bahiaeconomica.com.br",
+   "ids": [
+    "830842886fc3c76b"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "\"fundo perdido\"",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "termometrodapolitica.com.br": {
+   "nome": "Termômetro da Política",
+   "site": "https://www.termometrodapolitica.com.br",
+   "ids": [
+    "0dc159c6dc6d352b"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Pix MEI prevê repasse de até R$ 5 mil a fundo perdido a partir de 2027, com prioridade a mulheres",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "plantaobrasil.net": {
+   "nome": "Plantão Brasil",
+   "site": "https://www.plantaobrasil.net",
+   "ids": [
+    "f2c843536933bce6"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Governo Lula planeja repasse de R$ 5 mil a fundo perdido para microempreendedores",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "cgtp.pt": {
+   "nome": "CGTP-IN",
+   "site": "https://www.cgtp.pt",
+   "ids": [
+    "d7b2ee1d024d7ee2"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "OE2027: FENPROF exige financiamento para responder aos problemas do Ensino Superior e da Ciência",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "cor.europa.eu": {
+   "nome": "cor.europa.eu",
+   "site": "https://www.cor.europa.eu",
+   "ids": [
+    "1a25d18218bb7c43"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Alerta sobre o financiamento do Pacto Ecológico — outubro de 2026",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "spn.pt": {
+   "nome": "SPN - Sindicato dos Professores do Norte",
+   "site": "https://www.spn.pt",
+   "ids": [
+    "9b53e0843ab2087a"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "ESI — OE/2027: Fenprof exige financiamento",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "funchalnoticias.net": {
+   "nome": "Funchal Notícias",
+   "site": "https://funchalnoticias.net",
+   "ids": [
+    "b74c9af032a35dbc"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "24 milhões de euros para Funcionamento 2030-Outros Custos de Financiamento",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "jornaldascaldas.pt": {
+   "nome": "Jornal das Caldas",
+   "site": "https://jornaldascaldas.pt",
+   "ids": [
+    "398798f338062a6a"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Apresentado financiamento de 126,3 milhões de euros",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "ambientemagazine.com": {
+   "nome": "Ambiente Magazine",
+   "site": "https://www.ambientemagazine.com",
+   "ids": [
+    "4de2b25fe9fe451f"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Opinião: A sustentabilidade está a redefinir o acesso ao financiamento",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "radiopax.com": {
+   "nome": "Rádio Pax",
+   "site": "https://www.radiopax.com",
+   "ids": [
+    "cffb44f2ac538840"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Baixo Alentejo abrangido por financiamento europeu para melhorar os cuidados de saúde primários",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "alentejoilustrado.pt": {
+   "nome": "Alentejo Ilustrado",
+   "site": "https://alentejoilustrado.pt",
+   "ids": [
+    "68743b65b81a6cda",
+    "c45b684155688404"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Anafre acredita que corte no financiamento a 210 freguesias será corrigido",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "radioportalegre.pt": {
+   "nome": "Rádio Portalegre",
+   "site": "https://radioportalegre.pt",
+   "ids": [
+    "e6fc5233127aac54"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Ponte de Sor: Luís Neves anuncia reforço histórico no financiamento aos bombeiros",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "casa.sapo.pt": {
+   "nome": "Casa Sapo",
+   "site": "https://casa.sapo.pt",
+   "ids": [
+    "02f4f49c4ddaa532"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "BEI reforça financiamento à habitação em Portugal",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "altominho.com.pt": {
+   "nome": "Semanário Alto Minho",
+   "site": "https://www.altominho.com.pt",
+   "ids": [
+    "844c86be44ac774c"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Manifesto de Vila Verde defende reforço do LEADER e do financiamento rural",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "regiao-sul.pt": {
+   "nome": "diariOnline Região Sul",
+   "site": "https://regiao-sul.pt",
+   "ids": [
+    "e509df0d4d1e9fc1"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "EEA Grants: financiamento para responder aos desafios do desenvolvimento regional",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "animationmagazine.net": {
+   "nome": "Animation Magazine",
+   "site": "https://www.animationmagazine.net",
+   "ids": [
+    "bdc55a88fb8e5a57"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "O curta-metragem de animação 'Marbles' recebe financiamento cultural do Kickstarter.",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "radio-covilha.pt": {
+   "nome": "Rádio Clube da Covilhã",
+   "site": "https://radio-covilha.pt",
+   "ids": [
+    "d2fd4e7531162a36"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "PCP Fundão apoia luta das freguesias e exige mais financiamento",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "bragatv.pt": {
+   "nome": "Braga TV",
+   "site": "https://bragatv.pt",
+   "ids": [
+    "09b5656871755c81"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Federação Minha Terra exige financiamento próprio e 5% dos fundos do desenvolvimento rural para o LEADER",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "jornalc.pt": {
+   "nome": "Jornal C - O Caminhense",
+   "site": "https://jornalc.pt",
+   "ids": [
+    "192c305aab7c4911"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "As 14 freguesias do concelho de Caminha unem-se contra cortes no financiamento e avançam para protesto nacional",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "psacores.pt": {
+   "nome": "Partido Socialista dos Açores",
+   "site": "https://www.psacores.pt",
+   "ids": [
+    "52634ad91983f833",
+    "b1441a6ebabb38aa"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Projeto Geração-Mil que abrange mais de 100 idosos das freguesias de Santa Bárbara, Remédios e Pilar da Bretanha com financiamento em atraso do Governo Regional há mais de 9 meses, denuncia PS/Açores",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "viva-porto.pt": {
+   "nome": "VIVA! Porto - Tudo sobre o Grande Porto",
+   "site": "https://viva-porto.pt",
+   "ids": [
+    "73b7e82237726da1"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Habitação: autarcas do Grande Porto querem gerir mais, mas só com financiamento do Estado",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "br.investing.com": {
+   "nome": "Investing.com Brasil - Finanças, Câmbio e Investimentos",
+   "site": "https://br.investing.com",
+   "ids": [
+    "078a1dc14cedc474"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Amazon cria financiamento de US$ 80 bilhões para hardware de IA",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "valorinveste.globo.com": {
+   "nome": "Valor Investe",
+   "site": "https://valorinveste.globo.com",
+   "ids": [
+    "ecd25f46c3c11e0b"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Bancos sobem taxas de financiamento imobiliário após disparada dos juros futuros",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "tradingkey.com": {
+   "nome": "TradingKey",
+   "site": "https://www.tradingkey.com",
+   "ids": [
+    "c3d224c3cd6ee330"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Microsoft emitirá primeiros títulos nos EUA desde 2017: rating AAA pode aliviar preocupações do mercado sobre corrida de financiamento em IA",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "opais.co.mz": {
+   "nome": "O País - A verdade como notícia",
+   "site": "https://opais.co.mz",
+   "ids": [
+    "fbd23025b4b3ab13"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "Moçambique e IFC discutem financiamento a pequenos produtores agrícolas",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
+  },
+  "portas.com.br": {
+   "nome": "portas.com.br",
+   "site": "https://portas.com.br",
+   "ids": [
+    "da4bed1b1e04552d"
+   ],
+   "pesquisas": [
+    "Apoio Estado"
+   ],
+   "exemplo": "O que as imobiliárias podem controlar neste cenário mais difícil de financiamento",
+   "ultima": "2026-11-01T15:15:46.655037+00:00"
   }
  },
- "ultima_descoberta": "2026-10-10",
+ "ultima_descoberta": "2026-11-01",
  "enviados": [
   {
    "tipo": "alerta",
@@ -3396,6 +4372,123 @@
    "link": "https://sapo.pt/artigo/instituto-superior-miguel-torga-e-fundacao-mata-do-bussaco-unem-esforcos-para-desenvolver-projeto-floresta-terapeutica-6acb302067f99269c840f779",
    "fonte": "SAPO",
    "nota": 16.5,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "CDU exige requalificação da Escola Luís de Camões e Câmara aguarda financiamento",
+   "link": "https://mediotejo.net/cdu-exige-requalificacao-da-escola-luis-de-camoes-e-camara-aguarda-financiamento/",
+   "fonte": "Médio Tejo",
+   "nota": 30.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "Estado vai comparticipar até 80% da compra de carros elétricos para famílias com baixos rendimentos",
+   "link": "https://24noticias.sapo.pt/atualidade/artigos/estado-vai-comparticipar-ate-80-da-compra-de-carros-eletricos-para-familias-com-baixos-rendimentos",
+   "fonte": "SAPO",
+   "nota": 21.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "Médio Tejo prepara prioridades para fundos europeus de 2028 a 2034",
+   "link": "https://mediotejo.net/medio-tejo-prepara-prioridades-para-fundos-europeus-de-2028-a-2034/",
+   "fonte": "Médio Tejo",
+   "nota": 21.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "Manifesto reivindica 5% dos fundos rurais para o programa LEADER",
+   "link": "https://mediotejo.net/manifesto-reivindica-5-dos-fundos-rurais-para-o-programa-leader/",
+   "fonte": "Médio Tejo",
+   "nota": 21.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "Bombeiros alertam para falta de apoio a corporações",
+   "link": "https://sapo.pt/artigo/bombeiros-alertam-para-falta-de-apoio-a-corporacoes-6ae7540df8020b05950237be",
+   "fonte": "SAPO",
+   "nota": 16.5,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "Agricultores dos Açores pedem 23 milhões de euros em apoios do Governo",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNktfZzBEdER2RUl3cmlINUdZRVEtM3VyR1o4SXZmWUR2RzZ1UlI3WktYWGhLM0xCM0ZBNmQxcW9IM1l0NWRHMVEtR2ZveUwyR1gyZGlka0RWQ19VVFNVU1BBOFA2bmdfUmY1ZDZPRkpqUzN0TzNpdmdvRFBnSG9ybXpHb1JpWmRHdXhtSWpMN2pBLWNFUkdUVU9FTEozN0xrMTV2TmwwNUdHckM5U19fLXc5ckpBQW8?oc=5",
+   "fonte": "Notícias ao Minuto",
+   "nota": 16.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "Governo açoriano diz que 1,25 ME da República permite continuar apoios na agricultura",
+   "link": "https://news.google.com/rss/articles/CBMisAFBVV95cUxONzd5QmJYR2VPaXRlYlY1Z0FDMDluQTExQlZiLUpZSmUtamxNX25FaTE0X3VvbFV1YTV0bUJBNmc5dzZCdTZxd3ZaX3M1VDMwbjZkV0JoR1BxenJnTy1UNTBCX2w3OHNhajNuNlh0SEFESzdJeFN5a0g5VnQzWEtMRnlwQzVlTEFET19uOElMN3NXUDlKZHNKdFlBT0NISjY1amQ3akhsX2dtV1M4anVrTw?oc=5",
+   "fonte": "Agroportal",
+   "nota": 16.0,
+   "pesquisa": "Apoio Estado"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "SERTÃ – Excelência dos vinhos do concelho reforçada com prémio e distinções",
+   "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNRnBRLXhVdEZRSWZmUmdRc0dYOW9tS2pfeTNjdDh1MnFzLXd0cTdiMlk5LXhYOF9XTF9fdGd1TUxGVHhqdTdFU2tQRjhsOW5pRXBKMnAzcGtPTzltd0Jjb3NTX3J1dVVtNFh6T3F0UG5MTzRRVVlUWmZkNmdrMDdZN2l5UHRpU3JneDZ2UHoyOFhTczg4WGFSS2NFR20?oc=5",
+   "fonte": "Rádio Hertz",
+   "nota": 15.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "Vinhos do concelho da Sertã conquistam prémio e distinções",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNWEtfbWJwWE92QjdsYjY2VW9QcklmRVU4STV4dlhGcnNHMVZleWo0YWJJSzBTYm1oUTU4WHhxa0FzUDZjOHpJamZaUExXOWVSSjd4TGJfWklaVGJiRkpNbGdiVkRrMVNCd09XT1g1QlpRXzNVbWZUU2VLZ0E1WGt4bjI4QUx6dzFBQWpKcFZCQ216WHY2Y3BnOUJzbnFxbTNDTmVMWTJOZi1SQQ?oc=5",
+   "fonte": "SAPO",
+   "nota": 15.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "SERTÃ – Autocarros 100% elétricos já circulam no concelho",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPVnlJZ2N1WXdybUNHcko1ZVdIaFpKbTBCNlJlUlFlNGtvbTZ3Z0J6QXhkRnhnbEFZSzhjMElBNC0xd2l0Qzdnb2U5b1R5VDB1RGdYRmJ1bXZselVFRDhvQThoXzZqNV9zWXNwMk9QVHIzOUVaSkFnQ2p6ZlpiN3gwTGdmOA?oc=5",
+   "fonte": "Rádio Hertz",
+   "nota": 15.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "SERTÃ - Município recebeu comitiva de Granollers para intercâmbio de experiências de desenvolvimento local",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWGtpY3VmMThjd1E4SzlCSTZPWUNVM3Nxa183aDV6MHJIcnVkSmd4RFJhU0ZqamFmOXBYeUZ4blRXRkhKdHpCQlQ4UTJkX0hwelo1NEVnQWtvRVNscjNxWEdHNklERjVPWHNweVZYOGVMVTZEaU8ySGtKNnZZd3VfcTdLanhmcDRLYmpHSHBnYlA2QTdXbWRCbVg0MDFWckt5RDMzZ1Flc3hVNE10RGwxQkliWE1PcG5LV3JRdll5SlFXTS1WbkE?oc=5",
+   "fonte": "Rádio Hertz",
+   "nota": 15.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "SERTÃ: Mercado Municipal recebe Ecomercado no dia 7 de novembro",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeE1ROHhJb1A4eGJGblhDZmwtMzh6VDhfWU5kV2tuOUFnZllJek9LYi1rM1Q1NzFPd3ZmRm5CcUNiVTlZMF95OFU0OVBhaWlLRFZCQTctT3piam00Vk5zUm84RFpUcTk3S1lpaDN6SHp0VzRHNTVHc1U3M2VERS1MWDZoRV9tSGNUMldOSlZoNlNfRjZFM0VaRVozdk5xd0tDWmNNM2FLWHQ0ak9qTXdr?oc=5",
+   "fonte": "SAPO",
+   "nota": 15.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "titulo": "VILA DE REI – Município recebe novo trator que reforça capacidade de prevenção e combate aos incêndios rurais",
+   "link": "https://radiohertz.pt/vila-de-rei-municipio-recebe-novo-trator-que-reforca-capacidade-de-prevencao-e-combate-aos-incendios-rurais/",
+   "fonte": "Rádio Hertz",
+   "nota": 12.0,
    "pesquisa": "Apoio Estado"
   }
  ],
@@ -3753,10 +4846,41 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-01T15:15:46.655037+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 285,
+     "relevantes": 5,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio Estado",
+     "recolhidas": 259,
+     "relevantes": 8,
+     "alertas": 1
+    }
+   ],
+   "falhas": [
+    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio Estado · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 1,
+   "resumo": 12,
+   "sugestoes": 5,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-10-11T07:22:31.525614+00:00"
+  "cm-serta.pt": "2026-11-01T15:15:46.655037+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
