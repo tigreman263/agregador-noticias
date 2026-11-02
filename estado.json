@@ -81,9 +81,9 @@
   "ec6c144a33747e6f": "2026-11-01T21:45:48.326067+00:00",
   "e6b29974d1ae411c": "2026-11-01T21:45:48.326067+00:00",
   "0acfc3a3f243437f": "2026-11-01T21:45:48.326067+00:00",
-  "adc06d5f8b52e038": "2026-11-02T04:45:44.613908+00:00",
+  "adc06d5f8b52e038": "2026-11-02T05:01:26.257547+00:00",
   "1f9da413087c07b6": "2026-11-02T01:45:47.456962+00:00",
-  "75b91fb5a492f648": "2026-11-02T04:45:44.613908+00:00"
+  "75b91fb5a492f648": "2026-11-02T05:01:26.257547+00:00"
  },
  "resumo": [
   {
@@ -1311,7 +1311,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-02T04:45:44.613908+00:00"
+   "ultima": "2026-11-02T05:01:26.257547+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -1421,7 +1421,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-02T03:45:49.650939+00:00"
+   "ultima": "2026-11-02T05:01:26.257547+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -1788,7 +1788,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Mau tempo põe abastecimento de água em alerta nos Prazeres",
-   "ultima": "2026-11-02T04:45:44.613908+00:00"
+   "ultima": "2026-11-02T05:01:26.257547+00:00"
   },
   "eco.sapo.pt": {
    "nome": "SAPO",
@@ -1851,7 +1851,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Polícia está a multar condutores que buzinam em apoio à manifestação no Rossio",
-   "ultima": "2026-11-02T04:45:44.613908+00:00"
+   "ultima": "2026-11-02T05:01:26.257547+00:00"
   }
  },
  "ultima_descoberta": "2026-11-01",
@@ -3204,10 +3204,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-02T05:01:26.257547+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 285,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 221,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-02T04:45:44.613908+00:00",
+  "cm-serta.pt": "2026-11-02T05:01:26.257547+00:00",
   "mediotejo.net": "2026-11-02T03:45:49.650939+00:00"
  },
  "raspadas": {},
