@@ -445,7 +445,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-02T21:47:39.127562+00:00"
+   "ultima": "2026-11-02T22:46:08.720798+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -695,33 +695,6 @@
  "ultima_descoberta": "2026-11-02",
  "enviados": [],
  "execucoes": [
-  {
-   "ts": "2026-10-10T09:43:51.845248+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 218,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio Estado",
-     "recolhidas": 218,
-     "relevantes": 5,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-    "Sertã · cm-serta.pt: RuntimeError: não consegui ligar ao site (endereço errado ou site em baixo)",
-    "Apoio Estado · cm-serta.pt: RuntimeError: não consegui ligar ao site (endereço errado ou site em baixo)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 5,
-   "silencio": false,
-   "erros": []
-  },
   {
    "ts": "2026-10-10T12:38:37.658505+00:00",
    "pesquisas": [
@@ -2117,15 +2090,46 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-02T22:46:08.720798+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 295,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 205,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [
+    "Médio Tejo",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "mediotejo.net"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-02T21:47:39.127562+00:00",
-  "mediotejo.net": "2026-11-02T20:47:06.343409+00:00"
+  "cm-serta.pt": "2026-11-02T22:46:08.720798+00:00",
+  "mediotejo.net": "2026-11-02T22:46:08.720798+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-02T21:47:39.127562+00:00",
-  "Apoio fundo ambiental": "2026-11-02T21:47:39.127562+00:00"
+  "Sertã": "2026-11-02T22:46:08.720798+00:00",
+  "Apoio fundo ambiental": "2026-11-02T22:46:08.720798+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
