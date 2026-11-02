@@ -1,73 +1,114 @@
 {
- "pedido": "mvzenjm39mrse",
- "ts": "2026-11-02T15:20:41.463011+00:00",
- "nome": "Apoio fundo ambiental",
- "consulta": "\"Fundo Ambiental\" OR \"Vale Eficiência\"",
- "recolhidas": 203,
+ "pedido": "mvzs7gkq1s1l7",
+ "ts": "2026-11-02T21:42:16.505641+00:00",
+ "nome": "teste",
+ "consulta": "\"queda de avião\"",
+ "recolhidas": 276,
  "idade_max_horas": 48.0,
- "passam": [],
- "n_passam": 0,
+ "passam": [
+  {
+   "titulo": "USA: Queda de avião executivo na Florida faz nove mortos perto de Mar-a-Lago",
+   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaUNNdlVOQ3Y5bFhKQmhkTzlWTTU2akJ0dTJLbjBwdHJEdnU0ZzlocmRMN1hFaUNZaFlxekg4MzdaWUl1RmhKNUNKblVPUjhjSmYtWnJ0YXN2TW1LcWw2dnRRT2RkM283SG9KSnZQZlR4aTdOd1E3c0JMeVBVUmFEYUJ3NWQyZEI1RFFWMWlrSHFmdVg1S0E?oc=5",
+   "fonte": "e24.pt",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "USA"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-02T12:03:58+00:00"
+  }
+ ],
+ "n_passam": 1,
  "cortes": {
-  "sem_sitio": 153,
-  "sem_assunto": 0,
+  "sem_sitio": 180,
+  "sem_assunto": 15,
   "excluida": 0,
-  "antiga": 46
+  "antiga": 28
  },
  "exemplos": {
   "sem_sitio": [
    {
-    "titulo": "Administração Interna reage a sentença do tribunal e diz que se refere apenas a Renata Cambra",
-    "link": "https://sapo.pt/artigo/protestos-pela-habitacao-mai-reage-a-sentenca-do-tribunal-e-diz-que-se-refere-apenas-a-uma-situacao-individual-e-concreta-6ae8991c7a19de6f9c4c1218",
-    "fonte": "SAPO"
+    "titulo": "Avião cai em estrada na Flórida e deixa ao menos nove mortos; vídeo mostra momento da queda",
+    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOenYwTXVGYURBRDloR0QyQ2gyRXdWOEdFRnllamZZdFh5ZVF6MnJZRnFYaThiOXE4cjFtVmc4c2ZsaHdYU0NadXJWY1RmckRkMm9nQzVEbHByUHU2bjYyNFQtZFFGY0NhNlpSLV9vUGFncFlNZGg0NW14UHlxaXRmVGF1LWtJZUVtU3o2TENEVDRDeDVmaWg4dmVuc1ZIZFhXemI5ZFBVbld1bURfUHhDUTBtNVk5dXN6LVRPczR4b21BNlJhdkJYWVlUeEJnazFCTE5EVUxlZE5iRFU0bnU40gHuAUFVX3lxTE5DOUVoenJPal9zMjY1bDlSc2JkdHluTlAyZXQ1M1g5QlJzUkwweHotanhzandQN1c1VWYwdXVEbmJnYmk5OUgwcTlUODRuMDRUbURIVVlsT1VySDJFdDdRTVZKRF9fdU1uTlM3Qm1yVkhoTk5hdUdNdTJabXRobWw5RklIekJyWmtVWjV4UlNwVTRtR3dmVk1xSzdZNlZRMkxXRU5yc0ZtVkZhdzluWUoxY0hCZ1hicGFCYm5udi00a3hzVnVUTUZzNDRhaldlT1hVSGE0LWs1amkzdV9pLUVzNWwwekdXOGZnLTNEYXc?oc=5",
+    "fonte": "O GLOBO"
    },
    {
-    "titulo": "PS diz que decisão judicial é \"estrondosa derrota\" e pede consequências políticas",
-    "link": "https://sapo.pt/artigo/ps-diz-que-decisao-judicial-e-estrondosa-derrota-e-pede-consequencias-politicas-6ae8947a665d772d962feeda",
-    "fonte": "SAPO"
+    "titulo": "\"Vamos despenhar-nos. Já não temos tempo\": nove pessoas morrem após queda de jato privado na Florida. Embate criou cratera na estrada",
+    "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOS1ZCa0ZDN3V2TnZfN2FlUkpVYWJzOWVrTkFfajczRm94ZWdPd3RJOTRQaURKODVNSzhsWWExR0NxQXAyb1d3ZVZTMzhtUlhpcEhTU2JPYXhGMHBpeDZFZ2tFQzlZd0NSQUFQeDRFR3BidU5TQm5EWmdoVHUtR2xrX2ZVRXllalh6S0l4akJLNGFGMmpTVm9wX1dvckF2Q3NZcGhycXhOV09BMnMwNW10dXlTNXhPTHVjTktrUUdfTTlUWUpzc0FYOGtabTgyRlRjYmJ4cnlVQnphVTVwNEltUWxrMGI1a1pwUHFFV0xjR0hteV9sbFBDOGYtWFJqTklBZHVPMHhtZ2lIeUxvRnQ1RHc5X0E4MkZ3aFp0dktNTHBiMUVqanplR3lYSWY?oc=5",
+    "fonte": "Jornal SOL"
    },
    {
-    "titulo": "Manifestantes de Lisboa vencem ação em tribunal para manter tendas",
-    "link": "https://sapo.pt/artigo/manifestantes-de-lisboa-vencem-acao-em-tribunal-para-manter-tendas-6ae86887767278ab51476c95",
-    "fonte": "SAPO"
+    "titulo": "“Parecia um míssil a cair”. Queda de jato particular faz nove mortos na Flórida",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMFhNMTRHWl9nNW40U1FzQzh4VUNOejRZakt2OXlYTXlyQVVma0xJRG90aEJTSGxTMnVrczFaWC1ZdVdjY29UaG1UQU9xZk15a0FyZkZmOXJLQWk5U1EzT0QtT3g5Ulh3ZmxuNERIdE1BUExVaVFiN2FuUXEtaGVwZDhrUmdoNnhXR2l6dy1oYmt1ZEtLWDBHYUI5RHM0enZsV2loamtSdDhKQQ?oc=5",
+    "fonte": "Diário de Notícias"
    },
    {
-    "titulo": "78 organizações pedem investigação independente à ação policial no Porto",
-    "link": "https://sapo.pt/artigo/habitacao-78-organizacoes-pedem-investigacao-independente-a-acao-policial-no-porto-6ae88e017a19de6f9c49806a",
-    "fonte": "SAPO"
+    "titulo": "Autoridade dos EUA vê indícios de que avião com filha de brasileiros se despedaçou antes do impacto",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOSzFvLXRmcExiNm4xZ2FqYUFoNVBjeHplSFJ4T2FnZGYzbjBlWHRzdjVwdU5KWmtIX3J5b1NiMnRGb0FUbDFGQUhfUGxiNTVrUktwYmYwU05jd3ZidkFtdnpfWWpoV1k5RUZnQk4tUmNha1p6enJ4VkNEdS1iQ2xtODE4Skhlcm12WWpoUk1abGZyb2haVmVwSjdwMVc0aTJUMjN6WE9McVh5ZmRmZEFPMzhqWnhTOUpHdy1aUEpVdFVRcFdjZWpmUEFQeUNCUktscVlibHVLNE1CRGJsb2E4ckZtWjdHQdIB9AFBVV95cUxPN2ZfTXd1MGNEaFF5WV8wYlgxNjAxeUMzM0VqaXZESTE2OG9IdmZKeXA4YTRSQXhTdDNIVXlvalJLVjcwSm40Q2x3ajRqUWpvV1BDaUxxV0NEY2k5VzhtbjRVYTVKUFB2OTN5Tjg5Ti1vQkJOMGhsTERuLVhiemY1TDgweUpqbWl4Y2lETVJIOVlpZU1DcGxDbkNNMFhRLUZwNmdkSjcyRG43Y05UdktJODRWNmpfZF9zcW1fTU55anZLVmhUbTczakJ4aWliTGNmT0QyYUlwMWNaTzl2T1hsTEtMWEkyMFdva0lnMFVCcHdKaUJn?oc=5",
+    "fonte": "G1"
    },
    {
-    "titulo": "Orçamento: Governo rejeita desmantelamento da CP e diz que subconcessão preserva papel estratégico da empresa",
-    "link": "https://sapo.pt/artigo/oe2027-governo-rejeita-desmantelamento-da-cp-e-diz-que-subconcessao-preserva-papel-estrategico-da-empresa-6ae8a6877853f8c56468ffc2",
+    "titulo": "Filha de brasileiros era copilota de avião que caiu na Flórida e deixou 9 mortos",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTDl6TzhBcTQ0c3VMVUhnaXkyUTllRjJOY05wbDF0Y1NfM240QVlTUjg2a2lDaGdQSzNyVExpUm9KSU1oOUtwVS1PSXNrYjRVaVVPdEQ3dllQVFN4bTNKVF9BUHdRb1hpZ0hfZldKeDQ5TXcyS3hYUVozTzRNcHhVc1VwM1phSGdaT0RLamhlOUNsZmtnY2ZfT1h30gGoAUFVX3lxTE1JODV3OXFkWlZzSV9JcF9yc3gybTljVml4d1BzVXlYbENPblUyRDZzclJGaHppZnU1enc0UU8xamxiaFlXYnRzRmNIOU03VGFMZEJYenU5WkJoQmo0dUp2OFc4VmlMYUNKTnF4M0J1VTQyN0NPdldNUnQ1MnE3Wmg2aTVCS2NmN1ZSbzlDcWlNUmZ1TFJ3OV9nSlo4ek96MjZnYXRQak1DUQ?oc=5",
+    "fonte": "G1"
+   }
+  ],
+  "sem_assunto": [
+   {
+    "titulo": "10 minutos: queda de avião privado na Florida provoca nove mortos",
+    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOY2xmdFVNb05VWWVqd3FXcHZuWnprZ1ZUY1hxUFNweG5RMzNQUC1nbHJ1OHMwUlppcE0xX1ViY0ZRQ194SENURVBramVUeUpZYW1heHRkWmx3cS1kMGRUblQ4Rl84ejdINHM5WUlqcGdlWDh5a1ZjRTV3NXpCVElNazU1Q0RCNndvbk9pb1l5VjZmRTVhazFtRzhHS2VqZlI0blpPcERSNHpucE1lUGZXTTJfTzZ1UjBWTkhUYmNlRmxWMml1N1R4WVc4OUQ1c1ZfQ0QxRkdiUE9xY0dlTnR6TFRjOXZ0Mm0tbXBWRFc2b3NQZzl4elE?oc=5",
+    "fonte": "SIC Notícias"
+   },
+   {
+    "titulo": "Vídeo mostra queda de avião na Flórida",
+    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBYQldwZlk1SEg5UGtfRWZWQ2pmdV9ROGw4YTFOdkQ4RXlGM0hFMjY4NzFWVFB0N0pCaHNGR3c1S2VyaFQtSFFkMHJMdXA4ODJsX0Uxelg3MXdTWnE1TVpR?oc=5",
+    "fonte": "BBC"
+   },
+   {
+    "titulo": "Áudio registra desespero de piloto antes de queda de avião que matou nove pessoas na Flórida: 'Estamos sem tempo'; ouça",
+    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPWDZsTVU1NzlWbHR4Y0hvemE4dmlXVzBvYlZZeExFUVNERW5oamUzZF9LQ0ItLWVUdEdWYUpNeVV2b3NRWEdWMHczQ0kxclh0WDlka2pCcFRFMlpKZThzamhJVHdpY3dvSS1EVEtkeXFQamVnVWszdUtodnJaTkRiSjZfV0lsa0g0MUM5X2lKcVR0YUhCRkdCR1gxOFB5bkU0SDhOOVZwRzNGdmNkcDlTRG5sZDYxUHpYSTVuVkdIaFl2TXRSY2pONF85TEJsUG8zRlZrSm9sOXUyb3ppclV0MENrUU9pczZtdUZmdHFPNXNwQ0tZR2RKVjdR0gGIAkFVX3lxTE9jMndDelp4ZHY2MUZxMzFueUtSN3ZxVHpVbGpTTHVUWHY0d2VOQ05SSUVrT19NWk5xTS1BWG1fMnk3TWQ2MXdTcmYxMWl3THRoa1ZUTlhqOEpBbDB6TExlMTY2bHd5VVFlWm51VmRURWdPVEx3dVVJYV9rYnFXazBKQXAycTZ6ZXh1OVNVWEhxNUtJRXlkU1A3LUtKc2V3Y2xzXzRCdEp5YlUzTld3ajM0ZmlMSTRRcThmV2ZmTmFxeGkxbERHd0VZYm5rZWhOeDNScXgyYjQyWldqa2IwYVV5NW56RGFKN2RHMk4zWVFjczh3SDR2ZDRSX3c1MklqcERnS0JxcXYySg?oc=5",
+    "fonte": "O GLOBO"
+   },
+   {
+    "titulo": "'Mayday... vamos bater no chão': áudio mostra conversa de piloto com torre durante queda de avião nos EUA",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPbFEwS1QwU1FWTHA1ckZ2WDVKdDJncXk3dzVOQmV2TEFURUZKbzdfMFRVTU8xRTdBT3VzNGptaG5RRnE4WWp5cGJHQnRrSUlmM3lyRFJMZFBEeE16ZDFGMFE2dm5NaFhfdDZYVERESVdDZkdKeGpzVzR2Z05sc3V1ZDhRZEI3b1Z3RjlmT3FaanljelNiRHpvcVZMT0pwUlIwSGNpSVFrVEgyY2w1RG1rc0xkeG00SG1kaG1LcEpTWjlNQXVFVWw1YzVJRnRqdHc0YklkRm5mVWdaX1RzQUFHbmRweFpPZ9IB9AFBVV95cUxNY1ZXeGY4OEJtWVJsNF9aRWMyVzhmeDVPRHJqNG56Wm1DX1J5MFNPdm9ha1lvRkFwN1d2bDh3ZUMwa3EzYXBVdWhpUjhvbDNrYnFBSkNxSHRrQ0tGVGJ0ZDF2QU5mWHp0MnBSemhyYTlJS2hJVnRpZ2x0YjdTNVRncGlucWh3Q2w3T0JfSVBfY0dSd1loV0p6eVpxYjBOM2paRHJlSm1vSWVWZFk3c28wQzhXOW9RZTlqWnpodjJoM0ZueFIwQ3ozb0xvQWJqbUVrM04xNnR3Z1ZWbTNkdlI4V1dlSnVES3RJLUxaS2NncDYzYlN6?oc=5",
+    "fonte": "G1"
+   },
+   {
+    "titulo": "Nove mortos em queda de avião executivo na Florida, perto de Mar-a-Lago",
+    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQa2Q5eXpYZ3g3cXc5RnIwU21oSzJUalZYUkItd3JBU19TYmpFb2F1RDdjV1VmTTJVY1UzMlBKbjNlUlJLbDhyRzgybjVLYWNvdTZzeFBIREt1bDVzVHh3V3pRZ2VpREdaZ3VrM0dtVkU1Y3l4cG9yQXF2c1AzbXZXRUhudWdZX2RDM3VHaDMxYjd5UUhPNGR2bTh5Um1PdTdiaWZVTlR3elJwOU52bXk1UVhzYlBPVUt3b0E?oc=5",
     "fonte": "SAPO"
    }
   ],
-  "sem_assunto": [],
   "excluida": [],
   "antiga": [
    {
-    "titulo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNUZoUEpBR2JCNTIwbzdOaFJ0QzdaU1pCQmdHWHAyNTFsUEQ3TmlHT2FVb09ydXZvTzZRcjZ2UXg0RjVwUmgxT25GRzlJUnJiWnhNbEpQWk9CRWFZVC0wTGZidmhIVmlsZl9mN1FxeDllVk53aUZ6S05UckZaeC1zRzBzOXJZUU5YUmZGR0JzeENvQ2VLU05XdnZXeE50WmlCZEtvQTBpMUxBZDVFRURxajBuRGJkX3lyRl80VkdfanZZX3JrblY5RXlVVkFORF82aFVSNFJWUGRYbFRYT1RzaE5ad3pselE4T1BhQ2VYcmtxeVBZWlJGZl9nT28?oc=5",
-    "fonte": "Contas Poupança"
+    "titulo": "Seis meses após queda de avião que deixou 4 mortos no RS, restaurante atingido não reabrirá e investigação segue sem conclusão",
+    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeVUyWGF3NDFDUUFKZjdTUUJsLWQ1SzVSRnkyZGVObUdIeFdfb2lxQV8yVG1neExMdHZWSkZjZDU2RnpOSjRLNmUyM2hSaC1Hc0xnelRUX0RGZ3pFai1jbjAtTnY4UGFhcUNlUi1tSmk2ek1CVWFwOE92eXlNNzk4Q3pfRUw4YzRkbjRfNE50LVVGTWhLM1kyVXM0djFicVRoalR6ZjYzenNFN25NSXlPc1o3Y2duOFcwU0JKWW5ZQ3BEcGQwRE16RFVDZ08zQlc2Y0HSAeABQVVfeXFMTzBMaEVfSWVOQ1c2aEFVcWc1cmJvZzNpWldDWTI1WTJ0MS1FQVY2UXR4RnpZMUxJMm9kUFNXRTluUGgxOTFnNl9BS1JUYjVmTS1ld24tMG82TTFUeEVqazNPUi1TWE50c204NEtyTTBUUHA1V0VuWlpRZ1ptVjZiMVFwQnNEQ0tDU3hKRXlmS01DWW1sOWxmbW8xekd3VEtKT3FJUmZBZW1pM3RhMmJuWDVtNXZTdnZ2VnFsckt2YW5OMU4zNWNOcExIOXhzZ0FwRWxWWGJGVnNrR3YzVUVsbkc?oc=5",
+    "fonte": "G1"
    },
    {
-    "titulo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVVZ1ZVZzMzBEbUEzaVBmNHhNRzVUdW1ZeXNKN2VXVk9Jd09vRF9EVUt4TEdLZWlHTHVMQW51TDJIZ0ZHVy1QeEI1X2VUaXdreUNkMXhDcWh2cTRzbkVIQzhUVDNnaWZrMW5ZZU5VOGxSNFM3aXIzYzFoN3JqOTY3eA?oc=5",
-    "fonte": "Portal Energia"
+    "titulo": "VÍDEO mostra avião caindo em rua movimentada nos EUA; passageiros sobrevivem",
+    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNb0RKM1BfVXNETmNWV2UtYnhzUUhVNkFpcWJLaUZNampEaGg3QmVhWlhXVW9MdGdfRTZaQy1wUlcyckV3cWxQZjlhZUVIcm9Dalh3MVVjV21NeXd0MU43VGVWMGQweUM3alNyVEc3bGMzRE1rNVBYNUh1Qzk1cWZHdXZOYjF6a0JaMjQzTzNaYk51NnR4TVhIV0RJNWRVT2FzbDNZanl5NTduV0RuUWN6R3ItSVpkSm5lckdJeHVfMkRkODJFc3ZF0gHWAUFVX3lxTE9WUDVYci1kOENWd0IwWGUtWXVrV0ttN0lzSEFWd0doUGstSEU0RWtoY1MtSFNFSVZtaWZCR1ZkUmJZTTB4Qi1zZm5yZF85cXJXSHFLS244ZFgtR1JQZHpVc3RoWXR3SGpTZTRUN3o4YnZBd2s0T2RpS09rUmpMTVMyRXpRQlYxUW1WTXNhck1INnJpc2dWQVZnTExtaFlrZl9JTXFFZXd5WDBNLXRiQUdLN0tqUm9qWnJOSmx3ZXVxNGlRWFRONkx1NDdkcXdlcjdxbnNrNHc?oc=5",
+    "fonte": "G1"
    },
    {
-    "titulo": "Falhas nos programas E-Lar e Vale Eficiência geram mais reclamações contra Agência para o Clima",
-    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQVlhhWEV0THhRSFdodW54TjFQQS00Y1dBTDUyeVJKYUI4bEwzVWQtd1lWaGstNF90MWdXWk1wQWprWE9Nd1o5Q3JGaTl6MXZkTGpsLVZhNE5IbjFja01RWERGOVpJQk9GbmVqOEhNbzljN3NpekVFT3J3SVNqYjB6Rzg1QUhyOVQ2MGZQa0d3MkdkWFhNWjBycC1tNFppSi1rdmVlYlcxVkJ1c1BkRnBjX0dNeDdDdEc2TXIwM3NqQ25abmxZSU1ZOEExLVpEN1o4Z0ZudTJZcVBnUjJFdXdjN1AtSTduaVdkRVdtSmU2M3ZDSGs?oc=5",
+    "titulo": "Avião militar caiu na Rússia. Seis pessoas morreram e uma ficou ferida",
+    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOV21GX2k5eldfcXFta0NSdFBsckZLa3JNckpUcjYxSmQ3WllZOE10X3Y3dE43RjNKek9lSUJSN2hEc2dxQWItMVc4N1k1VnBRejRPeDhzU29rTXpGOFA2b2xPTmZRbzBuV2ZjX1dyT2s5c09GMk1mMHJWSHVfcmkweXprZldEbV90VG1tX3NJeEwycElzOXUydEpNVlh4SnpnbXd1VGF3?oc=5",
+    "fonte": "Observador"
+   },
+   {
+    "titulo": "Seis mortos na queda de avião militar russo durante voo de treino",
+    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTlBueWQ2UUl0UjBMSkxVRkM2NG9HVnRZeV9GdmQwU2hLOTdnNUZVazFPX2VuMTh4YVhnZmRFcnhYZ3NudkFpTW4tdDlzczBfR0wzYnFLVXMwbnJzVjY1VXV3Zm1CSk5KSlZpazFYVWtjQXo2UFpmM3R3TGk5SmhRLUU0RTZ3ZjVjaHJLbVRqeWNRRk8wbGlBSk5PbXB0anlLRzliOTY2YXpvamRZd0xIV2xn?oc=5",
     "fonte": "Expresso"
    },
    {
-    "titulo": "Vale Eficiência: ministra promete ter em Outubro vales para candidatos elegíveis",
-    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTHF0c1NWMlVFdzVsOWFSNDVaRGk0YldxVUhfUnk4VThGSzV5RWFVd0kxeGQ3SEZOVllpNnlvRkVmNGFHN1Y0WEU4TUxTaWNObzhienFqZzZrVDA4aGtNdXRrQ3FhV1dDRzhrbWhUNGNkYjFteFRoVzJvUkFUYk5UbDF6WTJKLUJORkZMNHNScUZ3M0hXazVlb0JXenJMSDNwV1FFMUxOMVd2TlBYTGhOdjR1S0k4TGVFV0ZtdkYydw?oc=5",
+    "titulo": "Peru: treze pessoas morrem em queda de avião sobre as Linhas de Nazca",
+    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdF8tUUFudmJnRElWa2JwcTJueTNteVdscG5fLTNvWGRmeUFRVG1xVzZvT2t2Q1dlNm5rUVBPQ0I1amt1LS15YnJVZ3VILWJHVzRNdlA0aXdZYmJkTkszcS1zcHVQT0QyUnNTblZtMVBqcmEzYjNVZzdaLTB6Nm5mYUltNWFwNEZCNVpHZmhFakVPYmxoYU41TFJaLTFxRHNsS0kxYTQ3ZkxYZw?oc=5",
     "fonte": "Público"
-   },
-   {
-    "titulo": "Candidaturas sem resposta do Vale Eficiência vão ser pagas através de vouchers",
-    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcU16T3pWYzk1S2VPcFQ0dTFfdFVZbG1CV1duTUtrQnMzQ21VblMzcEcxaDB3cl9IRWdqRHRxUGJ6S2ZlY3R4ZnpUNG93UF8zZ2dSSnNEeWNrM200LVdfN0owMGV3UGJ6akw0TDNSRDI2MDh5aVpWaktLZ05sbFFlSnNkSUNTbkJVZzhiMFpFXy12NWFuZVpBS1NYSm1aOHpkVmZIclVCbU5xT3g2THN3?oc=5",
-    "fonte": "ECO"
    }
   ]
  },
