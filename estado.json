@@ -81,9 +81,10 @@
   "ec6c144a33747e6f": "2026-11-01T21:45:48.326067+00:00",
   "e6b29974d1ae411c": "2026-11-01T21:45:48.326067+00:00",
   "0acfc3a3f243437f": "2026-11-01T21:45:48.326067+00:00",
-  "adc06d5f8b52e038": "2026-11-02T06:00:48.080333+00:00",
+  "adc06d5f8b52e038": "2026-11-02T07:00:46.733011+00:00",
   "1f9da413087c07b6": "2026-11-02T01:45:47.456962+00:00",
-  "75b91fb5a492f648": "2026-11-02T06:00:48.080333+00:00"
+  "75b91fb5a492f648": "2026-11-02T07:00:46.733011+00:00",
+  "9523fbf672fbaac5": "2026-11-02T07:00:46.733011+00:00"
  },
  "resumo": [
   {
@@ -1193,38 +1194,14 @@
     "1f9da413087c07b6"
    ],
    "ts": "2026-11-02T01:45:47.456962+00:00"
-  }
- ],
- "adiados": [
-  {
-   "titulo": "Polícia multou condutores que buzinaram em apoio no Rossio. \"Vamos ver se não vão acicatar ainda mais os manifestantes\"",
-   "link": "https://cnnportugal.iol.pt/videos/policia-multou-condutores-que-buzinaram-em-apoio-no-rossio-vamos-ver-se-nao-vao-acicatar-ainda-mais-os-manifestantes/6ae7bd020cf22b9f8905364d",
-   "dominio": "cnnportugal.iol.pt",
-   "fonte": "CNN Portugal",
-   "confiavel": true,
-   "nota": 34.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T23:06:00+00:00",
-   "nivel": "alerta",
-   "ids": [
-    "adc06d5f8b52e038"
-   ]
   },
   {
-   "titulo": "AICEP afirma apoio a portugueses no relançamento de relações económicas com Venezuela",
-   "link": "https://sapo.pt/artigo/aicep-afirma-apoio-a-portugueses-no-relancamento-de-relacoes-economicas-com-venezuela-6ae805b2665d772d9619defb",
+   "titulo": "Trabalho para melhoria do sucesso escolar apresentado no Conselho Municipal de Educação de Évora",
+   "link": "https://sapo.pt/artigo/trabalho-para-melhoria-do-sucesso-escolar-apresentado-no-conselho-municipal-de-educacao-de-evora-6ae82f217853f8c56456ecd0",
    "dominio": "sapo.pt",
    "fonte": "SAPO",
    "confiavel": true,
-   "nota": 30.0,
+   "nota": 19.5,
    "pesquisa": "Apoio fundo ambiental",
    "achadas": {
     "alta": [
@@ -1234,13 +1211,15 @@
     "baixa": []
    },
    "n_fontes": 1,
-   "data": "2026-11-02T03:34:31+00:00",
-   "nivel": "alerta",
+   "data": "2026-11-02T06:33:56+00:00",
+   "nivel": "resumo",
    "ids": [
-    "75b91fb5a492f648"
-   ]
+    "9523fbf672fbaac5"
+   ],
+   "ts": "2026-11-02T07:00:46.733011+00:00"
   }
  ],
+ "adiados": [],
  "ultimo_resumo": "2026-11-01",
  "sugeridas": {
   "centralpress.pt": {
@@ -1285,7 +1264,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "f56a792d50590ce3",
     "43009cf9b5dba1ca",
     "40e4deaa7e744190",
     "0acfc3a3f243437f",
@@ -1304,14 +1282,15 @@
     "4e196b3fd6bfde2d",
     "df423e1e578b5516",
     "5e5353928b0fbcc4",
-    "75b91fb5a492f648"
+    "75b91fb5a492f648",
+    "9523fbf672fbaac5"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-02T06:00:48.080333+00:00"
+   "ultima": "2026-11-02T07:00:46.733011+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -1421,7 +1400,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-02T05:01:26.257547+00:00"
+   "ultima": "2026-11-02T07:00:46.733011+00:00"
   },
   "mag.sapo.pt": {
    "nome": "SAPO",
@@ -1788,7 +1767,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Mau tempo põe abastecimento de água em alerta nos Prazeres",
-   "ultima": "2026-11-02T06:00:48.080333+00:00"
+   "ultima": "2026-11-02T07:00:46.733011+00:00"
   },
   "eco.sapo.pt": {
    "nome": "SAPO",
@@ -1851,7 +1830,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Polícia está a multar condutores que buzinam em apoio à manifestação no Rossio",
-   "ultima": "2026-11-02T06:00:48.080333+00:00"
+   "ultima": "2026-11-02T07:00:46.733011+00:00"
   }
  },
  "ultima_descoberta": "2026-11-01",
@@ -2287,6 +2266,24 @@
    "fonte": "SAPO",
    "nota": 30.0,
    "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-02T07:00:46.733011+00:00",
+   "titulo": "Polícia multou condutores que buzinaram em apoio no Rossio. \"Vamos ver se não vão acicatar ainda mais os manifestantes\"",
+   "link": "https://cnnportugal.iol.pt/videos/policia-multou-condutores-que-buzinaram-em-apoio-no-rossio-vamos-ver-se-nao-vao-acicatar-ainda-mais-os-manifestantes/6ae7bd020cf22b9f8905364d",
+   "fonte": "CNN Portugal",
+   "nota": 34.5,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-02T07:00:46.733011+00:00",
+   "titulo": "AICEP afirma apoio a portugueses no relançamento de relações económicas com Venezuela",
+   "link": "https://sapo.pt/artigo/aicep-afirma-apoio-a-portugueses-no-relancamento-de-relacoes-economicas-com-venezuela-6ae805b2665d772d9619defb",
+   "fonte": "SAPO",
+   "nota": 30.0,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
@@ -3266,10 +3263,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-02T07:00:46.733011+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 285,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 221,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 2,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-02T06:00:48.080333+00:00",
+  "cm-serta.pt": "2026-11-02T07:00:46.733011+00:00",
   "mediotejo.net": "2026-11-02T03:45:49.650939+00:00"
  },
  "raspadas": {},
