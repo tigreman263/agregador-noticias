@@ -82,6 +82,39 @@ Agregador de notícias pessoal:
 - **O GitHub é a fonte de verdade** do `config.yaml`: o utilizador edita-o no painel. Não
   copiar versões locais por cima.
 
+## Pesquisas: formato simples (2026-11-02)
+
+O utilizador confundia obrigatórias/prioridades/notas e recebia notícias fora do contexto
+("apoio" apanhava "apoio na Argentina"). O painel passou a pedir **4 perguntas**, gravadas
+assim no `config.yaml`:
+
+- `sitio`: a notícia TEM de o mencionar (variantes com "/"); pode ser um nome
+  ("Fundo Ambiental") em vez de um lugar. Vazio = qualquer sítio.
+- `assuntos`: lista; tem de ter PELO MENOS UM (variantes de cada um com "/").
+- `excluir`: palavras que descartam.
+- `frequencia`: `urgente` (verificada de 15 em 15 min, mensagem logo), `hora` (de hora a
+  hora, mensagem logo; omissão) ou `diario` (de hora a hora, tudo no resumo diário).
+
+`preparar_pesquisa()` (chamada em `carregar_config`) traduz isto para as regras internas:
+obrigatórias = [sitio, todos os assuntos juntos com "/"], palavras.alta = assuntos (ou o
+sítio), consulta do Google = variantes do sítio (ou dos assuntos) com `OR` e expressões
+entre aspas, `limite_resumo` 1 e `limite_alerta` 1 (ou 10^9 se `diario`). Expressões com
+várias palavras ("fundo ambiental") procuram-se inteiras, nunca às palavras soltas. O
+formato antigo (sem `assuntos`) continua a funcionar; ao editá-lo no painel é convertido.
+
+**Experimentar** (botão no editor do painel): `workflow_dispatch` com `acao=experimentar`
+e o input `pesquisa` (JSON com um `pedido` aleatório) → `agregador.py --experimentar`
+corre a pesquisa sem enviar nem guardar o estado (vistos vazios) e grava
+`experimentar.json` (o que passa, contagens e exemplos dos cortes: sem_sitio,
+sem_assunto, excluida, antiga). O job usa o grupo de concorrência `experimentar` (não
+espera pelo `agregador`). O painel lê o ficheiro de 8 em 8 s até o `pedido` coincidir.
+
+**Frequência por pesquisa**: `.github/ja_e_altura.py` usa 15 min se houver alguma pesquisa
+`urgente` no config (regex), senão 60; no agregador, `pesquisa_devida()` salta, nas
+execuções automáticas, as pesquisas cuja `estado.ultima_pesquisa[nome]` ainda não passou
+a frequência (folga 2,5 min). Pedidos manuais verificam todas. `geral.intervalo_minutos`
+foi retirado do config e do painel.
+
 ## Como pontua (em `agregador.py`)
 
 `nota = (pontos das palavras + bónus) × peso da fonte`
@@ -136,7 +169,28 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 - Bibliotecas por cdnjs: js-yaml 4.1.0, marked, DOMPurify. Todo o texto vindo das notícias
   é escapado e o README é sanitizado (há um token no `localStorage`).
 
-## Estado atual (2026-11-01)
+## Estado atual (2026-11-02)
+
+- **Recomeço do zero (2026-11-02)**: a pedido do utilizador, apagadas as notícias
+  encontradas (`vistos`, `resumo`, `adiados`, `enviados`, `raspadas`, `paginas_lidas` e os
+  `descartados` do `painel.json`); fontes, sugestões e bloqueados ficaram.
+- Pesquisas atuais, ambas `urgente`: **"Sertã"** (sítio Sertã / sertanense /
+  sertaginense; assuntos apoio/subsídio/incentivo/comparticipação/candidatura,
+  agricultura/agrícola/agricultor, floresta/florestal; `cm-serta.pt` em `paginas_extra`
+  com `local: true`) e **"Apoio fundo ambiental"** (sítio Fundo Ambiental / Vale
+  Eficiência, sem assuntos). `fontes.paginas` ficou vazio.
+- **Bot do Telegram (2026-11-02)**: `/resumo` (o que espera o próximo resumo; se vazio, o
+  último resumo enviado, a partir de `enviados` tipo "resumo") e teclado fixo
+  (📰 Resumo, 🔄 Verificar, 📊 Estado, 🗂 Fontes) — o Worker mapeia o texto dos botões
+  para os comandos e chama `setMyCommands` no /start e /ajuda. O `agregador.py` põe o
+  mesmo teclado (`TECLADO`) em todas as mensagens sem botões próprios (resumo, teste).
+- O utilizador julgava que o Worker não respeitava a frequência: via execuções de 15 em
+  15 min, mas eram despertares curtos (job "correr" saltado). Explicado no painel.
+- **Pendente, por decisão do utilizador ("não vou implementar agora")**: dar o bot à
+  esposa. Caminho explicado: grupo do Telegram com os dois e o bot; `/start@bot` no grupo
+  dá o id (negativo); trocar `TELEGRAM_CHAT_ID` no GitHub e no Worker; BotFather
+  `/setprivacy` → Disable (ou bot administrador) para os botões do teclado funcionarem no
+  grupo. Alternativa (precisa de código): aceitar vários chat ids, cada um na sua conversa.
 
 - De 2026-10-11 a 2026-11-01 todas as execuções falharam (`NameError: DOMINIOS_IGNORADOS`,
   constante apagada sem querer no commit do Telegram); corrigido. A ação do Tailscale
@@ -154,7 +208,6 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
   qualquer uma (à palavra inteira). O utilizador não quer trocar os tokens.
 - O painel mostra o estado do despertador (Início → Frequência e Ligação → Telegram e
   Cloudflare), a partir do título das execuções; o endereço do Worker fica no localStorage.
-- O utilizador usa o painel com token: pesquisas "Sertã" e "Apoio Estado".
 - Tailscale configurado (2026-10-10): telemóvel 'Redmi Note 12 Pro+ 5G' aprovado como
   exit node; segredos TS_OAUTH_* no GitHub; a Câmara da Sertã é trazida pelo telemóvel.
 - O agendador do GitHub está a falhar muitas execuções automáticas neste repositório
@@ -164,6 +217,7 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 
 ## Próximos passos sugeridos
 
+0. Partilhar o bot com a esposa (ver "Pendente" acima), quando o utilizador quiser.
 1. Rever a leitura de sites sem RSS (pedido do utilizador em 2026-11-01).
 2. Botões "útil / não útil" nos alertas para aprender o que interessa (agora possível, via
    Worker).
