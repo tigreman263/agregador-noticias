@@ -1,6 +1,32 @@
 {
- "vistos": {},
- "resumo": [],
+ "vistos": {
+  "6bdcdd7bfd287b28": "2026-11-02T17:46:19.500650+00:00"
+ },
+ "resumo": [
+  {
+   "titulo": "Vale Eficiência: 28 mil famílias que ficaram de fora vão, afinal, receber o apoio",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNXRNdXljMVJYLXI3QzZKNFJRSXJVTGhjMG0tVjVONnV6SW5nOFU3ejJJQUtFNDRaUDFqVFpyNEpLWUoyTnhZLXVBRjNIbS13aEUwbmFiOFpVcXFrYVZ3Zy1LUjEzTzJad0NacVdHNmliaTBjTC1nblE1MnZNYm5sQjNkeURaN3BCbTNyMC0ySkpOZ2RTQWdmWHBVdE1GS0tEQWUweThHUUg2UllPbHBrTTBQa3RUU2tpZEhB?oc=5",
+   "dominio": "publico.pt",
+   "fonte": "Público",
+   "confiavel": false,
+   "nota": 23.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Vale Eficiência"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-02T17:29:14+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "6bdcdd7bfd287b28"
+   ],
+   "ts": "2026-11-02T17:46:19.500650+00:00"
+  }
+ ],
  "adiados": [],
  "ultimo_resumo": "2026-11-02",
  "sugeridas": {
@@ -411,13 +437,15 @@
    "nome": "Público",
    "site": "https://www.publico.pt",
    "ids": [
-    "5ecdfed3778cf1ba"
+    "5ecdfed3778cf1ba",
+    "6bdcdd7bfd287b28"
    ],
    "pesquisas": [
-    "Sertã"
+    "Sertã",
+    "Apoio fundo ambiental"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-01T21:45:48.326067+00:00"
+   "ultima": "2026-11-02T17:46:19.500650+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -2005,15 +2033,46 @@
     "cm-serta.pt",
     "mediotejo.net"
    ]
+  },
+  {
+   "ts": "2026-11-02T17:46:19.500650+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 264,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 285,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [
+    "Médio Tejo",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "mediotejo.net"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-02T16:46:56.540814+00:00",
-  "mediotejo.net": "2026-11-02T16:46:56.540814+00:00"
+  "cm-serta.pt": "2026-11-02T17:46:19.500650+00:00",
+  "mediotejo.net": "2026-11-02T17:46:19.500650+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-02T16:46:56.540814+00:00",
-  "Apoio fundo ambiental": "2026-11-02T16:46:56.540814+00:00"
+  "Sertã": "2026-11-02T17:46:19.500650+00:00",
+  "Apoio fundo ambiental": "2026-11-02T17:46:19.500650+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
