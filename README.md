@@ -344,18 +344,41 @@ Notas:
 
 ## 4. Criar e afinar pesquisas
 
-Cada pesquisa tem:
+No painel, cada pesquisa responde a **3 perguntas**:
 
-| Campo | Para que serve |
-|---|---|
-| Nome | Como aparece nas mensagens. |
-| O que procurar | A consulta no Google Notícias (ex.: `Sertã`, `apoios agricultura`). |
-| Palavras obrigatórias | A notícia só conta se tiver **todas**. Servem para filtrar um lugar (ex.: `sertã`). Deixa vazio para aceitar qualquer lugar. **Não dão pontos.** Com variantes (`sertã / sertanense`) basta uma delas. |
-| Prioridade alta / média / baixa | Palavras que dão pontos: alta 10, média 4, baixa 1. No título valem o dobro. Separa por vírgulas; variantes do mesmo conceito juntam-se com `/` (ver abaixo). |
-| Palavras a excluir | Se aparecer uma, a notícia é descartada. |
-| Nota para alerta | A partir desta nota, a notícia é enviada logo (por omissão 25). |
-| Nota para resumo | A partir desta nota, vai para o resumo diário (por omissão 10). |
-| Fontes só desta pesquisa | Feeds RSS e sites sem RSS só para este tema (ver secção 5). |
+| Pergunta | Exemplo | O que faz |
+|---|---|---|
+| 1. De que sítio tem de falar? | `Sertã, sertanense` | A notícia **tem** de ter uma destas formas. Vazio = qualquer sítio. |
+| 2. E de que assuntos? (um por linha) | `apoio, subsídio, candidatura`<br>`agricultura, agrícola`<br>`floresta, florestal` | E tem de ter **pelo menos um** assunto. Na mesma linha, palavras com o mesmo sentido. |
+| 3. O que nunca te interessa? | `futebol, acidente` | Se tiver uma, é deitada fora. |
+
+**Regra:** passa se tiver o **sítio E um assunto**, e nenhuma palavra a excluir. Não há
+pontos nem notas para escolher: assunto no **título** → mensagem imediata; só no texto →
+resumo diário. A procura no Google Notícias é feita pelo sítio (ou, sem sítio, pelos
+assuntos).
+
+**Experimentar:** antes de gravar, o botão **Experimentar** corre a pesquisa no GitHub
+(1 a 3 minutos, sem enviar nada) e mostra as notícias das últimas 48 h que passariam e as
+que foram cortadas — "não falam do sítio", "falam do sítio mas não de um assunto" (se
+alguma te interessava, falta-lhe um assunto), "palavra a excluir" e "antigas".
+
+Fontes só desta pesquisa: com `| local`, a fonte só publica deste sítio (ex.: o site da
+Câmara) e basta-lhe ter um assunto.
+
+No `config.yaml` fica assim (variantes separadas por `/`):
+
+```yaml
+  - nome: "Sertã"
+    sitio: "Sertã / sertanense"
+    assuntos:
+      - "apoio / subsídio / candidatura"
+      - "floresta / florestal"
+    excluir: []
+```
+
+Pesquisas antigas (com `consulta`, `obrigatorias`, `palavras` e notas) continuam a
+funcionar; ao editá-las no painel passam para as 3 perguntas. O que está abaixo descreve
+as regras internas, que as 3 perguntas preenchem sozinhas.
 
 ### Como é calculada a nota
 
@@ -392,7 +415,7 @@ Cada pesquisa tem:
   em baixa (para dar algum ponto), e baixa a nota do resumo (a pesquisa "Sertã" usa 20 e 4).
 - **Notícias brasileiras**: o Google Notícias mistura-as. Bloqueia `br` nas fontes
   (secção 5.2).
-- **Para ver o efeito** de uma mudança, carrega em **Simular** e abre o registo.
+- **Para ver o efeito** de uma mudança, carrega em **Experimentar** dentro da pesquisa.
 - Quando apagas uma pesquisa, o que ela deixou no estado (notícias à espera, sites
   registados para sugestões) é esquecido sozinho.
 
@@ -545,7 +568,7 @@ lápis no ficheiro).
 | `descoberta.max_pendentes` | 10 | Não sugere mais se tiveres estas por decidir. |
 | `descoberta.min_noticias` | 2 | Notícias relevantes mínimas para sugerir um site. |
 | `descoberta.procurar_feeds` | true | Procura o feed dos sites sugeridos. |
-| `pesquisas[]` | — | `nome`, `ativa`, `consulta`, `obrigatorias`, `palavras.alta/media/baixa`, `excluir`, `limite_alerta`, `limite_resumo`, `feeds_extra`, `paginas_extra` (secção 4). |
+| `pesquisas[]` | — | Formato simples: `nome`, `ativa`, `sitio`, `assuntos`, `excluir`, `feeds_extra`, `paginas_extra`. Formato antigo: `nome`, `ativa`, `consulta`, `obrigatorias`, `palavras.alta/media/baixa`, `excluir`, `limite_alerta`, `limite_resumo`, `feeds_extra`, `paginas_extra` (secção 4). |
 
 ---
 

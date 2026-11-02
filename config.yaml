@@ -33,8 +33,7 @@ fontes:
     - {nome: "Rádio Hertz", url: "https://radiohertz.pt/feed/"}
     - {nome: "dnoticias.pt", url: "https://www.dnoticias.pt/rss.xml"}
     - {nome: "CNN Portugal", url: "https://cnnportugal.iol.pt/rss.xml"}
-  paginas:
-    - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias"}
+  paginas: []
 
 # Descoberta automática de fontes: 1 vez por dia procura sites novos que
 # publicam sobre as tuas pesquisas e envia-te uma sugestão pelo Telegram, com
@@ -48,34 +47,29 @@ descoberta:
   min_noticias: 2              # o site tem de ter pelo menos 2 notícias relevantes
   procurar_feeds: true         # tenta encontrar o RSS do site para o ler diretamente
 
-# Cada pesquisa procura no Google Notícias pela "consulta" e filtra
-# com as palavras-chave. Podes ter várias pesquisas.
-# "obrigatorias": a notícia só conta se tiver TODAS estas palavras
-# (ex: ["sertã"] para não apanhar notícias de outros concelhos).
+# Cada pesquisa tem 3 perguntas (o painel preenche-as):
+#   sitio:    a notícia TEM de falar disto (variantes separadas por "/")
+#   assuntos: e de PELO MENOS UM destes (cada linha um assunto; variantes com "/")
+#   excluir:  se tiver uma destas palavras, é deitada fora
+# A procura no Google Notícias e as notas são automáticas: assunto no título dá
+# alerta imediato; só no texto vai para o resumo diário.
 pesquisas:
   - nome: "Sertã"
     ativa: true
-    consulta: "Apoios"
-    obrigatorias: ["Sertã / Sertaginenses", "Apoio / subsidio"]
-    palavras:
-      alta: ["Camara Municipal", "Apoios", "Subsidio", "Agricultura", "Florestal"]
-      media: ["Apoio"]
-      baixa: []
+    sitio: "Sertã / sertanense / sertaginense"
+    assuntos:
+      - "apoio / subsídio / incentivo / comparticipação / candidatura"
+      - "agricultura / agrícola / agricultor"
+      - "floresta / florestal"
     excluir: []
-    limite_alerta: 25
-    limite_resumo: 10
     feeds_extra: []
-    paginas_extra: []
+    paginas_extra:
+      - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias", local: true}
   - nome: "Apoio fundo ambiental"
     ativa: true
-    consulta: "Vale Eficiência"
-    obrigatorias: ["Vale eficiência"]
-    palavras:
-      alta: ["Apoios / subsídio", "Famílias", "Prazo"]
-      media: ["Prazo"]
-      baixa: []
+    sitio: ""
+    assuntos:
+      - "Vale Eficiência"
     excluir: []
-    limite_alerta: 25
-    limite_resumo: 10
     feeds_extra: []
     paginas_extra: []

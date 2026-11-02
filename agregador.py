@@ -1467,15 +1467,114 @@ def buscar_pelo_telemovel(cfg):
     return 0
 
 
+# Formato simples das pesquisas (o do painel): "sitio", "assuntos" e "excluir".
+# A notícia passa se falar do sítio E de pelo menos um dos assuntos; a nota é automática:
+# assunto no título dá alerta, só no texto vai para o resumo diário.
+LIMITE_ALERTA_SIMPLES = 20
+LIMITE_RESUMO_SIMPLES = 1
+
+
+def consulta_google(entrada_ou_lista):
+    """'Sertã / sertanense' -> 'Sertã OR sertanense' (expressões entre aspas)."""
+    partes = []
+    for e in entrada_ou_lista if isinstance(entrada_ou_lista, list) else [entrada_ou_lista]:
+        for v in str(e or "").split("/"):
+            v = v.strip()
+            if v and v not in partes:
+                partes.append(v)
+    return " OR ".join(f'"{v}"' if " " in v else v for v in partes)
+
+
+def preparar_pesquisa(p):
+    """Traduz o formato simples para as regras internas (obrigatórias, palavras, notas).
+    As pesquisas no formato antigo (sem "assuntos") ficam como estão."""
+    if not isinstance(p, dict) or "assuntos" not in p:
+        return p
+    sitio = str(p.get("sitio") or "").strip()
+    assuntos = [str(a).strip() for a in p.get("assuntos") or [] if str(a).strip()]
+    p["obrigatorias"] = ([sitio] if sitio else []) + ([" / ".join(assuntos)] if assuntos else [])
+    p["palavras"] = {"alta": assuntos or ([sitio] if sitio else []), "media": [], "baixa": []}
+    p["consulta"] = p.get("consulta") or consulta_google(sitio or assuntos)
+    p["limite_alerta"] = LIMITE_ALERTA_SIMPLES
+    p["limite_resumo"] = LIMITE_RESUMO_SIMPLES
+    return p
+
+
 def carregar_config():
     with open(CONFIG, encoding="utf-8") as f:
-        return yaml.safe_load(f)
+        cfg = yaml.safe_load(f)
+    for p in cfg.get("pesquisas") or []:
+        preparar_pesquisa(p)
+    return cfg
+
+
+def motivo_corte(item, pesq):
+    """Porque é que uma notícia não passou nos filtros (para o Experimentar)."""
+    titulo = " " + normalizar(item["titulo"]) + " "
+    texto = " " + normalizar(item["resumo"]) + " "
+    for x in pesq.get("excluir") or []:
+        for xv in str(x).split("/"):
+            xn = normalizar(xv)
+            if xn and (f" {xn} " in titulo or f" {xn} " in texto):
+                return "excluida"
+    obrig = [] if item.get("local") else pesq.get("obrigatorias") or []
+    for i, o in enumerate(obrig):
+        if variantes(o) and achar(o, titulo, texto)[0] is None:
+            return "sem_sitio" if (i == 0 and pesq.get("sitio")) else "sem_assunto"
+    return "sem_assunto"
+
+
+def experimentar(cfg):
+    """Corre uma pesquisa (vinda do painel, em PESQUISA) sem enviar nem guardar nada, e
+    escreve o resultado em experimentar.json para o painel mostrar."""
+    pedido = json.loads(os.environ.get("PESQUISA") or "{}")
+    pesq = preparar_pesquisa(dict(pedido, nome=pedido.get("nome") or "Experiência"))
+    agora_utc = datetime.now(timezone.utc)
+    estado = carregar_estado()
+    estado["vistos"] = {}  # mostra tudo o que passa, mesmo o que já foi enviado
+    idade_max = timedelta(hours=(cfg.get("geral") or {}).get("idade_max_horas", 48))
+    bloqueadas = (cfg.get("fontes") or {}).get("bloqueadas")
+    print(f"Experimentar: {pesq['nome']} (Google Notícias: {pesq.get('consulta')})")
+    falhas = []
+    itens = recolher(pesq, cfg, falhas)
+    cands = avaliar(itens, pesq, cfg, estado, agora_utc)
+    cortes = {"sem_sitio": 0, "sem_assunto": 0, "excluida": 0, "antiga": 0}
+    exemplos = {k: [] for k in cortes}
+    passaram = {i for c in cands for i in c["ids"]}
+    vistos_tit = set()
+    for it in itens:
+        if dominio_em(it["dominio"], bloqueadas):
+            continue
+        if id_de(pesq["nome"], it["titulo"]) in passaram or normalizar(it["titulo"]) in vistos_tit:
+            continue
+        vistos_tit.add(normalizar(it["titulo"]))
+        if it["data"] and agora_utc - it["data"] > idade_max:
+            m = "antiga"
+        else:
+            m = motivo_corte(it, pesq)
+        cortes[m] += 1
+        if len(exemplos[m]) < 5:
+            exemplos[m].append({"titulo": it["titulo"], "link": it["link"], "fonte": it["fonte"]})
+    res = {
+        "pedido": pedido.get("pedido", ""), "ts": agora_utc.isoformat(),
+        "nome": pesq["nome"], "consulta": pesq.get("consulta", ""),
+        "recolhidas": len(itens), "idade_max_horas": idade_max.total_seconds() / 3600,
+        "passam": [{k: c[k] for k in ("titulo", "link", "fonte", "nivel", "achadas", "data")}
+                   for c in cands[:40]],
+        "n_passam": len(cands), "cortes": cortes, "exemplos": exemplos, "falhas": falhas,
+    }
+    with open("experimentar.json", "w", encoding="utf-8") as f:
+        json.dump(res, f, ensure_ascii=False, indent=1)
+    print(f"Passam {len(cands)}; cortadas: {cortes}")
+    return 0
 
 
 def main():
     ap = argparse.ArgumentParser(description="Agregador de Notícias")
     ap.add_argument("--simular", action="store_true", help="não envia nem guarda nada")
     ap.add_argument("--teste", action="store_true", help="envia uma mensagem de teste")
+    ap.add_argument("--experimentar", action="store_true",
+                    help="(painel) corre a pesquisa em PESQUISA e grava experimentar.json")
     ap.add_argument("--fontes", action="store_true", help="procura fontes novas agora")
     ap.add_argument("--testar-pagina", metavar="URL", help="testa o leitor de páginas")
     ap.add_argument("--item", help="seletor CSS de cada notícia (com --testar-pagina)")
@@ -1497,6 +1596,8 @@ def main():
     try:
         if args.testar_pagina:
             return testar_pagina(args)
+        if args.experimentar:
+            return experimentar(carregar_config())
         if args.buscar_pelo_telemovel:
             return buscar_pelo_telemovel(carregar_config())
         if args.procurar_feeds:

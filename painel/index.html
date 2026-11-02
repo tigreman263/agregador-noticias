@@ -94,6 +94,8 @@ code{font-size:12px;background:var(--surface2);border:1px solid var(--line);bord
 .guia{background:var(--accent-soft);color:var(--accent-soft-ink);border-radius:12px;padding:10px 12px;margin-bottom:14px;font-size:13px}
 .guia summary{color:inherit}
 .guia ol{margin:8px 0 6px}
+.exp{background:var(--surface2);border:1px solid var(--line);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:6px;overflow-wrap:anywhere;margin-bottom:6px}
+.exp h3{margin:4px 0 0;font-size:15px}
 .passo{font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--accent);margin:18px 0 8px;padding-top:12px;border-top:1px solid var(--line)}
 ::placeholder{color:var(--muted);opacity:.7}
 ol{padding-left:20px;margin:6px 0}
@@ -129,6 +131,8 @@ const S = {
   tab: lsGet(LS_TAB, "inicio"),
   config: null, estado: null, runs: [], erroCarga: "", descartados: [],
   editar: null,          // índice da pesquisa em edição (-1 = nova)
+  rascunho: null,        // o que está escrito no formulário (não se perde ao redesenhar)
+  exp: null,             // resultado do botão Experimentar
   ocupado: false, aSeguir: null,
 };
 const WORKFLOW = "agregador.yml";
@@ -205,10 +209,22 @@ function blocoLista(chave, arr, ind) {
   return ind + chave + ":\n" + arr.map(x => ind + "  - " + yv(x) + "\n").join("");
 }
 const CAMPOS_PESQ = ["nome", "ativa", "consulta", "obrigatorias", "palavras", "excluir", "limite_alerta", "limite_resumo", "feeds_extra", "paginas_extra"];
+const CAMPOS_SIMPLES = ["nome", "ativa", "sitio", "assuntos", "excluir", "feeds_extra", "paginas_extra"];
 function yamlPesquisas(ps) {
   if (!ps.length) return "pesquisas: []\n";
   let o = "pesquisas:\n";
   ps.forEach(p => {
+    if (p.assuntos) {  // formato simples (3 perguntas); as regras antigas deixam de ser escritas
+      o += "  - nome: " + yv(p.nome) + "\n";
+      o += "    ativa: " + (p.ativa !== false) + "\n";
+      o += "    sitio: " + yv(p.sitio || "") + "\n";
+      o += blocoLista("assuntos", p.assuntos, "    ");
+      o += "    excluir: " + yv(p.excluir || []) + "\n";
+      o += blocoLista("feeds_extra", p.feeds_extra, "    ");
+      o += blocoLista("paginas_extra", p.paginas_extra, "    ");
+      Object.keys(p).forEach(k => { if (!CAMPOS_SIMPLES.includes(k) && !CAMPOS_PESQ.includes(k)) o += "    " + ychave(k) + ": " + yv(p[k]) + "\n"; });
+      return;
+    }
     const pal = p.palavras || {};
     o += "  - nome: " + yv(p.nome) + "\n";
     o += "    ativa: " + (p.ativa !== false) + "\n";
@@ -429,13 +445,19 @@ function vistaPesquisas() {
   ps.forEach((p, i) => {
     const st = statsPesquisa(p.nome), pal = p.palavras || {};
     h += '<div class="card"><div class="row"><h3>' + esc(p.nome) + "</h3>" + (p.ativa === false ? '<span class="tag">em pausa</span>' : '<span class="tag ok">ativa</span>') + "</div>";
-    h += '<div class="sm muted">Procura: ' + esc(p.consulta || "—") + "</div>";
-    if ((p.obrigatorias || []).length) h += '<div class="sm">Obrigatórias: ' + esc(p.obrigatorias.join(", ")) + "</div>";
-    h += '<div class="wrap">' + ["alta", "media", "baixa"].map(n => (pal[n] || []).map(w => '<span class="tag ' + (n === "alta" ? "bad" : n === "media" ? "warn" : "ok") + '">' + esc(w) + "</span>").join("")).join("") + "</div>";
+    if (p.assuntos) {
+      h += '<div class="sm">' + (p.sitio ? "Tem de falar de <b>" + esc(paraVirgulas(p.sitio)) + "</b>" + (p.assuntos.length ? " e de um destes:" : "") : "Tem de falar de um destes:") + "</div>";
+      h += '<div class="wrap">' + p.assuntos.map(w => '<span class="tag info">' + esc(paraVirgulas(w)) + "</span>").join("") + "</div>";
+      if ((p.excluir || []).length) h += '<div class="xs muted">Exclui: ' + esc(p.excluir.join(", ")) + "</div>";
+    } else {
+      h += '<div class="sm muted">Procura: ' + esc(p.consulta || "—") + ' <span class="tag warn">formato antigo — edita para passar às 3 perguntas</span></div>';
+      if ((p.obrigatorias || []).length) h += '<div class="sm">Obrigatórias: ' + esc(p.obrigatorias.join(", ")) + "</div>";
+      h += '<div class="wrap">' + ["alta", "media", "baixa"].map(n => (pal[n] || []).map(w => '<span class="tag ' + (n === "alta" ? "bad" : n === "media" ? "warn" : "ok") + '">' + esc(w) + "</span>").join("")).join("") + "</div>";
+    }
     if (st) h += '<div class="xs muted">Última verificação: ' + num(st.recolhidas) + " notícias lidas, " + num(st.relevantes) + " novas relevantes (" + num(st.alertas) + " para alerta). As que já viste antes não contam.</div>";
     h += '<div class="wrap"><button class="btn btn-sm" data-a="editar" data-p="' + i + '">Editar</button><button class="btn btn-sm" data-a="pausar" data-p="' + i + '">' + (p.ativa === false ? "Ativar" : "Pausar") + '</button><button class="btn btn-sm btn-danger" data-a="apagar" data-p="' + i + '">Apagar</button></div></div>';
   });
-  h += '<div class="xs muted">As mudanças ficam gravadas no config.yaml do GitHub e valem a partir da verificação seguinte. Usa "Simular" no Início para ver o efeito logo.</div>';
+  h += '<div class="xs muted">As mudanças ficam gravadas no config.yaml do GitHub e valem a partir da verificação seguinte. Para ver o efeito antes de gravar, usa "Experimentar" dentro da pesquisa.</div>';
   return h;
 }
 function linhasFontes(arr) { return (arr || []).map(f => [f.nome || "", f.url || ""].concat(f.local ? ["local"] : []).join(" | ")).join("\n"); }
@@ -456,41 +478,135 @@ function lerLinhasFontes(txt, antigas) {
     return o;
   });
 }
+// "Sertã / sertanense" (config) <-> "Sertã, sertanense" (formulário)
+function paraVirgulas(t) { return String(t || "").split("/").map(x => x.trim()).filter(Boolean).join(", "); }
+function deVirgulas(t) { return String(t || "").split(/[,\/]/).map(x => x.trim()).filter(Boolean).join(" / "); }
+// As 3 perguntas de uma pesquisa (converte as do formato antigo)
+function perguntas(p) {
+  if (p.assuntos) return { sitio: p.sitio || "", assuntos: p.assuntos.slice() };
+  const ob = p.obrigatorias || [], alta = (p.palavras || {}).alta || [];
+  return { sitio: ob.length > 1 ? ob[0] : "", assuntos: (ob.length > 1 ? ob.slice(1) : ob).concat(alta).filter((x, i, a) => a.indexOf(x) === i) };
+}
+function rascunhoDe(p) {
+  const q = perguntas(p);
+  return { nome: p.nome || "", ativa: p.ativa !== false, sitio: paraVirgulas(q.sitio), assuntos: q.assuntos.map(paraVirgulas).join("\n"),
+    excluir: (p.excluir || []).join(", "), feeds: linhasFontes(p.feeds_extra), paginas: linhasFontes(p.paginas_extra) };
+}
+function lerRascunho() {
+  const v = id => document.getElementById(id).value;
+  S.rascunho = { nome: v("f-nome"), ativa: document.getElementById("f-ativa").checked, sitio: v("f-sitio"), assuntos: v("f-assuntos"),
+    excluir: v("f-excluir"), feeds: v("f-feeds"), paginas: v("f-paginas") };
+  return S.rascunho;
+}
+// Do formulário para a pesquisa a gravar/experimentar; devolve null (e mostra o erro) se faltar algo
+function pesquisaDoFormulario() {
+  const r = lerRascunho(), ps = (S.config.pesquisas || []), orig = S.editar >= 0 ? ps[S.editar] : null;
+  const fe = document.getElementById("f-erro");
+  const falha = m => { fe.textContent = m; fe.scrollIntoView({ block: "center" }); return null; };
+  fe.textContent = "";
+  const nome = r.nome.trim();
+  if (!nome) return falha("Dá um nome à pesquisa.");
+  if (ps.some((p, i) => i !== S.editar && String(p.nome).toLowerCase() === nome.toLowerCase())) return falha("Já existe uma pesquisa com este nome.");
+  const nova = { nome: nome, ativa: r.ativa, sitio: deVirgulas(r.sitio),
+    assuntos: String(r.assuntos).split("\n").map(deVirgulas).filter(Boolean),
+    excluir: lista(r.excluir),
+    feeds_extra: lerLinhasFontes(r.feeds, orig && orig.feeds_extra), paginas_extra: lerLinhasFontes(r.paginas, orig && orig.paginas_extra) };
+  if (orig) Object.keys(orig).forEach(k => { if (!(k in nova) && !CAMPOS_PESQ.includes(k)) nova[k] = orig[k]; });
+  if (!nova.sitio && !nova.assuntos.length) return falha("Preenche pelo menos a pergunta 1 ou a 2, senão a pesquisa apanha tudo.");
+  if (![...nova.feeds_extra, ...nova.paginas_extra].every(f => /^https?:\/\//i.test(f.url))) return falha("Há uma fonte sem endereço válido (tem de começar por https://).");
+  return nova;
+}
 function vistaEditor() {
   const ps = (S.config && S.config.pesquisas) || [];
-  const p = S.editar >= 0 ? ps[S.editar] : { nome: "", ativa: true, consulta: "", obrigatorias: [], palavras: { alta: [], media: [], baixa: [] }, excluir: [], limite_alerta: 25, limite_resumo: 10, feeds_extra: [], paginas_extra: [] };
-  const pal = p.palavras || {};
+  const p = S.editar >= 0 ? ps[S.editar] : { nome: "", ativa: true };
+  const r = S.rascunho || rascunhoDe(p);
   const campo = (id, rot, val, dica, tipo, exemplo) => '<div class="field"><label for="' + id + '">' + rot + "</label>" + (tipo === "area" ? '<textarea id="' + id + '"' + (exemplo ? ' placeholder="' + esc(exemplo) + '"' : "") + ">" + esc(val) + "</textarea>" : '<input type="' + (tipo || "text") + '" id="' + id + '" value="' + esc(val) + '"' + (exemplo ? ' placeholder="' + esc(exemplo) + '"' : "") + ">") + (dica ? '<div class="hint">' + dica + "</div>" : "") + "</div>";
   const passo = t => '<div class="passo">' + t + "</div>";
   let h = '<div class="top"><h1>' + (S.editar >= 0 ? "Editar" : "Nova pesquisa") + '</h1><button class="btn btn-sm" data-a="cancelar">Cancelar</button></div><div class="card">';
-  h += '<details class="guia"' + (S.editar >= 0 ? "" : " open") + "><summary>Como preencher (4 perguntas)</summary><ol>"
-    + "<li><b>Onde ou o quê?</b> → o que procurar no Google Notícias.</li>"
-    + "<li><b>O que a notícia <u>tem</u> de ter?</b> → obrigatórias (normalmente o <b>sítio</b> e o <b>tipo de coisa</b>).</li>"
-    + "<li><b>O que a torna mais importante?</b> → prioridades.</li>"
-    + "<li><b>O que nunca te interessa?</b> → excluir (pode ficar vazio).</li></ol>"
-    + "Regra prática: <b>condição</b> (“tem de ser da Sertã”) vai para as obrigatórias; <b>preferência</b> (“melhor se for agrícola”) vai para as prioridades. Os exemplos a cinzento são para a pesquisa “apoios do município da Sertã”.</details>";
-  h += campo("f-nome", "Nome", p.nome, "Só serve para reconheceres a pesquisa nas mensagens do Telegram. Pode ser qualquer coisa.", "text", "Apoios Sertã");
-  h += passo("1 · Onde procurar");
-  h += campo("f-consulta", "O que procurar no Google Notícias", p.consulta || "", "O essencial, em 1 ou 2 palavras — normalmente o sítio. Isto só decide o que é <b>recolhido</b>, não filtra: se escreveres só <code>apoios</code>, vêm apoios de todo o país.", "text", "Sertã");
-  h += passo("2 · O que a notícia tem de ter");
-  h += campo("f-obrig", "Palavras obrigatórias", (p.obrigatorias || []).join(", "), "A notícia só passa se tiver <b>todas</b> (separadas por vírgulas). Com <code>/</code> escreves variantes da mesma ideia, e basta uma. Ex: <code>sertã / sertanense, apoio / subsídio</code> = tem de falar da Sertã <b>e</b> de apoios. Vazio = aceita notícias de qualquer lugar.", "text", "sertã / sertanense, apoio / subsídio / incentivo / candidatura");
-  h += passo("3 · O que a torna mais importante");
-  h += '<div class="hint" style="margin:-4px 0 10px">Separa por vírgulas. Cada palavra encontrada dá pontos; <b>no título vale o dobro</b>. Singular e plural contam como a mesma. Variantes com <code>/</code> contam uma só vez. Notícia com 0 pontos é descartada.</div>';
-  h += campo("f-alta", "Muito importante (10 pontos)", (pal.alta || []).join(", "), "O tema central do que procuras.", "area", "agricultura / agrícola, floresta / florestal, apoio / subsídio");
-  h += campo("f-media", "Importante (4 pontos)", (pal.media || []).join(", "), "Ajuda a confirmar que é do teu interesse.", "area", "município / câmara municipal, candidatura / inscrições, regulamento");
-  h += campo("f-baixa", "Um pouco (1 ponto)", (pal.baixa || []).join(", "), "Extras que só servem para desempatar.", "area", "famílias, empresas, associações");
-  h += passo("4 · O que nunca te interessa");
-  h += campo("f-excluir", "Palavras a excluir", (p.excluir || []).join(", "), "Se aparecer uma (palavra inteira), a notícia é deitada fora. Podes deixar vazio e juntar quando começar a aparecer lixo.", "text", "futebol, acidente");
-  h += passo("Quando avisar");
-  h += '<div class="grid2">' + campo("f-lalerta", "Nota para alerta", p.limite_alerta || 25, "A partir desta nota: mensagem imediata. Duas palavras “muito importantes” no título (20+20) já chegam.", "number") + campo("f-lresumo", "Nota para resumo", p.limite_resumo || 10, "Entre esta e a do alerta: resumo diário. Abaixo: ignorada.", "number") + "</div>";
+  if (S.editar >= 0 && !p.assuntos) h += '<div class="sm" style="background:var(--md-bg);color:var(--md-ink);border-radius:10px;padding:8px 10px">Esta pesquisa estava no formato antigo. Passei-a para as 3 perguntas — confirma, carrega em <b>Experimentar</b> e grava.</div>';
+  h += '<details class="guia"' + (S.editar >= 0 ? "" : " open") + "><summary>Como funciona</summary>"
+    + "A notícia só chega se falar do <b>sítio</b> (pergunta 1) <b>e</b> de <b>pelo menos um</b> dos assuntos (pergunta 2), e não tiver nenhuma palavra da pergunta 3.<br><br>"
+    + "Não há pontos nem notas para escolher: se o assunto estiver no <b>título</b>, recebes logo uma mensagem; se só estiver no texto, vai para o <b>resumo diário</b>.<br><br>"
+    + "Antes de gravar, carrega em <b>Experimentar</b> para veres que notícias passariam.</details>";
+  h += campo("f-nome", "Nome", r.nome, "Só para reconheceres a pesquisa nas mensagens.", "text", "Apoios Sertã");
+  h += passo("1 · De que sítio tem de falar?");
+  h += campo("f-sitio", "Sítio (ou nome principal)", r.sitio, "As formas como pode aparecer, separadas por vírgulas — <b>basta uma</b>. Deixa vazio se o sítio não interessa (ex.: um programa nacional como o Vale Eficiência).", "text", "Sertã, sertanense");
+  h += passo("2 · E de que assuntos?");
+  h += campo("f-assuntos", "Assuntos — um por linha", r.assuntos, "Basta a notícia ter <b>um</b> assunto. Na mesma linha, junta palavras com o mesmo sentido, separadas por vírgulas. Plural, maiúsculas e acentos não importam.", "area", "apoio, subsídio, incentivo, candidatura\nagricultura, agrícola, agricultor\nfloresta, florestal");
+  h += passo("3 · O que nunca te interessa?");
+  h += campo("f-excluir", "Palavras a excluir", r.excluir, "Separadas por vírgulas. Se a notícia tiver uma, é deitada fora. Pode ficar vazio.", "text", "futebol, acidente");
   h += '<details><summary>Fontes só desta pesquisa (opcional)</summary><div style="margin-top:10px">';
-  h += campo("f-feeds", "Feeds RSS", linhasFontes(p.feeds_extra), "Um por linha: <code>Nome | https://endereço-do-feed</code>. Junta <code>| local</code> se a fonte só publica deste lugar (dispensa as obrigatórias).", "area");
-  h += campo("f-paginas", "Sites sem RSS", linhasFontes(p.paginas_extra), "Um por linha: <code>Nome | https://página-de-notícias</code>. A app deteta as notícias sozinha.", "area");
+  h += campo("f-feeds", "Feeds RSS", r.feeds, "Um por linha: <code>Nome | https://endereço-do-feed</code>. Junta <code>| local</code> se a fonte só publica deste sítio (aí basta ter um assunto).", "area");
+  h += campo("f-paginas", "Sites sem RSS", r.paginas, "Um por linha: <code>Nome | https://página-de-notícias</code>. A app deteta as notícias sozinha. <code>| local</code> como acima.", "area");
   h += "</div></details>";
-  h += '<label class="check"><input type="checkbox" id="f-ativa"' + (p.ativa !== false ? " checked" : "") + "> Ativa</label>";
+  h += '<label class="check"><input type="checkbox" id="f-ativa"' + (r.ativa ? " checked" : "") + "> Ativa</label>";
   h += '<div class="err" id="f-erro" role="alert"></div>';
+  h += '<button class="btn btn-line block" data-a="experimentar"' + (S.exp && S.exp.estado === "a correr" ? " disabled" : "") + '>Experimentar (sem enviar nada)</button>';
+  h += '<div id="f-exp" aria-live="polite">' + htmlExp() + "</div>";
   h += '<button class="btn btn-primary block" data-a="guardar">Guardar no GitHub</button></div>';
   return h;
+}
+
+// ------------------------------------------------------------ Experimentar
+function htmlExp() {
+  const e = S.exp;
+  if (!e) return '<div class="hint">Mostra que notícias das últimas 48 h esta pesquisa apanharia. Corre no GitHub e demora 1 a 3 minutos.</div>';
+  const reg = e.run ? ' · <a href="' + esc(urlSegura(e.run.html_url)) + '" target="_blank" rel="noopener">ver registo</a>' : "";
+  if (e.estado === "a correr") return '<div class="exp"><div><span class="tag info">a experimentar…</span> <span class="sm muted">1 a 3 minutos' + reg + "</span></div></div>";
+  if (e.estado === "erro") return '<div class="exp"><div class="err">' + esc(e.msg) + reg + "</div></div>";
+  const d = e.res, c = d.cortes || {}, ex = d.exemplos || {};
+  let h = '<div class="exp"><div class="xs muted">Procurou no Google Notícias <code>' + esc(d.consulta || "—") + "</code> e nas fontes gerais: " + num(d.recolhidas) + " notícias lidas.</div>";
+  h += "<h3>" + (d.n_passam ? "Passam " + num(d.n_passam) : "Não passa nenhuma") + "</h3>";
+  if (!d.n_passam) h += '<div class="sm muted">Pode ser normal (não houve notícias destas nas últimas ' + num(d.idade_max_horas) + ' h). Vê em baixo as que foram cortadas, sobretudo as que <b>falam do sítio</b>: se alguma te interessava, falta um assunto.</div>';
+  (d.passam || []).forEach(n => {
+    const ach = n.achadas ? [].concat(n.achadas.alta || [], n.achadas.media || [], n.achadas.baixa || []) : [];
+    h += '<div class="list-item" style="display:block"><span class="tag ' + (n.nivel === "alerta" ? "bad" : "warn") + '">' + (n.nivel === "alerta" ? "mensagem" : "resumo") + '</span> <a class="title-link sm" href="' + esc(urlSegura(n.link)) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a><div class="xs muted">' + esc(n.fonte || "") + (ach.length ? " · encontrou: " + esc(ach.join(", ")) : "") + "</div></div>";
+  });
+  const grupo = (k, rot) => {
+    if (!c[k]) return "";
+    const lst = (ex[k] || []).map(n => '<div class="xs">· <a href="' + esc(urlSegura(n.link)) + '" target="_blank" rel="noopener">' + esc(n.titulo) + '</a> <span class="muted">(' + esc(n.fonte || "") + ")</span></div>").join("");
+    return "<details><summary>" + rot + ": " + num(c[k]) + "</summary>" + (lst ? '<div style="margin-top:6px">' + lst + (c[k] > (ex[k] || []).length ? '<div class="xs muted">… e mais ' + num(c[k] - (ex[k] || []).length) + "</div>" : "") + "</div>" : "") + "</details>";
+  };
+  h += '<div class="sm" style="margin-top:8px"><b>Cortadas</b></div>';
+  h += grupo("sem_assunto", d.sitio_vazio ? "Sem nenhum dos assuntos" : "Falam do sítio, mas não de um assunto");
+  h += grupo("sem_sitio", "Não falam do sítio");
+  h += grupo("excluida", "Têm uma palavra a excluir");
+  h += grupo("antiga", "Mais antigas que " + num(d.idade_max_horas) + " h");
+  (d.falhas || []).forEach(f => { h += '<div class="xs err">Fonte com falha: ' + esc(f) + "</div>"; });
+  return h + "</div>";
+}
+function mostrarExp() {
+  const el = document.getElementById("f-exp"); if (el) el.innerHTML = htmlExp();
+  const b = document.querySelector('[data-a="experimentar"]'); if (b) b.disabled = !!(S.exp && S.exp.estado === "a correr");
+}
+async function experimentar() {
+  if (S.exp && S.exp.estado === "a correr") return;
+  const nova = pesquisaDoFormulario(); if (!nova) return;
+  const pedido = Date.now().toString(36) + Math.random().toString(36).slice(2, 7);
+  const desde = Date.now();
+  const e = S.exp = { estado: "a correr", pedido: pedido, run: null };
+  mostrarExp();
+  try {
+    await gh("/repos/" + S.repo + "/actions/workflows/" + WORKFLOW + "/dispatches", { method: "POST", body: { ref: S.ramo, inputs: { acao: "experimentar", pesquisa: JSON.stringify(Object.assign({}, nova, { pedido: pedido })) } } });
+  } catch (err) { S.exp = { estado: "erro", msg: err.message }; mostrarExp(); return; }
+  for (let i = 0; i < 40 && S.exp === e; i++) {
+    await new Promise(r => setTimeout(r, 8000));
+    if (S.exp !== e) return;
+    try {
+      const d = JSON.parse((await lerFicheiro("experimentar.json")).texto);
+      if (d.pedido === pedido) { d.sitio_vazio = !nova.sitio; S.exp = { estado: "pronto", res: d, run: e.run }; mostrarExp(); return; }
+    } catch (err) { /* ainda não existe: tenta de novo */ }
+    try {
+      const r = await gh("/repos/" + S.repo + "/actions/workflows/" + WORKFLOW + "/runs?per_page=10&event=workflow_dispatch");
+      const run = (r.workflow_runs || []).find(x => x.display_title === "experimentar" && new Date(x.created_at).getTime() >= desde - 60000);
+      if (run) {
+        e.run = run;
+        if (run.status === "completed" && run.conclusion !== "success") { S.exp = { estado: "erro", msg: "A experiência falhou no GitHub.", run: run }; mostrarExp(); return; }
+      }
+    } catch (err) { /* tenta de novo */ }
+    if (S.exp === e) mostrarExp();
+  }
+  if (S.exp === e) { S.exp = { estado: "erro", msg: "Está a demorar mais do que o costume. Tenta outra vez daqui a pouco.", run: e.run }; mostrarExp(); }
 }
 
 function vistaAtividade() {
@@ -641,32 +757,16 @@ async function ocupado(btn, fn) {
   finally { S.ocupado = false; }
 }
 async function guardarPesquisa(btn) {
-  const v = id => document.getElementById(id).value;
-  const nome = v("f-nome").trim();
+  const nova = pesquisaDoFormulario(); if (!nova) return;
   const ps = (S.config.pesquisas || []), orig = S.editar >= 0 ? ps[S.editar] : null;
-  const la = Number(v("f-lalerta")), lr = Number(v("f-lresumo"));
-  const fe = document.getElementById("f-erro");
-  const falha = m => { fe.textContent = m; fe.scrollIntoView({ block: "center" }); };
-  if (!nome) return falha("Dá um nome à pesquisa.");
-  if (ps.some((p, i) => i !== S.editar && String(p.nome).toLowerCase() === nome.toLowerCase())) return falha("Já existe uma pesquisa com este nome.");
-  const nova = Object.assign({}, orig || {}, {
-    nome: nome, ativa: document.getElementById("f-ativa").checked, consulta: v("f-consulta").trim(),
-    obrigatorias: lista(v("f-obrig")), palavras: { alta: lista(v("f-alta")), media: lista(v("f-media")), baixa: lista(v("f-baixa")) },
-    excluir: lista(v("f-excluir")), limite_alerta: la, limite_resumo: lr,
-    feeds_extra: lerLinhasFontes(v("f-feeds"), orig && orig.feeds_extra), paginas_extra: lerLinhasFontes(v("f-paginas"), orig && orig.paginas_extra),
-  });
-  if (!nova.consulta && !nova.feeds_extra.length && !nova.paginas_extra.length) return falha("Diz o que procurar no Google Notícias, ou junta pelo menos um feed ou site.");
-  if (!(la > 0) || !(lr > 0) || lr >= la) return falha("As notas têm de ser números, e a do resumo menor do que a do alerta.");
-  if (![...nova.feeds_extra, ...nova.paginas_extra].every(f => /^https?:\/\//i.test(f.url))) return falha("Há uma fonte sem endereço válido (tem de começar por https://).");
-  if (!nova.palavras.alta.length && !nova.palavras.media.length && !nova.palavras.baixa.length) return falha("Junta pelo menos uma palavra de prioridade, senão nenhuma notícia tem pontos.");
   const nomeOrig = orig ? orig.nome : null;
   await ocupado(btn, async () => {
     await mudarConfig("pesquisas", lst => {
       const i = nomeOrig === null ? -1 : lst.findIndex(p => p.nome === nomeOrig);
       if (i >= 0) lst[i] = nova; else lst.push(nova);
       return lst;
-    }, (orig ? "painel: editar a pesquisa " : "painel: criar a pesquisa ") + nome);
-    S.editar = null; toast("Pesquisa guardada no GitHub. Vale a partir da próxima verificação."); render();
+    }, (orig ? "painel: editar a pesquisa " : "painel: criar a pesquisa ") + nova.nome);
+    S.editar = null; S.rascunho = null; S.exp = null; toast("Pesquisa guardada no GitHub. Vale a partir da próxima verificação."); render();
   });
 }
 async function onClick(ev) {
@@ -678,9 +778,10 @@ async function onClick(ev) {
   if (a === "recarregar") { await carregar(); toast("Atualizado."); return; }
   if (a === "recarregar-ajuda") { S.ajuda = null; render(); return; }
   if (a === "correr") { try { await correr(p); } catch (e) { toast(e.message); } return; }
-  if (a === "nova") { if (!S.token) { toast("Para criar pesquisas, junta primeiro um token em Ligação."); return; } S.editar = -1; render(); return; }
-  if (a === "editar") { if (!S.token) { toast("Para editar, junta primeiro um token em Ligação."); return; } S.editar = Number(p); render(); return; }
-  if (a === "cancelar") { S.editar = null; render(); return; }
+  if (a === "nova") { if (!S.token) { toast("Para criar pesquisas, junta primeiro um token em Ligação."); return; } S.editar = -1; S.rascunho = null; S.exp = null; render(); return; }
+  if (a === "editar") { if (!S.token) { toast("Para editar, junta primeiro um token em Ligação."); return; } S.editar = Number(p); S.rascunho = null; S.exp = null; render(); return; }
+  if (a === "cancelar") { S.editar = null; S.rascunho = null; S.exp = null; render(); return; }
+  if (a === "experimentar") { await experimentar(); return; }
   if (a === "guardar") { await guardarPesquisa(el); return; }
   if (a === "pausar") {
     const alvo = ps[Number(p)];

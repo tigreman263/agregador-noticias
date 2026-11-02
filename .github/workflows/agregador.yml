@@ -20,7 +20,12 @@ on:
           - simular
           - descobrir-fontes
           - agendada
+          - experimentar
         default: normal
+      pesquisa:
+        description: "(experimentar) a pesquisa a testar, em JSON — o painel preenche"
+        type: string
+        default: ""
 
 permissions:
   contents: write
@@ -49,8 +54,9 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 12
     # uma execução de cada vez, para o estado.json não ser gravado por duas ao mesmo tempo
+    # (o "experimentar" do painel não mexe no estado.json: corre à parte, sem esperar)
     concurrency:
-      group: agregador
+      group: ${{ github.event.inputs.acao == 'experimentar' && 'experimentar' || 'agregador' }}
       cancel-in-progress: false
     env:
       TS_OAUTH_CLIENT_ID: ${{ secrets.TS_OAUTH_CLIENT_ID }}
@@ -105,10 +111,12 @@ jobs:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           ACAO: ${{ github.event.inputs.acao || 'normal' }}
+          PESQUISA: ${{ github.event.inputs.pesquisa }}
         run: |
           case "$ACAO" in
             teste) python agregador.py --teste ;;
             simular) python agregador.py --simular ;;
+            experimentar) python agregador.py --experimentar ;;
             descobrir-fontes) python agregador.py --fontes ;;
             *) python agregador.py ;;
           esac
@@ -119,6 +127,7 @@ jobs:
           git config user.name "agregador-bot"
           git config user.email "agregador-bot@users.noreply.github.com"
           git add estado.json
+          if [ -f experimentar.json ]; then git add experimentar.json; fi
           if git diff --cached --quiet; then
             echo "Sem alterações no estado."
             exit 0
