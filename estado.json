@@ -113,6 +113,43 @@
    "site": "https://www.reconquista.pt",
    "feed": null,
    "em": "2026-11-01T15:55:59.894612+00:00"
+  },
+  "razaoautomovel.com": {
+   "dominio": "razaoautomovel.com",
+   "nome": "Razão Automóvel",
+   "n": 3,
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
+   "site": "https://www.razaoautomovel.com",
+   "feed": "https://www.razaoautomovel.com/feed/",
+   "em": "2026-11-02T09:00:44.394455+00:00"
+  },
+  "observador.pt": {
+   "dominio": "observador.pt",
+   "nome": "Observador",
+   "n": 2,
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
+   "site": "https://observador.pt",
+   "feed": "https://observador.pt/feed/",
+   "em": "2026-11-02T09:00:44.394455+00:00"
+  },
+  "portal-energia.com": {
+   "dominio": "portal-energia.com",
+   "nome": "Portal Energia",
+   "n": 2,
+   "pesquisas": [
+    "Sertã",
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
+   "site": "https://www.portal-energia.com",
+   "feed": "https://www.portal-energia.com/feed/",
+   "em": "2026-11-02T09:00:44.394455+00:00"
   }
  },
  "sugeridas_antigas": [
@@ -567,7 +604,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-01T22:45:50.326590+00:00"
+   "ultima": "2026-11-02T09:00:44.394455+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -699,9 +736,21 @@
    ],
    "exemplo": "Polícia está a multar condutores que buzinam em apoio à manifestação no Rossio",
    "ultima": "2026-11-02T07:00:46.733011+00:00"
+  },
+  "contaspoupanca.pt": {
+   "nome": "Contas Poupança",
+   "site": "https://contaspoupanca.pt",
+   "ids": [
+    "24ccbfe16a1d0cdc"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
+   "ultima": "2026-11-02T09:00:44.394455+00:00"
   }
  },
- "ultima_descoberta": "2026-11-01",
+ "ultima_descoberta": "2026-11-02",
  "enviados": [
   {
    "tipo": "alerta",
@@ -2326,10 +2375,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-02T09:00:44.394455+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 285,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 220,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 3,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-02T08:00:55.687115+00:00",
+  "cm-serta.pt": "2026-11-02T09:00:44.394455+00:00",
   "mediotejo.net": "2026-11-02T03:45:49.650939+00:00"
  },
  "raspadas": {},
