@@ -1,22 +1,22 @@
 {
- "pedido": "mvzecif4yanrf",
- "ts": "2026-11-02T15:11:54.663729+00:00",
+ "pedido": "mvzefaewgdxav",
+ "ts": "2026-11-02T15:14:14.820484+00:00",
  "nome": "Sertã",
  "consulta": "Sertã OR sertanense OR sertaginense",
- "recolhidas": 285,
+ "recolhidas": 263,
  "idade_max_horas": 48.0,
  "passam": [],
  "n_passam": 0,
  "cortes": {
-  "sem_sitio": 151,
-  "sem_assunto": 9,
+  "sem_sitio": 153,
+  "sem_assunto": 8,
   "excluida": 0,
-  "antiga": 111
+  "antiga": 98
  },
  "exemplos": {
   "sem_sitio": [
    {
-    "titulo": "Administração Interna reage a sentença do tribunal e diz que se refere apenas a \"uma situação individual e concreta\"",
+    "titulo": "Administração Interna reage a sentença do tribunal e diz que se refere apenas a Renata Cambra",
     "link": "https://sapo.pt/artigo/protestos-pela-habitacao-mai-reage-a-sentenca-do-tribunal-e-diz-que-se-refere-apenas-a-uma-situacao-individual-e-concreta-6ae8991c7a19de6f9c4c1218",
     "fonte": "SAPO"
    },
@@ -36,8 +36,8 @@
     "fonte": "SAPO"
    },
    {
-    "titulo": "Governo apela ao “diálogo” com PS e Chega para vender totalidade da TAP",
-    "link": "https://jornaleconomico.sapo.pt/noticias/governo-apela-ao-dialogo-com-ps-e-chega-para-vender-totalidade-da-tap/",
+    "titulo": "Orçamento: Governo rejeita desmantelamento da CP e diz que subconcessão preserva papel estratégico da empresa",
+    "link": "https://sapo.pt/artigo/oe2027-governo-rejeita-desmantelamento-da-cp-e-diz-que-subconcessao-preserva-papel-estrategico-da-empresa-6ae8a6877853f8c56468ffc2",
     "fonte": "SAPO"
    }
   ],
@@ -76,19 +76,19 @@
     "fonte": "reconquista.pt"
    },
    {
-    "titulo": "Sertã: Concurso público para a concessão da Barragem do Cabril é lançado hoje",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbWQ5VzdJcDVkamlReS1XUFZxdWFsbXlSM2w4VTA1TVVadmpHajFpMEF6Vk80RWxyWm0wQTN4eWUzRVJuYnVQU2s5LWg1NFZ3R2JSSnczdTZqblBEd2VGT0ctWUNqekY4YkJRUjROQ3NJRzVQb2VFMmVKTmNTX29YZW4tenBEMnNkdVByX25TNHpVZFhNdFhrWnp6Y0FuWDFIa05XazUzcDhWSHA0NTV1WkpvM3lVNkJkcFRIajN3Q2pocmdmVUpDRHF0VnI?oc=5",
+    "titulo": "Sertã: Concurso público para a concessão da Barragem do Cabril é lançado",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd0JIalR2VW1RdFR0ZDMyRWdpZFUxaEczTXZMckRRX3ppVFpqcEt2LUlKeXhYQVJjQWlZYlFlUW9tajZuWWxZNXF2dW5OQnh6QVF0Yi1BZFBVaUpjRjQxc2V5TG5FTlEzNXdESkYwYlkyVmgyNmZtYmtEc0pnYmlBWDd5X2hWdE1rLXBJalA4WldDT0Z1b2FuOEZfVDRCNWRDRzFzeUlfeUQ3MUs2djZFSHpqaktqYjdHQnd1NzdXUmI1VDZvOWc?oc=5",
     "fonte": "Diario Digital Castelo Branco"
    },
    {
-    "titulo": "IC8 com cortes e circulação alternada na Sertã entre 2 e 13 de novembro",
-    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONUxkTlRHY01HYk1DbGp4NEd6QS1UM1BkSjczX1gtbEFmWE9tVUR5ZFk3cU5RcERHT04zejFqS2N2dHlVcmgzZThIQWh3YmJsVzBOZl9iQ0lXOVo0X2NvYWxIemlxaWd5R3gtcWhiVEp4a2VWTEtfaGRybkF5N3Nvc3ZKZUxmSm1HbktkU21zTVRFNVpERV8tTFN3cGZRSUZJR1ZQQ21vMTdBNWg2Wi0waXduVkQ2RUJ2VzhqLVB2SGZwMi0w?oc=5",
-    "fonte": "Central Press"
+    "titulo": "Despiste de motociclo faz um morto no concelho da Sertã",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQjhHWjM5U0RQb3dmM3liYW12Yll5TnhGRWg3RVRqZ3dHZWVzcVdWYnVRVzh5NldJNkVKQ2dkeGQtcW5BLUItcnE1STg0Q1J5N1RrVy1XWHZKRElNNHRzTGdEMk03MGFiNFpYVi1jeEstVUstbmF0THhUVEp4UWMwSWxtTGhDblUyRnVBRW92OXIxUGNPNFo5d19n0gGPAUFVX3lxTE56ZTV0Vi15UldDZHR1NE9ZMl9ldnVrM0JhQV8zMElsQTNiN041U29JV1o3SGRtd0tZYkdPaVc1bHNibDJIUk9EZ2lNQW1IVldMUlV0S09WdTV2di13bGFJX2ZaeWp4REZ2WURQV25yck91dHY3Vk5oRnB0Y045WGhhSnhrWkNOX2lCSW1RelVN?oc=5",
+    "fonte": "Jornal de Notícias"
    },
    {
-    "titulo": "SERTÃ: Concessão da Barragem do Cabril a concurso por 45 anos",
-    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNjdEWmFiRGhjSWpWOUF2X05JX01UWGZRUHlnUm1zYl96eWFxOUFrODA5R0dpanZ6VW5zaFdTdXh6ekxqOU5IRXQwUDBsR1UwVE5WYjl1dC1DbHhGcV9ZVUVoNnUzbDRGR3dtc1pVWHZZM0ZjSS1FSm1kNVdSNVRJU3hXRF9odGxNSlk0VjNJbEFhS1hPOGNmSkZ3eDZlR1U?oc=5",
-    "fonte": "Rádio Condestável"
+    "titulo": "SERTÃ: Dois autocarros elétricos circulam no concelho",
+    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMllRRjU2a2RmZEFyUUpHN3lIdEpfb3hoeXVicDBTZTl6TXc3ZG95b1pNZWlwRWx0TEk3LUl3aGVTZzJRMk1YRXBJd1Q4V0JRRHFPZk1zc2NVQTExQ2lkMzFFbEpKNG9hbF9OU3pNR0FLU0pIeW4wNGlEbWpxZlZnWHdER01mNm9NV0h3dlM3dXRpc2xpd0E?oc=5",
+    "fonte": "Canal S+"
    },
    {
     "titulo": "SERTÃ - Município recebeu comitiva de Granollers para intercâmbio de experiências de desenvolvimento local",
@@ -97,7 +97,5 @@
    }
   ]
  },
- "falhas": [
-  "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
- ]
+ "falhas": []
 }
