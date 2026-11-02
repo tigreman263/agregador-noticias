@@ -1912,11 +1912,46 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-02T15:31:06.068852+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 295,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 203,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [
+    "Médio Tejo",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "mediotejo.net"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-02T15:00:54.481509+00:00",
-  "mediotejo.net": "2026-11-02T03:45:49.650939+00:00"
+  "cm-serta.pt": "2026-11-02T15:31:06.068852+00:00",
+  "mediotejo.net": "2026-11-02T15:31:06.068852+00:00"
+ },
+ "ultima_pesquisa": {
+  "Sertã": "2026-11-02T15:31:06.068852+00:00",
+  "Apoio fundo ambiental": "2026-11-02T15:31:06.068852+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
