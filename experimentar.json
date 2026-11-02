@@ -1,0 +1,103 @@
+{
+ "pedido": "teste-claude",
+ "ts": "2026-11-02T14:57:23.443919+00:00",
+ "nome": "Sertã",
+ "consulta": "Sertã OR sertanense",
+ "recolhidas": 285,
+ "idade_max_horas": 48.0,
+ "passam": [],
+ "n_passam": 0,
+ "cortes": {
+  "sem_sitio": 150,
+  "sem_assunto": 9,
+  "excluida": 0,
+  "antiga": 113
+ },
+ "exemplos": {
+  "sem_sitio": [
+   {
+    "titulo": "Administração Interna reage a sentença do tribunal e diz que se refere apenas a \"uma situação individual e concreta\"",
+    "link": "https://sapo.pt/artigo/protestos-pela-habitacao-mai-reage-a-sentenca-do-tribunal-e-diz-que-se-refere-apenas-a-uma-situacao-individual-e-concreta-6ae8991c7a19de6f9c4c1218",
+    "fonte": "SAPO"
+   },
+   {
+    "titulo": "PS diz que decisão judicial é \"estrondosa derrota\" e pede consequências políticas",
+    "link": "https://sapo.pt/artigo/ps-diz-que-decisao-judicial-e-estrondosa-derrota-e-pede-consequencias-politicas-6ae8947a665d772d962feeda",
+    "fonte": "SAPO"
+   },
+   {
+    "titulo": "Manifestantes de Lisboa vencem ação em tribunal para manter tendas",
+    "link": "https://sapo.pt/artigo/manifestantes-de-lisboa-vencem-acao-em-tribunal-para-manter-tendas-6ae86887767278ab51476c95",
+    "fonte": "SAPO"
+   },
+   {
+    "titulo": "78 organizações pedem investigação independente à ação policial no Porto",
+    "link": "https://sapo.pt/artigo/habitacao-78-organizacoes-pedem-investigacao-independente-a-acao-policial-no-porto-6ae88e017a19de6f9c49806a",
+    "fonte": "SAPO"
+   },
+   {
+    "titulo": "Governo apela ao “diálogo” com PS e Chega para vender totalidade da TAP",
+    "link": "https://jornaleconomico.sapo.pt/noticias/governo-apela-ao-dialogo-com-ps-e-chega-para-vender-totalidade-da-tap/",
+    "fonte": "SAPO"
+   }
+  ],
+  "sem_assunto": [
+   {
+    "titulo": "IC8 com trânsito condicionado na Sertã devido a trabalhos de reabilitação",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdTI4T3M1eVplTkY2WGlFblBpYWE4V0U4Q29HbXZGRjNKYVN5eFlxU3hJQi1BV1Zna3JsUGJsMmxlVkFnQVhlMXJWTWhqOWdWV29jZklWc2FMX2VBcGU2cUZpYUdpUmZQVnJXZ1FCa2RUZGZDb1o2aUlHaTJDazZ6Rm9JbWFGdWx2eGFZTWNjWFc4dWMxSmJDZmlnalg?oc=5",
+    "fonte": "Médio Tejo"
+   },
+   {
+    "titulo": "SERTÃ: Acidente provoca ferido grave na N2",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPYnJ2U0NjbzlIZnFQanJTNFk1bUFBYUtTQW5NUV9Fd1BnbkZwdjJRSGVPZi05am9sQk81NE1MSF9FNkRacnBUeDlDU1FaLWJtT0VhZkxJRkRtZWg1U1h2MTlfS29ZWC1WbW5xZUhMZHVMa19rdnIyRjF0UmtiUWxhVXR6YVo3UQ?oc=5",
+    "fonte": "Rádio Condestável"
+   },
+   {
+    "titulo": "Férias Ativas de Natal com inscrições abertas na Sertã",
+    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOY3F3RGVkWFNmZF9LdGF0VWNkX2VRQ0h5SnUyaE5KUHhvRDVoNHZSWnIxLVFPQnZEc3lMWUlVYmlITnhMLVlFRjZJN3diRFB0UnJweVlnT0ZVQkFFLV9meHFlZmd0aGdBeUx2LXozakV0Q3M1UkllbFktd2l5UFM4N2poeVY2aWJTdTZrS2Z0YWNERk5lbWJaVzgwTnd4a3ozTko2Zw?oc=5",
+    "fonte": "SAPO"
+   },
+   {
+    "titulo": "SERTÃ - IC8 com condicionamentos de trânsito de 2 a 13 de novembro entre nós Sertã Este e Várzea dos Cavaleiros",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOaFlFX1kwdzNSOHFjYmsxbEsyY0JIMUU0TGoza2EyNHRHcUdmOGFBck9jLXM5N2JWSzE0cWFVNEVhR3d2UnRwbkdNV3FoSjRrYkt3UGxCeVJIZTNsMy1FeWUxR3dQb0hfc1lnSkYxbjFrWXhnM1NoMUhmMFU2R2g1akhpMlp6Ull5V25Yc0ZNN0M3bE1XaXdzWFptbVBJTnRrc3NMQ0tmRW9oQzRITllRVTZGMkpOUHNyck5sdXROV3FpNm5zbnJkZWIyaDY?oc=5",
+    "fonte": "Rádio Hertz"
+   },
+   {
+    "titulo": "IC8 com condicionamentos de trânsito entre nós Sertã Este e Várzea dos Cavaleiros",
+    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMFcydzFwMTc0X29mT1VKeXFqN09kMml3cGU2VDBPaUJFWDBRMFR3cnFhanRiMEVmM2JnOXhCdUUtV2lmU3lmbVpfQXBKVmFacGJRdHR5UlVPcFlQSFFqV2RYRUJSaXY3bkF1VmkwcVRnVmtLWExnNmZmTlhPU01uY0JFejZsRHI4YXRFSVdkd3F3aHJ6dnBhTnp3YTRxUkM2b2Y3eFJRR2dWaXVXSVBrMUx6Vko1VVZlZkdnbDAxbXZZcERTdV9ZaA?oc=5",
+    "fonte": "SAPO"
+   }
+  ],
+  "excluida": [],
+  "antiga": [
+   {
+    "titulo": "Sertã: IC8 com corte total e circulação alternada",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSlRfanpOeVYtcU51VXJOUy1xOC1wdHEzbnBHYVhOcXpBWjY0ZEdVdENLdk53RzE2ajdXRmMtdzUxSVNDQXl4UGlSZE8zaTFleVozdGVnV0RDZGk5MmRlSzB6TFhadUNxV09IMWhWeVJ5VVJqQWVnWjRsdTZBUTVQR0NlcFpLbThwQktOMA?oc=5",
+    "fonte": "reconquista.pt"
+   },
+   {
+    "titulo": "Sertã: Concurso público para a concessão da Barragem do Cabril é lançado hoje",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQbWQ5VzdJcDVkamlReS1XUFZxdWFsbXlSM2w4VTA1TVVadmpHajFpMEF6Vk80RWxyWm0wQTN4eWUzRVJuYnVQU2s5LWg1NFZ3R2JSSnczdTZqblBEd2VGT0ctWUNqekY4YkJRUjROQ3NJRzVQb2VFMmVKTmNTX29YZW4tenBEMnNkdVByX25TNHpVZFhNdFhrWnp6Y0FuWDFIa05XazUzcDhWSHA0NTV1WkpvM3lVNkJkcFRIajN3Q2pocmdmVUpDRHF0VnI?oc=5",
+    "fonte": "Diario Digital Castelo Branco"
+   },
+   {
+    "titulo": "IC8 com cortes e circulação alternada na Sertã entre 2 e 13 de novembro",
+    "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxONUxkTlRHY01HYk1DbGp4NEd6QS1UM1BkSjczX1gtbEFmWE9tVUR5ZFk3cU5RcERHT04zejFqS2N2dHlVcmgzZThIQWh3YmJsVzBOZl9iQ0lXOVo0X2NvYWxIemlxaWd5R3gtcWhiVEp4a2VWTEtfaGRybkF5N3Nvc3ZKZUxmSm1HbktkU21zTVRFNVpERV8tTFN3cGZRSUZJR1ZQQ21vMTdBNWg2Wi0waXduVkQ2RUJ2VzhqLVB2SGZwMi0w?oc=5",
+    "fonte": "Central Press"
+   },
+   {
+    "titulo": "SERTÃ: Concessão da Barragem do Cabril a concurso por 45 anos",
+    "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPNjdEWmFiRGhjSWpWOUF2X05JX01UWGZRUHlnUm1zYl96eWFxOUFrODA5R0dpanZ6VW5zaFdTdXh6ekxqOU5IRXQwUDBsR1UwVE5WYjl1dC1DbHhGcV9ZVUVoNnUzbDRGR3dtc1pVWHZZM0ZjSS1FSm1kNVdSNVRJU3hXRF9odGxNSlk0VjNJbEFhS1hPOGNmSkZ3eDZlR1U?oc=5",
+    "fonte": "Rádio Condestável"
+   },
+   {
+    "titulo": "SERTÃ - Município recebeu comitiva de Granollers para intercâmbio de experiências de desenvolvimento local",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWGtpY3VmMThjd1E4SzlCSTZPWUNVM3Nxa183aDV6MHJIcnVkSmd4RFJhU0ZqamFmOXBYeUZ4blRXRkhKdHpCQlQ4UTJkX0hwelo1NEVnQWtvRVNscjNxWEdHNklERjVPWHNweVZYOGVMVTZEaU8ySGtKNnZZd3VfcTdLanhmcDRLYmpHSHBnYlA2QTdXbWRCbVg0MDFWckt5RDMzZ1Flc3hVNE10RGwxQkliWE1PcG5LV3JRdll5SlFXTS1WbkE?oc=5",
+    "fonte": "Rádio Hertz"
+   }
+  ]
+ },
+ "falhas": [
+  "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+ ]
+}
