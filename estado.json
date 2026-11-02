@@ -86,1141 +86,9 @@
   "75b91fb5a492f648": "2026-11-02T07:00:46.733011+00:00",
   "9523fbf672fbaac5": "2026-11-02T07:00:46.733011+00:00"
  },
- "resumo": [
-  {
-   "titulo": "IC8 com condicionamentos de trânsito de 2 a 13 de novembro entre nós Sertã Este e Várzea dos Cavaleiros",
-   "link": "https://cm-serta.pt/comunicacao/noticias/ic8-condicionamentos-de-transito-2-13-de-novembro-serta-este-e-varzea-dos-cavaleiros-nov26",
-   "dominio": "cm-serta.pt",
-   "fonte": "cm-serta.pt",
-   "confiavel": false,
-   "nota": 10.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Camara municipal"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-30T19:33:15+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "13cd5ff993a82d4b"
-   ],
-   "ts": "2026-11-01T16:13:44.900325+00:00"
-  },
-  {
-   "titulo": "Avaria em estação elevatória da Valada resolvida",
-   "link": "https://cm-serta.pt/comunicacao/noticias/avaria-em-estacao-elevatoria-da-valada-resolvida-out-26",
-   "dominio": "cm-serta.pt",
-   "fonte": "cm-serta.pt",
-   "confiavel": false,
-   "nota": 10.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "município"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-30T16:57:53+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "ea3b54856b251a0b"
-   ],
-   "ts": "2026-11-01T16:13:44.900325+00:00"
-  },
-  {
-   "titulo": "SertÃgenda - Agenda Cultural novembro e dezembro",
-   "link": "https://cm-serta.pt/comunicacao/noticias/agenda-cultural-novembro-dezembro-26",
-   "dominio": "cm-serta.pt",
-   "fonte": "cm-serta.pt",
-   "confiavel": false,
-   "nota": 10.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "município"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-30T16:30:04+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "da5971435552497c"
-   ],
-   "ts": "2026-11-01T16:13:44.900325+00:00"
-  },
-  {
-   "titulo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaXBnR0JMcEdZUjgtc2R6c1hJTVJqMEhSWmtlTW1LU3BkTUJrWmE2Tk5IaG5JYTlFMVB1Wmxxd25hbXJnWExMOXJMVkE3ZUg2S2g4R2RrYTNYWmdpbXBIdkJTOHdwOEg4OElXZHlwdzZyNTdId2VScmZCaW9vWFFFVC1rQ2FmdEc0amdCb3EyM00yd2lGcXVwZ2R4MTcydw?oc=5",
-   "dominio": "razaoautomovel.com",
-   "fonte": "Razão Automóvel",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T13:49:33+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "072e9d7a66237a51"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Apoios de 80% aos carros elétricos são \"manobra de marketing\" diz ACAP",
-   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTmJ3ZTFKQ0xNT2ZBWkxFaUcxNTR6dWd5aGZCUGxuWldIVHVSQWQzVnQzTFg5R0FvYTdoNnIxMnhiN2J3Sk1yejVMWlBPaFdaN0xyMjFmQndDbk1PQ3ZtN2lTSTUwcHczTGxveDhqR2R5eW1RcEgybHpOd2xwSDdzX2JiWXpoSWd6WDE4VW1Kbw?oc=5",
-   "dominio": "razaoautomovel.com",
-   "fonte": "Razão Automóvel",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-30T18:04:29+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "5ed38de58a9b870e"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Quem beneficia realmente dos apoios à energia?",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWDNLd05XUnhUeWhWVGc3cWhfcjU5cV9nQm1hcVpBZVh6aGNuZVZrTUJzcmlaRjZ2bEU0dExkMExWNWFDcXFMLXhyVTViMGgxUGhCc1Y5dHFIck5XWjdJbnZXWWl0X0tXTEtKLUtDVTFFNWFRck9QUUhVSEpTQm0yaGN2ZFUyUEZXYU1XYVdkc2NLN09ZZ0dPMk03WQ?oc=5",
-   "dominio": "contacto.lu",
-   "fonte": "contacto.lu",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T11:20:26+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "fe2f6dff7d80eda0"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Montemor-o-Novo reforça apoios às famílias e prepara recuperação da Escola Básica n.º 1",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGtlR25YMWdRaG5GazlKZ2swRzIweUdHZWh5bEVtRkhmb2xvSXZuWGNXXy1OZVFoaHU0anJXelkyVThJcHJORlRQYnZ3UUFfRW1JOE5BZEk4X0RFekJWRnVYQ1JINmtkRkZFYkwwdjJYN0tRSXZzU2w0TjE2bm9SQmFmdk1sMTNnQzhqemtoUUdhakUzUzNZdW5EcTFhcm1UNW1XU2xHR0dRd3MwSjNjbUNXekNYSXpodUZfWnFkcVVUV0hYWGc?oc=5",
-   "dominio": "radionovaantena.com",
-   "fonte": "Rádio Nova Antena",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T09:10:16+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "81534c90169ea260"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Odemira dá 515 mil euros em apoios a clubes e associações desportivas do concelho",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaGQ1cmNubVRMQWp1eFpPZjluRnZVMWtacWdCRFQ5MTg4QVB3MkpCakllWWVyMmxrQjljZGNibFVhRG03OXRXcDhvNDNDY01LM1NQOWM2ZGNlYjFGVGVMZENBa2VBOGVJVWl3cGpKRnZGTjFaTUtHN25TMl95d0Z2Mjc2TmVaNE1MaXNYbC05RERNb0VPRFRfcHZUZ1BKVVgwOVI0alRpWTB1clpGYThRVmc4bk9ud3R5ZUlUR2doRmVKdw?oc=5",
-   "dominio": "alentejo.sulinformacao.pt",
-   "fonte": "Sul Informação Alentejo",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T00:02:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "e548677ae12eedd5"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Bombeiros de Leiria alertam para falta de apoio às corporações",
-   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdHVLcHBjY3VRZnh4MndKbzZjSXdwQmo4aTJnRVlXbmpZdEZmRXU3T0VCOXU5YWRCNGh5YUdXUzNSNmV5NmpiZEI1bFhJdmkxWk1tQ2VHWDNySmRqTlkwdnVsMDN3YlNxNFpieDJVc0hENlprMElqREFfWUdGRVRRdkpKcWw5Qk5yc0VxOEdFX1MzUERsSEVsbnVsQkxMTjhodTBnQVFoUFM?oc=5",
-   "dominio": "impala.pt",
-   "fonte": "Portal Impala",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T14:05:03+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "30f07b71f2f6deda"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Ródão aumenta apoios nas bolsas de estudo",
-   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNV2hUX1BMSHBueFkzcUd5Mk5VMlZIOGRVYUs1cERZV2lSWGkwR3RwUkg5Vjh0TU1sTGdUdkJEYUQxcUZsN1p3WGV1ZU8wUFdobDlvR0xCdzhfT1JMOXBKMGxtTkV2eFE4LVdSdXhManRqcERLZzNiX21neTNTU2l6Q0R2Yw?oc=5",
-   "dominio": "reconquista.pt",
-   "fonte": "reconquista.pt",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T13:13:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "529a57add8849989"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Quem ganha o salário mínimo já não tem acesso a novo apoio para carros elétricos",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNN1QzN3UxVExCTWxMOG81UDVIeXZaQWU3Y28zRF9YQ3hSMlZ5RzRFcU9VbllxSG9MMHhLQjk2WGRKV09VSTZyMF9QYlFOVHRET0xmM2RRMjE0TWRtdEhid3E5d3dlRFBjak1VZUJmeFdVdW1XUHBDRXFhZ05yQ2ZKZlNXalVSa2t3SnE4Z2ZUXzlRYTl5QnhNLTRUakF2eFAtTTJVWDNCU0lEN0xLTlA3cVVibWUyVFhkbExlNEt4TTg?oc=5",
-   "dominio": "jn.pt",
-   "fonte": "Jornal de Notícias",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-30T21:03:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "30ac4b2e84646fd6"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQRXBPd0dCbUlwY2tGdkFRSzZ6R3RpU0RrSHFlV2dnR29fdnlrQWp5dmoxYUNFNlEyQ0M1Vi1SQ3MxS3FZeERDY1dSN001amZhRlJReGtRTmFQV0NzaHNXU2VvSm92SUtUZUZWQ0JSSmNOaURYcEtiMzcwOWtNMFk5NU9ld1RiWGRYbUdSdDhRX1VFdmZEbDBFUEhIMmFqak50bGc?oc=5",
-   "dominio": "publico.pt",
-   "fonte": "Público",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T11:02:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "5ecdfed3778cf1ba"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Agricultores dos Açores pedem 23 milhões de euros em apoios do Governo",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNktfZzBEdER2RUl3cmlINUdZRVEtM3VyR1o4SXZmWUR2RzZ1UlI3WktYWGhLM0xCM0ZBNmQxcW9IM1l0NWRHMVEtR2ZveUwyR1gyZGlka0RWQ19VVFNVU1BBOFA2bmdfUmY1ZDZPRkpqUzN0TzNpdmdvRFBnSG9ybXpHb1JpWmRHdXhtSWpMN2pBLWNFUkdUVU9FTEozN0xrMTV2TmwwNUdHckM5U19fLXc5ckpBQW8?oc=5",
-   "dominio": "noticiasaominuto.com",
-   "fonte": "Notícias ao Minuto",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T13:21:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "0c253ce6f1d79ce6"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Governo prepara novos apoios para reduzir consumo de gás natural na indústria",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOOGV0dzJ0NlhLZC12VlQxTDZYNDNlY0hsemlOdnRwc1BJcHU2V3hVbzJObkx1VElxME1CSWJOeVRneFdhZWxvaGJKZ2paYmw0Ny1UTEszOFQwX0trMGFOaG81eEEtNHoyNGptMFVZWm1ISXk3YnRROU5OVXZwLUJwb3BxVUphY2dycVFleHh4QmhJZVpNcURaTm1pX0hHZU90QUtpOUlXSld6Y2xWbnRvMDJoWV9rZjA?oc=5",
-   "dominio": "ambienteonline.pt",
-   "fonte": "Água&Ambiente Online",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-30T20:52:57+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "a2df5352924a66f4"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaEhZWDVrMVFvaV9aNnJLUW9DOUhFdUR4T3ZsSG9EYUg1bmh1UU1VNG1mLVV5SURYLUU4N196eXZOLVFxV2NDd0JGLVh3ZnFDRW5qczk0eExFV0t6R0VrTXhtS09wZ2FLVWRoRF9jcUlQMTBTYzZwOTBaTUZYTE5UWmFzd083WlFPbTYtY054S2FNS1daeHNYSEZwbTZOS21fdnVBLQ?oc=5",
-   "dominio": "observador.pt",
-   "fonte": "Observador",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T11:46:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "b72879cdb7c92c7f"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNS2RJRVU0SE1GZW95V2RTQjhsSDJJdmc5SjJMQ2IzOGNMNDBZTUpCU1owYVdZcXE2Wmo2UzBiRmpKb0dzYTVKMFV4MTlFRER1QW5jaXBZbFM5TDA1UmRWdElHbDJLLVZONUFUVGZFMlVyZ1ZsQ21YYzlUNUpVakl5RjhoZXotZTdpcTRCcTZkYmd5MW9XckFQTDB2YkE5dTgxYmszTmxLRGFhTWpWNFNGRGdUQkg3a1hXYlJLSGVrcndWX05UZFBOVXlZbktTazRjSlBTUlQ0ZDQ0ZWZQWjlF?oc=5",
-   "dominio": "jm-madeira.pt",
-   "fonte": "JM Madeira",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T17:25:11+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "d0e34bd4f175c725"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Apoios aos elétricos já causaram cancelamentos de encomendas diz ACAP",
-   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUTluZll4eHlqeVpTMjc4bEN0dFBHZ3lJVFMyYUVqYV9ZdnhYVG5JM0RRM1FYUWJJcm1WZGlnVU9VNHJmQmFKdXFkczRXMkV1QlFZLW9IcTh5ZC1vUFF5ZzhLWkZ3cm93SzR1bTY0eUhVUml3VHNJNDUwc3JEdzZOTk4xSU1aRUFwT3haazBGVnhmQVRaTEw4?oc=5",
-   "dominio": "razaoautomovel.com",
-   "fonte": "Razão Automóvel",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-30T19:10:13+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "8fccfa6fdc33614d"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "João Lopes Aleixo questionou apoios para os territórios de baixa densidade (C/VÍDEO)",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOSEJYSEVucXhSMlY0RHVkVC13NGsxWk80TDN2M1RqLThLWG9kaFFPN1prenRWT3AzOTQyS1NmN292Ym5ZTmhDa3phMFdmcjFDc0xBbERtV0JMaUhEMThGM1haTUZqS2daNjEybkk2Y2N5aVVFY3dZenAwOGdGZm1Td3kwakljUkZCNHZVRXdmNTNPUXIzUmJTd1hXMEdEVW5nV2hqZ093OGxWNFNaOU8wTGVDOWFianY0THA0?oc=5",
-   "dominio": "linhasdeelvas.pt",
-   "fonte": "Linhas de Elvas",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T11:00:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "5d90effc6b2b1b32"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVVZ1ZVZzMzBEbUEzaVBmNHhNRzVUdW1ZeXNKN2VXVk9Jd09vRF9EVUt4TEdLZWlHTHVMQW51TDJIZ0ZHVy1QeEI1X2VUaXdreUNkMXhDcWh2cTRzbkVIQzhUVDNnaWZrMW5ZZU5VOGxSNFM3aXIzYzFoN3JqOTY3eA?oc=5",
-   "dominio": "portal-energia.com",
-   "fonte": "Portal Energia",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-30T23:26:37+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "4aca5abc31106725"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Governo dos Açores diz que apoio de 1,25 milhões permite continuar apoios",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxONzZPUGVPZlIxYzBfcm9ZNms0NmhWeVJYZ3psNmdqTkZaMnJzdlBMTXpNOE4xN0RmLWQyRFdabWFVSldqMWp4bkRNMDlIZGlmeTR1SXhmUEtKT2UzU21wVkV0eUZXejNZY3hwRW1JMldCMXEwbjFEVm5kNjVSQUkzdUdxeThSSnVUVzR0OUZyWTV2QzNGelVYdHlSYVpyWUpxRWJ1Z01ZSEVHd3dhbTdLazM5RElqX0RKTVd2UjhISHdHYmlNWW9rT1FYcw?oc=5",
-   "dominio": "noticiasaominuto.com",
-   "fonte": "Notícias ao Minuto",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-30T19:17:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "584769f213885b3a"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "O paradoxo do novo apoio elétrico: quem ganha o salário mínimo fica de fora",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQVFM3V2EwWVNodUZSR0tJd2R1dzlGSWZxT2RoUl9PMFJkMklXMy04Q1B0dzJQaXR5NTlHNDBENzE3Q0NjZkpCX1g1T2dKVVZmb3lBT0JrWEF2YjJwcHI5SFY4VTd1cGRLNjhBc1RLUUtBT0xjeDJ2RmMtWGt4NHZqVGJrVjRBOTdnUU5VcHBLY0tacE5hUExQNWR4Sk1vOHV1amJMUg?oc=5",
-   "dominio": "zap.aeiou.pt",
-   "fonte": "ZAP Notícias",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T12:30:27+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "3952406a8feb00b6"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Apoio de 80% à compra de elétricos: quem tem direito?",
-   "link": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQc1cyaFZRUW5MRnlrY3pyanNKZGxwZ1dzbk4yVDBpTHBuZUVHR2ZZUURrRldZM0tGVGwza3R5c1lLTzlfZmFXd3FsMEdkVURRZVUtUmM5X2RVVzV2UERoV3Rrcnp0Q25VdDVvc3pCeEljeS1xTXFlSjlfUkdkV0R4UzdpSTZvb0djTFE?oc=5",
-   "dominio": "turbo.pt",
-   "fonte": "Revista Turbo",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-30T18:34:05+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "aad0df922d33c467"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxNT1lvWlNIVFJjT1g5M3ZtT0hMS2E1WjJiQ3NsdEJ0NFBrMjlBbWVzSUdmb29xV1pEUjc2czNKYWRoRVNId2NtWE9PRDAxdkNzRTRidFBQSGgtam5iUnhtQXd5ZURVM0pJVDFOMWxIbXM4RG5oVkEyWnBtdFMwZ1Niak5NRmFrUEtWQVltVHBORENwRGZFbEFtSnpRVTRBZw?oc=5",
-   "dominio": "correiodelagos.com",
-   "fonte": "Correio de Lagos",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T11:16:59+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "ed7913a7a30d6cb5"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Estado vai comparticipar até 80% da compra de carros elétricos para famílias com baixos rendimentos",
-   "link": "https://24noticias.sapo.pt/atualidade/artigos/estado-vai-comparticipar-ate-80-da-compra-de-carros-eletricos-para-familias-com-baixos-rendimentos",
-   "dominio": "24noticias.sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 15.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T11:28:54+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "0f26fb1dbeefc40a"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "CDU exige requalificação da Escola Luís de Camões e Câmara aguarda financiamento",
-   "link": "https://mediotejo.net/cdu-exige-requalificacao-da-escola-luis-de-camoes-e-camara-aguarda-financiamento/",
-   "dominio": "mediotejo.net",
-   "fonte": "Médio Tejo",
-   "confiavel": true,
-   "nota": 15.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Camara municipal"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T12:02:09+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "2d71ea169c010d3f"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Derrocadas mantêm encerrada estrada entre o Areeiro e a Eira do Serrado",
-   "link": "http://www.dnoticias.pt/2026/11/1/511199-derrocadas-mantem-encerrada-estrada-entre-o-areeiro-e-a-eira-do-serrado/",
-   "dominio": "dnoticias.pt",
-   "fonte": "dnoticias.pt",
-   "confiavel": true,
-   "nota": 15.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "florestal"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T11:14:32+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "c6d926e7af2cd667"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Antiga campeã europeia dos 1.500 metros morre aos 34 anos",
-   "link": "https://sapo.pt/artigo/antiga-campea-europeia-dos-1-500-metros-morre-aos-34-anos-6ae75e3f7a19de6f9c1fd973",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "famílias"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T15:49:02+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "f56a792d50590ce3",
-    "f56a792d50590ce3"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Feira dos Santos assinala 226 anos e mantém tradição em Mação",
-   "link": "https://mediotejo.net/feira-dos-santos-assinala-226-anos-e-mantem-tradicao-em-macao/",
-   "dominio": "mediotejo.net",
-   "fonte": "Médio Tejo",
-   "confiavel": true,
-   "nota": 15.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "famílias"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T10:30:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "c4451751af52f70e"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "VILA DE REI – Município recebe novo trator que reforça capacidade de prevenção e combate aos incêndios rurais",
-   "link": "https://radiohertz.pt/vila-de-rei-municipio-recebe-novo-trator-que-reforca-capacidade-de-prevencao-e-combate-aos-incendios-rurais/",
-   "dominio": "radiohertz.pt",
-   "fonte": "Rádio Hertz",
-   "confiavel": true,
-   "nota": 15.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T12:31:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "7ee0c439e77c1dc1"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVVZ1ZVZzMzBEbUEzaVBmNHhNRzVUdW1ZeXNKN2VXVk9Jd09vRF9EVUt4TEdLZWlHTHVMQW51TDJIZ0ZHVy1QeEI1X2VUaXdreUNkMXhDcWh2cTRzbkVIQzhUVDNnaWZrMW5ZZU5VOGxSNFM3aXIzYzFoN3JqOTY3eA?oc=5",
-   "dominio": "portal-energia.com",
-   "fonte": "Portal Energia",
-   "confiavel": false,
-   "nota": 40.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Apoios",
-     "famílias"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-30T23:26:37+00:00",
-   "nivel": "alerta",
-   "ids": [
-    "94c24a9ce51acb82"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Viseu: ADDLAP integra rede que exige mais apoios europeus ao desenvolvimento rural",
-   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQUndDeXl3ZEZYaE9hNVAyYmlDSlcxdHJ4blIyU25veTM2cVk4YUdqbG1sTFFTWUhUa2NweGl0Z25MZ1ZoOHBJVnBXLUY0QVN2dWpTOXdIQkEtZ2JvbjRTaWFqM2t2VlY3dFBITENRakZleEM0b09HNDg2dHB5NWVCcVc3LTdSTUdLa1dvQWFlODNNUnVsVWtCeXNCQzAybXA1VVN1WjJLSTdPMVN6S2JxR2J3ZDN6ZWowVTFZbW5OWXl4WXV1Z01haA?oc=5",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 30.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T09:52:00+00:00",
-   "nivel": "alerta",
-   "ids": [
-    "403dab70166a97ba"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Reformados revoltados com cortes nas pensões e apoios que não chegam para fazer face ao aumento do custo de vida",
-   "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOMm1pcHRaUGlGUXhWWWE0b2dMUXEtUGRVZ04tNnI3M0U3alpGeF8zYXFfVno4ZHRIUkZKQU9ZVjhaZ0dFTTkwZm8wbUthSmN5bldwUFljdUNNU1VSbTBTV0E1QjcyQkM1a05Vc001QlB6bi1fRTd1N0JMclhpdEZPVUZSVnRyUUd2cnJidWdYWlhvS2JlRjZZaFpqbFNfRjFUdmRsRU4xTk1IaHAtZE80c2lsTDJfVm1PUDJMSVF0NDNkM2FXNzRaQ2psMTVwcHJEWUdzRzJBRV9pQUNNTHM1aDlQOVVXWGNkdGhWNGduMlZMSmlBWGh0WDhGVlQ4LTNwSjV6a3dCTnFnQXphTUQ1WlU3MA?oc=5",
-   "dominio": "cmjornal.pt",
-   "fonte": "Correio da Manhã",
-   "confiavel": true,
-   "nota": 30.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T12:20:00+00:00",
-   "nivel": "alerta",
-   "ids": [
-    "0b47de1b6eba87e4"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Viseu: Jardins de infância de 13 concelhos recebem apoios para comprar livros",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPekpQMkhvenJYMU41dU9IRWtYZGdySkstTHlPUXhwN1RxbHRCZEFsWm0tc2FiTWV2bG1neGlxaTRxMEh3WmV2d1BGMEVuYU43SG5QS0VpWGg1VzdNYUZGZVNnbjEtYkdGRk1MMElQRHFOMFcySWJOcGRocHN5UmZ1SWRmeEozU2FmZldxX3E1SFJsZDFIaTFRakIwczBEMjV2TWtuZE90cDVlZ2dsQWpJaEY4Qm9fOEtwR0lxRGV4MWhldw?oc=5",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 30.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-10-31T11:42:00+00:00",
-   "nivel": "alerta",
-   "ids": [
-    "027be376b2d4f80f"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Manifesto reivindica 5% dos fundos rurais para o programa LEADER",
-   "link": "https://mediotejo.net/manifesto-reivindica-5-dos-fundos-rurais-para-o-programa-leader/",
-   "dominio": "mediotejo.net",
-   "fonte": "Médio Tejo",
-   "confiavel": true,
-   "nota": 30.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "município",
-     "agricultura"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T00:13:31+00:00",
-   "nivel": "alerta",
-   "ids": [
-    "31cb5f5bd0eb98de"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Mau tempo põe abastecimento de água em alerta nos Prazeres",
-   "link": "http://www.dnoticias.pt/2026/11/1/511211-mau-tempo-poe-abastecimento-de-agua-em-alerta-nos-prazeres/",
-   "dominio": "dnoticias.pt",
-   "fonte": "dnoticias.pt",
-   "confiavel": true,
-   "nota": 30.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Camara municipal",
-     "município"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T13:52:52+00:00",
-   "nivel": "alerta",
-   "ids": [
-    "f62b6368e5fb1d83"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Galp move ação de 523 mil euros contra ex-gestor e família",
-   "link": "https://eco.sapo.pt/2026/11/01/galp-move-acao-de-523-mil-euros-contra-ex-gestor-e-familia/",
-   "dominio": "eco.sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 30.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "famílias"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T12:32:04+00:00",
-   "nivel": "alerta",
-   "ids": [
-    "ceb21775edb3c9a1"
-   ],
-   "ts": "2026-11-01T16:21:24.533325+00:00"
-  },
-  {
-   "titulo": "Bombeiros de Leiria alertam para falta de apoio às corporações afetadas pelas tempestades",
-   "link": "https://sapo.pt/artigo/bombeiros-de-leiria-alertam-para-falta-de-apoio-as-corporacoes-afetadas-pelas-tempestades-6ae769e8665d772d9607600a",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 30.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T16:33:29+00:00",
-   "nivel": "alerta",
-   "ids": [
-    "2ebddc8f6582ce2d"
-   ],
-   "ts": "2026-11-01T17:46:06.009199+00:00"
-  },
-  {
-   "titulo": "CASTRO DAIRE: Paulo Almeida participa no 51.º Congresso dos Poderes Locais e Regionais",
-   "link": "https://sapo.pt/artigo/castro-daire-paulo-almeida-participa-no-51-congresso-dos-poderes-locais-e-regionais-6ae77b08767278ab5130f790",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 15.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Camara municipal"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T17:33:35+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "607a60efa2ab6b9d"
-   ],
-   "ts": "2026-11-01T18:45:59.659204+00:00"
-  },
-  {
-   "titulo": "Argentina, ex-Mossad e carrinhas: Como fugiu Flávio Bolsonaro até os EUA?",
-   "link": "https://sapo.pt/artigo/argentina-ex-mossad-e-carrinhas-como-fugiu-flavio-bolsonaro-ate-os-eua-6ae77e6a767278ab5131ce64",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "famílias"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T17:47:57+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "86e21b6273ef5fd5"
-   ],
-   "ts": "2026-11-01T18:45:59.659204+00:00"
-  },
-  {
-   "titulo": "Apoio a 80% para famílias carenciadas só permite comprar três modelos",
-   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxORGtESEtKZld5NE9PT2xMMC1vdnVNcHdkblU2SHN4aU5HQ2NkZ1ZUczVmalQ5RlVBdkZMbFdCM19DWlEzSnhsY2pSblNoWFlFU2lwbUFILUx0ak1GYVZaZnZmZGd3SFBpNzZGR0JNRnFSQnRXdzREZHZGUnZQc1VBREhXNzQ2Nm9yYl9rUFhUZU9XUUtKTURHUXdTUGN3alN1UzY1OG9uUVZ5bzFDd18zMnlOM3RpZ3ZPS3BwZ3VCRGtNRG1weHc?oc=5",
-   "dominio": "jornaldenegocios.pt",
-   "fonte": "Jornal de Negócios",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T17:01:32+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "d3484237e17209f8"
-   ],
-   "ts": "2026-11-01T20:45:44.317593+00:00"
-  },
-  {
-   "titulo": "EUA/Eleições: Democrata apoia candidato republicano ao Senado e Trump aplaude",
-   "link": "https://sapo.pt/artigo/eua-eleicoes-democrata-apoia-candidato-republicano-ao-senado-e-trump-aplaude-6ae79bd97a19de6f9c2bfb61",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T20:04:18+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "2a265a785668d0f4"
-   ],
-   "ts": "2026-11-01T20:45:44.317593+00:00"
-  },
-  {
-   "titulo": "Reviravolta: ex-rival democrata de Sayed apoia republicanos",
-   "link": "https://sapo.pt/artigo/reviravolta-ex-rival-democrata-de-sayed-apoia-republicanos-6ae796bd7a19de6f9c2afee5",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 15.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T19:40:36+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "fc416c7429fd6c43"
-   ],
-   "ts": "2026-11-01T20:45:44.317593+00:00"
-  },
-  {
-   "titulo": "EUA/Eleições: Democrata apoia candidato republicano ao Senado e Trump aplaude",
-   "link": "https://sapo.pt/artigo/eua-eleicoes-democrata-apoia-candidato-republicano-ao-senado-e-trump-aplaude-6ae79bd97a19de6f9c2bfb61",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T20:04:18+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "485b09ebd8104f44"
-   ],
-   "ts": "2026-11-01T20:45:44.317593+00:00"
-  },
-  {
-   "titulo": "Reviravolta: ex-rival democrata de Sayed apoia republicanos",
-   "link": "https://sapo.pt/artigo/reviravolta-ex-rival-democrata-de-sayed-apoia-republicanos-6ae796bd7a19de6f9c2afee5",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 15.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T19:40:36+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "4e196b3fd6bfde2d"
-   ],
-   "ts": "2026-11-01T20:45:44.317593+00:00"
-  },
-  {
-   "titulo": "Bombeiros alertam para falta de apoio a corporações",
-   "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQeDJkWUxtMVZWQWNDcVB6dllFTzRIZ0FYc2V6TXNrejBhcWpsNjVPVmZZSUlZV0lXTnJQQnVTaUtXTWlNa0VLNWJVU2thclIwQ09GRkI4V1poZkVJWTN5MEtSMGo2NzZmMGEzREFwa3h4bEs5cXpsYUFnYWRwLTEyTk56YlF5Qkx2b2c4X1JnUGJsTGJndGRPUEE4NHROTWdyWm11SkEwQ3hvc2h3TVpWRjlYZmlfSzRnWUVSNVBUblBHa29EampVMUdqaTdUcXc5aWJkMG1sSk05UGU0LUhWQTZHcUhCeVBmMFd0cGladVVLN2JNNGc?oc=5",
-   "dominio": "observador.pt",
-   "fonte": "Observador",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T13:58:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "5f6f6095337e1510"
-   ],
-   "ts": "2026-11-01T21:45:48.326067+00:00"
-  },
-  {
-   "titulo": "Condutores punidos por buzinar em protesto no Rossio",
-   "link": "https://sapo.pt/artigo/condutores-punidos-por-buzinar-em-protesto-no-rossio-6ae7aeef7a19de6f9c2e4900",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T21:11:47+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "df423e1e578b5516"
-   ],
-   "ts": "2026-11-01T21:45:48.326067+00:00"
-  },
-  {
-   "titulo": "Centro Municipal de Recolha Temporária de Volumosos entra em funcionamento a partir de 4 de novembro, junto ao Largo de Machede Velho",
-   "link": "https://sapo.pt/artigo/centro-municipal-de-recolha-temporaria-de-volumosos-entra-em-funcionamento-a-partir-de-4-de-novembro-junto-ao-largo-de-machede-velho-6ae7a565767278ab51380452",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 15.0,
-   "pesquisa": "Sertã",
-   "achadas": {
-    "alta": [
-     "Camara municipal"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-01T20:41:37+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "5e5353928b0fbcc4"
-   ],
-   "ts": "2026-11-01T21:45:48.326067+00:00"
-  },
-  {
-   "titulo": "Japão entrega 1,4 milhões de euros em assistência alimentar a Cabo Verde",
-   "link": "http://www.dnoticias.pt/2026/11/1/511239-japao-entrega-14-milhoes-de-euros-em-assistencia-alimentar-a-cabo-verde/",
-   "dominio": "dnoticias.pt",
-   "fonte": "dnoticias.pt",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-02T01:05:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "1f9da413087c07b6"
-   ],
-   "ts": "2026-11-02T01:45:47.456962+00:00"
-  },
-  {
-   "titulo": "Trabalho para melhoria do sucesso escolar apresentado no Conselho Municipal de Educação de Évora",
-   "link": "https://sapo.pt/artigo/trabalho-para-melhoria-do-sucesso-escolar-apresentado-no-conselho-municipal-de-educacao-de-evora-6ae82f217853f8c56456ecd0",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Apoios"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-02T06:33:56+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "9523fbf672fbaac5"
-   ],
-   "ts": "2026-11-02T07:00:46.733011+00:00"
-  }
- ],
+ "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-01",
+ "ultimo_resumo": "2026-11-02",
  "sugeridas": {
   "centralpress.pt": {
    "dominio": "centralpress.pt",
@@ -2284,6 +1152,141 @@
    "fonte": "SAPO",
    "nota": 30.0,
    "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
+   "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVVZ1ZVZzMzBEbUEzaVBmNHhNRzVUdW1ZeXNKN2VXVk9Jd09vRF9EVUt4TEdLZWlHTHVMQW51TDJIZ0ZHVy1QeEI1X2VUaXdreUNkMXhDcWh2cTRzbkVIQzhUVDNnaWZrMW5ZZU5VOGxSNFM3aXIzYzFoN3JqOTY3eA?oc=5",
+   "fonte": "Portal Energia",
+   "nota": 40.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Viseu: ADDLAP integra rede que exige mais apoios europeus ao desenvolvimento rural",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQUndDeXl3ZEZYaE9hNVAyYmlDSlcxdHJ4blIyU25veTM2cVk4YUdqbG1sTFFTWUhUa2NweGl0Z25MZ1ZoOHBJVnBXLUY0QVN2dWpTOXdIQkEtZ2JvbjRTaWFqM2t2VlY3dFBITENRakZleEM0b09HNDg2dHB5NWVCcVc3LTdSTUdLa1dvQWFlODNNUnVsVWtCeXNCQzAybXA1VVN1WjJLSTdPMVN6S2JxR2J3ZDN6ZWowVTFZbW5OWXl4WXV1Z01haA?oc=5",
+   "fonte": "SAPO",
+   "nota": 30.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Reformados revoltados com cortes nas pensões e apoios que não chegam para fazer face ao aumento do custo de vida",
+   "link": "https://news.google.com/rss/articles/CBMikwJBVV95cUxOMm1pcHRaUGlGUXhWWWE0b2dMUXEtUGRVZ04tNnI3M0U3alpGeF8zYXFfVno4ZHRIUkZKQU9ZVjhaZ0dFTTkwZm8wbUthSmN5bldwUFljdUNNU1VSbTBTV0E1QjcyQkM1a05Vc001QlB6bi1fRTd1N0JMclhpdEZPVUZSVnRyUUd2cnJidWdYWlhvS2JlRjZZaFpqbFNfRjFUdmRsRU4xTk1IaHAtZE80c2lsTDJfVm1PUDJMSVF0NDNkM2FXNzRaQ2psMTVwcHJEWUdzRzJBRV9pQUNNTHM1aDlQOVVXWGNkdGhWNGduMlZMSmlBWGh0WDhGVlQ4LTNwSjV6a3dCTnFnQXphTUQ1WlU3MA?oc=5",
+   "fonte": "Correio da Manhã",
+   "nota": 30.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Viseu: Jardins de infância de 13 concelhos recebem apoios para comprar livros",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPekpQMkhvenJYMU41dU9IRWtYZGdySkstTHlPUXhwN1RxbHRCZEFsWm0tc2FiTWV2bG1neGlxaTRxMEh3WmV2d1BGMEVuYU43SG5QS0VpWGg1VzdNYUZGZVNnbjEtYkdGRk1MMElQRHFOMFcySWJOcGRocHN5UmZ1SWRmeEozU2FmZldxX3E1SFJsZDFIaTFRakIwczBEMjV2TWtuZE90cDVlZ2dsQWpJaEY4Qm9fOEtwR0lxRGV4MWhldw?oc=5",
+   "fonte": "SAPO",
+   "nota": 30.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Manifesto reivindica 5% dos fundos rurais para o programa LEADER",
+   "link": "https://mediotejo.net/manifesto-reivindica-5-dos-fundos-rurais-para-o-programa-leader/",
+   "fonte": "Médio Tejo",
+   "nota": 30.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Mau tempo põe abastecimento de água em alerta nos Prazeres",
+   "link": "http://www.dnoticias.pt/2026/11/1/511211-mau-tempo-poe-abastecimento-de-agua-em-alerta-nos-prazeres/",
+   "fonte": "dnoticias.pt",
+   "nota": 30.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Galp move ação de 523 mil euros contra ex-gestor e família",
+   "link": "https://eco.sapo.pt/2026/11/01/galp-move-acao-de-523-mil-euros-contra-ex-gestor-e-familia/",
+   "fonte": "SAPO",
+   "nota": 30.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Bombeiros de Leiria alertam para falta de apoio às corporações afetadas pelas tempestades",
+   "link": "https://sapo.pt/artigo/bombeiros-de-leiria-alertam-para-falta-de-apoio-as-corporacoes-afetadas-pelas-tempestades-6ae769e8665d772d9607600a",
+   "fonte": "SAPO",
+   "nota": 30.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
+   "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxPaXBnR0JMcEdZUjgtc2R6c1hJTVJqMEhSWmtlTW1LU3BkTUJrWmE2Tk5IaG5JYTlFMVB1Wmxxd25hbXJnWExMOXJMVkE3ZUg2S2g4R2RrYTNYWmdpbXBIdkJTOHdwOEg4OElXZHlwdzZyNTdId2VScmZCaW9vWFFFVC1rQ2FmdEc0amdCb3EyM00yd2lGcXVwZ2R4MTcydw?oc=5",
+   "fonte": "Razão Automóvel",
+   "nota": 20.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Apoios de 80% aos carros elétricos são \"manobra de marketing\" diz ACAP",
+   "link": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTmJ3ZTFKQ0xNT2ZBWkxFaUcxNTR6dWd5aGZCUGxuWldIVHVSQWQzVnQzTFg5R0FvYTdoNnIxMnhiN2J3Sk1yejVMWlBPaFdaN0xyMjFmQndDbk1PQ3ZtN2lTSTUwcHczTGxveDhqR2R5eW1RcEgybHpOd2xwSDdzX2JiWXpoSWd6WDE4VW1Kbw?oc=5",
+   "fonte": "Razão Automóvel",
+   "nota": 20.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Quem beneficia realmente dos apoios à energia?",
+   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWDNLd05XUnhUeWhWVGc3cWhfcjU5cV9nQm1hcVpBZVh6aGNuZVZrTUJzcmlaRjZ2bEU0dExkMExWNWFDcXFMLXhyVTViMGgxUGhCc1Y5dHFIck5XWjdJbnZXWWl0X0tXTEtKLUtDVTFFNWFRck9QUUhVSEpTQm0yaGN2ZFUyUEZXYU1XYVdkc2NLN09ZZ0dPMk03WQ?oc=5",
+   "fonte": "contacto.lu",
+   "nota": 20.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Montemor-o-Novo reforça apoios às famílias e prepara recuperação da Escola Básica n.º 1",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQeGtlR25YMWdRaG5GazlKZ2swRzIweUdHZWh5bEVtRkhmb2xvSXZuWGNXXy1OZVFoaHU0anJXelkyVThJcHJORlRQYnZ3UUFfRW1JOE5BZEk4X0RFekJWRnVYQ1JINmtkRkZFYkwwdjJYN0tRSXZzU2w0TjE2bm9SQmFmdk1sMTNnQzhqemtoUUdhakUzUzNZdW5EcTFhcm1UNW1XU2xHR0dRd3MwSjNjbUNXekNYSXpodUZfWnFkcVVUV0hYWGc?oc=5",
+   "fonte": "Rádio Nova Antena",
+   "nota": 20.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Odemira dá 515 mil euros em apoios a clubes e associações desportivas do concelho",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOaGQ1cmNubVRMQWp1eFpPZjluRnZVMWtacWdCRFQ5MTg4QVB3MkpCakllWWVyMmxrQjljZGNibFVhRG03OXRXcDhvNDNDY01LM1NQOWM2ZGNlYjFGVGVMZENBa2VBOGVJVWl3cGpKRnZGTjFaTUtHN25TMl95d0Z2Mjc2TmVaNE1MaXNYbC05RERNb0VPRFRfcHZUZ1BKVVgwOVI0alRpWTB1clpGYThRVmc4bk9ud3R5ZUlUR2doRmVKdw?oc=5",
+   "fonte": "Sul Informação Alentejo",
+   "nota": 20.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Bombeiros de Leiria alertam para falta de apoio às corporações",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQdHVLcHBjY3VRZnh4MndKbzZjSXdwQmo4aTJnRVlXbmpZdEZmRXU3T0VCOXU5YWRCNGh5YUdXUzNSNmV5NmpiZEI1bFhJdmkxWk1tQ2VHWDNySmRqTlkwdnVsMDN3YlNxNFpieDJVc0hENlprMElqREFfWUdGRVRRdkpKcWw5Qk5yc0VxOEdFX1MzUERsSEVsbnVsQkxMTjhodTBnQVFoUFM?oc=5",
+   "fonte": "Portal Impala",
+   "nota": 20.0,
+   "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "titulo": "Ródão aumenta apoios nas bolsas de estudo",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNV2hUX1BMSHBueFkzcUd5Mk5VMlZIOGRVYUs1cERZV2lSWGkwR3RwUkg5Vjh0TU1sTGdUdkJEYUQxcUZsN1p3WGV1ZU8wUFdobDlvR0xCdzhfT1JMOXBKMGxtTkV2eFE4LVdSdXhManRqcERLZzNiX21neTNTU2l6Q0R2Yw?oc=5",
+   "fonte": "reconquista.pt",
+   "nota": 20.0,
+   "pesquisa": "Sertã"
   }
  ],
  "execucoes": [
@@ -3293,10 +2296,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-02T08:00:55.687115+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 285,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 267,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 49,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-02T07:00:46.733011+00:00",
+  "cm-serta.pt": "2026-11-02T08:00:55.687115+00:00",
   "mediotejo.net": "2026-11-02T03:45:49.650939+00:00"
  },
  "raspadas": {},
