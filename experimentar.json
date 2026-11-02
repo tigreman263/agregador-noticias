@@ -1,17 +1,17 @@
 {
- "pedido": "mvzefaewgdxav",
- "ts": "2026-11-02T15:14:14.820484+00:00",
- "nome": "Sertã",
- "consulta": "Sertã OR sertanense OR sertaginense",
- "recolhidas": 263,
+ "pedido": "mvzelej414zcb",
+ "ts": "2026-11-02T15:18:57.300491+00:00",
+ "nome": "Apoio fundo ambiental",
+ "consulta": "\"Fundo ambiental\"",
+ "recolhidas": 285,
  "idade_max_horas": 48.0,
  "passam": [],
  "n_passam": 0,
  "cortes": {
   "sem_sitio": 153,
-  "sem_assunto": 8,
+  "sem_assunto": 0,
   "excluida": 0,
-  "antiga": 98
+  "antiga": 125
  },
  "exemplos": {
   "sem_sitio": [
@@ -41,59 +41,33 @@
     "fonte": "SAPO"
    }
   ],
-  "sem_assunto": [
-   {
-    "titulo": "IC8 com trânsito condicionado na Sertã devido a trabalhos de reabilitação",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdTI4T3M1eVplTkY2WGlFblBpYWE4V0U4Q29HbXZGRjNKYVN5eFlxU3hJQi1BV1Zna3JsUGJsMmxlVkFnQVhlMXJWTWhqOWdWV29jZklWc2FMX2VBcGU2cUZpYUdpUmZQVnJXZ1FCa2RUZGZDb1o2aUlHaTJDazZ6Rm9JbWFGdWx2eGFZTWNjWFc4dWMxSmJDZmlnalg?oc=5",
-    "fonte": "Médio Tejo"
-   },
-   {
-    "titulo": "SERTÃ: Acidente provoca ferido grave na N2",
-    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPYnJ2U0NjbzlIZnFQanJTNFk1bUFBYUtTQW5NUV9Fd1BnbkZwdjJRSGVPZi05am9sQk81NE1MSF9FNkRacnBUeDlDU1FaLWJtT0VhZkxJRkRtZWg1U1h2MTlfS29ZWC1WbW5xZUhMZHVMa19rdnIyRjF0UmtiUWxhVXR6YVo3UQ?oc=5",
-    "fonte": "Rádio Condestável"
-   },
-   {
-    "titulo": "Férias Ativas de Natal com inscrições abertas na Sertã",
-    "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOY3F3RGVkWFNmZF9LdGF0VWNkX2VRQ0h5SnUyaE5KUHhvRDVoNHZSWnIxLVFPQnZEc3lMWUlVYmlITnhMLVlFRjZJN3diRFB0UnJweVlnT0ZVQkFFLV9meHFlZmd0aGdBeUx2LXozakV0Q3M1UkllbFktd2l5UFM4N2poeVY2aWJTdTZrS2Z0YWNERk5lbWJaVzgwTnd4a3ozTko2Zw?oc=5",
-    "fonte": "SAPO"
-   },
-   {
-    "titulo": "SERTÃ - IC8 com condicionamentos de trânsito de 2 a 13 de novembro entre nós Sertã Este e Várzea dos Cavaleiros",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOaFlFX1kwdzNSOHFjYmsxbEsyY0JIMUU0TGoza2EyNHRHcUdmOGFBck9jLXM5N2JWSzE0cWFVNEVhR3d2UnRwbkdNV3FoSjRrYkt3UGxCeVJIZTNsMy1FeWUxR3dQb0hfc1lnSkYxbjFrWXhnM1NoMUhmMFU2R2g1akhpMlp6Ull5V25Yc0ZNN0M3bE1XaXdzWFptbVBJTnRrc3NMQ0tmRW9oQzRITllRVTZGMkpOUHNyck5sdXROV3FpNm5zbnJkZWIyaDY?oc=5",
-    "fonte": "Rádio Hertz"
-   },
-   {
-    "titulo": "IC8 com condicionamentos de trânsito entre nós Sertã Este e Várzea dos Cavaleiros",
-    "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNMFcydzFwMTc0X29mT1VKeXFqN09kMml3cGU2VDBPaUJFWDBRMFR3cnFhanRiMEVmM2JnOXhCdUUtV2lmU3lmbVpfQXBKVmFacGJRdHR5UlVPcFlQSFFqV2RYRUJSaXY3bkF1VmkwcVRnVmtLWExnNmZmTlhPU01uY0JFejZsRHI4YXRFSVdkd3F3aHJ6dnBhTnp3YTRxUkM2b2Y3eFJRR2dWaXVXSVBrMUx6Vko1VVZlZkdnbDAxbXZZcERTdV9ZaA?oc=5",
-    "fonte": "SAPO"
-   }
-  ],
+  "sem_assunto": [],
   "excluida": [],
   "antiga": [
    {
-    "titulo": "Sertã: IC8 com corte total e circulação alternada",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSlRfanpOeVYtcU51VXJOUy1xOC1wdHEzbnBHYVhOcXpBWjY0ZEdVdENLdk53RzE2ajdXRmMtdzUxSVNDQXl4UGlSZE8zaTFleVozdGVnV0RDZGk5MmRlSzB6TFhadUNxV09IMWhWeVJ5VVJqQWVnWjRsdTZBUTVQR0NlcFpLbThwQktOMA?oc=5",
-    "fonte": "reconquista.pt"
+    "titulo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
+    "link": "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPNUZoUEpBR2JCNTIwbzdOaFJ0QzdaU1pCQmdHWHAyNTFsUEQ3TmlHT2FVb09ydXZvTzZRcjZ2UXg0RjVwUmgxT25GRzlJUnJiWnhNbEpQWk9CRWFZVC0wTGZidmhIVmlsZl9mN1FxeDllVk53aUZ6S05UckZaeC1zRzBzOXJZUU5YUmZGR0JzeENvQ2VLU05XdnZXeE50WmlCZEtvQTBpMUxBZDVFRURxajBuRGJkX3lyRl80VkdfanZZX3JrblY5RXlVVkFORF82aFVSNFJWUGRYbFRYT1RzaE5ad3pselE4T1BhQ2VYcmtxeVBZWlJGZl9nT28?oc=5",
+    "fonte": "Contas Poupança"
    },
    {
-    "titulo": "Sertã: Concurso público para a concessão da Barragem do Cabril é lançado",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQd0JIalR2VW1RdFR0ZDMyRWdpZFUxaEczTXZMckRRX3ppVFpqcEt2LUlKeXhYQVJjQWlZYlFlUW9tajZuWWxZNXF2dW5OQnh6QVF0Yi1BZFBVaUpjRjQxc2V5TG5FTlEzNXdESkYwYlkyVmgyNmZtYmtEc0pnYmlBWDd5X2hWdE1rLXBJalA4WldDT0Z1b2FuOEZfVDRCNWRDRzFzeUlfeUQ3MUs2djZFSHpqaktqYjdHQnd1NzdXUmI1VDZvOWc?oc=5",
-    "fonte": "Diario Digital Castelo Branco"
+    "titulo": "Mais carenciados vão poder comprar carros elétricos com apoio até 80%",
+    "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQR1lGek5zdUNtVmtCLWdmWV9OSUcxUXpqcHZXTngzWFZVdEU4UmFUYkpwU01SaWh0QlpQMGtCSm9DdWpnekRrT1lnWjVxNHJaOFQ2VGFJSnFydUtsUlJhN2hWUlQ2b0Z6X2piNmZJb3ZsSHZMbWYzR1RtejJWSW42TGUwRzhwSWtYWVN1bDhtcmhvZGsyR0dYNXVrM0w5UVM2cjQ2TndSYU9TeHZaZmFWWjdiLV9XUFlfbUFzSkFkb3pqcFRUVVVtckt4TklNNlF2aDZKd3VFM2xkU3BENXItV2c3QnY5Y2xTcGcwSVd0ejVjVk5tdzdqbTNESjNkQ0pDR2c?oc=5",
+    "fonte": "CNN Portugal"
    },
    {
-    "titulo": "Despiste de motociclo faz um morto no concelho da Sertã",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQjhHWjM5U0RQb3dmM3liYW12Yll5TnhGRWg3RVRqZ3dHZWVzcVdWYnVRVzh5NldJNkVKQ2dkeGQtcW5BLUItcnE1STg0Q1J5N1RrVy1XWHZKRElNNHRzTGdEMk03MGFiNFpYVi1jeEstVUstbmF0THhUVEp4UWMwSWxtTGhDblUyRnVBRW92OXIxUGNPNFo5d19n0gGPAUFVX3lxTE56ZTV0Vi15UldDZHR1NE9ZMl9ldnVrM0JhQV8zMElsQTNiN041U29JV1o3SGRtd0tZYkdPaVc1bHNibDJIUk9EZ2lNQW1IVldMUlV0S09WdTV2di13bGFJX2ZaeWp4REZ2WURQV25yck91dHY3Vk5oRnB0Y045WGhhSnhrWkNOX2lCSW1RelVN?oc=5",
+    "titulo": "Apoio até 16 mil euros na compra de um carro elétrico para os mais pobres",
+    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaXpNc3h1Y19tRDFLQlN2d0VqWWJWLWp5Y0FuUER4REk0elNGSmwtdFpWVDNWTnItRjE2dFVtZzlPMmJ6d2pWdU1OejZGUW1SWEdMU1YwaTg2ZmpWR2szMERCMEVGb09maFI0bXhiTnY3S1VhX19OOEJfcGFIRGxNbzZDeHZhdlI4cUNhQ0xyQVd3clBqOEpzNlNKUHJveTkzYzFJSnNJS1ZDQUFKNVVwWVFIQ3dJOVE?oc=5",
     "fonte": "Jornal de Notícias"
    },
    {
-    "titulo": "SERTÃ: Dois autocarros elétricos circulam no concelho",
-    "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNMllRRjU2a2RmZEFyUUpHN3lIdEpfb3hoeXVicDBTZTl6TXc3ZG95b1pNZWlwRWx0TEk3LUl3aGVTZzJRMk1YRXBJd1Q4V0JRRHFPZk1zc2NVQTExQ2lkMzFFbEpKNG9hbF9OU3pNR0FLU0pIeW4wNGlEbWpxZlZnWHdER01mNm9NV0h3dlM3dXRpc2xpd0E?oc=5",
-    "fonte": "Canal S+"
+    "titulo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
+    "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVVZ1ZVZzMzBEbUEzaVBmNHhNRzVUdW1ZeXNKN2VXVk9Jd09vRF9EVUt4TEdLZWlHTHVMQW51TDJIZ0ZHVy1QeEI1X2VUaXdreUNkMXhDcWh2cTRzbkVIQzhUVDNnaWZrMW5ZZU5VOGxSNFM3aXIzYzFoN3JqOTY3eA?oc=5",
+    "fonte": "Portal Energia"
    },
    {
-    "titulo": "SERTÃ - Município recebeu comitiva de Granollers para intercâmbio de experiências de desenvolvimento local",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWGtpY3VmMThjd1E4SzlCSTZPWUNVM3Nxa183aDV6MHJIcnVkSmd4RFJhU0ZqamFmOXBYeUZ4blRXRkhKdHpCQlQ4UTJkX0hwelo1NEVnQWtvRVNscjNxWEdHNklERjVPWHNweVZYOGVMVTZEaU8ySGtKNnZZd3VfcTdLanhmcDRLYmpHSHBnYlA2QTdXbWRCbVg0MDFWckt5RDMzZ1Flc3hVNE10RGwxQkliWE1PcG5LV3JRdll5SlFXTS1WbkE?oc=5",
-    "fonte": "Rádio Hertz"
+    "titulo": "Apoio à compra de carros elétricos em 2027: Governo anuncia 50 milhões de euros",
+    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNR3dYbmpvbVFnNHBBMlZMRWFfdGdiMDhDck4xY3hrUGs2S2xCOW5LX21RUUJsRU1wWWYwV3NTUk55VE85dV9YMFdmaVlwZ0lrdXhpV0lXcEFLUGEyTXZhMldjV1phZ3lGWmpRZGVNWVE4ZHMtUjBMcXREa2ktek5FLTJEa21OcjUyVDF0M01xZ2h2UWM?oc=5",
+    "fonte": "DECO Proteste"
    }
   ]
  },
