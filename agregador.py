@@ -913,14 +913,21 @@ def _pedir_envio(corpo):
     return r, dados
 
 
+# Teclado fixo por baixo da conversa (os botões enviam o texto; o Worker do Cloudflare
+# responde-lhes). Vai nas mensagens sem botões próprios, para aparecer sem /start.
+TECLADO = {"keyboard": [[{"text": "📰 Resumo"}, {"text": "🔄 Verificar"}],
+                        [{"text": "📊 Estado"}, {"text": "🗂 Fontes"}]],
+           "resize_keyboard": True, "is_persistent": True}
+
+
 def enviar(texto, botoes=None):
-    """Envia uma mensagem (HTML) pelo Telegram, com botões opcionais."""
+    """Envia uma mensagem (HTML) pelo Telegram, com botões opcionais (sem eles, leva o
+    teclado fixo)."""
     if segredos_em_falta():
         raise RuntimeError(segredos_em_falta())
     corpo = {"chat_id": TELEGRAM["chat"], "text": texto[:MAX_MSG], "parse_mode": "HTML",
              "disable_web_page_preview": True}
-    if botoes:
-        corpo["reply_markup"] = botoes
+    corpo["reply_markup"] = botoes or TECLADO
     for _ in range(3):  # demasiadas mensagens seguidas (429): espera o que o Telegram pede
         r, dados = _pedir_envio(corpo)
         if r.status_code != 429:
