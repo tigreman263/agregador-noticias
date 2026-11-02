@@ -81,8 +81,9 @@
   "ec6c144a33747e6f": "2026-11-01T21:45:48.326067+00:00",
   "e6b29974d1ae411c": "2026-11-01T21:45:48.326067+00:00",
   "0acfc3a3f243437f": "2026-11-01T21:45:48.326067+00:00",
-  "adc06d5f8b52e038": "2026-11-02T03:45:49.650939+00:00",
-  "1f9da413087c07b6": "2026-11-02T01:45:47.456962+00:00"
+  "adc06d5f8b52e038": "2026-11-02T04:45:44.613908+00:00",
+  "1f9da413087c07b6": "2026-11-02T01:45:47.456962+00:00",
+  "75b91fb5a492f648": "2026-11-02T04:45:44.613908+00:00"
  },
  "resumo": [
   {
@@ -1216,6 +1217,28 @@
    "ids": [
     "adc06d5f8b52e038"
    ]
+  },
+  {
+   "titulo": "AICEP afirma apoio a portugueses no relançamento de relações económicas com Venezuela",
+   "link": "https://sapo.pt/artigo/aicep-afirma-apoio-a-portugueses-no-relancamento-de-relacoes-economicas-com-venezuela-6ae805b2665d772d9619defb",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 30.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Apoios"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-02T03:34:31+00:00",
+   "nivel": "alerta",
+   "ids": [
+    "75b91fb5a492f648"
+   ]
   }
  ],
  "ultimo_resumo": "2026-11-01",
@@ -1262,7 +1285,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "027be376b2d4f80f",
     "f56a792d50590ce3",
     "43009cf9b5dba1ca",
     "40e4deaa7e744190",
@@ -1281,14 +1303,15 @@
     "485b09ebd8104f44",
     "4e196b3fd6bfde2d",
     "df423e1e578b5516",
-    "5e5353928b0fbcc4"
+    "5e5353928b0fbcc4",
+    "75b91fb5a492f648"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-01T21:45:48.326067+00:00"
+   "ultima": "2026-11-02T04:45:44.613908+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -1765,7 +1788,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Mau tempo põe abastecimento de água em alerta nos Prazeres",
-   "ultima": "2026-11-02T03:45:49.650939+00:00"
+   "ultima": "2026-11-02T04:45:44.613908+00:00"
   },
   "eco.sapo.pt": {
    "nome": "SAPO",
@@ -1828,7 +1851,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Polícia está a multar condutores que buzinam em apoio à manifestação no Rossio",
-   "ultima": "2026-11-02T03:45:49.650939+00:00"
+   "ultima": "2026-11-02T04:45:44.613908+00:00"
   }
  },
  "ultima_descoberta": "2026-11-01",
@@ -3149,10 +3172,42 @@
     "cm-serta.pt",
     "mediotejo.net"
    ]
+  },
+  {
+   "ts": "2026-11-02T04:45:44.613908+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 275,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 258,
+     "relevantes": 1,
+     "alertas": 1
+    }
+   ],
+   "falhas": [
+    "Sertã · Rádio Hertz: ParseError: mismatched tag: line 93, column 2",
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · Rádio Hertz: ParseError: mismatched tag: line 93, column 2",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-02T03:45:49.650939+00:00",
+  "cm-serta.pt": "2026-11-02T04:45:44.613908+00:00",
   "mediotejo.net": "2026-11-02T03:45:49.650939+00:00"
  },
  "raspadas": {},
