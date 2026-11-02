@@ -1,17 +1,17 @@
 {
- "pedido": "teste-claude",
- "ts": "2026-11-02T14:57:23.443919+00:00",
+ "pedido": "mvzecif4yanrf",
+ "ts": "2026-11-02T15:11:54.663729+00:00",
  "nome": "Sertã",
- "consulta": "Sertã OR sertanense",
+ "consulta": "Sertã OR sertanense OR sertaginense",
  "recolhidas": 285,
  "idade_max_horas": 48.0,
  "passam": [],
  "n_passam": 0,
  "cortes": {
-  "sem_sitio": 150,
+  "sem_sitio": 151,
   "sem_assunto": 9,
   "excluida": 0,
-  "antiga": 113
+  "antiga": 111
  },
  "exemplos": {
   "sem_sitio": [
