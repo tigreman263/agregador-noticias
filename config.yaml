@@ -69,7 +69,7 @@ pesquisas:
   - nome: "Apoio fundo ambiental"
     ativa: true
     consulta: "Vale Eficiência"
-    obrigatorias: ["Apoios / subsidios / dinheiro"]
+    obrigatorias: ["Vale eficiência"]
     palavras:
       alta: ["Apoios / subsídio", "Famílias", "Prazo"]
       media: ["Prazo"]
