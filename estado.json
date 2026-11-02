@@ -445,7 +445,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-02T19:46:35.134915+00:00"
+   "ultima": "2026-11-02T20:47:06.343409+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -695,25 +695,6 @@
  "ultima_descoberta": "2026-11-02",
  "enviados": [],
  "execucoes": [
-  {
-   "ts": "2026-10-10T08:47:28.216393+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 100,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 5,
-   "silencio": false,
-   "erros": []
-  },
   {
    "ts": "2026-10-10T09:38:49.092208+00:00",
    "pesquisas": [
@@ -2101,15 +2082,46 @@
     "cm-serta.pt",
     "mediotejo.net"
    ]
+  },
+  {
+   "ts": "2026-11-02T20:47:06.343409+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 295,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 285,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [
+    "Médio Tejo",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "mediotejo.net"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-02T19:46:35.134915+00:00",
-  "mediotejo.net": "2026-11-02T19:46:35.134915+00:00"
+  "cm-serta.pt": "2026-11-02T20:47:06.343409+00:00",
+  "mediotejo.net": "2026-11-02T20:47:06.343409+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-02T19:46:35.134915+00:00",
-  "Apoio fundo ambiental": "2026-11-02T19:46:35.134915+00:00"
+  "Sertã": "2026-11-02T20:47:06.343409+00:00",
+  "Apoio fundo ambiental": "2026-11-02T20:47:06.343409+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
