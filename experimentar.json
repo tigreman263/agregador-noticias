@@ -1,9 +1,9 @@
 {
- "pedido": "mvzelej414zcb",
- "ts": "2026-11-02T15:18:57.300491+00:00",
+ "pedido": "mvzenjm39mrse",
+ "ts": "2026-11-02T15:20:41.463011+00:00",
  "nome": "Apoio fundo ambiental",
- "consulta": "\"Fundo ambiental\"",
- "recolhidas": 285,
+ "consulta": "\"Fundo Ambiental\" OR \"Vale Eficiência\"",
+ "recolhidas": 203,
  "idade_max_horas": 48.0,
  "passam": [],
  "n_passam": 0,
@@ -11,7 +11,7 @@
   "sem_sitio": 153,
   "sem_assunto": 0,
   "excluida": 0,
-  "antiga": 125
+  "antiga": 46
  },
  "exemplos": {
   "sem_sitio": [
@@ -50,24 +50,24 @@
     "fonte": "Contas Poupança"
    },
    {
-    "titulo": "Mais carenciados vão poder comprar carros elétricos com apoio até 80%",
-    "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQR1lGek5zdUNtVmtCLWdmWV9OSUcxUXpqcHZXTngzWFZVdEU4UmFUYkpwU01SaWh0QlpQMGtCSm9DdWpnekRrT1lnWjVxNHJaOFQ2VGFJSnFydUtsUlJhN2hWUlQ2b0Z6X2piNmZJb3ZsSHZMbWYzR1RtejJWSW42TGUwRzhwSWtYWVN1bDhtcmhvZGsyR0dYNXVrM0w5UVM2cjQ2TndSYU9TeHZaZmFWWjdiLV9XUFlfbUFzSkFkb3pqcFRUVVVtckt4TklNNlF2aDZKd3VFM2xkU3BENXItV2c3QnY5Y2xTcGcwSVd0ejVjVk5tdzdqbTNESjNkQ0pDR2c?oc=5",
-    "fonte": "CNN Portugal"
-   },
-   {
-    "titulo": "Apoio até 16 mil euros na compra de um carro elétrico para os mais pobres",
-    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQaXpNc3h1Y19tRDFLQlN2d0VqWWJWLWp5Y0FuUER4REk0elNGSmwtdFpWVDNWTnItRjE2dFVtZzlPMmJ6d2pWdU1OejZGUW1SWEdMU1YwaTg2ZmpWR2szMERCMEVGb09maFI0bXhiTnY3S1VhX19OOEJfcGFIRGxNbzZDeHZhdlI4cUNhQ0xyQVd3clBqOEpzNlNKUHJveTkzYzFJSnNJS1ZDQUFKNVVwWVFIQ3dJOVE?oc=5",
-    "fonte": "Jornal de Notícias"
-   },
-   {
     "titulo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
     "link": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNVVZ1ZVZzMzBEbUEzaVBmNHhNRzVUdW1ZeXNKN2VXVk9Jd09vRF9EVUt4TEdLZWlHTHVMQW51TDJIZ0ZHVy1QeEI1X2VUaXdreUNkMXhDcWh2cTRzbkVIQzhUVDNnaWZrMW5ZZU5VOGxSNFM3aXIzYzFoN3JqOTY3eA?oc=5",
     "fonte": "Portal Energia"
    },
    {
-    "titulo": "Apoio à compra de carros elétricos em 2027: Governo anuncia 50 milhões de euros",
-    "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNR3dYbmpvbVFnNHBBMlZMRWFfdGdiMDhDck4xY3hrUGs2S2xCOW5LX21RUUJsRU1wWWYwV3NTUk55VE85dV9YMFdmaVlwZ0lrdXhpV0lXcEFLUGEyTXZhMldjV1phZ3lGWmpRZGVNWVE4ZHMtUjBMcXREa2ktek5FLTJEa21OcjUyVDF0M01xZ2h2UWM?oc=5",
-    "fonte": "DECO Proteste"
+    "titulo": "Falhas nos programas E-Lar e Vale Eficiência geram mais reclamações contra Agência para o Clima",
+    "link": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQVlhhWEV0THhRSFdodW54TjFQQS00Y1dBTDUyeVJKYUI4bEwzVWQtd1lWaGstNF90MWdXWk1wQWprWE9Nd1o5Q3JGaTl6MXZkTGpsLVZhNE5IbjFja01RWERGOVpJQk9GbmVqOEhNbzljN3NpekVFT3J3SVNqYjB6Rzg1QUhyOVQ2MGZQa0d3MkdkWFhNWjBycC1tNFppSi1rdmVlYlcxVkJ1c1BkRnBjX0dNeDdDdEc2TXIwM3NqQ25abmxZSU1ZOEExLVpEN1o4Z0ZudTJZcVBnUjJFdXdjN1AtSTduaVdkRVdtSmU2M3ZDSGs?oc=5",
+    "fonte": "Expresso"
+   },
+   {
+    "titulo": "Vale Eficiência: ministra promete ter em Outubro vales para candidatos elegíveis",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOTHF0c1NWMlVFdzVsOWFSNDVaRGk0YldxVUhfUnk4VThGSzV5RWFVd0kxeGQ3SEZOVllpNnlvRkVmNGFHN1Y0WEU4TUxTaWNObzhienFqZzZrVDA4aGtNdXRrQ3FhV1dDRzhrbWhUNGNkYjFteFRoVzJvUkFUYk5UbDF6WTJKLUJORkZMNHNScUZ3M0hXazVlb0JXenJMSDNwV1FFMUxOMVd2TlBYTGhOdjR1S0k4TGVFV0ZtdkYydw?oc=5",
+    "fonte": "Público"
+   },
+   {
+    "titulo": "Candidaturas sem resposta do Vale Eficiência vão ser pagas através de vouchers",
+    "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPcU16T3pWYzk1S2VPcFQ0dTFfdFVZbG1CV1duTUtrQnMzQ21VblMzcEcxaDB3cl9IRWdqRHRxUGJ6S2ZlY3R4ZnpUNG93UF8zZ2dSSnNEeWNrM200LVdfN0owMGV3UGJ6akw0TDNSRDI2MDh5aVpWaktLZ05sbFFlSnNkSUNTbkJVZzhiMFpFXy12NWFuZVpBS1NYSm1aOHpkVmZIclVCbU5xT3g2THN3?oc=5",
+    "fonte": "ECO"
    }
   ]
  },
