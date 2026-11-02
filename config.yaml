@@ -62,7 +62,7 @@ pesquisas:
       - "agricultura / agrícola / agricultor"
       - "floresta / florestal"
     excluir: []
-    frequencia: "urgente"
+    frequencia: "hora"
     feeds_extra: []
     paginas_extra:
       - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias", local: true}
