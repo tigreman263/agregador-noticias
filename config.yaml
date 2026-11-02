@@ -67,9 +67,8 @@ pesquisas:
       - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias", local: true}
   - nome: "Apoio fundo ambiental"
     ativa: true
-    sitio: ""
-    assuntos:
-      - "Vale Eficiência"
+    sitio: "Fundo Ambiental / Vale Eficiência"
+    assuntos: []
     excluir: []
     feeds_extra: []
     paginas_extra: []
