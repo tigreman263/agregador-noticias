@@ -530,9 +530,9 @@ function vistaEditor() {
     + "Antes de gravar, carrega em <b>Experimentar</b> para veres que notícias passariam.</details>";
   h += campo("f-nome", "Nome", r.nome, "Só para reconheceres a pesquisa nas mensagens.", "text", "Apoios Sertã");
   h += passo("1 · De que sítio tem de falar?");
-  h += campo("f-sitio", "Sítio (ou nome principal)", r.sitio, "As formas como pode aparecer, separadas por vírgulas — <b>basta uma</b>. Deixa vazio se o sítio não interessa (ex.: um programa nacional como o Vale Eficiência).", "text", "Sertã, sertanense");
+  h += campo("f-sitio", "Sítio (ou nome principal)", r.sitio, "As formas como pode aparecer, separadas por vírgulas — <b>basta uma</b>. Pode ser um nome em vez de um sítio (ex.: <code>Fundo Ambiental</code>). Várias palavras juntas contam como <b>expressão inteira</b>: <code>fundo ambiental</code> não apanha “fundo” nem “ambiental” soltos. Vazio = qualquer sítio.", "text", "Sertã, sertanense");
   h += passo("2 · E de que assuntos?");
-  h += campo("f-assuntos", "Assuntos — um por linha", r.assuntos, "Basta a notícia ter <b>um</b> assunto. Na mesma linha, junta palavras com o mesmo sentido, separadas por vírgulas. Plural, maiúsculas e acentos não importam.", "area", "apoio, subsídio, incentivo, candidatura\nagricultura, agrícola, agricultor\nfloresta, florestal");
+  h += campo("f-assuntos", "Assuntos — um por linha", r.assuntos, "Basta a notícia ter <b>um</b> assunto. Na mesma linha, junta palavras com o mesmo sentido, separadas por vírgulas. Várias palavras juntas contam como expressão inteira. Plural, maiúsculas e acentos não importam.", "area", "apoio, subsídio, incentivo, candidatura\nagricultura, agrícola, agricultor\nfloresta, florestal");
   h += passo("3 · O que nunca te interessa?");
   h += campo("f-excluir", "Palavras a excluir", r.excluir, "Separadas por vírgulas. Se a notícia tiver uma, é deitada fora. Pode ficar vazio.", "text", "futebol, acidente");
   h += '<details><summary>Fontes só desta pesquisa (opcional)</summary><div style="margin-top:10px">';
