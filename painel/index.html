@@ -209,7 +209,9 @@ function blocoLista(chave, arr, ind) {
   return ind + chave + ":\n" + arr.map(x => ind + "  - " + yv(x) + "\n").join("");
 }
 const CAMPOS_PESQ = ["nome", "ativa", "consulta", "obrigatorias", "palavras", "excluir", "limite_alerta", "limite_resumo", "feeds_extra", "paginas_extra"];
-const CAMPOS_SIMPLES = ["nome", "ativa", "sitio", "assuntos", "excluir", "feeds_extra", "paginas_extra"];
+const CAMPOS_SIMPLES = ["nome", "ativa", "sitio", "assuntos", "excluir", "frequencia", "feeds_extra", "paginas_extra"];
+const FREQS = { urgente: ["⚡ Urgente", "verifica de 15 em 15 minutos e avisa logo"], hora: ["🕐 De hora a hora", "verifica de hora a hora e avisa logo"], diario: ["📰 Uma vez por dia", "tudo no resumo diário"] };
+function freqDe(p) { return FREQS[p.frequencia] ? p.frequencia : "hora"; }
 function yamlPesquisas(ps) {
   if (!ps.length) return "pesquisas: []\n";
   let o = "pesquisas:\n";
@@ -220,6 +222,7 @@ function yamlPesquisas(ps) {
       o += "    sitio: " + yv(p.sitio || "") + "\n";
       o += blocoLista("assuntos", p.assuntos, "    ");
       o += "    excluir: " + yv(p.excluir || []) + "\n";
+      o += "    frequencia: " + yv(freqDe(p)) + "\n";
       o += blocoLista("feeds_extra", p.feeds_extra, "    ");
       o += blocoLista("paginas_extra", p.paginas_extra, "    ");
       Object.keys(p).forEach(k => { if (!CAMPOS_SIMPLES.includes(k) && !CAMPOS_PESQ.includes(k)) o += "    " + ychave(k) + ": " + yv(p[k]) + "\n"; });
@@ -269,31 +272,6 @@ function contido(pedido, obtido) {
   return String(pedido) === String(obtido);
 }
 // lê o config.yaml mais recente, aplica a mudança, confirma que o resto ficou igual e grava
-// frequência: geral.intervalo_minutos (o workflow acorda de 15 em 15 min e respeita isto; mínimo 30)
-const INTERVALOS = [[30, "30 minutos"], [45, "45 minutos"], [60, "1 hora"], [120, "2 horas"], [180, "3 horas"], [360, "6 horas"], [720, "12 horas"], [1440, "1 vez por dia"]];
-function intervaloAtual() { const v = Number(((S.config || {}).geral || {}).intervalo_minutos); return v >= 30 ? v : 30; }
-async function mudarIntervalo(min) {
-  const f = await lerFicheiro("config.yaml");
-  const cfg = jsyaml.load(f.texto) || {};
-  // só mexe dentro da secção "geral:" (do seu início até à próxima chave do topo)
-  const L = f.texto.split(/\r?\n/);
-  const ini = L.findIndex(l => /^geral:[ \t]*(#.*)?$/.test(l));
-  if (ini < 0) throw new Error("Não encontrei a secção 'geral' no config.yaml. Muda o intervalo diretamente no GitHub.");
-  let fim = L.length;
-  for (let i = ini + 1; i < L.length; i++) if (/^[A-Za-z_]/.test(L[i])) { fim = i; break; }
-  const j = L.slice(ini + 1, fim).findIndex(l => /^\s+intervalo_minutos:/.test(l));
-  if (j >= 0) L[ini + 1 + j] = L[ini + 1 + j].replace(/^(\s+intervalo_minutos:[ \t]*)\d*/, "$1" + min);
-  else L.splice(ini + 1, 0, "  intervalo_minutos: " + min + "           # de quantos em quantos minutos procura (mínimo 30)");
-  const texto = L.join("\n");
-  const conf = jsyaml.load(texto) || {};
-  if (!conf.geral) throw new Error("Não consegui ler a secção 'geral' depois da mudança. Nada foi gravado.");
-  const geralAntes = Object.assign({}, cfg.geral || {}), geralDepois = Object.assign({}, conf.geral || {});
-  delete geralAntes.intervalo_minutos; delete geralDepois.intervalo_minutos;
-  for (const k of Object.keys(cfg)) if (k !== "geral" && JSON.stringify(cfg[k]) !== JSON.stringify(conf[k])) throw new Error("A gravação ia estragar a secção '" + k + "'. Nada foi gravado.");
-  if (JSON.stringify(geralAntes) !== JSON.stringify(geralDepois) || conf.geral.intervalo_minutos !== min) throw new Error("A gravação ia mudar mais do que o intervalo. Nada foi gravado.");
-  await gravarFicheiro("config.yaml", texto, f.sha, "painel: verificar de " + min + " em " + min + " minutos");
-  S.config = conf;
-}
 async function mudarConfig(chave, alterar, mensagem) {
   const f = await lerFicheiro("config.yaml");
   const cfg = jsyaml.load(f.texto) || {};
@@ -397,7 +375,7 @@ function linhaDespertador() {
   if (!S.runs.length) return "";
   const cf = S.runs.find(r => /Cloudflare/.test(r.display_title || ""));
   const min = cf ? Math.floor((Date.now() - new Date(cf.created_at)) / 60000) : Infinity;
-  if (min <= 45) return '<div class="xs"><span class="tag ok">despertador ligado</span> O Worker do Cloudflare acordou o agregador ' + esc(quando(cf.created_at)) + ".</div>";
+  if (min <= 45) return '<div class="xs"><span class="tag ok">despertador ligado</span> O Worker do Cloudflare acordou o agregador ' + esc(quando(cf.created_at)) + '. Acorda de 15 em 15 minutos, mas cada pesquisa só é verificada quando chega a altura dela — por isso em Atividade vês muitas execuções curtas.</div>';
   return '<div class="xs err">O despertador do Cloudflare ' + (cf ? "não acorda o agregador desde " + esc(hora(cf.created_at)) : "não aparece nas últimas execuções") + '. Sem ele o GitHub salta muitas verificações. Vê <a href="#" data-a="tab" data-p="ligacao">Ligação → Telegram e Cloudflare</a>.</div>';
 }
 function vistaInicio() {
@@ -413,11 +391,11 @@ function vistaInicio() {
   h += '<div class="stat"><b>' + (est.adiados || []).length + '</b><span class="xs muted">alertas adiados</span></div><div class="stat"><b>' + Object.keys(est.sugeridas || {}).length + '</b><span class="xs muted">fontes por decidir</span></div></div>';
   if (ex) h += '<div class="xs muted">Registo da app: ' + esc(quando(ex.ts)) + ", " + num(ex.alertas) + " alertas enviados" + (ex.falhas && ex.falhas.length ? ", " + ex.falhas.length + " fonte(s) com falha" : "") + "</div>";
   h += "</div>";
-  const intv = intervaloAtual();
-  h += '<div class="card"><h3>Frequência</h3><div class="sm muted">De quanto em quanto tempo o agregador procura notícias sozinho.</div>';
-  h += '<div class="row"><select id="intervalo" aria-label="Intervalo entre verificações">' + INTERVALOS.map(([m, t]) => '<option value="' + m + '"' + (m === intv ? " selected" : "") + ">" + t + "</option>").join("") + (INTERVALOS.some(([m]) => m === intv) ? "" : '<option value="' + intv + '" selected>' + intv + " minutos</option>") + '</select><button class="btn btn-sm btn-primary" data-a="gravar-intervalo">Guardar</button></div>';
-  h += '<div class="xs muted">Vale a partir da verificação seguinte.</div>' + linhaDespertador() + "</div>";
-  h += '<div class="card"><h3>Correr agora</h3><div class="sm muted">Sem esperar pelo intervalo, podes pedir uma execução já:</div><div class="grid2">';
+  const psF = ((S.config || {}).pesquisas || []).filter(p => p.ativa !== false);
+  h += '<div class="card"><h3>Frequência</h3><div class="sm muted">Cada pesquisa tem a sua (escolhe em <a href="#" data-a="tab" data-p="pesquisas">Pesquisas</a> → Editar → pergunta 4).</div>';
+  h += psF.length ? psF.map(p => '<div class="list-item"><span class="sm">' + esc(p.nome) + '</span><span class="tag">' + esc(p.assuntos ? FREQS[freqDe(p)][0] : FREQS.hora[0]) + "</span></div>").join("") : '<div class="empty">Sem pesquisas ativas.</div>';
+  h += linhaDespertador() + "</div>";
+  h += '<div class="card"><h3>Correr agora</h3><div class="sm muted">Sem esperar, podes pedir já uma verificação de todas as pesquisas:</div><div class="grid2">';
   Object.keys(ACOES).forEach(a => { h += '<button class="btn ' + (a === "normal" ? "btn-primary" : "btn-line") + '" data-a="correr" data-p="' + a + '"' + (S.aSeguir && !(S.aSeguir.run && S.aSeguir.run.status === "completed") ? " disabled" : "") + ">" + esc(ACOES[a]) + "</button>"; });
   h += "</div>";
   if (S.aSeguir) {
@@ -434,8 +412,9 @@ function vistaInicio() {
 }
 
 function statsPesquisa(nome) {
-  const ex = ((S.estado || {}).execucoes || []).slice(-1)[0];
-  return ex && (ex.pesquisas || []).find(p => p.nome === nome);
+  const exs = ((S.estado || {}).execucoes || []);
+  for (let i = exs.length - 1; i >= 0; i--) { const st = (exs[i].pesquisas || []).find(p => p.nome === nome); if (st) return st; }
+  return null;
 }
 function vistaPesquisas() {
   if (S.editar !== null) return vistaEditor();
@@ -449,6 +428,7 @@ function vistaPesquisas() {
       h += '<div class="sm">' + (p.sitio ? "Tem de falar de <b>" + esc(paraVirgulas(p.sitio)) + "</b>" + (p.assuntos.length ? " e de um destes:" : "") : "Tem de falar de um destes:") + "</div>";
       h += '<div class="wrap">' + p.assuntos.map(w => '<span class="tag info">' + esc(paraVirgulas(w)) + "</span>").join("") + "</div>";
       if ((p.excluir || []).length) h += '<div class="xs muted">Exclui: ' + esc(p.excluir.join(", ")) + "</div>";
+      h += '<div class="xs"><span class="tag' + (freqDe(p) === "urgente" ? " bad" : freqDe(p) === "diario" ? "" : " warn") + '">' + esc(FREQS[freqDe(p)][0]) + '</span> <span class="muted">' + esc(FREQS[freqDe(p)][1]) + "</span></div>";
     } else {
       h += '<div class="sm muted">Procura: ' + esc(p.consulta || "—") + ' <span class="tag warn">formato antigo — edita para passar às 3 perguntas</span></div>';
       if ((p.obrigatorias || []).length) h += '<div class="sm">Obrigatórias: ' + esc(p.obrigatorias.join(", ")) + "</div>";
@@ -490,12 +470,12 @@ function perguntas(p) {
 function rascunhoDe(p) {
   const q = perguntas(p);
   return { nome: p.nome || "", ativa: p.ativa !== false, sitio: paraVirgulas(q.sitio), assuntos: q.assuntos.map(paraVirgulas).join("\n"),
-    excluir: (p.excluir || []).join(", "), feeds: linhasFontes(p.feeds_extra), paginas: linhasFontes(p.paginas_extra) };
+    excluir: (p.excluir || []).join(", "), frequencia: p.nome ? freqDe(p) : "urgente", feeds: linhasFontes(p.feeds_extra), paginas: linhasFontes(p.paginas_extra) };
 }
 function lerRascunho() {
   const v = id => document.getElementById(id).value;
   S.rascunho = { nome: v("f-nome"), ativa: document.getElementById("f-ativa").checked, sitio: v("f-sitio"), assuntos: v("f-assuntos"),
-    excluir: v("f-excluir"), feeds: v("f-feeds"), paginas: v("f-paginas") };
+    excluir: v("f-excluir"), frequencia: (document.querySelector('input[name="f-freq"]:checked') || {}).value || "hora", feeds: v("f-feeds"), paginas: v("f-paginas") };
   return S.rascunho;
 }
 // Do formulário para a pesquisa a gravar/experimentar; devolve null (e mostra o erro) se faltar algo
@@ -509,7 +489,7 @@ function pesquisaDoFormulario() {
   if (ps.some((p, i) => i !== S.editar && String(p.nome).toLowerCase() === nome.toLowerCase())) return falha("Já existe uma pesquisa com este nome.");
   const nova = { nome: nome, ativa: r.ativa, sitio: deVirgulas(r.sitio),
     assuntos: String(r.assuntos).split("\n").map(deVirgulas).filter(Boolean),
-    excluir: lista(r.excluir),
+    excluir: lista(r.excluir), frequencia: r.frequencia,
     feeds_extra: lerLinhasFontes(r.feeds, orig && orig.feeds_extra), paginas_extra: lerLinhasFontes(r.paginas, orig && orig.paginas_extra) };
   if (orig) Object.keys(orig).forEach(k => { if (!(k in nova) && !CAMPOS_PESQ.includes(k)) nova[k] = orig[k]; });
   if (!nova.sitio && !nova.assuntos.length) return falha("Preenche pelo menos a pergunta 1 ou a 2, senão a pesquisa apanha tudo.");
@@ -526,7 +506,7 @@ function vistaEditor() {
   if (S.editar >= 0 && !p.assuntos) h += '<div class="sm" style="background:var(--md-bg);color:var(--md-ink);border-radius:10px;padding:8px 10px">Esta pesquisa estava no formato antigo. Passei-a para as 3 perguntas — confirma, carrega em <b>Experimentar</b> e grava.</div>';
   h += '<details class="guia"' + (S.editar >= 0 ? "" : " open") + "><summary>Como funciona</summary>"
     + "A notícia só chega se falar do <b>sítio</b> (pergunta 1) <b>e</b> de <b>pelo menos um</b> dos assuntos (pergunta 2), e não tiver nenhuma palavra da pergunta 3.<br><br>"
-    + "Não há pontos nem notas para escolher: se o assunto estiver no <b>título</b>, recebes logo uma mensagem; se só estiver no texto, vai para o <b>resumo diário</b>.<br><br>"
+    + "Na pergunta 4 escolhes a <b>pressa</b>: urgente (de 15 em 15 min), de hora a hora, ou só no <b>resumo diário</b>. Não há pontos nem notas para escolher.<br><br>"
     + "Antes de gravar, carrega em <b>Experimentar</b> para veres que notícias passariam.</details>";
   h += campo("f-nome", "Nome", r.nome, "Só para reconheceres a pesquisa nas mensagens.", "text", "Apoios Sertã");
   h += passo("1 · De que sítio tem de falar?");
@@ -535,6 +515,9 @@ function vistaEditor() {
   h += campo("f-assuntos", "Assuntos — um por linha", r.assuntos, "Basta a notícia ter <b>um</b> assunto. Na mesma linha, junta palavras com o mesmo sentido, separadas por vírgulas. Várias palavras juntas contam como expressão inteira. Plural, maiúsculas e acentos não importam.", "area", "apoio, subsídio, incentivo, candidatura\nagricultura, agrícola, agricultor\nfloresta, florestal");
   h += passo("3 · O que nunca te interessa?");
   h += campo("f-excluir", "Palavras a excluir", r.excluir, "Separadas por vírgulas. Se a notícia tiver uma, é deitada fora. Pode ficar vazio.", "text", "futebol, acidente");
+  h += passo("4 · Quando avisar?");
+  const horaRes = ((S.config || {}).geral || {}).hora_resumo;
+  h += '<div class="field" role="radiogroup" aria-label="Quando avisar">' + Object.keys(FREQS).map(k => '<label class="check"><input type="radio" name="f-freq" value="' + k + '"' + (r.frequencia === k ? " checked" : "") + "> <span><b>" + esc(FREQS[k][0]) + "</b> — " + esc(k === "diario" ? "tudo no resumo diário (às " + (horaRes == null ? 8 : horaRes) + "h)" : FREQS[k][1]) + "</span></label>").join("") + '<div class="hint">Durante o silêncio da noite as mensagens ficam guardadas e chegam de manhã.</div></div>';
   h += '<details><summary>Fontes só desta pesquisa (opcional)</summary><div style="margin-top:10px">';
   h += campo("f-feeds", "Feeds RSS", r.feeds, "Um por linha: <code>Nome | https://endereço-do-feed</code>. Junta <code>| local</code> se a fonte só publica deste sítio (aí basta ter um assunto).", "area");
   h += campo("f-paginas", "Sites sem RSS", r.paginas, "Um por linha: <code>Nome | https://página-de-notícias</code>. A app deteta as notícias sozinha. <code>| local</code> como acima.", "area");
@@ -808,13 +791,6 @@ async function onClick(ev) {
       if (a === "decidir" && S.estado && S.estado.sugeridas) delete S.estado.sugeridas[dom];
       toast(a === "tirar" ? "Retirado." : dom + " guardado em " + p + "."); render();
     });
-    return;
-  }
-  if (a === "gravar-intervalo") {
-    if (!S.token) { toast("Para mudar a frequência, junta primeiro um token em Ligação."); return; }
-    const min = Number(document.getElementById("intervalo").value);
-    if (!(min >= 30 && min <= 1440)) { toast("Escolhe um intervalo entre 30 minutos e 1 dia."); return; }
-    await ocupado(el, async () => { await mudarIntervalo(min); toast("Guardado. Nova frequência: " + (INTERVALOS.find(([m]) => m === min) || [0, min + " minutos"])[1] + "."); render(); });
     return;
   }
   if (a === "gravar-gerais") {

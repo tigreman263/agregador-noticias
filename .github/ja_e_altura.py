@@ -1,8 +1,10 @@
 """Decide se já é altura de verificar (corre no GitHub Actions, só com a biblioteca padrão).
 
 Para as execuções automáticas (schedule e acao=agendada) compara a última verificação
-(estado.json → execucoes[-1].ts) com geral.intervalo_minutos do config.yaml (mínimo 30).
-Os pedidos manuais correm sempre. Escreve correr=sim|nao em GITHUB_OUTPUT.
+(estado.json → execucoes[-1].ts) com o intervalo: 15 min se houver alguma pesquisa
+"urgente" (frequencia no config.yaml), senão 60 min. Cada pesquisa vê depois, no
+agregador.py, se já é a sua altura. Os pedidos manuais correm sempre. Escreve
+correr=sim|nao em GITHUB_OUTPUT.
 """
 import json
 import os
@@ -17,10 +19,10 @@ def decidir():
         return True, "pedido manual"
     try:
         texto = open("config.yaml", encoding="utf-8").read()
-        m = re.search(r"(?m)^\s+intervalo_minutos:\s*(\d+)", texto)
-        intervalo = max(30, int(m.group(1))) if m else 30
+        urgente = re.search(r"(?m)^\s+frequencia:\s*[\"']?urgente", texto)
+        intervalo = 15 if urgente else 60
     except OSError:
-        intervalo = 30
+        intervalo = 60
     try:
         execucoes = json.load(open("estado.json", encoding="utf-8")).get("execucoes") or []
         ultima = datetime.fromisoformat(execucoes[-1]["ts"]) if execucoes else None

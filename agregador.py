@@ -767,7 +767,8 @@ def avaliar(itens, pesq, cfg, estado, agora_utc):
 def carregar_estado():
     base = {"vistos": {}, "resumo": [], "adiados": [], "ultimo_resumo": "",
             "sugeridas": {}, "sugeridas_antigas": [], "dominios": {},
-            "ultima_descoberta": "", "enviados": [], "execucoes": [], "bloqueados": {}}
+            "ultima_descoberta": "", "enviados": [], "execucoes": [], "bloqueados": {},
+            "ultima_pesquisa": {}}
     if ESTADO.exists():
         try:
             base.update(json.loads(ESTADO.read_text(encoding="utf-8")))
@@ -821,6 +822,23 @@ def esquecer_pesquisas_apagadas(cfg, estado):
     for d, s in list(estado["sugeridas"].items()):
         if not any(p in nomes for p in s.get("pesquisas", [])):
             del estado["sugeridas"][d]
+    estado["ultima_pesquisa"] = {n: t for n, t in estado.get("ultima_pesquisa", {}).items()
+                                 if n in nomes}
+
+
+def pesquisa_devida(pesq, estado, agora_utc):
+    """Nas execuções automáticas, cada pesquisa só é verificada quando passou a sua
+    frequência; os pedidos manuais (painel, /verificar) verificam todas."""
+    automatica = (os.environ.get("GITHUB_EVENT_NAME") == "schedule"
+                  or os.environ.get("ACAO") == "agendada")
+    if not automatica:
+        return True
+    try:
+        ultima = datetime.fromisoformat(estado["ultima_pesquisa"][pesq["nome"]])
+    except (KeyError, TypeError, ValueError):
+        return True
+    # 2,5 min de folga: o despertador não acorda ao segundo
+    return (agora_utc - ultima).total_seconds() / 60 >= FREQUENCIAS[frequencia(pesq)] - 2.5
 
 
 def guardar_estado(estado):
@@ -1225,6 +1243,10 @@ def executar(cfg, simular=False, forcar_fontes=False):
     for pesq in cfg.get("pesquisas") or []:
         if not pesq.get("ativa", True):
             continue
+        if not pesquisa_devida(pesq, estado, agora_utc):
+            print(f"Pesquisa: {pesq['nome']} — ainda não é altura ({frequencia(pesq)})")
+            continue
+        estado["ultima_pesquisa"][pesq["nome"]] = agora_utc.isoformat()
         print(f"Pesquisa: {pesq['nome']}")
         itens = recolher(pesq, cfg, registo["falhas"])
         cands = avaliar(itens, pesq, cfg, estado, agora_utc)
@@ -1467,11 +1489,18 @@ def buscar_pelo_telemovel(cfg):
     return 0
 
 
-# Formato simples das pesquisas (o do painel): "sitio", "assuntos" e "excluir".
-# A notícia passa se falar do sítio E de pelo menos um dos assuntos; a nota é automática:
-# assunto no título dá alerta, só no texto vai para o resumo diário.
-LIMITE_ALERTA_SIMPLES = 20
+# Formato simples das pesquisas (o do painel): "sitio", "assuntos", "excluir" e
+# "frequencia". A notícia passa se falar do sítio E de pelo menos um dos assuntos.
+# A frequência diz de quanto em quanto tempo a pesquisa é verificada e como avisa:
+#   urgente: de 15 em 15 min, mensagem logo · hora: de hora a hora, mensagem logo ·
+#   diario: de hora a hora (para não perder nada), tudo no resumo diário.
+FREQUENCIAS = {"urgente": 15, "hora": 60, "diario": 60}
 LIMITE_RESUMO_SIMPLES = 1
+
+
+def frequencia(p):
+    f = str(p.get("frequencia") or "hora").strip().lower()
+    return f if f in FREQUENCIAS else "hora"
 
 
 def consulta_google(entrada_ou_lista):
@@ -1495,8 +1524,9 @@ def preparar_pesquisa(p):
     p["obrigatorias"] = ([sitio] if sitio else []) + ([" / ".join(assuntos)] if assuntos else [])
     p["palavras"] = {"alta": assuntos or ([sitio] if sitio else []), "media": [], "baixa": []}
     p["consulta"] = p.get("consulta") or consulta_google(sitio or assuntos)
-    p["limite_alerta"] = LIMITE_ALERTA_SIMPLES
     p["limite_resumo"] = LIMITE_RESUMO_SIMPLES
+    # tudo o que passa é mensagem imediata, ou (diário) vai tudo para o resumo
+    p["limite_alerta"] = 10 ** 9 if frequencia(p) == "diario" else LIMITE_RESUMO_SIMPLES
     return p
 
 

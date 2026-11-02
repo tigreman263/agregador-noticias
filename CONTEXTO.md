@@ -22,7 +22,10 @@ Agregador de notícias pessoal:
   só biblioteca padrão; repetido no início do job "correr", que tem a fila) compara a
   última `estado.execucoes[-1].ts` com `geral.intervalo_minutos` (por omissão 30, mínimo 30,
   folga de 2,5 min). Se não for altura, os passos seguintes são saltados (sem commit).
-  Execuções manuais correm sempre. O painel muda o valor em Início → Frequência.
+  Execuções manuais correm sempre. **Desde 2026-11-02 a frequência é por pesquisa**
+  (`frequencia: urgente|hora|diario`): o "decidir" usa 15 min se houver alguma urgente,
+  senão 60; no agregador, `pesquisa_devida` salta as pesquisas que ainda não estão na
+  altura (`estado.ultima_pesquisa`). `geral.intervalo_minutos` deixou de existir.
 - **Só Telegram (2026-11-01).** O WhatsApp (CallMeBot, 2026-10-09) aceitava os pedidos
   mas deixou de entregar; foi retirado. `enviar(texto, botoes)` usa a API oficial
   (`sendMessage`, `parse_mode: HTML`, texto escapado com `h()`/`ligacao()`), espera

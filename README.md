@@ -235,9 +235,9 @@ vezes por dia). Um **Worker do Cloudflare** (gratuito, sempre ligado, não preci
 do telemóvel) faz duas coisas:
 
 - de 15 em 15 minutos pede ao GitHub uma verificação; o agregador só verifica a sério
-  quando já passou o intervalo escolhido no painel;
+  quando chega a altura de alguma pesquisa (cada uma tem a sua frequência);
 - recebe os toques nos **botões** das mensagens (Confiável / Neutra / Bloquear) e grava a
-  decisão no `config.yaml`, e responde aos comandos `/verificar`, `/estado`, `/fontes` e
+  decisão no `config.yaml`, e responde aos comandos `/resumo`, `/verificar`, `/estado`, `/fontes` e
   `/ajuda`.
 
 O código é um só ficheiro, `extras/cloudflare/worker.js`, sem dependências.
@@ -334,11 +334,12 @@ Notas:
 - "**novas relevantes**" conta só as notícias relevantes que ainda não tinham sido
   vistas. "0 novas relevantes" não é erro: quer dizer que não apareceu nada de novo.
 - O painel atualiza sozinho de 5 em 5 minutos; usa **Atualizar** para ver já.
-- **Frequência**: o Worker do Cloudflare acorda o agregador de 15 em 15 minutos (o
-  agendador do GitHub fica de reserva); se ainda não passou o
-  intervalo que escolheste, ele termina logo, sem fazer nada (no separador Actions do
-  GitHub vês muitas execuções curtas, é normal). Os botões de **Correr agora** não
-  esperam pelo intervalo.
+- **Frequência**: escolhe-se em cada pesquisa (pergunta 4): ⚡ urgente (de 15 em 15 min,
+  mensagem logo), 🕐 de hora a hora (mensagem logo) ou 📰 uma vez por dia (tudo no resumo
+  diário). O Worker do Cloudflare acorda o agregador de 15 em 15 minutos; se nenhuma
+  pesquisa estiver na altura, ele termina logo, sem fazer nada (no separador Actions do
+  GitHub vês muitas execuções curtas, é normal). Os botões de **Correr agora** verificam
+  todas as pesquisas logo.
 
 ---
 
@@ -351,10 +352,10 @@ No painel, cada pesquisa responde a **3 perguntas**:
 | 1. De que sítio tem de falar? | `Sertã, sertanense` | A notícia **tem** de ter uma destas formas. Vazio = qualquer sítio. |
 | 2. E de que assuntos? (um por linha) | `apoio, subsídio, candidatura`<br>`agricultura, agrícola`<br>`floresta, florestal` | E tem de ter **pelo menos um** assunto. Na mesma linha, palavras com o mesmo sentido. |
 | 3. O que nunca te interessa? | `futebol, acidente` | Se tiver uma, é deitada fora. |
+| 4. Quando avisar? | ⚡ urgente / 🕐 de hora a hora / 📰 uma vez por dia | Urgente: verifica de 15 em 15 min e manda mensagem logo. De hora a hora: verifica de hora a hora e manda mensagem logo. Uma vez por dia: tudo vai para o resumo diário. |
 
 **Regra:** passa se tiver o **sítio E um assunto**, e nenhuma palavra a excluir. Não há
-pontos nem notas para escolher: assunto no **título** → mensagem imediata; só no texto →
-resumo diário. A procura no Google Notícias é feita pelo sítio (ou, sem sítio, pelos
+pontos nem notas para escolher: a pergunta 4 decide se chega como mensagem ou no resumo. A procura no Google Notícias é feita pelo sítio (ou, sem sítio, pelos
 assuntos).
 
 **Experimentar:** antes de gravar, o botão **Experimentar** corre a pesquisa no GitHub
@@ -530,10 +531,14 @@ Comandos do bot (precisam do Worker, passo 2.8):
 
 | Comando | O que faz |
 |---|---|
+| `/resumo` (botão 📰 Resumo) | Mostra as notícias à espera do próximo resumo diário; se não houver, o último resumo enviado. |
 | `/verificar` | Procura notícias já (os alertas chegam em 2 a 3 minutos). |
 | `/estado` | Última verificação, notícias à espera e fontes por decidir. |
 | `/fontes` | Volta a mostrar as fontes sugeridas por decidir, com botões. |
 | `/ajuda` | Lista os comandos. |
+
+Depois de mandares `/start`, aparece por baixo da conversa um **teclado fixo** com os botões
+📰 Resumo, 🔄 Verificar, 📊 Estado e 🗂 Fontes (fazem o mesmo que os comandos).
 
 Ao tocar num botão, a decisão fica gravada no `config.yaml` (commit "telegram: …") e vale
 a partir da verificação seguinte. Para desfazer, usa o painel (**Fontes**).
@@ -547,7 +552,6 @@ lápis no ficheiro).
 
 | Chave | Por omissão | Significado |
 |---|---|---|
-| `geral.intervalo_minutos` | 30 | De quantos em quantos minutos procura (mínimo 30). Muda-se no painel, em Início → Frequência. |
 | `geral.fuso` | `Europe/Lisbon` | Fuso horário. |
 | `geral.idade_max_horas` | 48 | Ignora notícias mais antigas. |
 | `geral.max_alertas_por_execucao` | 5 | Alertas por verificação; o excesso vai para o resumo. |
@@ -568,7 +572,7 @@ lápis no ficheiro).
 | `descoberta.max_pendentes` | 10 | Não sugere mais se tiveres estas por decidir. |
 | `descoberta.min_noticias` | 2 | Notícias relevantes mínimas para sugerir um site. |
 | `descoberta.procurar_feeds` | true | Procura o feed dos sites sugeridos. |
-| `pesquisas[]` | — | Formato simples: `nome`, `ativa`, `sitio`, `assuntos`, `excluir`, `feeds_extra`, `paginas_extra`. Formato antigo: `nome`, `ativa`, `consulta`, `obrigatorias`, `palavras.alta/media/baixa`, `excluir`, `limite_alerta`, `limite_resumo`, `feeds_extra`, `paginas_extra` (secção 4). |
+| `pesquisas[]` | — | Formato simples: `nome`, `ativa`, `sitio`, `assuntos`, `excluir`, `frequencia` (`urgente`/`hora`/`diario`), `feeds_extra`, `paginas_extra`. Formato antigo: `nome`, `ativa`, `consulta`, `obrigatorias`, `palavras.alta/media/baixa`, `excluir`, `limite_alerta`, `limite_resumo`, `feeds_extra`, `paginas_extra` (secção 4). |
 
 ---
 
@@ -611,8 +615,8 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 | `estado.json` | Memória do agregador, gravada pelo GitHub. Não editar. |
 | `painel.json` | Notícias descartadas e limpeza da atividade, gravadas pelo painel. |
 | `requirements.txt` | Bibliotecas Python (requests, PyYAML, defusedxml, beautifulsoup4). |
-| `.github/workflows/agregador.yml` | Acorda de 15 em 15 minutos, verifica conforme `geral.intervalo_minutos`, e ações manuais (normal, teste, simular, descobrir-fontes, agendada). |
-| `.github/ja_e_altura.py` | Decide, em cada execução automática, se já passou o intervalo escolhido. |
+| `.github/workflows/agregador.yml` | Acorda de 15 em 15 minutos, verifica quando alguma pesquisa está na altura (`frequencia`), e ações manuais (normal, teste, simular, descobrir-fontes, agendada). |
+| `.github/ja_e_altura.py` | Decide, em cada execução automática, se já é altura (15 min se houver pesquisas urgentes, senão 60). |
 | `painel/index.html` | O painel. |
 | `Abrir Painel.url` / `Abrir Painel.bat` | Abrem o painel no navegador (duplo clique no Windows). |
 | `.gitattributes` | Mantém o formato de linhas do Windows nos dois atalhos. |

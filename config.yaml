@@ -5,7 +5,6 @@
 # ============================================================
 
 geral:
-  intervalo_minutos: 60         # de quantos em quantos minutos procura (mínimo 30); muda-se no painel
   fuso: "Europe/Lisbon"
   idade_max_horas: 48          # ignora notícias mais antigas
   max_alertas_por_execucao: 5  # o excesso vai para o resumo diário
@@ -51,8 +50,9 @@ descoberta:
 #   sitio:    a notícia TEM de falar disto (variantes separadas por "/")
 #   assuntos: e de PELO MENOS UM destes (cada linha um assunto; variantes com "/")
 #   excluir:  se tiver uma destas palavras, é deitada fora
-# A procura no Google Notícias e as notas são automáticas: assunto no título dá
-# alerta imediato; só no texto vai para o resumo diário.
+#   frequencia: "urgente" (de 15 em 15 min, mensagem logo), "hora" (de hora a hora,
+#               mensagem logo) ou "diario" (tudo no resumo diário)
+# A procura no Google Notícias é automática.
 pesquisas:
   - nome: "Sertã"
     ativa: true
@@ -62,6 +62,7 @@ pesquisas:
       - "agricultura / agrícola / agricultor"
       - "floresta / florestal"
     excluir: []
+    frequencia: "urgente"
     feeds_extra: []
     paginas_extra:
       - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias", local: true}
@@ -70,5 +71,6 @@ pesquisas:
     sitio: "Fundo Ambiental / Vale Eficiência"
     assuntos: []
     excluir: []
+    frequencia: "urgente"
     feeds_extra: []
     paginas_extra: []

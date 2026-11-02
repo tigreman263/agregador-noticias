@@ -4,7 +4,7 @@
 //    "agendada" do workflow, que só verifica se já passou geral.intervalo_minutos.
 // 2. Bot do Telegram (webhook): trata os botões das mensagens (Confiável / Neutra /
 //    Bloquear), gravando a decisão no config.yaml como o painel faz, e os comandos
-//    /verificar, /estado, /fontes e /ajuda.
+//    /resumo, /verificar, /estado, /fontes e /ajuda (também num teclado fixo com botões).
 //
 // Variáveis (Settings > Variables and secrets), todas do tipo "Secret":
 //   GITHUB_TOKEN        token fine-grained só deste repositório (Contents e Actions: Read and write)
@@ -21,11 +21,21 @@ const WORKFLOW = "agregador.yml";
 const LISTAS = { c: "confiaveis", n: "neutras", b: "bloqueadas" };
 const NOMES = { confiaveis: "Confiável", neutras: "Neutra", bloqueadas: "Bloqueada" };
 const COMANDOS = [
+  { command: "resumo", description: "Ver as notícias do resumo diário" },
   { command: "verificar", description: "Procurar notícias agora" },
   { command: "estado", description: "Como correu a última verificação" },
   { command: "fontes", description: "Fontes sugeridas por decidir" },
   { command: "ajuda", description: "O que este bot faz" },
 ];
+
+// Teclado fixo por baixo da conversa: cada botão envia o texto, que vale o comando.
+const BOTOES = { "📰 Resumo": "/resumo", "🔄 Verificar": "/verificar", "📊 Estado": "/estado", "🗂 Fontes": "/fontes" };
+const TECLADO = {
+  reply_markup: {
+    keyboard: [[{ text: "📰 Resumo" }, { text: "🔄 Verificar" }], [{ text: "📊 Estado" }, { text: "🗂 Fontes" }]],
+    resize_keyboard: true, is_persistent: true,
+  },
+};
 
 export default {
   async scheduled(evento, env, ctx) {
@@ -254,14 +264,16 @@ async function tratarUpdate(env, u) {
   const m = u.message;
   if (!m || !m.chat || typeof m.text !== "string") return;
   const chat = String(m.chat.id);
-  const cmd = m.text.trim().split(/\s+/)[0].split("@")[0].toLowerCase();
+  const cmd = BOTOES[m.text.trim()] || m.text.trim().split(/\s+/)[0].split("@")[0].toLowerCase();
 
   // /start e /id respondem a qualquer pessoa, só com o chat id dela (para a instalação)
   if (cmd === "/start" || cmd === "/id") {
     const meu = chat === String(env.TELEGRAM_CHAT_ID || "");
+    if (meu) await tg(env, "setMyCommands", { commands: COMANDOS }).catch(() => {});
     return responder(env, chat, meu
-      ? "👋 Olá! Estou ligado ao agregador. Escreve /ajuda para veres o que faço."
-      : "👋 O teu chat id é <code>" + esc(chat) + "</code>.\nGuarda-o como <b>TELEGRAM_CHAT_ID</b> no Worker do Cloudflare e nos segredos do GitHub.");
+      ? "👋 Olá! Estou ligado ao agregador. Usa os botões aqui em baixo, ou escreve /ajuda."
+      : "👋 O teu chat id é <code>" + esc(chat) + "</code>.\nGuarda-o como <b>TELEGRAM_CHAT_ID</b> no Worker do Cloudflare e nos segredos do GitHub.",
+      meu ? TECLADO : {});
   }
   if (chat !== String(env.TELEGRAM_CHAT_ID || "")) return; // o bot é só teu: ignora os outros
 
@@ -273,13 +285,18 @@ async function tratarUpdate(env, u) {
       return responder(env, chat, "❌ Não consegui pedir a verificação: " + esc(e.message));
     }
   }
-  if (cmd === "/estado") return responder(env, chat, await textoEstado(env));
+  if (cmd === "/resumo") {
+    for (const parte of await textoResumo(env)) await responder(env, chat, parte, TECLADO);
+    return;
+  }
+  if (cmd === "/estado") return responder(env, chat, await textoEstado(env), TECLADO);
   if (cmd === "/fontes") return enviarFontes(env, chat);
+  await tg(env, "setMyCommands", { commands: COMANDOS }).catch(() => {});
   return responder(env, chat,
     "<b>Agregador de Notícias</b>\n" +
-    "Envio-te os alertas e o resumo diário. Nos botões decides as fontes (fica gravado no config.yaml).\n\n" +
-    "/verificar — procurar notícias agora\n/estado — como correu a última verificação\n" +
-    "/fontes — fontes sugeridas por decidir\n/ajuda — esta mensagem");
+    "Envio-te os alertas e o resumo diário. Nos botões das sugestões decides as fontes (fica gravado no config.yaml).\n\n" +
+    "📰 /resumo — ver as notícias do resumo diário\n🔄 /verificar — procurar notícias agora\n" +
+    "📊 /estado — como correu a última verificação\n🗂 /fontes — fontes sugeridas por decidir\n/ajuda — esta mensagem", TECLADO);
 }
 
 async function tratarBotao(env, cq) {
@@ -325,6 +342,34 @@ async function textoEstado(env) {
     "Alertas adiados: " + (est.adiados || []).length,
     "Fontes por decidir: " + Object.keys(est.sugeridas || {}).length + (Object.keys(est.sugeridas || {}).length ? " (/fontes)" : ""));
   return linhas.join("\n");
+}
+
+// O que está à espera do próximo resumo; se não houver nada, o último resumo enviado.
+async function textoResumo(env) {
+  let est;
+  try { est = await lerEstado(env); } catch (e) { return ["❌ Não consegui ler o estado: " + esc(e.message)]; }
+  const linha = (c, i) => (i + 1) + '. <a href="' + esc(c.link) + '">' + esc(c.titulo) + "</a>\n   " + esc(c.fonte || "") + " · " + esc(c.pesquisa || "");
+  let itens = (est.resumo || []).slice().sort((a, b) => (b.nota || 0) - (a.nota || 0));
+  let titulo;
+  if (itens.length) {
+    titulo = "📰 <b>À espera do próximo resumo — " + itens.length + " notícia" + (itens.length === 1 ? "" : "s") + "</b>";
+  } else {
+    const env2 = (est.enviados || []).filter(e => e.tipo === "resumo");
+    if (!env2.length) return ["📰 Não há nada à espera do resumo, e ainda não foi enviado nenhum resumo."];
+    const ultimo = env2[env2.length - 1].ts;
+    itens = env2.filter(e => e.ts === ultimo);
+    titulo = "📰 Nada à espera do próximo resumo.\n<b>Último resumo (" + quando(ultimo) + ") — " + itens.length + " notícia" + (itens.length === 1 ? "" : "s") + "</b>";
+  }
+  // o Telegram aceita até 4096 caracteres por mensagem: parte em várias
+  const partes = [];
+  let atual = titulo;
+  itens.slice(0, 40).forEach((c, i) => {
+    const l = "\n\n" + linha(c, i);
+    if (atual.length + l.length > 3800) { partes.push(atual); atual = l.trim(); } else atual += l;
+  });
+  if (itens.length > 40) atual += "\n\n… e mais " + (itens.length - 40) + " (vê no painel).";
+  partes.push(atual);
+  return partes;
 }
 
 async function enviarFontes(env, chat) {
