@@ -689,37 +689,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-02T22:46:08.720798+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 295,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 205,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "pelo_telemovel": [
-    "Médio Tejo",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "mediotejo.net"
-   ]
-  },
-  {
    "ts": "2026-11-02T23:46:05.229753+00:00",
    "pesquisas": [
     {
@@ -1962,10 +1931,31 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-03T18:46:35.272046+00:00",
+   "pesquisas": [],
+   "falhas": [
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-03T18:31:28.974952+00:00"
+  "cm-serta.pt": "2026-11-03T18:46:35.272046+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2636,9 +2626,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-03T18:31:28.974952+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-03T18:46:35.272046+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00"
   }
