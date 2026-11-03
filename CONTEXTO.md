@@ -142,7 +142,10 @@ nota continua a existir por dentro, só para ordenar:
   alerta), ou `limite_alerta` 10^9 em `diario` (tudo no resumo). Formato antigo: os
   limites do config (omissão 25 e 10).
 - A nota decide a ordem da fila de alertas (máx. `max_alertas_por_execucao`, o excesso vai
-  para o resumo) e as 15 do resumo (`mensagens_resumo`; as restantes são descartadas).
+  para o resumo) e a ordem do resumo (`mensagens_resumo` manda todas, divididas por `juntar_mensagens`;
+  até 2026-11-03 só as 15 primeiras, e o resto perdia-se).
+- Fontes repetidas: o mesmo endereço nas fontes gerais e nas da pesquisa lê-se uma vez
+  (`sem_repetidas`), com as opções da pesquisa (ex.: `local`).
 - Silêncio (23h–7h): os alertas ficam adiados (até 50; o excesso vai para o resumo). Se o
   envio falhar, ficam adiados e marcados como vistos (não duplicam).
 

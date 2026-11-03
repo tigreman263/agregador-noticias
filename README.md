@@ -423,7 +423,7 @@ vêm de uma **fonte confiável** ficam à frente. Isto decide:
 - qual versão de uma notícia repetida chega (a melhor fonte);
 - quais vão primeiro quando há mais de 5 alertas numa verificação (o resto vai para o
   resumo);
-- quais entram no resumo diário, que mostra no máximo 15.
+- a ordem das notícias no resumo diário.
 
 As regras desta ordenação estão em `pesos` no `config.yaml` (secção 7); não precisas de
 mexer nelas.
@@ -471,6 +471,8 @@ Um domínio apanha também os subdomínios e o que acaba nele: `sapo.pt` inclui
   publica sobre um lugar, como a de uma câmara municipal. As notícias dela não precisam de
   falar do sítio (nem todas dizem o nome do lugar), basta-lhes um assunto. Usa `local` só nas
   fontes de uma pesquisa, nunca nas gerais.
+- Se o mesmo endereço estiver nas gerais e nas de uma pesquisa, é lido uma só vez, com as
+  opções da pesquisa (por exemplo o `local`). Vale também para os sites sem RSS.
 
 ### 5.4 Sites sem RSS
 
@@ -592,8 +594,8 @@ mostra o erro); procura outra página do mesmo site.
   **⭐ Confiável** e **🚫 Bloquear fonte** decidem logo a fonte dessa notícia (numa fonte
   já confiável, só aparece Bloquear).
 - **Resumo diário** (pesquisas de uma vez por dia, e o excesso dos alertas): uma vez por
-  dia, na primeira verificação a partir das 8h (`hora_resumo`). Mostra no máximo 15
-  notícias, pela ordem da secção 4; se houver mais, as restantes não são enviadas.
+  dia, na primeira verificação a partir das 8h (`hora_resumo`). Traz todas as notícias à
+  espera, pela ordem da secção 4; se forem muitas, vêm divididas por várias mensagens.
   Notícias à espera há mais de 48 horas saem da fila.
 - **Fontes novas sugeridas**: uma vez por dia, com botões (secção 5.6).
 - **Páginas vigiadas**: 👀 ao começar, 🔎 quando o texto muda, ⚠️ se não a consegue ler

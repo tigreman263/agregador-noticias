@@ -617,19 +617,27 @@ def url_google_news(consulta, cfg):
             + f"&ceid={g.get('ceid', 'PT:pt-150')}")
 
 
+def sem_repetidas(gerais, da_pesquisa):
+    """Junta as fontes gerais e as da pesquisa, cada endereço uma só vez. Se o mesmo
+    endereço está nas duas, valem as opções da pesquisa (ex.: local: true)."""
+    por_url = {}
+    for f in list(gerais or []) + list(da_pesquisa or []):
+        if isinstance(f, dict) and f.get("url"):
+            por_url[f["url"].strip().rstrip("/").lower()] = f  # a última ganha, no mesmo lugar
+    return list(por_url.values())
+
+
 def recolher(pesq, cfg, falhas=None):
     """Vai buscar as notícias de todas as fontes desta pesquisa."""
     fontes = cfg.get("fontes") or {}
     pedidos = []
     if pesq.get("consulta"):
         pedidos.append(("Google Notícias", ler_feed, url_google_news(pesq["consulta"], cfg)))
-    for f in (fontes.get("feeds") or []) + (pesq.get("feeds_extra") or []):
-        if f.get("url"):
-            pedidos.append((f.get("nome"), ler_feed_local if f.get("local") else ler_feed,
-                            f["url"]))
-    for p in (fontes.get("paginas") or []) + (pesq.get("paginas_extra") or []):
-        if p.get("url"):
-            pedidos.append((p.get("nome"), ler_pagina, p))
+    for f in sem_repetidas(fontes.get("feeds"), pesq.get("feeds_extra")):
+        pedidos.append((f.get("nome"), ler_feed_local if f.get("local") else ler_feed,
+                        f["url"]))
+    for p in sem_repetidas(fontes.get("paginas"), pesq.get("paginas_extra")):
+        pedidos.append((p.get("nome"), ler_pagina, p))
     todas = []
     for nome, leitor, alvo in pedidos:
         url = alvo if isinstance(alvo, str) else alvo["url"]
@@ -1042,16 +1050,15 @@ def botoes_alerta(c):
 
 
 def mensagens_resumo(itens):
-    """Devolve [(texto, [notícias nessa mensagem])], com as 15 primeiras pela nota interna."""
-    total = len(itens)
-    itens = sorted(itens, key=lambda c: c["nota"], reverse=True)[:15]
+    """Devolve [(texto, [notícias nessa mensagem])], com todas as notícias, pela ordem da
+    nota interna; juntar_mensagens divide-as por várias mensagens se for preciso."""
+    itens = sorted(itens, key=lambda c: c["nota"], reverse=True)
     blocos = [f'{n}. {ligacao(c["titulo"], c["link"])}\n'
               f'   {h(c["fonte"])} · {h(c["pesquisa"])}'
               for n, c in enumerate(itens, 1)]
     if blocos:
-        resto = f" (as 15 primeiras de {total})" if total > len(itens) else ""
         n_txt = "1 notícia" if len(itens) == 1 else f"{len(itens)} notícias"
-        blocos[0] = f"📰 <b>Resumo — {n_txt}{resto}</b>\n\n" + blocos[0]
+        blocos[0] = f"📰 <b>Resumo — {n_txt}</b>\n\n" + blocos[0]
     return [(t, [itens[i] for i in idx]) for t, idx in juntar_mensagens(blocos)]
 
 
@@ -1407,7 +1414,7 @@ def executar(cfg, simular=False, forcar_fontes=False):
                 for c in itens_msg:
                     registar_envio(c, "resumo")
             registo["resumo"] = total
-            estado["resumo"] = []  # as que ficaram fora das 15 melhores
+            estado["resumo"] = []  # tudo seguiu
             estado["ultimo_resumo"] = hoje
         except RuntimeError as e:
             # o que já seguiu saiu da fila; o resto vai na verificação seguinte
