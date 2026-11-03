@@ -36,7 +36,8 @@ fontes:
     - {nome: "Central Press", url: "https://centralpress.pt/api/rss"}
     - {nome: "Portal Energia", url: "https://www.portal-energia.com/feed/"}
     - {nome: "Razão Automóvel", url: "https://www.razaoautomovel.com/feed/"}
-  paginas: []
+  paginas:
+    - {nome: "cm-serta.pt", url: "https://cm-serta.pt/comunicacao/noticias"}
 
 # Descoberta automática de fontes: 1 vez por dia procura sites novos que
 # publicam sobre as tuas pesquisas e envia-te uma sugestão pelo Telegram, com
