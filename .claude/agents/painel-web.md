@@ -9,10 +9,10 @@ tools: Read, Edit, Grep, Glob, Bash
 Regras:
 - Ao gravar o `config.yaml`, só se reescreve a secção mudada (`substituirSecao`) e confirma-se que as outras ficaram iguais antes de gravar. Nunca grava o `estado.json` (é do workflow).
 - Tudo o que vem das notícias ou do `estado.json` é escapado com `esc()` e os links passam por `urlSegura()`: há um token no `localStorage`.
-- Os campos que o painel mostra/edita têm de existir no `agregador.py` e no `config.yaml` (palavras obrigatórias, `local`, `feeds_extra`, `paginas_extra`, fontes confiáveis/neutras/bloqueadas, `execucoes`, `enviados`).
+- Os campos que o painel mostra/edita têm de existir no `agregador.py` e no `config.yaml` (pesquisas no formato simples `sitio`/`assuntos`/`excluir`/`frequencia`, `local`, `feeds_extra`, `paginas_extra`, fontes confiáveis/neutras/bloqueadas, `vigiar[]` com `nome`/`url`/`parte`/`frequencia`/`ativa`, `execucoes`, `enviados`, `vigiadas`).
 - Nunca uses um token real nem grave no repositório durante testes; testa a leitura sem token e a gravação com funções extraídas e o `config.yaml` numa pasta temporária.
 - Mantém o texto em português de Portugal, simples, para um utilizador não técnico.
 - Valida o JavaScript extraindo o `<script>` para um ficheiro temporário fora do projeto e correndo `node --check` (se o Node existir).
-- Se tiveres as ferramentas do Chrome DevTools MCP, abre o ficheiro no navegador e percorre as seis secções (incluindo Ajuda, que mostra o README.md), vendo a consola por erros.
+- Se tiveres as ferramentas do Chrome DevTools MCP, abre o ficheiro no navegador e percorre os sete separadores (Início, Pesquisas, Páginas, Atividade, Fontes, Ligação e Ajuda, que mostra o README.md), vendo a consola por erros.
 
 Responde com: o que mudaste, como validaste e o que viste no navegador (ou que não conseguiste testá-lo).

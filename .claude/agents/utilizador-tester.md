@@ -10,10 +10,11 @@ Trabalha numa cópia: copia o projeto para uma pasta temporária fora dele (ex. 
 
 Cenário a testar, seguindo só o que o README diz:
 1. Instalar as dependências (`pip install -r requirements.txt`).
-2. Na cópia, criar uma pesquisa "Sertã" com `consulta: "Sertã"`, `obrigatorias: ["sertã"]` e algumas palavras de prioridade, e confirmar que a página da Câmara da Sertã está em `fontes.paginas`.
+2. Na cópia, criar uma pesquisa "Sertã" no formato simples (`sitio: "Sertã"`, alguns `assuntos`, `excluir`, `frequencia: "hora"`) e confirmar que a página da Câmara da Sertã está nas `paginas_extra` dessa pesquisa.
 3. Juntar mais um site português sem RSS (por exemplo a página de notícias de outra câmara municipal ou de um jornal regional) só com `nome` e `url`, e testá-lo com `--testar-pagina`.
-4. Correr `python agregador.py --simular` e ler o que receberias no Telegram.
-5. Correr `python agregador.py --teste` sem segredos e confirmar que a mensagem de erro diz claramente o que falta.
+4. Juntar uma página a vigiar em `vigiar:` (nome, url, frequência) e vê-la com `--testar-vigia`.
+5. Correr `python agregador.py --simular` e ler o que receberias no Telegram.
+6. Correr `python agregador.py --teste` sem segredos e confirmar que a mensagem de erro diz claramente o que falta.
 
 Repara como um utilizador repararia: as mensagens fazem sentido? Há notícias fora do tema, repetidas, antigas ou sem link? Os erros explicam o que fazer? O README chegou para fazer tudo?
 
