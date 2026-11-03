@@ -1,114 +1,99 @@
 {
- "pedido": "mvzs7gkq1s1l7",
- "ts": "2026-11-02T21:42:16.505641+00:00",
- "nome": "teste",
- "consulta": "\"queda de avião\"",
- "recolhidas": 276,
+ "pedido": "mw0ex4c2aa2e1",
+ "ts": "2026-11-03T08:16:24.062111+00:00",
+ "nome": "Sertã",
+ "consulta": "Sertã OR sertanense OR sertaginense",
+ "recolhidas": 315,
  "idade_max_horas": 48.0,
- "passam": [
-  {
-   "titulo": "USA: Queda de avião executivo na Florida faz nove mortos perto de Mar-a-Lago",
-   "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPaUNNdlVOQ3Y5bFhKQmhkTzlWTTU2akJ0dTJLbjBwdHJEdnU0ZzlocmRMN1hFaUNZaFlxekg4MzdaWUl1RmhKNUNKblVPUjhjSmYtWnJ0YXN2TW1LcWw2dnRRT2RkM283SG9KSnZQZlR4aTdOd1E3c0JMeVBVUmFEYUJ3NWQyZEI1RFFWMWlrSHFmdVg1S0E?oc=5",
-   "fonte": "e24.pt",
-   "nivel": "alerta",
-   "achadas": {
-    "alta": [
-     "USA"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "data": "2026-11-02T12:03:58+00:00"
-  }
- ],
- "n_passam": 1,
+ "passam": [],
+ "n_passam": 0,
  "cortes": {
-  "sem_sitio": 180,
-  "sem_assunto": 15,
+  "sem_sitio": 207,
+  "sem_assunto": 8,
   "excluida": 0,
-  "antiga": 28
+  "antiga": 94
  },
  "exemplos": {
   "sem_sitio": [
    {
-    "titulo": "Avião cai em estrada na Flórida e deixa ao menos nove mortos; vídeo mostra momento da queda",
-    "link": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOenYwTXVGYURBRDloR0QyQ2gyRXdWOEdFRnllamZZdFh5ZVF6MnJZRnFYaThiOXE4cjFtVmc4c2ZsaHdYU0NadXJWY1RmckRkMm9nQzVEbHByUHU2bjYyNFQtZFFGY0NhNlpSLV9vUGFncFlNZGg0NW14UHlxaXRmVGF1LWtJZUVtU3o2TENEVDRDeDVmaWg4dmVuc1ZIZFhXemI5ZFBVbld1bURfUHhDUTBtNVk5dXN6LVRPczR4b21BNlJhdkJYWVlUeEJnazFCTE5EVUxlZE5iRFU0bnU40gHuAUFVX3lxTE5DOUVoenJPal9zMjY1bDlSc2JkdHluTlAyZXQ1M1g5QlJzUkwweHotanhzandQN1c1VWYwdXVEbmJnYmk5OUgwcTlUODRuMDRUbURIVVlsT1VySDJFdDdRTVZKRF9fdU1uTlM3Qm1yVkhoTk5hdUdNdTJabXRobWw5RklIekJyWmtVWjV4UlNwVTRtR3dmVk1xSzdZNlZRMkxXRU5yc0ZtVkZhdzluWUoxY0hCZ1hicGFCYm5udi00a3hzVnVUTUZzNDRhaldlT1hVSGE0LWs1amkzdV9pLUVzNWwwekdXOGZnLTNEYXc?oc=5",
-    "fonte": "O GLOBO"
+    "titulo": "\"Somos todos Renata Cambra\": a resposta dos manifestantes de Lisboa ao MAI",
+    "link": "https://sapo.pt/artigo/somos-todos-renata-cambra-a-resposta-dos-manifestantes-de-lisboa-ao-mai-6ae98a183a69d6d8c05a5a1d",
+    "fonte": "SAPO"
    },
    {
-    "titulo": "\"Vamos despenhar-nos. Já não temos tempo\": nove pessoas morrem após queda de jato privado na Florida. Embate criou cratera na estrada",
-    "link": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOS1ZCa0ZDN3V2TnZfN2FlUkpVYWJzOWVrTkFfajczRm94ZWdPd3RJOTRQaURKODVNSzhsWWExR0NxQXAyb1d3ZVZTMzhtUlhpcEhTU2JPYXhGMHBpeDZFZ2tFQzlZd0NSQUFQeDRFR3BidU5TQm5EWmdoVHUtR2xrX2ZVRXllalh6S0l4akJLNGFGMmpTVm9wX1dvckF2Q3NZcGhycXhOV09BMnMwNW10dXlTNXhPTHVjTktrUUdfTTlUWUpzc0FYOGtabTgyRlRjYmJ4cnlVQnphVTVwNEltUWxrMGI1a1pwUHFFV0xjR0hteV9sbFBDOGYtWFJqTklBZHVPMHhtZ2lIeUxvRnQ1RHc5X0E4MkZ3aFp0dktNTHBiMUVqanplR3lYSWY?oc=5",
-    "fonte": "Jornal SOL"
+    "titulo": "Acampada de Lisboa recusa abandonar o Rossio durante o Mercado de Natal e pede alternativa a Moedas",
+    "link": "https://24noticias.sapo.pt/atualidade/artigos/acampada-de-lisboa-recusa-abandonar-o-rossio-durante-o-mercado-de-natal-e-pede-alternativa-a-moedas",
+    "fonte": "SAPO"
    },
    {
-    "titulo": "“Parecia um míssil a cair”. Queda de jato particular faz nove mortos na Flórida",
-    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNMFhNMTRHWl9nNW40U1FzQzh4VUNOejRZakt2OXlYTXlyQVVma0xJRG90aEJTSGxTMnVrczFaWC1ZdVdjY29UaG1UQU9xZk15a0FyZkZmOXJLQWk5U1EzT0QtT3g5Ulh3ZmxuNERIdE1BUExVaVFiN2FuUXEtaGVwZDhrUmdoNnhXR2l6dy1oYmt1ZEtLWDBHYUI5RHM0enZsV2loamtSdDhKQQ?oc=5",
-    "fonte": "Diário de Notícias"
+    "titulo": "Acampada do Porto denuncia polícias à paisana a identificar manifestantes",
+    "link": "https://sapo.pt/artigo/acampada-do-porto-denuncia-policias-a-paisana-a-identificar-manifestantes-6ae92f983a69d6d8c052ad4f",
+    "fonte": "SAPO"
    },
    {
-    "titulo": "Autoridade dos EUA vê indícios de que avião com filha de brasileiros se despedaçou antes do impacto",
-    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOSzFvLXRmcExiNm4xZ2FqYUFoNVBjeHplSFJ4T2FnZGYzbjBlWHRzdjVwdU5KWmtIX3J5b1NiMnRGb0FUbDFGQUhfUGxiNTVrUktwYmYwU05jd3ZidkFtdnpfWWpoV1k5RUZnQk4tUmNha1p6enJ4VkNEdS1iQ2xtODE4Skhlcm12WWpoUk1abGZyb2haVmVwSjdwMVc0aTJUMjN6WE9McVh5ZmRmZEFPMzhqWnhTOUpHdy1aUEpVdFVRcFdjZWpmUEFQeUNCUktscVlibHVLNE1CRGJsb2E4ckZtWjdHQdIB9AFBVV95cUxPN2ZfTXd1MGNEaFF5WV8wYlgxNjAxeUMzM0VqaXZESTE2OG9IdmZKeXA4YTRSQXhTdDNIVXlvalJLVjcwSm40Q2x3ajRqUWpvV1BDaUxxV0NEY2k5VzhtbjRVYTVKUFB2OTN5Tjg5Ti1vQkJOMGhsTERuLVhiemY1TDgweUpqbWl4Y2lETVJIOVlpZU1DcGxDbkNNMFhRLUZwNmdkSjcyRG43Y05UdktJODRWNmpfZF9zcW1fTU55anZLVmhUbTczakJ4aWliTGNmT0QyYUlwMWNaTzl2T1hsTEtMWEkyMFdva0lnMFVCcHdKaUJn?oc=5",
-    "fonte": "G1"
+    "titulo": "Acampadas. PSP diz que decisão do tribunal \"vai ao encontro\" da ação da polícia",
+    "link": "https://sapo.pt/artigo/acampadas-psp-diz-que-decisao-do-tribunal-vai-ao-encontro-da-acao-da-policia-6ae8cd9931ea1893452ec85d",
+    "fonte": "SAPO"
    },
    {
-    "titulo": "Filha de brasileiros era copilota de avião que caiu na Flórida e deixou 9 mortos",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTDl6TzhBcTQ0c3VMVUhnaXkyUTllRjJOY05wbDF0Y1NfM240QVlTUjg2a2lDaGdQSzNyVExpUm9KSU1oOUtwVS1PSXNrYjRVaVVPdEQ3dllQVFN4bTNKVF9BUHdRb1hpZ0hfZldKeDQ5TXcyS3hYUVozTzRNcHhVc1VwM1phSGdaT0RLamhlOUNsZmtnY2ZfT1h30gGoAUFVX3lxTE1JODV3OXFkWlZzSV9JcF9yc3gybTljVml4d1BzVXlYbENPblUyRDZzclJGaHppZnU1enc0UU8xamxiaFlXYnRzRmNIOU03VGFMZEJYenU5WkJoQmo0dUp2OFc4VmlMYUNKTnF4M0J1VTQyN0NPdldNUnQ1MnE3Wmg2aTVCS2NmN1ZSbzlDcWlNUmZ1TFJ3OV9nSlo4ek96MjZnYXRQak1DUQ?oc=5",
-    "fonte": "G1"
+    "titulo": "Trump não vai \"pensar duas vezes\" em perdoar aliados",
+    "link": "https://sapo.pt/artigo/trump-nao-vai-pensar-duas-vezes-em-perdoar-aliados-6ae928933a69d6d8c051f5c6",
+    "fonte": "SAPO"
    }
   ],
   "sem_assunto": [
    {
-    "titulo": "10 minutos: queda de avião privado na Florida provoca nove mortos",
-    "link": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxOY2xmdFVNb05VWWVqd3FXcHZuWnprZ1ZUY1hxUFNweG5RMzNQUC1nbHJ1OHMwUlppcE0xX1ViY0ZRQ194SENURVBramVUeUpZYW1heHRkWmx3cS1kMGRUblQ4Rl84ejdINHM5WUlqcGdlWDh5a1ZjRTV3NXpCVElNazU1Q0RCNndvbk9pb1l5VjZmRTVhazFtRzhHS2VqZlI0blpPcERSNHpucE1lUGZXTTJfTzZ1UjBWTkhUYmNlRmxWMml1N1R4WVc4OUQ1c1ZfQ0QxRkdiUE9xY0dlTnR6TFRjOXZ0Mm0tbXBWRFc2b3NQZzl4elE?oc=5",
-    "fonte": "SIC Notícias"
+    "titulo": "SERTÃ: Acidente provoca ferido grave na N2",
+    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPYnJ2U0NjbzlIZnFQanJTNFk1bUFBYUtTQW5NUV9Fd1BnbkZwdjJRSGVPZi05am9sQk81NE1MSF9FNkRacnBUeDlDU1FaLWJtT0VhZkxJRkRtZWg1U1h2MTlfS29ZWC1WbW5xZUhMZHVMa19rdnIyRjF0UmtiUWxhVXR6YVo3UQ?oc=5",
+    "fonte": "Rádio Condestável"
    },
    {
-    "titulo": "Vídeo mostra queda de avião na Flórida",
-    "link": "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBYQldwZlk1SEg5UGtfRWZWQ2pmdV9ROGw4YTFOdkQ4RXlGM0hFMjY4NzFWVFB0N0pCaHNGR3c1S2VyaFQtSFFkMHJMdXA4ODJsX0Uxelg3MXdTWnE1TVpR?oc=5",
-    "fonte": "BBC"
+    "titulo": "Mercado Municipal da Sertã recebe Ecomercado a 7 de novembro",
+    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQU3pOZTBDelFqWTVEM0ZqNVFUa3gtYkFONllGOWRvd2VFa2NQcUV3S3RRSkVMM2ZxcWIzbmN1NEVvSkhsVl85S20yZVZPZGxCRTZOeXZvelhjZzkycUlpVmtYQlU2eWVjUkpqVVZmb1lHRF9WWUNla3UzeXQ5TlU3UnBtY01mWEtRblVuS2pB?oc=5",
+    "fonte": "Gazeta Rural"
    },
    {
-    "titulo": "Áudio registra desespero de piloto antes de queda de avião que matou nove pessoas na Flórida: 'Estamos sem tempo'; ouça",
-    "link": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxPWDZsTVU1NzlWbHR4Y0hvemE4dmlXVzBvYlZZeExFUVNERW5oamUzZF9LQ0ItLWVUdEdWYUpNeVV2b3NRWEdWMHczQ0kxclh0WDlka2pCcFRFMlpKZThzamhJVHdpY3dvSS1EVEtkeXFQamVnVWszdUtodnJaTkRiSjZfV0lsa0g0MUM5X2lKcVR0YUhCRkdCR1gxOFB5bkU0SDhOOVZwRzNGdmNkcDlTRG5sZDYxUHpYSTVuVkdIaFl2TXRSY2pONF85TEJsUG8zRlZrSm9sOXUyb3ppclV0MENrUU9pczZtdUZmdHFPNXNwQ0tZR2RKVjdR0gGIAkFVX3lxTE9jMndDelp4ZHY2MUZxMzFueUtSN3ZxVHpVbGpTTHVUWHY0d2VOQ05SSUVrT19NWk5xTS1BWG1fMnk3TWQ2MXdTcmYxMWl3THRoa1ZUTlhqOEpBbDB6TExlMTY2bHd5VVFlWm51VmRURWdPVEx3dVVJYV9rYnFXazBKQXAycTZ6ZXh1OVNVWEhxNUtJRXlkU1A3LUtKc2V3Y2xzXzRCdEp5YlUzTld3ajM0ZmlMSTRRcThmV2ZmTmFxeGkxbERHd0VZYm5rZWhOeDNScXgyYjQyWldqa2IwYVV5NW56RGFKN2RHMk4zWVFjczh3SDR2ZDRSX3c1MklqcERnS0JxcXYySg?oc=5",
-    "fonte": "O GLOBO"
+    "titulo": "IC8 com trânsito condicionado na Sertã devido a trabalhos de reabilitação",
+    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdTI4T3M1eVplTkY2WGlFblBpYWE4V0U4Q29HbXZGRjNKYVN5eFlxU3hJQi1BV1Zna3JsUGJsMmxlVkFnQVhlMXJWTWhqOWdWV29jZklWc2FMX2VBcGU2cUZpYUdpUmZQVnJXZ1FCa2RUZGZDb1o2aUlHaTJDazZ6Rm9JbWFGdWx2eGFZTWNjWFc4dWMxSmJDZmlnalg?oc=5",
+    "fonte": "Médio Tejo"
    },
    {
-    "titulo": "'Mayday... vamos bater no chão': áudio mostra conversa de piloto com torre durante queda de avião nos EUA",
-    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPbFEwS1QwU1FWTHA1ckZ2WDVKdDJncXk3dzVOQmV2TEFURUZKbzdfMFRVTU8xRTdBT3VzNGptaG5RRnE4WWp5cGJHQnRrSUlmM3lyRFJMZFBEeE16ZDFGMFE2dm5NaFhfdDZYVERESVdDZkdKeGpzVzR2Z05sc3V1ZDhRZEI3b1Z3RjlmT3FaanljelNiRHpvcVZMT0pwUlIwSGNpSVFrVEgyY2w1RG1rc0xkeG00SG1kaG1LcEpTWjlNQXVFVWw1YzVJRnRqdHc0YklkRm5mVWdaX1RzQUFHbmRweFpPZ9IB9AFBVV95cUxNY1ZXeGY4OEJtWVJsNF9aRWMyVzhmeDVPRHJqNG56Wm1DX1J5MFNPdm9ha1lvRkFwN1d2bDh3ZUMwa3EzYXBVdWhpUjhvbDNrYnFBSkNxSHRrQ0tGVGJ0ZDF2QU5mWHp0MnBSemhyYTlJS2hJVnRpZ2x0YjdTNVRncGlucWh3Q2w3T0JfSVBfY0dSd1loV0p6eVpxYjBOM2paRHJlSm1vSWVWZFk3c28wQzhXOW9RZTlqWnpodjJoM0ZueFIwQ3ozb0xvQWJqbUVrM04xNnR3Z1ZWbTNkdlI4V1dlSnVES3RJLUxaS2NncDYzYlN6?oc=5",
-    "fonte": "G1"
-   },
-   {
-    "titulo": "Nove mortos em queda de avião executivo na Florida, perto de Mar-a-Lago",
-    "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQa2Q5eXpYZ3g3cXc5RnIwU21oSzJUalZYUkItd3JBU19TYmpFb2F1RDdjV1VmTTJVY1UzMlBKbjNlUlJLbDhyRzgybjVLYWNvdTZzeFBIREt1bDVzVHh3V3pRZ2VpREdaZ3VrM0dtVkU1Y3l4cG9yQXF2c1AzbXZXRUhudWdZX2RDM3VHaDMxYjd5UUhPNGR2bTh5Um1PdTdiaWZVTlR3elJwOU52bXk1UVhzYlBPVUt3b0E?oc=5",
+    "titulo": "SERTÃ: Sertã recebe “A Caminho das Estrelas” para celebrar gastronomia e produtos regionais da Beira Baixa",
+    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPemxOZUZXWTRMVVJZNnAxNEhwYTlKTlNVWjllSkd6LWVkTFdyT3RIcjZxSDUtRGNkeW1kazVFYWxYb3pReFZZSFUyb2M4WlNkSzFZbW5XeVlCaUJ6cnpuSWkyZEZPb004RkpxeDVQME1wTFBUeHM3Y1cwdVl3elVLX3JFOGlGbFRpRlEzdUROMmhQdElXc2kwYjc3RGFZMmJqRjNXcFFZZGRzX0hxSWF4OHVjWGFlYVVhVzZfZHRIa2hLeC02MVNzbWJxemF4MWtOeTNFVEY3akpJYmZ4OGNuX1NNcG9Ydw?oc=5",
     "fonte": "SAPO"
+   },
+   {
+    "titulo": "SERTÃ - IC8 com condicionamentos de trânsito de 2 a 13 de novembro entre nós Sertã Este e Várzea dos Cavaleiros",
+    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOaFlFX1kwdzNSOHFjYmsxbEsyY0JIMUU0TGoza2EyNHRHcUdmOGFBck9jLXM5N2JWSzE0cWFVNEVhR3d2UnRwbkdNV3FoSjRrYkt3UGxCeVJIZTNsMy1FeWUxR3dQb0hfc1lnSkYxbjFrWXhnM1NoMUhmMFU2R2g1akhpMlp6Ull5V25Yc0ZNN0M3bE1XaXdzWFptbVBJTnRrc3NMQ0tmRW9oQzRITllRVTZGMkpOUHNyck5sdXROV3FpNm5zbnJkZWIyaDY?oc=5",
+    "fonte": "Rádio Hertz"
    }
   ],
   "excluida": [],
   "antiga": [
    {
-    "titulo": "Seis meses após queda de avião que deixou 4 mortos no RS, restaurante atingido não reabrirá e investigação segue sem conclusão",
-    "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOeVUyWGF3NDFDUUFKZjdTUUJsLWQ1SzVSRnkyZGVObUdIeFdfb2lxQV8yVG1neExMdHZWSkZjZDU2RnpOSjRLNmUyM2hSaC1Hc0xnelRUX0RGZ3pFai1jbjAtTnY4UGFhcUNlUi1tSmk2ek1CVWFwOE92eXlNNzk4Q3pfRUw4YzRkbjRfNE50LVVGTWhLM1kyVXM0djFicVRoalR6ZjYzenNFN25NSXlPc1o3Y2duOFcwU0JKWW5ZQ3BEcGQwRE16RFVDZ08zQlc2Y0HSAeABQVVfeXFMTzBMaEVfSWVOQ1c2aEFVcWc1cmJvZzNpWldDWTI1WTJ0MS1FQVY2UXR4RnpZMUxJMm9kUFNXRTluUGgxOTFnNl9BS1JUYjVmTS1ld24tMG82TTFUeEVqazNPUi1TWE50c204NEtyTTBUUHA1V0VuWlpRZ1ptVjZiMVFwQnNEQ0tDU3hKRXlmS01DWW1sOWxmbW8xekd3VEtKT3FJUmZBZW1pM3RhMmJuWDVtNXZTdnZ2VnFsckt2YW5OMU4zNWNOcExIOXhzZ0FwRWxWWGJGVnNrR3YzVUVsbkc?oc=5",
-    "fonte": "G1"
+    "titulo": "Sertã: IC8 com corte total e circulação alternada",
+    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSlRfanpOeVYtcU51VXJOUy1xOC1wdHEzbnBHYVhOcXpBWjY0ZEdVdENLdk53RzE2ajdXRmMtdzUxSVNDQXl4UGlSZE8zaTFleVozdGVnV0RDZGk5MmRlSzB6TFhadUNxV09IMWhWeVJ5VVJqQWVnWjRsdTZBUTVQR0NlcFpLbThwQktOMA?oc=5",
+    "fonte": "reconquista.pt"
    },
    {
-    "titulo": "VÍDEO mostra avião caindo em rua movimentada nos EUA; passageiros sobrevivem",
-    "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNb0RKM1BfVXNETmNWV2UtYnhzUUhVNkFpcWJLaUZNampEaGg3QmVhWlhXVW9MdGdfRTZaQy1wUlcyckV3cWxQZjlhZUVIcm9Dalh3MVVjV21NeXd0MU43VGVWMGQweUM3alNyVEc3bGMzRE1rNVBYNUh1Qzk1cWZHdXZOYjF6a0JaMjQzTzNaYk51NnR4TVhIV0RJNWRVT2FzbDNZanl5NTduV0RuUWN6R3ItSVpkSm5lckdJeHVfMkRkODJFc3ZF0gHWAUFVX3lxTE9WUDVYci1kOENWd0IwWGUtWXVrV0ttN0lzSEFWd0doUGstSEU0RWtoY1MtSFNFSVZtaWZCR1ZkUmJZTTB4Qi1zZm5yZF85cXJXSHFLS244ZFgtR1JQZHpVc3RoWXR3SGpTZTRUN3o4YnZBd2s0T2RpS09rUmpMTVMyRXpRQlYxUW1WTXNhck1INnJpc2dWQVZnTExtaFlrZl9JTXFFZXd5WDBNLXRiQUdLN0tqUm9qWnJOSmx3ZXVxNGlRWFRONkx1NDdkcXdlcjdxbnNrNHc?oc=5",
-    "fonte": "G1"
+    "titulo": "IC8 com cortes e trânsito alternado na Sertã",
+    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZm43eDZ5Yml3c0FSTzNESS1rWVJzLUYxdHU4S3dJWUlZOVd1ekNhUHhxallRSDU1bGsyeC1YMk5VQ0VHMkRlZkczSzVBemxVRG9MMEFPcldKR1g1VzgyQ2FXUzBEYlpfdmVZXzI5SHpfNjVhbFVsczJoQkZ2RHc2TXlDbEc?oc=5",
+    "fonte": "Notícias de Coimbra"
    },
    {
-    "titulo": "Avião militar caiu na Rússia. Seis pessoas morreram e uma ficou ferida",
-    "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOV21GX2k5eldfcXFta0NSdFBsckZLa3JNckpUcjYxSmQ3WllZOE10X3Y3dE43RjNKek9lSUJSN2hEc2dxQWItMVc4N1k1VnBRejRPeDhzU29rTXpGOFA2b2xPTmZRbzBuV2ZjX1dyT2s5c09GMk1mMHJWSHVfcmkweXprZldEbV90VG1tX3NJeEwycElzOXUydEpNVlh4SnpnbXd1VGF3?oc=5",
-    "fonte": "Observador"
+    "titulo": "Júlio Martins homenageado na Sertã e Cernache do Bonjardim",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORVU3c3IwV0F6YkRaWEZIOERtNTFHRk9HTVg0WjJiaWZaUkNVZUN2WTd0Y213WUxzakktOEZ3UFdJVFlKSldKRm1pdjM1c2RST3F3dFphQms5M19UNVhGdkJkSW1RN0hCQlR4eHNSdXh1bGRlczRJampsbWttQ0NhSkE5SjY4R083SFJLc3JTSHkzVjJJbFoyVE4td01RSWxBSjVwdHhQSklucXJGeUZMRnA1TEk4RUE2cE1vVWc4T052SjNoY1ZPclh5Y05US1puWlQ1NXdDdw?oc=5",
+    "fonte": "Gazeta do Interior"
    },
    {
-    "titulo": "Seis mortos na queda de avião militar russo durante voo de treino",
-    "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPTlBueWQ2UUl0UjBMSkxVRkM2NG9HVnRZeV9GdmQwU2hLOTdnNUZVazFPX2VuMTh4YVhnZmRFcnhYZ3NudkFpTW4tdDlzczBfR0wzYnFLVXMwbnJzVjY1VXV3Zm1CSk5KSlZpazFYVWtjQXo2UFpmM3R3TGk5SmhRLUU0RTZ3ZjVjaHJLbVRqeWNRRk8wbGlBSk5PbXB0anlLRzliOTY2YXpvamRZd0xIV2xn?oc=5",
-    "fonte": "Expresso"
+    "titulo": "Despiste de motociclo faz um morto no concelho da Sertã",
+    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQjhHWjM5U0RQb3dmM3liYW12Yll5TnhGRWg3RVRqZ3dHZWVzcVdWYnVRVzh5NldJNkVKQ2dkeGQtcW5BLUItcnE1STg0Q1J5N1RrVy1XWHZKRElNNHRzTGdEMk03MGFiNFpYVi1jeEstVUstbmF0THhUVEp4UWMwSWxtTGhDblUyRnVBRW92OXIxUGNPNFo5d19n0gGPAUFVX3lxTE56ZTV0Vi15UldDZHR1NE9ZMl9ldnVrM0JhQV8zMElsQTNiN041U29JV1o3SGRtd0tZYkdPaVc1bHNibDJIUk9EZ2lNQW1IVldMUlV0S09WdTV2di13bGFJX2ZaeWp4REZ2WURQV25yck91dHY3Vk5oRnB0Y045WGhhSnhrWkNOX2lCSW1RelVN?oc=5",
+    "fonte": "Jornal de Notícias"
    },
    {
-    "titulo": "Peru: treze pessoas morrem em queda de avião sobre as Linhas de Nazca",
-    "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPdF8tUUFudmJnRElWa2JwcTJueTNteVdscG5fLTNvWGRmeUFRVG1xVzZvT2t2Q1dlNm5rUVBPQ0I1amt1LS15YnJVZ3VILWJHVzRNdlA0aXdZYmJkTkszcS1zcHVQT0QyUnNTblZtMVBqcmEzYjNVZzdaLTB6Nm5mYUltNWFwNEZCNVpHZmhFakVPYmxoYU41TFJaLTFxRHNsS0kxYTQ3ZkxYZw?oc=5",
-    "fonte": "Público"
+    "titulo": "SERTÃ - Município recebeu comitiva de Granollers para intercâmbio de experiências de desenvolvimento local",
+    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWGtpY3VmMThjd1E4SzlCSTZPWUNVM3Nxa183aDV6MHJIcnVkSmd4RFJhU0ZqamFmOXBYeUZ4blRXRkhKdHpCQlQ4UTJkX0hwelo1NEVnQWtvRVNscjNxWEdHNklERjVPWHNweVZYOGVMVTZEaU8ySGtKNnZZd3VfcTdLanhmcDRLYmpHSHBnYlA2QTdXbWRCbVg0MDFWckt5RDMzZ1Flc3hVNE10RGwxQkliWE1PcG5LV3JRdll5SlFXTS1WbkE?oc=5",
+    "fonte": "Rádio Hertz"
    }
   ]
  },
