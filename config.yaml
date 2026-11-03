@@ -90,3 +90,13 @@ pesquisas:
     frequencia: "diario"
     feeds_extra: []
     paginas_extra: []
+  - nome: "Tempestade"
+    ativa: true
+    sitio: "Tempestade  kristin"
+    assuntos:
+      - "apoios / subsídios"
+      - "candidaturas / pedidos"
+    excluir: []
+    frequencia: "diario"
+    feeds_extra: []
+    paginas_extra: []
