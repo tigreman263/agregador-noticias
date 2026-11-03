@@ -22,7 +22,7 @@ pesos:
 
 # Fontes: usa o domínio, sem "www" nem "https://".
 fontes:
-  confiaveis: ["sapo.pt", "mediotejo.net", "radiocondestavel.pt", "noticiasdecoimbra.pt", "radiohertz.pt", "cmjornal.pt", "dnoticias.pt", "rtp.pt", "cnnportugal.iol.pt", "gazetadointerior.pt", "antenalivre.pt", "diariodigitalcastelobranco.pt", "observador.pt", "reconquista.pt", "centralpress.pt", "portal-energia.com"]
+  confiaveis: ["sapo.pt", "mediotejo.net", "radiocondestavel.pt", "noticiasdecoimbra.pt", "radiohertz.pt", "cmjornal.pt", "dnoticias.pt", "rtp.pt", "cnnportugal.iol.pt", "gazetadointerior.pt", "antenalivre.pt", "diariodigitalcastelobranco.pt", "observador.pt", "reconquista.pt", "centralpress.pt", "portal-energia.com", "razaoautomovel.com"]
   neutras: []
   bloqueadas: ["br"]
   feeds:
@@ -35,6 +35,7 @@ fontes:
     - {nome: "Observador", url: "https://observador.pt/feed/"}
     - {nome: "Central Press", url: "https://centralpress.pt/api/rss"}
     - {nome: "Portal Energia", url: "https://www.portal-energia.com/feed/"}
+    - {nome: "Razão Automóvel", url: "https://www.razaoautomovel.com/feed/"}
   paginas: []
 
 # Descoberta automática de fontes: 1 vez por dia procura sites novos que
