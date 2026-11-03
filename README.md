@@ -395,9 +395,6 @@ No `config.yaml` fica assim (variantes separadas por `/`):
     excluir: []
 ```
 
-Pesquisas antigas (com `consulta`, `obrigatorias`, `palavras` e notas) continuam a
-funcionar; ao editá-las no painel passam para as 4 perguntas.
-
 ### Como as palavras são comparadas
 
 - A comparação ignora maiúsculas e acentos ("subsídio" = "subsidio").
@@ -639,7 +636,7 @@ lápis no ficheiro).
 | `geral.hora_resumo` | 8 | Hora a partir da qual sai o resumo. |
 | `geral.google_news` | `pt-PT`, `PT` | Língua e país do Google Notícias. |
 | `pesos.*` | — | Só para a ordenação interna (secção 4, "Por que ordem chegam"); não decidem o que chega. |
-| `pesos.pontos` | alta 10, média 4, baixa 1 | Por palavra encontrada (no título, o dobro). Nas pesquisas de 4 perguntas, os assuntos contam como "alta". |
+| `pesos.pontos` | alta 10, média 4, baixa 1 | Por palavra encontrada (no título, o dobro). Os assuntos contam como "alta" (média e baixa ficam por usar). |
 | `pesos.fonte_confiavel` | 1.5 | Multiplicador das confiáveis. |
 | `pesos.fonte_desconhecida` | 1.0 | Multiplicador das outras. |
 | `pesos.bonus_fonte_extra` / `bonus_fonte_extra_max` | 5 / 15 | Por cada fonte extra com a mesma notícia. |
@@ -653,7 +650,7 @@ lápis no ficheiro).
 | `descoberta.max_pendentes` | 10 | Não sugere mais se tiveres estas por decidir. |
 | `descoberta.min_noticias` | 2 | Notícias relevantes mínimas para sugerir um site. |
 | `descoberta.procurar_feeds` | true | Procura o feed dos sites sugeridos. |
-| `pesquisas[]` | — | Formato simples: `nome`, `ativa`, `sitio`, `assuntos`, `excluir`, `frequencia` (`urgente`/`hora`/`diario`), `feeds_extra`, `paginas_extra`. Formato antigo (ainda aceite; o painel converte-o ao editar): `nome`, `ativa`, `consulta`, `obrigatorias`, `palavras.alta/media/baixa`, `excluir`, `limite_alerta`, `limite_resumo`, `feeds_extra`, `paginas_extra`. |
+| `pesquisas[]` | — | `nome`, `ativa`, `sitio`, `assuntos`, `excluir`, `frequencia` (`urgente`/`hora`/`diario`), `feeds_extra`, `paginas_extra` (secção 4). |
 | `vigiar[]` | `[]` | Páginas vigiadas: `nome`, `url`, `parte` (seletor CSS opcional), `frequencia` (`urgente` 15 min / `hora` / `diario` 1 vez por dia), `ativa`, `telemovel?` (secção 5A). |
 
 ---

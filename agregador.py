@@ -803,9 +803,9 @@ def avaliar(itens, pesq, cfg, estado, agora_utc):
         ids = [id_de(pesq["nome"], i["titulo"]) for i in g["itens"]]
         if any(x in estado["vistos"] for x in ids):
             continue
-        if melhor_nota >= pesq.get("limite_alerta", 25):
+        if melhor_nota >= pesq["limite_alerta"]:
             nivel = "alerta"
-        elif melhor_nota >= pesq.get("limite_resumo", 10):
+        elif melhor_nota >= pesq["limite_resumo"]:
             nivel = "resumo"
         else:
             continue
@@ -833,8 +833,6 @@ def carregar_estado():
             base.update(json.loads(ESTADO.read_text(encoding="utf-8")))
         except json.JSONDecodeError:
             print("Aviso: estado.json inválido, a recomeçar do zero.")
-    for velha in ("fontes", "feeds_aprovados", "botoes", "update_offset"):
-        base.pop(velha, None)  # restos da versão com Telegram
     return base
 
 
@@ -1798,13 +1796,12 @@ def testar_vigia(args):
     return 0
 
 
-# Formato simples das pesquisas (o do painel): "sitio", "assuntos", "excluir" e
+# As pesquisas (o painel preenche-as): "sitio", "assuntos", "excluir" e
 # "frequencia". A notícia passa se falar do sítio E de pelo menos um dos assuntos.
 # A frequência diz de quanto em quanto tempo a pesquisa é verificada e como avisa:
 #   urgente: de 15 em 15 min, mensagem logo · hora: de hora a hora, mensagem logo ·
 #   diario: de hora a hora (para não perder nada), tudo no resumo diário.
 FREQUENCIAS = {"urgente": 15, "hora": 60, "diario": 60}
-LIMITE_RESUMO_SIMPLES = 1
 
 
 def frequencia(p):
@@ -1824,18 +1821,18 @@ def consulta_google(entrada_ou_lista):
 
 
 def preparar_pesquisa(p):
-    """Traduz o formato simples para as regras internas (obrigatórias, palavras, notas).
-    As pesquisas no formato antigo (sem "assuntos") ficam como estão."""
-    if not isinstance(p, dict) or "assuntos" not in p:
+    """Traduz as 4 perguntas para as regras internas: obrigatórias (o sítio e, juntos, os
+    assuntos), palavras que pontuam (os assuntos, ou o sítio), procura do Google Notícias e
+    limites (tudo o que passa é alerta; em "diario" tudo vai para o resumo)."""
+    if not isinstance(p, dict):
         return p
     sitio = str(p.get("sitio") or "").strip()
     assuntos = [str(a).strip() for a in p.get("assuntos") or [] if str(a).strip()]
     p["obrigatorias"] = ([sitio] if sitio else []) + ([" / ".join(assuntos)] if assuntos else [])
     p["palavras"] = {"alta": assuntos or ([sitio] if sitio else []), "media": [], "baixa": []}
-    p["consulta"] = p.get("consulta") or consulta_google(sitio or assuntos)
-    p["limite_resumo"] = LIMITE_RESUMO_SIMPLES
-    # tudo o que passa é mensagem imediata, ou (diário) vai tudo para o resumo
-    p["limite_alerta"] = 10 ** 9 if frequencia(p) == "diario" else LIMITE_RESUMO_SIMPLES
+    p["consulta"] = consulta_google(sitio or assuntos)
+    p["limite_resumo"] = 1
+    p["limite_alerta"] = 10 ** 9 if frequencia(p) == "diario" else 1
     return p
 
 

@@ -104,7 +104,8 @@ obrigatórias = [sitio, todos os assuntos juntos com "/"], palavras.alta = assun
 sítio), consulta do Google = variantes do sítio (ou dos assuntos) com `OR` e expressões
 entre aspas, `limite_resumo` 1 e `limite_alerta` 1 (ou 10^9 se `diario`). Expressões com
 várias palavras ("fundo ambiental") procuram-se inteiras, nunca às palavras soltas. O
-formato antigo (sem `assuntos`) continua a funcionar; ao editá-lo no painel é convertido.
+formato antigo (`consulta`, `obrigatorias`, `palavras`, `limite_*` escritos à mão) foi
+retirado em 2026-11-03, a pedido do utilizador: nenhuma pesquisa o usava.
 
 **Experimentar** (botão no editor do painel): `workflow_dispatch` com `acao=experimentar`
 e o input `pesquisa` (JSON com um `pedido` aleatório) → `agregador.py --experimentar`
@@ -131,16 +132,15 @@ nota continua a existir por dentro, só para ordenar:
   também (fontes `local` dispensam-nas); 0 pontos descarta; fonte bloqueada e notícia com
   mais de `idade_max_horas` também.
 - Pontos: alta 10, média 4, baixa 1, ×2 no título, cada palavra (com as suas variantes "/")
-  uma vez. No formato simples, os assuntos são "alta" (ou o sítio, sem assuntos).
+  uma vez. Os assuntos são "alta" (ou o sítio, sem assuntos); média e baixa ficam vazias.
 - Comparação sem acentos nem maiúsculas; singular/plural iguais (`singular`); palavras de
   até 3 letras só inteiras; expressões de várias palavras só inteiras.
 - Bónus: +5 por fonte extra com a mesma notícia (máx. +15), +3 se tiver menos de 1 hora.
   Fonte confiável ×1,5, outra ×1,0.
 - Duplicados: títulos muito parecidos contam como uma só notícia (`agrupar`); fica a
   versão de nota mais alta. `vistos` guarda 14 dias.
-- Níveis: no formato simples `limite_resumo` = `limite_alerta` = 1 (tudo o que passa é
-  alerta), ou `limite_alerta` 10^9 em `diario` (tudo no resumo). Formato antigo: os
-  limites do config (omissão 25 e 10).
+- Níveis: `limite_resumo` = `limite_alerta` = 1 (tudo o que passa é alerta), ou
+  `limite_alerta` 10^9 em `diario` (tudo no resumo).
 - A nota decide a ordem da fila de alertas (máx. `max_alertas_por_execucao`, o excesso vai
   para o resumo) e a ordem do resumo (`mensagens_resumo` manda todas, divididas por `juntar_mensagens`;
   até 2026-11-03 só as 15 primeiras, e o resto perdia-se).
