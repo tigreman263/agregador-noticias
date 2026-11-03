@@ -4,7 +4,7 @@
 //    "agendada" do workflow, que só verifica se já passou geral.intervalo_minutos.
 // 2. Bot do Telegram (webhook): trata os botões das mensagens (Confiável / Neutra /
 //    Bloquear), gravando a decisão no config.yaml como o painel faz, e os comandos
-//    /resumo, /verificar, /estado, /fontes e /ajuda (também num teclado fixo com botões).
+//    /resumo, /verificar, /estado, /fontes, /painel e /ajuda (também num teclado fixo com botões).
 //
 // Variáveis (Settings > Variables and secrets), todas do tipo "Secret":
 //   GITHUB_TOKEN        token fine-grained só deste repositório (Contents e Actions: Read and write)
@@ -17,6 +17,7 @@
 
 const REPO_OMISSAO = "tigreman263/agregador-noticias";
 const RAMO = "main";
+const PAINEL_URL = "https://tigreman263.github.io/agregador-noticias/painel/";
 const WORKFLOW = "agregador.yml";
 const LISTAS = { c: "confiaveis", n: "neutras", b: "bloqueadas" };
 const NOMES = { confiaveis: "Confiável", neutras: "Neutra", bloqueadas: "Bloqueada" };
@@ -25,14 +26,15 @@ const COMANDOS = [
   { command: "verificar", description: "Procurar notícias agora" },
   { command: "estado", description: "Como correu a última verificação" },
   { command: "fontes", description: "Fontes sugeridas por decidir" },
+  { command: "painel", description: "Abrir o painel de gestão" },
   { command: "ajuda", description: "O que este bot faz" },
 ];
 
 // Teclado fixo por baixo da conversa: cada botão envia o texto, que vale o comando.
-const BOTOES = { "📰 Resumo": "/resumo", "🔄 Verificar": "/verificar", "📊 Estado": "/estado", "🗂 Fontes": "/fontes" };
+const BOTOES = { "📰 Resumo": "/resumo", "🔄 Verificar": "/verificar", "📊 Estado": "/estado", "🗂 Fontes": "/fontes", "🖥 Painel": "/painel" };
 const TECLADO = {
   reply_markup: {
-    keyboard: [[{ text: "📰 Resumo" }, { text: "🔄 Verificar" }], [{ text: "📊 Estado" }, { text: "🗂 Fontes" }]],
+    keyboard: [[{ text: "📰 Resumo" }, { text: "🔄 Verificar" }], [{ text: "📊 Estado" }, { text: "🗂 Fontes" }], [{ text: "🖥 Painel" }]],
     resize_keyboard: true, is_persistent: true,
   },
 };
@@ -291,12 +293,15 @@ async function tratarUpdate(env, u) {
   }
   if (cmd === "/estado") return responder(env, chat, await textoEstado(env), TECLADO);
   if (cmd === "/fontes") return enviarFontes(env, chat);
+  // os botões do teclado fixo não abrem endereços: responde com um botão que abre o painel
+  if (cmd === "/painel") return responder(env, chat, "🖥 <b>Painel de gestão</b> — pesquisas, fontes e notícias.",
+    { reply_markup: { inline_keyboard: [[{ text: "🖥 Abrir o painel", url: PAINEL_URL }]] } });
   await tg(env, "setMyCommands", { commands: COMANDOS }).catch(() => {});
   return responder(env, chat,
     "<b>Agregador de Notícias</b>\n" +
     "Envio-te os alertas e o resumo diário. Nos botões das sugestões decides as fontes (fica gravado no config.yaml).\n\n" +
     "📰 /resumo — ver as notícias do resumo diário\n🔄 /verificar — procurar notícias agora\n" +
-    "📊 /estado — como correu a última verificação\n🗂 /fontes — fontes sugeridas por decidir\n/ajuda — esta mensagem", TECLADO);
+    "📊 /estado — como correu a última verificação\n🗂 /fontes — fontes sugeridas por decidir\n🖥 /painel — abrir o painel de gestão\n/ajuda — esta mensagem", TECLADO);
 }
 
 async function tratarBotao(env, cq) {

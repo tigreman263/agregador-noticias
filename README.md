@@ -237,7 +237,7 @@ do telemóvel) faz duas coisas:
 - de 15 em 15 minutos pede ao GitHub uma verificação; o agregador só verifica a sério
   quando chega a altura de alguma pesquisa (cada uma tem a sua frequência);
 - recebe os toques nos **botões** das mensagens (Confiável / Neutra / Bloquear) e grava a
-  decisão no `config.yaml`, e responde aos comandos `/resumo`, `/verificar`, `/estado`, `/fontes` e
+  decisão no `config.yaml`, e responde aos comandos `/resumo`, `/verificar`, `/estado`, `/fontes`, `/painel` e
   `/ajuda`.
 
 O código é um só ficheiro, `extras/cloudflare/worker.js`, sem dependências.
@@ -535,10 +535,11 @@ Comandos do bot (precisam do Worker, passo 2.8):
 | `/verificar` | Procura notícias já (os alertas chegam em 2 a 3 minutos). |
 | `/estado` | Última verificação, notícias à espera e fontes por decidir. |
 | `/fontes` | Volta a mostrar as fontes sugeridas por decidir, com botões. |
+| `/painel` (botão 🖥 Painel) | Responde com um botão que abre o painel de gestão no navegador. |
 | `/ajuda` | Lista os comandos. |
 
 Depois de mandares `/start`, aparece por baixo da conversa um **teclado fixo** com os botões
-📰 Resumo, 🔄 Verificar, 📊 Estado e 🗂 Fontes (fazem o mesmo que os comandos).
+📰 Resumo, 🔄 Verificar, 📊 Estado, 🗂 Fontes e 🖥 Painel (fazem o mesmo que os comandos).
 
 Ao tocar num botão, a decisão fica gravada no `config.yaml` (commit "telegram: …") e vale
 a partir da verificação seguinte. Para desfazer, usa o painel (**Fontes**).

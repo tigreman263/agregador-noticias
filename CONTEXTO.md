@@ -181,7 +181,8 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
   Eficiência, sem assuntos). `fontes.paginas` ficou vazio.
 - **Bot do Telegram (2026-11-02)**: `/resumo` (o que espera o próximo resumo; se vazio, o
   último resumo enviado, a partir de `enviados` tipo "resumo") e teclado fixo
-  (📰 Resumo, 🔄 Verificar, 📊 Estado, 🗂 Fontes) — o Worker mapeia o texto dos botões
+  (📰 Resumo, 🔄 Verificar, 📊 Estado, 🗂 Fontes, 🖥 Painel — este responde com um botão de
+  URL para o painel, porque os botões do teclado fixo não abrem endereços) — o Worker mapeia o texto dos botões
   para os comandos e chama `setMyCommands` no /start e /ajuda. O `agregador.py` põe o
   mesmo teclado (`TECLADO`) em todas as mensagens sem botões próprios (resumo, teste).
 - O utilizador julgava que o Worker não respeitava a frequência: via execuções de 15 em

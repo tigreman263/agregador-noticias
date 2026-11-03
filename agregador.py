@@ -916,7 +916,8 @@ def _pedir_envio(corpo):
 # Teclado fixo por baixo da conversa (os botões enviam o texto; o Worker do Cloudflare
 # responde-lhes). Vai nas mensagens sem botões próprios, para aparecer sem /start.
 TECLADO = {"keyboard": [[{"text": "📰 Resumo"}, {"text": "🔄 Verificar"}],
-                        [{"text": "📊 Estado"}, {"text": "🗂 Fontes"}]],
+                        [{"text": "📊 Estado"}, {"text": "🗂 Fontes"}],
+                        [{"text": "🖥 Painel"}]],
            "resize_keyboard": True, "is_persistent": True}
 
 
