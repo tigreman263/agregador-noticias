@@ -56,6 +56,10 @@ CACHE_TELEMOVEL = RAIZ / ".cache_telemovel"
 DIAS_BLOQUEADO = 30
 FUSO_PT = ZoneInfo("Europe/Lisbon")
 SITES_BLOQUEADOS = set()   # sites que recusaram a ligação nesta execução
+SITES_LENTOS = set()       # sites que só demoraram demais (1 vez não é bloqueio)
+SITES_DIRETOS_OK = set()   # sites lidos diretamente pelo GitHub, sem o telemóvel
+LENTOS_PARA_BLOQUEIO = 3   # verificações seguidas a demorar demais = bloqueado
+HORAS_TESTE_DIRETO = 24    # de quanto em quanto tempo um bloqueado volta a ser testado
 LIDOS_TELEMOVEL = []       # fontes lidas a partir da cópia trazida pelo telemóvel
 UA = "Mozilla/5.0 (compatible; AgregadorNoticias/1.0)"
 UA_NAVEGADOR = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -187,6 +191,51 @@ class SiteInacessivel(RuntimeError):
     """O site não respondeu ou recusou a ligação (pode estar a bloquear o GitHub)."""
 
 
+class SiteLento(SiteInacessivel):
+    """O site demorou demasiado a responder (pode ser só lentidão passageira)."""
+
+
+def notar_acesso(url, erro=None):
+    """Regista como correu a ligação direta a um site, para decidir se precisa do
+    telemóvel: recusa = bloqueado; demora = lento (só bloqueia à 3.ª seguida);
+    lido sem o telemóvel = livre outra vez."""
+    d = dominio_de(url)
+    if not d or d in DOMINIOS_IGNORADOS:
+        return
+    if erro is None:
+        if ficheiro_cache(url).exists():
+            SITES_BLOQUEADOS.add(d)  # veio pelo telemóvel: continua a precisar dele
+        else:
+            SITES_DIRETOS_OK.add(d)
+        return
+    if isinstance(erro, requests.exceptions.SSLError):
+        return  # certificado estragado: não é bloqueio, o telemóvel não ajuda
+    if isinstance(erro, (requests.Timeout, SiteLento)):
+        SITES_LENTOS.add(d)
+    elif (isinstance(erro, (requests.ConnectionError, SiteInacessivel))
+          or (isinstance(erro, requests.HTTPError) and erro.response is not None
+              and erro.response.status_code in (403, 429, 451))):
+        SITES_BLOQUEADOS.add(d)
+
+
+def atualizar_bloqueados(estado, agora_utc):
+    """Depois da verificação: junta os bloqueados novos, conta os lentos e liberta os
+    que o GitHub conseguiu ler diretamente."""
+    bloq, lentos = estado.setdefault("bloqueados", {}), estado.setdefault("lentos", {})
+    for d in SITES_DIRETOS_OK - SITES_BLOQUEADOS:
+        if d in bloq:
+            print(f"O GitHub voltou a conseguir ler {d}: deixa de precisar do telemóvel.")
+        bloq.pop(d, None)
+        lentos.pop(d, None)
+    for d in SITES_LENTOS - SITES_BLOQUEADOS - SITES_DIRETOS_OK:
+        lentos[d] = int(lentos.get(d) or 0) + 1
+        if lentos[d] >= LENTOS_PARA_BLOQUEIO:
+            SITES_BLOQUEADOS.add(d)
+    for d in SITES_BLOQUEADOS:  # da próxima vez, o telemóvel vai buscá-los
+        bloq[d] = agora_utc.isoformat()
+        lentos.pop(d, None)
+
+
 class Resposta:
     """Página ou feed trazido pelo telemóvel, com a mesma forma da resposta do requests."""
 
@@ -279,7 +328,7 @@ def baixar_pagina(url):
                            "incompleto; o site não pode ser lido em segurança. Procura "
                            "um feed RSS do site ou retira-o da lista") from None
     except requests.exceptions.Timeout:
-        raise SiteInacessivel("o site demorou demasiado a responder") from None
+        raise SiteLento("o site demorou demasiado a responder") from None
     except requests.RequestException:
         raise SiteInacessivel("não consegui ligar ao site (endereço errado, site em baixo "
                               "ou a bloquear o GitHub)") from None
@@ -590,18 +639,13 @@ def recolher(pesq, cfg, falhas=None):
                   + (" (trazidas pelo telemóvel)" if pelo_telemovel else ""))
             if pelo_telemovel:
                 LIDOS_TELEMOVEL.append(nome)
-                SITES_BLOQUEADOS.add(dominio_de(url))  # continua a precisar do telemóvel
+            notar_acesso(url)
             todas += itens
         except Exception as e:  # uma fonte em baixo não pára as outras
             print(f"  aviso: falhou '{nome}' ({type(e).__name__}: {str(e)[:80]})")
             if falhas is not None:
                 falhas.append(f"{pesq['nome']} · {nome}: {type(e).__name__}: {str(e)[:120]}")
-            recusou = (isinstance(e, (requests.ConnectionError, requests.Timeout, SiteInacessivel))
-                       or (isinstance(e, requests.HTTPError) and e.response is not None
-                           and e.response.status_code in (403, 429, 451)))
-            if (recusou and not isinstance(e, requests.exceptions.SSLError)
-                    and dominio_de(url) not in DOMINIOS_IGNORADOS):
-                SITES_BLOQUEADOS.add(dominio_de(url))
+            notar_acesso(url, e)
     return todas
 
 
@@ -770,7 +814,7 @@ def avaliar(itens, pesq, cfg, estado, agora_utc):
 def carregar_estado():
     base = {"vistos": {}, "resumo": [], "adiados": [], "ultimo_resumo": "",
             "sugeridas": {}, "sugeridas_antigas": [], "dominios": {},
-            "ultima_descoberta": "", "enviados": [], "execucoes": [], "bloqueados": {},
+            "ultima_descoberta": "", "enviados": [], "execucoes": [], "bloqueados": {}, "lentos": {}, "testes_diretos": {},
             "ultima_pesquisa": {}, "vigiadas": {}}
     if ESTADO.exists():
         try:
@@ -1265,8 +1309,8 @@ def executar(cfg, simular=False, forcar_fontes=False):
             "alertas": sum(1 for c in cands if c["nivel"] == "alerta")})
         novos += cands
     vigiar_paginas(cfg, estado, agora_utc, agora, registo, simular)
-    for d in SITES_BLOQUEADOS:  # da próxima vez, o telemóvel vai buscá-los
-        estado["bloqueados"][d] = agora_utc.isoformat()
+    if not simular:
+        atualizar_bloqueados(estado, agora_utc)
     registo["pelo_telemovel"] = sorted(set(LIDOS_TELEMOVEL))
     registo["bloqueados"] = sorted(SITES_BLOQUEADOS)
 
@@ -1438,9 +1482,27 @@ def buscar_pelo_telemovel(cfg):
     'exit node'), os sites que recusam o GitHub. Guarda cópias que o agregador usa a
     seguir. Se o telemóvel não estiver disponível, não faz nada."""
     estado = carregar_estado()
+    agora_utc = datetime.now(timezone.utc)
     bloqueados = list(estado.get("bloqueados") or {})
     alvo = [x for x in todas_as_fontes(cfg)
             if x.get("telemovel") or dominio_em(dominio_de(x["url"]), bloqueados)]
+    # uma vez por dia, cada site bloqueado fica de fora do telemóvel: a verificação tenta-o
+    # diretamente e, se o GitHub já entrar, ele sai da lista dos bloqueados
+    testes = estado.setdefault("testes_diretos", {})
+    limite = agora_utc - timedelta(hours=HORAS_TESTE_DIRETO)
+    a_testar = set()
+    for x in alvo:
+        d = dominio_de(x["url"])
+        if not x.get("telemovel") and (parse_data(testes.get(d)) or limite) <= limite:
+            a_testar.add(d)
+    if a_testar:
+        for d in a_testar:
+            testes[d] = agora_utc.isoformat()
+        estado["testes_diretos"] = {d: t for d, t in testes.items() if d in bloqueados}
+        guardar_estado(estado)
+        print("Teste diário: estes sites vão ser lidos diretamente pelo GitHub, para ver se "
+              "ainda precisam do telemóvel: " + ", ".join(sorted(a_testar)))
+        alvo = [x for x in alvo if dominio_de(x["url"]) not in a_testar]
     if not alvo:
         print("Nenhum site precisa do telemóvel.")
         return 0
@@ -1656,10 +1718,9 @@ def vigiar_paginas(cfg, estado, agora_utc, agora, registo, simular=False):
                 raise RuntimeError("a página (ou a parte vigiada) não tem texto")
             if ficheiro_cache(url).exists():
                 LIDOS_TELEMOVEL.append(nome)
-                SITES_BLOQUEADOS.add(dominio_de(url))  # continua a precisar do telemóvel
+            notar_acesso(url)
         except Exception as e:  # uma página em baixo não pára as outras
-            if isinstance(e, (SiteInacessivel, requests.ConnectionError, requests.Timeout)):
-                SITES_BLOQUEADOS.add(dominio_de(url))  # da próxima vez tenta pelo telemóvel
+            notar_acesso(url, e)
             motivo = str(e)[:200] or type(e).__name__
             print(f"  falhou: {motivo}")
             resumo["falharam"] += 1

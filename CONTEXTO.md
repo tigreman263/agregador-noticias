@@ -171,6 +171,17 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 
 ## Estado atual (2026-11-02)
 
+- **Bloqueados revistos (2026-11-03)**: a Médio Tejo ficou presa no telemóvel por um
+  único ReadTimeout (2026-11-02 03:45), porque a marca renovava-se a cada leitura pelo
+  telemóvel e nunca expirava. Agora: `notar_acesso()` classifica cada ligação (recusa →
+  `SITES_BLOQUEADOS`; `Timeout`/`SiteLento` → `SITES_LENTOS`, bloqueio só à 3.ª execução
+  seguida, contador em `estado.lentos`; SSL não conta; lido sem cópia do telemóvel →
+  `SITES_DIRETOS_OK`, que tira o domínio dos bloqueados). `atualizar_bloqueados()` aplica
+  no fim de `executar` (não em simulação). No `--buscar-pelo-telemovel`, cada bloqueado
+  sem `telemovel: true` fica de fora 1 vez em 24 h (`estado.testes_diretos`), para a
+  verificação o tentar diretamente. A Câmara da Sertã continua a recusar o GitHub
+  (ligação cortada pelo servidor, Plesk/nginx).
+
 - **Páginas vigiadas (2026-11-03)**: secção `vigiar:` no config.yaml (painel → separador
   Páginas). `vigiar_paginas()` no agregador.py corre em cada execução, depois das
   pesquisas: cada página tem a sua frequência (`FREQ_VIGIAR`: 15/60/1440 min, só nas

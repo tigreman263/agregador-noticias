@@ -505,10 +505,22 @@ app**, ou pedir a lista outra vez com `/fontes`. Sem decisão em 14 dias, a suge
 
 ### 5.7 Sites que bloqueiam o GitHub
 
-Quando um site recusa a ligação ("Connection reset", "não consegui ligar ao site"), o
-agregador marca-o como bloqueado durante 30 dias. Com o telemóvel configurado
-(passo 2.7), passa a ser trazido por ele. Para obrigar um site a ir sempre pelo
-telemóvel, junta-lhe `telemovel: true` no `config.yaml`.
+Não é o GitHub que bloqueia: são alguns sites que recusam ligações vindas dos centros de
+dados (os computadores do GitHub ficam nos Estados Unidos). O telemóvel tem um endereço
+português normal, por isso entra.
+
+- Quando um site **recusa** a ligação ("Connection reset", "não consegui ligar ao site",
+  erro 403/429/451), o agregador marca-o como bloqueado e, com o telemóvel configurado
+  (passo 2.7), passa a ser trazido por ele.
+- Quando um site só **demora demasiado**, uma vez não conta: só fica bloqueado se demorar
+  em **3 verificações seguidas**.
+- **Uma vez por dia**, cada site bloqueado é lido diretamente pelo GitHub (sem o telemóvel)
+  para ver se ainda é preciso. Se entrar, sai da lista; se não, volta ao telemóvel na
+  verificação seguinte. Também sai da lista se, com o telemóvel desligado, o GitHub o
+  conseguir ler.
+- Um site bloqueado que não volte a ser usado é esquecido ao fim de 30 dias.
+- Para obrigar um site a ir sempre pelo telemóvel (sem o teste diário), junta-lhe
+  `telemovel: true` no `config.yaml`.
 
 ---
 
