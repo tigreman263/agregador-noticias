@@ -632,35 +632,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-01T16:21:24.533325+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 295,
-     "relevantes": 32,
-     "alertas": 9
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 278,
-     "relevantes": 6,
-     "alertas": 3
-    }
-   ],
-   "falhas": [],
-   "alertas": 5,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
-  {
    "ts": "2026-11-01T16:42:09.256889+00:00",
    "pesquisas": [
     {
@@ -2079,10 +2050,31 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-03T10:30:58.780137+00:00",
+   "pesquisas": [],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-03T10:16:03.556860+00:00"
+  "cm-serta.pt": "2026-11-03T10:30:58.780137+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2752,7 +2744,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-03T10:16:03.556860+00:00",
+   "verificado": "2026-11-03T10:30:58.780137+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
