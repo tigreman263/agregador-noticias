@@ -1,9 +1,11 @@
 # Agregador de Notícias
 
-Procura notícias sobre os temas que escolheres, dá a cada uma uma nota e envia-te as mais
-importantes por **Telegram**, com botões para decidires as fontes. Corre sozinho no
-GitHub, de 30 em 30 minutos (ou com a frequência que escolheres), acordado por um Worker
-gratuito do Cloudflare, sem servidor e sem custos. Geres tudo num **painel** que abres no computador ou no telemóvel.
+Procura notícias sobre os temas que escolheres e envia-te por **Telegram** as que falam
+do sítio e dos assuntos que te interessam, com botões para decidires as fontes. Também
+**vigia páginas** (editais, concursos, apoios) e avisa-te quando mudam. Corre sozinho no
+GitHub, com a frequência que escolheres em cada pesquisa (de 15 em 15 minutos, de hora a
+hora ou uma vez por dia), acordado por um Worker gratuito do Cloudflare, sem servidor e
+sem custos. Geres tudo num **painel** que abres no computador ou no telemóvel.
 
 - Repositório: https://github.com/tigreman263/agregador-noticias
 - Painel: https://tigreman263.github.io/agregador-noticias/painel/
@@ -27,7 +29,8 @@ gratuito do Cloudflare, sem servidor e sem custos. Geres tudo num **painel** que
    - [2.8 Cloudflare: despertador e botões do Telegram](#28-cloudflare-despertador-e-botões-do-telegram)
 3. [Usar o painel](#3-usar-o-painel)
 4. [Criar e afinar pesquisas](#4-criar-e-afinar-pesquisas)
-   - [Como é calculada a nota](#como-é-calculada-a-nota)
+   - [Como as palavras são comparadas](#como-as-palavras-são-comparadas)
+   - [Por que ordem chegam](#por-que-ordem-chegam)
    - [Dicas](#dicas)
 5. [Fontes de notícias](#5-fontes-de-notícias)
    - [5.1 Google Notícias](#51-google-notícias)
@@ -50,27 +53,34 @@ gratuito do Cloudflare, sem servidor e sem custos. Geres tudo num **painel** que
 
 ## 1. Como funciona
 
-De 30 em 30 minutos (por omissão; mudas no painel, em **Início → Frequência**), o GitHub
-corre o programa `agregador.py`, que:
+Cada pesquisa tem a sua frequência (**urgente**: de 15 em 15 minutos; **de hora a hora**;
+ou **uma vez por dia**, só no resumo). Quando chega a altura, o GitHub corre o programa
+`agregador.py`, que:
 
-1. **Recolhe** notícias do Google Notícias (uma pesquisa por tema), dos feeds RSS que
+1. **Recolhe** notícias do Google Notícias (uma procura por pesquisa), dos feeds RSS que
    indicares e de sites sem RSS (lê a página de notícias diretamente).
-2. **Filtra e dá nota** a cada notícia, pelas tuas palavras-chave e pela confiança da fonte.
-   Notícias repetidas em vários sites contam como uma só.
-3. **Envia por Telegram**: as de nota alta logo (alerta), as médias num resumo diário.
-4. **Guarda** o que já viu e o que fez no `estado.json`, para não repetir nada.
-5. Uma vez por dia, **procura fontes novas** e sugere-tas.
+2. **Filtra**: fica só com as que falam do **sítio** e de **pelo menos um assunto** da
+   pesquisa, e que não têm nenhuma palavra a excluir. Notícias repetidas em vários sites
+   contam como uma só.
+3. **Envia por Telegram**: nas pesquisas urgentes e de hora a hora, uma mensagem logo por
+   notícia; nas de uma vez por dia, tudo no resumo diário.
+4. **Vigia as páginas** que escolheste e avisa se o texto delas mudou.
+5. **Guarda** o que já viu e o que fez no `estado.json`, para não repetir nada.
+6. Uma vez por dia, **procura fontes novas** e sugere-tas.
 
 | Peça | O que é |
 |---|---|
 | GitHub Actions | Corre o agregador com a frequência escolhida (gratuito). |
-| `config.yaml` | As tuas pesquisas, fontes e regras. Editas no painel. |
+| `config.yaml` | As tuas pesquisas, páginas vigiadas, fontes e regras. Editas no painel. |
 | `estado.json` | A memória do agregador (o que já viu, o que enviou, o que está à espera). Gravado pelo GitHub a cada execução; não o edites. |
 | `painel.json` | Notícias que descartaste no painel. Gravado pelo painel. |
 | Painel | Página para gerir tudo e ver a atividade (GitHub Pages). |
-| Bot do Telegram | Entrega os alertas, o resumo e as fontes sugeridas (gratuito). |
+| Bot do Telegram | Entrega os alertas, o resumo, os avisos das páginas vigiadas e as fontes sugeridas (gratuito). |
 | Worker do Cloudflare | Acorda o agregador de 15 em 15 minutos (o agendador do GitHub salta execuções) e trata os botões e comandos do bot (gratuito). |
 | Telemóvel + Tailscale | Opcional: vai buscar os sites que bloqueiam o GitHub. |
+
+Os horários são os de Portugal (`geral.fuso`). Entre as 23h e as 7h (horário de silêncio)
+nada é enviado: fica guardado e chega de manhã.
 
 ---
 
@@ -88,14 +98,16 @@ que te falta. Para montar de raiz noutra conta, segue todos.
    por mês), o GitHub Pages grátis exige público e o painel lê sem token.
    Os segredos ficam sempre protegidos; num repositório público, as tuas pesquisas e as
    notícias guardadas ficam visíveis.
-3. Carrega todos os ficheiros deste projeto, mantendo as pastas: `agregador.py`,
-   `config.yaml`, `requirements.txt`, `estado.json`, `README.md`, `.nojekyll`,
-   `.gitignore`, `index.html`, `Abrir Painel.url`, `painel/index.html` e
-   `.github/workflows/agregador.yml`. (Noutra conta, troca no `Abrir Painel.url` o
-   endereço do painel pelo teu.)
-   No site do GitHub: **Add file → Upload files** para os ficheiros normais; para o
-   workflow, **Add file → Create new file**, escreve o nome
-   `.github/workflows/agregador.yml` (as barras criam as pastas) e cola o conteúdo.
+3. Carrega todos os ficheiros deste projeto, mantendo as pastas (a lista completa está
+   na [secção 9](#9-ficheiros-do-projeto)). Os indispensáveis: `agregador.py`,
+   `config.yaml`, `requirements.txt`, `estado.json`, `painel/index.html`,
+   `.github/workflows/agregador.yml`, `.github/ja_e_altura.py` e
+   `extras/cloudflare/` (`worker.js` e `wrangler.toml`). (Noutra conta, troca no
+   `Abrir Painel.url` e no `Abrir Painel.bat` o endereço do painel pelo teu.)
+   No site do GitHub: **Add file → Upload files** para os ficheiros normais; para os que
+   estão em pastas começadas por ponto, **Add file → Create new file**, escreve o nome
+   (por exemplo `.github/workflows/agregador.yml`; as barras criam as pastas) e cola o
+   conteúdo.
 
 ### 2.2 Criar o bot do Telegram
 
@@ -131,8 +143,8 @@ gh secret set TELEGRAM_CHAT_ID -R tigreman263/agregador-noticias
    "✅ O agregador de notícias está ligado ao Telegram".
 3. Corre de novo com **simular**: abre a execução e vê no registo o que seria enviado,
    sem enviar nada.
-4. A partir daqui o agregador corre sozinho de 30 em 30 minutos (podes mudar no painel,
-   secção 3). Sem o Worker do Cloudflare (passo 2.8), o GitHub salta muitas execuções.
+4. A partir daqui o agregador corre sozinho, com a frequência de cada pesquisa (secção
+   4). Sem o Worker do Cloudflare (passo 2.8), o GitHub salta muitas execuções.
 
 ### 2.5 Publicar o painel (GitHub Pages)
 
@@ -151,8 +163,8 @@ leva ao painel. Também podes abrir `painel/index.html` com duplo clique.
 
 ### 2.6 Token do painel (para editar)
 
-Sem token, o painel só mostra. Para criar pesquisas, decidir fontes, descartar notícias e
-correr ações, precisa de um token do GitHub:
+Sem token, o painel só mostra. Para criar pesquisas, vigiar páginas, decidir fontes,
+descartar notícias e correr ações, precisa de um token do GitHub:
 
 1. Abre https://github.com/settings/personal-access-tokens/new.
 2. **Token name**: `painel agregador`. **Expiration**: **No expiration** (recomendado:
@@ -231,12 +243,13 @@ alguns megabytes de dados por dia.
 
 ### 2.8 Cloudflare: despertador e botões do Telegram
 
-O agendador do GitHub salta muitas execuções (em vez de 30 em 30 minutos, corre só algumas
+O agendador do GitHub salta muitas execuções (em vez de 15 em 15 minutos, corre só algumas
 vezes por dia). Um **Worker do Cloudflare** (gratuito, sempre ligado, não precisa do PC nem
 do telemóvel) faz duas coisas:
 
 - de 15 em 15 minutos pede ao GitHub uma verificação; o agregador só verifica a sério
-  quando chega a altura de alguma pesquisa (cada uma tem a sua frequência);
+  quando chega a altura de alguma pesquisa ou página vigiada (cada uma tem a sua
+  frequência);
 - recebe os toques nos **botões** das mensagens (Confiável / Neutra / Bloquear) e grava a
   decisão no `config.yaml`, e responde aos comandos `/resumo`, `/verificar`, `/estado`, `/fontes`, `/painel` e
   `/ajuda`.
@@ -313,8 +326,9 @@ id; a outras pessoas responde apenas com o chat id delas.
 
 | Secção | O que tem |
 |---|---|
-| **Início** | Última verificação (correu bem / falhou, com link para o registo), alertas de hoje, notícias à espera, fontes por decidir. **Frequência**: de quanto em quanto tempo o agregador procura (30 minutos a 1 vez por dia), e se o despertador do Cloudflare está ligado. Botões para correr já: **Verificar agora**, **Simular** (mostra no registo o que seria enviado, sem enviar), **Testar Telegram** e **Procurar fontes novas**. |
-| **Pesquisas** | Criar, editar, pausar e apagar pesquisas. Mostra o resultado da última verificação de cada uma. |
+| **Início** | Última verificação (correu bem / falhou, com link para o registo), alertas de hoje, notícias à espera, fontes por decidir. **Frequência**: a frequência de cada pesquisa ativa e se o despertador do Cloudflare está ligado. Botões para correr já: **Verificar agora**, **Simular** (mostra no registo o que seria enviado, sem enviar), **Testar Telegram** e **Procurar fontes novas**. |
+| **Pesquisas** | Criar, editar, pausar e apagar pesquisas, com o botão **Experimentar** (secção 4). Mostra o resultado da última verificação de cada uma. |
+| **Páginas** | Páginas vigiadas: juntar (**+ Vigiar**), editar, pausar e apagar. Mostra a última verificação, o número de linhas de texto, a última mudança e o que mudou (secção 5A). |
 | **Atividade** | Execuções no GitHub, o que a app fez em cada uma (notícias lidas, novas relevantes, alertas, fontes com falha, fontes trazidas pelo telemóvel), o que foi enviado para o Telegram, e o que está à espera (alertas adiados e resumo). |
 | **Fontes** | Fontes sugeridas pela app (Confiável / Neutra / Bloquear; também se decide nos botões do Telegram), listas de confiáveis, neutras e bloqueadas, e feeds e sites gerais. |
 | **Ligação** | Repositório e token do GitHub, com as instruções para o criar. **Telegram e Cloudflare**: endereço do Worker (botão **Verificar o Worker**), estado do despertador e onde estão os segredos. |
@@ -346,26 +360,29 @@ Notas:
 
 ## 4. Criar e afinar pesquisas
 
-No painel, cada pesquisa responde a **3 perguntas**:
+No painel, cada pesquisa tem um nome e responde a **4 perguntas**:
 
 | Pergunta | Exemplo | O que faz |
 |---|---|---|
 | 1. De que sítio tem de falar? | `Sertã, sertanense` | A notícia **tem** de ter uma destas formas. Vazio = qualquer sítio. |
 | 2. E de que assuntos? (um por linha) | `apoio, subsídio, candidatura`<br>`agricultura, agrícola`<br>`floresta, florestal` | E tem de ter **pelo menos um** assunto. Na mesma linha, palavras com o mesmo sentido. |
 | 3. O que nunca te interessa? | `futebol, acidente` | Se tiver uma, é deitada fora. |
-| 4. Quando avisar? | ⚡ urgente / 🕐 de hora a hora / 📰 uma vez por dia | Urgente: verifica de 15 em 15 min e manda mensagem logo. De hora a hora: verifica de hora a hora e manda mensagem logo. Uma vez por dia: tudo vai para o resumo diário. |
+| 4. Quando avisar? | ⚡ urgente / 🕐 de hora a hora / 📰 uma vez por dia | Urgente: verifica de 15 em 15 min e manda mensagem logo. De hora a hora: verifica de hora a hora e manda mensagem logo. Uma vez por dia: verifica de hora a hora (para não perder nada) e junta tudo no resumo diário. |
 
 **Regra:** passa se tiver o **sítio E um assunto**, e nenhuma palavra a excluir. Não há
-pontos nem notas para escolher: a pergunta 4 decide se chega como mensagem ou no resumo. A procura no Google Notícias é feita pelo sítio (ou, sem sítio, pelos
-assuntos).
+pontos nem notas para escolher: a pergunta 4 decide se chega como mensagem ou no resumo.
+Sem assuntos, basta falar do sítio. A procura no Google Notícias é feita pelo sítio (ou,
+sem sítio, pelos assuntos). No painel separas as variantes por vírgulas; no
+`config.yaml` ficam separadas por `/`.
 
 **Experimentar:** antes de gravar, o botão **Experimentar** corre a pesquisa no GitHub
 (1 a 3 minutos, sem enviar nada) e mostra as notícias das últimas 48 h que passariam e as
 que foram cortadas — "não falam do sítio", "falam do sítio mas não de um assunto" (se
 alguma te interessava, falta-lhe um assunto), "palavra a excluir" e "antigas".
 
-Fontes só desta pesquisa: com `| local`, a fonte só publica deste sítio (ex.: o site da
-Câmara) e basta-lhe ter um assunto.
+**Fontes só desta pesquisa** (opcional, em **Editar → Fontes só desta pesquisa**): feeds e
+sites sem RSS que só esta pesquisa lê (secções 5.3 e 5.4). Com `| local`, a fonte só
+publica deste sítio (ex.: o site da Câmara) e basta-lhe ter um assunto.
 
 No `config.yaml` fica assim (variantes separadas por `/`):
 
@@ -379,42 +396,45 @@ No `config.yaml` fica assim (variantes separadas por `/`):
 ```
 
 Pesquisas antigas (com `consulta`, `obrigatorias`, `palavras` e notas) continuam a
-funcionar; ao editá-las no painel passam para as 3 perguntas. O que está abaixo descreve
-as regras internas, que as 3 perguntas preenchem sozinhas.
+funcionar; ao editá-las no painel passam para as 4 perguntas.
 
-### Como é calculada a nota
+### Como as palavras são comparadas
 
-`nota = (pontos das palavras + bónus) × peso da fonte`
-
-- Cada palavra conta uma vez por notícia. No título vale o dobro.
-- A comparação ignora maiúsculas e acentos ("subsídio" = "subsidio"). Palavras de até 3
-  letras só contam inteiras; as outras apanham as palavras que começam por elas
-  ("apoio" apanha "apoios").
+- A comparação ignora maiúsculas e acentos ("subsídio" = "subsidio").
 - **Singular e plural são a mesma palavra**, nos dois sentidos: "candidaturas" apanha
-  "candidatura", "agricultores" apanha "agricultor", "ações" apanha "ação".
-- **Variantes do mesmo conceito**: escreve-as juntas, separadas por `/`, numa só
-  palavra-chave: `regulação / regulamento / regulamentação`. Basta aparecer uma delas, e
-  o conceito conta **uma só vez** (se estivessem separadas por vírgulas, uma notícia com
-  "regulamento" e "regulamentação" somava os pontos duas vezes). No alerta do Telegram
-  aparece a variante encontrada. Também funciona nas obrigatórias (basta uma) e nas
-  palavras a excluir (qualquer uma descarta).
-- Bónus: +5 por cada fonte extra a publicar a mesma notícia (máx. +15) e +3 se tiver
-  menos de 1 hora.
-- Peso: fonte confiável ×1,5; outra ×1,0; bloqueada é descartada.
-- Notícias sem nenhuma palavra das prioridades (0 pontos) são ignoradas.
-- Notícias com mais de 48 horas são ignoradas.
+  "candidatura", "agricultores" apanha "agricultor", "ações" apanha "ação". Palavras
+  maiores apanham também as que começam por elas ("apoio" apanha "apoios").
+- Palavras de até 3 letras (ex.: "PRR") só contam inteiras.
+- Várias palavras juntas contam como **expressão inteira**: `fundo ambiental` não apanha
+  "fundo" nem "ambiental" soltos.
+- **Variantes** (separadas por vírgulas no painel, por `/` no `config.yaml`): basta
+  aparecer uma. No sítio, basta uma forma; num assunto, basta uma palavra da linha; nas
+  palavras a excluir, qualquer uma descarta (aqui só à palavra inteira).
+- Procura-se no título e no resumo da notícia.
+- Notícias com mais de 48 horas (`geral.idade_max_horas`) e de fontes bloqueadas são
+  ignoradas.
+
+### Por que ordem chegam
+
+Não há notas para escolher, mas a app ordena as notícias por dentro: as que têm um assunto
+no **título**, mais **assuntos**, saíram em **várias fontes**, têm **menos de 1 hora** ou
+vêm de uma **fonte confiável** ficam à frente. Isto decide:
+
+- qual versão de uma notícia repetida chega (a melhor fonte);
+- quais vão primeiro quando há mais de 5 alertas numa verificação (o resto vai para o
+  resumo);
+- quais entram no resumo diário, que mostra no máximo 15.
+
+As regras desta ordenação estão em `pesos` no `config.yaml` (secção 7); não precisas de
+mexer nelas.
 
 ### Dicas
 
-- **Evita palavras genéricas em alta.** "apoio" sozinha em alta apanhava notícias de
-  "apoio político". Põe-nas em média e usa em alta termos específicos
-  (ex.: "fundo perdido", "candidaturas", "PRR", "Portugal 2030", "PEPAC").
-- **Não repitas a mesma palavra com e sem acento, nem em singular e plural**: conta
-  como a mesma e soma a dobrar. Para palavras parecidas mas diferentes
-  ("agricultura", "agricultor", "agrícola"), junta-as com `/`:
-  `agricultura / agricultor / agrícola`.
-- **Para notícias de um lugar**, usa a obrigatória com o nome do lugar e põe-no também
-  em baixa (para dar algum ponto), e baixa a nota do resumo (a pesquisa "Sertã" usa 20 e 4).
+- **Evita assuntos genéricos sozinhos.** "apoio" apanha "apoio político" ou "apoio na
+  Argentina"; o sítio (pergunta 1) já ajuda a cortar, e a pergunta 3 corta o resto.
+- **Põe na mesma linha** as palavras com o mesmo sentido (`agricultura, agrícola,
+  agricultor`); linhas diferentes são assuntos diferentes.
+- **Não precisas de repetir** a mesma palavra com e sem acento, nem em singular e plural.
 - **Notícias brasileiras**: o Google Notícias mistura-as. Bloqueia `br` nas fontes
   (secção 5.2).
 - **Para ver o efeito** de uma mudança, carrega em **Experimentar** dentro da pesquisa.
@@ -427,15 +447,16 @@ as regras internas, que as 3 perguntas preenchem sozinhas.
 
 ### 5.1 Google Notícias
 
-Cada pesquisa procura no Google Notícias pela sua consulta, em português de Portugal
-(`geral.google_news`). Não tens de fazer nada.
+Cada pesquisa procura no Google Notícias pelo seu sítio (ou, sem sítio, pelos assuntos),
+em português de Portugal (`geral.google_news`). Não tens de fazer nada.
 
 ### 5.2 Confiáveis, neutras e bloqueadas
 
 Listas de domínios (sem `www` nem `https://`), no painel em **Fontes**:
 
-- **Confiáveis**: valem ×1,5.
-- **Neutras**: peso normal; deixam de ser sugeridas.
+- **Confiáveis**: ficam à frente das outras (secção 4, "Por que ordem chegam") e o alerta
+  diz "(confiável)".
+- **Neutras**: contam como as outras; só deixam de ser sugeridas.
 - **Bloqueadas**: as notícias delas são descartadas (também as que já estavam à espera).
 
 Um domínio apanha também os subdomínios e o que acaba nele: `sapo.pt` inclui
@@ -447,8 +468,8 @@ Um domínio apanha também os subdomínios e o que acaba nele: `sapo.pt` inclui
 - **Só de uma pesquisa** (`feeds_extra`, painel **Pesquisas → Editar → Fontes só desta
   pesquisa**): um por linha, `Nome | https://endereço-do-feed`.
 - **`local`**: junta `| local` à linha (ou `local: true` no `config.yaml`) quando a fonte só
-  publica sobre um lugar, como a de uma câmara municipal. As notícias dela dispensam as
-  palavras obrigatórias (nem todas dizem o nome do lugar no título). Usa `local` só nas
+  publica sobre um lugar, como a de uma câmara municipal. As notícias dela não precisam de
+  falar do sítio (nem todas dizem o nome do lugar), basta-lhes um assunto. Usa `local` só nas
   fontes de uma pesquisa, nunca nas gerais.
 
 ### 5.4 Sites sem RSS
@@ -487,7 +508,7 @@ Muitos sites têm feed mas não o mostram. No computador:
 python agregador.py --procurar-feeds "Sertã"
 ```
 
-Se o texto for o nome de uma pesquisa, usa a consulta e as obrigatórias dela. A app vê
+Se o texto for o nome de uma pesquisa, usa o sítio e os assuntos dela. A app vê
 que sites publicaram sobre o tema no último mês, procura o feed de cada um (os que a
 página anuncia e os endereços habituais do WordPress, Joomla, Blogger…) e mostra as
 linhas prontas a colar. Feeds de sites nacionais (SAPO, Observador…) trazem notícias de
@@ -564,13 +585,16 @@ mostra o erro); procura outra página do mesmo site.
 
 ## 6. O que recebes no Telegram
 
-- **Alertas** (nota ≥ nota de alerta): uma mensagem por notícia, até 5 por verificação
-  (`max_alertas_por_execucao`); o excesso vai para o resumo. Cada alerta traz o título (com
-  o link), a fonte, a nota, a pesquisa, as palavras encontradas e há quanto tempo saiu. Os
-  botões **⭐ Confiável** e **🚫 Bloquear fonte** decidem logo a fonte dessa notícia (numa
-  fonte já confiável, só aparece Bloquear).
-- **Resumo diário** (nota entre as duas notas): uma vez por dia, a partir das 8h
-  (`hora_resumo`), com as 15 melhores. Notícias à espera há mais de 48 horas saem da fila.
+- **Alertas** (pesquisas urgentes e de hora a hora): uma mensagem por notícia, até 5 por
+  verificação (`max_alertas_por_execucao`); o excesso vai para o resumo. Cada alerta traz o
+  título (com o link), a fonte (e se é confiável ou nova), a pesquisa, os assuntos
+  encontrados, há quanto tempo saiu e, se saiu em vários sites, quantos. Os botões
+  **⭐ Confiável** e **🚫 Bloquear fonte** decidem logo a fonte dessa notícia (numa fonte
+  já confiável, só aparece Bloquear).
+- **Resumo diário** (pesquisas de uma vez por dia, e o excesso dos alertas): uma vez por
+  dia, na primeira verificação a partir das 8h (`hora_resumo`). Mostra no máximo 15
+  notícias, pela ordem da secção 4; se houver mais, as restantes não são enviadas.
+  Notícias à espera há mais de 48 horas saem da fila.
 - **Fontes novas sugeridas**: uma vez por dia, com botões (secção 5.6).
 - **Páginas vigiadas**: 👀 ao começar, 🔎 quando o texto muda, ⚠️ se não a consegue ler
   (secção 5A).
@@ -612,11 +636,12 @@ lápis no ficheiro).
 | `geral.silencio` | `{inicio: 23, fim: 7}` | Horas sem envios. |
 | `geral.hora_resumo` | 8 | Hora a partir da qual sai o resumo. |
 | `geral.google_news` | `pt-PT`, `PT` | Língua e país do Google Notícias. |
-| `pesos.pontos` | alta 10, média 4, baixa 1 | Pontos por palavra. |
+| `pesos.*` | — | Só para a ordenação interna (secção 4, "Por que ordem chegam"); não decidem o que chega. |
+| `pesos.pontos` | alta 10, média 4, baixa 1 | Por palavra encontrada (no título, o dobro). Nas pesquisas de 4 perguntas, os assuntos contam como "alta". |
 | `pesos.fonte_confiavel` | 1.5 | Multiplicador das confiáveis. |
 | `pesos.fonte_desconhecida` | 1.0 | Multiplicador das outras. |
-| `pesos.bonus_fonte_extra` / `bonus_fonte_extra_max` | 5 / 15 | Bónus por fonte extra com a mesma notícia. |
-| `pesos.bonus_ultima_hora` | 3 | Bónus para notícias com menos de 1 hora. |
+| `pesos.bonus_fonte_extra` / `bonus_fonte_extra_max` | 5 / 15 | Por cada fonte extra com a mesma notícia. |
+| `pesos.bonus_ultima_hora` | 3 | Para notícias com menos de 1 hora. |
 | `fontes.confiaveis` / `neutras` / `bloqueadas` | — | Listas de domínios (secção 5.2). |
 | `fontes.feeds` | — | Feeds gerais: `{nome, url, local?, telemovel?}`. |
 | `fontes.paginas` | — | Sites sem RSS gerais: `{nome, url, item?, titulo?, resumo?, data?, max?, usar_feed?, local?, telemovel?}`. |
@@ -626,7 +651,7 @@ lápis no ficheiro).
 | `descoberta.max_pendentes` | 10 | Não sugere mais se tiveres estas por decidir. |
 | `descoberta.min_noticias` | 2 | Notícias relevantes mínimas para sugerir um site. |
 | `descoberta.procurar_feeds` | true | Procura o feed dos sites sugeridos. |
-| `pesquisas[]` | — | Formato simples: `nome`, `ativa`, `sitio`, `assuntos`, `excluir`, `frequencia` (`urgente`/`hora`/`diario`), `feeds_extra`, `paginas_extra`. Formato antigo: `nome`, `ativa`, `consulta`, `obrigatorias`, `palavras.alta/media/baixa`, `excluir`, `limite_alerta`, `limite_resumo`, `feeds_extra`, `paginas_extra` (secção 4). |
+| `pesquisas[]` | — | Formato simples: `nome`, `ativa`, `sitio`, `assuntos`, `excluir`, `frequencia` (`urgente`/`hora`/`diario`), `feeds_extra`, `paginas_extra`. Formato antigo (ainda aceite; o painel converte-o ao editar): `nome`, `ativa`, `consulta`, `obrigatorias`, `palavras.alta/media/baixa`, `excluir`, `limite_alerta`, `limite_resumo`, `feeds_extra`, `paginas_extra`. |
 | `vigiar[]` | `[]` | Páginas vigiadas: `nome`, `url`, `parte` (seletor CSS opcional), `frequencia` (`urgente` 15 min / `hora` / `diario` 1 vez por dia), `ativa`, `telemovel?` (secção 5A). |
 
 ---
@@ -649,6 +674,10 @@ Não é preciso para o dia a dia; serve para testar sites e procurar feeds.
 | `python agregador.py --fontes` | Execução normal + procura de fontes novas já. |
 | `python agregador.py --testar-pagina URL` | Mostra o que a app lê de um site (opções `--item`, `--titulo`, `--resumo`, `--data`, `--sem-feed`). |
 | `python agregador.py --procurar-feeds "TEXTO"` | Procura feeds RSS escondidos dos sites que publicam sobre um tema. |
+| `python agregador.py --testar-vigia URL` | Mostra o texto que a vigilância de páginas compara (opção `--parte CSS`). |
+
+Há mais dois comandos que não são para usar à mão: `--experimentar` (o botão
+**Experimentar** do painel) e `--buscar-pelo-telemovel` (o passo do telemóvel no GitHub).
 
 Para enviar a partir do computador, define antes as variáveis (PowerShell):
 
@@ -665,13 +694,14 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 
 | Ficheiro | O que é |
 |---|---|
-| `agregador.py` | Todo o programa: recolha, leitor de páginas, pontuação, Telegram, descoberta, telemóvel. |
-| `config.yaml` | Pesquisas, fontes e regras. |
+| `agregador.py` | Todo o programa: recolha, leitor de páginas, filtro e ordenação, Telegram, páginas vigiadas, descoberta, telemóvel. |
+| `config.yaml` | Pesquisas, páginas vigiadas, fontes e regras. |
 | `estado.json` | Memória do agregador, gravada pelo GitHub. Não editar. |
 | `painel.json` | Notícias descartadas e limpeza da atividade, gravadas pelo painel. |
+| `experimentar.json` | Resultado do último **Experimentar** do painel (gravado pelo GitHub). |
 | `requirements.txt` | Bibliotecas Python (requests, PyYAML, defusedxml, beautifulsoup4). |
-| `.github/workflows/agregador.yml` | Acorda de 15 em 15 minutos, verifica quando alguma pesquisa está na altura (`frequencia`), e ações manuais (normal, teste, simular, descobrir-fontes, agendada). |
-| `.github/ja_e_altura.py` | Decide, em cada execução automática, se já é altura (15 min se houver pesquisas urgentes, senão 60). |
+| `.github/workflows/agregador.yml` | Acorda de 15 em 15 minutos, verifica quando alguma pesquisa ou página está na altura (`frequencia`), e ações manuais (normal, teste, simular, descobrir-fontes, agendada, experimentar). |
+| `.github/ja_e_altura.py` | Decide, em cada execução automática, se já é altura (15 min se houver pesquisas ou páginas urgentes, senão 60). |
 | `painel/index.html` | O painel. |
 | `Abrir Painel.url` / `Abrir Painel.bat` | Abrem o painel no navegador (duplo clique no Windows). |
 | `.gitattributes` | Mantém o formato de linhas do Windows nos dois atalhos. |
@@ -692,7 +722,8 @@ lá). Antes de usar o computador, descarrega a versão atual do repositório.
 2. Carrega em **Testar Telegram**. Se falhar, o registo diz porquê: "Unauthorized" = o
    `TELEGRAM_BOT_TOKEN` está errado; "chat not found" = o `TELEGRAM_CHAT_ID` está errado ou
    ainda não carregaste em **Iniciar** no bot.
-3. Pode simplesmente não haver notícias novas com nota suficiente: vê **Atividade**.
+3. Pode simplesmente não haver notícias novas que falem do sítio e de um assunto: vê
+   **Atividade**, ou carrega em **Experimentar** na pesquisa para veres o que foi cortado.
 
 **Os botões não fazem nada / o bot não responde aos comandos**
 Abre de novo o endereço do Worker (`…workers.dev`, passo 2.8) e vê qual dos três
@@ -740,12 +771,14 @@ Depois, **Verificar agora** no painel: em **Atividade**, a fonte volta a aparece
 **pelo telemóvel**.
 
 **"0 novas relevantes"**
-Não apareceu nada de novo com pontos suficientes; as notícias já vistas não contam.
+Não apareceu nenhuma notícia nova que falasse do sítio e de um assunto; as notícias já
+vistas não contam.
 
 **Chegam notícias fora do tema**
-Vê em **Atividade** que pesquisa as trouxe e afina as palavras (secção 4): tira palavras
-genéricas de alta, junta palavras a excluir, ou bloqueia a fonte (botão **🚫 Bloquear
-fonte** no próprio alerta). As que já estão à espera podes **Descartar** no painel.
+O alerta diz que pesquisa a trouxe e que assuntos encontrou. Afina essa pesquisa
+(secção 4): troca um assunto genérico por palavras mais específicas, junta palavras a
+excluir, ou bloqueia a fonte (botão **🚫 Bloquear fonte** no próprio alerta). Usa
+**Experimentar** para confirmar. As que já estão à espera podes **Descartar** no painel.
 
 **O painel diz "Só leitura"**
 Falta o token (passo 2.6). Se diz que o token não é válido ou não tem permissão, cria
@@ -757,6 +790,10 @@ Sem token, o GitHub só deixa 60 pedidos por hora. Junta o token, ou espera uma 
 **Um site sem RSS dá 0 notícias**
 Corre `--testar-pagina` (secção 5.4): confirma que é a página com a lista de notícias;
 se o site usa JavaScript ou tem o certificado inválido, procura um feed ou retira-o.
+
+**Recebo avisos de mudança a mais numa página vigiada**
+A página tem partes que mudam sempre. Indica só a parte que interessa (secção 5A,
+"Avisos a mais?").
 
 **Mudei algo e o painel não mostra**
 O GitHub Pages demora 1 a 2 minutos a publicar mudanças ao painel; carrega em

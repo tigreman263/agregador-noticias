@@ -218,7 +218,7 @@ function yamlPesquisas(ps) {
   if (!ps.length) return "pesquisas: []\n";
   let o = "pesquisas:\n";
   ps.forEach(p => {
-    if (p.assuntos) {  // formato simples (3 perguntas); as regras antigas deixam de ser escritas
+    if (p.assuntos) {  // formato simples (4 perguntas); as regras antigas deixam de ser escritas
       o += "  - nome: " + yv(p.nome) + "\n";
       o += "    ativa: " + (p.ativa !== false) + "\n";
       o += "    sitio: " + yv(p.sitio || "") + "\n";
@@ -444,7 +444,7 @@ function vistaPesquisas() {
       if ((p.excluir || []).length) h += '<div class="xs muted">Exclui: ' + esc(p.excluir.join(", ")) + "</div>";
       h += '<div class="xs"><span class="tag' + (freqDe(p) === "urgente" ? " bad" : freqDe(p) === "diario" ? "" : " warn") + '">' + esc(FREQS[freqDe(p)][0]) + '</span> <span class="muted">' + esc(FREQS[freqDe(p)][1]) + "</span></div>";
     } else {
-      h += '<div class="sm muted">Procura: ' + esc(p.consulta || "—") + ' <span class="tag warn">formato antigo — edita para passar às 3 perguntas</span></div>';
+      h += '<div class="sm muted">Procura: ' + esc(p.consulta || "—") + ' <span class="tag warn">formato antigo — edita para passar às 4 perguntas</span></div>';
       if ((p.obrigatorias || []).length) h += '<div class="sm">Obrigatórias: ' + esc(p.obrigatorias.join(", ")) + "</div>";
       h += '<div class="wrap">' + ["alta", "media", "baixa"].map(n => (pal[n] || []).map(w => '<span class="tag ' + (n === "alta" ? "bad" : n === "media" ? "warn" : "ok") + '">' + esc(w) + "</span>").join("")).join("") + "</div>";
     }
@@ -475,7 +475,7 @@ function lerLinhasFontes(txt, antigas) {
 // "Sertã / sertanense" (config) <-> "Sertã, sertanense" (formulário)
 function paraVirgulas(t) { return String(t || "").split("/").map(x => x.trim()).filter(Boolean).join(", "); }
 function deVirgulas(t) { return String(t || "").split(/[,\/]/).map(x => x.trim()).filter(Boolean).join(" / "); }
-// As 3 perguntas de uma pesquisa (converte as do formato antigo)
+// As 4 perguntas de uma pesquisa (converte as do formato antigo)
 function perguntas(p) {
   if (p.assuntos) return { sitio: p.sitio || "", assuntos: p.assuntos.slice() };
   const ob = p.obrigatorias || [], alta = (p.palavras || {}).alta || [];
@@ -517,7 +517,7 @@ function vistaEditor() {
   const campo = (id, rot, val, dica, tipo, exemplo) => '<div class="field"><label for="' + id + '">' + rot + "</label>" + (tipo === "area" ? '<textarea id="' + id + '"' + (exemplo ? ' placeholder="' + esc(exemplo) + '"' : "") + ">" + esc(val) + "</textarea>" : '<input type="' + (tipo || "text") + '" id="' + id + '" value="' + esc(val) + '"' + (exemplo ? ' placeholder="' + esc(exemplo) + '"' : "") + ">") + (dica ? '<div class="hint">' + dica + "</div>" : "") + "</div>";
   const passo = t => '<div class="passo">' + t + "</div>";
   let h = '<div class="top"><h1>' + (S.editar >= 0 ? "Editar" : "Nova pesquisa") + '</h1><button class="btn btn-sm" data-a="cancelar">Cancelar</button></div><div class="card">';
-  if (S.editar >= 0 && !p.assuntos) h += '<div class="sm" style="background:var(--md-bg);color:var(--md-ink);border-radius:10px;padding:8px 10px">Esta pesquisa estava no formato antigo. Passei-a para as 3 perguntas — confirma, carrega em <b>Experimentar</b> e grava.</div>';
+  if (S.editar >= 0 && !p.assuntos) h += '<div class="sm" style="background:var(--md-bg);color:var(--md-ink);border-radius:10px;padding:8px 10px">Esta pesquisa estava no formato antigo. Passei-a para as 4 perguntas — confirma, carrega em <b>Experimentar</b> e grava.</div>';
   h += '<details class="guia"' + (S.editar >= 0 ? "" : " open") + "><summary>Como funciona</summary>"
     + "A notícia só chega se falar do <b>sítio</b> (pergunta 1) <b>e</b> de <b>pelo menos um</b> dos assuntos (pergunta 2), e não tiver nenhuma palavra da pergunta 3.<br><br>"
     + "Na pergunta 4 escolhes a <b>pressa</b>: urgente (de 15 em 15 min), de hora a hora, ou só no <b>resumo diário</b>. Não há pontos nem notas para escolher.<br><br>"
@@ -647,7 +647,7 @@ function vistaAtividade() {
   return h;
 }
 function itemNoticia(c, descartavel) {
-  let h = '<div class="list-item" style="display:block"><a class="title-link" href="' + esc(urlSegura(c.link)) + '" target="_blank" rel="noopener">' + esc(c.titulo) + '</a><div class="xs muted">' + esc(c.fonte) + (c.tipo === "pagina" ? "" : " · nota " + esc(c.nota) + " · " + esc(c.pesquisa)) + (c.ts ? " · " + esc(quando(c.ts)) : "") + (c.tipo === "resumo" ? ' · <span class="tag">resumo</span>' : c.tipo === "alerta" ? ' · <span class="tag info">alerta</span>' : c.tipo === "pagina" ? ' · <span class="tag warn">página mudou</span>' : "") + "</div>";
+  let h = '<div class="list-item" style="display:block"><a class="title-link" href="' + esc(urlSegura(c.link)) + '" target="_blank" rel="noopener">' + esc(c.titulo) + '</a><div class="xs muted">' + esc(c.fonte) + (c.tipo === "pagina" ? "" : " · " + esc(c.pesquisa)) + (c.ts ? " · " + esc(quando(c.ts)) : "") + (c.tipo === "resumo" ? ' · <span class="tag">resumo</span>' : c.tipo === "alerta" ? ' · <span class="tag info">alerta</span>' : c.tipo === "pagina" ? ' · <span class="tag warn">página mudou</span>' : "") + "</div>";
   if (descartavel && (c.ids || []).length) h += '<button class="btn btn-sm" style="margin-top:6px" data-a="descartar" data-ids="' + esc(c.ids.join(",")) + '">Descartar</button>';
   return h + "</div>";
 }

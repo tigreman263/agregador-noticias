@@ -62,7 +62,7 @@ vigiar:
     frequencia: "urgente"
     ativa: true
 
-# Cada pesquisa tem 3 perguntas (o painel preenche-as):
+# Cada pesquisa tem 4 perguntas (o painel preenche-as):
 #   sitio:    a notícia TEM de falar disto (variantes separadas por "/")
 #   assuntos: e de PELO MENOS UM destes (cada linha um assunto; variantes com "/")
 #   excluir:  se tiver uma destas palavras, é deitada fora

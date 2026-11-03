@@ -1,7 +1,7 @@
 // Agregador de Notícias — Worker do Cloudflare (plano gratuito).
 //
 // 1. Despertador: de 15 em 15 minutos (Cron Trigger) pede ao GitHub uma execução
-//    "agendada" do workflow, que só verifica se já passou geral.intervalo_minutos.
+//    "agendada" do workflow, que só verifica quando alguma pesquisa ou página está na altura.
 // 2. Bot do Telegram (webhook): trata os botões das mensagens (Confiável / Neutra /
 //    Bloquear), gravando a decisão no config.yaml como o painel faz, e os comandos
 //    /resumo, /verificar, /estado, /fontes, /painel e /ajuda (também num teclado fixo com botões).

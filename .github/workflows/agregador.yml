@@ -3,8 +3,9 @@ run-name: ${{ github.event_name == 'schedule' && 'automática' || (github.event.
 
 # O Worker do Cloudflare (extras/cloudflare/worker.js) chama o workflow de 15 em 15 minutos
 # com a ação "agendada", porque o agendador do GitHub salta muitas execuções; o "schedule"
-# fica como reserva. O job "decidir" vê se já passou geral.intervalo_minutos
-# (.github/ja_e_altura.py); só então corre o job "correr". Os pedidos manuais (painel, ou
+# fica como reserva. O job "decidir" (.github/ja_e_altura.py) vê se já passaram 15 min
+# (havendo alguma pesquisa ou página urgente) ou 60 min; só então corre o job "correr",
+# e cada pesquisa e página vigiada vê depois se já é a sua altura. Os pedidos manuais (painel, ou
 # /verificar no Telegram) correm sempre.
 on:
   schedule:

@@ -6,26 +6,28 @@ histórico da conversa. O guia de utilização, passo a passo, está no `README.
 ## Objetivo
 
 Agregador de notícias pessoal:
-1. O utilizador cria **pesquisas** (temas) no painel, com palavras-chave por prioridade
-   (alta, média, baixa), palavras obrigatórias e palavras a excluir.
+1. O utilizador cria **pesquisas** (temas) no painel, com 4 perguntas: sítio, assuntos,
+   palavras a excluir e frequência (secção "Pesquisas: formato simples").
 2. O agregador recolhe notícias de várias fontes e procura **fontes novas** todos os dias.
-3. Filtra e pontua pelo interesse e pela confiança da fonte (confiáveis, neutras, bloqueadas).
+3. Filtra (sítio E um assunto, sem palavras a excluir, fonte não bloqueada) e ordena por
+   uma nota interna que o utilizador não vê.
 4. Envia **alertas e um resumo diário por Telegram**, com botões para decidir as fontes.
+5. Vigia **páginas** e avisa quando o texto delas muda.
 
 ## Decisões já tomadas
 
 - **Sem custos e sem servidor.** Corre no GitHub Actions, no repositório **público**
   `tigreman263/agregador-noticias`. Público porque o Actions é ilimitado (o workflow acorda
   de 15 em 15 minutos) e o painel lê sem token; os segredos ficam protegidos.
-- **Frequência configurável (2026-10-10)**: o cron do GitHub não pode ler o config, por
-  isso o workflow corre `*/15 * * * *`; um job "decidir" sem fila (`.github/ja_e_altura.py`,
-  só biblioteca padrão; repetido no início do job "correr", que tem a fila) compara a
-  última `estado.execucoes[-1].ts` com `geral.intervalo_minutos` (por omissão 30, mínimo 30,
-  folga de 2,5 min). Se não for altura, os passos seguintes são saltados (sem commit).
-  Execuções manuais correm sempre. **Desde 2026-11-02 a frequência é por pesquisa**
-  (`frequencia: urgente|hora|diario`): o "decidir" usa 15 min se houver alguma urgente,
-  senão 60; no agregador, `pesquisa_devida` salta as pesquisas que ainda não estão na
-  altura (`estado.ultima_pesquisa`). `geral.intervalo_minutos` deixou de existir.
+- **Frequência**: o cron do GitHub não pode ler o config, por isso o workflow corre
+  `*/15 * * * *`; um job "decidir" sem fila (`.github/ja_e_altura.py`, só biblioteca
+  padrão) compara a última `estado.execucoes[-1].ts` com 15 min (se houver alguma
+  `frequencia: urgente` no config, em pesquisas ou páginas vigiadas; a regex é por linha
+  indentada) ou 60 min, com folga de 2,5 min. Se não for altura, o job "correr" é saltado
+  (sem commit). Execuções manuais correm sempre. No agregador, `pesquisa_devida` e
+  `vigia_devida` saltam, nas execuções automáticas, as pesquisas e páginas que ainda não
+  estão na altura (`estado.ultima_pesquisa`, `estado.vigiadas[url].verificado`).
+  (Até 2026-11-02 havia um `geral.intervalo_minutos` global; foi retirado.)
 - **Só Telegram (2026-11-01).** O WhatsApp (CallMeBot, 2026-10-09) aceitava os pedidos
   mas deixou de entregar; foi retirado. `enviar(texto, botoes)` usa a API oficial
   (`sendMessage`, `parse_mode: HTML`, texto escapado com `h()`/`ligacao()`), espera
@@ -45,8 +47,9 @@ Agregador de notícias pessoal:
   `TELEGRAM_CHAT_ID`): botões → `decidirFonte` edita linha a linha a secção `fontes:` do
   `config.yaml` (listas de uma linha, como o painel grava; Confiável junta o feed da
   sugestão em `estado.sugeridas`), PUT na API de conteúdos com repetição em 409; commit
-  "telegram: …". Comandos `/verificar`, `/estado`, `/fontes`, `/ajuda`; `/start` diz o chat
-  id a qualquer pessoa. Abrir a raiz do Worker (GET `/`) faz `setWebhook` + `setMyCommands`
+  "telegram: …". Comandos `/resumo`, `/verificar`, `/estado`, `/fontes`, `/painel`,
+  `/ajuda` (e um teclado fixo com os mesmos botões); `/start` e `/id` dizem o chat id a
+  qualquer pessoa. Abrir a raiz do Worker (GET `/`) faz `setWebhook` + `setMyCommands`
   e testa o token do GitHub (é idempotente). Segredos do Worker: `GITHUB_TOKEN` (Contents +
   Actions RW), `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID`. Pedido de 2026-11-01: o
   utilizador quer regularidade (fica o Cloudflare) mas com menos passos. A recolha ficou no GitHub de
@@ -62,7 +65,8 @@ Agregador de notícias pessoal:
   (datas futuras ignoradas). Notícias sem data ficam com a data da 1.ª vez vistas
   (`estado.raspadas`); na 1.ª leitura de uma página contam como antigas. Se a página
   anunciar um feed, usa-o (`usar_feed: false` ou `--sem-feed` desligam).
-- **`local: true`** (só em `feeds_extra`/`paginas_extra`): dispensa as palavras obrigatórias.
+- **`local: true`** (só em `feeds_extra`/`paginas_extra`): dispensa as obrigatórias (o
+  sítio); basta um assunto.
 - **Feeds escondidos**: `descobrir_feed` tenta os feeds anunciados, links com rss/feed/atom,
   `?format=feed&type=rss` (Joomla) e caminhos habituais. `--procurar-feeds` faz isto para
   os sites que aparecem numa pesquisa do Google Notícias.
@@ -70,7 +74,7 @@ Agregador de notícias pessoal:
   servidores do GitHub (EUA, Microsoft) em qualquer User-Agent; testado com um workflow de
   diagnóstico. Solução gratuita escolhida pelo utilizador: o telemóvel Android dele como
   saída Tailscale (exit node). Quando uma fonte recusa a ligação, o agregador marca o
-  domínio em `estado.bloqueados` (30 dias). O workflow liga-se ao Tailscale (segredos
+  domínio em `estado.bloqueados` (regras atuais em "Bloqueados revistos", abaixo). O workflow liga-se ao Tailscale (segredos
   `TS_OAUTH_CLIENT_ID`/`TS_OAUTH_SECRET`, etiqueta `tag:ci`, `--accept-dns=false`), corre
   `--buscar-pelo-telemovel` (usa o telemóvel como saída só durante esse passo e guarda
   cópias em `.cache_telemovel/`), e o agregador lê essas cópias (`obter`). Sem os segredos
@@ -115,21 +119,32 @@ execuções automáticas, as pesquisas cuja `estado.ultima_pesquisa[nome]` ainda
 a frequência (folga 2,5 min). Pedidos manuais verificam todas. `geral.intervalo_minutos`
 foi retirado do config e do painel.
 
-## Como pontua (em `agregador.py`)
+## Filtro e nota interna (em `agregador.py`)
 
-`nota = (pontos das palavras + bónus) × peso da fonte`
+Desde o formato simples, **o utilizador não vê nem escolhe notas** (2026-11-03: a nota e
+os níveis "alta/média/baixa" saíram dos alertas, do resumo e da Atividade do painel). A
+nota continua a existir por dentro, só para ordenar:
 
-- Palavra: alta 10, média 4, baixa 1. No título vale ×2. Cada palavra conta uma vez por notícia.
-- Comparação sem acentos nem maiúsculas. Palavras de até 3 letras só valem inteiras; as
-  outras aceitam plurais.
-- Palavra de exclusão: a notícia é descartada. Falta de uma palavra obrigatória: também.
-- Bónus: +5 por cada fonte extra com a mesma notícia (máx. +15) e +3 se tiver menos de 1 hora.
-- Fonte confiável ×1,5, desconhecida ×1,0, bloqueada descartada (também na fila).
-- Duplicados: títulos muito parecidos contam como uma só notícia; `vistos` guarda 14 dias.
-- Nota ≥ `limite_alerta` (por omissão 25): alerta. Entre `limite_resumo` (por omissão 10)
-  e o limite de alerta: resumo diário. Abaixo: ignorada.
-- Silêncio (23h–7h): os alertas ficam adiados. Se o envio falhar, ficam adiados e marcados
-  como vistos (não duplicam).
+`nota = (pontos das palavras + bónus) × peso da fonte` (`avaliar`, `pontos_palavras`)
+
+- Filtro: palavra de exclusão (à palavra inteira) descarta; falta de uma obrigatória
+  também (fontes `local` dispensam-nas); 0 pontos descarta; fonte bloqueada e notícia com
+  mais de `idade_max_horas` também.
+- Pontos: alta 10, média 4, baixa 1, ×2 no título, cada palavra (com as suas variantes "/")
+  uma vez. No formato simples, os assuntos são "alta" (ou o sítio, sem assuntos).
+- Comparação sem acentos nem maiúsculas; singular/plural iguais (`singular`); palavras de
+  até 3 letras só inteiras; expressões de várias palavras só inteiras.
+- Bónus: +5 por fonte extra com a mesma notícia (máx. +15), +3 se tiver menos de 1 hora.
+  Fonte confiável ×1,5, outra ×1,0.
+- Duplicados: títulos muito parecidos contam como uma só notícia (`agrupar`); fica a
+  versão de nota mais alta. `vistos` guarda 14 dias.
+- Níveis: no formato simples `limite_resumo` = `limite_alerta` = 1 (tudo o que passa é
+  alerta), ou `limite_alerta` 10^9 em `diario` (tudo no resumo). Formato antigo: os
+  limites do config (omissão 25 e 10).
+- A nota decide a ordem da fila de alertas (máx. `max_alertas_por_execucao`, o excesso vai
+  para o resumo) e as 15 do resumo (`mensagens_resumo`; as restantes são descartadas).
+- Silêncio (23h–7h): os alertas ficam adiados (até 50; o excesso vai para o resumo). Se o
+  envio falhar, ficam adiados e marcados como vistos (não duplicam).
 
 ## Descoberta de fontes
 
@@ -145,9 +160,10 @@ Ao apagar uma pesquisa, `esquecer_pesquisas_apagadas` limpa o que ela deixou no 
 |---|---|
 | `agregador.py` | Toda a lógica (recolha, raspador, pontuação, Telegram, descoberta, telemóvel). |
 | `config.yaml` | Pesquisas, fontes, pesos e horários. Editado sobretudo pelo painel. |
-| `estado.json` | Estado gravado pelo workflow: `vistos`, `resumo`, `adiados`, `sugeridas`, `dominios`, `raspadas`, `bloqueados`, `execucoes` (48), `enviados` (100). |
-| `painel.json` | Notícias descartadas no painel (`descartados`: id + data; o painel apaga as com mais de 30 dias). |
-| `.github/workflows/agregador.yml` | Acorda de 15 em 15 min, verifica se é altura (`intervalo_minutos`), Tailscale opcional e ações manuais: normal, teste, simular, descobrir-fontes. |
+| `estado.json` | Estado gravado pelo workflow: `vistos`, `resumo`, `adiados`, `ultimo_resumo`, `sugeridas`, `sugeridas_antigas`, `dominios`, `ultima_descoberta`, `raspadas`, `paginas_lidas`, `bloqueados`, `lentos`, `testes_diretos`, `ultima_pesquisa`, `vigiadas`, `execucoes` (48), `enviados` (100). |
+| `painel.json` | Notícias descartadas no painel (`descartados`: id + data; o painel apaga as com mais de 30 dias) e a limpeza da Atividade. |
+| `experimentar.json` | Resultado do botão Experimentar (gravado pelo job `experimentar`). |
+| `.github/workflows/agregador.yml` | Acorda de 15 em 15 min, verifica se é altura (`.github/ja_e_altura.py`), Tailscale opcional e ações manuais: normal, teste, simular, descobrir-fontes, agendada, experimentar. |
 | `painel/index.html` | Painel (ver abaixo). |
 | `extras/cloudflare/` | Worker do Cloudflare (`worker.js`) e `wrangler.toml`: despertador e bot do Telegram. |
 | `.nojekyll` | O GitHub Pages serve os ficheiros tal como estão. |
@@ -162,14 +178,16 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
   workflow (sem token, porque o repositório é público).
 - **Grava** com um token fine-grained do utilizador (só este repositório; Contents e
   Actions: Read and write), guardado no `localStorage`. Cada gravação é um commit "painel: …".
-  Só reescreve a secção mudada (`pesquisas` ou `fontes`) e confirma que o resto ficou igual.
+  Só reescreve a secção mudada (`pesquisas`, `fontes` ou `vigiar`) e confirma que o resto
+  ficou igual.
 - **Corre ações** por `workflow_dispatch` e acompanha a execução.
-- Secções: Início, Pesquisas, Atividade (com Descartar), Fontes, Ligação, Ajuda (README
-  renderizado com marked 12.0.2 + DOMPurify 3.1.6).
+- Separadores: Início, Pesquisas (com Experimentar), Páginas (vigiadas), Atividade (com
+  Descartar e Limpar), Fontes, Ligação, Ajuda (README renderizado com marked 12.0.2 +
+  DOMPurify 3.1.6).
 - Bibliotecas por cdnjs: js-yaml 4.1.0, marked, DOMPurify. Todo o texto vindo das notícias
   é escapado e o README é sanitizado (há um token no `localStorage`).
 
-## Estado atual (2026-11-02)
+## Estado atual (2026-11-03)
 
 - **Bloqueados revistos (2026-11-03)**: a Médio Tejo ficou presa no telemóvel por um
   único ReadTimeout (2026-11-02 03:45), porque a marca renovava-se a cada leitura pelo
@@ -180,7 +198,8 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
   no fim de `executar` (não em simulação). No `--buscar-pelo-telemovel`, cada bloqueado
   sem `telemovel: true` fica de fora 1 vez em 24 h (`estado.testes_diretos`), para a
   verificação o tentar diretamente. A Câmara da Sertã continua a recusar o GitHub
-  (ligação cortada pelo servidor, Plesk/nginx).
+  (ligação cortada pelo servidor, Plesk/nginx); a Médio Tejo voltou a ser lida
+  diretamente.
 
 - **Páginas vigiadas (2026-11-03)**: secção `vigiar:` no config.yaml (painel → separador
   Páginas). `vigiar_paginas()` no agregador.py corre em cada execução, depois das
@@ -198,11 +217,13 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 - **Recomeço do zero (2026-11-02)**: a pedido do utilizador, apagadas as notícias
   encontradas (`vistos`, `resumo`, `adiados`, `enviados`, `raspadas`, `paginas_lidas` e os
   `descartados` do `painel.json`); fontes, sugestões e bloqueados ficaram.
-- Pesquisas atuais, ambas `urgente`: **"Sertã"** (sítio Sertã / sertanense /
-  sertaginense; assuntos apoio/subsídio/incentivo/comparticipação/candidatura,
+- Pesquisas atuais: **"Sertã"** (`hora`; sítio Sertã / sertanense / sertaginense;
+  assuntos apoio/subsídio/incentivo/comparticipação/candidatura,
   agricultura/agrícola/agricultor, floresta/florestal; `cm-serta.pt` em `paginas_extra`
-  com `local: true`) e **"Apoio fundo ambiental"** (sítio Fundo Ambiental / Vale
-  Eficiência, sem assuntos). `fontes.paginas` ficou vazio.
+  com `local: true`) e **"Apoio fundo ambiental"** (`diario`; sítio Fundo Ambiental / Vale
+  Eficiência, sem assuntos). `fontes.paginas` tem também `cm-serta.pt` (geral). Página
+  vigiada: `cm-serta` (notícias da Câmara, `urgente`, página inteira). O utilizador muda
+  isto no painel: confirma sempre no `config.yaml` do GitHub.
 - **Bot do Telegram (2026-11-02)**: `/resumo` (o que espera o próximo resumo; se vazio, o
   último resumo enviado, a partir de `enviados` tipo "resumo") e teclado fixo
   (📰 Resumo, 🔄 Verificar, 📊 Estado, 🗂 Fontes, 🖥 Painel — este responde com um botão de

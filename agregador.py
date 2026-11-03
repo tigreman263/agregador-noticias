@@ -2,8 +2,10 @@
 """Agregador de Notícias.
 
 Recolhe notícias (Google Notícias, feeds RSS e páginas sem RSS), remove duplicados,
-pontua cada uma pelas palavras-chave e pela confiança da fonte, e envia alertas
-por Telegram. Também vigia páginas (secção "vigiar") e avisa quando o texto muda.
+fica com as que falam do sítio e de um assunto de cada pesquisa, e envia-as por
+Telegram (logo, ou no resumo diário). Uma nota interna, que o utilizador não vê, só
+serve para ordenar (escolher a melhor versão de uma notícia repetida e as primeiras
+do resumo). Também vigia páginas (secção "vigiar") e avisa quando o texto muda.
 Os botões das mensagens são tratados pelo Worker do Cloudflare
 (extras/cloudflare/worker.js), que grava as decisões no config.yaml.
 
@@ -16,6 +18,8 @@ Uso:
                                            # mostra o que o leitor de páginas encontra
     python agregador.py --testar-vigia URL [--parte CSS]
                                            # mostra o texto que a vigilância compara
+    python agregador.py --procurar-feeds "TEXTO"
+                                           # procura feeds RSS escondidos sobre um tema
 
 Variáveis de ambiente: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 """
@@ -1017,14 +1021,10 @@ def ligacao(titulo, url):
 def formatar_alerta(c, agora_utc):
     estado_fonte = "confiável" if c["confiavel"] else "fonte nova"
     linhas = [f'🔔 <b>{ligacao(c["titulo"], c["link"])}</b>',
-              f'{h(c["fonte"])} ({estado_fonte}) · nota {c["nota"]} · {h(c["pesquisa"])}']
-    palavras = []
-    rot = {"alta": "alta", "media": "média", "baixa": "baixa"}
-    for n in NIVEIS:
-        if c["achadas"].get(n):
-            palavras.append(f'{rot[n]}: {h(", ".join(c["achadas"][n]))}')
+              f'{h(c["fonte"])} ({estado_fonte}) · {h(c["pesquisa"])}']
+    palavras = [p for n in NIVEIS for p in c["achadas"].get(n) or []]
     if palavras:
-        linhas.append("🔑 " + " · ".join(palavras))
+        linhas.append("🔑 " + h(", ".join(palavras)))
     quando = ha_quanto_tempo(parse_data(c["data"]), agora_utc)
     extra = f' · {c["n_fontes"]} fontes' if c["n_fontes"] > 1 else ""
     linhas.append(f"🕒 {quando}{extra}")
@@ -1042,15 +1042,16 @@ def botoes_alerta(c):
 
 
 def mensagens_resumo(itens):
-    """Devolve [(texto, [notícias nessa mensagem])], com as 15 melhores."""
+    """Devolve [(texto, [notícias nessa mensagem])], com as 15 primeiras pela nota interna."""
     total = len(itens)
     itens = sorted(itens, key=lambda c: c["nota"], reverse=True)[:15]
     blocos = [f'{n}. {ligacao(c["titulo"], c["link"])}\n'
-              f'   {h(c["fonte"])} · nota {c["nota"]} · {h(c["pesquisa"])}'
+              f'   {h(c["fonte"])} · {h(c["pesquisa"])}'
               for n, c in enumerate(itens, 1)]
     if blocos:
-        resto = f" (as 15 melhores de {total})" if total > len(itens) else ""
-        blocos[0] = f"📰 <b>Resumo — {len(itens)} notícias{resto}</b>\n\n" + blocos[0]
+        resto = f" (as 15 primeiras de {total})" if total > len(itens) else ""
+        n_txt = "1 notícia" if len(itens) == 1 else f"{len(itens)} notícias"
+        blocos[0] = f"📰 <b>Resumo — {n_txt}{resto}</b>\n\n" + blocos[0]
     return [(t, [itens[i] for i in idx]) for t, idx in juntar_mensagens(blocos)]
 
 
@@ -1333,7 +1334,7 @@ def executar(cfg, simular=False, forcar_fontes=False):
         for c in imediatos:
             print("\n[ALERTA]\n" + formatar_alerta(c, agora_utc))
         for c in para_resumo:
-            print(f'\n[RESUMO] nota {c["nota"]} · {c["titulo"]} ({c["fonte"]})')
+            print(f'\n[RESUMO] {c["titulo"]} ({c["fonte"]}) · {c["pesquisa"]}')
         for sg in sugestoes:
             print("\n[FONTE NOVA]\n" + texto_sugestao(sg))
         print(f"\nSimulação: {len(imediatos)} alertas, {len(para_resumo)} para o resumo, "
