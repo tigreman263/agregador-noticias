@@ -6,100 +6,7 @@
   "5b9cd746e50a2a89": "2026-11-03T16:01:01.631263+00:00",
   "1194d62fe1b4c0cd": "2026-11-03T16:01:01.631263+00:00"
  },
- "resumo": [
-  {
-   "titulo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQY2ZlbGNtc0x3WkloR2JaVWc2dWNfb3QzbjlsQml4WFFIZHBIbnZIMzl1SFUwWWhLelRnYy0wN3VkTmlFWV81T204T3g5Zk9aRUV0Sk0zOXNQTTFrZTRoMWNQWHpIUDEwbXFhaUk0MkhHUExuRVZBaFVFcjg5bkZXdXN1UUFIQlRRY1B1S0drVG9QU01KNlYzMnZuN1NybUtFODg4TGVsZWp1SUowR1NyNUFwM3BWYUZnNi1TYlNtbktjNmxMS3pSTHVvNElJZWhmUXBIZDFMZDVVYXhHQ25vNTJ3?oc=5",
-   "dominio": "sicnoticias.pt",
-   "fonte": "SIC Notícias",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-03T12:43:27+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "b49828abc5664c4e"
-   ],
-   "ts": "2026-11-03T14:01:22.913473+00:00"
-  },
-  {
-   "titulo": "28 mil famílias vão mesmo receber Vale Eficiência",
-   "link": "https://observador.pt/2026/11/03/28-mil-familias-que-tinham-sido-deixadas-de-fora-vao-receber-vale-eficiencia/",
-   "dominio": "observador.pt",
-   "fonte": "Observador",
-   "confiavel": true,
-   "nota": 34.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-03T15:04:49+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "7733f899db4a3803"
-   ],
-   "ts": "2026-11-03T16:01:01.631263+00:00"
-  },
-  {
-   "titulo": "28 mil famílias que tinham sido deixadas de fora vão receber Vale Eficiência",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQclhyTVg1ZHV4QUF2VGEwZ19leFlhQWFUTTZwWWo5cS1GRzZXSnVEbUVVZWtzc3gwb1lMN25WSTFRczZxZnRORzlTMjZvQlBtcWRZNXhXX1RkTi1jQWxZM3k5UFZrTmpOUFpZZUFfSTg3eWJTWXBWZWxJdkphcVFGclRieFpveWtiLXAyWVFaYnZ0aFhDbng0blNPSEQ2NjFQWEpfUngxV3kzam8zbE5z?oc=5",
-   "dominio": "observador.pt",
-   "fonte": "Observador",
-   "confiavel": true,
-   "nota": 30.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-03T14:04:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "5b9cd746e50a2a89"
-   ],
-   "ts": "2026-11-03T16:01:01.631263+00:00"
-  },
-  {
-   "titulo": "Vale Eficiência regressa para 28 mil famílias que ficaram sem apoio. Nova plataforma abre no final de novembro",
-   "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPRlFETDh4djRGcl8zRzdTYnpEcnJtWlI5NFZuajZJdDItTERYMHVhUVlNSUx4NE5sVVJVdTFLYndtRjJNdEk4dlo1X0IzME9aWVB1M2RJMzhVeVo4ZjlvM2xXdHdNQUpCRHlySnp5T3NaVzRNWUFXdVRDUjR4cUR2YWswWHpFQ1lMeGRzZ0NIZ0VPdS11UTl6bEFEUHZDeFdEVG03RE0xaFJrVnR0LXZGeTVub2pBVzJNNlg2eXk3bDV1RXU0YWhRaU1QdjVEejJPdkU2aGdTcFJzQVUxUW1vSm9scmozZ2UyRTVGdktQTXQ2MnQxOEZiVnRJUkxBeThOVi1VSHVMS0YwYVQw?oc=5",
-   "dominio": "sol.iol.pt",
-   "fonte": "Jornal SOL",
-   "confiavel": false,
-   "nota": 23.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-03T15:46:31+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "1194d62fe1b4c0cd"
-   ],
-   "ts": "2026-11-03T16:01:01.631263+00:00"
-  }
- ],
+ "resumo": [],
  "adiados": [],
  "ultimo_resumo": "2026-11-03",
  "sugeridas": {},
@@ -755,36 +662,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-02T14:01:00.506808+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 285,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 267,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-02T15:00:54.481509+00:00",
    "pesquisas": [
@@ -2084,10 +1961,31 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-03T16:16:08.067208+00:00",
+   "pesquisas": [],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-03T16:01:01.631263+00:00"
+  "cm-serta.pt": "2026-11-03T16:16:08.067208+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2758,7 +2656,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-03T16:01:01.631263+00:00",
+   "verificado": "2026-11-03T16:16:08.067208+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
