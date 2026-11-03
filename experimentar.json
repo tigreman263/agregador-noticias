@@ -1,99 +1,312 @@
 {
- "pedido": "mw0ex4c2aa2e1",
- "ts": "2026-11-03T08:16:24.062111+00:00",
- "nome": "Sertã",
- "consulta": "Sertã OR sertanense OR sertaginense",
- "recolhidas": 315,
+ "pedido": "mw0t5bbe2s911",
+ "ts": "2026-11-03T14:54:02.700411+00:00",
+ "nome": "Apoio estado",
+ "consulta": "\"Carros elétricos\"",
+ "recolhidas": 555,
  "idade_max_horas": 48.0,
- "passam": [],
- "n_passam": 0,
+ "passam": [
+  {
+   "titulo": "Carros elétricos representam quase um terço das matrículas desde início do ano",
+   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNdHJfX3RGY3FibW1iaEdkN1lBV1NHZWFyd1JNZC1EWFJmdE43RkRNWWl4bmRwRHE2dURHOUNSYjczdHFTdm1nblRwVmFaTk5wVlpRWWZzeDZabU9SS3hnWmctS3lKQzExS2lmYkgxZ2psY3R0SlhVRW5hcjVSTm8yWUx1a01LM2NWaksxWHRlT2ptTjNYRkFDaDBOSy11cFExMmpudnQzZW1KVUtJS011NUdtb1p6VWFFWWp3d9IBtwFBVV95cUxQTzA4elVyVjJHTzhWYUFQUmcwQUVueUVDV2RieVJLQTFUbWVpajlYQ0FiWE5YMkdkc09wdXFkdERqRXpuOGo3REMxWTFlRkpPd2tfSzFKNzlrMzdlekQtbndkY1B2Wk5saFdIbHE1N2hJVnBVU3YxaUdXVHhKMWlnNFpPUk41UDY4RE9kaFFsdzBnQThTUFFwQWRrQzhVMDhVUDdCQnV3SHd0TUhoX0lrMHhMdVJKcDg?oc=5",
+   "fonte": "Correio da Manhã",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-02T17:08:00+00:00"
+  },
+  {
+   "titulo": "Microempresas vão ter apoios para comprar até dois carros elétricos",
+   "link": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQZjhRRlU0N2IxZUV4MmIydnFpVGFxbEdBOUZPell1U3lMRnpFenVrQXhxZXYzMlB5UlN1X1VGWUpXOC1NS3l5cFA4M0NmM0RCOHFwbEtmeTB0WVV5T3EzbVRXa1FONmR1bnF2Z19oYm9pVUZFQTBOS3RnbEFvMU1ORjZqRjhPWjNGT2NIc2hIQnNRTDhRVW8yZk1JTXdCRXhISGV4bHJYbEI0RWtK0gGnAUFVX3lxTE5jOHo1ak93dURZb1phVTE5R2dNRkFEN2w4OTNYWHpkVnpveTJCTno4WTY4ellGQnM2dlVCOVVFczJJbER2T1RlVXVPQVNGcU1pSTN0QnBMWEJnbThmMWNEYWR1bE9YUUE1OGpxUWx6UWRHdndrMFlvMVJmc21ZOWtyTmVWM3g3Qk94VDlYR3RkaENDaE1lQkZ4RTVYdGdQUVNXZnFCZFg4?oc=5",
+   "fonte": "Correio da Manhã",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-03T09:07:00+00:00"
+  },
+  {
+   "titulo": "Governo prepara apoios para microempresas comprarem até dois carros elétricos: saiba quem pode beneficiar",
+   "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQeW9fWktmVDR6S291WXdzSjJwSlV6NEtSekY2Nlk2aFJSNXlzbjBPTjNyU0djamlYM0ZZUFEzOEF0X24zSG9TNlJIYkV3VjQ4bVhfMHdoLVRWMlRJTElkUGxFcXRiN1BHMGJmQnczOFJtZFJfOWwtM0M4UnRBb1JKZ0xNVjYya0cxcU5KWWcyb05qdnFZdnpOWGYyWEd0cUk4dnRLbmNkUGxBRWloQVppUFlGRWRCejIxNF9FSzV5eWRHUmtjNkhzVFVlX25wMmozUlpR?oc=5",
+   "fonte": "Executive Digest",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-03T07:25:00+00:00"
+  },
+  {
+   "titulo": "A rede elétrica vai aguentar milhões de carros elétricos? A Alemanha fez as contas!",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOM284M29nVTBYbjBkdUdFNExZWDdjVVZIeWtNTzZVbnY5di13TEpGSVFOckFKRnJ3dDNqeEg0N3kybU9oenF0V0FzWDlCR1JGNDlEblBTWlVVcEZfUUk5SjRMVDlhQUtPYXZnbTBwUWRaak0yRk9FYmViZTk3NEEyTHBmLTlOLTh1OFM2RHlWOGY4NWp3WmJ5dGxjOXdqUGN0bHdrbTZCYTgzZC1IeGRoSk5iYmLSAboBQVVfeXFMTXhwYmdyNkdsX3JxRWdBSmxPTVVaUzFBN1NWNXhJdTdJX0pLTlVtWm03YUNvY192RmtRNlJucDRzYXNWSDhEcXJHSlg5NVNjLW9hcHFrU2VFMUNNV1FHODVmelQzc25EN3drSnZ5LW5DaHhtTVNoYU5HNmRUbHZuSkVCQmFGeTBjN1lBZXFvazk5YmpnUHVKTjNINm52alZTOUFIamZqdDFxM3FZTXQ5VkN3WGhXMGpta2V3?oc=5",
+   "fonte": "Pplware",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-02T09:33:55+00:00"
+  },
+  {
+   "titulo": "Apoio à compra de carros elétricos para carenciados vai ter comparticipação entre 70% a 90% até 15 mil euros",
+   "link": "https://cnnportugal.iol.pt/carros-eletricos/apoios/apoio-na-compra-de-carros-eletricos-para-mais-carenciados-pode-chegar-a-15-mil-euros-diz-a-ministra/20261103/6ae9ab85d34e5a653d73290b",
+   "fonte": "CNN Portugal",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-03T09:38:00+00:00"
+  },
+  {
+   "titulo": "Apoio na compra de carros elétricos para mais carenciados pode chegar a 15 mil euros, anuncia ministra",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNUXZkaU5RQ3ByR1ZHRlpYcWxCZm5BeklTQjVUMV9qLUJYTFRDc2U1VFNpOG4yMWZtZGtVVzY4TmZ5VExJYjhhbWVNeVJ0OGhsUVA5RnhvSks0Nk1wMG15clNfeFROb1QzTG9wY3J3Qi1xcE1BZVRKS3c5WERQUGwxZTRwaXZWSHZMZ1BaTFpZQ0doMVA3V0Vua3FNUUxlcDJ2anJHRkF6d0s1YnltaVVCSFFBZFV0eDdPbW1kcE1Zb3B5MnNUTThMYktfbUk?oc=5",
+   "fonte": "Diário de Notícias",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-03T11:16:26+00:00"
+  },
+  {
+   "titulo": "Conheça os detalhes dos novos apoios para carros elétricos",
+   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxQdEVFYll3dkZwMnJldExrMFhHZ210ckhMbTFjNXZKMW8xcVh6S0ltbG1UY2ZVQTlUMmsxVGc2dGFHMWJHWWtuNTU0X0xyUVo1WTAxTTkzSU8xa1ljZzFxbUsxY1JwRUFMWVUwWEhRS1cyTEpDRjVEY2NsN3g5VWFBVnBJVUptTTJxc2RITnZCLVB4UW1NUHowMXctS2xHUHZnRUNZa3NtY9IBrAFBVV95cUxPaG8xZWR1dVFDVDZBc2JCWks4UUh6aWJWR1lJRGdtM2dTNFNBQzQtQ2J3bTZOTUxXeWU3QlBSN1Y2NTRjcXM2OUcxRTU0WnhQVkFXV1BObFctV1B1TTVtTkd4Sk0xT2hJMVlJVWpBNUZyNV90RC1QV3p1WUhyMjNwaW5RVmlMeF9saXZ2SFdUYjlfQVN1YVJLQk5wakxmTzloc252R1A0eFBKbzdk?oc=5",
+   "fonte": "Renascença",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-03T08:43:00+00:00"
+  },
+  {
+   "titulo": "Apoio para carros elétricos das famílias mais carenciadas cobre até 90% do preço",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPUzV0bkNEeUEwbTRnZndGYklKQ2ZSdmNfZ1RfZlNNY3lVX1d3SG02eUJyWmtHdUUtUU5MM1VxN0l2cGZ3MzJnbDBjTDdvZk9iWHQwTzdSdVRNOTZuQ3NybkZBZ01ITGVzYkZFRTZrMzZJZlFwZGI5YkdHbUNOMXF6MWJBYTNDYWFoMEpxVg?oc=5",
+   "fonte": "Portal Impala",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-03T10:00:48+00:00"
+  },
+  {
+   "titulo": "Governo financia até até 15 mil euros da compra de carros elétricos para famílias carenciadas",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPS1lGNXJrLWFmckhvNnF1Y05xVTFzVUtpREdCS0d1QVR1NkRUc2tfRjRQb180YUk1ZGF5eDNrWUQ0Wi1IY3BVNGtORG10ZXlXNXNITWUwcEc0djMtREFpXzRBbng0bDJhTzhqdHRGckh2WGRaeUtWaW5rRzkyVXdVcjBKVjE0NkdvRVF0Z2hiREMwVTJwM09kdHk4ZXRfRFh3dU9JNFJYem1FMzMxWGdrU1ptSG5tTmhoVkpPTmMxbmloX1V1aFlFSXlzaWNBbUU?oc=5",
+   "fonte": "Diário de Coimbra",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-03T11:14:00+00:00"
+  },
+  {
+   "titulo": "Portugal planeja auxílio de 15 mil euros para carros elétricos para famílias de baixa renda",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPdFFmdVdpUzVnVm5LOVlxYVVvOGdXLW5QRVVxM1ZZX0pHSGE3b2xkZ0RHQnhoMXlnZG1lTUZ1bzZKZWNHSVNpZ0htaXk3ckdWOFg1ckhSYnFmbl9tYUZQeEVKUHJEZDlkcFJoMTBhREZSMGhYWldFc2RYVmIwZWlhdzdzUEpIY2IyR0E4WjRRcWlpWkNRZ1dCNThRRUFYYk5lT1dYa0N3c0FGWXFCUWpuUXRQOUtVMV9yRFJWcElpem50LWhNMjhPZXBNc1ZGOGg3blYtLVJHUEtMRWN5TjVtbHp2d3BJZnlUY3c?oc=5",
+   "fonte": "The Portugal News",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-03T12:17:04+00:00"
+  },
+  {
+   "titulo": "Revista de imprensa de 3 de novembro: Depósitos a prazo, taxa mista e carros elétricos",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNaFh1TVNwM1BtY2RtdFhaVC1VcFZqQzBDdkQ4TmUzbFNWOEszS2hsVnVpU2VDdFpGZVFyNFJrZ2FTYkt0NlBaRENmRkxzLTFkSnR2bE44Z1B0WTlZZ3pLOXhsbkJ6R1IwTTBsSlZnMERiQ0tEcTB4SnM5WU9ubXV3SUdIUkF0Y3E2aHdZYzRxNkxGblZqZ2NIRG5RcVp3UHlNOTRsQTVOZzlBR2lzcUZ6TzNBSldkLXg4dGhqU3BZODZwSy1ERkdRdmYyUE5qUzdfSUwxa25zSmxVZ2FSRzdmNmYyYms?oc=5",
+   "fonte": "Contas Poupança",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-03T09:06:38+00:00"
+  },
+  {
+   "titulo": "Novos carros elétricos e tecnologia de ponta marcam cimeira da Chery na China",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPNUJFNEF2TWhGT2pjNWg3enVINjBtZW8wdlJBTjBXWXNqT3VOcGRrUTZYcDNmbkRZdGloSnZqNGQtM1ViNkFSNlM5YWR2cUpIQ29TM1RLenFwMnlEeFM0VkxLYkdwM3JicWRTbU1WUGxWQ2lwa1NMd0RobnAxTm56cHZtVkVCU09YOHlMRkZ5aVpIcldHWlVPSVA4VEN4S2RwcUduSUhwNXhGRnpWWFFwOWgxT0lhYmZ3TXBIU2ZvUWpBSVhpWGsxZ3E3UlI2YmlF?oc=5",
+   "fonte": "Automóvel Club de Portugal | ACP",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-02T18:09:59+00:00"
+  },
+  {
+   "titulo": "Portugal prevê um subsídio de 15 000 € para a aquisição de carros elétricos destinado a famílias de baixos rendimentos",
+   "link": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxPUk1tazBhMDNBNGFSdjN4VU5zdE90SFEtU3ltbS1oMFZJNUIwZnhyejg0Tm9jZWt1RDFrWHVKZFNtNWw0VzZPRmVCQWdxUF9KRzE4azRfVjBTWXZsWXlqQk1iR0cxbjJySVJ4MTNmX25xVWJGZXR1c0JpMV84dU8weTZOM0t0eUN4R0lybEJ2b2FRZ0dldmtWRzVscExRMUkta0FkVXJiNTJwcU5hQkxaajNQUFZteE1yTjBya0d4cU1NMG1YQVFlNlhSS1FuVWcySUpyZUQ5U2JKUUVSQUlUUHlxV2loTjRIeG5OVWVhN0VKeUhNa2JRdlE0MlpNX1N6dVNyd2hHOVBQa2M?oc=5",
+   "fonte": "The Portugal News",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-03T12:17:06+00:00"
+  },
+  {
+   "titulo": "Esta marca oferece garantia até 8 anos e manutenção incluída nos seus carros elétricos",
+   "link": "https://news.google.com/rss/articles/CBMijAJBVV95cUxQeWNHMEFRckJuUkZyVGhxbzFMR1dpc1ZjRGhxdDNXbjNHWlVlaHg1X2NVdFItTWJiZVRrZmZ5OVYxZVJvSFhnZGc4cVZrdnJPcHluZ1d6NkhVR1ZhVnlQX1NDSm5adFgtMU9GdzV2bkZtYWZlN052ZTBwRU80NEFNQUN6VE56UE9DUWxGVGllQjBnVW9NcTBndmtKaUpEb0RoMnJJWnY4OE1iLUltWi1nVHFTQ092a3BTVVFpM05Yc2hXWS1TQ3pwSnhBZ1hIY25IaGgtNUp6MEozNWdoaUp1aVVzWnY0dy1jSTFEa2RWWjNHdW13cENxeHNWSEhUXzd3el8zZG5MRkFVNmRi?oc=5",
+   "fonte": "Away - IOL",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-02T11:46:36+00:00"
+  },
+  {
+   "titulo": "Governo anuncia apoio até 16 mil euros para comprar carros elétricos",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQV0RxaW1OZXRpOVNfcmRtdWJKTE9GMG41V3BmSlFzWG1lSnI1MkM4R1VBb0VycVVGUGlmR0FoU05faEt1QVpuNUdlcDR5ZFdMU0NmUXJCd2EtckxLeEhPbDIwZkJxek9sRXlSaXFERFR4RXNXdFN0X1lJaE9uSk9jMkozTzczdUNaR3lPRDFuUWhkQQ?oc=5",
+   "fonte": "Magazine.HD",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-02T12:30:38+00:00"
+  },
+  {
+   "titulo": "Por que os carros elétricos precisam de sons de alerta?",
+   "link": "https://news.google.com/rss/articles/CBMifkFVX3lxTE1zZlhQNjlPTHJ1dHZhN3lfZVVpaWZYczgtcmdwTW9YSVNhWDdRMjZMSmNHa0VKNXNQRkpQaHY5c3pISGlKS0g0NDBkcHc0NFdoNmw0TVZYR3JxRU1uYVI3ZjZqaU9nNk91NXBxVU1sQ0FxUnRzVWdncE1IdFNkUQ?oc=5",
+   "fonte": "Vietnam.vn",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-03T03:02:43+00:00"
+  },
+  {
+   "titulo": "Pela primeira vez, os carros elétricos ultrapassaram as vendas combinadas de carros a gasolina e a diesel na União Europeia.",
+   "link": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNd3NpSVRtUzZpb2VhT0Vaa0x3dFA2TXZRcjZxTU5rTmZHZHNXenJSX21iSWZ3cW9sSXdJeEZGdXhqamtwZzNuZkRFVnpHd1FBaWdKSm9Mb25RSzhab1NqVVpaS05KY2otTF9pOHZLNU9ZekItSTFBa19wRTY1V3d6dFlNYWkwXzR5empWT1pneUI?oc=5",
+   "fonte": "Vietnam.vn",
+   "nivel": "alerta",
+   "achadas": {
+    "alta": [
+     "Carros elétricos"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "data": "2026-11-02T10:31:44+00:00"
+  }
+ ],
+ "n_passam": 17,
  "cortes": {
-  "sem_sitio": 207,
-  "sem_assunto": 8,
+  "sem_sitio": 0,
+  "sem_assunto": 307,
   "excluida": 0,
-  "antiga": 94
+  "antiga": 187
  },
  "exemplos": {
-  "sem_sitio": [
-   {
-    "titulo": "\"Somos todos Renata Cambra\": a resposta dos manifestantes de Lisboa ao MAI",
-    "link": "https://sapo.pt/artigo/somos-todos-renata-cambra-a-resposta-dos-manifestantes-de-lisboa-ao-mai-6ae98a183a69d6d8c05a5a1d",
-    "fonte": "SAPO"
-   },
-   {
-    "titulo": "Acampada de Lisboa recusa abandonar o Rossio durante o Mercado de Natal e pede alternativa a Moedas",
-    "link": "https://24noticias.sapo.pt/atualidade/artigos/acampada-de-lisboa-recusa-abandonar-o-rossio-durante-o-mercado-de-natal-e-pede-alternativa-a-moedas",
-    "fonte": "SAPO"
-   },
-   {
-    "titulo": "Acampada do Porto denuncia polícias à paisana a identificar manifestantes",
-    "link": "https://sapo.pt/artigo/acampada-do-porto-denuncia-policias-a-paisana-a-identificar-manifestantes-6ae92f983a69d6d8c052ad4f",
-    "fonte": "SAPO"
-   },
-   {
-    "titulo": "Acampadas. PSP diz que decisão do tribunal \"vai ao encontro\" da ação da polícia",
-    "link": "https://sapo.pt/artigo/acampadas-psp-diz-que-decisao-do-tribunal-vai-ao-encontro-da-acao-da-policia-6ae8cd9931ea1893452ec85d",
-    "fonte": "SAPO"
-   },
-   {
-    "titulo": "Trump não vai \"pensar duas vezes\" em perdoar aliados",
-    "link": "https://sapo.pt/artigo/trump-nao-vai-pensar-duas-vezes-em-perdoar-aliados-6ae928933a69d6d8c051f5c6",
-    "fonte": "SAPO"
-   }
-  ],
+  "sem_sitio": [],
   "sem_assunto": [
    {
-    "titulo": "SERTÃ: Acidente provoca ferido grave na N2",
-    "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPYnJ2U0NjbzlIZnFQanJTNFk1bUFBYUtTQW5NUV9Fd1BnbkZwdjJRSGVPZi05am9sQk81NE1MSF9FNkRacnBUeDlDU1FaLWJtT0VhZkxJRkRtZWg1U1h2MTlfS29ZWC1WbW5xZUhMZHVMa19rdnIyRjF0UmtiUWxhVXR6YVo3UQ?oc=5",
-    "fonte": "Rádio Condestável"
+    "titulo": "Novos apoios à compra de carro elétrico chegam em 2027 e em ‘vouchers’",
+    "link": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQZjh1TVpESnlJSjI3SjNPbFJqSElwRDlWY0tzeHJES1d0aVdHZjBfWXlsdFlDdFNCTjV5a1A2NGZVOG9oSV91SERIWE1POTBLdmxRVDg1V055SlhHOC1aajVWeTc1RmkwU2tfWXB5aGh3YW1FaEd0azJqSlFmUkc0TE5mRHFrZF90dFZOd2hranduamJrMDBKN2kxcEpMS2V6TU0yWWpBaHFybUFuQjRIOVNNcVpOMUZINWgtOVZqdw?oc=5",
+    "fonte": "ECO"
    },
    {
-    "titulo": "Mercado Municipal da Sertã recebe Ecomercado a 7 de novembro",
-    "link": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQU3pOZTBDelFqWTVEM0ZqNVFUa3gtYkFONllGOWRvd2VFa2NQcUV3S3RRSkVMM2ZxcWIzbmN1NEVvSkhsVl85S20yZVZPZGxCRTZOeXZvelhjZzkycUlpVmtYQlU2eWVjUkpqVVZmb1lHRF9WWUNla3UzeXQ5TlU3UnBtY01mWEtRblVuS2pB?oc=5",
-    "fonte": "Gazeta Rural"
+    "titulo": "Apoio de 15 mil euros para elétricos deixa famílias com poucas opções",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOM3drcnU3c2VLdHRybzNXT2llbU9fSGo2aF85YTRGb0E4VGZTeDZGci1hWE9iVlR0T3VpSFc0OUNXZzQ5d0dMLWdHVTFLa0JHZTR1am80QnpSSDk2MmFxMWVrWjB6anEtWWpXRXVqai1mZGVFUVNiaGRtbHN0aU1MazlQLWhLUmlpWmRBaUJyYklRRkd4aDFKdEVKYzRPUzExSjdXX2VSS29aOTdTNGJKOWwxbjdHQQ?oc=5",
+    "fonte": "RTP"
    },
    {
-    "titulo": "IC8 com trânsito condicionado na Sertã devido a trabalhos de reabilitação",
-    "link": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdTI4T3M1eVplTkY2WGlFblBpYWE4V0U4Q29HbXZGRjNKYVN5eFlxU3hJQi1BV1Zna3JsUGJsMmxlVkFnQVhlMXJWTWhqOWdWV29jZklWc2FMX2VBcGU2cUZpYUdpUmZQVnJXZ1FCa2RUZGZDb1o2aUlHaTJDazZ6Rm9JbWFGdWx2eGFZTWNjWFc4dWMxSmJDZmlnalg?oc=5",
-    "fonte": "Médio Tejo"
+    "titulo": "Governo anuncia apoios para viaturas elétricas em microempresas",
+    "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPVF9MU2ZOZnpVbDVybUFVZlA3Q3czUXlQU3NoQl9hN0VoQnAycmx1blh4Wnh3R096NS1YNHpnOXJ2d0hSMGlDUm10Y1JhNGtaWGpFUVFkc2d6cUFXNjl5VVdra2RwQUE2SHF5RDFTeTdKYks1RUtHaF85Z3pnZWZlLXJFcUNTV2wxcVVFcEMwUmktMi0takd1M19Jbw?oc=5",
+    "fonte": "Diário do Distrito"
    },
    {
-    "titulo": "SERTÃ: Sertã recebe “A Caminho das Estrelas” para celebrar gastronomia e produtos regionais da Beira Baixa",
-    "link": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxPemxOZUZXWTRMVVJZNnAxNEhwYTlKTlNVWjllSkd6LWVkTFdyT3RIcjZxSDUtRGNkeW1kazVFYWxYb3pReFZZSFUyb2M4WlNkSzFZbW5XeVlCaUJ6cnpuSWkyZEZPb004RkpxeDVQME1wTFBUeHM3Y1cwdVl3elVLX3JFOGlGbFRpRlEzdUROMmhQdElXc2kwYjc3RGFZMmJqRjNXcFFZZGRzX0hxSWF4OHVjWGFlYVVhVzZfZHRIa2hLeC02MVNzbWJxemF4MWtOeTNFVEY3akpJYmZ4OGNuX1NNcG9Ydw?oc=5",
-    "fonte": "SAPO"
+    "titulo": "Volkswagen vai passar a desmontar carros em fábrica de elétricos",
+    "link": "https://news.google.com/rss/articles/CBMingFBVV95cUxONWQzRW00bXNFWUtmT1FmbXB1M2pZalFvb05YbmFYcEZVaVBRYWRJRXFJbEdfOXlJT0RXV0xIU0t0SWpfcjVMbHJ5UWZIUW91SXd0NGx5TERSZ0NjUVA5UjVIUzljb1J1N29LRHg4OXJnS0gxVVR0LTliWHBOMjRYbFVLNEtIN1lYUkkwajNIY29HSUxNMXNUeEs4UGtoUQ?oc=5",
+    "fonte": "Revista Turbo"
    },
    {
-    "titulo": "SERTÃ - IC8 com condicionamentos de trânsito de 2 a 13 de novembro entre nós Sertã Este e Várzea dos Cavaleiros",
-    "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxOaFlFX1kwdzNSOHFjYmsxbEsyY0JIMUU0TGoza2EyNHRHcUdmOGFBck9jLXM5N2JWSzE0cWFVNEVhR3d2UnRwbkdNV3FoSjRrYkt3UGxCeVJIZTNsMy1FeWUxR3dQb0hfc1lnSkYxbjFrWXhnM1NoMUhmMFU2R2g1akhpMlp6Ull5V25Yc0ZNN0M3bE1XaXdzWFptbVBJTnRrc3NMQ0tmRW9oQzRITllRVTZGMkpOUHNyck5sdXROV3FpNm5zbnJkZWIyaDY?oc=5",
-    "fonte": "Rádio Hertz"
+    "titulo": "Um em cada três carros novos já é elétrico",
+    "link": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNeE1FM0pJMnZHdE5INmkxeWd6MTh6X29XdkFIaGVvYXJLXzFQY0tkaXlNYkVwcXU3MFo5RGZEQWR5U0xSNlMtRG92eHJQVWE1TTFEc1lhblA1bjVZcWFJWEtVMnZNTVJ1N0pPVlFSci1kM2lLaE02X3VIdDFoWTB0akZ3U00ybzRPQU9HUFVGSzRtbFI4YWlrTGRYc0NBVW80c21R?oc=5",
+    "fonte": "Jornal de Negócios"
    }
   ],
   "excluida": [],
   "antiga": [
    {
-    "titulo": "Sertã: IC8 com corte total e circulação alternada",
-    "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOSlRfanpOeVYtcU51VXJOUy1xOC1wdHEzbnBHYVhOcXpBWjY0ZEdVdENLdk53RzE2ajdXRmMtdzUxSVNDQXl4UGlSZE8zaTFleVozdGVnV0RDZGk5MmRlSzB6TFhadUNxV09IMWhWeVJ5VVJqQWVnWjRsdTZBUTVQR0NlcFpLbThwQktOMA?oc=5",
-    "fonte": "reconquista.pt"
+    "titulo": "Governo promete apoios até €16 mil para compra de carros elétricos, mas não chega a todos. O que se sabe?",
+    "link": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOU2V1N0FWZHBmUjIyS0s0UVY1Nm1lLXJ1Ung4bnpSUUFNSHlKUUlvcUszdE9fUXFZMEZZanJBYUVaZUszVWZrNHc0aC1vY2ttUk1CRUU4QmtIQ1AzNF84RjllN3ZEaDkzRGlNeE0tWE80NjFId0dvZm42QjFKV092RGUxaHZ4YkdSaDlEZ0ZqOS11V3ZNc0xMLVptRkV2WnMyQ2Rnc0dvSHh3aHNPTHp5ZHo3NWZSM0t4NFphc0dHXzRDZTN5aFc1V3NR0gHEAUFVX3lxTE5nLXZQVkJaNnFxNXRnUXNFWHhTVTludkpLUzVmaHA4N3NBUXZlMXhJZldOZUFubGlSLTFMLXNMWUxHRjBlN2Jla1ZBejFGSnJLdDNHZy1tckk3TU9oejJPbzgxSldoaUgzUjFsZExkbDBpbmMxYlNKN3c1UWN2dkN1Q0JtYnljU3pWTTNKbHRLeXdfb01YMEpTNmJCazV6aXlRUnVtRnlxcEZSTk1ndW9VbjNrUTFTUHp0c095LXhuRDhXNXk?oc=5",
+    "fonte": "SÁBADO"
    },
    {
-    "titulo": "IC8 com cortes e trânsito alternado na Sertã",
-    "link": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZm43eDZ5Yml3c0FSTzNESS1rWVJzLUYxdHU4S3dJWUlZOVd1ekNhUHhxallRSDU1bGsyeC1YMk5VQ0VHMkRlZkczSzVBemxVRG9MMEFPcldKR1g1VzgyQ2FXUzBEYlpfdmVZXzI5SHpfNjVhbFVsczJoQkZ2RHc2TXlDbEc?oc=5",
-    "fonte": "Notícias de Coimbra"
+    "titulo": "Governo anuncia novos apoios à compra de carros elétricos",
+    "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOeE92elc1MUVpbGdvTnhKeDF1NUFwM1NhUTFoRVAtOFEwQWtpaEl0RXd2NE9VTkJySW5NN0pJY0ozcE10YzBxSURjeGR2SzZRSlZaeUxJTm53bEowNjVYRGJCcVd3MDlla25BN29lMDRDUU1XNk82ay1kZHJwaHJUVnR6ekFBZWh0VU04Q1VZSHByb0VUMHVwZHBneEUzSTFScVNiWDU1WVBIbV9rcmpGWGR0TzVkUQ?oc=5",
+    "fonte": "Automóvel Club de Portugal | ACP"
    },
    {
-    "titulo": "Júlio Martins homenageado na Sertã e Cernache do Bonjardim",
-    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxORVU3c3IwV0F6YkRaWEZIOERtNTFHRk9HTVg0WjJiaWZaUkNVZUN2WTd0Y213WUxzakktOEZ3UFdJVFlKSldKRm1pdjM1c2RST3F3dFphQms5M19UNVhGdkJkSW1RN0hCQlR4eHNSdXh1bGRlczRJampsbWttQ0NhSkE5SjY4R083SFJLc3JTSHkzVjJJbFoyVE4td01RSWxBSjVwdHhQSklucXJGeUZMRnA1TEk4RUE2cE1vVWc4T052SjNoY1ZPclh5Y05US1puWlQ1NXdDdw?oc=5",
-    "fonte": "Gazeta do Interior"
-   },
-   {
-    "titulo": "Despiste de motociclo faz um morto no concelho da Sertã",
-    "link": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQQjhHWjM5U0RQb3dmM3liYW12Yll5TnhGRWg3RVRqZ3dHZWVzcVdWYnVRVzh5NldJNkVKQ2dkeGQtcW5BLUItcnE1STg0Q1J5N1RrVy1XWHZKRElNNHRzTGdEMk03MGFiNFpYVi1jeEstVUstbmF0THhUVEp4UWMwSWxtTGhDblUyRnVBRW92OXIxUGNPNFo5d19n0gGPAUFVX3lxTE56ZTV0Vi15UldDZHR1NE9ZMl9ldnVrM0JhQV8zMElsQTNiN041U29JV1o3SGRtd0tZYkdPaVc1bHNibDJIUk9EZ2lNQW1IVldMUlV0S09WdTV2di13bGFJX2ZaeWp4REZ2WURQV25yck91dHY3Vk5oRnB0Y045WGhhSnhrWkNOX2lCSW1RelVN?oc=5",
+    "titulo": "Quem ganha o salário mínimo já não tem acesso a novo apoio para carros elétricos",
+    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNN1QzN3UxVExCTWxMOG81UDVIeXZaQWU3Y28zRF9YQ3hSMlZ5RzRFcU9VbllxSG9MMHhLQjk2WGRKV09VSTZyMF9QYlFOVHRET0xmM2RRMjE0TWRtdEhid3E5d3dlRFBjak1VZUJmeFdVdW1XUHBDRXFhZ05yQ2ZKZlNXalVSa2t3SnE4Z2ZUXzlRYTl5QnhNLTRUakF2eFAtTTJVWDNCU0lEN0xLTlA3cVVibWUyVFhkbExlNEt4TTg?oc=5",
     "fonte": "Jornal de Notícias"
    },
    {
-    "titulo": "SERTÃ - Município recebeu comitiva de Granollers para intercâmbio de experiências de desenvolvimento local",
-    "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNWGtpY3VmMThjd1E4SzlCSTZPWUNVM3Nxa183aDV6MHJIcnVkSmd4RFJhU0ZqamFmOXBYeUZ4blRXRkhKdHpCQlQ4UTJkX0hwelo1NEVnQWtvRVNscjNxWEdHNklERjVPWHNweVZYOGVMVTZEaU8ySGtKNnZZd3VfcTdLanhmcDRLYmpHSHBnYlA2QTdXbWRCbVg0MDFWckt5RDMzZ1Flc3hVNE10RGwxQkliWE1PcG5LV3JRdll5SlFXTS1WbkE?oc=5",
-    "fonte": "Rádio Hertz"
+    "titulo": "Estado vai comparticipar até 80% da compra de carros elétricos para famílias com baixos rendimentos",
+    "link": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOal9OaS1qWldzTnhidmV0Slk5WGEtU2xKNjc4a1F3azI1dDFPSWFVYktpbFBaY1BZZFh3X0x3TUxxYkhKNGFJUjI1LXlfT2FWSi0yM3lfc3BzUGZPNGxpRHBRNEhhY0JxWVF5TlMtdnhYTGJKSDk2S2dMSWQtdzN2Xy1GcEwzLUNuZ0ZVdUFsdy1pUG1jMVFRSWJKVE96NHFQa2RPeHBtVEtEV2txLWd6TGNDaWF6U0lzblZLZkJ0OVZSUEZ0ODZ0MzYtdGU2bXpaNHNVbnk4UFBPbWl4?oc=5",
+    "fonte": "24 Notícias"
+   },
+   {
+    "titulo": "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
+    "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxPcURjZmEwdjctUEp0ZGgwZWlSN2xmSG0wWXIxM1B5Q0tSTFpreXdGUjBpcVo5NHU3bDNSVEZYNzhaSUhpNloycm45R2U1NG1LRTVwVDRMUmItOHJieDRvNjRyZ2RHQkVwMkJ4ajdkVHhqdm5fQ3hEVnVjMXdMZVpKVDlEV0lUenpycUpaTWV4aVBwa1ZUbFFQMTFuVWJxTTFNUDF3UzFLZUhITEcyT096R00xSWpJV2FpV3BCWFZSRG1fbHZwWGE4OTNHS1FGTlZUMS1hQ2RXMA?oc=5",
+    "fonte": "Contas Poupança"
    }
   ]
  },
