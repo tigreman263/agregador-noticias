@@ -359,7 +359,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-03T09:57:01.563249+00:00"
+   "ultima": "2026-11-03T11:01:05.086564+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -631,35 +631,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-01T17:46:06.009199+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 295,
-     "relevantes": 2,
-     "alertas": 2
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 278,
-     "relevantes": 4,
-     "alertas": 4
-    }
-   ],
-   "falhas": [],
-   "alertas": 5,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-01T18:45:59.659204+00:00",
    "pesquisas": [
@@ -2063,10 +2034,45 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-03T11:01:05.086564+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 540,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 481,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-03T10:46:19.546261+00:00"
+  "cm-serta.pt": "2026-11-03T11:01:05.086564+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2074,8 +2080,8 @@
   "mediotejo.net": "2026-11-03T09:57:01.289148+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-03T09:57:01.563249+00:00",
-  "Apoio fundo ambiental": "2026-11-03T09:57:01.563249+00:00"
+  "Sertã": "2026-11-03T11:01:05.086564+00:00",
+  "Apoio fundo ambiental": "2026-11-03T11:01:05.086564+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -2736,9 +2742,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-03T10:46:19.546261+00:00",
-   "falhas": 1,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-03T11:01:05.086564+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00"
   }
