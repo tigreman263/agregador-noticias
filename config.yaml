@@ -55,7 +55,12 @@ descoberta:
 # quando o texto da página muda (datas e horas não contam).
 #   parte: seletor CSS opcional (só essa parte da página conta)
 #   frequencia: "urgente" (15 min), "hora" ou "diario" (1 vez por dia)
-vigiar: []
+vigiar:
+  - nome: "cm-serta"
+    url: "https://cm-serta.pt/comunicacao/noticias"
+    parte: ""
+    frequencia: "hora"
+    ativa: true
 
 # Cada pesquisa tem 3 perguntas (o painel preenche-as):
 #   sitio:    a notícia TEM de falar disto (variantes separadas por "/")
