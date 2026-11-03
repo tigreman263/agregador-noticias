@@ -59,7 +59,7 @@ vigiar:
   - nome: "cm-serta"
     url: "https://cm-serta.pt/comunicacao/noticias"
     parte: ""
-    frequencia: "hora"
+    frequencia: "urgente"
     ativa: true
 
 # Cada pesquisa tem 3 perguntas (o painel preenche-as):
