@@ -669,36 +669,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-02T07:00:46.733011+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 285,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 221,
-     "relevantes": 1,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 2,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
-  {
    "ts": "2026-11-02T08:00:55.687115+00:00",
    "pesquisas": [
     {
@@ -2025,10 +1995,31 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-03T14:31:14.996922+00:00",
+   "pesquisas": [],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-03T14:16:06.126395+00:00"
+  "cm-serta.pt": "2026-11-03T14:31:14.996922+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2698,7 +2689,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-03T14:16:06.126395+00:00",
+   "verificado": "2026-11-03T14:31:14.996922+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
