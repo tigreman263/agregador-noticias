@@ -445,7 +445,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-03T03:46:02.342897+00:00"
+   "ultima": "2026-11-03T04:46:04.600842+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -695,30 +695,6 @@
  "ultima_descoberta": "2026-11-02",
  "enviados": [],
  "execucoes": [
-  {
-   "ts": "2026-10-10T22:17:10.008873+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 308,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "Câmara da Sertã",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-10-11T01:26:19.130215+00:00",
    "pesquisas": [
@@ -2133,15 +2109,46 @@
     "cm-serta.pt",
     "mediotejo.net"
    ]
+  },
+  {
+   "ts": "2026-11-03T04:46:04.600842+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 295,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 205,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "Médio Tejo",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "mediotejo.net"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-03T03:46:02.342897+00:00",
-  "mediotejo.net": "2026-11-03T03:46:02.342897+00:00"
+  "cm-serta.pt": "2026-11-03T04:46:04.600842+00:00",
+  "mediotejo.net": "2026-11-03T04:46:04.600842+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-03T03:46:02.342897+00:00",
-  "Apoio fundo ambiental": "2026-11-03T03:46:02.342897+00:00"
+  "Sertã": "2026-11-03T04:46:04.600842+00:00",
+  "Apoio fundo ambiental": "2026-11-03T04:46:04.600842+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
