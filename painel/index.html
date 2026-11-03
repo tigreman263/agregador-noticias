@@ -84,7 +84,7 @@ textarea{min-height:64px;resize:vertical}
 .doc table{border-collapse:collapse;font-size:13px;min-width:100%}
 .doc th,.doc td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
 .doc th{background:var(--surface2)}
-nav.tabs{display:grid;grid-template-columns:repeat(6,1fr);border-top:1px solid var(--line);background:var(--surface);padding-bottom:env(safe-area-inset-bottom,0px)}
+nav.tabs{display:grid;grid-template-columns:repeat(7,1fr);border-top:1px solid var(--line);background:var(--surface);padding-bottom:env(safe-area-inset-bottom,0px)}
 .tab{border:0;background:transparent;color:var(--muted);padding:10px 2px;font-size:12px;font-weight:600;display:flex;flex-direction:column;align-items:center;gap:2px;min-height:56px}
 .tab[aria-current="page"]{color:var(--accent)}
 .tab .ic{font-size:18px;line-height:1}
@@ -109,6 +109,7 @@ ol li{margin-bottom:6px}
   <nav class="tabs" aria-label="Secções">
     <button class="tab" data-tab="inicio"><span class="ic" aria-hidden="true">◉</span>Início</button>
     <button class="tab" data-tab="pesquisas"><span class="ic" aria-hidden="true">⌕</span>Pesquisas</button>
+    <button class="tab" data-tab="paginas"><span class="ic" aria-hidden="true">◎</span>Páginas</button>
     <button class="tab" data-tab="atividade"><span class="ic" aria-hidden="true">≡</span>Atividade</button>
     <button class="tab" data-tab="fontes"><span class="ic" aria-hidden="true">◈</span>Fontes</button>
     <button class="tab" data-tab="ligacao"><span class="ic" aria-hidden="true">⚙</span>Ligação</button>
@@ -133,6 +134,7 @@ const S = {
   editar: null,          // índice da pesquisa em edição (-1 = nova)
   rascunho: null,        // o que está escrito no formulário (não se perde ao redesenhar)
   exp: null,             // resultado do botão Experimentar
+  editarVig: null,       // índice da página vigiada em edição (-1 = nova)
   ocupado: false, aSeguir: null,
 };
 const WORKFLOW = "agregador.yml";
@@ -251,6 +253,17 @@ function yamlFontes(f) {
   Object.keys(f).forEach(k => { if (!["confiaveis", "neutras", "bloqueadas", "feeds", "paginas"].includes(k)) o += "  " + ychave(k) + ": " + yv(f[k]) + "\n"; });
   return o;
 }
+const FREQS_VIG = { urgente: ["⚡ De 15 em 15 min", "para coisas com prazo"], hora: ["🕐 De hora a hora", "o normal"], diario: ["📅 Uma vez por dia", "páginas que mudam pouco"] };
+function freqVig(v) { return FREQS_VIG[v.frequencia] ? v.frequencia : "hora"; }
+function yamlVigiar(lst) {
+  if (!lst.length) return "vigiar: []\n";
+  const base = ["nome", "url", "parte", "frequencia", "ativa"];
+  return "vigiar:\n" + lst.map(v => {
+    let o = "  - nome: " + yv(v.nome || "") + "\n    url: " + yv(v.url || "") + "\n    parte: " + yv(v.parte || "") + "\n    frequencia: " + yv(freqVig(v)) + "\n    ativa: " + (v.ativa !== false) + "\n";
+    Object.keys(v).forEach(k => { if (!base.includes(k)) o += "    " + ychave(k) + ": " + yv(v[k]) + "\n"; });
+    return o;
+  }).join("");
+}
 function substituirSecao(texto, chave, novo) {
   const L = texto.split(/\r?\n/);
   const ini = L.findIndex(l => l.startsWith(chave + ":"));
@@ -275,8 +288,9 @@ function contido(pedido, obtido) {
 async function mudarConfig(chave, alterar, mensagem) {
   const f = await lerFicheiro("config.yaml");
   const cfg = jsyaml.load(f.texto) || {};
-  const nova = alterar(JSON.parse(JSON.stringify(cfg[chave] || (chave === "pesquisas" ? [] : {}))));
-  const texto = substituirSecao(f.texto, chave, chave === "pesquisas" ? yamlPesquisas(nova) : yamlFontes(nova));
+  const lista = chave === "pesquisas" || chave === "vigiar";
+  const nova = alterar(JSON.parse(JSON.stringify(cfg[chave] || (lista ? [] : {}))));
+  const texto = substituirSecao(f.texto, chave, chave === "pesquisas" ? yamlPesquisas(nova) : chave === "vigiar" ? yamlVigiar(nova) : yamlFontes(nova));
   const conf = jsyaml.load(texto);
   for (const k of Object.keys(cfg)) if (k !== chave && JSON.stringify(cfg[k]) !== JSON.stringify(conf[k])) throw new Error("A gravação ia estragar a secção '" + k + "'. Nada foi gravado.");
   if (!contido(nova, conf[chave])) throw new Error("A gravação não ficou igual ao pedido. Nada foi gravado.");
@@ -609,6 +623,7 @@ function vistaAtividade() {
     h += '<div class="list-item" style="display:block"><div class="row"><b class="sm">' + esc(hora(x.ts)) + "</b>" + (x.erros && x.erros.length ? '<span class="tag bad">com erros</span>' : x.silencio ? '<span class="tag">silêncio</span>' : '<span class="tag ok">ok</span>') + "</div>";
     h += '<div class="xs muted">' + (x.pesquisas || []).map(p => esc(p.nome) + ": " + num(p.recolhidas) + " lidas, " + num(p.relevantes) + " novas relevantes").join(" · ") + "</div>";
     h += '<div class="xs">' + num(x.alertas) + " alertas enviados" + (x.resumo ? ", resumo com " + num(x.resumo) : "") + (x.sugestoes ? ", " + num(x.sugestoes) + " fontes sugeridas" : "") + "</div>";
+    if (x.paginas && x.paginas.verificadas) h += '<div class="xs muted">Páginas vigiadas: ' + num(x.paginas.verificadas) + " verificadas, " + num(x.paginas.mudaram) + " mudaram" + (x.paginas.falharam ? ", " + num(x.paginas.falharam) + " falharam" : "") + "</div>";
     if ((x.pelo_telemovel || []).length) h += '<div class="xs"><span class="tag info">pelo telemóvel</span> ' + esc(x.pelo_telemovel.join(", ")) + "</div>";
     (x.falhas || []).forEach(f => { h += '<div class="xs err">Fonte com falha: ' + esc(f) + "</div>"; });
     (x.erros || []).forEach(f => { h += '<div class="xs err">' + esc(f) + "</div>"; });
@@ -632,9 +647,45 @@ function vistaAtividade() {
   return h;
 }
 function itemNoticia(c, descartavel) {
-  let h = '<div class="list-item" style="display:block"><a class="title-link" href="' + esc(urlSegura(c.link)) + '" target="_blank" rel="noopener">' + esc(c.titulo) + '</a><div class="xs muted">' + esc(c.fonte) + " · nota " + esc(c.nota) + " · " + esc(c.pesquisa) + (c.ts ? " · " + esc(quando(c.ts)) : "") + (c.tipo === "resumo" ? ' · <span class="tag">resumo</span>' : c.tipo === "alerta" ? ' · <span class="tag info">alerta</span>' : "") + "</div>";
+  let h = '<div class="list-item" style="display:block"><a class="title-link" href="' + esc(urlSegura(c.link)) + '" target="_blank" rel="noopener">' + esc(c.titulo) + '</a><div class="xs muted">' + esc(c.fonte) + (c.tipo === "pagina" ? "" : " · nota " + esc(c.nota) + " · " + esc(c.pesquisa)) + (c.ts ? " · " + esc(quando(c.ts)) : "") + (c.tipo === "resumo" ? ' · <span class="tag">resumo</span>' : c.tipo === "alerta" ? ' · <span class="tag info">alerta</span>' : c.tipo === "pagina" ? ' · <span class="tag warn">página mudou</span>' : "") + "</div>";
   if (descartavel && (c.ids || []).length) h += '<button class="btn btn-sm" style="margin-top:6px" data-a="descartar" data-ids="' + esc(c.ids.join(",")) + '">Descartar</button>';
   return h + "</div>";
+}
+
+function vistaPaginas() {
+  if (S.editarVig !== null) return vistaEditorVig();
+  const vs = (S.config && S.config.vigiar) || [], regs = (S.estado || {}).vigiadas || {};
+  let h = '<div class="top"><h1>Páginas</h1><button class="btn btn-primary btn-sm" data-a="vig-nova">+ Vigiar</button></div>';
+  h += '<div class="guia">Vigia páginas da internet e avisa-te no Telegram quando o texto delas muda (por exemplo, a lista de editais ou de concursos de um site). Datas, horas e coisas que só mudam de sítio não contam.</div>';
+  if (!vs.length) h += '<div class="card"><div class="empty">Ainda não vigias nenhuma página. Toca em "+ Vigiar".</div></div>';
+  vs.forEach((v, i) => {
+    const g = regs[v.url] || {}, m = g.mudanca;
+    h += '<div class="card"><div class="row"><h3>' + esc(v.nome || dominio(v.url)) + "</h3>" + (v.ativa === false ? '<span class="tag">em pausa</span>' : g.erro ? '<span class="tag bad">com falha</span>' : g.verificado ? '<span class="tag ok">a vigiar</span>' : '<span class="tag info">à espera da 1.ª verificação</span>') + "</div>";
+    h += '<a class="sm" href="' + esc(urlSegura(v.url)) + '" target="_blank" rel="noopener">' + esc(v.url) + "</a>";
+    h += '<div class="xs"><span class="tag' + (freqVig(v) === "urgente" ? " bad" : freqVig(v) === "hora" ? " warn" : "") + '">' + esc(FREQS_VIG[freqVig(v)][0]) + "</span>" + (v.parte ? ' <span class="muted">só a parte</span> <code>' + esc(v.parte) + "</code>" : ' <span class="muted">página inteira</span>') + "</div>";
+    if (g.verificado) h += '<div class="xs muted">Última verificação: ' + esc(quando(g.verificado)) + (g.linhas ? " · " + g.linhas.length + " linhas de texto" + (g.mudou ? " · última mudança " + esc(quando(g.mudou)) : " · ainda sem mudanças") : "") + "</div>";
+    if (g.erro) h += '<div class="xs err">' + esc(g.erro) + (num(g.falhas) > 1 ? " (" + num(g.falhas) + " vezes seguidas)" : "") + "</div>";
+    if (m && (m.n_mais || m.n_menos)) {
+      h += '<details><summary class="xs">O que mudou da última vez</summary><div class="xs" style="margin-top:6px">';
+      (m.mais || []).slice(0, 10).forEach(x => { h += '<div>➕ ' + esc(x) + "</div>"; });
+      (m.menos || []).slice(0, 10).forEach(x => { h += '<div class="muted">➖ ' + esc(x) + "</div>"; });
+      if (num(m.n_mais) + num(m.n_menos) > 20) h += '<div class="muted">…</div>';
+      h += "</div></details>";
+    }
+    h += '<div class="wrap"><button class="btn btn-sm" data-a="vig-editar" data-p="' + i + '">Editar</button><button class="btn btn-sm" data-a="vig-pausar" data-p="' + i + '">' + (v.ativa === false ? "Ativar" : "Pausar") + '</button><button class="btn btn-sm btn-danger" data-a="vig-apagar" data-p="' + i + '">Apagar</button></div></div>';
+  });
+  h += '<div class="xs muted">Na 1.ª verificação a app guarda o texto da página e manda-te "Comecei a vigiar". Daí em diante só avisa quando mudar. No horário de silêncio não verifica; o que mudar é avisado a seguir. Para ver já, usa "Verificar agora" no Início.</div>';
+  return h;
+}
+function vistaEditorVig() {
+  const vs = (S.config && S.config.vigiar) || [], v = S.editarVig >= 0 ? vs[S.editarVig] || {} : {};
+  let h = '<div class="top"><h1>' + (S.editarVig >= 0 ? "Editar página" : "Vigiar página") + '</h1><button class="btn btn-sm" data-a="vig-cancelar">Cancelar</button></div><div class="card">';
+  h += '<div class="field"><label for="v-url">1. Endereço da página</label><input type="text" id="v-url" inputmode="url" placeholder="https://www.exemplo.pt/editais" value="' + esc(v.url || "") + '"><div class="hint">Abre a página no navegador e copia o endereço lá de cima.</div></div>';
+  h += '<div class="field"><label for="v-nome">2. Nome (para as mensagens)</label><input type="text" id="v-nome" placeholder="ex.: Editais da Câmara" value="' + esc(v.nome || "") + '"></div>';
+  h += '<div class="field"><label for="v-freq">3. De quanto em quanto tempo verificar?</label><select id="v-freq">' + Object.keys(FREQS_VIG).map(k => '<option value="' + k + '"' + (freqVig(v) === k ? " selected" : "") + ">" + esc(FREQS_VIG[k][0] + " — " + FREQS_VIG[k][1]) + "</option>").join("") + "</select></div>";
+  h += '<details' + (v.parte ? " open" : "") + '><summary>4. Só uma parte da página (opcional)</summary><div class="field" style="margin-top:8px"><label for="v-parte">Seletor CSS da parte a vigiar</label><input type="text" id="v-parte" placeholder="ex.: #editais ou .lista-noticias" value="' + esc(v.parte || "") + '"><div class="hint">Deixa vazio para vigiar o texto da página inteira. Se a página tem coisas que mudam sempre (destaques, publicidade, "mais lidas") e recebes avisos a mais, indica aqui só a parte que interessa. Para ver o texto que a app lê, no computador: <code>python agregador.py --testar-vigia URL --parte "#editais"</code></div></div></details>';
+  h += '<div class="err" id="f-erro"></div><button class="btn btn-primary block" data-a="vig-guardar">Guardar no GitHub</button></div>';
+  return h;
 }
 
 function vistaFontes() {
@@ -729,7 +780,7 @@ function render() {
     m.innerHTML = S.erroCarga ? '<div class="card"><div class="err">' + esc(S.erroCarga) + '</div><button class="btn" data-a="recarregar">Tentar outra vez</button></div>' : '<div class="card"><div class="empty">A carregar…</div></div>';
     return;
   }
-  m.innerHTML = { inicio: vistaInicio, pesquisas: vistaPesquisas, atividade: vistaAtividade, fontes: vistaFontes, ligacao: vistaLigacao, ajuda: vistaAjuda }[S.tab]();
+  m.innerHTML = { inicio: vistaInicio, pesquisas: vistaPesquisas, paginas: vistaPaginas, atividade: vistaAtividade, fontes: vistaFontes, ligacao: vistaLigacao, ajuda: vistaAjuda }[S.tab]();
 }
 
 // ------------------------------------------------------------ ações
@@ -754,10 +805,10 @@ async function guardarPesquisa(btn) {
 }
 async function onClick(ev) {
   const el = ev.target.closest("[data-a],[data-tab]"); if (!el) return;
-  if (el.dataset.tab) { S.tab = el.dataset.tab; S.editar = null; lsSet(LS_TAB, S.tab); render(); document.getElementById("main").scrollTop = 0; return; }
+  if (el.dataset.tab) { S.tab = el.dataset.tab; S.editar = null; S.editarVig = null; lsSet(LS_TAB, S.tab); render(); document.getElementById("main").scrollTop = 0; return; }
   const a = el.dataset.a, p = el.dataset.p, d = el.dataset.d;
   const ps = (S.config && S.config.pesquisas) || [];
-  if (a === "tab") { ev.preventDefault(); S.tab = p; S.editar = null; lsSet(LS_TAB, p); render(); document.getElementById("main").scrollTop = 0; return; }
+  if (a === "tab") { ev.preventDefault(); S.tab = p; S.editar = null; S.editarVig = null; lsSet(LS_TAB, p); render(); document.getElementById("main").scrollTop = 0; return; }
   if (a === "recarregar") { await carregar(); toast("Atualizado."); return; }
   if (a === "recarregar-ajuda") { S.ajuda = null; render(); return; }
   if (a === "correr") { try { await correr(p); } catch (e) { toast(e.message); } return; }
@@ -765,6 +816,33 @@ async function onClick(ev) {
   if (a === "editar") { if (!S.token) { toast("Para editar, junta primeiro um token em Ligação."); return; } S.editar = Number(p); S.rascunho = null; S.exp = null; render(); return; }
   if (a === "cancelar") { S.editar = null; S.rascunho = null; S.exp = null; render(); return; }
   if (a === "experimentar") { await experimentar(); return; }
+  const vs = (S.config && S.config.vigiar) || [];
+  if (a === "vig-nova" || a === "vig-editar") { if (!S.token) { toast("Para vigiar páginas, junta primeiro um token em Ligação."); return; } S.editarVig = a === "vig-nova" ? -1 : Number(p); render(); document.getElementById("main").scrollTop = 0; return; }
+  if (a === "vig-cancelar") { S.editarVig = null; render(); return; }
+  if (a === "vig-guardar") {
+    let url = document.getElementById("v-url").value.trim();
+    if (url && !/^https?:\/\//i.test(url)) url = "https://" + url;
+    try { if (!/^https?:$/.test(new URL(url).protocol)) throw 0; } catch (e) { toast("Escreve o endereço completo da página, por exemplo https://www.exemplo.pt/editais"); return; }
+    const orig = S.editarVig >= 0 ? vs[S.editarVig] : null;
+    if (vs.some(x => x.url === url && x !== orig)) { toast("Já estás a vigiar esta página."); return; }
+    const nova = Object.assign({}, orig || {}, { nome: document.getElementById("v-nome").value.trim() || dominio(url), url: url, parte: document.getElementById("v-parte").value.trim(), frequencia: document.getElementById("v-freq").value, ativa: orig ? orig.ativa !== false : true });
+    await ocupado(el, async () => {
+      await mudarConfig("vigiar", lst => { const i = orig ? lst.findIndex(x => x.url === orig.url) : -1; if (i >= 0) lst[i] = nova; else lst.push(nova); return lst; }, (orig ? "painel: editar a página vigiada " : "painel: vigiar a página ") + nova.nome);
+      S.editarVig = null; toast("Guardado. A página é verificada na próxima verificação (ou já, com Verificar agora)."); render();
+    });
+    return;
+  }
+  if (a === "vig-pausar") {
+    const alvo = vs[Number(p)];
+    await ocupado(el, async () => { await mudarConfig("vigiar", lst => { lst.forEach(x => { if (x.url === alvo.url) x.ativa = x.ativa === false; }); return lst; }, "painel: " + (alvo.ativa === false ? "ativar" : "pausar") + " a página vigiada " + (alvo.nome || alvo.url)); toast("Feito."); render(); });
+    return;
+  }
+  if (a === "vig-apagar") {
+    const alvo = vs[Number(p)];
+    if (!confirm('Deixar de vigiar "' + (alvo.nome || alvo.url) + '"?')) return;
+    await ocupado(el, async () => { await mudarConfig("vigiar", lst => lst.filter(x => x.url !== alvo.url), "painel: deixar de vigiar " + (alvo.nome || alvo.url)); toast("Já não é vigiada."); render(); });
+    return;
+  }
   if (a === "guardar") { await guardarPesquisa(el); return; }
   if (a === "pausar") {
     const alvo = ps[Number(p)];
@@ -854,7 +932,7 @@ render();
 carregar();
 setInterval(() => {
   const foco = document.activeElement;
-  if (S.ocupado || S.editar !== null || document.hidden || ["fontes", "ligacao"].includes(S.tab)) return;
+  if (S.ocupado || S.editar !== null || S.editarVig !== null || document.hidden || ["fontes", "ligacao"].includes(S.tab)) return;
   if (foco && /^(INPUT|TEXTAREA|SELECT)$/.test(foco.tagName)) return;
   carregar(true);
 }, 5 * 60000);

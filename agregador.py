@@ -3,7 +3,8 @@
 
 Recolhe notícias (Google Notícias, feeds RSS e páginas sem RSS), remove duplicados,
 pontua cada uma pelas palavras-chave e pela confiança da fonte, e envia alertas
-por Telegram. Os botões das mensagens são tratados pelo Worker do Cloudflare
+por Telegram. Também vigia páginas (secção "vigiar") e avisa quando o texto muda.
+Os botões das mensagens são tratados pelo Worker do Cloudflare
 (extras/cloudflare/worker.js), que grava as decisões no config.yaml.
 
 Uso:
@@ -13,6 +14,8 @@ Uso:
     python agregador.py --fontes           # execução normal + procura de fontes novas agora
     python agregador.py --testar-pagina URL [--item CSS --titulo CSS ...]
                                            # mostra o que o leitor de páginas encontra
+    python agregador.py --testar-vigia URL [--parte CSS]
+                                           # mostra o texto que a vigilância compara
 
 Variáveis de ambiente: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 """
@@ -768,7 +771,7 @@ def carregar_estado():
     base = {"vistos": {}, "resumo": [], "adiados": [], "ultimo_resumo": "",
             "sugeridas": {}, "sugeridas_antigas": [], "dominios": {},
             "ultima_descoberta": "", "enviados": [], "execucoes": [], "bloqueados": {},
-            "ultima_pesquisa": {}}
+            "ultima_pesquisa": {}, "vigiadas": {}}
     if ESTADO.exists():
         try:
             base.update(json.loads(ESTADO.read_text(encoding="utf-8")))
@@ -829,9 +832,7 @@ def esquecer_pesquisas_apagadas(cfg, estado):
 def pesquisa_devida(pesq, estado, agora_utc):
     """Nas execuções automáticas, cada pesquisa só é verificada quando passou a sua
     frequência; os pedidos manuais (painel, /verificar) verificam todas."""
-    automatica = (os.environ.get("GITHUB_EVENT_NAME") == "schedule"
-                  or os.environ.get("ACAO") == "agendada")
-    if not automatica:
+    if not execucao_automatica():
         return True
     try:
         ultima = datetime.fromisoformat(estado["ultima_pesquisa"][pesq["nome"]])
@@ -1263,6 +1264,7 @@ def executar(cfg, simular=False, forcar_fontes=False):
             "nome": pesq["nome"], "recolhidas": len(itens), "relevantes": len(cands),
             "alertas": sum(1 for c in cands if c["nivel"] == "alerta")})
         novos += cands
+    vigiar_paginas(cfg, estado, agora_utc, agora, registo, simular)
     for d in SITES_BLOQUEADOS:  # da próxima vez, o telemóvel vai buscá-los
         estado["bloqueados"][d] = agora_utc.isoformat()
     registo["pelo_telemovel"] = sorted(set(LIDOS_TELEMOVEL))
@@ -1422,6 +1424,7 @@ def todas_as_fontes(cfg):
     for p in cfg.get("pesquisas") or []:
         if p.get("ativa", True):
             out += list(p.get("feeds_extra") or []) + list(p.get("paginas_extra") or [])
+    out += [dict(v, vigiar=True) for v in vigias(cfg)]
     return [x for x in out if x.get("url")]
 
 
@@ -1487,13 +1490,242 @@ def buscar_pelo_telemovel(cfg):
                     continue
                 ficheiro_cache(url).write_bytes(resp.content)
                 print(f"  {x.get('nome') or url}: trazido ({len(resp.content) // 1024} KB)")
-                if i == 0 and not x.get("item"):  # páginas: traz também o feed que anunciem
+                if i == 0 and not x.get("item") and not x.get("vigiar"):  # páginas: traz também o feed que anunciem
                     urls += feeds_anunciados(resp.url, resp.text)[:2]
     finally:
         r = no_tailscale("set", "--exit-node=")
         if r.returncode:  # sem isto, o resto da execução sairia toda pelo telemóvel
             print("Não consegui deixar de sair pelo telemóvel; a desligar o Tailscale.")
             no_tailscale("down")
+    return 0
+
+
+# ------------------------------------------------ páginas vigiadas (mudanças)
+# Secção "vigiar" do config.yaml (o painel preenche-a, no separador Páginas). Cada página:
+#   nome, url, parte (opcional: seletor CSS; só essa parte da página conta),
+#   frequencia ("urgente" 15 min, "hora", "diario" 1 vez por dia) e ativa.
+# Compara só o texto visível, sem datas, horas nem "há 5 minutos", que mudam sozinhos.
+FREQ_VIGIAR = {"urgente": 15, "hora": 60, "diario": 24 * 60}
+MAX_TEXTO_VIGIADO = 30000   # caracteres guardados por página no estado.json
+MAX_LINHAS_AVISO = 8        # linhas novas/retiradas mostradas na mensagem
+FALHAS_PARA_AVISAR = 3      # avisa quando a página falha 3 vezes seguidas
+_MESES_CURTOS = "jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez"
+RUIDO = [re.compile(p, re.I) for p in (
+    r"\b\d{1,2}[:h]\d{2}(:\d{2})?\b",                              # 14:05, 14h05
+    r"\b\d{1,4}[/.-]\d{1,2}[/.-]\d{1,4}\b",                         # 03/11/2026, 2026-11-03
+    r"\bh[aá]\s+(cerca\s+de\s+)?(\d+|um|uma)\s+\w+",                # há 5 minutos
+    r"\b\d{1,2}\s+(de\s+)?(" + _MESES_CURTOS + r")[a-zç]*\.?(\s+(de\s+)?\d{4})?",  # 3 de nov 2026
+    r"\b(" + _MESES_CURTOS + r")[a-zç]*\.?\s+\d{1,2},?\s+\d{4}",    # Nov 3, 2026
+)]
+
+
+def vigias(cfg, todas=False):
+    out = []
+    for v in cfg.get("vigiar") or []:
+        if (isinstance(v, dict) and re.match(r"https?://", str(v.get("url") or ""))
+                and (todas or v.get("ativa", True))):
+            out.append(v)
+    return out
+
+
+def freq_vigia(v):
+    f = str(v.get("frequencia") or "hora").strip().lower()
+    return f if f in FREQ_VIGIAR else "hora"
+
+
+def nome_vigia(v):
+    return str(v.get("nome") or "").strip() or dominio_de(v["url"])
+
+
+def parte_vigia(v):
+    return str(v.get("parte") or "").strip()
+
+
+def texto_vigiado(sopa, parte=""):
+    """Linhas de texto visível da página (ou só da parte indicada)."""
+    for el in sopa(["script", "style", "noscript", "template", "svg", "iframe"]):
+        el.decompose()
+    parte = str(parte or "").strip()
+    if parte:
+        try:
+            alvo = sopa.select(parte)
+        except Exception:
+            raise RuntimeError(f"a parte '{parte}' não é um seletor CSS válido") from None
+        if not alvo:
+            raise RuntimeError(f"não encontrei a parte '{parte}' na página (o site pode ter "
+                               "mudado o desenho; corrige ou apaga a parte no painel)")
+    else:
+        alvo = [sopa.body or sopa]
+    linhas, total = [], 0
+    for el in alvo:
+        for linha in el.get_text("\n").split("\n"):
+            linha = re.sub(r"\s+", " ", linha).strip()
+            if linha and total < MAX_TEXTO_VIGIADO:
+                linhas.append(linha)
+                total += len(linha) + 1
+    return linhas
+
+
+def sem_ruido(linha):
+    for r in RUIDO:
+        linha = r.sub("#", linha)
+    return linha
+
+
+def diferencas(antigas, novas):
+    """(linhas novas, linhas que saíram), ignorando datas/horas e linhas só mudadas de sítio."""
+    a = [sem_ruido(x) for x in antigas]
+    b = [sem_ruido(x) for x in novas]
+    mais, menos = [], []
+    for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, a, b, autojunk=False).get_opcodes():
+        if tag in ("replace", "delete"):
+            menos += [(a[i], antigas[i]) for i in range(i1, i2)]
+        if tag in ("replace", "insert"):
+            mais += [(b[j], novas[j]) for j in range(j1, j2)]
+    chaves_mais, chaves_menos = {k for k, _ in mais}, {k for k, _ in menos}
+    mais_f = [t for k, t in mais if k not in chaves_menos]    # mudou só de sítio, ou
+    menos_f = [t for k, t in menos if k not in chaves_mais]   # só a data/hora mudou
+    return mais_f, menos_f
+
+
+def formatar_mudanca(v, mais, menos, agora):
+    def bloco(simbolo, titulo, linhas):
+        if not linhas:
+            return []
+        out = [f"{simbolo} <b>{titulo}</b>"]
+        out += ["• " + h(x if len(x) <= 200 else x[:200] + "…") for x in linhas[:MAX_LINHAS_AVISO]]
+        if len(linhas) > MAX_LINHAS_AVISO:
+            out.append(f"<i>… e mais {len(linhas) - MAX_LINHAS_AVISO} linhas</i>")
+        return out
+    linhas = [f'🔎 <b>Mudou: {ligacao(nome_vigia(v), v["url"])}</b>']
+    if parte_vigia(v):
+        linhas.append(f"<i>só a parte {h(parte_vigia(v))}</i>")
+    linhas += bloco("➕", "Novo", mais) + bloco("➖", "Saiu", menos)
+    linhas.append("🕒 " + agora.strftime("%d/%m %H:%M"))
+    return "\n".join(linhas)
+
+
+def botao_abrir(url):
+    return {"inline_keyboard": [[{"text": "🌐 Abrir a página", "url": url}]]}
+
+
+def execucao_automatica():
+    return (os.environ.get("GITHUB_EVENT_NAME") == "schedule"
+            or os.environ.get("ACAO") == "agendada")
+
+
+def vigia_devida(v, reg, agora_utc):
+    """Nas execuções automáticas, só quando passou a frequência; nas manuais, sempre."""
+    if not execucao_automatica():
+        return True
+    ultima = parse_data((reg or {}).get("verificado"))
+    if not ultima:
+        return True
+    return (agora_utc - ultima).total_seconds() / 60 >= FREQ_VIGIAR[freq_vigia(v)] - 2.5
+
+
+def vigiar_paginas(cfg, estado, agora_utc, agora, registo, simular=False):
+    """Verifica as páginas vigiadas que já estão na altura e avisa do que mudou.
+    No horário de silêncio não verifica: a mudança é apanhada (e avisada) a seguir."""
+    paginas = vigias(cfg)
+    urls = {v["url"] for v in vigias(cfg, todas=True)}
+    regs = estado.setdefault("vigiadas", {})
+    for u in list(regs):  # páginas apagadas no painel
+        if u not in urls:
+            del regs[u]
+    if not paginas:
+        return
+    if not simular and em_silencio(agora.hour, (cfg.get("geral") or {}).get("silencio") or {}):
+        print(f"Páginas vigiadas: horário de silêncio, ficam para depois ({len(paginas)}).")
+        return
+    resumo = {"verificadas": 0, "mudaram": 0, "falharam": 0}
+    for v in paginas:
+        url, nome, parte = v["url"], nome_vigia(v), parte_vigia(v)
+        reg = dict(regs.get(url) or {})
+        if reg.get("linhas") is not None and reg.get("parte", "") != parte:
+            reg.pop("linhas")  # mudaste a parte vigiada: nova referência, sem aviso falso
+        if not vigia_devida(v, reg, agora_utc):
+            print(f"Página vigiada: {nome} — ainda não é altura ({freq_vigia(v)})")
+            continue
+        print(f"Página vigiada: {nome}")
+        resumo["verificadas"] += 1
+        try:
+            _, sopa = baixar_pagina(url)
+            novas = texto_vigiado(sopa, parte)
+            if not novas:
+                raise RuntimeError("a página (ou a parte vigiada) não tem texto")
+            if ficheiro_cache(url).exists():
+                LIDOS_TELEMOVEL.append(nome)
+                SITES_BLOQUEADOS.add(dominio_de(url))  # continua a precisar do telemóvel
+        except Exception as e:  # uma página em baixo não pára as outras
+            if isinstance(e, (SiteInacessivel, requests.ConnectionError, requests.Timeout)):
+                SITES_BLOQUEADOS.add(dominio_de(url))  # da próxima vez tenta pelo telemóvel
+            motivo = str(e)[:200] or type(e).__name__
+            print(f"  falhou: {motivo}")
+            resumo["falharam"] += 1
+            registo["falhas"].append(f"Página vigiada · {nome}: {motivo}")
+            if simular:
+                continue
+            reg.update({"falhas": reg.get("falhas", 0) + 1, "erro": motivo,
+                        "verificado": agora_utc.isoformat()})
+            if reg["falhas"] == FALHAS_PARA_AVISAR:
+                try:
+                    enviar(f"⚠️ <b>Não consigo ler {ligacao(nome, url)}</b> "
+                           f"({FALHAS_PARA_AVISAR} tentativas seguidas).\n{h(motivo)}",
+                           botao_abrir(url))
+                except RuntimeError as e2:
+                    registo["erros"].append(f"não consegui avisar da falha em {nome}: {e2}")
+            regs[url] = reg
+            continue
+
+        antigas = reg.get("linhas")
+        mais, menos = ([], []) if antigas is None else diferencas(antigas, novas)
+        if antigas is None:  # 1.ª vez: guarda a referência e confirma que está a funcionar
+            so_parte = f" (só a parte {h(parte)})" if parte else ""
+            texto = (f"👀 <b>Comecei a vigiar {ligacao(nome, url)}</b>\n"
+                     f"{len(novas)} linhas de texto{so_parte}. Aviso-te quando alguma coisa mudar.")
+        else:
+            texto = formatar_mudanca(v, mais, menos, agora) if (mais or menos) else None
+        if simular:
+            print(f"  {len(novas)} linhas" + (f"\n[PÁGINA]\n{texto}" if texto else " · sem mudanças"))
+            continue
+        if texto:
+            try:
+                enviar(texto, botao_abrir(url))
+            except RuntimeError as e:
+                # não atualiza a referência: a mesma mudança é avisada na próxima vez
+                registo["erros"].append(f"não consegui avisar da mudança em {nome}: {e}")
+                continue
+        if mais or menos:
+            resumo["mudaram"] += 1
+            reg["mudou"] = agora_utc.isoformat()
+            reg["mudanca"] = {"mais": mais[:20], "menos": menos[:20],
+                              "n_mais": len(mais), "n_menos": len(menos)}
+            estado["enviados"].append({"tipo": "pagina", "ts": agora_utc.isoformat(),
+                                       "titulo": "Mudou: " + nome, "link": url,
+                                       "fonte": dominio_de(url), "nota": 0,
+                                       "pesquisa": "Páginas vigiadas"})
+            print(f"  MUDOU: +{len(mais)} / -{len(menos)} linhas")
+        else:
+            print(f"  {len(novas)} linhas · "
+                  + ("referência guardada" if antigas is None else "sem mudanças"))
+        reg.update({"linhas": novas, "verificado": agora_utc.isoformat(), "falhas": 0,
+                    "erro": "", "parte": parte})
+        reg.setdefault("desde", agora_utc.isoformat())
+        regs[url] = reg
+    registo["paginas"] = resumo
+
+
+def testar_vigia(args):
+    """Mostra o texto que a vigilância compara numa página (para escolher a parte)."""
+    _, sopa = baixar_pagina(args.testar_vigia)
+    linhas = texto_vigiado(sopa, args.parte)
+    print(f"{len(linhas)} linhas de texto em {args.testar_vigia}"
+          + (f" (parte {args.parte})" if args.parte else "") + "\n")
+    for linha in linhas[:60]:
+        print("  " + linha[:160])
+    if len(linhas) > 60:
+        print(f"  … e mais {len(linhas) - 60}")
     return 0
 
 
@@ -1621,6 +1853,9 @@ def main():
     ap.add_argument("--data", help="seletor CSS da data, dentro do item")
     ap.add_argument("--sem-feed", action="store_true",
                     help="com --testar-pagina: lê a página mesmo que tenha feed")
+    ap.add_argument("--testar-vigia", metavar="URL",
+                    help="mostra o texto que a vigilância de páginas compara nesta página")
+    ap.add_argument("--parte", help="com --testar-vigia: seletor CSS da parte a vigiar")
     ap.add_argument("--procurar-feeds", metavar="PESQUISA",
                     help="procura os feeds RSS (mesmo escondidos) dos sites que publicam "
                          "sobre um tema ou uma pesquisa do config.yaml")
@@ -1634,6 +1869,8 @@ def main():
     try:
         if args.testar_pagina:
             return testar_pagina(args)
+        if args.testar_vigia:
+            return testar_vigia(args)
         if args.experimentar:
             return experimentar(carregar_config())
         if args.buscar_pelo_telemovel:

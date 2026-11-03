@@ -171,6 +171,19 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 
 ## Estado atual (2026-11-02)
 
+- **Páginas vigiadas (2026-11-03)**: secção `vigiar:` no config.yaml (painel → separador
+  Páginas). `vigiar_paginas()` no agregador.py corre em cada execução, depois das
+  pesquisas: cada página tem a sua frequência (`FREQ_VIGIAR`: 15/60/1440 min, só nas
+  automáticas), compara as linhas de texto visível (`texto_vigiado`, opcionalmente só o
+  seletor `parte`) com as guardadas em `estado.vigiadas[url].linhas` (até 30 000
+  caracteres), ignorando datas/horas (`RUIDO`) e linhas mudadas de sítio. 1.ª vez manda
+  "👀 Comecei a vigiar"; mudança manda "🔎 Mudou" com ➕/➖ e botão de URL; 3 falhas
+  seguidas mandam "⚠️". Falha de envio não atualiza a referência (reavisa). No silêncio
+  não verifica. Sites que recusam o GitHub entram em `bloqueados` e vão pelo telemóvel
+  (`todas_as_fontes` inclui as vigiadas, sem procurar feeds). O `ja_e_altura.py` já apanha
+  `frequencia: urgente` das vigiadas (a regex é por linha indentada). Escolhas do
+  utilizador: integrado no Agregador, só o texto conta, páginas juntas depois no painel.
+
 - **Recomeço do zero (2026-11-02)**: a pedido do utilizador, apagadas as notícias
   encontradas (`vistos`, `resumo`, `adiados`, `enviados`, `raspadas`, `paginas_lidas` e os
   `descartados` do `painel.json`); fontes, sugestões e bloqueados ficaram.

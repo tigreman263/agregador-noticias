@@ -47,6 +47,12 @@ descoberta:
   min_noticias: 2              # o site tem de ter pelo menos 2 notícias relevantes
   procurar_feeds: true         # tenta encontrar o RSS do site para o ler diretamente
 
+# Páginas vigiadas (o painel preenche, no separador Páginas): avisa pelo Telegram
+# quando o texto da página muda (datas e horas não contam).
+#   parte: seletor CSS opcional (só essa parte da página conta)
+#   frequencia: "urgente" (15 min), "hora" ou "diario" (1 vez por dia)
+vigiar: []
+
 # Cada pesquisa tem 3 perguntas (o painel preenche-as):
 #   sitio:    a notícia TEM de falar disto (variantes separadas por "/")
 #   assuntos: e de PELO MENOS UM destes (cada linha um assunto; variantes com "/")

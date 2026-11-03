@@ -37,6 +37,7 @@ gratuito do Cloudflare, sem servidor e sem custos. Geres tudo num **painel** que
    - [5.5 Encontrar feeds RSS escondidos](#55-encontrar-feeds-rss-escondidos)
    - [5.6 Descoberta automática de fontes](#56-descoberta-automática-de-fontes)
    - [5.7 Sites que bloqueiam o GitHub](#57-sites-que-bloqueiam-o-github)
+   - [5A. Vigiar páginas (avisos de mudanças)](#5a-vigiar-páginas-avisos-de-mudanças)
 6. [O que recebes no Telegram](#6-o-que-recebes-no-telegram)
 7. [Referência do config.yaml](#7-referência-do-configyaml)
 8. [Usar no computador (opcional)](#8-usar-no-computador-opcional)
@@ -511,6 +512,44 @@ telemóvel, junta-lhe `telemovel: true` no `config.yaml`.
 
 ---
 
+## 5A. Vigiar páginas (avisos de mudanças)
+
+Além das notícias, a app pode vigiar páginas da internet e avisar-te no Telegram quando
+o texto delas muda: a lista de editais ou concursos de uma câmara, uma página de apoios,
+um regulamento, preços, etc.
+
+**Como juntar uma página:** no painel, separador **Páginas** → **+ Vigiar** → endereço,
+nome, de quanto em quanto tempo (15 min, de hora a hora ou 1 vez por dia) → Guardar.
+A secção fica gravada em `vigiar:` no `config.yaml`.
+
+**O que acontece:**
+- Na 1.ª verificação a app guarda o texto da página e manda-te **👀 Comecei a vigiar**.
+- Daí em diante compara o texto. Se mudou, manda **🔎 Mudou: nome da página**, com as
+  linhas novas (➕) e as que saíram (➖), até 8 de cada, e um botão **🌐 Abrir a página**.
+- **Não contam como mudança:** datas, horas, "há 5 minutos", e linhas que só mudaram de
+  sítio. Também não conta o código da página (scripts, estilos) — só o texto visível.
+- Se a página não puder ser lida 3 vezes seguidas, manda **⚠️ Não consigo ler** (uma vez).
+  Se o site bloquear o GitHub, passa a ser trazido pelo telemóvel (passo 2.7), como os
+  sites de notícias.
+- No horário de silêncio não verifica; o que mudar durante a noite é avisado de manhã.
+- Pedir já: **Verificar agora** no Início, ou `/verificar` no Telegram, verifica todas.
+
+**Avisos a mais?** Há páginas com partes que mudam sempre (destaques, "mais lidas",
+publicidade). Em **Editar → 4. Só uma parte da página**, indica o seletor CSS da parte que
+interessa (por exemplo `#editais` ou `.lista-noticias`). Para ver o texto que a app lê:
+
+```
+python agregador.py --testar-vigia "https://www.exemplo.pt/editais"
+python agregador.py --testar-vigia "https://www.exemplo.pt/editais" --parte "#editais"
+```
+
+Mudar a parte faz a app guardar uma referência nova (sem aviso de mudança).
+
+**Limite:** páginas que só mostram o conteúdo com JavaScript não podem ser lidas (o painel
+mostra o erro); procura outra página do mesmo site.
+
+---
+
 ## 6. O que recebes no Telegram
 
 - **Alertas** (nota ≥ nota de alerta): uma mensagem por notícia, até 5 por verificação
@@ -521,6 +560,8 @@ telemóvel, junta-lhe `telemovel: true` no `config.yaml`.
 - **Resumo diário** (nota entre as duas notas): uma vez por dia, a partir das 8h
   (`hora_resumo`), com as 15 melhores. Notícias à espera há mais de 48 horas saem da fila.
 - **Fontes novas sugeridas**: uma vez por dia, com botões (secção 5.6).
+- **Páginas vigiadas**: 👀 ao começar, 🔎 quando o texto muda, ⚠️ se não a consegue ler
+  (secção 5A).
 - **Horário de silêncio** (23h–7h): nada é enviado; os alertas ficam adiados (até 50; o
   excesso vai para o resumo) e saem depois.
 - **Se o envio falhar** (Telegram em baixo, token errado): os alertas ficam adiados e saem
@@ -548,7 +589,7 @@ a partir da verificação seguinte. Para desfazer, usa o painel (**Fontes**).
 
 ## 7. Referência do config.yaml
 
-O painel edita as secções `pesquisas` e `fontes`. As outras editas no GitHub (ícone do
+O painel edita as secções `pesquisas`, `fontes` e `vigiar`. As outras editas no GitHub (ícone do
 lápis no ficheiro).
 
 | Chave | Por omissão | Significado |
@@ -574,6 +615,7 @@ lápis no ficheiro).
 | `descoberta.min_noticias` | 2 | Notícias relevantes mínimas para sugerir um site. |
 | `descoberta.procurar_feeds` | true | Procura o feed dos sites sugeridos. |
 | `pesquisas[]` | — | Formato simples: `nome`, `ativa`, `sitio`, `assuntos`, `excluir`, `frequencia` (`urgente`/`hora`/`diario`), `feeds_extra`, `paginas_extra`. Formato antigo: `nome`, `ativa`, `consulta`, `obrigatorias`, `palavras.alta/media/baixa`, `excluir`, `limite_alerta`, `limite_resumo`, `feeds_extra`, `paginas_extra` (secção 4). |
+| `vigiar[]` | `[]` | Páginas vigiadas: `nome`, `url`, `parte` (seletor CSS opcional), `frequencia` (`urgente` 15 min / `hora` / `diario` 1 vez por dia), `ativa`, `telemovel?` (secção 5A). |
 
 ---
 
