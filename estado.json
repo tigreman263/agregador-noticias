@@ -6,42 +6,17 @@
  "adiados": [],
  "ultimo_resumo": "2026-11-03",
  "sugeridas": {
-  "centralpress.pt": {
-   "dominio": "centralpress.pt",
-   "nome": "Central Press",
+  "cm-serta.pt": {
+   "dominio": "cm-serta.pt",
+   "nome": "Câmara da Sertã",
    "n": 4,
    "pesquisas": [
     "Sertã"
    ],
-   "exemplo": "Grupo Coral do Sertanense celebra 20 anos com encontro de coros na Casa da Cultura da Sertã",
-   "site": "https://centralpress.pt",
-   "feed": "https://centralpress.pt/api/rss",
-   "em": "2026-11-01T15:55:59.894612+00:00"
-  },
-  "razaoautomovel.com": {
-   "dominio": "razaoautomovel.com",
-   "nome": "Razão Automóvel",
-   "n": 3,
-   "pesquisas": [
-    "Sertã"
-   ],
-   "exemplo": "Governo dá apoios até 16 mil euros para comprar carro elétrico. Como funciona?",
-   "site": "https://www.razaoautomovel.com",
-   "feed": "https://www.razaoautomovel.com/feed/",
-   "em": "2026-11-02T09:00:44.394455+00:00"
-  },
-  "portal-energia.com": {
-   "dominio": "portal-energia.com",
-   "nome": "Portal Energia",
-   "n": 2,
-   "pesquisas": [
-    "Sertã",
-    "Apoio fundo ambiental"
-   ],
-   "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "site": "https://www.portal-energia.com",
-   "feed": "https://www.portal-energia.com/feed/",
-   "em": "2026-11-02T09:00:44.394455+00:00"
+   "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
+   "site": "",
+   "feed": null,
+   "em": "2026-11-03T09:30:59.446866+00:00"
   }
  },
  "sugeridas_antigas": [
@@ -61,7 +36,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "43009cf9b5dba1ca",
     "40e4deaa7e744190",
     "0acfc3a3f243437f",
     "8f9c1a58f29a608c",
@@ -80,14 +54,15 @@
     "df423e1e578b5516",
     "5e5353928b0fbcc4",
     "75b91fb5a492f648",
-    "9523fbf672fbaac5"
+    "9523fbf672fbaac5",
+    "9e3ed9592a66279a"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-02T07:00:46.733011+00:00"
+   "ultima": "2026-11-03T09:30:59.446866+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -397,7 +372,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-03T08:31:13.575015+00:00"
+   "ultima": "2026-11-03T09:30:59.446866+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -498,7 +473,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-02T09:00:44.394455+00:00"
+   "ultima": "2026-11-03T09:30:59.446866+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -641,10 +616,22 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-02T09:00:44.394455+00:00"
+   "ultima": "2026-11-03T09:30:59.446866+00:00"
+  },
+  "dn.pt": {
+   "nome": "Diário de Notícias",
+   "site": "https://www.dn.pt",
+   "ids": [
+    "74c45955700781d0"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Brasil: “Há uma cultura sertaneja que tende a ver a floresta como um empecilho”, diz arquélogo",
+   "ultima": "2026-11-03T09:30:59.446866+00:00"
   }
  },
- "ultima_descoberta": "2026-11-02",
+ "ultima_descoberta": "2026-11-03",
  "enviados": [
   {
    "tipo": "resumo",
@@ -657,37 +644,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-01T15:24:10.443027+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 285,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio Estado",
-     "recolhidas": 285,
-     "relevantes": 1,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))",
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio Estado · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-01T15:25:27.485951+00:00",
    "pesquisas": [
@@ -2104,16 +2060,48 @@
     "cm-serta.pt",
     "mediotejo.net"
    ]
+  },
+  {
+   "ts": "2026-11-03T09:30:59.446866+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 526,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 467,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 1,
+   "silencio": false,
+   "erros": [],
+   "pelo_telemovel": [
+    "Médio Tejo",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "mediotejo.net"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-03T08:31:13.575015+00:00",
-  "mediotejo.net": "2026-11-03T08:31:13.575015+00:00"
+  "cm-serta.pt": "2026-11-03T09:30:59.446866+00:00",
+  "mediotejo.net": "2026-11-03T09:30:59.446866+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-03T08:31:13.575015+00:00",
-  "Apoio fundo ambiental": "2026-11-03T08:31:13.575015+00:00"
+  "Sertã": "2026-11-03T09:30:59.446866+00:00",
+  "Apoio fundo ambiental": "2026-11-03T09:30:59.446866+00:00"
  },
+ "vigiadas": {},
  "raspadas": {},
  "paginas_lidas": []
 }
