@@ -445,7 +445,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-03T00:46:04.816944+00:00"
+   "ultima": "2026-11-03T01:46:04.684432+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -695,35 +695,6 @@
  "ultima_descoberta": "2026-11-02",
  "enviados": [],
  "execucoes": [
-  {
-   "ts": "2026-10-10T19:01:24.165845+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 290,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio Estado",
-     "recolhidas": 290,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · Câmara da Sertã: ConnectionError: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-10-10T21:55:21.304337+00:00",
    "pesquisas": [
@@ -2129,15 +2100,46 @@
     "cm-serta.pt",
     "mediotejo.net"
    ]
+  },
+  {
+   "ts": "2026-11-03T01:46:04.684432+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 264,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 205,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "Médio Tejo",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "mediotejo.net"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-03T00:46:04.816944+00:00",
-  "mediotejo.net": "2026-11-03T00:46:04.816944+00:00"
+  "cm-serta.pt": "2026-11-03T01:46:04.684432+00:00",
+  "mediotejo.net": "2026-11-03T01:46:04.684432+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-03T00:46:04.816944+00:00",
-  "Apoio fundo ambiental": "2026-11-03T00:46:04.816944+00:00"
+  "Sertã": "2026-11-03T01:46:04.684432+00:00",
+  "Apoio fundo ambiental": "2026-11-03T01:46:04.684432+00:00"
  },
  "raspadas": {},
  "paginas_lidas": []
