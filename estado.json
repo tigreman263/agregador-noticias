@@ -384,7 +384,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-03T14:01:22.913473+00:00"
+   "ultima": "2026-11-03T15:02:05.662796+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -652,7 +652,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-03T14:01:22.913473+00:00"
+   "ultima": "2026-11-03T15:02:05.662796+00:00"
   }
  },
  "ultima_descoberta": "2026-11-03",
@@ -668,36 +668,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-02T09:00:44.394455+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 285,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 220,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 3,
-   "silencio": false,
-   "erros": [],
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-02T10:00:48.753893+00:00",
    "pesquisas": [
@@ -2007,10 +1977,46 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-03T15:02:05.662796+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 554,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 473,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-03T14:46:03.678783+00:00"
+  "cm-serta.pt": "2026-11-03T15:02:05.662796+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2018,8 +2024,8 @@
   "mediotejo.net": "2026-11-03T09:57:01.289148+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-03T14:01:22.913473+00:00",
-  "Apoio fundo ambiental": "2026-11-03T14:01:22.913473+00:00"
+  "Sertã": "2026-11-03T15:02:05.662796+00:00",
+  "Apoio fundo ambiental": "2026-11-03T15:02:05.662796+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -2680,9 +2686,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-03T14:46:03.678783+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-03T15:02:05.662796+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00"
   }
