@@ -12,20 +12,7 @@
  "resumo": [],
  "adiados": [],
  "ultimo_resumo": "2026-11-04",
- "sugeridas": {
-  "sicnoticias.pt": {
-   "dominio": "sicnoticias.pt",
-   "nome": "SIC Notícias",
-   "n": 3,
-   "pesquisas": [
-    "Apoio fundo ambiental"
-   ],
-   "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "site": "https://sicnoticias.pt",
-   "feed": null,
-   "em": "2026-11-04T09:01:01.641335+00:00"
-  }
- },
+ "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
   "noticiasaominuto.com",
@@ -721,27 +708,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-03T21:31:24.776770+00:00",
-   "pesquisas": [],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-03T21:37:59.797636+00:00",
    "pesquisas": [
@@ -1639,10 +1605,31 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-04T09:31:00.686841+00:00",
+   "pesquisas": [],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-04T09:16:25.602165+00:00"
+  "cm-serta.pt": "2026-11-04T09:31:00.686841+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2312,9 +2299,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-04T09:16:25.602165+00:00",
-   "falhas": 1,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-04T09:31:00.686841+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00"
   }
