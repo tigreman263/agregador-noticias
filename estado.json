@@ -714,27 +714,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-03T14:31:14.996922+00:00",
-   "pesquisas": [],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
-  {
    "ts": "2026-11-03T14:46:03.678783+00:00",
    "pesquisas": [],
    "falhas": [],
@@ -1805,6 +1784,18 @@
   },
   {
    "ts": "2026-11-04T02:15:58.303799+00:00",
+   "pesquisas": [],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": []
+  },
+  {
+   "ts": "2026-11-04T02:31:00.569068+00:00",
    "pesquisas": [],
    "falhas": [],
    "alertas": 0,
