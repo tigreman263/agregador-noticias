@@ -9,79 +9,9 @@
   "27d383339cd74dfb": "2026-11-03T21:01:09.280935+00:00",
   "3393efb515bbdb5d": "2026-11-04T07:45:57.520045+00:00"
  },
- "resumo": [
-  {
-   "titulo": "Vale Eficiência: famílias elegíveis estão a ser contactas, saiba o que há de novo",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQY2ZlbGNtc0x3WkloR2JaVWc2dWNfb3QzbjlsQml4WFFIZHBIbnZIMzl1SFUwWWhLelRnYy0wN3VkTmlFWV81T204T3g5Zk9aRUV0Sk0zOXNQTTFrZTRoMWNQWHpIUDEwbXFhaUk0MkhHUExuRVZBaFVFcjg5bkZXdXN1UUFIQlRRY1B1S0drVG9QU01KNlYzMnZuN1NybUtFODg4TGVsZWp1SUowR1NyNUFwM3BWYUZnNi1TYlNtbktjNmxMS3pSTHVvNElJZWhmUXBIZDFMZDVVYXhHQ25vNTJ3?oc=5",
-   "dominio": "sicnoticias.pt",
-   "fonte": "SIC Notícias",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-03T12:43:27+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "eb5fa106f83d6962"
-   ],
-   "ts": "2026-11-03T18:01:18.323033+00:00"
-  },
-  {
-   "titulo": "Vale Eficiência: famílias elegíveis estão a ser contactadas, saiba o que há de novo",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQY2ZlbGNtc0x3WkloR2JaVWc2dWNfb3QzbjlsQml4WFFIZHBIbnZIMzl1SFUwWWhLelRnYy0wN3VkTmlFWV81T204T3g5Zk9aRUV0Sk0zOXNQTTFrZTRoMWNQWHpIUDEwbXFhaUk0MkhHUExuRVZBaFVFcjg5bkZXdXN1UUFIQlRRY1B1S0drVG9QU01KNlYzMnZuN1NybUtFODg4TGVsZWp1SUowR1NyNUFwM3BWYUZnNi1TYlNtbktjNmxMS3pSTHVvNElJZWhmUXBIZDFMZDVVYXhHQ25vNTJ3?oc=5",
-   "dominio": "sicnoticias.pt",
-   "fonte": "SIC Notícias",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-03T12:43:27+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "27d383339cd74dfb"
-   ],
-   "ts": "2026-11-03T21:01:09.280935+00:00"
-  },
-  {
-   "titulo": "Até 1.300 euros: Afinal, o Vale Eficiência vai mesmo chegar às famílias?",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOckFSdE81eS1sSXFKVmw2VjdyeWJwbmtWdlpRMmoyYk1lUk5XbUo4bVBpcXJ1T1BCSjdqWWFNZEJraFg0Q0tZNXliZ2RWV3huU2FEVWJWOEhBVnM3SzFDZ2NaTGw4RnhBMjZfYjNzMGUzeWtwamRQUzRSN1lyekpQM2NCRm5QaDJrZnlDV2loNHlELU9QQWhMUVhjc2R5NEJwWVZiVS1Bc2xmaTFiNDMxQV83d3Zuako0eVE?oc=5",
-   "dominio": "noticiasaominuto.com",
-   "fonte": "Notícias ao Minuto",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-03T08:53:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "3393efb515bbdb5d"
-   ],
-   "ts": "2026-11-04T07:45:57.520045+00:00"
-  }
- ],
+ "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-03",
+ "ultimo_resumo": "2026-11-04",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -736,50 +666,36 @@
    "fonte": "Público",
    "nota": 23.0,
    "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-04T08:00:45.247714+00:00",
+   "titulo": "Vale Eficiência: famílias elegíveis estão a ser contactas, saiba o que há de novo",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQY2ZlbGNtc0x3WkloR2JaVWc2dWNfb3QzbjlsQml4WFFIZHBIbnZIMzl1SFUwWWhLelRnYy0wN3VkTmlFWV81T204T3g5Zk9aRUV0Sk0zOXNQTTFrZTRoMWNQWHpIUDEwbXFhaUk0MkhHUExuRVZBaFVFcjg5bkZXdXN1UUFIQlRRY1B1S0drVG9QU01KNlYzMnZuN1NybUtFODg4TGVsZWp1SUowR1NyNUFwM3BWYUZnNi1TYlNtbktjNmxMS3pSTHVvNElJZWhmUXBIZDFMZDVVYXhHQ25vNTJ3?oc=5",
+   "fonte": "SIC Notícias",
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-04T08:00:45.247714+00:00",
+   "titulo": "Vale Eficiência: famílias elegíveis estão a ser contactadas, saiba o que há de novo",
+   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQY2ZlbGNtc0x3WkloR2JaVWc2dWNfb3QzbjlsQml4WFFIZHBIbnZIMzl1SFUwWWhLelRnYy0wN3VkTmlFWV81T204T3g5Zk9aRUV0Sk0zOXNQTTFrZTRoMWNQWHpIUDEwbXFhaUk0MkhHUExuRVZBaFVFcjg5bkZXdXN1UUFIQlRRY1B1S0drVG9QU01KNlYzMnZuN1NybUtFODg4TGVsZWp1SUowR1NyNUFwM3BWYUZnNi1TYlNtbktjNmxMS3pSTHVvNElJZWhmUXBIZDFMZDVVYXhHQ25vNTJ3?oc=5",
+   "fonte": "SIC Notícias",
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-04T08:00:45.247714+00:00",
+   "titulo": "Até 1.300 euros: Afinal, o Vale Eficiência vai mesmo chegar às famílias?",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOckFSdE81eS1sSXFKVmw2VjdyeWJwbmtWdlpRMmoyYk1lUk5XbUo4bVBpcXJ1T1BCSjdqWWFNZEJraFg0Q0tZNXliZ2RWV3huU2FEVWJWOEhBVnM3SzFDZ2NaTGw4RnhBMjZfYjNzMGUzeWtwamRQUzRSN1lyekpQM2NCRm5QaDJrZnlDV2loNHlELU9QQWhMUVhjc2R5NEJwWVZiVS1Bc2xmaTFiNDMxQV83d3Zuako0eVE?oc=5",
+   "fonte": "Notícias ao Minuto",
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-03T20:01:44.722968+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 533,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 564,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Tempestade",
-     "recolhidas": 528,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-03T20:16:19.496320+00:00",
    "pesquisas": [],
@@ -1682,10 +1598,31 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-04T08:00:45.247714+00:00",
+   "pesquisas": [],
+   "falhas": [
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 3,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-04T07:45:57.520045+00:00"
+  "cm-serta.pt": "2026-11-04T08:00:45.247714+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2355,9 +2292,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-04T07:45:57.520045+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-04T08:00:45.247714+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00"
   }
