@@ -820,27 +820,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-04T07:15:58.129463+00:00",
-   "pesquisas": [],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
-  {
    "ts": "2026-11-04T07:31:04.447021+00:00",
    "pesquisas": [],
    "falhas": [],
@@ -2002,10 +1981,31 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-04T19:46:01.990809+00:00",
+   "pesquisas": [],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-04T19:31:04.406369+00:00"
+  "cm-serta.pt": "2026-11-04T19:46:01.990809+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2674,7 +2674,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-04T19:31:04.406369+00:00",
+   "verificado": "2026-11-04T19:46:01.990809+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
