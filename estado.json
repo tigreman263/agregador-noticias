@@ -784,18 +784,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-04T03:31:02.166336+00:00",
-   "pesquisas": [],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [],
-   "bloqueados": []
-  },
-  {
    "ts": "2026-11-04T03:45:59.968171+00:00",
    "pesquisas": [
     {
@@ -1851,10 +1839,31 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-04T16:01:08.325026+00:00",
+   "pesquisas": [],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-04T15:46:19.511046+00:00"
+  "cm-serta.pt": "2026-11-04T16:01:08.325026+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2523,9 +2532,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-04T15:46:19.511046+00:00",
-   "falhas": 2,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-04T16:01:08.325026+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00"
   }
