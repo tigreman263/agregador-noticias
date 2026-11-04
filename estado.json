@@ -6,7 +6,8 @@
   "5b9cd746e50a2a89": "2026-11-03T16:01:01.631263+00:00",
   "1194d62fe1b4c0cd": "2026-11-03T16:01:01.631263+00:00",
   "eb5fa106f83d6962": "2026-11-03T18:01:18.323033+00:00",
-  "27d383339cd74dfb": "2026-11-03T21:01:09.280935+00:00"
+  "27d383339cd74dfb": "2026-11-03T21:01:09.280935+00:00",
+  "3393efb515bbdb5d": "2026-11-04T07:45:57.520045+00:00"
  },
  "resumo": [
   {
@@ -54,6 +55,29 @@
     "27d383339cd74dfb"
    ],
    "ts": "2026-11-03T21:01:09.280935+00:00"
+  },
+  {
+   "titulo": "Até 1.300 euros: Afinal, o Vale Eficiência vai mesmo chegar às famílias?",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOckFSdE81eS1sSXFKVmw2VjdyeWJwbmtWdlpRMmoyYk1lUk5XbUo4bVBpcXJ1T1BCSjdqWWFNZEJraFg0Q0tZNXliZ2RWV3huU2FEVWJWOEhBVnM3SzFDZ2NaTGw4RnhBMjZfYjNzMGUzeWtwamRQUzRSN1lyekpQM2NCRm5QaDJrZnlDV2loNHlELU9QQWhMUVhjc2R5NEJwWVZiVS1Bc2xmaTFiNDMxQV83d3Zuako0eVE?oc=5",
+   "dominio": "noticiasaominuto.com",
+   "fonte": "Notícias ao Minuto",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Vale Eficiência"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-03T08:53:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "3393efb515bbdb5d"
+   ],
+   "ts": "2026-11-04T07:45:57.520045+00:00"
   }
  ],
  "adiados": [],
@@ -412,20 +436,22 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-04T06:46:14.609664+00:00"
+   "ultima": "2026-11-04T07:45:57.520045+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
    "site": "https://www.noticiasaominuto.com",
    "ids": [
     "0c253ce6f1d79ce6",
-    "584769f213885b3a"
+    "584769f213885b3a",
+    "3393efb515bbdb5d"
    ],
    "pesquisas": [
-    "Sertã"
+    "Sertã",
+    "Apoio fundo ambiental"
    ],
    "exemplo": "Agricultores dos Açores pedem 23 milhões de euros em apoios do Governo",
-   "ultima": "2026-11-01T21:45:48.326067+00:00"
+   "ultima": "2026-11-04T07:45:57.520045+00:00"
   },
   "ambienteonline.pt": {
    "nome": "Água&Ambiente Online",
@@ -478,7 +504,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "ultima": "2026-11-04T06:46:14.609664+00:00"
+   "ultima": "2026-11-04T07:45:57.520045+00:00"
   },
   "jm-madeira.pt": {
    "nome": "JM Madeira",
@@ -685,7 +711,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-04T06:46:14.609664+00:00"
+   "ultima": "2026-11-04T07:45:57.520045+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -697,7 +723,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência regressa para 28 mil famílias que ficaram sem apoio. Nova plataforma abre no final de novembro",
-   "ultima": "2026-11-04T06:46:14.609664+00:00"
+   "ultima": "2026-11-04T07:45:57.520045+00:00"
   }
  },
  "ultima_descoberta": "2026-11-03",
@@ -713,27 +739,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-03T19:46:20.334197+00:00",
-   "pesquisas": [],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-03T20:01:44.722968+00:00",
    "pesquisas": [
@@ -1642,10 +1647,45 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-04T07:45:57.520045+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 527,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 484,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-04T07:31:04.447021+00:00"
+  "cm-serta.pt": "2026-11-04T07:45:57.520045+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -1653,8 +1693,8 @@
   "mediotejo.net": "2026-11-03T09:57:01.289148+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-04T06:46:14.609664+00:00",
-  "Apoio fundo ambiental": "2026-11-04T06:46:14.609664+00:00"
+  "Sertã": "2026-11-04T07:45:57.520045+00:00",
+  "Apoio fundo ambiental": "2026-11-04T07:45:57.520045+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -2315,7 +2355,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-04T07:31:04.447021+00:00",
+   "verificado": "2026-11-04T07:45:57.520045+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
