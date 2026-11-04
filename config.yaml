@@ -60,7 +60,7 @@ vigiar:
     url: "https://cm-serta.pt/comunicacao/noticias"
     parte: ""
     frequencia: "diario"
-    ativa: false
+    ativa: true
 
 # Cada pesquisa tem 4 perguntas (o painel preenche-as):
 #   sitio:    a notícia TEM de falar disto (variantes separadas por "/")
