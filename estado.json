@@ -60,7 +60,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-05T15:46:04.057618+00:00"
+   "ultima": "2026-11-05T17:00:59.314370+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -452,7 +452,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-05T15:46:04.057618+00:00"
+   "ultima": "2026-11-05T17:00:59.314370+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -683,7 +683,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vânia Jesus quer Porto Santo “100% renovável” e igualdade de acesso ao Fundo Ambiental",
-   "ultima": "2026-11-05T15:46:04.057618+00:00"
+   "ultima": "2026-11-05T17:00:59.314370+00:00"
   }
  },
  "ultima_descoberta": "2026-11-05",
@@ -777,30 +777,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-05T17:00:59.314370+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-04T15:31:20.335311+00:00",
-   "pesquisas": [],
-   "falhas": [
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-04T15:46:19.511046+00:00",
    "pesquisas": [],
@@ -2115,18 +2103,52 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-05T17:00:59.314370+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 528,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 485,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-05T15:46:04.057618+00:00"
+  "cm-serta.pt": "2026-11-05T17:00:59.314370+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-05T10:30:50.788049+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-05T15:46:04.057618+00:00",
-  "Apoio fundo ambiental": "2026-11-05T15:46:04.057618+00:00"
+  "Sertã": "2026-11-05T17:00:59.314370+00:00",
+  "Apoio fundo ambiental": "2026-11-05T17:00:59.314370+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -2892,6 +2914,10 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
+    "Última hora",
+    "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
+    "Última hora",
     "CERNACHE DO BONJARDIM: Acidente provoca dois feridos leves",
     "Última hora",
     "SERTÃ: Mau cheiro no Boeiro em análise",
@@ -2912,11 +2938,21 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
+    "Sertã",
+    "Beira Baixa",
+    "05-11-2026",
+    "Última hora",
+    "Banco, cadeira e eventualmente outros objetos, foram atirados para a Ribeira do Amioso",
+    "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
+    "Oleiros",
+    "Beira Baixa",
+    "05-11-2026",
+    "Última hora",
     "VILA DE REI: Projeto ‘Viv’Aldeia’ dinamizou sessões sobre prevenção criminal",
     "Vila de Rei",
     "Beira Baixa",
     "05-11-2026",
-    "No mês de outubro",
     "PAMPILHOSA DA SERRA: Município e Tábua coordenam grupo «Brincar na Cidade Educadora»",
     "Pampilhosa da Serra",
     "Região",
@@ -2962,16 +2998,6 @@
     "Região",
     "04-11-2026",
     "Última hora",
-    "SANTO ANDRÉ DAS TOJEIRAS: Freguesia fez 100 anos e lembrou fundadores",
-    "Beira Baixa",
-    "Castelo Branco",
-    "03-11-2026",
-    "Última hora",
-    "SERTÃ: Gabriel Marçal é atleta do ano de Hóquei no Gelo",
-    "Sertã",
-    "Beira Baixa",
-    "Desporto",
-    "03-11-2026",
     "1",
     "2",
     "3",
@@ -2985,31 +3011,30 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-05T15:46:04.057618+00:00",
+   "verificado": "2026-11-05T17:00:59.314370+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-05T12:46:00.358080+00:00",
+   "mudou": "2026-11-05T17:00:59.314370+00:00",
    "mudanca": {
     "mais": [
-     "VILA DE REI: Projeto ‘Viv’Aldeia’ dinamizou sessões sobre prevenção criminal",
-     "Vila de Rei",
-     "No mês de outubro",
-     "PAMPILHOSA DA SERRA: Município e Tábua coordenam grupo «Brincar na Cidade Educadora»",
-     "Pampilhosa da Serra",
-     "Região"
+     "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
+     "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
+     "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
+     "Banco, cadeira e eventualmente outros objetos, foram atirados para a Ribeira do Amioso",
+     "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
+     "Oleiros"
     ],
     "menos": [
-     "No âmbito do projeto “Separar para criar mais valor 2.0”",
-     "SERTÃ: Vereadora do PSD considera “lamentável” situação da Bela Vista",
-     "Sertã",
-     "Última hora",
-     "SERTÃ/Pedrógão Pequeno: Tradição do borrego juntou músicos e famílias",
-     "Sertã"
+     "No mês de outubro",
+     "SANTO ANDRÉ DAS TOJEIRAS: Freguesia fez 100 anos e lembrou fundadores",
+     "Castelo Branco",
+     "SERTÃ: Gabriel Marçal é atleta do ano de Hóquei no Gelo",
+     "Desporto"
     ],
     "n_mais": 6,
-    "n_menos": 6
+    "n_menos": 5
    }
   }
  },
