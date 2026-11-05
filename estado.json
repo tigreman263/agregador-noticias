@@ -13,102 +13,9 @@
   "e5f153cc4ab2fd7e": "2026-11-04T14:16:15.609883+00:00",
   "4b553ecb57f716c0": "2026-11-04T16:16:00.584428+00:00"
  },
- "resumo": [
-  {
-   "titulo": "PSD salienta que Porto Santo prepara teste de funcionamento exclusivo com energias renováveis",
-   "link": "https://sapo.pt/artigo/psd-salienta-que-porto-santo-prepara-teste-de-funcionamento-exclusivo-com-energias-renovaveis-6aeb0f893a69d6d8c096ad2f",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Fundo Ambiental"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-04T10:53:44+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "262b6d4a3e5cf6a9"
-   ],
-   "ts": "2026-11-04T11:16:11.933918+00:00"
-  },
-  {
-   "titulo": "Vale Eficiência: DECO consegue resposta para 28 mil famílias que tinham sido esquecidas",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNLXJYMnZ1TW53TTJMNmJTWm05YmpYQ1hvTGJHNkh6MWQxaDJVc1MxWS0yMUF4eEJZUVpYTVJnMWR0Y2xXYjNJd3EtZ2xDMXpLd3pzbHFPOVVtbUVMTk5meDRFaGxCLWlsMTFvOVdjR1FreTVCbDdMaThjV3FmaTRLVjNoaUJVLWdPemJZbENOU3FmNkdYc2FqNW50VjA1ZEJQV2x1MG9fcDNpYTJtU0NJV0JhbDNCeUJnSzdyNm5VWVFoZVBEanRmMVRHbTVPVnM?oc=5",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 30.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-04T12:06:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "3dd133dba22282ca"
-   ],
-   "ts": "2026-11-04T14:16:15.609883+00:00"
-  },
-  {
-   "titulo": "Vânia Jesus defende Porto Santo 100% renovável e igualdade no acesso ao Fundo Ambiental",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMXk5ZF9uNlE5RE9TZzgyRTY1MExqUDZoRGl5a3VZMXVoM2h0MzVDMWNYa3llOVQyRndybUdTS2gzdWJTYUE4Mm1NVXJLNDMzZ292Z0ZnTEpvcms4WGNzdkU1TkV5aXZ5VlNNbXdYWEUyNlJ1U3kyelE4N28zdUN0TWdPbmhaMDMxdU9IZUI4ZUh6SzV0Q1N1clcxcV9mSmUxcnpqWmRiVG5RU080VnNYbXR4bktyZGlDbGhuUXlwdHJ5elZaUC1mY3VoTUt2S1FLamlqQk02U1RwM016OXluOA?oc=5",
-   "dominio": "jm-madeira.pt",
-   "fonte": "JM Madeira",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Fundo Ambiental"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-04T10:46:19+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "e5f153cc4ab2fd7e"
-   ],
-   "ts": "2026-11-04T14:16:15.609883+00:00"
-  },
-  {
-   "titulo": "Vânia Jesus quer Porto Santo “100% renovável” e igualdade de acesso ao Fundo Ambiental",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeWRERkd5dEhTbFU5MDk4dnRsTU5GMG9aOU1ackR0OTFvZjRlcGRYcmFrZ1B1c1VIY0RkMVRkQ0FnVWdCYlh6dFdUX01qdy1DcVR2UVVXTDZ3dXM5VXU3N0hNd2pheTlDUnhGYkctMzNHLVRVWjFhVXVpeVNaMEM2Q2ZOVDdIYVhJYzdBeU1VbGxwNDYxMFQ0LVVzY21INm5kSHVmekVKTTA4RUw3YjQzLWpuRzR5dnRldy1xN3ZoM2s?oc=5",
-   "dominio": "funchalnoticias.net",
-   "fonte": "Funchal Notícias",
-   "confiavel": false,
-   "nota": 23.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Fundo Ambiental"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-04T15:46:52+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "4b553ecb57f716c0"
-   ],
-   "ts": "2026-11-04T16:16:00.584428+00:00"
-  }
- ],
+ "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-04",
+ "ultimo_resumo": "2026-11-05",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -153,7 +60,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-05T07:16:21.853077+00:00"
+   "ultima": "2026-11-05T08:16:21.796256+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -478,7 +385,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Agricultores dos Açores pedem 23 milhões de euros em apoios do Governo",
-   "ultima": "2026-11-05T07:16:21.853077+00:00"
+   "ultima": "2026-11-05T08:16:21.796256+00:00"
   },
   "ambienteonline.pt": {
    "nome": "Água&Ambiente Online",
@@ -531,7 +438,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "ultima": "2026-11-05T07:16:21.853077+00:00"
+   "ultima": "2026-11-05T08:16:21.796256+00:00"
   },
   "jm-madeira.pt": {
    "nome": "JM Madeira",
@@ -545,7 +452,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-05T07:16:21.853077+00:00"
+   "ultima": "2026-11-05T08:16:21.796256+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -740,7 +647,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-05T07:16:21.853077+00:00"
+   "ultima": "2026-11-05T08:16:21.796256+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -752,7 +659,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência regressa para 28 mil famílias que ficaram sem apoio. Nova plataforma abre no final de novembro",
-   "ultima": "2026-11-05T07:16:21.853077+00:00"
+   "ultima": "2026-11-05T08:16:21.796256+00:00"
   },
   "blogdafeira.com.br": {
    "nome": "Blog da Feira",
@@ -776,7 +683,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vânia Jesus quer Porto Santo “100% renovável” e igualdade de acesso ao Fundo Ambiental",
-   "ultima": "2026-11-05T07:16:21.853077+00:00"
+   "ultima": "2026-11-05T08:16:21.796256+00:00"
   }
  },
  "ultima_descoberta": "2026-11-04",
@@ -816,30 +723,45 @@
    "fonte": "Notícias ao Minuto",
    "nota": 20.0,
    "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-05T08:16:21.796256+00:00",
+   "titulo": "Vale Eficiência: DECO consegue resposta para 28 mil famílias que tinham sido esquecidas",
+   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNLXJYMnZ1TW53TTJMNmJTWm05YmpYQ1hvTGJHNkh6MWQxaDJVc1MxWS0yMUF4eEJZUVpYTVJnMWR0Y2xXYjNJd3EtZ2xDMXpLd3pzbHFPOVVtbUVMTk5meDRFaGxCLWlsMTFvOVdjR1FreTVCbDdMaThjV3FmaTRLVjNoaUJVLWdPemJZbENOU3FmNkdYc2FqNW50VjA1ZEJQV2x1MG9fcDNpYTJtU0NJV0JhbDNCeUJnSzdyNm5VWVFoZVBEanRmMVRHbTVPVnM?oc=5",
+   "fonte": "SAPO",
+   "nota": 30.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-05T08:16:21.796256+00:00",
+   "titulo": "Vânia Jesus quer Porto Santo “100% renovável” e igualdade de acesso ao Fundo Ambiental",
+   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeWRERkd5dEhTbFU5MDk4dnRsTU5GMG9aOU1ackR0OTFvZjRlcGRYcmFrZ1B1c1VIY0RkMVRkQ0FnVWdCYlh6dFdUX01qdy1DcVR2UVVXTDZ3dXM5VXU3N0hNd2pheTlDUnhGYkctMzNHLVRVWjFhVXVpeVNaMEM2Q2ZOVDdIYVhJYzdBeU1VbGxwNDYxMFQ0LVVzY21INm5kSHVmekVKTTA4RUw3YjQzLWpuRzR5dnRldy1xN3ZoM2s?oc=5",
+   "fonte": "Funchal Notícias",
+   "nota": 23.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-05T08:16:21.796256+00:00",
+   "titulo": "Vânia Jesus defende Porto Santo 100% renovável e igualdade no acesso ao Fundo Ambiental",
+   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMXk5ZF9uNlE5RE9TZzgyRTY1MExqUDZoRGl5a3VZMXVoM2h0MzVDMWNYa3llOVQyRndybUdTS2gzdWJTYUE4Mm1NVXJLNDMzZ292Z0ZnTEpvcms4WGNzdkU1TkV5aXZ5VlNNbXdYWEUyNlJ1U3kyelE4N28zdUN0TWdPbmhaMDMxdU9IZUI4ZUh6SzV0Q1N1clcxcV9mSmUxcnpqWmRiVG5RU080VnNYbXR4bktyZGlDbGhuUXlwdHJ5elZaUC1mY3VoTUt2S1FLamlqQk02U1RwM016OXluOA?oc=5",
+   "fonte": "JM Madeira",
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-05T08:16:21.796256+00:00",
+   "titulo": "PSD salienta que Porto Santo prepara teste de funcionamento exclusivo com energias renováveis",
+   "link": "https://sapo.pt/artigo/psd-salienta-que-porto-santo-prepara-teste-de-funcionamento-exclusivo-com-energias-renovaveis-6aeb0f893a69d6d8c096ad2f",
+   "fonte": "SAPO",
+   "nota": 19.5,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-04T12:46:01.637007+00:00",
-   "pesquisas": [],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-04T13:01:17.919025+00:00",
    "pesquisas": [],
@@ -2052,18 +1974,52 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-05T08:16:21.796256+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 529,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 486,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 4,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 0,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-05T07:16:21.853077+00:00"
+  "cm-serta.pt": "2026-11-05T08:16:21.796256+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-04T10:15:50.063281+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-05T07:16:21.853077+00:00",
-  "Apoio fundo ambiental": "2026-11-05T07:16:21.853077+00:00"
+  "Sertã": "2026-11-05T08:16:21.796256+00:00",
+  "Apoio fundo ambiental": "2026-11-05T08:16:21.796256+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
