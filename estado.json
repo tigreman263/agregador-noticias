@@ -452,7 +452,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-05T18:01:04.013925+00:00"
+   "ultima": "2026-11-05T18:49:10.351501+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -683,7 +683,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vânia Jesus quer Porto Santo “100% renovável” e igualdade de acesso ao Fundo Ambiental",
-   "ultima": "2026-11-05T18:01:04.013925+00:00"
+   "ultima": "2026-11-05T18:49:10.351501+00:00"
   }
  },
  "ultima_descoberta": "2026-11-05",
@@ -786,30 +786,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-05T18:49:10.351501+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-04T16:01:08.325026+00:00",
-   "pesquisas": [],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-04T16:16:00.584428+00:00",
    "pesquisas": [
@@ -2150,18 +2138,53 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-05T18:49:10.351501+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 526,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 483,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 2,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-05T18:01:04.013925+00:00"
+  "cm-serta.pt": "2026-11-05T18:49:10.351501+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-05T10:30:50.788049+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-05T18:01:04.013925+00:00",
-  "Apoio fundo ambiental": "2026-11-05T18:01:04.013925+00:00"
+  "Sertã": "2026-11-05T18:49:10.351501+00:00",
+  "Apoio fundo ambiental": "2026-11-05T18:49:10.351501+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -2822,7 +2845,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-05T10:39:48.895576+00:00",
+   "verificado": "2026-11-05T18:49:10.351501+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -2951,12 +2974,16 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: Ecomercado regressa no próximo sábado",
+    "Sertã",
+    "Beira Baixa",
+    "05-11-2026",
+    "No dia 7 e novembro",
     "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
     "Sertã",
     "Beira Baixa",
     "05-11-2026",
     "Última hora",
-    "Banco, cadeira e eventualmente outros objetos, foram atirados para a Ribeira do Amioso",
     "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
     "Oleiros",
     "Beira Baixa",
@@ -3006,11 +3033,6 @@
     "Beira Baixa",
     "04-11-2026",
     "Última hora",
-    "PEDRÓGÃO GRANDE: Castelo Horror Film Festival despede-se com desfile pelas ruas da Vila",
-    "Pedrógão Grande",
-    "Região",
-    "04-11-2026",
-    "Última hora",
     "1",
     "2",
     "3",
@@ -3024,29 +3046,27 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-05T18:01:04.013925+00:00",
+   "verificado": "2026-11-05T18:49:10.351501+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-05T17:00:59.314370+00:00",
+   "mudou": "2026-11-05T18:49:10.351501+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
-     "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
-     "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
-     "Banco, cadeira e eventualmente outros objetos, foram atirados para a Ribeira do Amioso",
-     "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
-     "Oleiros"
+     "SERTÃ: Ecomercado regressa no próximo sábado",
+     "Sertã",
+     "Beira Baixa",
+     "No dia 7 e novembro"
     ],
     "menos": [
-     "No mês de outubro",
-     "SANTO ANDRÉ DAS TOJEIRAS: Freguesia fez 100 anos e lembrou fundadores",
-     "Castelo Branco",
-     "SERTÃ: Gabriel Marçal é atleta do ano de Hóquei no Gelo",
-     "Desporto"
+     "Banco, cadeira e eventualmente outros objetos, foram atirados para a Ribeira do Amioso",
+     "PEDRÓGÃO GRANDE: Castelo Horror Film Festival despede-se com desfile pelas ruas da Vila",
+     "Pedrógão Grande",
+     "Região",
+     "Última hora"
     ],
-    "n_mais": 6,
+    "n_mais": 4,
     "n_menos": 5
    }
   }
