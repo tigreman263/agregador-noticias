@@ -16,21 +16,7 @@
  "resumo": [],
  "adiados": [],
  "ultimo_resumo": "2026-11-05",
- "sugeridas": {
-  "jm-madeira.pt": {
-   "dominio": "jm-madeira.pt",
-   "nome": "JM Madeira",
-   "n": 2,
-   "pesquisas": [
-    "Sertã",
-    "Apoio fundo ambiental"
-   ],
-   "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "site": "https://www.jm-madeira.pt",
-   "feed": null,
-   "em": "2026-11-05T08:23:57.557445+00:00"
-  }
- },
+ "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
   "noticiasaominuto.com",
@@ -74,7 +60,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-05T09:31:02.437387+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -452,7 +438,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-05T09:31:02.437387+00:00"
   },
   "jm-madeira.pt": {
    "nome": "JM Madeira",
@@ -466,7 +452,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-05T09:31:02.437387+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -661,7 +647,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-05T09:31:02.437387+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -673,7 +659,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência regressa para 28 mil famílias que ficaram sem apoio. Nova plataforma abre no final de novembro",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-05T09:31:02.437387+00:00"
   },
   "blogdafeira.com.br": {
    "nome": "Blog da Feira",
@@ -697,7 +683,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vânia Jesus quer Porto Santo “100% renovável” e igualdade de acesso ao Fundo Ambiental",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-05T09:31:02.437387+00:00"
   }
  },
  "ultima_descoberta": "2026-11-05",
@@ -776,27 +762,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-04T13:31:22.385556+00:00",
-   "pesquisas": [],
-   "falhas": [
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-04T13:46:04.196243+00:00",
    "pesquisas": [],
@@ -2036,18 +2001,52 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-05T09:31:02.437387+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 528,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 486,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-05T08:23:57.557445+00:00"
+  "cm-serta.pt": "2026-11-05T09:31:02.437387+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-04T10:15:50.063281+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-05T08:23:57.557445+00:00",
-  "Apoio fundo ambiental": "2026-11-05T08:23:57.557445+00:00"
+  "Sertã": "2026-11-05T09:31:02.437387+00:00",
+  "Apoio fundo ambiental": "2026-11-05T09:31:02.437387+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -2713,6 +2712,208 @@
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00"
+  },
+  "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
+   "linhas": [
+    "quinta-feira, 5 novembro 2026",
+    "Informação",
+    "Programação",
+    "Ficha Técnica",
+    "História",
+    "Contactos",
+    "Notícias",
+    "Todas as notícias",
+    "Alvaiázere",
+    "Castelo Branco",
+    "Castanheira de Pera",
+    "Cernache do Bonjardim",
+    "Ferreira do Zêzere",
+    "Figueiró dos Vinhos",
+    "Mação",
+    "Oleiros",
+    "Pampilhosa da Serra",
+    "Pedrógão Grande",
+    "Penamacor",
+    "Proença-a-Nova",
+    "Sardoal",
+    "Sertã",
+    "Vila de Rei",
+    "Vila Velha de Ródão",
+    "Beira Baixa",
+    "Médio Tejo",
+    "Desporto",
+    "Educação",
+    "Nacional",
+    "Saúde",
+    "Política",
+    "Região",
+    "Arquivo até…… fevereiro de 2021",
+    "Góis",
+    "Desporto",
+    "Taça de Honra José Farromba Serie B",
+    "Taça de Honra José Farromba",
+    "LIGA 3 PLACARD 1ª Fase Série B",
+    "LIGA 3 PLACARD 1ª Fase Série B",
+    "Campeonato de Portugal 1ª Fase Série 3 26/27",
+    "Campeonato de Portugal 1ª Fase Série 3 26/27",
+    "Campeonato Distrital Castelo Branco Liga CRP",
+    "Liga CRP 2026",
+    "Taça de Honra José Farromba",
+    "Taça de Honra José Farromba",
+    "1ª Divisão Distrital Leiria",
+    "Primeira Divisão Leiria Série A",
+    "1ª Distrital Santarém",
+    "Campeonato Distrital Santarém",
+    "Reportagens",
+    "Entrevistas",
+    "Opinião",
+    "Podcasts",
+    "50 Anos do 25 Abril",
+    "50 Anos do 25 de Abril: “Porque todos transportamos História” com Irene Barata",
+    "SERTÃ: Visita guiada à exposição Ventos de Abril no concelho",
+    "50 Anos do 25 de Abril: “Porque todos transportamos História” com José Paulo Farinha",
+    "50 Anos do 25 de Abril: “Porque todos transportamos História” com Eduardo Patrício",
+    "50 Anos do 25 de Abril: “Porque todos transportamos História” com Carlos Ribeiro",
+    "50 Anos do 25 de Abril: “Porque todos transportamos História” com Luís Farinha",
+    "Prova dos Nove",
+    "Entrevistas",
+    "Relembranças",
+    "Maratona de Leitura 2021",
+    "Debates Autárquicos 2021",
+    "Cozinha com Vida",
+    "Reportagens",
+    "REGIÃO: Autarcas em luta contra central fotovoltaica no Cabril",
+    "REGIÃO: APA e ANEPC ouvidas na AR",
+    "CERNACHE DO BONJARDIM: AVINHARTE vincou a importância dos vinhos deste território",
+    "CERNACHE DO BONJARDIM/EN238: Governo definiu obras prioritárias e ignorou esta via",
+    "SERTÃ: Mobilidade com novidades para breve",
+    "CERNACHE DO BONJARDIM: Rentabilidade da castanha e do castanheiro atestadas",
+    "SERTÃ: Teatro Interior, um projeto de cá, para cá, com gente de cá",
+    "Castanheira de Pera: Município inicia nova dinâmica no sul do concelho",
+    "SERTÃ: Deputados Municipais unem-se ao PSD e aprovam moção para reabrir troço da EN2",
+    "SERTÃ: AM destaca louvor aos combatentes e valores democráticos e humanos",
+    "CERNACHE DO BONJARDIM/Avinharte: Quando uma boa história vende um vinho",
+    "CERNACHE DO BONJARDIM: O impacto dos produtores de vinho no desenvolvimento local",
+    "Debates Autárquicos 2025",
+    "Vila de Rei - Debate Autárquico 2025",
+    "Oleiros - Debate Autárquico 2025",
+    "Proença-a-Nova - Debate Autárquico 2025",
+    "Mação - Debate Autárquico 2025",
+    "Figueiró dos Vinhos - Debate Autárquico 2025",
+    "Castanheira de Pera - Debate Autárquico 2025",
+    "Pedrógão Grande - Debate Autárquico 2025",
+    "UFCBNP - Debate Autárquico 2025",
+    "Sertã/Junta: Autárquicas 2025",
+    "Sertã: Debate Autárquico 2025",
+    "Maratona de Leitura da Sertã",
+    "SERTÃ/Maratona de Leitura: Com amor, há minorias que viram maiorias, por amor",
+    "Singulares",
+    "SINGULARES: Julieta Coelho – “Vou correr até que as pernas o permitam”",
+    "Agenda Cultural",
+    "Ouvir online",
+    "Última hora",
+    "CERNACHE DO BONJARDIM: Acidente provoca dois feridos leves",
+    "Última hora",
+    "SERTÃ: Mau cheiro no Boeiro em análise",
+    "Última hora",
+    "CERNACHE DO BONJARDIM: Encerramento do atendimento ao público foi desconvocado",
+    "Última hora",
+    "PEDRÓGÃO GRANDE: Castelo Horror Film Festival despede-se com desfile pelas ruas da Vila",
+    "Última hora",
+    "SANTO ANDRÉ DAS TOJEIRAS: Freguesia fez 100 anos e lembrou fundadores",
+    "Última hora",
+    "SERTÃ: Vereadora do PSD considera “lamentável” situação da Bela Vista",
+    "Última hora",
+    "SERTÃ: Colisão rodoviária provoca três feridos",
+    "Última hora",
+    "VILA DE REI: Prova de corta-mato escolar condiciona trânsito",
+    "Última hora",
+    "Todas as notícias",
+    "Início",
+    "Notícias",
+    "Todas as notícias",
+    "CERNACHE DO BONJARDIM: Tese de Doutoramento sobre Tullio Victorino vai ser apresentada",
+    "Cernache do Bonjardim",
+    "Sertã",
+    "Beira Baixa",
+    "04-11-2026",
+    "Dia 7 de novembro no auditório da junta",
+    "VILA DE REI: Sorteio de Natal regressa com 2.500€ em prémios",
+    "Vila de Rei",
+    "Beira Baixa",
+    "04-11-2026",
+    "PROENÇA-A-NOVA: Município sensibiliza sobre biorresíduos e compostagem doméstica",
+    "Proença-a-Nova",
+    "Beira Baixa",
+    "04-11-2026",
+    "CERNACHE DO BONJARDIM: Acidente provoca dois feridos leves",
+    "Cernache do Bonjardim",
+    "Beira Baixa",
+    "04-11-2026",
+    "Última hora",
+    "SERTÃ: Mau cheiro no Boeiro em análise",
+    "Sertã",
+    "Beira Baixa",
+    "04-11-2026",
+    "Última hora",
+    "CERNACHE DO BONJARDIM: Encerramento do atendimento ao público foi desconvocado",
+    "Cernache do Bonjardim",
+    "Beira Baixa",
+    "04-11-2026",
+    "Última hora",
+    "PEDRÓGÃO GRANDE: Castelo Horror Film Festival despede-se com desfile pelas ruas da Vila",
+    "Pedrógão Grande",
+    "Região",
+    "04-11-2026",
+    "Última hora",
+    "SANTO ANDRÉ DAS TOJEIRAS: Freguesia fez 100 anos e lembrou fundadores",
+    "Beira Baixa",
+    "Castelo Branco",
+    "03-11-2026",
+    "Última hora",
+    "SERTÃ: Gabriel Marçal é atleta do ano de Hóquei no Gelo",
+    "Sertã",
+    "Beira Baixa",
+    "Desporto",
+    "03-11-2026",
+    "SERTÃ: Vereadora do PSD considera “lamentável” situação da Bela Vista",
+    "Sertã",
+    "Beira Baixa",
+    "03-11-2026",
+    "Última hora",
+    "SERTÃ/Pedrógão Pequeno: Tradição do borrego juntou músicos e famílias",
+    "Sertã",
+    "Beira Baixa",
+    "03-11-2026",
+    "SERTÃ: Vereador do PSD questionou ponto de situação de obras",
+    "Cernache do Bonjardim",
+    "Sertã",
+    "Beira Baixa",
+    "03-11-2026",
+    "CERNACHE DO BONJARDIM: Contas do V. Sernache aprovadas",
+    "Cernache do Bonjardim",
+    "Sertã",
+    "Beira Baixa",
+    "Desporto",
+    "03-11-2026",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "É expressamente proibida a reprodução na totalidade ou em parte, em qualquer tipo de suporte, sem prévia permissão da Rádio Condestável ou, quando aplicável, do autor dos artigos.",
+    "CERNACHE DO BONJARDIM",
+    "©2026 Rádio Condestável. Criado por",
+    "Alidata",
+    ". Todos os direitos reservados",
+    "Contactos",
+    "Política de Privacidade"
+   ],
+   "verificado": "2026-11-05T09:31:02.437387+00:00",
+   "falhas": 0,
+   "erro": "",
+   "parte": "",
+   "desde": "2026-11-05T09:31:02.437387+00:00"
   }
  },
  "raspadas": {},
