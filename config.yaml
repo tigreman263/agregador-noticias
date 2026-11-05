@@ -61,6 +61,11 @@ vigiar:
     parte: ""
     frequencia: "diario"
     ativa: true
+  - nome: "Radio condestável"
+    url: "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/"
+    parte: ""
+    frequencia: "hora"
+    ativa: true
 
 # Cada pesquisa tem 4 perguntas (o painel preenche-as):
 #   sitio:    a notícia TEM de falar disto (variantes separadas por "/")
