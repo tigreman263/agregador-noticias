@@ -71,6 +71,11 @@ vigiar:
     parte: ""
     frequencia: "diario"
     ativa: true
+  - nome: "Contas poupanças"
+    url: "https://contaspoupanca.pt/"
+    parte: ""
+    frequencia: "hora"
+    ativa: true
 
 # Cada pesquisa tem 4 perguntas (o painel preenche-as):
 #   sitio:    a notícia TEM de falar disto (variantes separadas por "/")
