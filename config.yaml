@@ -66,6 +66,11 @@ vigiar:
     parte: ""
     frequencia: "hora"
     ativa: true
+  - nome: "Junta freguesia"
+    url: "https://www.jf-cernachebonjardim.pt/"
+    parte: ""
+    frequencia: "diario"
+    ativa: true
 
 # Cada pesquisa tem 4 perguntas (o painel preenche-as):
 #   sitio:    a notícia TEM de falar disto (variantes separadas por "/")
