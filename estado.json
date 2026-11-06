@@ -107,7 +107,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "1b892d34bda6706e",
     "b7cc1c6f08db7977",
     "2ebddc8f6582ce2d",
     "607a60efa2ab6b9d",
@@ -126,14 +125,15 @@
     "9e3ed9592a66279a",
     "262b6d4a3e5cf6a9",
     "3dd133dba22282ca",
-    "f13ca35730748cfa"
+    "f13ca35730748cfa",
+    "6df922739d84e757"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-06T09:16:00.171990+00:00"
+   "ultima": "2026-11-06T13:16:05.472612+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -768,7 +768,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "“As famílias que tinham sido consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão finalmente ter uma nova oportunidade?”",
-   "ultima": "2026-11-06T12:16:27.716358+00:00"
+   "ultima": "2026-11-06T13:16:05.472612+00:00"
   },
   "noticiasdosorraia.sapo.pt": {
    "nome": "Notícias do Sorraia",
@@ -919,30 +919,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-06T13:16:05.472612+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-04T20:46:10.078567+00:00",
-   "pesquisas": [],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-04T21:00:58.061117+00:00",
    "pesquisas": [],
@@ -2431,19 +2419,58 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-06T13:16:05.472612+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 532,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-06T12:16:27.716358+00:00",
-  "contaspoupanca.pt": "2026-11-06T12:16:27.716358+00:00"
+  "cm-serta.pt": "2026-11-06T13:16:05.472612+00:00",
+  "contaspoupanca.pt": "2026-11-06T13:16:05.472612+00:00"
  },
  "lentos": {},
  "testes_diretos": {
-  "cm-serta.pt": "2026-11-06T11:15:50.171000+00:00"
+  "cm-serta.pt": "2026-11-06T11:15:50.171000+00:00",
+  "contaspoupanca.pt": "2026-11-06T13:15:49.930416+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-06T12:16:27.716358+00:00",
-  "Apoio fundo ambiental": "2026-11-06T12:16:27.716358+00:00"
+  "Sertã": "2026-11-06T13:16:05.472612+00:00",
+  "Apoio fundo ambiental": "2026-11-06T13:16:05.472612+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3104,7 +3131,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-06T12:16:27.716358+00:00",
+   "verificado": "2026-11-06T13:16:05.472612+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3217,11 +3244,15 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "VILA VELHA DE RÓDÃO: Município e ACICB promovem “Sorteio de Natal”",
+    "Vila Velha de Ródão",
+    "Beira Baixa",
+    "06-11-2026",
+    "Objetivo: Apoiar o comércio local",
     "CASTANHEIRA DE PERA: Doze Meses D’Artes celebrou os contos e cantares tradicionais",
     "Castanheira de Pera",
     "Região",
     "06-11-2026",
-    "No final de outubro",
     "CERNACHE DO BONJARDIM: Bombeiros realizam nova AG este mês",
     "Cernache do Bonjardim",
     "Sertã",
@@ -3269,10 +3300,6 @@
     "Vila de Rei",
     "Beira Baixa",
     "05-11-2026",
-    "GÓIS: Concelho integra a programação do Festival Caminhos do Cinema Português",
-    "Góis",
-    "Região",
-    "05-11-2026",
     "1",
     "2",
     "3",
@@ -3286,49 +3313,27 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-06T12:16:27.716358+00:00",
+   "verificado": "2026-11-06T13:16:05.472612+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-06T12:16:27.716358+00:00",
+   "mudou": "2026-11-06T13:16:05.472612+00:00",
    "mudanca": {
     "mais": [
-     "CASTANHEIRA DE PERA: Doze Meses D’Artes celebrou os contos e cantares tradicionais",
-     "Castanheira de Pera",
-     "Região",
-     "No final de outubro",
-     "CERNACHE DO BONJARDIM: Bombeiros realizam nova AG este mês",
-     "SERTÃ: Patrícia Portela é destaque em “Autores à la Carte”",
-     "PEDRÓGÃO GRANDE: Projeto \"Con(s)ciência\" leva astronomia e formação à comunidade",
-     "Pedrógão Grande",
-     "Região",
-     "SERTÃ/Palhais: MAE promove encontro “Ecologia com Ciência” este sábado"
+     "VILA VELHA DE RÓDÃO: Município e ACICB promovem “Sorteio de Natal”",
+     "Vila Velha de Ródão",
+     "Beira Baixa",
+     "Objetivo: Apoiar o comércio local"
     ],
     "menos": [
-     "CERNACHE DO BONJARDIM: Acidente provoca dois feridos leves",
-     "Última hora",
-     "SERTÃ: Mau cheiro no Boeiro em análise",
-     "Última hora",
-     "CERNACHE DO BONJARDIM: Encerramento do atendimento ao público foi desconvocado",
-     "Última hora",
-     "PEDRÓGÃO GRANDE: Castelo Horror Film Festival despede-se com desfile pelas ruas da Vila",
-     "Última hora",
-     "SANTO ANDRÉ DAS TOJEIRAS: Freguesia fez 100 anos e lembrou fundadores",
-     "Última hora",
-     "SERTÃ: Vereadora do PSD considera “lamentável” situação da Bela Vista",
-     "Última hora",
-     "SERTÃ: Colisão rodoviária provoca três feridos",
-     "Última hora",
-     "VILA DE REI: Prova de corta-mato escolar condiciona trânsito",
-     "Última hora",
-     "Alunos sensibilizados para o risco sísmico",
-     "CERNACHE DO BONJARDIM: Tese de Doutoramento sobre Tullio Victorino vai ser apresentada",
-     "VILA DE REI: Sorteio de Natal esta de volta com 2.500 € em prémios",
-     "Vila de Rei"
+     "No final de outubro",
+     "GÓIS: Concelho integra a programação do Festival Caminhos do Cinema Português",
+     "Góis",
+     "Região"
     ],
-    "n_mais": 10,
-    "n_menos": 26
+    "n_mais": 4,
+    "n_menos": 4
    }
   },
   "https://www.jf-cernachebonjardim.pt/": {
@@ -3528,9 +3533,9 @@
    "desde": "2026-11-06T12:16:27.716358+00:00"
   },
   "https://contaspoupanca.pt/": {
-   "falhas": 1,
+   "falhas": 2,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
-   "verificado": "2026-11-06T12:16:27.716358+00:00"
+   "verificado": "2026-11-06T13:16:05.472612+00:00"
   }
  },
  "raspadas": {},
