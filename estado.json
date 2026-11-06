@@ -14,7 +14,9 @@
   "4b553ecb57f716c0": "2026-11-04T16:16:00.584428+00:00",
   "f13ca35730748cfa": "2026-11-06T09:16:00.171990+00:00",
   "6df922739d84e757": "2026-11-06T12:16:27.716358+00:00",
-  "94c93217d1b53828": "2026-11-06T12:16:27.716358+00:00"
+  "94c93217d1b53828": "2026-11-06T12:16:27.716358+00:00",
+  "020c80fa520425b4": "2026-11-06T16:15:59.803023+00:00",
+  "dcfb944fc803001d": "2026-11-06T16:15:59.803023+00:00"
  },
  "resumo": [
   {
@@ -85,6 +87,52 @@
     "94c93217d1b53828"
    ],
    "ts": "2026-11-06T12:16:27.716358+00:00"
+  },
+  {
+   "titulo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeVhRY0RYeGNQUVVYN3BGMVNZLUxsS3JzQmdzVEd5LVhIRS1aMkhMelBQNFVYYk1OMFFvalRWQkM5WjJQcjY3TlFKMlZwTHB3a1JVV0U2ZGFHR1N0c3U0ZW9FV3FXU21JWkxrZVI2LTlGQXRkdGNtVFFEd3pRc05GVXRBRVd2em5WQ2Z3NXdFcDR5TXJLVzBvWlRCOUxZSFRpV2NDdlNDVmJvdjNELWN2VDJ5bVk1WFFWZkE?oc=5",
+   "dominio": "deco.proteste.pt",
+   "fonte": "DECO PROteste",
+   "confiavel": false,
+   "nota": 23.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Vale Eficiência"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-06T15:55:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "020c80fa520425b4"
+   ],
+   "ts": "2026-11-06T16:15:59.803023+00:00"
+  },
+  {
+   "titulo": "DECO informa sobre... Vale Eficiência",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5tUDF0RWtzcU43VEdubGtPN3dBN2pXVFh3WHNzNlR4dVM5ODFPN2REZlg4QVdLcmw0SG9TOEt0WWFfV1Q2VHZTRktBRlUydTdMRkdLQ3FTemRtdXlYaFNhUjY0OHRQTWxsQVlka1cwVTdPcDhpb1dsel9qUUc?oc=5",
+   "dominio": "avozdoalgarve.pt",
+   "fonte": "A voz do Algarve",
+   "confiavel": false,
+   "nota": 23.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Vale Eficiência"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-06T16:04:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "dcfb944fc803001d"
+   ],
+   "ts": "2026-11-06T16:15:59.803023+00:00"
   }
  ],
  "adiados": [],
@@ -133,7 +181,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-06T15:15:47.936458+00:00"
+   "ultima": "2026-11-06T16:15:59.803023+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -781,6 +829,30 @@
    ],
    "exemplo": "Benavente com garantia para adquirir ceifeira de jacintos através do Fundo Ambiental",
    "ultima": "2026-11-06T12:16:27.716358+00:00"
+  },
+  "deco.proteste.pt": {
+   "nome": "DECO PROteste",
+   "site": "https://www.deco.proteste.pt",
+   "ids": [
+    "020c80fa520425b4"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
+   "ultima": "2026-11-06T16:15:59.803023+00:00"
+  },
+  "avozdoalgarve.pt": {
+   "nome": "A voz do Algarve",
+   "site": "https://www.avozdoalgarve.pt",
+   "ids": [
+    "dcfb944fc803001d"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "DECO informa sobre... Vale Eficiência",
+   "ultima": "2026-11-06T16:15:59.803023+00:00"
   }
  },
  "ultima_descoberta": "2026-11-06",
@@ -928,30 +1000,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-06T16:15:59.803023+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-04T21:30:45.885962+00:00",
-   "pesquisas": [],
-   "falhas": [
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-04T21:45:45.261979+00:00",
    "pesquisas": [],
@@ -2477,11 +2537,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-06T16:15:59.803023+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 533,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 496,
+     "relevantes": 2,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-06T15:15:47.936458+00:00",
-  "contaspoupanca.pt": "2026-11-06T15:15:47.936458+00:00"
+  "cm-serta.pt": "2026-11-06T16:15:59.803023+00:00",
+  "contaspoupanca.pt": "2026-11-06T16:15:59.803023+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2489,8 +2587,8 @@
   "contaspoupanca.pt": "2026-11-06T13:15:49.930416+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-06T15:15:47.936458+00:00",
-  "Apoio fundo ambiental": "2026-11-06T15:15:47.936458+00:00"
+  "Sertã": "2026-11-06T16:15:59.803023+00:00",
+  "Apoio fundo ambiental": "2026-11-06T16:15:59.803023+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3151,9 +3249,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-06T15:15:47.936458+00:00",
-   "falhas": 1,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-06T16:15:59.803023+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00"
   },
@@ -3256,6 +3354,10 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ/Pedrógão Pequeno: Obras de 1,26 milhões de euros na EN2 aguardam consignação",
+    "Última hora",
+    "REGIÃO: Sistema de bicicletas \"meioB\" vence Prémio INOVA+ 2026",
+    "Última hora",
     "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
     "Última hora",
     "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
@@ -3264,11 +3366,29 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "VILA DE REI: Câmara leva munícipes à Feira do Cavalo",
+    "Vila de Rei",
+    "Beira Baixa",
+    "06-11-2026",
+    "Dia 14 de novembro. Inscrições abertas",
+    "SERTÃ/Pedrógão Pequeno: Obras de 1,26 milhões de euros na EN2 aguardam consignação",
+    "Beira Baixa",
+    "Sertã",
+    "06-11-2026",
+    "Última hora",
+    "REGIÃO: Sistema de bicicletas \"meioB\" vence Prémio INOVA+ 2026",
+    "Mação",
+    "Ferreira do Zêzere",
+    "Sertã",
+    "Sardoal",
+    "Vila de Rei",
+    "Médio Tejo",
+    "06-11-2026",
+    "Última hora",
     "VILA VELHA DE RÓDÃO: Município e ACICB promovem “Sorteio de Natal”",
     "Vila Velha de Ródão",
     "Beira Baixa",
     "06-11-2026",
-    "Objetivo: Apoiar o comércio local",
     "CASTANHEIRA DE PERA: Doze Meses D’Artes celebrou os contos e cantares tradicionais",
     "Castanheira de Pera",
     "Região",
@@ -3308,18 +3428,6 @@
     "Beira Baixa",
     "05-11-2026",
     "Última hora",
-    "VILA DE REI: Projeto ‘Viv’Aldeia’ dinamizou sessões sobre prevenção criminal",
-    "Vila de Rei",
-    "Beira Baixa",
-    "05-11-2026",
-    "PAMPILHOSA DA SERRA: Município e Tábua coordenam grupo «Brincar na Cidade Educadora»",
-    "Pampilhosa da Serra",
-    "Região",
-    "05-11-2026",
-    "VILA DE REI: Município entrega 20 compostores domésticos",
-    "Vila de Rei",
-    "Beira Baixa",
-    "05-11-2026",
     "1",
     "2",
     "3",
@@ -3333,27 +3441,41 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-06T15:15:47.936458+00:00",
+   "verificado": "2026-11-06T16:15:59.803023+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-06T13:16:05.472612+00:00",
+   "mudou": "2026-11-06T16:15:59.803023+00:00",
    "mudanca": {
     "mais": [
-     "VILA VELHA DE RÓDÃO: Município e ACICB promovem “Sorteio de Natal”",
-     "Vila Velha de Ródão",
-     "Beira Baixa",
-     "Objetivo: Apoiar o comércio local"
+     "SERTÃ/Pedrógão Pequeno: Obras de 1,26 milhões de euros na EN2 aguardam consignação",
+     "Última hora",
+     "REGIÃO: Sistema de bicicletas \"meioB\" vence Prémio INOVA+ 2026",
+     "Última hora",
+     "VILA DE REI: Câmara leva munícipes à Feira do Cavalo",
+     "Dia 14 de novembro. Inscrições abertas",
+     "SERTÃ/Pedrógão Pequeno: Obras de 1,26 milhões de euros na EN2 aguardam consignação",
+     "Sertã",
+     "Última hora",
+     "REGIÃO: Sistema de bicicletas \"meioB\" vence Prémio INOVA+ 2026",
+     "Mação",
+     "Ferreira do Zêzere",
+     "Sertã",
+     "Sardoal",
+     "Médio Tejo",
+     "Última hora"
     ],
     "menos": [
-     "No final de outubro",
-     "GÓIS: Concelho integra a programação do Festival Caminhos do Cinema Português",
-     "Góis",
-     "Região"
+     "Objetivo: Apoiar o comércio local",
+     "VILA DE REI: Projeto ‘Viv’Aldeia’ dinamizou sessões sobre prevenção criminal",
+     "PAMPILHOSA DA SERRA: Município e Tábua coordenam grupo «Brincar na Cidade Educadora»",
+     "Pampilhosa da Serra",
+     "Região",
+     "VILA DE REI: Município entrega 20 compostores domésticos"
     ],
-    "n_mais": 4,
-    "n_menos": 4
+    "n_mais": 16,
+    "n_menos": 6
    }
   },
   "https://www.jf-cernachebonjardim.pt/": {
@@ -3553,9 +3675,9 @@
    "desde": "2026-11-06T12:16:27.716358+00:00"
   },
   "https://contaspoupanca.pt/": {
-   "falhas": 4,
+   "falhas": 5,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
-   "verificado": "2026-11-06T15:15:47.936458+00:00"
+   "verificado": "2026-11-06T16:15:59.803023+00:00"
   }
  },
  "raspadas": {},
