@@ -829,30 +829,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-06T10:16:08.480911+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-04T20:01:21.989375+00:00",
-   "pesquisas": [],
-   "falhas": [
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-04T20:16:05.664736+00:00",
    "pesquisas": [
@@ -2311,18 +2299,52 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-06T10:16:08.480911+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 492,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-06T09:16:00.171990+00:00"
+  "cm-serta.pt": "2026-11-06T10:16:08.480911+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-05T10:30:50.788049+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-06T09:16:00.171990+00:00",
-  "Apoio fundo ambiental": "2026-11-06T09:16:00.171990+00:00"
+  "Sertã": "2026-11-06T10:16:08.480911+00:00",
+  "Apoio fundo ambiental": "2026-11-06T10:16:08.480911+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3112,11 +3134,15 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "FIGUEIRÓ DOS VINHOS: Escola Básica José Malhoa receber exercício «A Terra Treme»",
+    "Figueiró dos Vinhos",
+    "Região",
+    "06-11-2026",
+    "Alunos sensibilizados para o risco sísmico",
     "SERTÃ: Ecomercado regressa no próximo sábado",
     "Sertã",
     "Beira Baixa",
     "05-11-2026",
-    "No dia 7 e novembro",
     "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
     "Sertã",
     "Beira Baixa",
@@ -3166,11 +3192,6 @@
     "Beira Baixa",
     "04-11-2026",
     "Última hora",
-    "CERNACHE DO BONJARDIM: Encerramento do atendimento ao público foi desconvocado",
-    "Cernache do Bonjardim",
-    "Beira Baixa",
-    "04-11-2026",
-    "Última hora",
     "1",
     "2",
     "3",
@@ -3184,21 +3205,28 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-06T09:16:00.171990+00:00",
+   "verificado": "2026-11-06T10:16:08.480911+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-06T07:46:02.739066+00:00",
+   "mudou": "2026-11-06T10:16:08.480911+00:00",
    "mudanca": {
     "mais": [
-     "sexta-feira, 6 novembro 2026"
+     "FIGUEIRÓ DOS VINHOS: Escola Básica José Malhoa receber exercício «A Terra Treme»",
+     "Figueiró dos Vinhos",
+     "Região",
+     "Alunos sensibilizados para o risco sísmico"
     ],
     "menos": [
-     "quinta-feira, 5 novembro 2026"
+     "No dia 7 e novembro",
+     "CERNACHE DO BONJARDIM: Encerramento do atendimento ao público foi desconvocado",
+     "Cernache do Bonjardim",
+     "Beira Baixa",
+     "Última hora"
     ],
-    "n_mais": 1,
-    "n_menos": 1
+    "n_mais": 4,
+    "n_menos": 5
    }
   }
  },
