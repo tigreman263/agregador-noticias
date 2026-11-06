@@ -59,7 +59,7 @@ vigiar:
   - nome: "cm-serta"
     url: "https://cm-serta.pt/comunicacao/noticias"
     parte: ""
-    frequencia: "diario"
+    frequencia: "hora"
     ativa: true
   - nome: "Radio condestável"
     url: "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/"
