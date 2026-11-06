@@ -133,7 +133,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-06T13:16:05.472612+00:00"
+   "ultima": "2026-11-06T14:15:59.423681+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -768,7 +768,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "“As famílias que tinham sido consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão finalmente ter uma nova oportunidade?”",
-   "ultima": "2026-11-06T13:16:05.472612+00:00"
+   "ultima": "2026-11-06T14:15:59.423681+00:00"
   },
   "noticiasdosorraia.sapo.pt": {
    "nome": "Notícias do Sorraia",
@@ -931,27 +931,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-04T21:00:58.061117+00:00",
-   "pesquisas": [],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-04T21:07:39.397408+00:00",
    "pesquisas": [
@@ -2457,11 +2436,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-06T14:15:59.423681+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 528,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 491,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-06T13:16:05.472612+00:00",
-  "contaspoupanca.pt": "2026-11-06T13:16:05.472612+00:00"
+  "cm-serta.pt": "2026-11-06T14:15:59.423681+00:00",
+  "contaspoupanca.pt": "2026-11-06T14:15:59.423681+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2469,8 +2486,8 @@
   "contaspoupanca.pt": "2026-11-06T13:15:49.930416+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-06T13:16:05.472612+00:00",
-  "Apoio fundo ambiental": "2026-11-06T13:16:05.472612+00:00"
+  "Sertã": "2026-11-06T14:15:59.423681+00:00",
+  "Apoio fundo ambiental": "2026-11-06T14:15:59.423681+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3131,7 +3148,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-06T13:16:05.472612+00:00",
+   "verificado": "2026-11-06T14:15:59.423681+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3313,7 +3330,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-06T13:16:05.472612+00:00",
+   "verificado": "2026-11-06T14:15:59.423681+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3533,9 +3550,9 @@
    "desde": "2026-11-06T12:16:27.716358+00:00"
   },
   "https://contaspoupanca.pt/": {
-   "falhas": 2,
+   "falhas": 3,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
-   "verificado": "2026-11-06T13:16:05.472612+00:00"
+   "verificado": "2026-11-06T14:15:59.423681+00:00"
   }
  },
  "raspadas": {},
