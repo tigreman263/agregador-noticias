@@ -16,7 +16,8 @@
   "6df922739d84e757": "2026-11-06T12:16:27.716358+00:00",
   "94c93217d1b53828": "2026-11-06T12:16:27.716358+00:00",
   "020c80fa520425b4": "2026-11-06T16:15:59.803023+00:00",
-  "dcfb944fc803001d": "2026-11-06T16:15:59.803023+00:00"
+  "dcfb944fc803001d": "2026-11-06T16:15:59.803023+00:00",
+  "c6ec79f1ebef8e45": "2026-11-06T18:16:01.171266+00:00"
  },
  "resumo": [
   {
@@ -181,7 +182,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-06T17:16:00.526525+00:00"
+   "ultima": "2026-11-06T18:16:01.171266+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -385,13 +386,14 @@
     "53a9a34228a89825",
     "13cd5ff993a82d4b",
     "ea3b54856b251a0b",
-    "da5971435552497c"
+    "da5971435552497c",
+    "c6ec79f1ebef8e45"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-01T18:45:59.659204+00:00"
+   "ultima": "2026-11-06T18:16:01.171266+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -840,7 +842,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-06T17:16:00.526525+00:00"
+   "ultima": "2026-11-06T18:16:01.171266+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -852,7 +854,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "DECO informa sobre... Vale Eficiência",
-   "ultima": "2026-11-06T17:16:00.526525+00:00"
+   "ultima": "2026-11-06T18:16:01.171266+00:00"
   }
  },
  "ultima_descoberta": "2026-11-06",
@@ -1018,30 +1020,36 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-06T18:16:01.171266+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-06T18:16:01.171266+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-06T18:16:01.171266+00:00",
+   "titulo": "Assembleia Geral do Projeto THRIVE reúne em Bilbao",
+   "link": "https://cm-serta.pt/comunicacao/noticias/assembleia-geral-do-projeto-thrive-reune-em-bilbao-nov-26",
+   "fonte": "cm-serta.pt",
+   "nota": 10.0,
+   "pesquisa": "Sertã"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-04T22:00:46.315010+00:00",
-   "pesquisas": [],
-   "falhas": [
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-04T22:04:21.643121+00:00",
    "pesquisas": [
@@ -2601,11 +2609,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-06T18:16:01.171266+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 531,
+     "relevantes": 1,
+     "alertas": 1
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 492,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 1,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-06T17:16:00.526525+00:00",
-  "contaspoupanca.pt": "2026-11-06T17:16:00.526525+00:00"
+  "cm-serta.pt": "2026-11-06T18:16:01.171266+00:00",
+  "contaspoupanca.pt": "2026-11-06T18:16:01.171266+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2613,8 +2659,8 @@
   "contaspoupanca.pt": "2026-11-06T13:15:49.930416+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-06T17:16:00.526525+00:00",
-  "Apoio fundo ambiental": "2026-11-06T17:16:00.526525+00:00"
+  "Sertã": "2026-11-06T18:16:01.171266+00:00",
+  "Apoio fundo ambiental": "2026-11-06T18:16:01.171266+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -2888,6 +2934,16 @@
     "Exposições",
     "(3)",
     "Noticias",
+    "06 novembro 2026",
+    "Assembleia Geral do Projeto THRIVE reúne em Bilbao",
+    "O Projeto THRIVE, liderado pelo SerQ (Centro de Inovação e Competências da Floresta...",
+    "Tweetar",
+    "Share",
+    "Share",
+    "share with Whatsapp",
+    "share with Telegram",
+    "Send by email",
+    "Noticias",
     "31 outubro 2026",
     "IC8 com condicionamentos de trânsito de 2 a 13 de novembro entre nós Sertã Este e Várzea dos Cavaleiros",
     "O IC8 vai estar condicionado ao trânsito de 2 a 13 de novembro. Nos dias 2 e 3 de n...",
@@ -2971,16 +3027,6 @@
     "22 outubro 2026",
     "Candidaturas para investimentos em diversificação, comércio e serviços associados decorrem até 23 de dezembro",
     "Estão a decorrer até 23 de dezembro as candidaturas para a “Intervenção D.1.1.1.3 –...",
-    "Tweetar",
-    "Share",
-    "Share",
-    "share with Whatsapp",
-    "share with Telegram",
-    "Send by email",
-    "Noticias",
-    "22 outubro 2026",
-    "Júlio Martins homenageado em diversas atividades na Sertã e Cernache do Bonjardim",
-    "A Rua do Vale – Associação Cultural vai levar a efeito, no âmbito do projeto comemo...",
     "Tweetar",
     "Share",
     "Share",
@@ -3275,11 +3321,24 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-06T17:16:00.526525+00:00",
+   "verificado": "2026-11-06T18:16:01.171266+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
-   "desde": "2026-11-03T09:46:28.704027+00:00"
+   "desde": "2026-11-03T09:46:28.704027+00:00",
+   "mudou": "2026-11-06T18:16:01.171266+00:00",
+   "mudanca": {
+    "mais": [
+     "Assembleia Geral do Projeto THRIVE reúne em Bilbao",
+     "O Projeto THRIVE, liderado pelo SerQ (Centro de Inovação e Competências da Floresta..."
+    ],
+    "menos": [
+     "Júlio Martins homenageado em diversas atividades na Sertã e Cernache do Bonjardim",
+     "A Rua do Vale – Associação Cultural vai levar a efeito, no âmbito do projeto comemo..."
+    ],
+    "n_mais": 2,
+    "n_menos": 2
+   }
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -3394,11 +3453,15 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: “Bolos de Todos os Santos” em destaque",
+    "Sertã",
+    "Beira Baixa",
+    "06-11-2026",
+    "No dia 15 de novembro",
     "VILA DE REI: “Os Quintais nas Praças do Pinhal” regressam no próximo domingo",
     "Vila de Rei",
     "Beira Baixa",
     "06-11-2026",
-    "Dia 8 de novembro",
     "SERTÃ: Vereador do Chega questiona sobre ligação de autocarro a Castelo Branco",
     "Sertã",
     "Beira Baixa",
@@ -3451,10 +3514,6 @@
     "Figueiró dos Vinhos",
     "Região",
     "06-11-2026",
-    "SERTÃ: Ecomercado regressa no próximo sábado",
-    "Sertã",
-    "Beira Baixa",
-    "05-11-2026",
     "1",
     "2",
     "3",
@@ -3468,28 +3527,23 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-06T17:16:00.526525+00:00",
+   "verificado": "2026-11-06T18:16:01.171266+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-06T17:16:00.526525+00:00",
+   "mudou": "2026-11-06T18:16:01.171266+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Vereador do Chega questiona sobre ligação de autocarro a Castelo Branco",
-     "VILA DE REI: “Os Quintais nas Praças do Pinhal” regressam no próximo domingo",
-     "Vila de Rei",
-     "Dia 8 de novembro",
-     "SERTÃ: Vereador do Chega questiona sobre ligação de autocarro a Castelo Branco"
+     "SERTÃ: “Bolos de Todos os Santos” em destaque",
+     "No dia 15 de novembro"
     ],
     "menos": [
-     "Dia 14 de novembro. Inscrições abertas",
-     "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
-     "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
-     "Oleiros"
+     "Dia 8 de novembro",
+     "SERTÃ: Ecomercado regressa no próximo sábado"
     ],
-    "n_mais": 5,
-    "n_menos": 4
+    "n_mais": 2,
+    "n_menos": 2
    }
   },
   "https://www.jf-cernachebonjardim.pt/": {
@@ -3689,9 +3743,9 @@
    "desde": "2026-11-06T12:16:27.716358+00:00"
   },
   "https://contaspoupanca.pt/": {
-   "falhas": 6,
+   "falhas": 7,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
-   "verificado": "2026-11-06T17:16:00.526525+00:00"
+   "verificado": "2026-11-06T18:16:01.171266+00:00"
   }
  },
  "raspadas": {},
