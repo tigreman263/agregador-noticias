@@ -799,27 +799,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-04T17:31:04.245624+00:00",
-   "pesquisas": [],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
-  {
    "ts": "2026-11-04T17:46:13.102657+00:00",
    "pesquisas": [],
    "falhas": [],
@@ -2207,18 +2186,48 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-06T00:46:21.526210+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 519,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 473,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-05T23:46:12.716435+00:00"
+  "cm-serta.pt": "2026-11-06T00:46:21.526210+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-05T10:30:50.788049+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-05T23:46:12.716435+00:00",
-  "Apoio fundo ambiental": "2026-11-05T23:46:12.716435+00:00"
+  "Sertã": "2026-11-06T00:46:21.526210+00:00",
+  "Apoio fundo ambiental": "2026-11-06T00:46:21.526210+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
