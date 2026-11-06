@@ -795,45 +795,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-06T07:46:02.739066+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-04T19:16:23.987602+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 525,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 479,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-04T19:31:04.406369+00:00",
    "pesquisas": [],
@@ -2251,18 +2224,52 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-06T07:46:02.739066+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 523,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 483,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-06T06:45:59.008484+00:00"
+  "cm-serta.pt": "2026-11-06T07:46:02.739066+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-05T10:30:50.788049+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-06T06:45:59.008484+00:00",
-  "Apoio fundo ambiental": "2026-11-06T06:45:59.008484+00:00"
+  "Sertã": "2026-11-06T07:46:02.739066+00:00",
+  "Apoio fundo ambiental": "2026-11-06T07:46:02.739066+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -2931,7 +2938,7 @@
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
-    "quinta-feira, 5 novembro 2026",
+    "sexta-feira, 6 novembro 2026",
     "Informação",
     "Programação",
     "Ficha Técnica",
@@ -3124,28 +3131,21 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-05T22:43:33.717789+00:00",
+   "verificado": "2026-11-06T07:46:02.739066+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-05T18:49:10.351501+00:00",
+   "mudou": "2026-11-06T07:46:02.739066+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Ecomercado regressa no próximo sábado",
-     "Sertã",
-     "Beira Baixa",
-     "No dia 7 e novembro"
+     "sexta-feira, 6 novembro 2026"
     ],
     "menos": [
-     "Banco, cadeira e eventualmente outros objetos, foram atirados para a Ribeira do Amioso",
-     "PEDRÓGÃO GRANDE: Castelo Horror Film Festival despede-se com desfile pelas ruas da Vila",
-     "Pedrógão Grande",
-     "Região",
-     "Última hora"
+     "quinta-feira, 5 novembro 2026"
     ],
-    "n_mais": 4,
-    "n_menos": 5
+    "n_mais": 1,
+    "n_menos": 1
    }
   }
  },
