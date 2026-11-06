@@ -11,9 +11,34 @@
   "262b6d4a3e5cf6a9": "2026-11-04T11:16:11.933918+00:00",
   "3dd133dba22282ca": "2026-11-04T14:16:15.609883+00:00",
   "e5f153cc4ab2fd7e": "2026-11-04T14:16:15.609883+00:00",
-  "4b553ecb57f716c0": "2026-11-04T16:16:00.584428+00:00"
+  "4b553ecb57f716c0": "2026-11-04T16:16:00.584428+00:00",
+  "f13ca35730748cfa": "2026-11-06T09:16:00.171990+00:00"
  },
- "resumo": [],
+ "resumo": [
+  {
+   "titulo": "Ministra do Ambiente promete apoio financeiro para Jardim Universitário de Viseu",
+   "link": "https://sapo.pt/artigo/ministra-do-ambiente-promete-apoio-financeiro-para-jardim-universitario-de-viseu-6aed95a513cbfc601c3e5922",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 19.5,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Fundo Ambiental"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-06T08:44:09+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "f13ca35730748cfa"
+   ],
+   "ts": "2026-11-06T09:16:00.171990+00:00"
+  }
+ ],
  "adiados": [],
  "ultimo_resumo": "2026-11-06",
  "sugeridas": {},
@@ -34,7 +59,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "8f9c1a58f29a608c",
     "1b892d34bda6706e",
     "b7cc1c6f08db7977",
     "2ebddc8f6582ce2d",
@@ -53,14 +77,15 @@
     "9523fbf672fbaac5",
     "9e3ed9592a66279a",
     "262b6d4a3e5cf6a9",
-    "3dd133dba22282ca"
+    "3dd133dba22282ca",
+    "f13ca35730748cfa"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-05T18:01:04.013925+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -370,7 +395,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -385,7 +410,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Agricultores dos Açores pedem 23 milhões de euros em apoios do Governo",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   },
   "ambienteonline.pt": {
    "nome": "Água&Ambiente Online",
@@ -438,7 +463,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "ultima": "2026-11-05T13:46:03.880164+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   },
   "jm-madeira.pt": {
    "nome": "JM Madeira",
@@ -452,7 +477,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-05T18:49:10.351501+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -478,7 +503,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -621,7 +646,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -633,7 +658,7 @@
     "Sertã"
    ],
    "exemplo": "Brasil: “Há uma cultura sertaneja que tende a ver a floresta como um empecilho”, diz arquélogo",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   },
   "sicnoticias.pt": {
    "nome": "SIC Notícias",
@@ -647,7 +672,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-05T11:46:05.455082+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -659,7 +684,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência regressa para 28 mil famílias que ficaram sem apoio. Nova plataforma abre no final de novembro",
-   "ultima": "2026-11-05T15:46:04.057618+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   },
   "blogdafeira.com.br": {
    "nome": "Blog da Feira",
@@ -671,7 +696,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Nascente no Cazumbá será revitalizada com recursos de fundo ambiental de Feira",
-   "ultima": "2026-11-05T08:23:57.557445+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   },
   "funchalnoticias.net": {
    "nome": "Funchal Notícias",
@@ -683,10 +708,10 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vânia Jesus quer Porto Santo “100% renovável” e igualdade de acesso ao Fundo Ambiental",
-   "ultima": "2026-11-05T20:01:23.413851+00:00"
+   "ultima": "2026-11-06T09:16:00.171990+00:00"
   }
  },
- "ultima_descoberta": "2026-11-05",
+ "ultima_descoberta": "2026-11-06",
  "enviados": [
   {
    "tipo": "resumo",
@@ -807,27 +832,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-04T19:46:01.990809+00:00",
-   "pesquisas": [],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-04T20:01:21.989375+00:00",
    "pesquisas": [],
@@ -2273,18 +2277,52 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-06T09:16:00.171990+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 492,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 1,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-06T08:15:48.207466+00:00"
+  "cm-serta.pt": "2026-11-06T09:16:00.171990+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-05T10:30:50.788049+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-06T08:15:48.207466+00:00",
-  "Apoio fundo ambiental": "2026-11-06T08:15:48.207466+00:00"
+  "Sertã": "2026-11-06T09:16:00.171990+00:00",
+  "Apoio fundo ambiental": "2026-11-06T09:16:00.171990+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3146,7 +3184,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-06T08:15:48.207466+00:00",
+   "verificado": "2026-11-06T09:16:00.171990+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
