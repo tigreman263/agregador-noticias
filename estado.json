@@ -230,7 +230,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-07T05:16:00.258843+00:00"
+   "ultima": "2026-11-07T06:16:08.502548+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -441,7 +441,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-07T05:16:00.258843+00:00"
+   "ultima": "2026-11-07T06:16:08.502548+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -890,7 +890,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-07T05:16:00.258843+00:00"
+   "ultima": "2026-11-07T06:16:08.502548+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -926,7 +926,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "DECO | As famílias que tinham sido consideradas elegíveis para o Vale Eficiência II",
-   "ultima": "2026-11-07T05:16:00.258843+00:00"
+   "ultima": "2026-11-07T06:16:08.502548+00:00"
   }
  },
  "ultima_descoberta": "2026-11-06",
@@ -1122,41 +1122,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-05T08:21:23.097662+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 528,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 486,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-05T08:23:57.557445+00:00",
    "pesquisas": [
@@ -2741,10 +2706,39 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-07T06:16:08.502548+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 540,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 499,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-07T05:16:00.258843+00:00",
+  "cm-serta.pt": "2026-11-07T06:16:08.502548+00:00",
   "contaspoupanca.pt": "2026-11-06T22:16:08.554432+00:00"
  },
  "lentos": {},
@@ -2753,8 +2747,8 @@
   "contaspoupanca.pt": "2026-11-06T13:15:49.930416+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-07T05:16:00.258843+00:00",
-  "Apoio fundo ambiental": "2026-11-07T05:16:00.258843+00:00"
+  "Sertã": "2026-11-07T06:16:08.502548+00:00",
+  "Apoio fundo ambiental": "2026-11-07T06:16:08.502548+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
