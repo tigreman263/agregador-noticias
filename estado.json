@@ -21,171 +21,9 @@
   "1dd99f8e256ebb30": "2026-11-06T21:15:57.428831+00:00",
   "b4acd23ecea8311c": "2026-11-06T22:16:08.554432+00:00"
  },
- "resumo": [
-  {
-   "titulo": "Ministra do Ambiente promete apoio financeiro para Jardim Universitário de Viseu",
-   "link": "https://sapo.pt/artigo/ministra-do-ambiente-promete-apoio-financeiro-para-jardim-universitario-de-viseu-6aed95a513cbfc601c3e5922",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Fundo Ambiental"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-06T08:44:09+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "f13ca35730748cfa"
-   ],
-   "ts": "2026-11-06T09:16:00.171990+00:00"
-  },
-  {
-   "titulo": "Benavente com garantia para adquirir ceifeira de jacintos através do Fundo Ambiental",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZE5XV2d0ZWktWTlhdllTMExZWnVITkMzRlNVYU85YjRwSHIxaVp4ZFFvSEdiU3ZwOVZIRm5XOXF6QnlqbDljT3lTdTAybHRmREsxNTh3dE9YaGw3X1lsclFYMVVsYnpNTlg0Z0ZhcFRwQW8xc0hUQW1IZnhWQVdheGpCcGFTcVFNaEVSNHdNN2c1MmxkZ1BlZUR3MlRLVDVTc29IOG8yZDhhOTJ0U2IxalFjOFF3c3U4SXhV?oc=5",
-   "dominio": "noticiasdosorraia.sapo.pt",
-   "fonte": "Notícias do Sorraia",
-   "confiavel": true,
-   "nota": 30.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Fundo Ambiental"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-06T10:31:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "6df922739d84e757"
-   ],
-   "ts": "2026-11-06T12:16:27.716358+00:00"
-  },
-  {
-   "titulo": "“As famílias que tinham sido consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão finalmente ter uma nova oportunidade?”",
-   "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOUzdHOTQ5bk9GMjBtLV9SZTBFWDIwNVUxTkVHR0FScmtoVEsydDY4eTAyV2dGczBpSmY5cFFhOEZ4T2loZjlhUUV5T1o0bU1DQjhoNFNRcWtacm80YkdhdmFFWWotdDJrTkZVUVFVZkt4bF9rRzNCQWpTQTVzUlBlcUZvSnY1bHlZZkFJaWVwSlVRd1libW9RZkhWUkl0OUZaMmVORUNubWxjRENqRWYyZXY3d2o0Vmk2VHVQdmhWeV9pUkRSR01nVzRzUFZyQUo2N0FmZFJhRmExVklZUnZFNWU4Y0FaZjBLZ2lVYjNjQ09BeW1rV3gwSG5nRVRWU2JDVjQ0Wjl0X2p6VWxJZXBzTkpuZ0h6QQ?oc=5",
-   "dominio": "planetalgarve.com",
-   "fonte": "planetalgarve",
-   "confiavel": false,
-   "nota": 23.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-06T11:51:15+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "94c93217d1b53828"
-   ],
-   "ts": "2026-11-06T12:16:27.716358+00:00"
-  },
-  {
-   "titulo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeVhRY0RYeGNQUVVYN3BGMVNZLUxsS3JzQmdzVEd5LVhIRS1aMkhMelBQNFVYYk1OMFFvalRWQkM5WjJQcjY3TlFKMlZwTHB3a1JVV0U2ZGFHR1N0c3U0ZW9FV3FXU21JWkxrZVI2LTlGQXRkdGNtVFFEd3pRc05GVXRBRVd2em5WQ2Z3NXdFcDR5TXJLVzBvWlRCOUxZSFRpV2NDdlNDVmJvdjNELWN2VDJ5bVk1WFFWZkE?oc=5",
-   "dominio": "deco.proteste.pt",
-   "fonte": "DECO PROteste",
-   "confiavel": false,
-   "nota": 23.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-06T15:55:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "020c80fa520425b4"
-   ],
-   "ts": "2026-11-06T16:15:59.803023+00:00"
-  },
-  {
-   "titulo": "DECO informa sobre... Vale Eficiência",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5tUDF0RWtzcU43VEdubGtPN3dBN2pXVFh3WHNzNlR4dVM5ODFPN2REZlg4QVdLcmw0SG9TOEt0WWFfV1Q2VHZTRktBRlUydTdMRkdLQ3FTemRtdXlYaFNhUjY0OHRQTWxsQVlka1cwVTdPcDhpb1dsel9qUUc?oc=5",
-   "dominio": "avozdoalgarve.pt",
-   "fonte": "A voz do Algarve",
-   "confiavel": false,
-   "nota": 23.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-06T16:04:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "dcfb944fc803001d"
-   ],
-   "ts": "2026-11-06T16:15:59.803023+00:00"
-  },
-  {
-   "titulo": "Famílias consideradas elegíveis para o Vale Eficiência II vão ter uma nova oportunidade",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOY2drUW9OLUFxMHIzTWR2WDZ6XzItTVNHZFN1MkhkUmdaMzRzd1hMcjM3NDdkd0l1cGdlOVNWbDFsaHRWdjdyZWVzTkkxczlkeUhtb25oZDk4QzE5U0pMRGI0azF1X2cyNmVWWW5SSlljcElmbW5KOEFpbTlEMEtDdEFDQVhpZ1dMWmlUWFZmcl92NUhfLTAtbG16ZHV4WnNvRzJOWkk3djk1YVN4b1JiZXdJMWFYQUlkcUNJLTBEQktGWnJKWER5bm5KX1lqbVZMSmtUZjI0eF8zZw?oc=5",
-   "dominio": "regiao-sul.pt",
-   "fonte": "diariOnline Região Sul",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-06T15:03:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "1dd99f8e256ebb30"
-   ],
-   "ts": "2026-11-06T21:15:57.428831+00:00"
-  },
-  {
-   "titulo": "DECO | As famílias que tinham sido consideradas elegíveis para o Vale Eficiência II",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZGpNYUJUeHhJNVA1ZVJUWkh6OXBHaFdSRFpqZnpiemd1WlVMZm96Ml82Z0hEWUVFM0o5cm5wM0t2WTZ6a0NFUGh3bTU3NVM4MklqTW9iZnhDLTlJYWNzcWdDY3pMVkZBWGhuU2lSUW96TFpoN3VFWXBVQlIxTzNRcHZKckpyUFhZNEI3XzJHY3VFbFE5dXd3am1rVkVGR1pObTNCUEg4T1hwQWRISHV6d1F1UWxzYk0?oc=5",
-   "dominio": "maisalgarve.pt",
-   "fonte": "Mais Algarve",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-06T15:20:15+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "b4acd23ecea8311c"
-   ],
-   "ts": "2026-11-06T22:16:08.554432+00:00"
-  }
- ],
+ "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-06",
+ "ultimo_resumo": "2026-11-07",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -230,7 +68,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-07T07:16:05.563470+00:00"
+   "ultima": "2026-11-07T08:15:56.628159+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -441,7 +279,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-07T07:16:05.563470+00:00"
+   "ultima": "2026-11-07T08:15:56.628159+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -687,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-07T07:16:05.563470+00:00"
+   "ultima": "2026-11-07T08:15:56.628159+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -892,7 +730,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-07T07:16:05.563470+00:00"
+   "ultima": "2026-11-07T08:15:56.628159+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -1130,43 +968,72 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-07T08:15:56.628159+00:00",
+   "titulo": "Benavente com garantia para adquirir ceifeira de jacintos através do Fundo Ambiental",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZE5XV2d0ZWktWTlhdllTMExZWnVITkMzRlNVYU85YjRwSHIxaVp4ZFFvSEdiU3ZwOVZIRm5XOXF6QnlqbDljT3lTdTAybHRmREsxNTh3dE9YaGw3X1lsclFYMVVsYnpNTlg0Z0ZhcFRwQW8xc0hUQW1IZnhWQVdheGpCcGFTcVFNaEVSNHdNN2c1MmxkZ1BlZUR3MlRLVDVTc29IOG8yZDhhOTJ0U2IxalFjOFF3c3U4SXhV?oc=5",
+   "fonte": "Notícias do Sorraia",
+   "nota": 30.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-07T08:15:56.628159+00:00",
+   "titulo": "“As famílias que tinham sido consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão finalmente ter uma nova oportunidade?”",
+   "link": "https://news.google.com/rss/articles/CBMilgJBVV95cUxOUzdHOTQ5bk9GMjBtLV9SZTBFWDIwNVUxTkVHR0FScmtoVEsydDY4eTAyV2dGczBpSmY5cFFhOEZ4T2loZjlhUUV5T1o0bU1DQjhoNFNRcWtacm80YkdhdmFFWWotdDJrTkZVUVFVZkt4bF9rRzNCQWpTQTVzUlBlcUZvSnY1bHlZZkFJaWVwSlVRd1libW9RZkhWUkl0OUZaMmVORUNubWxjRENqRWYyZXY3d2o0Vmk2VHVQdmhWeV9pUkRSR01nVzRzUFZyQUo2N0FmZFJhRmExVklZUnZFNWU4Y0FaZjBLZ2lVYjNjQ09BeW1rV3gwSG5nRVRWU2JDVjQ0Wjl0X2p6VWxJZXBzTkpuZ0h6QQ?oc=5",
+   "fonte": "planetalgarve",
+   "nota": 23.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-07T08:15:56.628159+00:00",
+   "titulo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
+   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQeVhRY0RYeGNQUVVYN3BGMVNZLUxsS3JzQmdzVEd5LVhIRS1aMkhMelBQNFVYYk1OMFFvalRWQkM5WjJQcjY3TlFKMlZwTHB3a1JVV0U2ZGFHR1N0c3U0ZW9FV3FXU21JWkxrZVI2LTlGQXRkdGNtVFFEd3pRc05GVXRBRVd2em5WQ2Z3NXdFcDR5TXJLVzBvWlRCOUxZSFRpV2NDdlNDVmJvdjNELWN2VDJ5bVk1WFFWZkE?oc=5",
+   "fonte": "DECO PROteste",
+   "nota": 23.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-07T08:15:56.628159+00:00",
+   "titulo": "DECO informa sobre... Vale Eficiência",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5tUDF0RWtzcU43VEdubGtPN3dBN2pXVFh3WHNzNlR4dVM5ODFPN2REZlg4QVdLcmw0SG9TOEt0WWFfV1Q2VHZTRktBRlUydTdMRkdLQ3FTemRtdXlYaFNhUjY0OHRQTWxsQVlka1cwVTdPcDhpb1dsel9qUUc?oc=5",
+   "fonte": "A voz do Algarve",
+   "nota": 23.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-07T08:15:56.628159+00:00",
+   "titulo": "Famílias consideradas elegíveis para o Vale Eficiência II vão ter uma nova oportunidade",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOY2drUW9OLUFxMHIzTWR2WDZ6XzItTVNHZFN1MkhkUmdaMzRzd1hMcjM3NDdkd0l1cGdlOVNWbDFsaHRWdjdyZWVzTkkxczlkeUhtb25oZDk4QzE5U0pMRGI0azF1X2cyNmVWWW5SSlljcElmbW5KOEFpbTlEMEtDdEFDQVhpZ1dMWmlUWFZmcl92NUhfLTAtbG16ZHV4WnNvRzJOWkk3djk1YVN4b1JiZXdJMWFYQUlkcUNJLTBEQktGWnJKWER5bm5KX1lqbVZMSmtUZjI0eF8zZw?oc=5",
+   "fonte": "diariOnline Região Sul",
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-07T08:15:56.628159+00:00",
+   "titulo": "DECO | As famílias que tinham sido consideradas elegíveis para o Vale Eficiência II",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZGpNYUJUeHhJNVA1ZVJUWkh6OXBHaFdSRFpqZnpiemd1WlVMZm96Ml82Z0hEWUVFM0o5cm5wM0t2WTZ6a0NFUGh3bTU3NVM4MklqTW9iZnhDLTlJYWNzcWdDY3pMVkZBWGhuU2lSUW96TFpoN3VFWXBVQlIxTzNRcHZKckpyUFhZNEI3XzJHY3VFbFE5dXd3am1rVkVGR1pObTNCUEg4T1hwQWRISHV6d1F1UWxzYk0?oc=5",
+   "fonte": "Mais Algarve",
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-07T08:15:56.628159+00:00",
+   "titulo": "Ministra do Ambiente promete apoio financeiro para Jardim Universitário de Viseu",
+   "link": "https://sapo.pt/artigo/ministra-do-ambiente-promete-apoio-financeiro-para-jardim-universitario-de-viseu-6aed95a513cbfc601c3e5922",
+   "fonte": "SAPO",
+   "nota": 19.5,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-05T09:31:02.437387+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 528,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 486,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-05T10:30:51.060642+00:00",
    "pesquisas": [
@@ -2749,11 +2616,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-07T08:15:56.628159+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 540,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 498,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 7,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-07T07:16:05.563470+00:00",
-  "contaspoupanca.pt": "2026-11-07T07:16:05.563470+00:00"
+  "cm-serta.pt": "2026-11-07T08:15:56.628159+00:00",
+  "contaspoupanca.pt": "2026-11-07T08:15:56.628159+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2761,8 +2666,8 @@
   "contaspoupanca.pt": "2026-11-06T13:15:49.930416+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-07T07:16:05.563470+00:00",
-  "Apoio fundo ambiental": "2026-11-07T07:16:05.563470+00:00"
+  "Sertã": "2026-11-07T08:15:56.628159+00:00",
+  "Apoio fundo ambiental": "2026-11-07T08:15:56.628159+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3423,7 +3328,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-07T07:16:05.563470+00:00",
+   "verificado": "2026-11-07T08:15:56.628159+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3629,7 +3534,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-07T07:16:05.563470+00:00",
+   "verificado": "2026-11-07T08:15:56.628159+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3843,9 +3748,9 @@
    "desde": "2026-11-06T12:16:27.716358+00:00"
   },
   "https://contaspoupanca.pt/": {
-   "falhas": 12,
+   "falhas": 13,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
-   "verificado": "2026-11-07T07:16:05.563470+00:00"
+   "verificado": "2026-11-07T08:15:56.628159+00:00"
   }
  },
  "raspadas": {},
