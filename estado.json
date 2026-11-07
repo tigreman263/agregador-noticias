@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-07T21:25:16.831560+00:00"
+   "ultima": "2026-11-07T21:32:49.644685+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -718,7 +718,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Benavente com garantia para adquirir ceifeira de jacintos através do Fundo Ambiental",
-   "ultima": "2026-11-07T21:25:16.831560+00:00"
+   "ultima": "2026-11-07T21:32:49.644685+00:00"
   },
   "deco.proteste.pt": {
    "nome": "DECO PROteste",
@@ -730,7 +730,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-07T21:25:16.831560+00:00"
+   "ultima": "2026-11-07T21:32:49.644685+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -1064,35 +1064,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-05T23:46:12.716435+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 483,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-06T00:46:21.526210+00:00",
    "pesquisas": [
@@ -2737,10 +2708,45 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-07T21:32:49.644685+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 498,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 4,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-07T21:25:16.831560+00:00",
+  "cm-serta.pt": "2026-11-07T21:32:49.644685+00:00",
   "contaspoupanca.pt": "2026-11-07T21:15:45.184242+00:00"
  },
  "lentos": {},
@@ -2749,8 +2755,8 @@
   "contaspoupanca.pt": "2026-11-07T14:15:49.956116+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-07T21:25:16.831560+00:00",
-  "Apoio fundo ambiental": "2026-11-07T21:25:16.831560+00:00"
+  "Sertã": "2026-11-07T21:32:49.644685+00:00",
+  "Apoio fundo ambiental": "2026-11-07T21:32:49.644685+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3411,9 +3417,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-07T21:25:16.831560+00:00",
-   "falhas": 12,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-07T21:32:49.644685+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-06T18:16:01.171266+00:00",
@@ -3628,7 +3634,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-07T21:25:16.831560+00:00",
+   "verificado": "2026-11-07T21:32:49.644685+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3837,7 +3843,7 @@
     "Esses cookies nos ajudam a entender como os visitantes interagem com nosso site, obter estatísticas de acessos e utilizadores para fornecer uma melhor análise geral.",
     "Aceitar"
    ],
-   "verificado": "2026-11-07T21:25:16.831560+00:00",
+   "verificado": "2026-11-07T21:32:49.644685+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3850,6 +3856,7 @@
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro - Contas Poupança",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro) - Contas Poupança",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos - Contas Poupança",
+    "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais? - Contas Poupança",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro) - Contas Poupança",
     "Potência contratada: veja em 5 minutos se está a pagar a mais na eletricidade - Contas Poupança",
     "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições - Contas Poupança",
@@ -3915,7 +3922,6 @@
     "Combustíveis | Gasolina cai 6,5 cêntimos no preço justo esta semana. Gasóleo volta a subir - Contas Poupança",
     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma - Contas Poupança",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro? - Contas Poupança",
-    "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais? - Contas Poupança",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2% - Contas Poupança",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas - Contas Poupança",
     "Vamos a contas: \"Fundo de emergência deve estar numa conta ou num ETF?\" O risco de querer ganhar mais - Contas Poupança",
@@ -3927,7 +3933,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza? - Contas Poupança",
     "Carro - Contas Poupança"
    ],
-   "verificado": "2026-11-07T21:25:16.831560+00:00",
+   "verificado": "2026-11-07T21:32:49.644685+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "item title",
@@ -3935,5 +3941,7 @@
   }
  },
  "raspadas": {},
- "paginas_lidas": []
+ "paginas_lidas": [
+  "https://cm-serta.pt/comunicacao/noticias"
+ ]
 }
