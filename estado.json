@@ -279,7 +279,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-07T21:41:12.209192+00:00"
+   "ultima": "2026-11-07T22:46:00.201139+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-07T21:44:53.744250+00:00"
+   "ultima": "2026-11-07T22:46:00.201139+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -718,7 +718,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Benavente com garantia para adquirir ceifeira de jacintos através do Fundo Ambiental",
-   "ultima": "2026-11-07T21:44:53.744250+00:00"
+   "ultima": "2026-11-07T22:46:00.201139+00:00"
   },
   "deco.proteste.pt": {
    "nome": "DECO PROteste",
@@ -730,7 +730,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-07T21:44:53.744250+00:00"
+   "ultima": "2026-11-07T22:46:00.201139+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -1064,35 +1064,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-06T02:46:23.791401+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 483,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-06T03:46:18.544499+00:00",
    "pesquisas": [
@@ -2757,11 +2728,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-07T22:46:00.201139+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 532,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 498,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-07T21:44:53.744250+00:00",
-  "contaspoupanca.pt": "2026-11-07T21:44:53.744250+00:00"
+  "cm-serta.pt": "2026-11-07T22:46:00.201139+00:00",
+  "contaspoupanca.pt": "2026-11-07T22:46:00.201139+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2769,8 +2779,8 @@
   "contaspoupanca.pt": "2026-11-07T14:15:49.956116+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-07T21:44:53.744250+00:00",
-  "Apoio fundo ambiental": "2026-11-07T21:44:53.744250+00:00"
+  "Sertã": "2026-11-07T22:46:00.201139+00:00",
+  "Apoio fundo ambiental": "2026-11-07T22:46:00.201139+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3431,7 +3441,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-07T21:44:53.744250+00:00",
+   "verificado": "2026-11-07T22:46:00.201139+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3505,8 +3515,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -3706,7 +3716,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-07T21:44:53.744250+00:00",
+   "verificado": "2026-11-07T22:46:00.201139+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4009,7 +4019,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-07T21:44:53.744250+00:00",
+   "verificado": "2026-11-07T22:46:00.201139+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
