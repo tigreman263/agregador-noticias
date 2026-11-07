@@ -65,6 +65,7 @@ SITES_DIRETOS_OK = set()   # sites lidos diretamente pelo GitHub, sem o telemóv
 LENTOS_PARA_BLOQUEIO = 3   # verificações seguidas a demorar demais = bloqueado
 HORAS_TESTE_DIRETO = 24    # de quanto em quanto tempo um bloqueado volta a ser testado
 LIDOS_TELEMOVEL = []       # fontes lidas a partir da cópia trazida pelo telemóvel
+LIDOS_GOOGLE = []          # fontes que só deu para ler pelo Google Notícias (3.ª via)
 UA = "Mozilla/5.0 (compatible; AgregadorNoticias/1.0)"
 UA_NAVEGADOR = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                 "(KHTML, like Gecko) Chrome/124.0 Safari/537.36")
@@ -617,6 +618,19 @@ def url_google_news(consulta, cfg):
             + f"&ceid={g.get('ceid', 'PT:pt-150')}")
 
 
+def pelo_google(url, cfg, nome_fonte=None):
+    """3.ª via, quando nem o GitHub nem o telemóvel conseguem ler o site: as notícias
+    desse site que o Google Notícias conhece (procura "site:dominio")."""
+    d = dominio_de(url)
+    if not d or dominio_em(d, DOMINIOS_IGNORADOS - {""}):
+        raise RuntimeError("não há alternativa no Google Notícias")
+    itens = [it for it in ler_feed(url_google_news("site:" + d, cfg), nome_fonte)
+             if dominio_em(it["dominio"], [d])]
+    if not itens:
+        raise RuntimeError("o Google Notícias também não tem notícias deste site")
+    return itens
+
+
 def sem_repetidas(gerais, da_pesquisa):
     """Junta as fontes gerais e as da pesquisa, cada endereço uma só vez. Se o mesmo
     endereço está nas duas, valem as opções da pesquisa (ex.: local: true)."""
@@ -641,6 +655,7 @@ def recolher(pesq, cfg, falhas=None):
     todas = []
     for nome, leitor, alvo in pedidos:
         url = alvo if isinstance(alvo, str) else alvo["url"]
+        local = leitor is ler_feed_local or (isinstance(alvo, dict) and bool(alvo.get("local")))
         pelo_telemovel = ficheiro_cache(url).exists()
         try:
             itens = leitor(alvo, nome)
@@ -654,10 +669,25 @@ def recolher(pesq, cfg, falhas=None):
             notar_acesso(url)
             todas += itens
         except Exception as e:  # uma fonte em baixo não pára as outras
+            notar_acesso(url, e)  # se for bloqueio, da próxima vez tenta o telemóvel
+            if leitor is ler_feed and nome == "Google Notícias":
+                itens = None
+            else:  # 3.ª via: as notícias do site que o Google Notícias conhece
+                try:
+                    itens = pelo_google(url, cfg, nome)
+                except Exception:
+                    itens = None
+            if itens:
+                for it in itens:
+                    it["local"] = local
+                print(f"  fonte '{nome}': {len(itens)} notícias (pelo Google Notícias; "
+                      f"o site falhou: {type(e).__name__})")
+                LIDOS_GOOGLE.append(nome)
+                todas += itens
+                continue
             print(f"  aviso: falhou '{nome}' ({type(e).__name__}: {str(e)[:80]})")
             if falhas is not None:
                 falhas.append(f"{pesq['nome']} · {nome}: {type(e).__name__}: {str(e)[:120]}")
-            notar_acesso(url, e)
     return todas
 
 
@@ -1318,6 +1348,7 @@ def executar(cfg, simular=False, forcar_fontes=False):
     if not simular:
         atualizar_bloqueados(estado, agora_utc)
     registo["pelo_telemovel"] = sorted(set(LIDOS_TELEMOVEL))
+    registo["pelo_google"] = sorted(set(LIDOS_GOOGLE))
     registo["bloqueados"] = sorted(SITES_BLOQUEADOS)
 
     desc = cfg.get("descoberta") or {}
@@ -1656,7 +1687,7 @@ def diferencas(antigas, novas):
     return mais_f, menos_f
 
 
-def formatar_mudanca(v, mais, menos, agora):
+def formatar_mudanca(v, mais, menos, agora, via="site"):
     def bloco(simbolo, titulo, linhas):
         if not linhas:
             return []
@@ -1666,7 +1697,9 @@ def formatar_mudanca(v, mais, menos, agora):
             out.append(f"<i>… e mais {len(linhas) - MAX_LINHAS_AVISO} linhas</i>")
         return out
     linhas = [f'🔎 <b>Mudou: {ligacao(nome_vigia(v), v["url"])}</b>']
-    if parte_vigia(v):
+    if via == "google":
+        linhas.append("<i>pelo Google Notícias (o site não deixa ser lido)</i>")
+    elif parte_vigia(v):
         linhas.append(f"<i>só a parte {h(parte_vigia(v))}</i>")
     linhas += bloco("➕", "Novo", mais) + bloco("➖", "Saiu", menos)
     linhas.append("🕒 " + agora.strftime("%d/%m %H:%M"))
@@ -1717,6 +1750,8 @@ def vigiar_paginas(cfg, estado, agora_utc, agora, registo, simular=False):
             continue
         print(f"Página vigiada: {nome}")
         resumo["verificadas"] += 1
+        # 1.ª via: o GitHub (ou a cópia que o telemóvel trouxe, se o site o bloqueia)
+        via, motivo = "site", ""
         try:
             _, sopa = baixar_pagina(url)
             novas = texto_vigiado(sopa, parte)
@@ -1726,8 +1761,16 @@ def vigiar_paginas(cfg, estado, agora_utc, agora, registo, simular=False):
                 LIDOS_TELEMOVEL.append(nome)
             notar_acesso(url)
         except Exception as e:  # uma página em baixo não pára as outras
-            notar_acesso(url, e)
+            notar_acesso(url, e)  # se for bloqueio, da próxima vez tenta o telemóvel
             motivo = str(e)[:200] or type(e).__name__
+            try:  # 3.ª via: as notícias desse site no Google Notícias
+                novas = [it["titulo"] for it in pelo_google(url, cfg, nome)]
+                via = "google"
+                LIDOS_GOOGLE.append(nome)
+                print(f"  o site falhou ({motivo}); lido pelo Google Notícias")
+            except Exception:
+                via = None
+        if via is None:
             print(f"  falhou: {motivo}")
             resumo["falharam"] += 1
             registo["falhas"].append(f"Página vigiada · {nome}: {motivo}")
@@ -1745,14 +1788,30 @@ def vigiar_paginas(cfg, estado, agora_utc, agora, registo, simular=False):
             regs[url] = reg
             continue
 
-        antigas = reg.get("linhas")
+        # cada via tem a sua referência: o texto da página e os títulos do Google
+        # Notícias não se comparam um com o outro
+        chave = "linhas" if via == "site" else "linhas_google"
+        antigas = reg.get(chave)
+        primeira = reg.get("linhas") is None and reg.get("linhas_google") is None
         mais, menos = ([], []) if antigas is None else diferencas(antigas, novas)
-        if antigas is None:  # 1.ª vez: guarda a referência e confirma que está a funcionar
+        if via == "google":
+            menos = []  # notícias antigas a sair da lista do Google não são mudanças
+        if primeira:  # 1.ª vez: guarda a referência e confirma que está a funcionar
             so_parte = f" (só a parte {h(parte)})" if parte else ""
             texto = (f"👀 <b>Comecei a vigiar {ligacao(nome, url)}</b>\n"
-                     f"{len(novas)} linhas de texto{so_parte}. Aviso-te quando alguma coisa mudar.")
+                     + (f"{len(novas)} linhas de texto{so_parte}. Aviso-te quando alguma "
+                        "coisa mudar." if via == "site" else
+                        f"O site não deixa ser lido ({h(motivo)}). Enquanto não der pelo "
+                        f"GitHub nem pelo telemóvel, vigio-o pelo Google Notícias ({len(novas)} "
+                        "notícias deste site): aviso-te quando aparecerem notícias novas."))
+        elif antigas is None and via == "google":  # deixou de dar para ler o site
+            texto = (f"ℹ️ <b>Não consigo ler {ligacao(nome, url)}</b> ({h(motivo)}).\n"
+                     "Enquanto isso durar, vigio-a pelo Google Notícias: aviso-te de "
+                     "notícias novas deste site.")
+        elif antigas is None:  # voltou a ler o site: nova referência, sem aviso falso
+            texto = None
         else:
-            texto = formatar_mudanca(v, mais, menos, agora) if (mais or menos) else None
+            texto = formatar_mudanca(v, mais, menos, agora, via) if (mais or menos) else None
         if simular:
             print(f"  {len(novas)} linhas" + (f"\n[PÁGINA]\n{texto}" if texto else " · sem mudanças"))
             continue
@@ -1776,8 +1835,10 @@ def vigiar_paginas(cfg, estado, agora_utc, agora, registo, simular=False):
         else:
             print(f"  {len(novas)} linhas · "
                   + ("referência guardada" if antigas is None else "sem mudanças"))
-        reg.update({"linhas": novas, "verificado": agora_utc.isoformat(), "falhas": 0,
-                    "erro": "", "parte": parte})
+        reg.update({chave: novas, "verificado": agora_utc.isoformat(), "falhas": 0,
+                    "erro": "", "via": via, "erro_site": motivo})
+        if via == "site":
+            reg["parte"] = parte
         reg.setdefault("desde", agora_utc.isoformat())
         regs[url] = reg
     registo["paginas"] = resumo

@@ -542,6 +542,20 @@ português normal, por isso entra.
 - Para obrigar um site a ir sempre pelo telemóvel (sem o teste diário), junta-lhe
   `telemovel: true` no `config.yaml`.
 
+**Três vias, por esta ordem.** Cada site (fonte de notícias ou página vigiada) é lido:
+
+1. **diretamente pelo GitHub**;
+2. se recusar, **pelo telemóvel** (na verificação seguinte, com o passo 2.7 feito);
+3. se mesmo assim não der (telemóvel desligado, ou sites com proteção anti-robôs que
+   recusam qualquer programa, como o contaspoupanca.pt), **pelo Google Notícias**: a app
+   procura `site:dominio` e usa as notícias desse site que o Google conhece.
+
+Pelo Google Notícias, uma página vigiada só avisa de **notícias novas desse site** (não de
+outras mudanças no texto da página), e o Google pode demorar um pouco a mostrá-las. Na
+primeira vez que uma página passa a ser lida assim, recebes um aviso no Telegram; no painel
+fica com a etiqueta **pelo Google Notícias**. Quando o site volta a poder ser lido, a app
+regressa à página sozinha. Não precisas de fazer nada quando juntas um site novo.
+
 ---
 
 ## 5A. Vigiar páginas (avisos de mudanças)

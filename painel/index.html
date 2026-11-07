@@ -595,6 +595,7 @@ function vistaAtividade() {
     h += '<div class="xs">' + num(x.alertas) + " alertas enviados" + (x.resumo ? ", resumo com " + num(x.resumo) : "") + (x.sugestoes ? ", " + num(x.sugestoes) + " fontes sugeridas" : "") + "</div>";
     if (x.paginas && x.paginas.verificadas) h += '<div class="xs muted">Páginas vigiadas: ' + num(x.paginas.verificadas) + " verificadas, " + num(x.paginas.mudaram) + " mudaram" + (x.paginas.falharam ? ", " + num(x.paginas.falharam) + " falharam" : "") + "</div>";
     if ((x.pelo_telemovel || []).length) h += '<div class="xs"><span class="tag info">pelo telemóvel</span> ' + esc(x.pelo_telemovel.join(", ")) + "</div>";
+    if ((x.pelo_google || []).length) h += '<div class="xs"><span class="tag warn">pelo Google Notícias</span> ' + esc(x.pelo_google.join(", ")) + "</div>";
     (x.falhas || []).forEach(f => { h += '<div class="xs err">Fonte com falha: ' + esc(f) + "</div>"; });
     (x.erros || []).forEach(f => { h += '<div class="xs err">' + esc(f) + "</div>"; });
     h += "</div>";
@@ -633,7 +634,9 @@ function vistaPaginas() {
     h += '<div class="card"><div class="row"><h3>' + esc(v.nome || dominio(v.url)) + "</h3>" + (v.ativa === false ? '<span class="tag">em pausa</span>' : g.erro ? '<span class="tag bad">com falha</span>' : g.verificado ? '<span class="tag ok">a vigiar</span>' : '<span class="tag info">à espera da 1.ª verificação</span>') + "</div>";
     h += '<a class="sm" href="' + esc(urlSegura(v.url)) + '" target="_blank" rel="noopener">' + esc(v.url) + "</a>";
     h += '<div class="xs"><span class="tag' + (freqVig(v) === "urgente" ? " bad" : freqVig(v) === "hora" ? " warn" : "") + '">' + esc(FREQS_VIG[freqVig(v)][0]) + "</span>" + (v.parte ? ' <span class="muted">só a parte</span> <code>' + esc(v.parte) + "</code>" : ' <span class="muted">página inteira</span>') + "</div>";
-    if (g.verificado) h += '<div class="xs muted">Última verificação: ' + esc(quando(g.verificado)) + (g.linhas ? " · " + g.linhas.length + " linhas de texto" + (g.mudou ? " · última mudança " + esc(quando(g.mudou)) : " · ainda sem mudanças") : "") + "</div>";
+    const gg = g.via === "google", ls = gg ? g.linhas_google : g.linhas;
+    if (g.verificado) h += '<div class="xs muted">Última verificação: ' + esc(quando(g.verificado)) + (ls ? " · " + ls.length + (gg ? " notícias no Google Notícias" : " linhas de texto") + (g.mudou ? " · última mudança " + esc(quando(g.mudou)) : " · ainda sem mudanças") : "") + "</div>";
+    if (gg && !g.erro) h += '<div class="xs"><span class="tag warn">pelo Google Notícias</span> <span class="muted">o site não deixa ser lido' + (g.erro_site ? " (" + esc(g.erro_site) + ")" : "") + "; só avisa de notícias novas deste site</span></div>";
     if (g.erro) h += '<div class="xs err">' + esc(g.erro) + (num(g.falhas) > 1 ? " (" + num(g.falhas) + " vezes seguidas)" : "") + "</div>";
     if (m && (m.n_mais || m.n_menos)) {
       h += '<details><summary class="xs">O que mudou da última vez</summary><div class="xs" style="margin-top:6px">';

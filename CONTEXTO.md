@@ -190,7 +190,19 @@ Página única, sem servidor, em https://tigreman263.github.io/agregador-noticia
 - Bibliotecas por cdnjs: js-yaml 4.1.0, marked, DOMPurify. Todo o texto vindo das notícias
   é escapado e o README é sanitizado (há um token no `localStorage`).
 
-## Estado atual (2026-11-03)
+## Estado atual (2026-11-07)
+
+- **3.ª via: Google Notícias (2026-11-07)**: o contaspoupanca.pt tem DataDome (403 com
+  desafio JavaScript) e recusa também o telemóvel. Pedido do utilizador: todo o site novo
+  passa sempre por direto → telemóvel → Google Notícias. `pelo_google(url, cfg)` lê
+  `url_google_news("site:dominio")` e fica só com itens desse domínio. Em `recolher()`,
+  quando uma fonte falha (exceto a própria procura do Google), usa-se `pelo_google`
+  (registo `pelo_google`, `LIDOS_GOOGLE`). Em `vigiar_paginas()`, se o site falha, compara
+  os títulos do Google; referência separada em `estado.vigiadas[url].linhas_google`
+  (`via`: site/google, `erro_site`); pela via Google só conta o que entra (➕), não o que
+  sai. 1.ª passagem para o Google manda "ℹ️ Não consigo ler…"; regresso ao site guarda
+  nova referência sem aviso. `notar_acesso` continua a marcar o bloqueio, por isso o
+  telemóvel é sempre tentado antes de ficar no Google.
 
 - **Bloqueados revistos (2026-11-03)**: a Médio Tejo ficou presa no telemóvel por um
   único ReadTimeout (2026-11-02 03:45), porque a marca renovava-se a cada leitura pelo
