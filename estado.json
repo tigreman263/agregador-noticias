@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-07T19:15:46.474052+00:00"
+   "ultima": "2026-11-07T20:15:47.380410+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -718,7 +718,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Benavente com garantia para adquirir ceifeira de jacintos através do Fundo Ambiental",
-   "ultima": "2026-11-07T19:15:46.474052+00:00"
+   "ultima": "2026-11-07T20:15:47.380410+00:00"
   },
   "deco.proteste.pt": {
    "nome": "DECO PROteste",
@@ -730,7 +730,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-07T19:15:46.474052+00:00"
+   "ultima": "2026-11-07T20:15:47.380410+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -1064,40 +1064,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-05T21:01:01.773241+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 483,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-05T22:01:01.631994+00:00",
    "pesquisas": [
@@ -2724,11 +2690,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-07T20:15:47.380410+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 522,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 488,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 2
+   },
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-07T19:15:46.474052+00:00",
-  "contaspoupanca.pt": "2026-11-07T19:15:46.474052+00:00"
+  "cm-serta.pt": "2026-11-07T20:15:47.380410+00:00",
+  "contaspoupanca.pt": "2026-11-07T20:15:47.380410+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2736,8 +2740,8 @@
   "contaspoupanca.pt": "2026-11-07T14:15:49.956116+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-07T19:15:46.474052+00:00",
-  "Apoio fundo ambiental": "2026-11-07T19:15:46.474052+00:00"
+  "Sertã": "2026-11-07T20:15:47.380410+00:00",
+  "Apoio fundo ambiental": "2026-11-07T20:15:47.380410+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3398,8 +3402,8 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-07T19:15:46.474052+00:00",
-   "falhas": 9,
+   "verificado": "2026-11-07T20:15:47.380410+00:00",
+   "falhas": 10,
    "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
@@ -3615,7 +3619,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-07T19:15:46.474052+00:00",
+   "verificado": "2026-11-07T20:15:47.380410+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3831,9 +3835,9 @@
    "desde": "2026-11-06T12:16:27.716358+00:00"
   },
   "https://contaspoupanca.pt/": {
-   "falhas": 24,
+   "falhas": 25,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
-   "verificado": "2026-11-07T19:15:46.474052+00:00"
+   "verificado": "2026-11-07T20:15:47.380410+00:00"
   }
  },
  "raspadas": {},
