@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-07T12:15:46.100925+00:00"
+   "ultima": "2026-11-07T13:15:43.297229+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -718,7 +718,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Benavente com garantia para adquirir ceifeira de jacintos através do Fundo Ambiental",
-   "ultima": "2026-11-07T12:15:46.100925+00:00"
+   "ultima": "2026-11-07T13:15:43.297229+00:00"
   },
   "deco.proteste.pt": {
    "nome": "DECO PROteste",
@@ -730,7 +730,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-07T12:15:46.100925+00:00"
+   "ultima": "2026-11-07T13:15:43.297229+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -1043,45 +1043,18 @@
    "fonte": "SAPO",
    "nota": 19.5,
    "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-07T13:15:43.297229+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-05T13:46:03.880164+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 528,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 407,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · SAPO: ParseError: unclosed token: line 2, column 8088"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 1,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-05T14:46:12.141601+00:00",
    "pesquisas": [
@@ -2680,11 +2653,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-07T13:15:43.297229+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 529,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [
+    "não consegui avisar da falha em cm-serta: falha de rede ao contactar o Telegram"
+   ],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 2
+   },
+   "pelo_telemovel": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-07T12:15:46.100925+00:00",
-  "contaspoupanca.pt": "2026-11-07T12:15:46.100925+00:00"
+  "cm-serta.pt": "2026-11-07T13:15:43.297229+00:00",
+  "contaspoupanca.pt": "2026-11-07T13:15:43.297229+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2692,8 +2705,8 @@
   "contaspoupanca.pt": "2026-11-06T13:15:49.930416+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-07T12:15:46.100925+00:00",
-  "Apoio fundo ambiental": "2026-11-07T12:15:46.100925+00:00"
+  "Sertã": "2026-11-07T13:15:43.297229+00:00",
+  "Apoio fundo ambiental": "2026-11-07T13:15:43.297229+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3354,8 +3367,8 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-07T12:15:46.100925+00:00",
-   "falhas": 2,
+   "verificado": "2026-11-07T13:15:43.297229+00:00",
+   "falhas": 3,
    "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
@@ -3472,6 +3485,10 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "REGIÃO/Futebol: Tarde desportiva da Condestável com seis partidas de futebol",
+    "Última hora",
+    "MAÇÃO/Cardigos: Município está a homenagear o homem que lia a natureza",
+    "Última hora",
     "SERTÃ: Vereador do Chega questiona sobre ligação de autocarro a Castelo Branco",
     "Última hora",
     "SERTÃ/Pedrógão Pequeno: Obras de 1,26 milhões de euros na EN2 aguardam consignação",
@@ -3486,11 +3503,30 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "VILA VELHA DE RÓDÃO: Município cria Centro de Estudos para promover o sucesso escolar",
+    "Beira Baixa",
+    "Vila Velha de Ródão",
+    "07-11-2026",
+    "Projeto é dirigido aos alunos do 9.º ano e Ensino Secundário",
+    "REGIÃO/Futebol: Tarde desportiva da Condestável com seis partidas de futebol",
+    "Castelo Branco",
+    "Sertã",
+    "Proença-a-Nova",
+    "Oleiros",
+    "Cernache do Bonjardim",
+    "Beira Baixa",
+    "Desporto",
+    "07-11-2026",
+    "Última hora",
+    "MAÇÃO/Cardigos: Município está a homenagear o homem que lia a natureza",
+    "Mação",
+    "Médio Tejo",
+    "07-11-2026",
+    "Última hora",
     "SERTÃ: “Bolos de Todos os Santos” em destaque",
     "Sertã",
     "Beira Baixa",
     "06-11-2026",
-    "No dia 15 de novembro",
     "VILA DE REI: “Os Quintais nas Praças do Pinhal” regressam no próximo domingo",
     "Vila de Rei",
     "Beira Baixa",
@@ -3535,18 +3571,6 @@
     "Sertã",
     "Beira Baixa",
     "06-11-2026",
-    "PEDRÓGÃO GRANDE: Projeto \"Con(s)ciência\" leva astronomia e formação à comunidade",
-    "Pedrógão Grande",
-    "Região",
-    "06-11-2026",
-    "SERTÃ/Palhais: MAE promove encontro “Ecologia com Ciência” este sábado",
-    "Sertã",
-    "Beira Baixa",
-    "06-11-2026",
-    "FIGUEIRÓ DOS VINHOS: Escola Básica José Malhoa receber exercício «A Terra Treme»",
-    "Figueiró dos Vinhos",
-    "Região",
-    "06-11-2026",
     "1",
     "2",
     "3",
@@ -3560,21 +3584,45 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-07T12:15:46.100925+00:00",
+   "verificado": "2026-11-07T13:15:43.297229+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-07T07:16:05.563470+00:00",
+   "mudou": "2026-11-07T13:15:43.297229+00:00",
    "mudanca": {
     "mais": [
-     "sábado, 7 novembro 2026"
+     "REGIÃO/Futebol: Tarde desportiva da Condestável com seis partidas de futebol",
+     "Última hora",
+     "MAÇÃO/Cardigos: Município está a homenagear o homem que lia a natureza",
+     "Última hora",
+     "VILA VELHA DE RÓDÃO: Município cria Centro de Estudos para promover o sucesso escolar",
+     "Vila Velha de Ródão",
+     "Projeto é dirigido aos alunos do 9.º ano e Ensino Secundário",
+     "REGIÃO/Futebol: Tarde desportiva da Condestável com seis partidas de futebol",
+     "Castelo Branco",
+     "Proença-a-Nova",
+     "Oleiros",
+     "Cernache do Bonjardim",
+     "Desporto",
+     "Última hora",
+     "MAÇÃO/Cardigos: Município está a homenagear o homem que lia a natureza",
+     "Mação",
+     "Médio Tejo",
+     "Última hora"
     ],
     "menos": [
-     "sexta-feira, 6 novembro 2026"
+     "No dia 15 de novembro",
+     "PEDRÓGÃO GRANDE: Projeto \"Con(s)ciência\" leva astronomia e formação à comunidade",
+     "Pedrógão Grande",
+     "Região",
+     "SERTÃ/Palhais: MAE promove encontro “Ecologia com Ciência” este sábado",
+     "FIGUEIRÓ DOS VINHOS: Escola Básica José Malhoa receber exercício «A Terra Treme»",
+     "Figueiró dos Vinhos",
+     "Região"
     ],
-    "n_mais": 1,
-    "n_menos": 1
+    "n_mais": 18,
+    "n_menos": 8
    }
   },
   "https://www.jf-cernachebonjardim.pt/": {
@@ -3774,9 +3822,9 @@
    "desde": "2026-11-06T12:16:27.716358+00:00"
   },
   "https://contaspoupanca.pt/": {
-   "falhas": 17,
+   "falhas": 18,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
-   "verificado": "2026-11-07T12:15:46.100925+00:00"
+   "verificado": "2026-11-07T13:15:43.297229+00:00"
   }
  },
  "raspadas": {},
