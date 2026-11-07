@@ -72,8 +72,8 @@ vigiar:
     frequencia: "diario"
     ativa: true
   - nome: "Contas poupanças"
-    url: "https://contaspoupanca.pt/"
-    parte: ""
+    url: "https://news.google.com/rss/search?q=site:contaspoupanca.pt&hl=pt-PT&gl=PT&ceid=PT:pt-150"
+    parte: "item title"
     frequencia: "hora"
     ativa: true
 
