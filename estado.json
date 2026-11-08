@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-08T15:45:47.320729+00:00"
+   "ultima": "2026-11-08T16:46:22.086203+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -1130,44 +1130,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-06T20:16:04.198068+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 535,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 496,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-06T21:15:57.428831+00:00",
    "pesquisas": [
@@ -2826,11 +2788,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-08T16:46:22.086203+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 582,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 542,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-08T15:45:47.320729+00:00",
-  "contaspoupanca.pt": "2026-11-08T15:45:47.320729+00:00"
+  "cm-serta.pt": "2026-11-08T16:46:22.086203+00:00",
+  "contaspoupanca.pt": "2026-11-08T16:46:22.086203+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2838,8 +2838,8 @@
   "contaspoupanca.pt": "2026-11-08T14:45:45.338247+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-08T15:45:47.320729+00:00",
-  "Apoio fundo ambiental": "2026-11-08T15:45:47.320729+00:00"
+  "Sertã": "2026-11-08T16:46:22.086203+00:00",
+  "Apoio fundo ambiental": "2026-11-08T16:46:22.086203+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3500,7 +3500,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-08T15:45:47.320729+00:00",
+   "verificado": "2026-11-08T16:46:22.086203+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3774,7 +3774,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-08T15:45:47.320729+00:00",
+   "verificado": "2026-11-08T16:46:22.086203+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4021,6 +4021,7 @@
     "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
+    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Evitar erros nas férias e poupar nas mais-valias: os dois podcasts da semana",
     "Subscrever Newsletter",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
@@ -4067,7 +4068,6 @@
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Vamos a contas: \"Fundo de emergência deve estar numa conta ou num ETF?\" O risco de querer ganhar mais",
-    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Prestação da casa aumenta até 90 euros em novembro - Veja qual poderá ser o aumento no seu caso",
     "Investir em criptomoedas: ainda estou a perder em outubro de 2026",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
@@ -4078,7 +4078,7 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-08T15:45:47.320729+00:00",
+   "verificado": "2026-11-08T16:46:22.086203+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
