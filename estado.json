@@ -279,7 +279,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-08T10:46:01.548649+00:00"
+   "ultima": "2026-11-08T13:46:58.913743+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-08T12:45:54.497742+00:00"
+   "ultima": "2026-11-08T13:46:58.913743+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -730,7 +730,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-08T12:45:54.497742+00:00"
+   "ultima": "2026-11-08T13:46:58.913743+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -1100,47 +1100,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-08T13:46:58.913743+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-06T17:16:00.526525+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 530,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 492,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-06T18:16:01.171266+00:00",
    "pesquisas": [
@@ -2798,11 +2769,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-08T13:46:58.913743+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 538,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 503,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-08T12:45:54.497742+00:00",
-  "contaspoupanca.pt": "2026-11-08T12:45:54.497742+00:00"
+  "cm-serta.pt": "2026-11-08T13:46:58.913743+00:00",
+  "contaspoupanca.pt": "2026-11-08T13:46:58.913743+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2810,8 +2820,8 @@
   "contaspoupanca.pt": "2026-11-07T14:15:49.956116+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-08T12:45:54.497742+00:00",
-  "Apoio fundo ambiental": "2026-11-08T12:45:54.497742+00:00"
+  "Sertã": "2026-11-08T13:46:58.913743+00:00",
+  "Apoio fundo ambiental": "2026-11-08T13:46:58.913743+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3472,7 +3482,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-08T12:45:54.497742+00:00",
+   "verificado": "2026-11-08T13:46:58.913743+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3545,8 +3555,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -3746,7 +3756,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-08T12:45:54.497742+00:00",
+   "verificado": "2026-11-08T13:46:58.913743+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3993,7 +4003,6 @@
     "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
-    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Evitar erros nas férias e poupar nas mais-valias: os dois podcasts da semana",
     "Subscrever Newsletter",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
@@ -4037,6 +4046,8 @@
     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
+    "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
+    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Prestação da casa aumenta até 90 euros em novembro - Veja qual poderá ser o aumento no seu caso",
     "Investir em criptomoedas: ainda estou a perder em outubro de 2026",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
@@ -4047,20 +4058,19 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-08T12:45:54.497742+00:00",
+   "verificado": "2026-11-08T13:46:58.913743+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-08T08:46:05.358616+00:00",
+   "mudou": "2026-11-08T13:46:58.913743+00:00",
    "mudanca": {
     "mais": [
-     "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
-     "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos"
+     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
