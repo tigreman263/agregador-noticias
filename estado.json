@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-08T16:46:22.086203+00:00"
+   "ultima": "2026-11-08T17:46:16.040949+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -1130,44 +1130,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-06T21:15:57.428831+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 531,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 494,
-     "relevantes": 1,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-06T22:16:08.554432+00:00",
    "pesquisas": [
@@ -2826,11 +2788,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-08T17:46:16.040949+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 539,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 499,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-08T16:46:22.086203+00:00",
-  "contaspoupanca.pt": "2026-11-08T16:46:22.086203+00:00"
+  "cm-serta.pt": "2026-11-08T17:46:16.040949+00:00",
+  "contaspoupanca.pt": "2026-11-08T17:46:16.040949+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2838,8 +2839,8 @@
   "contaspoupanca.pt": "2026-11-08T14:45:45.338247+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-08T16:46:22.086203+00:00",
-  "Apoio fundo ambiental": "2026-11-08T16:46:22.086203+00:00"
+  "Sertã": "2026-11-08T17:46:16.040949+00:00",
+  "Apoio fundo ambiental": "2026-11-08T17:46:16.040949+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3500,7 +3501,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-08T16:46:22.086203+00:00",
+   "verificado": "2026-11-08T17:46:16.040949+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3573,8 +3574,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -3774,7 +3775,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-08T16:46:22.086203+00:00",
+   "verificado": "2026-11-08T17:46:16.040949+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4078,7 +4079,7 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-08T16:46:22.086203+00:00",
+   "verificado": "2026-11-08T17:46:16.040949+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
