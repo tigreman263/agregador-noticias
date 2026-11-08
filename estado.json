@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-08T13:46:58.913743+00:00"
+   "ultima": "2026-11-08T14:46:19.542282+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -730,7 +730,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-08T13:46:58.913743+00:00"
+   "ultima": "2026-11-08T14:46:19.542282+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -1109,47 +1109,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-08T14:46:19.542282+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-06T18:16:01.171266+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 531,
-     "relevantes": 1,
-     "alertas": 1
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 492,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 1,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-06T19:16:10.338290+00:00",
    "pesquisas": [
@@ -2808,20 +2779,58 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-08T14:46:19.542282+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 578,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 542,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-08T13:46:58.913743+00:00",
-  "contaspoupanca.pt": "2026-11-08T13:46:58.913743+00:00"
+  "cm-serta.pt": "2026-11-08T14:46:19.542282+00:00",
+  "contaspoupanca.pt": "2026-11-08T14:46:19.542282+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-08T12:45:49.897956+00:00",
-  "contaspoupanca.pt": "2026-11-07T14:15:49.956116+00:00"
+  "contaspoupanca.pt": "2026-11-08T14:45:45.338247+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-08T13:46:58.913743+00:00",
-  "Apoio fundo ambiental": "2026-11-08T13:46:58.913743+00:00"
+  "Sertã": "2026-11-08T14:46:19.542282+00:00",
+  "Apoio fundo ambiental": "2026-11-08T14:46:19.542282+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3482,7 +3491,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-08T13:46:58.913743+00:00",
+   "verificado": "2026-11-08T14:46:19.542282+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3555,8 +3564,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "site",
-   "erro_site": ""
+   "via": "google",
+   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -3756,7 +3765,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-08T13:46:58.913743+00:00",
+   "verificado": "2026-11-08T14:46:19.542282+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4033,6 +4042,7 @@
     "Certificados de Aforro",
     "Combustíveis",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
+    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
@@ -4058,16 +4068,16 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-08T13:46:58.913743+00:00",
+   "verificado": "2026-11-08T14:46:19.542282+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-08T13:46:58.913743+00:00",
+   "mudou": "2026-11-08T14:46:19.542282+00:00",
    "mudanca": {
     "mais": [
-     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas"
+     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana"
     ],
     "menos": [],
     "n_mais": 1,
