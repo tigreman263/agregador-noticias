@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-08T22:45:58.932066+00:00"
+   "ultima": "2026-11-08T23:45:55.870852+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -1148,35 +1148,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-07T03:16:01.299454+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 540,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 499,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-07T04:16:02.878534+00:00",
    "pesquisas": [
@@ -2887,10 +2858,40 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-08T23:45:55.870852+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 538,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 499,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-08T22:45:58.932066+00:00",
+  "cm-serta.pt": "2026-11-08T23:45:55.870852+00:00",
   "contaspoupanca.pt": "2026-11-08T22:45:58.932066+00:00"
  },
  "lentos": {},
@@ -2899,8 +2900,8 @@
   "contaspoupanca.pt": "2026-11-08T14:45:45.338247+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-08T22:45:58.932066+00:00",
-  "Apoio fundo ambiental": "2026-11-08T22:45:58.932066+00:00"
+  "Sertã": "2026-11-08T23:45:55.870852+00:00",
+  "Apoio fundo ambiental": "2026-11-08T23:45:55.870852+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
