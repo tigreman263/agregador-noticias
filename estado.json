@@ -23,7 +23,7 @@
  },
  "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-07",
+ "ultimo_resumo": "2026-11-08",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -68,7 +68,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-08T07:46:03.826783+00:00"
+   "ultima": "2026-11-08T08:46:05.358616+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -279,7 +279,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-08T07:46:03.826783+00:00"
+   "ultima": "2026-11-08T08:46:05.358616+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-08T07:46:03.826783+00:00"
+   "ultima": "2026-11-08T08:46:05.358616+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -730,7 +730,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-08T07:46:03.826783+00:00"
+   "ultima": "2026-11-08T08:46:05.358616+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -1079,47 +1079,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-08T08:46:05.358616+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-06T12:16:27.716358+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 530,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 494,
-     "relevantes": 2,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 4,
-    "mudaram": 1,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-06T13:16:05.472612+00:00",
    "pesquisas": [
@@ -2774,11 +2745,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-08T08:46:05.358616+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 538,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 498,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-08T07:46:03.826783+00:00",
-  "contaspoupanca.pt": "2026-11-08T07:46:03.826783+00:00"
+  "cm-serta.pt": "2026-11-08T08:46:05.358616+00:00",
+  "contaspoupanca.pt": "2026-11-08T08:46:05.358616+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2786,8 +2796,8 @@
   "contaspoupanca.pt": "2026-11-07T14:15:49.956116+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-08T07:46:03.826783+00:00",
-  "Apoio fundo ambiental": "2026-11-08T07:46:03.826783+00:00"
+  "Sertã": "2026-11-08T08:46:05.358616+00:00",
+  "Apoio fundo ambiental": "2026-11-08T08:46:05.358616+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3448,7 +3458,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-08T07:46:03.826783+00:00",
+   "verificado": "2026-11-08T08:46:05.358616+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3723,7 +3733,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-08T07:46:03.826783+00:00",
+   "verificado": "2026-11-08T08:46:05.358616+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3952,6 +3962,7 @@
     "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Revista de imprensa de 2 de novembro: Prestação da casa, portagens e Certificados de Aforro",
+    "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
@@ -4009,6 +4020,7 @@
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
     "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?",
+    "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos",
     "Combustíveis | Gasolina cai 6,5 cêntimos no preço justo esta semana. Gasóleo volta a subir",
     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
@@ -4023,22 +4035,20 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-08T07:46:03.826783+00:00",
+   "verificado": "2026-11-08T08:46:05.358616+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-08T07:46:03.826783+00:00",
+   "mudou": "2026-11-08T08:46:05.358616+00:00",
    "mudanca": {
     "mais": [
-     "Revista de imprensa de 2 de novembro: Prestação da casa, portagens e Certificados de Aforro",
-     "Prestação da casa aumenta até 90 euros em novembro - Veja qual poderá ser o aumento no seu caso",
-     "Investir em criptomoedas: ainda estou a perder em outubro de 2026",
-     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
+     "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
+     "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos"
     ],
     "menos": [],
-    "n_mais": 4,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
