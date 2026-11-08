@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-08T10:46:01.548649+00:00"
+   "ultima": "2026-11-08T11:45:45.514538+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -730,7 +730,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-08T10:46:01.548649+00:00"
+   "ultima": "2026-11-08T11:45:45.514538+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -1103,44 +1103,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-06T15:15:47.936458+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 521,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 485,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-06T16:15:59.803023+00:00",
    "pesquisas": [
@@ -2798,11 +2760,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-08T11:45:45.514538+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 578,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 541,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-08T10:46:01.548649+00:00",
-  "contaspoupanca.pt": "2026-11-08T10:46:01.548649+00:00"
+  "cm-serta.pt": "2026-11-08T11:45:45.514538+00:00",
+  "contaspoupanca.pt": "2026-11-08T11:45:45.514538+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2810,8 +2810,8 @@
   "contaspoupanca.pt": "2026-11-07T14:15:49.956116+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-08T10:46:01.548649+00:00",
-  "Apoio fundo ambiental": "2026-11-08T10:46:01.548649+00:00"
+  "Sertã": "2026-11-08T11:45:45.514538+00:00",
+  "Apoio fundo ambiental": "2026-11-08T11:45:45.514538+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3472,7 +3472,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-08T10:46:01.548649+00:00",
+   "verificado": "2026-11-08T11:45:45.514538+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3516,7 +3516,6 @@
     "Abastecimento de água",
     "Contactos Úteis",
     "Regulamentos",
-    "BUPi",
     "Estrutura Orgânica",
     "Planos",
     "Casa de Espetáculos e Cultura da Sertã",
@@ -3546,8 +3545,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "site",
-   "erro_site": ""
+   "via": "google",
+   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -3747,7 +3746,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-08T10:46:01.548649+00:00",
+   "verificado": "2026-11-08T11:45:45.514538+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4048,7 +4047,7 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-08T10:46:01.548649+00:00",
+   "verificado": "2026-11-08T11:45:45.514538+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
