@@ -279,7 +279,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-08T10:46:01.548649+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-08T10:46:01.548649+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -730,7 +730,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-08T10:46:01.548649+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -1103,44 +1103,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-06T14:15:59.423681+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 528,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 491,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-06T15:15:47.936458+00:00",
    "pesquisas": [
@@ -2797,11 +2759,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-08T10:46:01.548649+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 537,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 498,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-08T09:46:04.144390+00:00",
-  "contaspoupanca.pt": "2026-11-08T09:46:04.144390+00:00"
+  "cm-serta.pt": "2026-11-08T10:46:01.548649+00:00",
+  "contaspoupanca.pt": "2026-11-08T10:46:01.548649+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2809,8 +2810,8 @@
   "contaspoupanca.pt": "2026-11-07T14:15:49.956116+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-08T09:46:04.144390+00:00",
-  "Apoio fundo ambiental": "2026-11-08T09:46:04.144390+00:00"
+  "Sertã": "2026-11-08T10:46:01.548649+00:00",
+  "Apoio fundo ambiental": "2026-11-08T10:46:01.548649+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3471,7 +3472,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-08T09:46:04.144390+00:00",
+   "verificado": "2026-11-08T10:46:01.548649+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3746,7 +3747,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-08T09:46:04.144390+00:00",
+   "verificado": "2026-11-08T10:46:01.548649+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4047,7 +4048,7 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-08T09:46:04.144390+00:00",
+   "verificado": "2026-11-08T10:46:01.548649+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
