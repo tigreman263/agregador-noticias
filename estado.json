@@ -1149,44 +1149,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-07T09:16:01.713554+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 540,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 498,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 1,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-07T10:16:04.029493+00:00",
    "pesquisas": [
     {
@@ -2870,10 +2832,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-09T05:46:01.021768+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 536,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 495,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-09T04:45:59.872552+00:00",
+  "cm-serta.pt": "2026-11-09T05:46:01.021768+00:00",
   "contaspoupanca.pt": "2026-11-08T22:45:58.932066+00:00"
  },
  "lentos": {},
@@ -2882,8 +2874,8 @@
   "contaspoupanca.pt": "2026-11-08T14:45:45.338247+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-09T04:45:59.872552+00:00",
-  "Apoio fundo ambiental": "2026-11-09T04:45:59.872552+00:00"
+  "Sertã": "2026-11-09T05:46:01.021768+00:00",
+  "Apoio fundo ambiental": "2026-11-09T05:46:01.021768+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
