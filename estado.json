@@ -513,7 +513,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-09T15:46:03.801994+00:00"
+   "ultima": "2026-11-09T16:46:27.905185+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1246,44 +1246,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-07T20:15:47.380410+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 522,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-07T21:15:45.184242+00:00",
    "pesquisas": [
@@ -2958,11 +2920,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-09T16:46:27.905185+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 578,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 536,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-09T15:46:03.801994+00:00",
-  "contaspoupanca.pt": "2026-11-09T15:46:03.801994+00:00"
+  "cm-serta.pt": "2026-11-09T16:46:27.905185+00:00",
+  "contaspoupanca.pt": "2026-11-09T16:46:27.905185+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2970,8 +2970,8 @@
   "contaspoupanca.pt": "2026-11-09T15:45:49.293828+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-09T15:46:03.801994+00:00",
-  "Apoio fundo ambiental": "2026-11-09T15:46:03.801994+00:00"
+  "Sertã": "2026-11-09T16:46:27.905185+00:00",
+  "Apoio fundo ambiental": "2026-11-09T16:46:27.905185+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3632,7 +3632,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-09T15:46:03.801994+00:00",
+   "verificado": "2026-11-09T16:46:27.905185+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3651,62 +3651,61 @@
     "n_menos": 2
    },
    "linhas_google": [
-    "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
     "Câmara Municipal da Sertã — Início",
-    "Serviços Online",
+    "Bem-vindo à Rede de Bibliotecas da Sertã",
+    "Turismo",
+    "Praias Fluviais, Zonas de Lazer e Piscinas",
     "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
+    "Serviços Online",
+    "Procedimentos Concursais",
+    "Câmara Municipal",
+    "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
+    "Bolsas de Estudo",
+    "Programa Férias Ativas abre candidaturas para monitores",
     "Programa “Férias Ativas” anima verão até final de agosto",
     "Login",
-    "Atendimento no Município para apoio após a Tempestade Kristin",
-    "Bem-vindo à Rede de Bibliotecas da Sertã",
     "Eventos Futuros",
-    "Águas Residuais",
-    "Praias Fluviais, Zonas de Lazer e Piscinas",
-    "Percursos Pedestres",
-    "Procedimentos Concursais",
-    "Bolsas de Estudo",
-    "Turismo",
     "Contactos da Câmara Municipal",
-    "Câmara Municipal",
+    "Atendimento no Município para apoio após a Tempestade Kristin",
+    "Águas Residuais",
+    "Abastecimento de água",
+    "Percursos Pedestres",
     "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
-    "Programa Férias Ativas abre candidaturas para monitores",
     "Requerimentos",
+    "Casa de Espetáculos e Cultura da Sertã",
+    "Estrutura Orgânica",
     "Revisão do PDM da Sertã mais perto da conclusão",
     "Espaços Museológicos",
-    "Abastecimento de água",
+    "Maranho da Sertã reconhecido com Prémio Cinco Estrelas Regiões",
     "Contactos Úteis",
     "Regulamentos",
-    "Estrutura Orgânica",
     "Planos",
-    "Casa de Espetáculos e Cultura da Sertã",
     "Projetos Cofinanciados",
-    "Maranho da Sertã reconhecido com Prémio Cinco Estrelas Regiões",
-    "Espaços de Cowork e Incubação",
-    "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
-    "Ficha técnica",
     "Calendário de Reuniões",
     "Desporto",
-    "Bolsas de Estudo do Município da Sertã com novas normas",
+    "Espaços de Cowork e Incubação",
+    "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
     "Mercados e Feiras",
     "Mapa de Pessoal",
-    "História e Caracterização",
     "Assembleia Municipal Jovem",
     "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto",
-    "Academia Sénior",
+    "História e Caracterização",
+    "Ficha técnica",
     "União de Freguesias de Cumeada e Marmeleiro",
+    "Bolsas de Estudo do Município da Sertã com novas normas",
+    "Faixas de Gestão de Combustível",
     "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
     "clds 5g",
-    "Freguesias",
+    "Academia Sénior",
     "Gabinete Florestal",
-    "Editais / Avisos",
-    "Faixas de Gestão de Combustível",
-    "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
     "Festas e Romarias",
+    "Editais / Avisos",
+    "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "site",
-   "erro_site": ""
+   "via": "google",
+   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -3889,7 +3888,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-09T15:46:03.801994+00:00",
+   "verificado": "2026-11-09T16:46:27.905185+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4216,7 +4215,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-09T15:46:03.801994+00:00",
+   "verificado": "2026-11-09T16:46:27.905185+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
