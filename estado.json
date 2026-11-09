@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-09T00:46:04.869854+00:00"
+   "ultima": "2026-11-09T01:46:00.600065+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -1148,40 +1148,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-07T05:16:00.258843+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 520,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 479,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · Rádio Hertz: ParseError: mismatched tag: line 93, column 2",
-    "Sertã · Portal Energia: ParseError: mismatched tag: line 93, column 2",
-    "Apoio fundo ambiental · Rádio Hertz: ParseError: mismatched tag: line 93, column 2",
-    "Apoio fundo ambiental · Portal Energia: ParseError: mismatched tag: line 93, column 2"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-07T06:16:08.502548+00:00",
    "pesquisas": [
@@ -2889,10 +2855,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-09T01:46:00.600065+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 538,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 499,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-09T00:46:04.869854+00:00",
+  "cm-serta.pt": "2026-11-09T01:46:00.600065+00:00",
   "contaspoupanca.pt": "2026-11-08T22:45:58.932066+00:00"
  },
  "lentos": {},
@@ -2901,8 +2897,8 @@
   "contaspoupanca.pt": "2026-11-08T14:45:45.338247+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-09T00:46:04.869854+00:00",
-  "Apoio fundo ambiental": "2026-11-09T00:46:04.869854+00:00"
+  "Sertã": "2026-11-09T01:46:00.600065+00:00",
+  "Apoio fundo ambiental": "2026-11-09T01:46:00.600065+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
