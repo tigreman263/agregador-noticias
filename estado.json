@@ -513,7 +513,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-09T21:45:57.880682+00:00"
+   "ultima": "2026-11-09T22:46:01.388812+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1270,48 +1270,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-09T22:46:01.388812+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-07T22:46:00.201139+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 532,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 498,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-07T23:46:06.058539+00:00",
    "pesquisas": [
@@ -2994,11 +2964,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-09T22:46:01.388812+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 540,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 495,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-09T21:45:57.880682+00:00",
-  "contaspoupanca.pt": "2026-11-09T21:45:57.880682+00:00"
+  "cm-serta.pt": "2026-11-09T22:46:01.388812+00:00",
+  "contaspoupanca.pt": "2026-11-09T22:46:01.388812+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3006,8 +3015,8 @@
   "contaspoupanca.pt": "2026-11-09T15:45:49.293828+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-09T21:45:57.880682+00:00",
-  "Apoio fundo ambiental": "2026-11-09T21:45:57.880682+00:00"
+  "Sertã": "2026-11-09T22:46:01.388812+00:00",
+  "Apoio fundo ambiental": "2026-11-09T22:46:01.388812+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3668,7 +3677,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-09T21:45:57.880682+00:00",
+   "verificado": "2026-11-09T22:46:01.388812+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3842,6 +3851,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ/Pedrógão Pequeno: Acidente provoca dois feridos graves",
+    "Última hora",
     "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
     "Última hora",
     "MAÇÃO/Cardigos: Ruínas da casa natal do Padre Silva Tavares viram espaço de memória",
@@ -3850,13 +3861,18 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ/Pedrógão Pequeno: Acidente provoca dois feridos graves",
+    "Sertã",
+    "Beira Baixa",
+    "09-11-2026",
+    "Última hora",
+    "IC8 esteve cortado",
     "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
     "Cernache do Bonjardim",
     "Sertã",
     "Beira Baixa",
     "09-11-2026",
     "Última hora",
-    "Jorge Serafim encerrou evento e provou que a arte de contar histórias continua viva",
     "MAÇÃO/Cardigos: Ruínas da casa natal do Padre Silva Tavares viram espaço de memória",
     "Mação",
     "Beira Baixa",
@@ -3907,10 +3923,6 @@
     "Vila de Rei",
     "Beira Baixa",
     "06-11-2026",
-    "SERTÃ/Pedrógão Pequeno: Obras de 1,26 milhões de euros na EN2 aguardam consignação",
-    "Beira Baixa",
-    "Sertã",
-    "06-11-2026",
     "1",
     "2",
     "3",
@@ -3924,34 +3936,26 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-09T21:45:57.880682+00:00",
+   "verificado": "2026-11-09T22:46:01.388812+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-09T17:46:00.261167+00:00",
+   "mudou": "2026-11-09T22:46:01.388812+00:00",
    "mudanca": {
     "mais": [
-     "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
-     "MAÇÃO/Cardigos: Ruínas da casa natal do Padre Silva Tavares viram espaço de memória",
-     "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
-     "Cernache do Bonjardim",
-     "Jorge Serafim encerrou evento e provou que a arte de contar histórias continua viva",
-     "MAÇÃO/Cardigos: Ruínas da casa natal do Padre Silva Tavares viram espaço de memória"
+     "SERTÃ/Pedrógão Pequeno: Acidente provoca dois feridos graves",
+     "Última hora",
+     "SERTÃ/Pedrógão Pequeno: Acidente provoca dois feridos graves",
+     "Última hora",
+     "IC8 esteve cortado"
     ],
     "menos": [
-     "MAÇÃO/Cardigos: Município está a homenagear o homem que lia a natureza",
-     "Conquista é \"motivo de orgulho\" para candidata e família",
-     "REGIÃO: Sistema de bicicletas \"meioB\" vence Prémio INOVA+ 2026",
-     "Ferreira do Zêzere",
-     "Sardoal",
-     "Vila de Rei",
-     "Médio Tejo",
-     "VILA VELHA DE RÓDÃO: Município e ACICB promovem “Sorteio de Natal”",
-     "Vila Velha de Ródão"
+     "Jorge Serafim encerrou evento e provou que a arte de contar histórias continua viva",
+     "SERTÃ/Pedrógão Pequeno: Obras de 1,26 milhões de euros na EN2 aguardam consignação"
     ],
-    "n_mais": 6,
-    "n_menos": 9
+    "n_mais": 5,
+    "n_menos": 2
    },
    "via": "site",
    "erro_site": ""
@@ -4160,6 +4164,7 @@
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
+    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Potência contratada: veja em 5 minutos se está a pagar a mais na eletricidade",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
@@ -4238,12 +4243,11 @@
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
     "Revista de imprensa de 6 de novembro: Salário mínimo, inflação e crédito à habitação",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
-    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "Carro"
    ],
-   "verificado": "2026-11-09T21:45:57.880682+00:00",
+   "verificado": "2026-11-09T22:46:01.388812+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
