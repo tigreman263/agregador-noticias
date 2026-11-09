@@ -513,7 +513,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-09T16:46:27.905185+00:00"
+   "ultima": "2026-11-09T17:46:00.261167+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1243,47 +1243,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-09T17:46:00.261167+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-07T21:15:45.184242+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 520,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-07T21:25:16.831560+00:00",
    "pesquisas": [
@@ -2958,11 +2929,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-09T17:46:00.261167+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 536,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 495,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-09T16:46:27.905185+00:00",
-  "contaspoupanca.pt": "2026-11-09T16:46:27.905185+00:00"
+  "cm-serta.pt": "2026-11-09T17:46:00.261167+00:00",
+  "contaspoupanca.pt": "2026-11-09T17:46:00.261167+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2970,8 +2980,8 @@
   "contaspoupanca.pt": "2026-11-09T15:45:49.293828+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-09T16:46:27.905185+00:00",
-  "Apoio fundo ambiental": "2026-11-09T16:46:27.905185+00:00"
+  "Sertã": "2026-11-09T17:46:00.261167+00:00",
+  "Apoio fundo ambiental": "2026-11-09T17:46:00.261167+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3632,7 +3642,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-09T16:46:27.905185+00:00",
+   "verificado": "2026-11-09T17:46:00.261167+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3704,8 +3714,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -3806,17 +3816,30 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
-    "MAÇÃO/Cardigos: Município está a homenagear o homem que lia a natureza",
+    "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
+    "Última hora",
+    "MAÇÃO/Cardigos: Ruínas da casa natal do Padre Silva Tavares viram espaço de memória",
     "Última hora",
     "Todas as notícias",
     "Início",
     "Notícias",
     "Todas as notícias",
+    "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
+    "Cernache do Bonjardim",
+    "Sertã",
+    "Beira Baixa",
+    "09-11-2026",
+    "Última hora",
+    "Jorge Serafim encerrou evento e provou que a arte de contar histórias continua viva",
+    "MAÇÃO/Cardigos: Ruínas da casa natal do Padre Silva Tavares viram espaço de memória",
+    "Mação",
+    "Beira Baixa",
+    "09-11-2026",
+    "Última hora",
     "SERTÃ: Daniela Duarte é 1.ª Dama Teen Beira Interior 2026",
     "Sertã",
     "Beira Baixa",
     "09-11-2026",
-    "Conquista é \"motivo de orgulho\" para candidata e família",
     "SERTÃ: Município informa sobre concessão de crédito às empresas",
     "Sertã",
     "Beira Baixa",
@@ -3842,7 +3865,6 @@
     "Mação",
     "Médio Tejo",
     "07-11-2026",
-    "Última hora",
     "SERTÃ: “Bolos de Todos os Santos” em destaque",
     "Sertã",
     "Beira Baixa",
@@ -3863,18 +3885,6 @@
     "Beira Baixa",
     "Sertã",
     "06-11-2026",
-    "REGIÃO: Sistema de bicicletas \"meioB\" vence Prémio INOVA+ 2026",
-    "Mação",
-    "Ferreira do Zêzere",
-    "Sertã",
-    "Sardoal",
-    "Vila de Rei",
-    "Médio Tejo",
-    "06-11-2026",
-    "VILA VELHA DE RÓDÃO: Município e ACICB promovem “Sorteio de Natal”",
-    "Vila Velha de Ródão",
-    "Beira Baixa",
-    "06-11-2026",
     "1",
     "2",
     "3",
@@ -3888,42 +3898,34 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-09T16:46:27.905185+00:00",
+   "verificado": "2026-11-09T17:46:00.261167+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-09T15:46:03.801994+00:00",
+   "mudou": "2026-11-09T17:46:00.261167+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Daniela Duarte é 1.ª Dama Teen Beira Interior 2026",
-     "Conquista é \"motivo de orgulho\" para candidata e família",
-     "SERTÃ: Município informa sobre concessão de crédito às empresas"
+     "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
+     "MAÇÃO/Cardigos: Ruínas da casa natal do Padre Silva Tavares viram espaço de memória",
+     "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
+     "Cernache do Bonjardim",
+     "Jorge Serafim encerrou evento e provou que a arte de contar histórias continua viva",
+     "MAÇÃO/Cardigos: Ruínas da casa natal do Padre Silva Tavares viram espaço de memória"
     ],
     "menos": [
-     "REGIÃO/Futebol: Tarde desportiva da Condestável com seis partidas de futebol",
-     "Última hora",
-     "Última hora",
-     "SERTÃ: Vereador do Chega questiona sobre ligação de autocarro a Castelo Branco",
-     "Última hora",
-     "SERTÃ/Pedrógão Pequeno: Obras de 1,26 milhões de euros na EN2 aguardam consignação",
-     "Última hora",
+     "MAÇÃO/Cardigos: Município está a homenagear o homem que lia a natureza",
+     "Conquista é \"motivo de orgulho\" para candidata e família",
      "REGIÃO: Sistema de bicicletas \"meioB\" vence Prémio INOVA+ 2026",
-     "Última hora",
-     "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
-     "Última hora",
-     "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
-     "De 27 a 29 de outubro",
-     "Última hora",
-     "Última hora",
-     "Última hora",
-     "Última hora",
-     "CASTANHEIRA DE PERA: Doze Meses D’Artes celebrou os contos e cantares tradicionais",
-     "Castanheira de Pera",
-     "Região"
+     "Ferreira do Zêzere",
+     "Sardoal",
+     "Vila de Rei",
+     "Médio Tejo",
+     "VILA VELHA DE RÓDÃO: Município e ACICB promovem “Sorteio de Natal”",
+     "Vila Velha de Ródão"
     ],
-    "n_mais": 3,
-    "n_menos": 22
+    "n_mais": 6,
+    "n_menos": 9
    },
    "via": "site",
    "erro_site": ""
@@ -4215,7 +4217,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-09T16:46:27.905185+00:00",
+   "verificado": "2026-11-09T17:46:00.261167+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
