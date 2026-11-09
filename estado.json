@@ -513,7 +513,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-09T14:46:18.228690+00:00"
+   "ultima": "2026-11-09T15:46:03.801994+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1225,47 +1225,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-09T15:46:03.801994+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-09T15:46:03.801994+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-07T19:15:46.474052+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 522,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-07T20:15:47.380410+00:00",
    "pesquisas": [
@@ -2939,20 +2919,59 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-09T15:46:03.801994+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 534,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 495,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-09T14:46:18.228690+00:00",
-  "contaspoupanca.pt": "2026-11-09T14:46:18.228690+00:00"
+  "cm-serta.pt": "2026-11-09T15:46:03.801994+00:00",
+  "contaspoupanca.pt": "2026-11-09T15:46:03.801994+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-09T13:45:50.309041+00:00",
-  "contaspoupanca.pt": "2026-11-08T14:45:45.338247+00:00"
+  "contaspoupanca.pt": "2026-11-09T15:45:49.293828+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-09T14:46:18.228690+00:00",
-  "Apoio fundo ambiental": "2026-11-09T14:46:18.228690+00:00"
+  "Sertã": "2026-11-09T15:46:03.801994+00:00",
+  "Apoio fundo ambiental": "2026-11-09T15:46:03.801994+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3613,7 +3632,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-09T14:46:18.228690+00:00",
+   "verificado": "2026-11-09T15:46:03.801994+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3788,29 +3807,25 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
-    "REGIÃO/Futebol: Tarde desportiva da Condestável com seis partidas de futebol",
-    "Última hora",
     "MAÇÃO/Cardigos: Município está a homenagear o homem que lia a natureza",
-    "Última hora",
-    "SERTÃ: Vereador do Chega questiona sobre ligação de autocarro a Castelo Branco",
-    "Última hora",
-    "SERTÃ/Pedrógão Pequeno: Obras de 1,26 milhões de euros na EN2 aguardam consignação",
-    "Última hora",
-    "REGIÃO: Sistema de bicicletas \"meioB\" vence Prémio INOVA+ 2026",
-    "Última hora",
-    "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
-    "Última hora",
-    "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
     "Última hora",
     "Todas as notícias",
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: Daniela Duarte é 1.ª Dama Teen Beira Interior 2026",
+    "Sertã",
+    "Beira Baixa",
+    "09-11-2026",
+    "Conquista é \"motivo de orgulho\" para candidata e família",
+    "SERTÃ: Município informa sobre concessão de crédito às empresas",
+    "Sertã",
+    "Beira Baixa",
+    "09-11-2026",
     "SERTÃ: Assembleia Geral do projeto THRIVE esteve em Bilbao",
     "Sertã",
     "Beira Baixa",
     "07-11-2026",
-    "De 27 a 29 de outubro",
     "VILA VELHA DE RÓDÃO: Município cria Centro de Estudos para promover o sucesso escolar",
     "Beira Baixa",
     "Vila Velha de Ródão",
@@ -3824,7 +3839,6 @@
     "Beira Baixa",
     "Desporto",
     "07-11-2026",
-    "Última hora",
     "MAÇÃO/Cardigos: Município está a homenagear o homem que lia a natureza",
     "Mação",
     "Médio Tejo",
@@ -3842,7 +3856,6 @@
     "Sertã",
     "Beira Baixa",
     "06-11-2026",
-    "Última hora",
     "VILA DE REI: Câmara leva munícipes à Feira do Cavalo",
     "Vila de Rei",
     "Beira Baixa",
@@ -3851,7 +3864,6 @@
     "Beira Baixa",
     "Sertã",
     "06-11-2026",
-    "Última hora",
     "REGIÃO: Sistema de bicicletas \"meioB\" vence Prémio INOVA+ 2026",
     "Mação",
     "Ferreira do Zêzere",
@@ -3860,18 +3872,8 @@
     "Vila de Rei",
     "Médio Tejo",
     "06-11-2026",
-    "Última hora",
     "VILA VELHA DE RÓDÃO: Município e ACICB promovem “Sorteio de Natal”",
     "Vila Velha de Ródão",
-    "Beira Baixa",
-    "06-11-2026",
-    "CASTANHEIRA DE PERA: Doze Meses D’Artes celebrou os contos e cantares tradicionais",
-    "Castanheira de Pera",
-    "Região",
-    "06-11-2026",
-    "CERNACHE DO BONJARDIM: Bombeiros realizam nova AG este mês",
-    "Cernache do Bonjardim",
-    "Sertã",
     "Beira Baixa",
     "06-11-2026",
     "1",
@@ -3887,21 +3889,42 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-09T14:46:18.228690+00:00",
+   "verificado": "2026-11-09T15:46:03.801994+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-09T07:46:00.690820+00:00",
+   "mudou": "2026-11-09T15:46:03.801994+00:00",
    "mudanca": {
     "mais": [
-     "segunda-feira, 9 novembro 2026"
+     "SERTÃ: Daniela Duarte é 1.ª Dama Teen Beira Interior 2026",
+     "Conquista é \"motivo de orgulho\" para candidata e família",
+     "SERTÃ: Município informa sobre concessão de crédito às empresas"
     ],
     "menos": [
-     "domingo, 8 novembro 2026"
+     "REGIÃO/Futebol: Tarde desportiva da Condestável com seis partidas de futebol",
+     "Última hora",
+     "Última hora",
+     "SERTÃ: Vereador do Chega questiona sobre ligação de autocarro a Castelo Branco",
+     "Última hora",
+     "SERTÃ/Pedrógão Pequeno: Obras de 1,26 milhões de euros na EN2 aguardam consignação",
+     "Última hora",
+     "REGIÃO: Sistema de bicicletas \"meioB\" vence Prémio INOVA+ 2026",
+     "Última hora",
+     "SERTÃ: \"Aparentemente perturbado\", homem vandaliza esplanada do Lagar",
+     "Última hora",
+     "OLEIROS: Proteção Civil preparou alunos para cenário de sismo",
+     "De 27 a 29 de outubro",
+     "Última hora",
+     "Última hora",
+     "Última hora",
+     "Última hora",
+     "CASTANHEIRA DE PERA: Doze Meses D’Artes celebrou os contos e cantares tradicionais",
+     "Castanheira de Pera",
+     "Região"
     ],
-    "n_mais": 1,
-    "n_menos": 1
+    "n_mais": 3,
+    "n_menos": 22
    },
    "via": "site",
    "erro_site": ""
@@ -4109,7 +4132,6 @@
     "Simulador de apoio para os carros elétricos",
     "Simulador de amortização crédito à habitação",
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
-    "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Eletricidade",
@@ -4151,6 +4173,7 @@
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (14 a 20 de setembro)",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
+    "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (7 a 13 de setembro)",
@@ -4182,6 +4205,7 @@
     "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais?",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
+    "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Prestação da casa aumenta até 90 euros em novembro - Veja qual poderá ser o aumento no seu caso",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
     "Revista de imprensa de 6 de novembro: Salário mínimo, inflação e crédito à habitação",
@@ -4190,19 +4214,18 @@
     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
-    "Carro",
-    "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
+    "Carro"
    ],
-   "verificado": "2026-11-09T14:46:18.228690+00:00",
+   "verificado": "2026-11-09T15:46:03.801994+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-09T13:45:56.349350+00:00",
+   "mudou": "2026-11-09T15:46:03.801994+00:00",
    "mudanca": {
     "mais": [
-     "GÁS - Qual é a empresa mais barata este mês? (Novembro 2026)"
+     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros"
     ],
     "menos": [],
     "n_mais": 1,
