@@ -513,7 +513,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-09T13:45:56.349350+00:00"
+   "ultima": "2026-11-09T14:46:18.228690+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1228,44 +1228,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-07T18:15:46.018112+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 523,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-07T19:15:46.474052+00:00",
    "pesquisas": [
@@ -2938,11 +2900,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-09T14:46:18.228690+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 536,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 497,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-09T13:45:56.349350+00:00",
-  "contaspoupanca.pt": "2026-11-09T13:45:56.349350+00:00"
+  "cm-serta.pt": "2026-11-09T14:46:18.228690+00:00",
+  "contaspoupanca.pt": "2026-11-09T14:46:18.228690+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2950,8 +2951,8 @@
   "contaspoupanca.pt": "2026-11-08T14:45:45.338247+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-09T13:45:56.349350+00:00",
-  "Apoio fundo ambiental": "2026-11-09T13:45:56.349350+00:00"
+  "Sertã": "2026-11-09T14:46:18.228690+00:00",
+  "Apoio fundo ambiental": "2026-11-09T14:46:18.228690+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3612,7 +3613,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-09T13:45:56.349350+00:00",
+   "verificado": "2026-11-09T14:46:18.228690+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3685,8 +3686,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -3886,7 +3887,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-09T13:45:56.349350+00:00",
+   "verificado": "2026-11-09T14:46:18.228690+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4111,7 +4112,6 @@
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
-    "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais?",
     "Eletricidade",
     "Potência contratada: veja em 5 minutos se está a pagar a mais na eletricidade",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
@@ -4179,6 +4179,7 @@
     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
     "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
+    "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais?",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Prestação da casa aumenta até 90 euros em novembro - Veja qual poderá ser o aumento no seu caso",
@@ -4192,7 +4193,7 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-09T13:45:56.349350+00:00",
+   "verificado": "2026-11-09T14:46:18.228690+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
