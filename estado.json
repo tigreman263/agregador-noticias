@@ -19,9 +19,34 @@
   "dcfb944fc803001d": "2026-11-06T16:15:59.803023+00:00",
   "c6ec79f1ebef8e45": "2026-11-06T18:16:01.171266+00:00",
   "1dd99f8e256ebb30": "2026-11-06T21:15:57.428831+00:00",
-  "b4acd23ecea8311c": "2026-11-06T22:16:08.554432+00:00"
+  "b4acd23ecea8311c": "2026-11-06T22:16:08.554432+00:00",
+  "3b0df607940fbbba": "2026-11-09T12:46:00.406852+00:00"
  },
- "resumo": [],
+ "resumo": [
+  {
+   "titulo": "E-Lar 2027 – Apoio às famílias de 65,7 milhões previstos para trocar o gás por elétrico",
+   "link": "https://www.portal-energia.com/e-lar-2027-apoio-familias-gas/",
+   "dominio": "portal-energia.com",
+   "fonte": "Portal Energia",
+   "confiavel": true,
+   "nota": 19.5,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Fundo Ambiental"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-09T12:17:05+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "3b0df607940fbbba"
+   ],
+   "ts": "2026-11-09T12:46:00.406852+00:00"
+  }
+ ],
  "adiados": [],
  "ultimo_resumo": "2026-11-09",
  "sugeridas": {},
@@ -480,14 +505,15 @@
    "site": "https://www.portal-energia.com",
    "ids": [
     "4aca5abc31106725",
-    "94c24a9ce51acb82"
+    "94c24a9ce51acb82",
+    "3b0df607940fbbba"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-06T09:16:00.171990+00:00"
+   "ultima": "2026-11-09T12:46:00.406852+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1193,44 +1219,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-07T16:15:43.882533+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 525,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-07T17:15:48.544660+00:00",
    "pesquisas": [
@@ -2902,11 +2890,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-09T12:46:00.406852+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 543,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 504,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-09T11:46:40.187388+00:00",
-  "contaspoupanca.pt": "2026-11-09T11:46:40.187388+00:00"
+  "cm-serta.pt": "2026-11-09T12:46:00.406852+00:00",
+  "contaspoupanca.pt": "2026-11-09T12:46:00.406852+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2914,8 +2941,8 @@
   "contaspoupanca.pt": "2026-11-08T14:45:45.338247+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-09T11:46:40.187388+00:00",
-  "Apoio fundo ambiental": "2026-11-09T11:46:40.187388+00:00"
+  "Sertã": "2026-11-09T12:46:00.406852+00:00",
+  "Apoio fundo ambiental": "2026-11-09T12:46:00.406852+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3576,7 +3603,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-09T11:46:40.187388+00:00",
+   "verificado": "2026-11-09T12:46:00.406852+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3850,7 +3877,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-09T11:46:40.187388+00:00",
+   "verificado": "2026-11-09T12:46:00.406852+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4104,8 +4131,8 @@
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
-    "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "Investimentos",
+    "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
@@ -4131,7 +4158,6 @@
     "Certificados de Aforro",
     "Combustíveis",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
-    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
@@ -4157,7 +4183,7 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-09T11:46:40.187388+00:00",
+   "verificado": "2026-11-09T12:46:00.406852+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
