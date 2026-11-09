@@ -1145,47 +1145,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-09T07:46:00.690820+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-09T07:46:00.690820+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-07T11:15:46.698948+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-07T12:15:46.100925+00:00",
    "pesquisas": [
@@ -2854,11 +2834,50 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-09T07:46:00.690820+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 535,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 499,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-09T06:46:11.915398+00:00",
-  "contaspoupanca.pt": "2026-11-08T22:45:58.932066+00:00"
+  "cm-serta.pt": "2026-11-09T07:46:00.690820+00:00",
+  "contaspoupanca.pt": "2026-11-09T07:46:00.690820+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2866,8 +2885,8 @@
   "contaspoupanca.pt": "2026-11-08T14:45:45.338247+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-09T06:46:11.915398+00:00",
-  "Apoio fundo ambiental": "2026-11-09T06:46:11.915398+00:00"
+  "Sertã": "2026-11-09T07:46:00.690820+00:00",
+  "Apoio fundo ambiental": "2026-11-09T07:46:00.690820+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3528,7 +3547,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-08T22:45:58.932066+00:00",
+   "verificado": "2026-11-09T07:46:00.690820+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3606,7 +3625,7 @@
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
-    "domingo, 8 novembro 2026",
+    "segunda-feira, 9 novembro 2026",
     "Informação",
     "Programação",
     "Ficha Técnica",
@@ -3802,18 +3821,18 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-08T22:45:58.932066+00:00",
+   "verificado": "2026-11-09T07:46:00.690820+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-08T07:46:03.826783+00:00",
+   "mudou": "2026-11-09T07:46:00.690820+00:00",
    "mudanca": {
     "mais": [
-     "domingo, 8 novembro 2026"
+     "segunda-feira, 9 novembro 2026"
     ],
     "menos": [
-     "sábado, 7 novembro 2026"
+     "domingo, 8 novembro 2026"
     ],
     "n_mais": 1,
     "n_menos": 1
@@ -4028,9 +4047,8 @@
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais?",
     "Eletricidade",
+    "Potência contratada: veja em 5 minutos se está a pagar a mais na eletricidade",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
-    "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-    "Revista de imprensa de 2 de novembro: Prestação da casa, portagens e Certificados de Aforro",
     "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
@@ -4041,13 +4059,14 @@
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
-    "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
     "O que é a liberdade financeira e como a posso alcançar?",
     "Termos e Condições",
     "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
+    "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
     "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
+    "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
@@ -4069,6 +4088,7 @@
     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (7 a 13 de setembro)",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "Simuladores",
     "Apoios Sociais",
@@ -4091,13 +4111,11 @@
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
     "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?",
     "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos",
-    "Combustíveis | Gasolina cai 6,5 cêntimos no preço justo esta semana. Gasóleo volta a subir",
+    "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Vamos a contas: \"Fundo de emergência deve estar numa conta ou num ETF?\" O risco de querer ganhar mais",
-    "Prestação da casa aumenta até 90 euros em novembro - Veja qual poderá ser o aumento no seu caso",
-    "Investir em criptomoedas: ainda estou a perder em outubro de 2026",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
     "Revista de imprensa de 6 de novembro: Salário mínimo, inflação e crédito à habitação",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
@@ -4107,19 +4125,21 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-08T22:45:58.932066+00:00",
+   "verificado": "2026-11-09T07:46:00.690820+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-08T21:46:03.653885+00:00",
+   "mudou": "2026-11-09T07:46:00.690820+00:00",
    "mudanca": {
     "mais": [
-     "Eletricidade"
+     "Potência contratada: veja em 5 minutos se está a pagar a mais na eletricidade",
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (7 a 13 de setembro)",
+     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 3,
     "n_menos": 0
    }
   }
