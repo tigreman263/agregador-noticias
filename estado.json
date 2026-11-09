@@ -68,7 +68,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-09T09:46:04.826600+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -379,7 +379,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "A nova Mobi.E e o apoio de 80% à compra de carros eléctricos | Podcast",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-09T09:46:04.826600+00:00"
   },
   "noticiasaominuto.com": {
    "nome": "Notícias ao Minuto",
@@ -394,7 +394,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Agricultores dos Açores pedem 23 milhões de euros em apoios do Governo",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-09T09:46:04.826600+00:00"
   },
   "ambienteonline.pt": {
    "nome": "Água&Ambiente Online",
@@ -447,7 +447,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-09T09:46:04.826600+00:00"
   },
   "jm-madeira.pt": {
    "nome": "JM Madeira",
@@ -461,7 +461,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-09T09:46:04.826600+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -525,7 +525,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-09T04:45:59.872552+00:00"
+   "ultima": "2026-11-09T09:46:04.826600+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -658,7 +658,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-09T09:46:04.826600+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -670,7 +670,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência regressa para 28 mil famílias que ficaram sem apoio. Nova plataforma abre no final de novembro",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-09T09:46:04.826600+00:00"
   },
   "blogdafeira.com.br": {
    "nome": "Blog da Feira",
@@ -694,7 +694,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vânia Jesus quer Porto Santo “100% renovável” e igualdade de acesso ao Fundo Ambiental",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-09T09:46:04.826600+00:00"
   },
   "planetalgarve.com": {
    "nome": "planetalgarve",
@@ -730,7 +730,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-08T15:45:47.320729+00:00"
+   "ultima": "2026-11-09T09:46:04.826600+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -778,7 +778,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Ministra do Ambiente presidiu a ato de assinatura de financiamento do ciclo urbano da água através do Fundo Ambiental",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-09T09:46:04.826600+00:00"
   },
   "ce.gov.br": {
    "nome": "Governo do Estado do Ceará",
@@ -793,7 +793,7 @@
    "ultima": "2026-11-08T09:46:04.144390+00:00"
   }
  },
- "ultima_descoberta": "2026-11-08",
+ "ultima_descoberta": "2026-11-09",
  "enviados": [
   {
    "tipo": "resumo",
@@ -1172,49 +1172,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-09T09:46:04.826600+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-07T13:15:43.297229+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [
-    "não consegui avisar da falha em cm-serta: falha de rede ao contactar o Telegram"
-   ],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-07T14:15:50.216739+00:00",
    "pesquisas": [
@@ -2883,11 +2852,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-09T09:46:04.826600+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 542,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 502,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-09T08:46:02.527610+00:00",
-  "contaspoupanca.pt": "2026-11-09T08:46:02.527610+00:00"
+  "cm-serta.pt": "2026-11-09T09:46:04.826600+00:00",
+  "contaspoupanca.pt": "2026-11-09T09:46:04.826600+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2895,8 +2903,8 @@
   "contaspoupanca.pt": "2026-11-08T14:45:45.338247+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-09T08:46:02.527610+00:00",
-  "Apoio fundo ambiental": "2026-11-09T08:46:02.527610+00:00"
+  "Sertã": "2026-11-09T09:46:04.826600+00:00",
+  "Apoio fundo ambiental": "2026-11-09T09:46:04.826600+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3557,7 +3565,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-09T08:46:02.527610+00:00",
+   "verificado": "2026-11-09T09:46:04.826600+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3831,7 +3839,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-09T08:46:02.527610+00:00",
+   "verificado": "2026-11-09T09:46:04.826600+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4081,8 +4089,8 @@
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Evitar erros nas férias e poupar nas mais-valias: os dois podcasts da semana",
     "Subscrever Newsletter",
-    "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
+    "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
@@ -4129,6 +4137,7 @@
     "Vamos a contas: \"Fundo de emergência deve estar numa conta ou num ETF?\" O risco de querer ganhar mais",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
     "Revista de imprensa de 6 de novembro: Salário mínimo, inflação e crédito à habitação",
+    "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
@@ -4136,16 +4145,16 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-09T08:46:02.527610+00:00",
+   "verificado": "2026-11-09T09:46:04.826600+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-09T08:46:02.527610+00:00",
+   "mudou": "2026-11-09T09:46:04.826600+00:00",
    "mudanca": {
     "mais": [
-     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?"
+     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS"
     ],
     "menos": [],
     "n_mais": 1,
