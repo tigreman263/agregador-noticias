@@ -463,7 +463,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-10T11:45:37.341086+00:00"
+   "ultima": "2026-11-10T12:45:59.270560+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1337,47 +1337,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-10T12:45:59.270560+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-08T12:45:54.497742+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 578,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 542,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-08T13:46:58.913743+00:00",
    "pesquisas": [
@@ -3062,11 +3033,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-10T12:45:59.270560+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 541,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 487,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-10T11:45:37.341086+00:00",
-  "contaspoupanca.pt": "2026-11-10T11:45:37.341086+00:00"
+  "cm-serta.pt": "2026-11-10T12:45:59.270560+00:00",
+  "contaspoupanca.pt": "2026-11-10T12:45:59.270560+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3074,8 +3084,8 @@
   "contaspoupanca.pt": "2026-11-09T15:45:49.293828+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-10T11:45:37.341086+00:00",
-  "Apoio fundo ambiental": "2026-11-10T11:45:37.341086+00:00"
+  "Sertã": "2026-11-10T12:45:59.270560+00:00",
+  "Apoio fundo ambiental": "2026-11-10T12:45:59.270560+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3736,7 +3746,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-10T11:45:37.341086+00:00",
+   "verificado": "2026-11-10T12:45:59.270560+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3910,6 +3920,10 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ: Susana Lucas (PSD) preocupada com a habitação e fixação de jovens",
+    "Última hora",
+    "MAU TEMPO: Governo declara “Situação de Alerta” em todo o Continente",
+    "Última hora",
     "MAÇÃO/Cardigos: Joaquim da Silva Tavares abriu a porta a outras homenagens",
     "Última hora",
     "TEMPO: Depressões Bruna e Charles colocam país em alerta",
@@ -3922,12 +3936,23 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: Susana Lucas (PSD) preocupada com a habitação e fixação de jovens",
+    "Sertã",
+    "Beira Baixa",
+    "10-11-2026",
+    "Última hora",
+    "Vereadora questiona município sobre futuro dos projetos e autarquia aponta entraves aos fundos comunitários",
+    "MAU TEMPO: Governo declara “Situação de Alerta” em todo o Continente",
+    "Beira Baixa",
+    "Médio Tejo",
+    "Nacional",
+    "10-11-2026",
+    "Última hora",
     "MAÇÃO/Cardigos: Joaquim da Silva Tavares abriu a porta a outras homenagens",
     "Mação",
     "Médio Tejo",
     "10-11-2026",
     "Última hora",
-    "Estão previstas mais três homenagens a cardiguenses que se destacaram na sociedade do seu tempo",
     "TEMPO: Depressões Bruna e Charles colocam país em alerta",
     "Beira Baixa",
     "Médio Tejo",
@@ -3978,14 +4003,6 @@
     "Mação",
     "Médio Tejo",
     "07-11-2026",
-    "SERTÃ: “Bolos de Todos os Santos” em destaque",
-    "Sertã",
-    "Beira Baixa",
-    "06-11-2026",
-    "VILA DE REI: “Os Quintais nas Praças do Pinhal” regressam no próximo domingo",
-    "Vila de Rei",
-    "Beira Baixa",
-    "06-11-2026",
     "1",
     "2",
     "3",
@@ -3999,29 +4016,34 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-10T11:45:37.341086+00:00",
+   "verificado": "2026-11-10T12:45:59.270560+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-10T11:45:37.341086+00:00",
+   "mudou": "2026-11-10T12:45:59.270560+00:00",
    "mudanca": {
     "mais": [
-     "MAÇÃO/Cardigos: Joaquim da Silva Tavares abriu a porta a outras homenagens",
-     "MAÇÃO/Cardigos: Joaquim da Silva Tavares abriu a porta a outras homenagens",
-     "Mação",
+     "SERTÃ: Susana Lucas (PSD) preocupada com a habitação e fixação de jovens",
+     "Última hora",
+     "MAU TEMPO: Governo declara “Situação de Alerta” em todo o Continente",
+     "Última hora",
+     "SERTÃ: Susana Lucas (PSD) preocupada com a habitação e fixação de jovens",
+     "Última hora",
+     "Vereadora questiona município sobre futuro dos projetos e autarquia aponta entraves aos fundos comunitários",
+     "MAU TEMPO: Governo declara “Situação de Alerta” em todo o Continente",
      "Médio Tejo",
-     "Estão previstas mais três homenagens a cardiguenses que se destacaram na sociedade do seu tempo"
+     "Nacional",
+     "Última hora"
     ],
     "menos": [
-     "MAÇÃO/Cardigos: Ruínas da casa natal do Padre Silva Tavares viram espaço de memória",
-     "Proteção Civil aconselha a que, amanhã, se fique em casa",
-     "SERTÃ: Vereador do Chega questiona sobre ligação de autocarro a Castelo Branco",
-     "Sertã",
-     "Beira Baixa"
+     "Estão previstas mais três homenagens a cardiguenses que se destacaram na sociedade do seu tempo",
+     "SERTÃ: “Bolos de Todos os Santos” em destaque",
+     "VILA DE REI: “Os Quintais nas Praças do Pinhal” regressam no próximo domingo",
+     "Vila de Rei"
     ],
-    "n_mais": 5,
-    "n_menos": 5
+    "n_mais": 11,
+    "n_menos": 4
    },
    "via": "site",
    "erro_site": ""
@@ -4235,8 +4257,8 @@
     "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas",
     "Eletricidade",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
-    "Potência contratada: veja em 5 minutos se está a pagar a mais na eletricidade",
     "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
+    "Potência contratada: veja em 5 minutos se está a pagar a mais na eletricidade",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
@@ -4247,7 +4269,6 @@
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "O que é a liberdade financeira e como a posso alcançar?",
     "Termos e Condições",
     "Política de Privacidade",
@@ -4265,6 +4286,7 @@
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
     "Investimentos",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
@@ -4317,7 +4339,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-10T11:45:37.341086+00:00",
+   "verificado": "2026-11-10T12:45:59.270560+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
