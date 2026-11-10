@@ -488,7 +488,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-10T18:46:04.000070+00:00"
+   "ultima": "2026-11-10T19:46:28.818340+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -851,7 +851,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-10T18:46:04.000070+00:00"
+   "ultima": "2026-11-10T19:46:28.818340+00:00"
   }
  },
  "ultima_descoberta": "2026-11-10",
@@ -1494,50 +1494,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-10T19:46:28.818340+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-10T19:46:28.818340+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-08T19:46:07.703272+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 678,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 639,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças",
-    "Portal Energia",
-    "Rádio Hertz"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-08T20:45:46.161790+00:00",
    "pesquisas": [
@@ -3222,11 +3199,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-10T19:46:28.818340+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 541,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 487,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-10T18:46:04.000070+00:00",
-  "contaspoupanca.pt": "2026-11-10T18:46:04.000070+00:00"
+  "cm-serta.pt": "2026-11-10T19:46:28.818340+00:00",
+  "contaspoupanca.pt": "2026-11-10T19:46:28.818340+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3234,8 +3250,8 @@
   "contaspoupanca.pt": "2026-11-10T16:45:45.121398+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-10T18:46:04.000070+00:00",
-  "Apoio fundo ambiental": "2026-11-10T18:46:04.000070+00:00"
+  "Sertã": "2026-11-10T19:46:28.818340+00:00",
+  "Apoio fundo ambiental": "2026-11-10T19:46:28.818340+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3896,7 +3912,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-10T18:46:04.000070+00:00",
+   "verificado": "2026-11-10T19:46:28.818340+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4070,6 +4086,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "REGIÃO/Charles: Concelhos e instituições adotam medidas preventivas",
+    "Em atualização",
     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
     "Última hora",
     "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
@@ -4090,13 +4108,19 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "REGIÃO/Charles: Concelhos e instituições adotam medidas preventivas",
+    "Beira Baixa",
+    "Médio Tejo",
+    "Nacional",
+    "10-11-2026",
+    "Em atualização",
+    "Para amanhã, dia 11 de novembro",
     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
     "Notícias",
     "Sertã",
     "Beira Baixa",
     "10-11-2026",
     "Última hora",
-    "Amanhã, dia 11 de novembro",
     "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
     "Castelo Branco",
     "Beira Baixa",
@@ -4159,10 +4183,6 @@
     "Beira Baixa",
     "09-11-2026",
     "Última hora",
-    "MAÇÃO/Cardigos: Ruínas da casa natal do Padre Silva Tavares viram espaço de memória",
-    "Mação",
-    "Beira Baixa",
-    "09-11-2026",
     "1",
     "2",
     "3",
@@ -4176,33 +4196,28 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-10T18:46:04.000070+00:00",
+   "verificado": "2026-11-10T19:46:28.818340+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-10T17:45:56.962241+00:00",
+   "mudou": "2026-11-10T19:46:28.818340+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
-     "Última hora",
-     "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
-     "Última hora",
-     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
-     "Notícias",
-     "Última hora",
-     "Amanhã, dia 11 de novembro",
-     "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
-     "Castelo Branco",
-     "Proença-a-Nova",
-     "Última hora"
+     "REGIÃO/Charles: Concelhos e instituições adotam medidas preventivas",
+     "Em atualização",
+     "REGIÃO/Charles: Concelhos e instituições adotam medidas preventivas",
+     "Médio Tejo",
+     "Nacional",
+     "Em atualização",
+     "Para amanhã, dia 11 de novembro"
     ],
     "menos": [
-     "Assinatura do auto de consignação marca o arranque de uma intervenção determinante para recuperar as condições de segurança da estrada entre Janeiro de Baixo e Admoço",
-     "SERTÃ: Daniela Duarte é 1.ª Dama Teen Beira Interior 2026",
-     "SERTÃ: Município informa sobre concessão de crédito às empresas"
+     "Amanhã, dia 11 de novembro",
+     "MAÇÃO/Cardigos: Ruínas da casa natal do Padre Silva Tavares viram espaço de memória",
+     "Mação"
     ],
-    "n_mais": 12,
+    "n_mais": 7,
     "n_menos": 3
    },
    "via": "site",
@@ -4480,6 +4495,7 @@
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
+    "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?",
     "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
@@ -4498,16 +4514,16 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-10T18:46:04.000070+00:00",
+   "verificado": "2026-11-10T19:46:28.818340+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-10T18:46:04.000070+00:00",
+   "mudou": "2026-11-10T19:46:28.818340+00:00",
    "mudanca": {
     "mais": [
-     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (7 a 13 de setembro)"
+     "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?"
     ],
     "menos": [],
     "n_mais": 1,
