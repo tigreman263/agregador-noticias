@@ -21,7 +21,8 @@
   "1dd99f8e256ebb30": "2026-11-06T21:15:57.428831+00:00",
   "b4acd23ecea8311c": "2026-11-06T22:16:08.554432+00:00",
   "3b0df607940fbbba": "2026-11-09T12:46:00.406852+00:00",
-  "461524cdb57ccdea": "2026-11-10T13:46:00.075469+00:00"
+  "461524cdb57ccdea": "2026-11-10T13:46:00.075469+00:00",
+  "77a5cf07f29cf865": "2026-11-10T20:46:07.155183+00:00"
  },
  "resumo": [
   {
@@ -46,6 +47,29 @@
     "461524cdb57ccdea"
    ],
    "ts": "2026-11-10T13:46:00.075469+00:00"
+  },
+  {
+   "titulo": "“As famílias consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão ter uma nova oportunidade?”",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWjVJYVV5QWpfd1ZGRDNQbEVpUmk2LVhfeXB6bXFmdno0Smc2eE93eENFczZKb09kV2w0MnM0SDVXdVlaZGpDSUJBcHNQanZ1SDR3WnIzRjJ4TWJkV3I1bXlkZ0tXeVc2eEw0Z2w5bThxNTJwTGVkb1BVLWpCdVJqTlFPZV9RVk5ZWHJpTnhLcllIeUh2UzVpM2R1WFh1ZXRQTDhPNkFsOUltZXZPVjcwRGs3eXBKYU1EU1FjR3pMREFzVzVjTnhQczFub2NkT0s0cXl0b3hUbTFNYW10ZzgzeHBWT0Q?oc=5",
+   "dominio": "postal.pt",
+   "fonte": "Postal do Algarve",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Vale Eficiência"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-09T19:12:41+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "77a5cf07f29cf865"
+   ],
+   "ts": "2026-11-10T20:46:07.155183+00:00"
   }
  ],
  "adiados": [],
@@ -488,7 +512,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-10T19:46:28.818340+00:00"
+   "ultima": "2026-11-10T20:46:07.155183+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -851,7 +875,19 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-10T19:46:28.818340+00:00"
+   "ultima": "2026-11-10T20:46:07.155183+00:00"
+  },
+  "postal.pt": {
+   "nome": "Postal do Algarve",
+   "site": "https://postal.pt",
+   "ids": [
+    "77a5cf07f29cf865"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "“As famílias consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão ter uma nova oportunidade?”",
+   "ultima": "2026-11-10T20:46:07.155183+00:00"
   }
  },
  "ultima_descoberta": "2026-11-10",
@@ -1512,47 +1548,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-10T20:46:07.155183+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-08T20:45:46.161790+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 580,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 542,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-08T21:46:03.653885+00:00",
    "pesquisas": [
@@ -3238,11 +3245,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-10T20:46:07.155183+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 543,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 488,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-10T19:46:28.818340+00:00",
-  "contaspoupanca.pt": "2026-11-10T19:46:28.818340+00:00"
+  "cm-serta.pt": "2026-11-10T20:46:07.155183+00:00",
+  "contaspoupanca.pt": "2026-11-10T20:46:07.155183+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3250,8 +3296,8 @@
   "contaspoupanca.pt": "2026-11-10T16:45:45.121398+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-10T19:46:28.818340+00:00",
-  "Apoio fundo ambiental": "2026-11-10T19:46:28.818340+00:00"
+  "Sertã": "2026-11-10T20:46:07.155183+00:00",
+  "Apoio fundo ambiental": "2026-11-10T20:46:07.155183+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3912,7 +3958,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-10T19:46:28.818340+00:00",
+   "verificado": "2026-11-10T20:46:07.155183+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4196,7 +4242,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-10T19:46:28.818340+00:00",
+   "verificado": "2026-11-10T20:46:07.155183+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4426,12 +4472,13 @@
     "Simulador de apoio para os carros elétricos",
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
+    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Combustíveis",
     "Eletricidade",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
-    "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
+    "Simulador de amortização crédito à habitação",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
@@ -4454,26 +4501,25 @@
     "Evitar erros nas férias e poupar nas mais-valias: os dois podcasts da semana",
     "Subscrever Newsletter",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
-    "Simulador de amortização crédito à habitação",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
     "Investimentos",
+    "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "IMI",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (14 a 20 de setembro)",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "SOS Finanças: Três episódios para testar se está preparado para uma emergência a sério",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (7 a 13 de setembro)",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "Simuladores",
     "Apoios Sociais",
@@ -4486,7 +4532,6 @@
     "Certificados de Aforro",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
-    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "GÁS - Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
@@ -4514,16 +4559,16 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-10T19:46:28.818340+00:00",
+   "verificado": "2026-11-10T20:46:07.155183+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-10T19:46:28.818340+00:00",
+   "mudou": "2026-11-10T20:46:07.155183+00:00",
    "mudanca": {
     "mais": [
-     "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?"
+     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?"
     ],
     "menos": [],
     "n_mais": 1,
