@@ -488,7 +488,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-10T17:45:56.962241+00:00"
+   "ultima": "2026-11-10T18:46:04.000070+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -840,6 +840,18 @@
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
    "ultima": "2026-11-10T17:45:56.962241+00:00"
+  },
+  "rondoniaaovivo.com": {
+   "nome": "Rondoniaovivo.com",
+   "site": "https://www.rondoniaaovivo.com",
+   "ids": [
+    "461524cdb57ccdea"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
+   "ultima": "2026-11-10T18:46:04.000070+00:00"
   }
  },
  "ultima_descoberta": "2026-11-10",
@@ -1473,48 +1485,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-10T18:46:04.000070+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-08T18:46:22.582544+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 539,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 499,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-08T19:46:07.703272+00:00",
    "pesquisas": [
@@ -3201,11 +3183,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-10T18:46:04.000070+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 544,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 488,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-10T17:45:56.962241+00:00",
-  "contaspoupanca.pt": "2026-11-10T17:45:56.962241+00:00"
+  "cm-serta.pt": "2026-11-10T18:46:04.000070+00:00",
+  "contaspoupanca.pt": "2026-11-10T18:46:04.000070+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3213,8 +3234,8 @@
   "contaspoupanca.pt": "2026-11-10T16:45:45.121398+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-10T17:45:56.962241+00:00",
-  "Apoio fundo ambiental": "2026-11-10T17:45:56.962241+00:00"
+  "Sertã": "2026-11-10T18:46:04.000070+00:00",
+  "Apoio fundo ambiental": "2026-11-10T18:46:04.000070+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3875,7 +3896,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-10T17:45:56.962241+00:00",
+   "verificado": "2026-11-10T18:46:04.000070+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4155,7 +4176,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-10T17:45:56.962241+00:00",
+   "verificado": "2026-11-10T18:46:04.000070+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4423,14 +4444,13 @@
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
     "Investimentos",
-    "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "IMI",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (14 a 20 de setembro)",
     "SOS Finanças: Três episódios para testar se está preparado para uma emergência a sério",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
@@ -4438,6 +4458,7 @@
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (7 a 13 de setembro)",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "Simuladores",
     "Apoios Sociais",
@@ -4459,7 +4480,6 @@
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
-    "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?",
     "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
@@ -4478,20 +4498,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-10T17:45:56.962241+00:00",
+   "verificado": "2026-11-10T18:46:04.000070+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-10T17:45:56.962241+00:00",
+   "mudou": "2026-11-10T18:46:04.000070+00:00",
    "mudanca": {
     "mais": [
-     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
-     "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?"
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (7 a 13 de setembro)"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
