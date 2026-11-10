@@ -488,7 +488,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-10T16:46:02.272286+00:00"
+   "ultima": "2026-11-10T17:45:56.962241+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -839,7 +839,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-10T16:46:02.272286+00:00"
+   "ultima": "2026-11-10T17:45:56.962241+00:00"
   }
  },
  "ultima_descoberta": "2026-11-10",
@@ -1446,48 +1446,36 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-10T17:45:56.962241+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-10T17:45:56.962241+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-10T17:45:56.962241+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-08T17:46:16.040949+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 539,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 499,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-08T18:46:22.582544+00:00",
    "pesquisas": [
@@ -3174,11 +3162,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-10T17:45:56.962241+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 541,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 487,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 3,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-10T16:46:02.272286+00:00",
-  "contaspoupanca.pt": "2026-11-10T16:46:02.272286+00:00"
+  "cm-serta.pt": "2026-11-10T17:45:56.962241+00:00",
+  "contaspoupanca.pt": "2026-11-10T17:45:56.962241+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3186,8 +3213,8 @@
   "contaspoupanca.pt": "2026-11-10T16:45:45.121398+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-10T16:46:02.272286+00:00",
-  "Apoio fundo ambiental": "2026-11-10T16:46:02.272286+00:00"
+  "Sertã": "2026-11-10T17:45:56.962241+00:00",
+  "Apoio fundo ambiental": "2026-11-10T17:45:56.962241+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3461,6 +3488,16 @@
     "Exposições",
     "(3)",
     "Noticias",
+    "10 novembro 2026",
+    "Tempestade Charles – Serviços camarários encerrados a 11 de novembro",
+    "Na sequência do Despacho n.º 13773-A/2026, de 10 de novembro, que declara situação ...",
+    "Tweetar",
+    "Share",
+    "Share",
+    "share with Whatsapp",
+    "share with Telegram",
+    "Send by email",
+    "Noticias",
     "06 novembro 2026",
     "Assembleia Geral do Projeto THRIVE reúne em Bilbao",
     "O Projeto THRIVE, liderado pelo SerQ (Centro de Inovação e Competências da Floresta...",
@@ -3544,16 +3581,6 @@
     "23 outubro 2026",
     "Município da Sertã recebeu comitiva de Granollers para intercâmbio de experiências de desenvolvimento local",
     "O Município da Sertã recebeu, entre os dias 17 e 19 de outubro, uma comitiva do M...",
-    "Tweetar",
-    "Share",
-    "Share",
-    "share with Whatsapp",
-    "share with Telegram",
-    "Send by email",
-    "Noticias",
-    "22 outubro 2026",
-    "Candidaturas para investimentos em diversificação, comércio e serviços associados decorrem até 23 de dezembro",
-    "Estão a decorrer até 23 de dezembro as candidaturas para a “Intervenção D.1.1.1.3 –...",
     "Tweetar",
     "Share",
     "Share",
@@ -3848,19 +3875,23 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-10T16:46:02.272286+00:00",
+   "verificado": "2026-11-10T17:45:56.962241+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-10T14:45:49.364803+00:00",
+   "mudou": "2026-11-10T17:45:56.962241+00:00",
    "mudanca": {
     "mais": [
-     "Freguesias"
+     "Tempestade Charles – Serviços camarários encerrados a 11 de novembro",
+     "Na sequência do Despacho n.º 13773-A/2026, de 10 de novembro, que declara situação ..."
     ],
-    "menos": [],
-    "n_mais": 1,
-    "n_menos": 0
+    "menos": [
+     "Candidaturas para investimentos em diversificação, comércio e serviços associados decorrem até 23 de dezembro",
+     "Estão a decorrer até 23 de dezembro as candidaturas para a “Intervenção D.1.1.1.3 –..."
+    ],
+    "n_mais": 2,
+    "n_menos": 2
    },
    "linhas_google": [
     "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
@@ -4018,6 +4049,10 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
+    "Última hora",
+    "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
+    "Última hora",
     "SERTÃ: Susana Lucas (PSD) preocupada com a habitação e fixação de jovens",
     "Última hora",
     "MAU TEMPO: Governo declara “Situação de Alerta” em todo o Continente",
@@ -4034,13 +4069,25 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
+    "Notícias",
+    "Sertã",
+    "Beira Baixa",
+    "10-11-2026",
+    "Última hora",
+    "Amanhã, dia 11 de novembro",
+    "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
+    "Castelo Branco",
+    "Beira Baixa",
+    "Proença-a-Nova",
+    "10-11-2026",
+    "Última hora",
     "PAMPILHOSA DA SERRA: Estabilização de talude avança com investimento de cerca de 1 ME",
     "Pampilhosa da Serra",
     "Oleiros",
     "Beira Baixa",
     "Região",
     "10-11-2026",
-    "Assinatura do auto de consignação marca o arranque de uma intervenção determinante para recuperar as condições de segurança da estrada entre Janeiro de Baixo e Admoço",
     "CERNACHE DO BONJARDIM: Centro Social reúne sócios em Assembleia Geral",
     "Cernache do Bonjardim",
     "Sertã",
@@ -4095,14 +4142,6 @@
     "Mação",
     "Beira Baixa",
     "09-11-2026",
-    "SERTÃ: Daniela Duarte é 1.ª Dama Teen Beira Interior 2026",
-    "Sertã",
-    "Beira Baixa",
-    "09-11-2026",
-    "SERTÃ: Município informa sobre concessão de crédito às empresas",
-    "Sertã",
-    "Beira Baixa",
-    "09-11-2026",
     "1",
     "2",
     "3",
@@ -4116,31 +4155,34 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-10T16:46:02.272286+00:00",
+   "verificado": "2026-11-10T17:45:56.962241+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-10T16:46:02.272286+00:00",
+   "mudou": "2026-11-10T17:45:56.962241+00:00",
    "mudanca": {
     "mais": [
-     "PAMPILHOSA DA SERRA: Estabilização de talude avança com investimento de cerca de 1 ME",
-     "Pampilhosa da Serra",
-     "Oleiros",
-     "Região",
-     "Assinatura do auto de consignação marca o arranque de uma intervenção determinante para recuperar as condições de segurança da estrada entre Janeiro de Baixo e Admoço",
-     "CERNACHE DO BONJARDIM: Centro Social reúne sócios em Assembleia Geral",
-     "Cernache do Bonjardim",
-     "Médio Tejo"
+     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
+     "Última hora",
+     "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
+     "Última hora",
+     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
+     "Notícias",
+     "Última hora",
+     "Amanhã, dia 11 de novembro",
+     "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
+     "Castelo Branco",
+     "Proença-a-Nova",
+     "Última hora"
     ],
     "menos": [
-     "Gastronomia, música tradicional e produtos locais em destaque no evento",
-     "SERTÃ: Assembleia Geral do projeto THRIVE esteve em Bilbao",
-     "VILA VELHA DE RÓDÃO: Município cria Centro de Estudos para promover o sucesso escolar",
-     "Vila Velha de Ródão"
+     "Assinatura do auto de consignação marca o arranque de uma intervenção determinante para recuperar as condições de segurança da estrada entre Janeiro de Baixo e Admoço",
+     "SERTÃ: Daniela Duarte é 1.ª Dama Teen Beira Interior 2026",
+     "SERTÃ: Município informa sobre concessão de crédito às empresas"
     ],
-    "n_mais": 8,
-    "n_menos": 4
+    "n_mais": 12,
+    "n_menos": 3
    },
    "via": "site",
    "erro_site": ""
@@ -4350,7 +4392,6 @@
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
-    "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas",
     "Combustíveis",
     "Eletricidade",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
@@ -4382,6 +4423,7 @@
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
     "Investimentos",
+    "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
@@ -4396,7 +4438,6 @@
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (7 a 13 de setembro)",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "Simuladores",
     "Apoios Sociais",
@@ -4418,11 +4459,13 @@
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
+    "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?",
     "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
     "Eletricidade: Fuja do tarifário indexado - É o tarifário mais caro de todos (Outubro 2026)",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
+    "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Prestação da casa aumenta até 90 euros em novembro - Veja qual poderá ser o aumento no seu caso",
@@ -4435,17 +4478,17 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-10T16:46:02.272286+00:00",
+   "verificado": "2026-11-10T17:45:56.962241+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-10T16:46:02.272286+00:00",
+   "mudou": "2026-11-10T17:45:56.962241+00:00",
    "mudanca": {
     "mais": [
-     "SOS Finanças: Três episódios para testar se está preparado para uma emergência a sério",
-     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (7 a 13 de setembro)"
+     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
+     "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?"
     ],
     "menos": [],
     "n_mais": 2,
