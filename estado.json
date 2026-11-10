@@ -69,7 +69,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-09T09:46:04.826600+00:00"
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -422,7 +422,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "O apoio do Governo à compra de elétricos é o caminho certo?",
-   "ultima": "2026-11-09T09:46:04.826600+00:00"
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
   },
   "jm-madeira.pt": {
    "nome": "JM Madeira",
@@ -436,7 +436,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-09T09:46:04.826600+00:00"
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -463,7 +463,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-10T08:46:10.751401+00:00"
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -501,7 +501,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-09T09:46:04.826600+00:00"
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -634,7 +634,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-09T09:46:04.826600+00:00"
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -646,7 +646,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência regressa para 28 mil famílias que ficaram sem apoio. Nova plataforma abre no final de novembro",
-   "ultima": "2026-11-09T09:46:04.826600+00:00"
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
   },
   "blogdafeira.com.br": {
    "nome": "Blog da Feira",
@@ -670,7 +670,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vânia Jesus quer Porto Santo “100% renovável” e igualdade de acesso ao Fundo Ambiental",
-   "ultima": "2026-11-09T09:46:04.826600+00:00"
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
   },
   "planetalgarve.com": {
    "nome": "planetalgarve",
@@ -706,7 +706,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-09T09:46:04.826600+00:00"
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -754,7 +754,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Ministra do Ambiente presidiu a ato de assinatura de financiamento do ciclo urbano da água através do Fundo Ambiental",
-   "ultima": "2026-11-09T09:46:04.826600+00:00"
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
   },
   "ce.gov.br": {
    "nome": "Governo do Estado do Ceará",
@@ -766,10 +766,46 @@
     "Sertã"
    ],
    "exemplo": "Festa na Agricultura Familiar: mais de R$ 10 milhões investidos, entrega de equipamentos agrícolas e termo de colaboração do Projeto Sertão Vivo",
-   "ultima": "2026-11-08T09:46:04.144390+00:00"
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
+  },
+  "g1.globo.com": {
+   "nome": "G1",
+   "site": "https://g1.globo.com",
+   "ids": [
+    "7dab5690400f8ca3"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Com máxima de 43°C, Floresta, no Sertão de PE, antecipa saída de estudantes das escolas",
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
+  },
+  "folhape.com.br": {
+   "nome": "Folha PE",
+   "site": "https://www.folhape.com.br",
+   "ids": [
+    "9ca4203682053f38"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Sertão: com máxima prevista de 43ºC, Floresta reduz horário de escolas e creches",
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
+  },
+  "idealista.pt": {
+   "nome": "Idealista",
+   "site": "https://www.idealista.pt",
+   "ids": [
+    "667a7dcd2169712d"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "Vale Eficiência: famílias elegíveis já estão a ser contactadas",
+   "ultima": "2026-11-10T09:46:04.973782+00:00"
   }
  },
- "ultima_descoberta": "2026-11-09",
+ "ultima_descoberta": "2026-11-10",
  "enviados": [
   {
    "tipo": "resumo",
@@ -1256,48 +1292,18 @@
    "fonte": "Portal Energia",
    "nota": 19.5,
    "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-10T09:46:04.973782+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-08T09:46:04.144390+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 538,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 498,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-08T10:46:01.548649+00:00",
    "pesquisas": [
@@ -2980,11 +2986,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-10T09:46:04.973782+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 541,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 488,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-10T08:46:10.751401+00:00",
-  "contaspoupanca.pt": "2026-11-10T08:46:10.751401+00:00"
+  "cm-serta.pt": "2026-11-10T09:46:04.973782+00:00",
+  "contaspoupanca.pt": "2026-11-10T09:46:04.973782+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -2992,8 +3037,8 @@
   "contaspoupanca.pt": "2026-11-09T15:45:49.293828+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-10T08:46:10.751401+00:00",
-  "Apoio fundo ambiental": "2026-11-10T08:46:10.751401+00:00"
+  "Sertã": "2026-11-10T09:46:04.973782+00:00",
+  "Apoio fundo ambiental": "2026-11-10T09:46:04.973782+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3654,7 +3699,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-10T08:46:10.751401+00:00",
+   "verificado": "2026-11-10T09:46:04.973782+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3913,7 +3958,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-10T08:46:10.751401+00:00",
+   "verificado": "2026-11-10T09:46:04.973782+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4145,12 +4190,12 @@
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
     "PPR",
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
     "O que é a liberdade financeira e como a posso alcançar?",
     "Termos e Condições",
@@ -4208,6 +4253,7 @@
     "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais?",
+    "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Prestação da casa aumenta até 90 euros em novembro - Veja qual poderá ser o aumento no seu caso",
@@ -4220,20 +4266,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-10T08:46:10.751401+00:00",
+   "verificado": "2026-11-10T09:46:04.973782+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-10T07:46:02.396999+00:00",
+   "mudou": "2026-11-10T09:46:04.973782+00:00",
    "mudanca": {
     "mais": [
-     "Eletricidade",
-     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas"
+     "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
