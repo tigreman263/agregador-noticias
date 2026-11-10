@@ -22,33 +22,9 @@
   "b4acd23ecea8311c": "2026-11-06T22:16:08.554432+00:00",
   "3b0df607940fbbba": "2026-11-09T12:46:00.406852+00:00"
  },
- "resumo": [
-  {
-   "titulo": "E-Lar 2027 – Apoio às famílias de 65,7 milhões previstos para trocar o gás por elétrico",
-   "link": "https://www.portal-energia.com/e-lar-2027-apoio-familias-gas/",
-   "dominio": "portal-energia.com",
-   "fonte": "Portal Energia",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Fundo Ambiental"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-09T12:17:05+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "3b0df607940fbbba"
-   ],
-   "ts": "2026-11-09T12:46:00.406852+00:00"
-  }
- ],
+ "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-09",
+ "ultimo_resumo": "2026-11-10",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -487,7 +463,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-10T07:46:02.396999+00:00"
+   "ultima": "2026-11-10T08:46:10.751401+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1271,48 +1247,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-10T08:46:10.751401+00:00",
+   "titulo": "E-Lar 2027 – Apoio às famílias de 65,7 milhões previstos para trocar o gás por elétrico",
+   "link": "https://www.portal-energia.com/e-lar-2027-apoio-familias-gas/",
+   "fonte": "Portal Energia",
+   "nota": 19.5,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-08T08:46:05.358616+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 538,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 498,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-08T09:46:04.144390+00:00",
    "pesquisas": [
@@ -2995,11 +2941,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-10T08:46:10.751401+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 541,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 488,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 1,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-10T07:46:02.396999+00:00",
-  "contaspoupanca.pt": "2026-11-10T07:46:02.396999+00:00"
+  "cm-serta.pt": "2026-11-10T08:46:10.751401+00:00",
+  "contaspoupanca.pt": "2026-11-10T08:46:10.751401+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3007,8 +2992,8 @@
   "contaspoupanca.pt": "2026-11-09T15:45:49.293828+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-10T07:46:02.396999+00:00",
-  "Apoio fundo ambiental": "2026-11-10T07:46:02.396999+00:00"
+  "Sertã": "2026-11-10T08:46:10.751401+00:00",
+  "Apoio fundo ambiental": "2026-11-10T08:46:10.751401+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3669,7 +3654,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-10T07:46:02.396999+00:00",
+   "verificado": "2026-11-10T08:46:10.751401+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -3928,7 +3913,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-10T07:46:02.396999+00:00",
+   "verificado": "2026-11-10T08:46:10.751401+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4156,11 +4141,11 @@
     "Eletricidade",
     "Potência contratada: veja em 5 minutos se está a pagar a mais na eletricidade",
     "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
     "PPR",
     "Pedro Andersson",
@@ -4235,7 +4220,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-10T07:46:02.396999+00:00",
+   "verificado": "2026-11-10T08:46:10.751401+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
