@@ -513,7 +513,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-09T23:46:04.446751+00:00"
+   "ultima": "2026-11-10T00:46:03.484523+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -1282,36 +1282,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-08T00:46:03.263023+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 534,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 498,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-08T01:46:05.923539+00:00",
    "pesquisas": [
@@ -3003,10 +2973,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-10T00:46:03.484523+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 540,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 495,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-09T23:46:04.446751+00:00",
+  "cm-serta.pt": "2026-11-10T00:46:03.484523+00:00",
   "contaspoupanca.pt": "2026-11-09T22:46:01.388812+00:00"
  },
  "lentos": {},
@@ -3015,8 +3015,8 @@
   "contaspoupanca.pt": "2026-11-09T15:45:49.293828+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-09T23:46:04.446751+00:00",
-  "Apoio fundo ambiental": "2026-11-09T23:46:04.446751+00:00"
+  "Sertã": "2026-11-10T00:46:03.484523+00:00",
+  "Apoio fundo ambiental": "2026-11-10T00:46:03.484523+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
