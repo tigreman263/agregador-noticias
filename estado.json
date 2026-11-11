@@ -828,7 +828,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-11T16:45:58.404696+00:00"
+   "ultima": "2026-11-11T17:46:01.331141+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -1636,48 +1636,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-11T17:46:01.331141+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-09T17:46:00.261167+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 536,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 495,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-09T18:46:05.481316+00:00",
    "pesquisas": [
@@ -3364,11 +3334,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-11T17:46:01.331141+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 488,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-11T16:45:58.404696+00:00",
-  "contaspoupanca.pt": "2026-11-11T16:45:58.404696+00:00"
+  "cm-serta.pt": "2026-11-11T17:46:01.331141+00:00",
+  "contaspoupanca.pt": "2026-11-11T17:46:01.331141+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3376,8 +3385,8 @@
   "contaspoupanca.pt": "2026-11-11T16:45:45.684995+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-11T16:45:58.404696+00:00",
-  "Apoio fundo ambiental": "2026-11-11T16:45:58.404696+00:00"
+  "Sertã": "2026-11-11T17:46:01.331141+00:00",
+  "Apoio fundo ambiental": "2026-11-11T17:46:01.331141+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4038,7 +4047,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-11T16:45:58.404696+00:00",
+   "verificado": "2026-11-11T17:46:01.331141+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4313,7 +4322,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-11T16:45:58.404696+00:00",
+   "verificado": "2026-11-11T17:46:01.331141+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4608,6 +4617,7 @@
     "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
+    "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Portagens devem subir 3,83% em 2027. Saiba quanto pode pagar a mais",
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
@@ -4624,16 +4634,16 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-11T16:45:58.404696+00:00",
+   "verificado": "2026-11-11T17:46:01.331141+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-11T16:45:58.404696+00:00",
+   "mudou": "2026-11-11T17:46:01.331141+00:00",
    "mudanca": {
     "mais": [
-     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?"
+     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma"
     ],
     "menos": [],
     "n_mais": 1,
