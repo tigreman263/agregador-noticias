@@ -828,7 +828,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-11T15:46:05.661492+00:00"
+   "ultima": "2026-11-11T16:45:58.404696+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -1627,47 +1627,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-11T16:45:58.404696+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-09T16:46:27.905185+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 578,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 536,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-09T17:46:00.261167+00:00",
    "pesquisas": [
@@ -3354,20 +3325,59 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-11T16:45:58.404696+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 531,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 487,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-11T15:46:05.661492+00:00",
-  "contaspoupanca.pt": "2026-11-11T15:46:05.661492+00:00"
+  "cm-serta.pt": "2026-11-11T16:45:58.404696+00:00",
+  "contaspoupanca.pt": "2026-11-11T16:45:58.404696+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-11T14:45:52.067275+00:00",
-  "contaspoupanca.pt": "2026-11-10T16:45:45.121398+00:00"
+  "contaspoupanca.pt": "2026-11-11T16:45:45.684995+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-11T15:46:05.661492+00:00",
-  "Apoio fundo ambiental": "2026-11-11T15:46:05.661492+00:00"
+  "Sertã": "2026-11-11T16:45:58.404696+00:00",
+  "Apoio fundo ambiental": "2026-11-11T16:45:58.404696+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4028,7 +4038,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-11T15:46:05.661492+00:00",
+   "verificado": "2026-11-11T16:45:58.404696+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4303,7 +4313,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-11T15:46:05.661492+00:00",
+   "verificado": "2026-11-11T16:45:58.404696+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4532,8 +4542,8 @@
   "https://contaspoupanca.pt/": {
    "linhas_google": [
     "Contas-Poupança | Dê um aumento a si próprio",
-    "Simulador de apoio para os carros elétricos",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
+    "Simulador de apoio para os carros elétricos",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
@@ -4568,7 +4578,6 @@
     "IMI",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (14 a 20 de setembro)",
-    "SOS Finanças: Três episódios para testar se está preparado para uma emergência a sério",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
@@ -4606,6 +4615,7 @@
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
+    "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
@@ -4614,22 +4624,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-11T15:46:05.661492+00:00",
+   "verificado": "2026-11-11T16:45:58.404696+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-11T15:46:05.661492+00:00",
+   "mudou": "2026-11-11T16:45:58.404696+00:00",
    "mudanca": {
     "mais": [
-     "O que é a liberdade financeira e como a posso alcançar?",
-     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
-     "Entrevista: Como poupar 240 euros por ano na eletricidade. André Pedro, CEO da Manie, explica como",
-     "Portagens devem subir 3,83% em 2027. Saiba quanto pode pagar a mais"
+     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?"
     ],
     "menos": [],
-    "n_mais": 4,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
