@@ -828,7 +828,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-11T12:46:03.973150+00:00"
+   "ultima": "2026-11-11T13:45:58.047619+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -1600,47 +1600,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-11T13:45:58.047619+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-11T13:45:58.047619+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-09T13:45:56.349350+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 586,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 547,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-09T14:46:18.228690+00:00",
    "pesquisas": [
@@ -3327,11 +3307,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-11T13:45:58.047619+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 533,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 487,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-11T12:46:03.973150+00:00",
-  "contaspoupanca.pt": "2026-11-11T12:46:03.973150+00:00"
+  "cm-serta.pt": "2026-11-11T13:45:58.047619+00:00",
+  "contaspoupanca.pt": "2026-11-11T13:45:58.047619+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3339,8 +3358,8 @@
   "contaspoupanca.pt": "2026-11-10T16:45:45.121398+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-11T12:46:03.973150+00:00",
-  "Apoio fundo ambiental": "2026-11-11T12:46:03.973150+00:00"
+  "Sertã": "2026-11-11T13:45:58.047619+00:00",
+  "Apoio fundo ambiental": "2026-11-11T13:45:58.047619+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4001,7 +4020,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-11T12:46:03.973150+00:00",
+   "verificado": "2026-11-11T13:45:58.047619+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4175,6 +4194,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
+    "Última hora",
     "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
     "Última hora",
     "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
@@ -4191,10 +4212,16 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
+    "Cernache do Bonjardim",
+    "Beira Baixa",
+    "Sertã",
+    "11-11-2026",
+    "Última hora",
+    "Município já sinalizou",
     "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
     "11-11-2026",
     "Última hora",
-    "A partir das 11:00",
     "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
     "Beira Baixa",
     "Sertã",
@@ -4255,11 +4282,6 @@
     "Mação",
     "Médio Tejo",
     "10-11-2026",
-    "TEMPO: Depressões Bruna e Charles colocam país em alerta",
-    "Beira Baixa",
-    "Médio Tejo",
-    "Nacional",
-    "10-11-2026",
     "1",
     "2",
     "3",
@@ -4273,37 +4295,30 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-11T12:46:03.973150+00:00",
+   "verificado": "2026-11-11T13:45:58.047619+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-11T10:46:03.912991+00:00",
+   "mudou": "2026-11-11T13:45:58.047619+00:00",
    "mudanca": {
     "mais": [
-     "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
-     "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
-     "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas",
-     "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
-     "A partir das 11:00",
-     "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
-     "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas"
+     "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
+     "Última hora",
+     "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
+     "Cernache do Bonjardim",
+     "Sertã",
+     "Última hora",
+     "Município já sinalizou"
     ],
     "menos": [
-     "REGIÃO/Charles: Concelhos e instituições adotam medidas preventivas",
-     "MAU TEMPO: Governo declara “Situação de Alerta” em todo o Continente",
-     "MAÇÃO/Cardigos: Joaquim da Silva Tavares abriu a porta a outras homenagens",
+     "A partir das 11:00",
      "TEMPO: Depressões Bruna e Charles colocam país em alerta",
-     "SERTÃ/Pedrógão Pequeno: Acidente provoca dois feridos graves",
-     "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
-     "REGIÃO/Charles: Concelhos e instituições adotam medidas preventivas",
-     "Para amanhã, dia 11 de novembro",
-     "SERTÃ/Pedrógão Pequeno: Acidente provoca dois feridos graves",
-     "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
-     "Cernache do Bonjardim"
+     "Médio Tejo",
+     "Nacional"
     ],
     "n_mais": 7,
-    "n_menos": 11
+    "n_menos": 4
    },
    "via": "site",
    "erro_site": ""
@@ -4579,8 +4594,8 @@
     "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
-    "Eletricidade: Fuja do tarifário indexado - É o tarifário mais caro de todos (Outubro 2026)",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
+    "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
     "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
@@ -4594,21 +4609,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-11T12:46:03.973150+00:00",
+   "verificado": "2026-11-11T13:45:58.047619+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-11T12:46:03.973150+00:00",
+   "mudou": "2026-11-11T13:45:58.047619+00:00",
    "mudanca": {
     "mais": [
-     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
-     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
-     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?"
+     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?"
     ],
     "menos": [],
-    "n_mais": 3,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
