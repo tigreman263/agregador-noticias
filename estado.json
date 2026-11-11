@@ -828,7 +828,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-11T13:45:58.047619+00:00"
+   "ultima": "2026-11-11T14:45:57.854278+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -1621,45 +1621,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-09T14:46:18.228690+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 536,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 497,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-09T15:46:03.801994+00:00",
    "pesquisas": [
@@ -3346,20 +3307,58 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-11T14:45:57.854278+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 573,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 529,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-11T13:45:58.047619+00:00",
-  "contaspoupanca.pt": "2026-11-11T13:45:58.047619+00:00"
+  "cm-serta.pt": "2026-11-11T14:45:57.854278+00:00",
+  "contaspoupanca.pt": "2026-11-11T14:45:57.854278+00:00"
  },
  "lentos": {},
  "testes_diretos": {
-  "cm-serta.pt": "2026-11-10T14:45:45.126594+00:00",
+  "cm-serta.pt": "2026-11-11T14:45:52.067275+00:00",
   "contaspoupanca.pt": "2026-11-10T16:45:45.121398+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-11T13:45:58.047619+00:00",
-  "Apoio fundo ambiental": "2026-11-11T13:45:58.047619+00:00"
+  "Sertã": "2026-11-11T14:45:57.854278+00:00",
+  "Apoio fundo ambiental": "2026-11-11T14:45:57.854278+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4020,7 +4019,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-11T13:45:58.047619+00:00",
+   "verificado": "2026-11-11T14:45:57.854278+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4092,8 +4091,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "site",
-   "erro_site": ""
+   "via": "google",
+   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4295,7 +4294,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-11T13:45:58.047619+00:00",
+   "verificado": "2026-11-11T14:45:57.854278+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4524,13 +4523,11 @@
   "https://contaspoupanca.pt/": {
    "linhas_google": [
     "Contas-Poupança | Dê um aumento a si próprio",
-    "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Simulador de apoio para os carros elétricos",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
-    "Combustíveis",
     "Simulador de amortização crédito à habitação",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
@@ -4541,6 +4538,7 @@
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
+    "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Termos e Condições",
     "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
@@ -4600,7 +4598,6 @@
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
-    "Revista de imprensa de 6 de novembro: Salário mínimo, inflação e crédito à habitação",
     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
@@ -4609,7 +4606,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-11T13:45:58.047619+00:00",
+   "verificado": "2026-11-11T14:45:57.854278+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
