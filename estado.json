@@ -71,7 +71,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-10T09:46:04.973782+00:00"
+   "ultima": "2026-11-11T09:46:02.251132+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -438,7 +438,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "\"Há muito dinheiro para flores na Festa da Castanha, mas pouco apoio para quem a produz\"",
-   "ultima": "2026-11-10T09:46:04.973782+00:00"
+   "ultima": "2026-11-11T09:46:02.251132+00:00"
   },
   "linhasdeelvas.pt": {
    "nome": "Linhas de Elvas",
@@ -465,7 +465,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-11T08:46:08.907791+00:00"
+   "ultima": "2026-11-11T09:46:02.251132+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -503,7 +503,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Apoio à Atividade Cultural | Candidaturas abrem a 1 de novembro",
-   "ultima": "2026-11-10T09:46:04.973782+00:00"
+   "ultima": "2026-11-11T09:46:02.251132+00:00"
   },
   "24noticias.sapo.pt": {
    "nome": "SAPO",
@@ -708,7 +708,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-10T09:46:04.973782+00:00"
+   "ultima": "2026-11-11T09:46:02.251132+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -756,7 +756,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Ministra do Ambiente presidiu a ato de assinatura de financiamento do ciclo urbano da água através do Fundo Ambiental",
-   "ultima": "2026-11-10T09:46:04.973782+00:00"
+   "ultima": "2026-11-11T09:46:02.251132+00:00"
   },
   "ce.gov.br": {
    "nome": "Governo do Estado do Ceará",
@@ -768,7 +768,7 @@
     "Sertã"
    ],
    "exemplo": "Festa na Agricultura Familiar: mais de R$ 10 milhões investidos, entrega de equipamentos agrícolas e termo de colaboração do Projeto Sertão Vivo",
-   "ultima": "2026-11-10T09:46:04.973782+00:00"
+   "ultima": "2026-11-11T09:46:02.251132+00:00"
   },
   "g1.globo.com": {
    "nome": "G1",
@@ -780,7 +780,7 @@
     "Sertã"
    ],
    "exemplo": "Com máxima de 43°C, Floresta, no Sertão de PE, antecipa saída de estudantes das escolas",
-   "ultima": "2026-11-10T09:46:04.973782+00:00"
+   "ultima": "2026-11-11T09:46:02.251132+00:00"
   },
   "folhape.com.br": {
    "nome": "Folha PE",
@@ -792,7 +792,7 @@
     "Sertã"
    ],
    "exemplo": "Sertão: com máxima prevista de 43ºC, Floresta reduz horário de escolas e creches",
-   "ultima": "2026-11-10T09:46:04.973782+00:00"
+   "ultima": "2026-11-11T09:46:02.251132+00:00"
   },
   "idealista.pt": {
    "nome": "Idealista",
@@ -828,7 +828,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-11T08:46:08.907791+00:00"
+   "ultima": "2026-11-11T09:46:02.251132+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -843,7 +843,7 @@
    "ultima": "2026-11-10T21:46:03.071202+00:00"
   }
  },
- "ultima_descoberta": "2026-11-10",
+ "ultima_descoberta": "2026-11-11",
  "enviados": [
   {
    "tipo": "resumo",
@@ -1564,48 +1564,18 @@
    "fonte": "Postal do Algarve",
    "nota": 20.0,
    "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-11T09:46:02.251132+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-09T09:46:04.826600+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 542,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 502,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-09T10:46:03.536377+00:00",
    "pesquisas": [
@@ -3291,11 +3261,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-11T09:46:02.251132+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 533,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 487,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-11T08:46:08.907791+00:00",
-  "contaspoupanca.pt": "2026-11-11T08:46:08.907791+00:00"
+  "cm-serta.pt": "2026-11-11T09:46:02.251132+00:00",
+  "contaspoupanca.pt": "2026-11-11T09:46:02.251132+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3303,8 +3312,8 @@
   "contaspoupanca.pt": "2026-11-10T16:45:45.121398+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-11T08:46:08.907791+00:00",
-  "Apoio fundo ambiental": "2026-11-11T08:46:08.907791+00:00"
+  "Sertã": "2026-11-11T09:46:02.251132+00:00",
+  "Apoio fundo ambiental": "2026-11-11T09:46:02.251132+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3965,7 +3974,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-11T08:46:08.907791+00:00",
+   "verificado": "2026-11-11T09:46:02.251132+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4249,7 +4258,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-11T08:46:08.907791+00:00",
+   "verificado": "2026-11-11T09:46:02.251132+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4475,8 +4484,8 @@
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Combustíveis",
-    "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Simulador de amortização crédito à habitação",
+    "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
@@ -4549,6 +4558,7 @@
     "Prestação da casa aumenta até 90 euros em novembro - Veja qual poderá ser o aumento no seu caso",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
     "Revista de imprensa de 6 de novembro: Salário mínimo, inflação e crédito à habitação",
+    "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida",
@@ -4556,20 +4566,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-11T08:46:08.907791+00:00",
+   "verificado": "2026-11-11T09:46:02.251132+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-11T08:46:08.907791+00:00",
+   "mudou": "2026-11-11T09:46:02.251132+00:00",
    "mudanca": {
     "mais": [
-     "O que é a liberdade financeira e como a posso alcançar?",
-     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\""
+     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
