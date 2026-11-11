@@ -24,56 +24,9 @@
   "461524cdb57ccdea": "2026-11-10T13:46:00.075469+00:00",
   "77a5cf07f29cf865": "2026-11-10T20:46:07.155183+00:00"
  },
- "resumo": [
-  {
-   "titulo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVG1DZms2ZlZvUS10XzRpZUZrejloX1FJRlpFQ3J0eDlpOGs2c0c3YVBlVnp1S2tVb01pUGF6dDItRUN6VmFOMnktXy1md3FqdXZoam5nZER0RzFobVoxcEdfbEJyTEZIaDVjYTFuOTRCVWg0NVVIaGphUEczUTRaVHRVT0NzTWZwWWlyUC0xWVEyRmpWMTVydkVfVFFxMmJ2NEI5SkFGR3RWQWdDT0NnRXVxV2ZuSlAxOHBSdDdNaVRlZHVSUFp5RERYM0dac3VEdGJGRw?oc=5",
-   "dominio": "rondoniaovivo.com",
-   "fonte": "Rondoniaovivo.com",
-   "confiavel": false,
-   "nota": 23.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Fundo Ambiental"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-10T13:10:30+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "461524cdb57ccdea"
-   ],
-   "ts": "2026-11-10T13:46:00.075469+00:00"
-  },
-  {
-   "titulo": "“As famílias consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão ter uma nova oportunidade?”",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWjVJYVV5QWpfd1ZGRDNQbEVpUmk2LVhfeXB6bXFmdno0Smc2eE93eENFczZKb09kV2w0MnM0SDVXdVlaZGpDSUJBcHNQanZ1SDR3WnIzRjJ4TWJkV3I1bXlkZ0tXeVc2eEw0Z2w5bThxNTJwTGVkb1BVLWpCdVJqTlFPZV9RVk5ZWHJpTnhLcllIeUh2UzVpM2R1WFh1ZXRQTDhPNkFsOUltZXZPVjcwRGs3eXBKYU1EU1FjR3pMREFzVzVjTnhQczFub2NkT0s0cXl0b3hUbTFNYW10ZzgzeHBWT0Q?oc=5",
-   "dominio": "postal.pt",
-   "fonte": "Postal do Algarve",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-09T19:12:41+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "77a5cf07f29cf865"
-   ],
-   "ts": "2026-11-10T20:46:07.155183+00:00"
-  }
- ],
+ "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-10",
+ "ultimo_resumo": "2026-11-11",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -512,7 +465,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-11T07:46:04.992984+00:00"
+   "ultima": "2026-11-11T08:46:08.907791+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -875,7 +828,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-11T07:46:04.992984+00:00"
+   "ultima": "2026-11-11T08:46:08.907791+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -1584,48 +1537,36 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-11T08:46:08.907791+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-11T08:46:08.907791+00:00",
+   "titulo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
+   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVG1DZms2ZlZvUS10XzRpZUZrejloX1FJRlpFQ3J0eDlpOGs2c0c3YVBlVnp1S2tVb01pUGF6dDItRUN6VmFOMnktXy1md3FqdXZoam5nZER0RzFobVoxcEdfbEJyTEZIaDVjYTFuOTRCVWg0NVVIaGphUEczUTRaVHRVT0NzTWZwWWlyUC0xWVEyRmpWMTVydkVfVFFxMmJ2NEI5SkFGR3RWQWdDT0NnRXVxV2ZuSlAxOHBSdDdNaVRlZHVSUFp5RERYM0dac3VEdGJGRw?oc=5",
+   "fonte": "Rondoniaovivo.com",
+   "nota": 23.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-11T08:46:08.907791+00:00",
+   "titulo": "“As famílias consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão ter uma nova oportunidade?”",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWjVJYVV5QWpfd1ZGRDNQbEVpUmk2LVhfeXB6bXFmdno0Smc2eE93eENFczZKb09kV2w0MnM0SDVXdVlaZGpDSUJBcHNQanZ1SDR3WnIzRjJ4TWJkV3I1bXlkZ0tXeVc2eEw0Z2w5bThxNTJwTGVkb1BVLWpCdVJqTlFPZV9RVk5ZWHJpTnhLcllIeUh2UzVpM2R1WFh1ZXRQTDhPNkFsOUltZXZPVjcwRGs3eXBKYU1EU1FjR3pMREFzVzVjTnhQczFub2NkT0s0cXl0b3hUbTFNYW10ZzgzeHBWT0Q?oc=5",
+   "fonte": "Postal do Algarve",
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-09T08:46:02.527610+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 539,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 499,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-09T09:46:04.826600+00:00",
    "pesquisas": [
@@ -3311,11 +3252,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-11T08:46:08.907791+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 534,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 487,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 2,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-11T07:46:04.992984+00:00",
-  "contaspoupanca.pt": "2026-11-11T07:46:04.992984+00:00"
+  "cm-serta.pt": "2026-11-11T08:46:08.907791+00:00",
+  "contaspoupanca.pt": "2026-11-11T08:46:08.907791+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3323,8 +3303,8 @@
   "contaspoupanca.pt": "2026-11-10T16:45:45.121398+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-11T07:46:04.992984+00:00",
-  "Apoio fundo ambiental": "2026-11-11T07:46:04.992984+00:00"
+  "Sertã": "2026-11-11T08:46:08.907791+00:00",
+  "Apoio fundo ambiental": "2026-11-11T08:46:08.907791+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3985,7 +3965,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-11T07:46:04.992984+00:00",
+   "verificado": "2026-11-11T08:46:08.907791+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4269,7 +4249,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-11T07:46:04.992984+00:00",
+   "verificado": "2026-11-11T08:46:08.907791+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4507,6 +4487,7 @@
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
+    "O que é a liberdade financeira e como a posso alcançar?",
     "Termos e Condições",
     "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
@@ -4522,7 +4503,6 @@
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
     "Investimentos",
-    "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
@@ -4559,6 +4539,7 @@
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
     "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
+    "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
     "Eletricidade: Fuja do tarifário indexado - É o tarifário mais caro de todos (Outubro 2026)",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
@@ -4575,19 +4556,20 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-11T07:46:04.992984+00:00",
+   "verificado": "2026-11-11T08:46:08.907791+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-11T07:46:04.992984+00:00",
+   "mudou": "2026-11-11T08:46:08.907791+00:00",
    "mudanca": {
     "mais": [
-     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?"
+     "O que é a liberdade financeira e como a posso alcançar?",
+     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\""
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
