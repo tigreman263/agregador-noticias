@@ -465,7 +465,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-11T09:46:02.251132+00:00"
+   "ultima": "2026-11-11T10:46:03.912991+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -828,7 +828,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-11T09:46:02.251132+00:00"
+   "ultima": "2026-11-11T10:46:03.912991+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -1573,48 +1573,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-11T10:46:03.912991+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-09T10:46:03.536377+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 544,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 502,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-09T11:46:40.187388+00:00",
    "pesquisas": [
@@ -3300,11 +3270,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-11T10:46:03.912991+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 528,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 484,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-11T09:46:02.251132+00:00",
-  "contaspoupanca.pt": "2026-11-11T09:46:02.251132+00:00"
+  "cm-serta.pt": "2026-11-11T10:46:03.912991+00:00",
+  "contaspoupanca.pt": "2026-11-11T10:46:03.912991+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3312,8 +3321,8 @@
   "contaspoupanca.pt": "2026-11-10T16:45:45.121398+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-11T09:46:02.251132+00:00",
-  "Apoio fundo ambiental": "2026-11-11T09:46:02.251132+00:00"
+  "Sertã": "2026-11-11T10:46:03.912991+00:00",
+  "Apoio fundo ambiental": "2026-11-11T10:46:03.912991+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3974,7 +3983,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-11T09:46:02.251132+00:00",
+   "verificado": "2026-11-11T10:46:03.912991+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4148,7 +4157,11 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
-    "REGIÃO/Charles: Concelhos e instituições adotam medidas preventivas",
+    "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
+    "Última hora",
+    "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
+    "Última hora",
+    "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas",
     "Em atualização",
     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
     "Última hora",
@@ -4156,27 +4169,25 @@
     "Última hora",
     "SERTÃ: Susana Lucas (PSD) preocupada com a habitação e fixação de jovens",
     "Última hora",
-    "MAU TEMPO: Governo declara “Situação de Alerta” em todo o Continente",
-    "Última hora",
-    "MAÇÃO/Cardigos: Joaquim da Silva Tavares abriu a porta a outras homenagens",
-    "Última hora",
-    "TEMPO: Depressões Bruna e Charles colocam país em alerta",
-    "Última hora",
-    "SERTÃ/Pedrógão Pequeno: Acidente provoca dois feridos graves",
-    "Última hora",
-    "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
-    "Última hora",
     "Todas as notícias",
     "Início",
     "Notícias",
     "Todas as notícias",
-    "REGIÃO/Charles: Concelhos e instituições adotam medidas preventivas",
+    "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
+    "11-11-2026",
+    "Última hora",
+    "A partir das 11:00",
+    "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
+    "Beira Baixa",
+    "Sertã",
+    "11-11-2026",
+    "Última hora",
+    "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas",
     "Beira Baixa",
     "Médio Tejo",
     "Nacional",
     "10-11-2026",
     "Em atualização",
-    "Para amanhã, dia 11 de novembro",
     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
     "Notícias",
     "Sertã",
@@ -4222,29 +4233,15 @@
     "Médio Tejo",
     "Nacional",
     "10-11-2026",
-    "Última hora",
     "MAÇÃO/Cardigos: Joaquim da Silva Tavares abriu a porta a outras homenagens",
     "Mação",
     "Médio Tejo",
     "10-11-2026",
-    "Última hora",
     "TEMPO: Depressões Bruna e Charles colocam país em alerta",
     "Beira Baixa",
     "Médio Tejo",
     "Nacional",
     "10-11-2026",
-    "Última hora",
-    "SERTÃ/Pedrógão Pequeno: Acidente provoca dois feridos graves",
-    "Sertã",
-    "Beira Baixa",
-    "09-11-2026",
-    "Última hora",
-    "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
-    "Cernache do Bonjardim",
-    "Sertã",
-    "Beira Baixa",
-    "09-11-2026",
-    "Última hora",
     "1",
     "2",
     "3",
@@ -4258,21 +4255,37 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-11T09:46:02.251132+00:00",
+   "verificado": "2026-11-11T10:46:03.912991+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-11T07:46:04.992984+00:00",
+   "mudou": "2026-11-11T10:46:03.912991+00:00",
    "mudanca": {
     "mais": [
-     "quarta-feira, 11 novembro 2026"
+     "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
+     "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
+     "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas",
+     "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
+     "A partir das 11:00",
+     "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
+     "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas"
     ],
     "menos": [
-     "terça-feira, 10 novembro 2026"
+     "REGIÃO/Charles: Concelhos e instituições adotam medidas preventivas",
+     "MAU TEMPO: Governo declara “Situação de Alerta” em todo o Continente",
+     "MAÇÃO/Cardigos: Joaquim da Silva Tavares abriu a porta a outras homenagens",
+     "TEMPO: Depressões Bruna e Charles colocam país em alerta",
+     "SERTÃ/Pedrógão Pequeno: Acidente provoca dois feridos graves",
+     "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
+     "REGIÃO/Charles: Concelhos e instituições adotam medidas preventivas",
+     "Para amanhã, dia 11 de novembro",
+     "SERTÃ/Pedrógão Pequeno: Acidente provoca dois feridos graves",
+     "CERNACHE DO BONJARDIM: Feira do Livro do IVS reaproxima jovens e comunidade da leitura",
+     "Cernache do Bonjardim"
     ],
-    "n_mais": 1,
-    "n_menos": 1
+    "n_mais": 7,
+    "n_menos": 11
    },
    "via": "site",
    "erro_site": ""
@@ -4549,7 +4562,6 @@
     "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
-    "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
     "Eletricidade: Fuja do tarifário indexado - É o tarifário mais caro de todos (Outubro 2026)",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas",
@@ -4566,7 +4578,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-11T09:46:02.251132+00:00",
+   "verificado": "2026-11-11T10:46:03.912991+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
