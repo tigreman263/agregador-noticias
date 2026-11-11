@@ -465,7 +465,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-11T10:46:03.912991+00:00"
+   "ultima": "2026-11-11T11:46:18.583727+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -828,7 +828,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-11T10:46:03.912991+00:00"
+   "ultima": "2026-11-11T11:46:18.583727+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -1582,48 +1582,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-11T11:46:18.583727+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-09T11:46:40.187388+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 544,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 502,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-09T12:46:00.406852+00:00",
    "pesquisas": [
@@ -3309,11 +3279,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-11T11:46:18.583727+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 531,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 488,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-11T10:46:03.912991+00:00",
-  "contaspoupanca.pt": "2026-11-11T10:46:03.912991+00:00"
+  "cm-serta.pt": "2026-11-11T11:46:18.583727+00:00",
+  "contaspoupanca.pt": "2026-11-11T11:46:18.583727+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3321,8 +3330,8 @@
   "contaspoupanca.pt": "2026-11-10T16:45:45.121398+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-11T10:46:03.912991+00:00",
-  "Apoio fundo ambiental": "2026-11-11T10:46:03.912991+00:00"
+  "Sertã": "2026-11-11T11:46:18.583727+00:00",
+  "Apoio fundo ambiental": "2026-11-11T11:46:18.583727+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3983,7 +3992,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-11T10:46:03.912991+00:00",
+   "verificado": "2026-11-11T11:46:18.583727+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4255,7 +4264,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-11T10:46:03.912991+00:00",
+   "verificado": "2026-11-11T11:46:18.583727+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4494,11 +4503,10 @@
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
-    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
+    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Combustíveis",
     "Simulador de amortização crédito à habitação",
-    "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
@@ -4508,7 +4516,6 @@
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
-    "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
     "O que é a liberdade financeira e como a posso alcançar?",
     "Termos e Condições",
     "Política de Privacidade",
@@ -4523,19 +4530,18 @@
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
+    "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
     "Investimentos",
-    "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
-    "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "IMI",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (14 a 20 de setembro)",
     "SOS Finanças: Três episódios para testar se está preparado para uma emergência a sério",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
@@ -4550,6 +4556,7 @@
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Certificados de Aforro",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (5 a 11 de outubro)",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "GÁS - Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Podcast",
@@ -4578,19 +4585,20 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-11T10:46:03.912991+00:00",
+   "verificado": "2026-11-11T11:46:18.583727+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-11T09:46:02.251132+00:00",
+   "mudou": "2026-11-11T11:46:18.583727+00:00",
    "mudanca": {
     "mais": [
-     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes"
+     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (5 a 11 de outubro)"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
