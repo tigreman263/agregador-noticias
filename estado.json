@@ -816,7 +816,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-10T17:45:56.962241+00:00"
+   "ultima": "2026-11-11T19:46:03.935452+00:00"
   },
   "rondoniaaovivo.com": {
    "nome": "Rondoniaovivo.com",
@@ -1645,48 +1645,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-11T19:46:03.935452+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-11T19:46:03.935452+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-09T19:46:06.814820+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 536,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 495,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-09T20:45:58.947091+00:00",
    "pesquisas": [
@@ -3373,11 +3352,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-11T19:46:03.935452+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 488,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-11T18:46:00.361654+00:00",
-  "contaspoupanca.pt": "2026-11-11T18:46:00.361654+00:00"
+  "cm-serta.pt": "2026-11-11T19:46:03.935452+00:00",
+  "contaspoupanca.pt": "2026-11-11T19:46:03.935452+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3385,8 +3403,8 @@
   "contaspoupanca.pt": "2026-11-11T16:45:45.684995+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-11T18:46:00.361654+00:00",
-  "Apoio fundo ambiental": "2026-11-11T18:46:00.361654+00:00"
+  "Sertã": "2026-11-11T19:46:03.935452+00:00",
+  "Apoio fundo ambiental": "2026-11-11T19:46:03.935452+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4047,7 +4065,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-11T18:46:00.361654+00:00",
+   "verificado": "2026-11-11T19:46:03.935452+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4228,7 +4246,7 @@
     "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
     "Última hora",
     "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas",
-    "Em atualização",
+    "Última hora",
     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
     "Última hora",
     "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
@@ -4259,7 +4277,7 @@
     "Médio Tejo",
     "Nacional",
     "10-11-2026",
-    "Em atualização",
+    "Última hora",
     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
     "Notícias",
     "Sertã",
@@ -4322,30 +4340,23 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-11T18:46:00.361654+00:00",
+   "verificado": "2026-11-11T19:46:03.935452+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-11T13:45:58.047619+00:00",
+   "mudou": "2026-11-11T19:46:03.935452+00:00",
    "mudanca": {
     "mais": [
-     "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
      "Última hora",
-     "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
-     "Cernache do Bonjardim",
-     "Sertã",
-     "Última hora",
-     "Município já sinalizou"
+     "Última hora"
     ],
     "menos": [
-     "A partir das 11:00",
-     "TEMPO: Depressões Bruna e Charles colocam país em alerta",
-     "Médio Tejo",
-     "Nacional"
+     "Em atualização",
+     "Em atualização"
     ],
-    "n_mais": 7,
-    "n_menos": 4
+    "n_mais": 2,
+    "n_menos": 2
    },
    "via": "site",
    "erro_site": ""
@@ -4554,8 +4565,8 @@
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Simulador de apoio para os carros elétricos",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
+    "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
-    "Simulador de amortização crédito à habitação",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
@@ -4574,6 +4585,7 @@
     "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
+    "Evitar erros nas férias e poupar nas mais-valias: os dois podcasts da semana",
     "Subscrever Newsletter",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
@@ -4581,17 +4593,18 @@
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
     "Investimentos",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (24 a 30 de agosto)",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "IMI",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (14 a 20 de setembro)",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
+    "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (7 a 13 de setembro)",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "Simuladores",
     "Apoios Sociais",
@@ -4603,50 +4616,57 @@
     "Entrevista: Como poupar 240 euros por ano na eletricidade. André Pedro, CEO da Manie, explica como",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Certificados de Aforro",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (5 a 11 de outubro)",
+    "Combustíveis",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "GÁS - Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
+    "PodTEXT | Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
-    "Revista de imprensa de 4 de novembro: Fraude bancária, IRS 2027 e carros elétricos",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Portagens devem subir 3,83% em 2027. Saiba quanto pode pagar a mais",
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
+    "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais?",
     "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
-    "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
+    "SOS Finanças: O que falta no seu Kit de emergência para aguentar 72 horas sem luz e sem água?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-11T18:46:00.361654+00:00",
+   "verificado": "2026-11-11T19:46:03.935452+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-11T17:46:01.331141+00:00",
+   "mudou": "2026-11-11T19:46:03.935452+00:00",
    "mudanca": {
     "mais": [
-     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma"
+     "Evitar erros nas férias e poupar nas mais-valias: os dois podcasts da semana",
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (24 a 30 de agosto)",
+     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
+     "Combustíveis",
+     "PodTEXT | Tem o PPR errado? Compare todos os PPR em poucos minutos",
+     "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais?",
+     "SOS Finanças: O que falta no seu Kit de emergência para aguentar 72 horas sem luz e sem água?"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 7,
     "n_menos": 0
    }
   }
