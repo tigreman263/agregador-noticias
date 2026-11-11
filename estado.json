@@ -828,7 +828,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-11T17:46:01.331141+00:00"
+   "ultima": "2026-11-11T18:46:00.361654+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -1648,45 +1648,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-09T18:46:05.481316+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 537,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 496,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-09T19:46:06.814820+00:00",
    "pesquisas": [
@@ -3373,11 +3334,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-11T18:46:00.361654+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 488,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-11T17:46:01.331141+00:00",
-  "contaspoupanca.pt": "2026-11-11T17:46:01.331141+00:00"
+  "cm-serta.pt": "2026-11-11T18:46:00.361654+00:00",
+  "contaspoupanca.pt": "2026-11-11T18:46:00.361654+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3385,8 +3385,8 @@
   "contaspoupanca.pt": "2026-11-11T16:45:45.684995+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-11T17:46:01.331141+00:00",
-  "Apoio fundo ambiental": "2026-11-11T17:46:01.331141+00:00"
+  "Sertã": "2026-11-11T18:46:00.361654+00:00",
+  "Apoio fundo ambiental": "2026-11-11T18:46:00.361654+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4047,7 +4047,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-11T17:46:01.331141+00:00",
+   "verificado": "2026-11-11T18:46:00.361654+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4322,7 +4322,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-11T17:46:01.331141+00:00",
+   "verificado": "2026-11-11T18:46:00.361654+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4555,7 +4555,6 @@
     "Simulador de apoio para os carros elétricos",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
-    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Simulador de amortização crédito à habitação",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
@@ -4629,12 +4628,13 @@
     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
+    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-11T17:46:01.331141+00:00",
+   "verificado": "2026-11-11T18:46:00.361654+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
