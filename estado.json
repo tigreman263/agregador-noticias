@@ -847,24 +847,6 @@
  "enviados": [
   {
    "tipo": "resumo",
-   "ts": "2026-11-04T08:00:45.247714+00:00",
-   "titulo": "Vale Eficiência: famílias elegíveis estão a ser contactadas, saiba o que há de novo",
-   "link": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxQY2ZlbGNtc0x3WkloR2JaVWc2dWNfb3QzbjlsQml4WFFIZHBIbnZIMzl1SFUwWWhLelRnYy0wN3VkTmlFWV81T204T3g5Zk9aRUV0Sk0zOXNQTTFrZTRoMWNQWHpIUDEwbXFhaUk0MkhHUExuRVZBaFVFcjg5bkZXdXN1UUFIQlRRY1B1S0drVG9QU01KNlYzMnZuN1NybUtFODg4TGVsZWp1SUowR1NyNUFwM3BWYUZnNi1TYlNtbktjNmxMS3pSTHVvNElJZWhmUXBIZDFMZDVVYXhHQ25vNTJ3?oc=5",
-   "fonte": "SIC Notícias",
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
-   "tipo": "resumo",
-   "ts": "2026-11-04T08:00:45.247714+00:00",
-   "titulo": "Até 1.300 euros: Afinal, o Vale Eficiência vai mesmo chegar às famílias?",
-   "link": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOckFSdE81eS1sSXFKVmw2VjdyeWJwbmtWdlpRMmoyYk1lUk5XbUo4bVBpcXJ1T1BCSjdqWWFNZEJraFg0Q0tZNXliZ2RWV3huU2FEVWJWOEhBVnM3SzFDZ2NaTGw4RnhBMjZfYjNzMGUzeWtwamRQUzRSN1lyekpQM2NCRm5QaDJrZnlDV2loNHlELU9QQWhMUVhjc2R5NEJwWVZiVS1Bc2xmaTFiNDMxQV83d3Zuako0eVE?oc=5",
-   "fonte": "Notícias ao Minuto",
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
-   "tipo": "resumo",
    "ts": "2026-11-05T08:16:21.796256+00:00",
    "titulo": "Vale Eficiência: DECO consegue resposta para 28 mil famílias que tinham sido esquecidas",
    "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNLXJYMnZ1TW53TTJMNmJTWm05YmpYQ1hvTGJHNkh6MWQxaDJVc1MxWS0yMUF4eEJZUVpYTVJnMWR0Y2xXYjNJd3EtZ2xDMXpLd3pzbHFPOVVtbUVMTk5meDRFaGxCLWlsMTFvOVdjR1FreTVCbDdMaThjV3FmaTRLVjNoaUJVLWdPemJZbENOU3FmNkdYc2FqNW50VjA1ZEJQV2x1MG9fcDNpYTJtU0NJV0JhbDNCeUJnSzdyNm5VWVFoZVBEanRmMVRHbTVPVnM?oc=5",
@@ -1744,47 +1726,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T15:00:53.755756+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T15:00:53.755756+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-10T14:45:49.364803+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 583,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 528,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-10T15:45:59.574674+00:00",
    "pesquisas": [
@@ -3474,20 +3436,58 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-12T15:00:53.755756+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 571,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 526,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-12T14:01:01.907289+00:00",
-  "contaspoupanca.pt": "2026-11-12T14:01:01.907289+00:00"
+  "cm-serta.pt": "2026-11-12T15:00:53.755756+00:00",
+  "contaspoupanca.pt": "2026-11-12T15:00:53.755756+00:00"
  },
  "lentos": {},
  "testes_diretos": {
-  "cm-serta.pt": "2026-11-11T14:45:52.067275+00:00",
+  "cm-serta.pt": "2026-11-12T15:00:48.332749+00:00",
   "contaspoupanca.pt": "2026-11-11T16:45:45.684995+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-12T14:01:01.907289+00:00",
-  "Apoio fundo ambiental": "2026-11-12T14:01:01.907289+00:00"
+  "Sertã": "2026-11-12T15:00:53.755756+00:00",
+  "Apoio fundo ambiental": "2026-11-12T15:00:53.755756+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4148,23 +4148,19 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-12T14:01:01.907289+00:00",
+   "verificado": "2026-11-12T15:00:53.755756+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-10T17:45:56.962241+00:00",
+   "mudou": "2026-11-12T15:00:53.755756+00:00",
    "mudanca": {
     "mais": [
-     "Tempestade Charles – Serviços camarários encerrados a 11 de novembro",
-     "Na sequência do Despacho n.º 13773-A/2026, de 10 de novembro, que declara situação ..."
+     "Formação / Atelier / Oficinas"
     ],
-    "menos": [
-     "Candidaturas para investimentos em diversificação, comércio e serviços associados decorrem até 23 de dezembro",
-     "Estão a decorrer até 23 de dezembro as candidaturas para a “Intervenção D.1.1.1.3 –..."
-    ],
-    "n_mais": 2,
-    "n_menos": 2
+    "menos": [],
+    "n_mais": 1,
+    "n_menos": 0
    },
    "linhas_google": [
     "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
@@ -4195,6 +4191,7 @@
     "Estrutura Orgânica",
     "Planos",
     "Casa de Espetáculos e Cultura da Sertã",
+    "Formação / Atelier / Oficinas",
     "Projetos Cofinanciados",
     "Maranho da Sertã reconhecido com Prémio Cinco Estrelas Regiões",
     "Espaços de Cowork e Incubação",
@@ -4220,8 +4217,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "site",
-   "erro_site": ""
+   "via": "google",
+   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4410,7 +4407,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-12T14:01:01.907289+00:00",
+   "verificado": "2026-11-12T15:00:53.755756+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4651,8 +4648,8 @@
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Portagens devem subir 3,83% em 2027. Saiba quanto pode pagar a mais",
-    "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Simulador de apoio para os carros elétricos",
+    "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (12 a 18 de outubro)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
@@ -4698,6 +4695,7 @@
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Combustíveis",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
+    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "GÁS - Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
@@ -4717,6 +4715,7 @@
     "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
+    "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Entrevista: Cuidado com as Obrigações do Tesouro, para não ter prejuízo (António Ribeiro, DECO PROTeste)",
     "PodTEXT | Antes de entregar o IRS confirme esta página no Portal das Finanças",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
@@ -4732,19 +4731,20 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-12T14:01:01.907289+00:00",
+   "verificado": "2026-11-12T15:00:53.755756+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-12T13:01:09.156632+00:00",
+   "mudou": "2026-11-12T15:00:53.755756+00:00",
    "mudanca": {
     "mais": [
-     "Uma casa de 100 m² custa hoje mais de 10 anos de salário médio. Em 2016 eram 6"
+     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)",
+     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
