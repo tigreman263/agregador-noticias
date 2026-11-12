@@ -816,7 +816,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-12T09:01:03.125620+00:00"
+   "ultima": "2026-11-12T10:01:00.657823+00:00"
   },
   "rondoniaaovivo.com": {
    "nome": "Rondoniaovivo.com",
@@ -1699,48 +1699,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T10:01:00.657823+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T10:01:00.657823+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-10T09:46:04.973782+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 541,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-10T10:46:00.230111+00:00",
    "pesquisas": [
@@ -3427,11 +3406,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-12T10:01:00.657823+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 532,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 483,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-12T09:01:03.125620+00:00",
-  "contaspoupanca.pt": "2026-11-12T09:01:03.125620+00:00"
+  "cm-serta.pt": "2026-11-12T10:01:00.657823+00:00",
+  "contaspoupanca.pt": "2026-11-12T10:01:00.657823+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3439,8 +3457,8 @@
   "contaspoupanca.pt": "2026-11-11T16:45:45.684995+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-12T09:01:03.125620+00:00",
-  "Apoio fundo ambiental": "2026-11-12T09:01:03.125620+00:00"
+  "Sertã": "2026-11-12T10:01:00.657823+00:00",
+  "Apoio fundo ambiental": "2026-11-12T10:01:00.657823+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4101,7 +4119,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-12T09:01:03.125620+00:00",
+   "verificado": "2026-11-12T10:01:00.657823+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4275,31 +4293,28 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
+    "Última hora",
     "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
     "Última hora",
     "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
-    "Última hora",
-    "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
-    "Última hora",
-    "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas",
-    "Última hora",
-    "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
-    "Última hora",
-    "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
-    "Última hora",
-    "SERTÃ: Susana Lucas (PSD) preocupada com a habitação e fixação de jovens",
     "Última hora",
     "Todas as notícias",
     "Início",
     "Notícias",
     "Todas as notícias",
+    "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
+    "Castelo Branco",
+    "Beira Baixa",
+    "12-11-2026",
+    "Última hora",
+    "Suspeito de 41 anos foi detido pela GNR após uma denúncia por ameaças",
     "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
     "Cernache do Bonjardim",
     "Beira Baixa",
     "Sertã",
     "11-11-2026",
     "Última hora",
-    "Município já sinalizou",
     "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
     "11-11-2026",
     "Última hora",
@@ -4307,25 +4322,21 @@
     "Beira Baixa",
     "Sertã",
     "11-11-2026",
-    "Última hora",
     "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas",
     "Beira Baixa",
     "Médio Tejo",
     "Nacional",
     "10-11-2026",
-    "Última hora",
     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
     "Notícias",
     "Sertã",
     "Beira Baixa",
     "10-11-2026",
-    "Última hora",
     "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
     "Castelo Branco",
     "Beira Baixa",
     "Proença-a-Nova",
     "10-11-2026",
-    "Última hora",
     "PAMPILHOSA DA SERRA: Estabilização de talude avança com investimento de cerca de 1 ME",
     "Pampilhosa da Serra",
     "Oleiros",
@@ -4353,15 +4364,10 @@
     "Sertã",
     "Beira Baixa",
     "10-11-2026",
-    "Última hora",
     "MAU TEMPO: Governo declara “Situação de Alerta” em todo o Continente",
     "Beira Baixa",
     "Médio Tejo",
     "Nacional",
-    "10-11-2026",
-    "MAÇÃO/Cardigos: Joaquim da Silva Tavares abriu a porta a outras homenagens",
-    "Mação",
-    "Médio Tejo",
     "10-11-2026",
     "1",
     "2",
@@ -4376,21 +4382,33 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-12T09:01:03.125620+00:00",
+   "verificado": "2026-11-12T10:01:00.657823+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-12T07:01:04.855471+00:00",
+   "mudou": "2026-11-12T10:01:00.657823+00:00",
    "mudanca": {
     "mais": [
-     "quinta-feira, 12 novembro 2026"
+     "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
+     "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
+     "Castelo Branco",
+     "Beira Baixa",
+     "Suspeito de 41 anos foi detido pela GNR após uma denúncia por ameaças"
     ],
     "menos": [
-     "quarta-feira, 11 novembro 2026"
+     "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
+     "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas",
+     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
+     "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
+     "SERTÃ: Susana Lucas (PSD) preocupada com a habitação e fixação de jovens",
+     "Município já sinalizou",
+     "MAÇÃO/Cardigos: Joaquim da Silva Tavares abriu a porta a outras homenagens",
+     "Mação",
+     "Médio Tejo"
     ],
-    "n_mais": 1,
-    "n_menos": 1
+    "n_mais": 5,
+    "n_menos": 9
    },
    "via": "site",
    "erro_site": ""
@@ -4596,6 +4614,7 @@
   "https://contaspoupanca.pt/": {
    "linhas_google": [
     "Contas-Poupança | Dê um aumento a si próprio",
+    "Simulador de amortização crédito à habitação",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Simulador de apoio para os carros elétricos",
@@ -4682,16 +4701,16 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-12T09:01:03.125620+00:00",
+   "verificado": "2026-11-12T10:01:00.657823+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-12T09:01:03.125620+00:00",
+   "mudou": "2026-11-12T10:01:00.657823+00:00",
    "mudanca": {
     "mais": [
-     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança"
+     "Simulador de amortização crédito à habitação"
     ],
     "menos": [],
     "n_mais": 1,
