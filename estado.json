@@ -848,15 +848,6 @@
   {
    "tipo": "resumo",
    "ts": "2026-11-05T08:16:21.796256+00:00",
-   "titulo": "Vale Eficiência: DECO consegue resposta para 28 mil famílias que tinham sido esquecidas",
-   "link": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNLXJYMnZ1TW53TTJMNmJTWm05YmpYQ1hvTGJHNkh6MWQxaDJVc1MxWS0yMUF4eEJZUVpYTVJnMWR0Y2xXYjNJd3EtZ2xDMXpLd3pzbHFPOVVtbUVMTk5meDRFaGxCLWlsMTFvOVdjR1FreTVCbDdMaThjV3FmaTRLVjNoaUJVLWdPemJZbENOU3FmNkdYc2FqNW50VjA1ZEJQV2x1MG9fcDNpYTJtU0NJV0JhbDNCeUJnSzdyNm5VWVFoZVBEanRmMVRHbTVPVnM?oc=5",
-   "fonte": "SAPO",
-   "nota": 30.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
-   "tipo": "resumo",
-   "ts": "2026-11-05T08:16:21.796256+00:00",
    "titulo": "Vânia Jesus quer Porto Santo “100% renovável” e igualdade de acesso ao Fundo Ambiental",
    "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeWRERkd5dEhTbFU5MDk4dnRsTU5GMG9aOU1ackR0OTFvZjRlcGRYcmFrZ1B1c1VIY0RkMVRkQ0FnVWdCYlh6dFdUX01qdy1DcVR2UVVXTDZ3dXM5VXU3N0hNd2pheTlDUnhGYkctMzNHLVRVWjFhVXVpeVNaMEM2Q2ZOVDdIYVhJYzdBeU1VbGxwNDYxMFQ0LVVzY21INm5kSHVmekVKTTA4RUw3YjQzLWpuRzR5dnRldy1xN3ZoM2s?oc=5",
    "fonte": "Funchal Notícias",
@@ -1744,48 +1735,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T16:01:38.622216+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-10T15:45:59.574674+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 541,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 487,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-10T16:46:02.272286+00:00",
    "pesquisas": [
@@ -3474,11 +3435,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-12T16:01:38.622216+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 528,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 483,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-12T15:00:53.755756+00:00",
-  "contaspoupanca.pt": "2026-11-12T15:00:53.755756+00:00"
+  "cm-serta.pt": "2026-11-12T16:01:38.622216+00:00",
+  "contaspoupanca.pt": "2026-11-12T16:01:38.622216+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3486,8 +3486,8 @@
   "contaspoupanca.pt": "2026-11-11T16:45:45.684995+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-12T15:00:53.755756+00:00",
-  "Apoio fundo ambiental": "2026-11-12T15:00:53.755756+00:00"
+  "Sertã": "2026-11-12T16:01:38.622216+00:00",
+  "Apoio fundo ambiental": "2026-11-12T16:01:38.622216+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4148,7 +4148,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-12T15:00:53.755756+00:00",
+   "verificado": "2026-11-12T16:01:38.622216+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4217,8 +4217,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4407,7 +4407,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-12T15:00:53.755756+00:00",
+   "verificado": "2026-11-12T16:01:38.622216+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4641,8 +4641,8 @@
    "linhas_google": [
     "Contas-Poupança | Dê um aumento a si próprio",
     "Simulador de amortização crédito à habitação",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
@@ -4671,28 +4671,29 @@
     "IRS",
     "Subscrever Newsletter",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
+    "Esta semana no podcast Contas-poupança: três decisões financeiras que podem fazer muita diferença nas suas contas",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
-    "Vamos a Contas: Bolsas a cair — devo investir agora ou esperar?",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "Investimentos",
-    "Ministério das Finanças esclarece polémica sobre limites impostos pela AT para a isenção de mais-valias",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (7 agosto de 2026)",
     "IMI",
-    "Vamos a contas: \"Tenho 54 anos e tenho tudo em Certificados de Aforro. Ainda vou a tempo de investir?\"",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (14 agosto de 2026)",
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
+    "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
     "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
+    "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Gasolina já custa menos de 2 euros em seis marcas. Veja qual é a mais barata esta semana",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
+    "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
     "Combustíveis",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
@@ -4702,10 +4703,9 @@
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "VÍDEO - Os Certificados de Aforro voltaram a valer a pena?",
-    "VÍDEO - Pode resgatar o seu PPR sem penalização só até ao fim do ano",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
+    "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
-    "Como falar de dinheiro aos filhos: as dicas dos especialistas",
     "Plataforma dos Certificados de Aforro está em baixo, mas há alternativas",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Uma casa de 100 m² custa hoje mais de 10 anos de salário médio. Em 2016 eram 6",
@@ -4727,24 +4727,28 @@
     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "Vamos a contas: Vale a pena amortizar um pouco todos os meses na prestação do crédito à habitação?",
-    "Vamos a contas: A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
+    "Vamos a contas: Invisto num PPR ou num ETF e ponho o dinheiro em Certificados de Aforro ou na Trade Republic?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-12T15:00:53.755756+00:00",
+   "verificado": "2026-11-12T16:01:38.622216+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-12T15:00:53.755756+00:00",
+   "mudou": "2026-11-12T16:01:38.622216+00:00",
    "mudanca": {
     "mais": [
-     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)",
-     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana"
+     "Esta semana no podcast Contas-poupança: três decisões financeiras que podem fazer muita diferença nas suas contas",
+     "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
+     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
+     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
+     "Depósitos a Prazo: segurança ou perda silenciosa?",
+     "Vamos a contas: Invisto num PPR ou num ETF e ponho o dinheiro em Certificados de Aforro ou na Trade Republic?"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 6,
     "n_menos": 0
    }
   }
