@@ -848,15 +848,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-05T18:49:10.351501+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-06T07:46:02.739066+00:00",
    "titulo": "Mudou: Radio condestável",
    "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
@@ -1745,48 +1736,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T21:01:01.512670+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-10T20:46:07.155183+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 543,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 1,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-10T21:46:03.071202+00:00",
    "pesquisas": [
@@ -3475,11 +3436,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-12T21:01:01.512670+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 483,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-12T20:01:08.045656+00:00",
-  "contaspoupanca.pt": "2026-11-12T20:01:08.045656+00:00"
+  "cm-serta.pt": "2026-11-12T21:01:01.512670+00:00",
+  "contaspoupanca.pt": "2026-11-12T21:01:01.512670+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3487,8 +3487,8 @@
   "contaspoupanca.pt": "2026-11-12T17:00:52.404790+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-12T20:01:08.045656+00:00",
-  "Apoio fundo ambiental": "2026-11-12T20:01:08.045656+00:00"
+  "Sertã": "2026-11-12T21:01:01.512670+00:00",
+  "Apoio fundo ambiental": "2026-11-12T21:01:01.512670+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4149,7 +4149,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-12T20:01:08.045656+00:00",
+   "verificado": "2026-11-12T21:01:01.512670+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4406,7 +4406,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-12T20:01:08.045656+00:00",
+   "verificado": "2026-11-12T21:01:01.512670+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4660,13 +4660,13 @@
     "Portagens devem subir 3,83% em 2027. Saiba quanto pode pagar a mais",
     "Simulador de apoio para os carros elétricos",
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
+    "PPR",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (12 a 18 de outubro)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
-    "PPR",
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
@@ -4684,10 +4684,8 @@
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
-    "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "Investimentos",
-    "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (7 agosto de 2026)",
@@ -4696,8 +4694,8 @@
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (14 agosto de 2026)",
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
+    "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
-    "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
     "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
@@ -4706,7 +4704,6 @@
     "Simulador de Juros compostos",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
-    "Onde estão os melhores juros com capital garantido - Fevereiro 2026",
     "Combustíveis",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
@@ -4715,9 +4712,11 @@
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
+    "VÍDEO - Os Certificados de Aforro voltaram a valer a pena?",
+    "VÍDEO - Pode resgatar o seu PPR sem penalização só até ao fim do ano",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
-    "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
+    "Como falar de dinheiro aos filhos: as dicas dos especialistas",
     "Plataforma dos Certificados de Aforro está em baixo, mas há alternativas",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
@@ -4729,8 +4728,10 @@
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
+    "Entrevista: Cuidado com as Obrigações do Tesouro, para não ter prejuízo (António Ribeiro, DECO PROTeste)",
     "PodTEXT | Antes de entregar o IRS confirme esta página no Portal das Finanças",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
+    "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
     "PodTEXT | \"Para que serve pedir fatura do café se depois paga IRS na mesma?\"",
@@ -4739,26 +4740,29 @@
     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "Vamos a contas: Vale a pena amortizar um pouco todos os meses na prestação do crédito à habitação?",
-    "Vamos a contas: Invisto num PPR ou num ETF e ponho o dinheiro em Certificados de Aforro ou na Trade Republic?",
+    "Vamos a contas: A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-12T20:01:08.045656+00:00",
+   "verificado": "2026-11-12T21:01:01.512670+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-12T20:01:08.045656+00:00",
+   "mudou": "2026-11-12T21:01:01.512670+00:00",
    "mudanca": {
     "mais": [
-     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
-     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
-     "Onde estão os melhores juros com capital garantido - Fevereiro 2026",
-     "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?"
+     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
+     "VÍDEO - Os Certificados de Aforro voltaram a valer a pena?",
+     "VÍDEO - Pode resgatar o seu PPR sem penalização só até ao fim do ano",
+     "Como falar de dinheiro aos filhos: as dicas dos especialistas",
+     "Entrevista: Cuidado com as Obrigações do Tesouro, para não ter prejuízo (António Ribeiro, DECO PROTeste)",
+     "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
+     "Vamos a contas: A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?"
     ],
     "menos": [],
-    "n_mais": 4,
+    "n_mais": 7,
     "n_menos": 0
    }
   }
