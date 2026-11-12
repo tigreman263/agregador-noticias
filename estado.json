@@ -847,24 +847,6 @@
  "ultima_descoberta": "2026-11-12",
  "enviados": [
   {
-   "tipo": "resumo",
-   "ts": "2026-11-05T08:16:21.796256+00:00",
-   "titulo": "PSD salienta que Porto Santo prepara teste de funcionamento exclusivo com energias renováveis",
-   "link": "https://sapo.pt/artigo/psd-salienta-que-porto-santo-prepara-teste-de-funcionamento-exclusivo-com-energias-renovaveis-6aeb0f893a69d6d8c096ad2f",
-   "fonte": "SAPO",
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-05T11:46:05.455082+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
    "tipo": "pagina",
    "ts": "2026-11-05T12:46:00.358080+00:00",
    "titulo": "Mudou: Radio condestável",
@@ -1745,48 +1727,27 @@
    "fonte": "SAPO",
    "nota": 19.5,
    "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T18:01:06.006566+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T18:01:06.006566+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-10T17:45:56.962241+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 541,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 487,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 3,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-10T18:46:04.000070+00:00",
    "pesquisas": [
@@ -3475,11 +3436,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-12T18:01:06.006566+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 528,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 483,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-12T17:01:06.994916+00:00",
-  "contaspoupanca.pt": "2026-11-12T17:01:06.994916+00:00"
+  "cm-serta.pt": "2026-11-12T18:01:06.006566+00:00",
+  "contaspoupanca.pt": "2026-11-12T18:01:06.006566+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3487,8 +3487,8 @@
   "contaspoupanca.pt": "2026-11-12T17:00:52.404790+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-12T17:01:06.994916+00:00",
-  "Apoio fundo ambiental": "2026-11-12T17:01:06.994916+00:00"
+  "Sertã": "2026-11-12T18:01:06.006566+00:00",
+  "Apoio fundo ambiental": "2026-11-12T18:01:06.006566+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4149,7 +4149,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-12T17:01:06.994916+00:00",
+   "verificado": "2026-11-12T18:01:06.006566+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4320,6 +4320,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "PENAMACOR: Município e Valverde del Fresno assinam ata de reconhecimento da fronteira",
+    "Última hora",
     "SERTÃ: Vereador do Chega volta a pedir passagem pedonal sobre o IC8",
     "Última hora",
     "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
@@ -4332,12 +4334,33 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "PENAMACOR: Município e Valverde del Fresno assinam ata de reconhecimento da fronteira",
+    "Penamacor",
+    "Beira Baixa",
+    "12-11-2026",
+    "Última hora",
+    "Foi também uma oportunidade para estreitar relações",
+    "GÓIS: ATL de Natal com inscrições abertas",
+    "Mação",
+    "Beira Baixa",
+    "12-11-2026",
+    "FERREIRA DO ZÊZERE: Acordeão volta a subir ao palco para mais um festival",
+    "Ferreira do Zêzere",
+    "Médio Tejo",
+    "12-11-2026",
+    "VILA DE REI: Rede de Bibliotecas organiza mais uma “Estafeta de Contos”",
+    "Vila de Rei",
+    "Beira Baixa",
+    "12-11-2026",
+    "SERTÃ: Município promove sessão de esclarecimentos sobre aviso PEPAC",
+    "Sertã",
+    "Beira Baixa",
+    "12-11-2026",
     "SERTÃ: Vereador do Chega volta a pedir passagem pedonal sobre o IC8",
     "Sertã",
     "Beira Baixa",
     "12-11-2026",
     "Última hora",
-    "Presidente da câmara aponta novo estudo prévio",
     "SERTÃ: Cidadãos juntam-se em vigília pelo direito à habitação",
     "Sertã",
     "Cernache do Bonjardim",
@@ -4370,31 +4393,6 @@
     "Médio Tejo",
     "Nacional",
     "10-11-2026",
-    "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
-    "Notícias",
-    "Sertã",
-    "Beira Baixa",
-    "10-11-2026",
-    "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
-    "Castelo Branco",
-    "Beira Baixa",
-    "Proença-a-Nova",
-    "10-11-2026",
-    "PAMPILHOSA DA SERRA: Estabilização de talude avança com investimento de cerca de 1 ME",
-    "Pampilhosa da Serra",
-    "Oleiros",
-    "Beira Baixa",
-    "Região",
-    "10-11-2026",
-    "CERNACHE DO BONJARDIM: Centro Social reúne sócios em Assembleia Geral",
-    "Cernache do Bonjardim",
-    "Sertã",
-    "Médio Tejo",
-    "10-11-2026",
-    "SARDOAL: Couve de Valhascos e Azeite Novo dão mote a festival",
-    "Sardoal",
-    "Médio Tejo",
-    "10-11-2026",
     "1",
     "2",
     "3",
@@ -4408,34 +4406,46 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-12T17:01:06.994916+00:00",
+   "verificado": "2026-11-12T18:01:06.006566+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-12T13:01:09.156632+00:00",
+   "mudou": "2026-11-12T18:01:06.006566+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Vereador do Chega volta a pedir passagem pedonal sobre o IC8",
+     "PENAMACOR: Município e Valverde del Fresno assinam ata de reconhecimento da fronteira",
      "Última hora",
-     "SERTÃ: Vereador do Chega volta a pedir passagem pedonal sobre o IC8",
-     "Sertã",
-     "Beira Baixa",
+     "PENAMACOR: Município e Valverde del Fresno assinam ata de reconhecimento da fronteira",
+     "Penamacor",
      "Última hora",
-     "Presidente da câmara aponta novo estudo prévio"
+     "Foi também uma oportunidade para estreitar relações",
+     "GÓIS: ATL de Natal com inscrições abertas",
+     "Mação",
+     "FERREIRA DO ZÊZERE: Acordeão volta a subir ao palco para mais um festival",
+     "Ferreira do Zêzere",
+     "VILA DE REI: Rede de Bibliotecas organiza mais uma “Estafeta de Contos”",
+     "Vila de Rei",
+     "SERTÃ: Município promove sessão de esclarecimentos sobre aviso PEPAC"
     ],
     "menos": [
-     "Amanhã, dia 13 de novembro a partir das 19:00",
-     "REGIÃO: APA divulgou concelhos com risco de inundações",
-     "Figueiró dos Vinhos",
-     "Pampilhosa da Serra",
-     "Castanheira de Pera",
+     "Presidente da câmara aponta novo estudo prévio",
+     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
+     "Notícias",
+     "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
      "Castelo Branco",
-     "Penamacor",
-     "Região"
+     "Proença-a-Nova",
+     "PAMPILHOSA DA SERRA: Estabilização de talude avança com investimento de cerca de 1 ME",
+     "Pampilhosa da Serra",
+     "Oleiros",
+     "Região",
+     "CERNACHE DO BONJARDIM: Centro Social reúne sócios em Assembleia Geral",
+     "Cernache do Bonjardim",
+     "SARDOAL: Couve de Valhascos e Azeite Novo dão mote a festival",
+     "Sardoal"
     ],
-    "n_mais": 7,
-    "n_menos": 8
+    "n_mais": 13,
+    "n_menos": 14
    },
    "via": "site",
    "erro_site": ""
@@ -4671,12 +4681,12 @@
     "IRS",
     "Subscrever Newsletter",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
-    "Esta semana no podcast Contas-poupança: três decisões financeiras que podem fazer muita diferença nas suas contas",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "Investimentos",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
+    "Ganhamos bem e mesmo assim não sobra dinheiro — o que estamos a fazer mal?",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (7 agosto de 2026)",
     "IMI",
@@ -4684,7 +4694,6 @@
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (14 agosto de 2026)",
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
-    "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
@@ -4692,9 +4701,9 @@
     "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Gasolina já custa menos de 2 euros em seis marcas. Veja qual é a mais barata esta semana",
-    "Simulador de Juros compostos",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
+    "Onde estão os melhores juros com capital garantido - Fevereiro 2026",
     "Combustíveis",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
@@ -4718,8 +4727,8 @@
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
-    "Entrevista: Cuidado com as Obrigações do Tesouro, para não ter prejuízo (António Ribeiro, DECO PROTeste)",
     "PodTEXT | Antes de entregar o IRS confirme esta página no Portal das Finanças",
+    "Simulador de Juros compostos",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
@@ -4733,19 +4742,20 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-12T17:01:06.994916+00:00",
+   "verificado": "2026-11-12T18:01:06.006566+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-12T17:01:06.994916+00:00",
+   "mudou": "2026-11-12T18:01:06.006566+00:00",
    "mudanca": {
     "mais": [
-     "Simulador de Juros compostos"
+     "Ganhamos bem e mesmo assim não sobra dinheiro — o que estamos a fazer mal?",
+     "Onde estão os melhores juros com capital garantido - Fevereiro 2026"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
