@@ -816,7 +816,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-12T02:01:00.003844+00:00"
+   "ultima": "2026-11-12T03:01:02.207171+00:00"
   },
   "rondoniaaovivo.com": {
    "nome": "Rondoniaovivo.com",
@@ -1666,36 +1666,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-10T02:45:59.115993+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 541,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 495,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-10T03:46:23.301999+00:00",
    "pesquisas": [
@@ -3382,10 +3352,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-12T03:01:02.207171+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 532,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 485,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-12T02:01:00.003844+00:00",
+  "cm-serta.pt": "2026-11-12T03:01:02.207171+00:00",
   "contaspoupanca.pt": "2026-11-11T22:01:10.050981+00:00"
  },
  "lentos": {},
@@ -3394,8 +3394,8 @@
   "contaspoupanca.pt": "2026-11-11T16:45:45.684995+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-12T02:01:00.003844+00:00",
-  "Apoio fundo ambiental": "2026-11-12T02:01:00.003844+00:00"
+  "Sertã": "2026-11-12T03:01:02.207171+00:00",
+  "Apoio fundo ambiental": "2026-11-12T03:01:02.207171+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
