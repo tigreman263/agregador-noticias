@@ -71,7 +71,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-11T09:46:02.251132+00:00"
+   "ultima": "2026-11-12T09:01:03.125620+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -708,7 +708,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: 28 mil consumidores elegíveis vão receber apoio a partir de janeiro de 2027",
-   "ultima": "2026-11-11T09:46:02.251132+00:00"
+   "ultima": "2026-11-12T09:01:03.125620+00:00"
   },
   "avozdoalgarve.pt": {
    "nome": "A voz do Algarve",
@@ -720,7 +720,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "DECO informa sobre... Vale Eficiência",
-   "ultima": "2026-11-06T20:16:04.198068+00:00"
+   "ultima": "2026-11-12T09:01:03.125620+00:00"
   },
   "regiao-sul.pt": {
    "nome": "diariOnline Região Sul",
@@ -756,7 +756,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Ministra do Ambiente presidiu a ato de assinatura de financiamento do ciclo urbano da água através do Fundo Ambiental",
-   "ultima": "2026-11-11T09:46:02.251132+00:00"
+   "ultima": "2026-11-12T09:01:03.125620+00:00"
   },
   "ce.gov.br": {
    "nome": "Governo do Estado do Ceará",
@@ -780,7 +780,7 @@
     "Sertã"
    ],
    "exemplo": "Com máxima de 43°C, Floresta, no Sertão de PE, antecipa saída de estudantes das escolas",
-   "ultima": "2026-11-11T09:46:02.251132+00:00"
+   "ultima": "2026-11-12T09:01:03.125620+00:00"
   },
   "folhape.com.br": {
    "nome": "Folha PE",
@@ -792,7 +792,7 @@
     "Sertã"
    ],
    "exemplo": "Sertão: com máxima prevista de 43ºC, Floresta reduz horário de escolas e creches",
-   "ultima": "2026-11-11T09:46:02.251132+00:00"
+   "ultima": "2026-11-12T09:01:03.125620+00:00"
   },
   "idealista.pt": {
    "nome": "Idealista",
@@ -816,7 +816,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-12T08:01:02.235553+00:00"
+   "ultima": "2026-11-12T09:01:03.125620+00:00"
   },
   "rondoniaaovivo.com": {
    "nome": "Rondoniaovivo.com",
@@ -828,7 +828,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-11T18:46:00.361654+00:00"
+   "ultima": "2026-11-12T09:01:03.125620+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -843,7 +843,7 @@
    "ultima": "2026-11-10T21:46:03.071202+00:00"
   }
  },
- "ultima_descoberta": "2026-11-11",
+ "ultima_descoberta": "2026-11-12",
  "enviados": [
   {
    "tipo": "resumo",
@@ -1690,48 +1690,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T09:01:03.125620+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-10T08:46:10.751401+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 541,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 1,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-10T09:46:04.973782+00:00",
    "pesquisas": [
@@ -3418,11 +3388,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-12T09:01:03.125620+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 532,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 481,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-12T08:01:02.235553+00:00",
-  "contaspoupanca.pt": "2026-11-12T08:01:02.235553+00:00"
+  "cm-serta.pt": "2026-11-12T09:01:03.125620+00:00",
+  "contaspoupanca.pt": "2026-11-12T09:01:03.125620+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3430,8 +3439,8 @@
   "contaspoupanca.pt": "2026-11-11T16:45:45.684995+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-12T08:01:02.235553+00:00",
-  "Apoio fundo ambiental": "2026-11-12T08:01:02.235553+00:00"
+  "Sertã": "2026-11-12T09:01:03.125620+00:00",
+  "Apoio fundo ambiental": "2026-11-12T09:01:03.125620+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4092,7 +4101,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-12T08:01:02.235553+00:00",
+   "verificado": "2026-11-12T09:01:03.125620+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4367,7 +4376,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-12T08:01:02.235553+00:00",
+   "verificado": "2026-11-12T09:01:03.125620+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4660,6 +4669,7 @@
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Entrevista: Cuidado com as Obrigações do Tesouro, para não ter prejuízo (António Ribeiro, DECO PROTeste)",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
+    "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
@@ -4672,16 +4682,16 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-12T08:01:02.235553+00:00",
+   "verificado": "2026-11-12T09:01:03.125620+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-12T08:01:02.235553+00:00",
+   "mudou": "2026-11-12T09:01:03.125620+00:00",
    "mudanca": {
     "mais": [
-     "Use esta MINUTA para saber quanto está a render (ou não) o seu PPR"
+     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança"
     ],
     "menos": [],
     "n_mais": 1,
