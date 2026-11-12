@@ -22,7 +22,8 @@
   "b4acd23ecea8311c": "2026-11-06T22:16:08.554432+00:00",
   "3b0df607940fbbba": "2026-11-09T12:46:00.406852+00:00",
   "461524cdb57ccdea": "2026-11-10T13:46:00.075469+00:00",
-  "77a5cf07f29cf865": "2026-11-10T20:46:07.155183+00:00"
+  "77a5cf07f29cf865": "2026-11-10T20:46:07.155183+00:00",
+  "1ef7f25deb2d9948": "2026-11-12T17:01:06.994916+00:00"
  },
  "resumo": [],
  "adiados": [],
@@ -45,7 +46,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "b7cc1c6f08db7977",
     "2ebddc8f6582ce2d",
     "607a60efa2ab6b9d",
     "86e21b6273ef5fd5",
@@ -64,14 +64,15 @@
     "262b6d4a3e5cf6a9",
     "3dd133dba22282ca",
     "f13ca35730748cfa",
-    "6df922739d84e757"
+    "6df922739d84e757",
+    "1ef7f25deb2d9948"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-12T09:01:03.125620+00:00"
+   "ultima": "2026-11-12T17:01:06.994916+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -845,24 +846,6 @@
  },
  "ultima_descoberta": "2026-11-12",
  "enviados": [
-  {
-   "tipo": "resumo",
-   "ts": "2026-11-05T08:16:21.796256+00:00",
-   "titulo": "Vânia Jesus quer Porto Santo “100% renovável” e igualdade de acesso ao Fundo Ambiental",
-   "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQeWRERkd5dEhTbFU5MDk4dnRsTU5GMG9aOU1ackR0OTFvZjRlcGRYcmFrZ1B1c1VIY0RkMVRkQ0FnVWdCYlh6dFdUX01qdy1DcVR2UVVXTDZ3dXM5VXU3N0hNd2pheTlDUnhGYkctMzNHLVRVWjFhVXVpeVNaMEM2Q2ZOVDdIYVhJYzdBeU1VbGxwNDYxMFQ0LVVzY21INm5kSHVmekVKTTA4RUw3YjQzLWpuRzR5dnRldy1xN3ZoM2s?oc=5",
-   "fonte": "Funchal Notícias",
-   "nota": 23.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
-   "tipo": "resumo",
-   "ts": "2026-11-05T08:16:21.796256+00:00",
-   "titulo": "Vânia Jesus defende Porto Santo 100% renovável e igualdade no acesso ao Fundo Ambiental",
-   "link": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxNMXk5ZF9uNlE5RE9TZzgyRTY1MExqUDZoRGl5a3VZMXVoM2h0MzVDMWNYa3llOVQyRndybUdTS2gzdWJTYUE4Mm1NVXJLNDMzZ292Z0ZnTEpvcms4WGNzdkU1TkV5aXZ5VlNNbXdYWEUyNlJ1U3kyelE4N28zdUN0TWdPbmhaMDMxdU9IZUI4ZUh6SzV0Q1N1clcxcV9mSmUxcnpqWmRiVG5RU080VnNYbXR4bktyZGlDbGhuUXlwdHJ5elZaUC1mY3VoTUt2S1FLamlqQk02U1RwM016OXluOA?oc=5",
-   "fonte": "JM Madeira",
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
   {
    "tipo": "resumo",
    "ts": "2026-11-05T08:16:21.796256+00:00",
@@ -1744,48 +1727,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T17:01:06.994916+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-12T17:01:06.994916+00:00",
+   "titulo": "SERTÃ: Município promove sessão de esclarecimentos sobre aviso PEPAC",
+   "link": "https://sapo.pt/artigo/serta-municipio-promove-sessao-de-esclarecimentos-sobre-aviso-pepac-6af5efb48caa48e7be897756",
+   "fonte": "SAPO",
+   "nota": 19.5,
+   "pesquisa": "Sertã"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-10T16:46:02.272286+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 541,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 487,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-10T17:45:56.962241+00:00",
    "pesquisas": [
@@ -3474,20 +3436,59 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-12T17:01:06.994916+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 529,
+     "relevantes": 1,
+     "alertas": 1
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 479,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 1,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-12T16:01:38.622216+00:00",
-  "contaspoupanca.pt": "2026-11-12T16:01:38.622216+00:00"
+  "cm-serta.pt": "2026-11-12T17:01:06.994916+00:00",
+  "contaspoupanca.pt": "2026-11-12T17:01:06.994916+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-12T15:00:48.332749+00:00",
-  "contaspoupanca.pt": "2026-11-11T16:45:45.684995+00:00"
+  "contaspoupanca.pt": "2026-11-12T17:00:52.404790+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-12T16:01:38.622216+00:00",
-  "Apoio fundo ambiental": "2026-11-12T16:01:38.622216+00:00"
+  "Sertã": "2026-11-12T17:01:06.994916+00:00",
+  "Apoio fundo ambiental": "2026-11-12T17:01:06.994916+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4148,7 +4149,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-12T16:01:38.622216+00:00",
+   "verificado": "2026-11-12T17:01:06.994916+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4407,7 +4408,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-12T16:01:38.622216+00:00",
+   "verificado": "2026-11-12T17:01:06.994916+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4641,9 +4642,8 @@
    "linhas_google": [
     "Contas-Poupança | Dê um aumento a si próprio",
     "Simulador de amortização crédito à habitação",
-    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
-    "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
+    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
@@ -4692,6 +4692,7 @@
     "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Gasolina já custa menos de 2 euros em seis marcas. Veja qual é a mais barata esta semana",
+    "Simulador de Juros compostos",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
     "Combustíveis",
@@ -4708,6 +4709,7 @@
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
     "Plataforma dos Certificados de Aforro está em baixo, mas há alternativas",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
+    "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "Uma casa de 100 m² custa hoje mais de 10 anos de salário médio. Em 2016 eram 6",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
@@ -4731,24 +4733,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-12T16:01:38.622216+00:00",
+   "verificado": "2026-11-12T17:01:06.994916+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-12T16:01:38.622216+00:00",
+   "mudou": "2026-11-12T17:01:06.994916+00:00",
    "mudanca": {
     "mais": [
-     "Esta semana no podcast Contas-poupança: três decisões financeiras que podem fazer muita diferença nas suas contas",
-     "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
-     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
-     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
-     "Depósitos a Prazo: segurança ou perda silenciosa?",
-     "Vamos a contas: Invisto num PPR ou num ETF e ponho o dinheiro em Certificados de Aforro ou na Trade Republic?"
+     "Simulador de Juros compostos"
     ],
     "menos": [],
-    "n_mais": 6,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
