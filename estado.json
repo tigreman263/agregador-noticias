@@ -1749,45 +1749,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-10T21:46:03.071202+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 542,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 4,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-10T22:45:57.044207+00:00",
    "pesquisas": [
     {
@@ -3475,11 +3436,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-12T22:01:04.486787+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 483,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 4,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-12T21:01:01.512670+00:00",
-  "contaspoupanca.pt": "2026-11-12T21:01:01.512670+00:00"
+  "cm-serta.pt": "2026-11-12T22:01:04.486787+00:00",
+  "contaspoupanca.pt": "2026-11-12T22:01:04.486787+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3487,8 +3487,8 @@
   "contaspoupanca.pt": "2026-11-12T17:00:52.404790+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-12T21:01:01.512670+00:00",
-  "Apoio fundo ambiental": "2026-11-12T21:01:01.512670+00:00"
+  "Sertã": "2026-11-12T22:01:04.486787+00:00",
+  "Apoio fundo ambiental": "2026-11-12T22:01:04.486787+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4149,7 +4149,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-12T21:01:01.512670+00:00",
+   "verificado": "2026-11-12T22:01:04.486787+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4406,7 +4406,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-12T21:01:01.512670+00:00",
+   "verificado": "2026-11-12T22:01:04.486787+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4640,7 +4640,7 @@
     "Esses cookies nos ajudam a entender como os visitantes interagem com nosso site, obter estatísticas de acessos e utilizadores para fornecer uma melhor análise geral.",
     "Aceitar"
    ],
-   "verificado": "2026-11-11T22:01:10.050981+00:00",
+   "verificado": "2026-11-12T22:01:04.486787+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4652,8 +4652,8 @@
    "linhas_google": [
     "Contas-Poupança | Dê um aumento a si próprio",
     "Simulador de amortização crédito à habitação",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
@@ -4701,7 +4701,6 @@
     "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Gasolina já custa menos de 2 euros em seis marcas. Veja qual é a mais barata esta semana",
-    "Simulador de Juros compostos",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
     "Combustíveis",
@@ -4744,7 +4743,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-12T21:01:01.512670+00:00",
+   "verificado": "2026-11-12T22:01:04.486787+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
