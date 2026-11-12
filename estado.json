@@ -816,7 +816,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-12T10:01:00.657823+00:00"
+   "ultima": "2026-11-12T11:01:02.030861+00:00"
   },
   "rondoniaaovivo.com": {
    "nome": "Rondoniaovivo.com",
@@ -1717,48 +1717,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T11:01:02.030861+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-12T11:01:02.030861+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-10T10:46:00.230111+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 541,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-10T11:45:37.341086+00:00",
    "pesquisas": [
@@ -3445,11 +3424,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-12T11:01:02.030861+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 533,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 485,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-12T10:01:00.657823+00:00",
-  "contaspoupanca.pt": "2026-11-12T10:01:00.657823+00:00"
+  "cm-serta.pt": "2026-11-12T11:01:02.030861+00:00",
+  "contaspoupanca.pt": "2026-11-12T11:01:02.030861+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3457,8 +3475,8 @@
   "contaspoupanca.pt": "2026-11-11T16:45:45.684995+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-12T10:01:00.657823+00:00",
-  "Apoio fundo ambiental": "2026-11-12T10:01:00.657823+00:00"
+  "Sertã": "2026-11-12T11:01:02.030861+00:00",
+  "Apoio fundo ambiental": "2026-11-12T11:01:02.030861+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4119,7 +4137,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-12T10:01:00.657823+00:00",
+   "verificado": "2026-11-12T11:01:02.030861+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4303,12 +4321,21 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: Cidadãos juntam-se em vigília pelo direito à habitação",
+    "Sertã",
+    "Cernache do Bonjardim",
+    "Beira Baixa",
+    "12-11-2026",
+    "Amanhã, dia 13 de novembro a partir das 19:00",
+    "PAMPILHOSA DA SERRA: Adjudica requalificação da estrada entre Ponte de Cartamil e Fajão",
+    "Pampilhosa da Serra",
+    "Região",
+    "12-11-2026",
     "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
     "Castelo Branco",
     "Beira Baixa",
     "12-11-2026",
     "Última hora",
-    "Suspeito de 41 anos foi detido pela GNR após uma denúncia por ameaças",
     "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
     "Cernache do Bonjardim",
     "Beira Baixa",
@@ -4360,15 +4387,6 @@
     "Penamacor",
     "Região",
     "10-11-2026",
-    "SERTÃ: Susana Lucas (PSD) preocupada com a habitação e fixação de jovens",
-    "Sertã",
-    "Beira Baixa",
-    "10-11-2026",
-    "MAU TEMPO: Governo declara “Situação de Alerta” em todo o Continente",
-    "Beira Baixa",
-    "Médio Tejo",
-    "Nacional",
-    "10-11-2026",
     "1",
     "2",
     "3",
@@ -4382,33 +4400,30 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-12T10:01:00.657823+00:00",
+   "verificado": "2026-11-12T11:01:02.030861+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-12T10:01:00.657823+00:00",
+   "mudou": "2026-11-12T11:01:02.030861+00:00",
    "mudanca": {
     "mais": [
-     "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
-     "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
-     "Castelo Branco",
-     "Beira Baixa",
-     "Suspeito de 41 anos foi detido pela GNR após uma denúncia por ameaças"
+     "SERTÃ: Cidadãos juntam-se em vigília pelo direito à habitação",
+     "Cernache do Bonjardim",
+     "Amanhã, dia 13 de novembro a partir das 19:00",
+     "PAMPILHOSA DA SERRA: Adjudica requalificação da estrada entre Ponte de Cartamil e Fajão",
+     "Pampilhosa da Serra",
+     "Região"
     ],
     "menos": [
-     "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
-     "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas",
-     "SERTÃ/Charles: Serviços camarários encerrados devido à tempestade",
-     "CASTELO BRANCO: Restaurantes de Proença-a-Nova distinguidos nos Sabores ao Centro",
+     "Suspeito de 41 anos foi detido pela GNR após uma denúncia por ameaças",
      "SERTÃ: Susana Lucas (PSD) preocupada com a habitação e fixação de jovens",
-     "Município já sinalizou",
-     "MAÇÃO/Cardigos: Joaquim da Silva Tavares abriu a porta a outras homenagens",
-     "Mação",
-     "Médio Tejo"
+     "MAU TEMPO: Governo declara “Situação de Alerta” em todo o Continente",
+     "Médio Tejo",
+     "Nacional"
     ],
-    "n_mais": 5,
-    "n_menos": 9
+    "n_mais": 6,
+    "n_menos": 5
    },
    "via": "site",
    "erro_site": ""
@@ -4617,11 +4632,12 @@
     "Simulador de amortização crédito à habitação",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
-    "Simulador de apoio para os carros elétricos",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Portagens devem subir 3,83% em 2027. Saiba quanto pode pagar a mais",
+    "Simulador de apoio para os carros elétricos",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
+    "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
@@ -4679,6 +4695,7 @@
     "Como falar de dinheiro aos filhos: as dicas dos especialistas",
     "Plataforma dos Certificados de Aforro está em baixo, mas há alternativas",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
+    "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "Revista de imprensa de 5 de novembro: cabaz alimentar, salários e poupança para a reforma",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
@@ -4688,7 +4705,6 @@
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Entrevista: Cuidado com as Obrigações do Tesouro, para não ter prejuízo (António Ribeiro, DECO PROTeste)",
     "Euribor: taxa a seis meses volta a fechar a semana acima dos 3%",
-    "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
@@ -4701,16 +4717,16 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-12T10:01:00.657823+00:00",
+   "verificado": "2026-11-12T11:01:02.030861+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-12T10:01:00.657823+00:00",
+   "mudou": "2026-11-12T11:01:02.030861+00:00",
    "mudanca": {
     "mais": [
-     "Simulador de amortização crédito à habitação"
+     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana"
     ],
     "menos": [],
     "n_mais": 1,
