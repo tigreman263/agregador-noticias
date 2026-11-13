@@ -861,15 +861,6 @@
   {
    "tipo": "resumo",
    "ts": "2026-11-07T08:15:56.628159+00:00",
-   "titulo": "DECO | As famílias que tinham sido consideradas elegíveis para o Vale Eficiência II",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZGpNYUJUeHhJNVA1ZVJUWkh6OXBHaFdSRFpqZnpiemd1WlVMZm96Ml82Z0hEWUVFM0o5cm5wM0t2WTZ6a0NFUGh3bTU3NVM4MklqTW9iZnhDLTlJYWNzcWdDY3pMVkZBWGhuU2lSUW96TFpoN3VFWXBVQlIxTzNRcHZKckpyUFhZNEI3XzJHY3VFbFE5dXd3am1rVkVGR1pObTNCUEg4T1hwQWRISHV6d1F1UWxzYk0?oc=5",
-   "fonte": "Mais Algarve",
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
-   "tipo": "resumo",
-   "ts": "2026-11-07T08:15:56.628159+00:00",
    "titulo": "Ministra do Ambiente promete apoio financeiro para Jardim Universitário de Viseu",
    "link": "https://sapo.pt/artigo/ministra-do-ambiente-promete-apoio-financeiro-para-jardim-universitario-de-viseu-6aed95a513cbfc601c3e5922",
    "fonte": "SAPO",
@@ -1757,48 +1748,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-13T20:01:20.168573+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-11T19:46:03.935452+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 530,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-11T21:00:57.929565+00:00",
    "pesquisas": [
@@ -3487,11 +3448,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-13T20:01:20.168573+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 526,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 480,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-13T19:01:06.682277+00:00",
-  "contaspoupanca.pt": "2026-11-13T19:01:06.682277+00:00"
+  "cm-serta.pt": "2026-11-13T20:01:20.168573+00:00",
+  "contaspoupanca.pt": "2026-11-13T20:01:20.168573+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3499,8 +3499,8 @@
   "contaspoupanca.pt": "2026-11-13T17:00:58.937270+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-13T19:01:06.682277+00:00",
-  "Apoio fundo ambiental": "2026-11-13T19:01:06.682277+00:00"
+  "Sertã": "2026-11-13T20:01:20.168573+00:00",
+  "Apoio fundo ambiental": "2026-11-13T20:01:20.168573+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4161,7 +4161,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-13T19:01:06.682277+00:00",
+   "verificado": "2026-11-13T20:01:20.168573+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4428,7 +4428,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-13T19:01:06.682277+00:00",
+   "verificado": "2026-11-13T20:01:20.168573+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4656,7 +4656,6 @@
    "linhas_google": [
     "Contas-Poupança | Dê um aumento a si próprio",
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
-    "Simulador de amortização crédito à habitação",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "ATUALIZAÇÃO | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
@@ -4685,6 +4684,7 @@
     "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
+    "Simulador de amortização crédito à habitação",
     "Subscrever Newsletter",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
@@ -4712,18 +4712,19 @@
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
     "Onde estão os melhores juros com capital garantido - Fevereiro 2026",
+    "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
     "Combustíveis",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "Podcast",
+    "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
-    "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
-    "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
     "Plataforma dos Certificados de Aforro está em baixo, mas há alternativas",
+    "VÍDEO - Como pode baixar o seu IMI no ano que vem",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "Vamos a contas: «Sou divorciada e quero investir para os meus filhos. Posso fazê-lo em meu nome?",
@@ -4735,30 +4736,32 @@
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "PodTEXT | Antes de entregar o IRS confirme esta página no Portal das Finanças",
+    "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
     "PodTEXT | \"Para que serve pedir fatura do café se depois paga IRS na mesma?\"",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
-    "Vamos a contas: Invisto num PPR ou num ETF e ponho o dinheiro em Certificados de Aforro ou na Trade Republic?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-13T19:01:06.682277+00:00",
+   "verificado": "2026-11-13T20:01:20.168573+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-13T19:01:06.682277+00:00",
+   "mudou": "2026-11-13T20:01:20.168573+00:00",
    "mudanca": {
     "mais": [
-     "ATUALIZAÇÃO | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
-     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%"
+     "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
+     "Podcast",
+     "VÍDEO - Como pode baixar o seu IMI no ano que vem",
+     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 4,
     "n_menos": 0
    }
   }
