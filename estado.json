@@ -861,24 +861,6 @@
   {
    "tipo": "resumo",
    "ts": "2026-11-07T08:15:56.628159+00:00",
-   "titulo": "DECO informa sobre... Vale Eficiência",
-   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5tUDF0RWtzcU43VEdubGtPN3dBN2pXVFh3WHNzNlR4dVM5ODFPN2REZlg4QVdLcmw0SG9TOEt0WWFfV1Q2VHZTRktBRlUydTdMRkdLQ3FTemRtdXlYaFNhUjY0OHRQTWxsQVlka1cwVTdPcDhpb1dsel9qUUc?oc=5",
-   "fonte": "A voz do Algarve",
-   "nota": 23.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
-   "tipo": "resumo",
-   "ts": "2026-11-07T08:15:56.628159+00:00",
-   "titulo": "Famílias consideradas elegíveis para o Vale Eficiência II vão ter uma nova oportunidade",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOY2drUW9OLUFxMHIzTWR2WDZ6XzItTVNHZFN1MkhkUmdaMzRzd1hMcjM3NDdkd0l1cGdlOVNWbDFsaHRWdjdyZWVzTkkxczlkeUhtb25oZDk4QzE5U0pMRGI0azF1X2cyNmVWWW5SSlljcElmbW5KOEFpbTlEMEtDdEFDQVhpZ1dMWmlUWFZmcl92NUhfLTAtbG16ZHV4WnNvRzJOWkk3djk1YVN4b1JiZXdJMWFYQUlkcUNJLTBEQktGWnJKWER5bm5KX1lqbVZMSmtUZjI0eF8zZw?oc=5",
-   "fonte": "diariOnline Região Sul",
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
-   "tipo": "resumo",
-   "ts": "2026-11-07T08:15:56.628159+00:00",
    "titulo": "DECO | As famílias que tinham sido consideradas elegíveis para o Vale Eficiência II",
    "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQZGpNYUJUeHhJNVA1ZVJUWkh6OXBHaFdSRFpqZnpiemd1WlVMZm96Ml82Z0hEWUVFM0o5cm5wM0t2WTZ6a0NFUGh3bTU3NVM4MklqTW9iZnhDLTlJYWNzcWdDY3pMVkZBWGhuU2lSUW96TFpoN3VFWXBVQlIxTzNRcHZKckpyUFhZNEI3XzJHY3VFbFE5dXd3am1rVkVGR1pObTNCUEg4T1hwQWRISHV6d1F1UWxzYk0?oc=5",
    "fonte": "Mais Algarve",
@@ -1757,48 +1739,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-13T19:01:06.682277+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-13T19:01:06.682277+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-11T18:46:00.361654+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 530,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-11T19:46:03.935452+00:00",
    "pesquisas": [
@@ -3487,11 +3448,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-13T19:01:06.682277+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 529,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 479,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-13T18:00:57.840001+00:00",
-  "contaspoupanca.pt": "2026-11-13T18:00:57.840001+00:00"
+  "cm-serta.pt": "2026-11-13T19:01:06.682277+00:00",
+  "contaspoupanca.pt": "2026-11-13T19:01:06.682277+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3499,8 +3499,8 @@
   "contaspoupanca.pt": "2026-11-13T17:00:58.937270+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-13T18:00:57.840001+00:00",
-  "Apoio fundo ambiental": "2026-11-13T18:00:57.840001+00:00"
+  "Sertã": "2026-11-13T19:01:06.682277+00:00",
+  "Apoio fundo ambiental": "2026-11-13T19:01:06.682277+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4161,7 +4161,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-13T18:00:57.840001+00:00",
+   "verificado": "2026-11-13T19:01:06.682277+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4354,12 +4354,16 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "MAÇÃO: \"Mercadinho de Natal\" é a novidade da \"Vila Natal\"",
+    "Mação",
+    "Médio Tejo",
+    "13-11-2026",
+    "Mercadinho de Natal, montras e presépios animam o concelho de 8 de dezembro a 6 de janeiro",
     "SERTÃ: Menina de quatro anos ferida em despiste",
     "Sertã",
     "Beira Baixa",
     "13-11-2026",
     "Última hora",
-    "Esta tarde, no Outeiro da Lagoa",
     "SERTÃ/Cabeçudo: Despiste provoca três feridos leves",
     "Sertã",
     "Beira Baixa",
@@ -4411,11 +4415,6 @@
     "Pampilhosa da Serra",
     "Região",
     "12-11-2026",
-    "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
-    "Castelo Branco",
-    "Beira Baixa",
-    "12-11-2026",
-    "Última hora",
     "1",
     "2",
     "3",
@@ -4429,28 +4428,27 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-13T18:00:57.840001+00:00",
+   "verificado": "2026-11-13T19:01:06.682277+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-13T16:00:50.460900+00:00",
+   "mudou": "2026-11-13T19:01:06.682277+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Menina de quatro anos ferida em despiste",
-     "SERTÃ/Cabeçudo: Despiste provoca três feridos leves",
-     "SERTÃ: Menina de quatro anos ferida em despiste",
-     "Esta tarde, no Outeiro da Lagoa",
-     "SERTÃ/Cabeçudo: Despiste provoca três feridos leves"
+     "MAÇÃO: \"Mercadinho de Natal\" é a novidade da \"Vila Natal\"",
+     "Mação",
+     "Médio Tejo",
+     "Mercadinho de Natal, montras e presépios animam o concelho de 8 de dezembro a 6 de janeiro"
     ],
     "menos": [
-     "SERTÃ: Despiste provoca três feridos leves",
-     "SERTÃ: Despiste provoca três feridos leves",
-     "Nos Faleiros",
-     "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
-     "Cernache do Bonjardim"
+     "Esta tarde, no Outeiro da Lagoa",
+     "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
+     "Castelo Branco",
+     "Beira Baixa",
+     "Última hora"
     ],
-    "n_mais": 5,
+    "n_mais": 4,
     "n_menos": 5
    },
    "via": "site",
@@ -4660,13 +4658,14 @@
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "Simulador de amortização crédito à habitação",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
-    "Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
+    "ATUALIZAÇÃO | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
     "Uma casa de 100 m² custa hoje mais de 10 anos de salário médio. Em 2016 eram 6",
     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "Portagens devem subir 3,83% em 2027. Saiba quanto pode pagar a mais",
+    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
     "PPR",
     "Simulador de apoio para os carros elétricos",
@@ -4738,27 +4737,28 @@
     "PodTEXT | Antes de entregar o IRS confirme esta página no Portal das Finanças",
     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
+    "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
     "PodTEXT | \"Para que serve pedir fatura do café se depois paga IRS na mesma?\"",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
-    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "Vamos a contas: Invisto num PPR ou num ETF e ponho o dinheiro em Certificados de Aforro ou na Trade Republic?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-13T18:00:57.840001+00:00",
+   "verificado": "2026-11-13T19:01:06.682277+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-13T16:00:50.460900+00:00",
+   "mudou": "2026-11-13T19:01:06.682277+00:00",
    "mudanca": {
     "mais": [
-     "Vamos a contas: Invisto num PPR ou num ETF e ponho o dinheiro em Certificados de Aforro ou na Trade Republic?"
+     "ATUALIZAÇÃO | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
+     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
