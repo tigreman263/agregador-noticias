@@ -72,7 +72,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-12T17:01:06.994916+00:00"
+   "ultima": "2026-11-13T09:01:01.004976+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -721,7 +721,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "DECO informa sobre... Vale Eficiência",
-   "ultima": "2026-11-12T09:01:03.125620+00:00"
+   "ultima": "2026-11-13T09:01:01.004976+00:00"
   },
   "regiao-sul.pt": {
    "nome": "diariOnline Região Sul",
@@ -781,7 +781,7 @@
     "Sertã"
    ],
    "exemplo": "Com máxima de 43°C, Floresta, no Sertão de PE, antecipa saída de estudantes das escolas",
-   "ultima": "2026-11-12T09:01:03.125620+00:00"
+   "ultima": "2026-11-13T09:01:01.004976+00:00"
   },
   "folhape.com.br": {
    "nome": "Folha PE",
@@ -793,7 +793,7 @@
     "Sertã"
    ],
    "exemplo": "Sertão: com máxima prevista de 43ºC, Floresta reduz horário de escolas e creches",
-   "ultima": "2026-11-12T09:01:03.125620+00:00"
+   "ultima": "2026-11-13T09:01:01.004976+00:00"
   },
   "idealista.pt": {
    "nome": "Idealista",
@@ -829,7 +829,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-12T09:01:03.125620+00:00"
+   "ultima": "2026-11-13T09:01:01.004976+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -842,9 +842,21 @@
    ],
    "exemplo": "“As famílias consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão ter uma nova oportunidade?”",
    "ultima": "2026-11-10T21:46:03.071202+00:00"
+  },
+  "tribunadoagreste.com.br": {
+   "nome": "Tribuna do Agreste",
+   "site": "https://www.tribunadoagreste.com.br",
+   "ids": [
+    "5e764fd9d3de4ed6"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "Lula pede investimentos em fundo ambiental e critica doações",
+   "ultima": "2026-11-13T09:01:01.004976+00:00"
   }
  },
- "ultima_descoberta": "2026-11-12",
+ "ultima_descoberta": "2026-11-13",
  "enviados": [
   {
    "tipo": "pagina",
@@ -1748,45 +1760,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-11T08:46:08.907791+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 534,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 487,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 2,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-11T09:46:02.251132+00:00",
    "pesquisas": [
@@ -3475,11 +3448,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-13T09:01:01.004976+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 531,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 480,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-13T08:01:07.494134+00:00",
-  "contaspoupanca.pt": "2026-11-13T08:01:07.494134+00:00"
+  "cm-serta.pt": "2026-11-13T09:01:01.004976+00:00",
+  "contaspoupanca.pt": "2026-11-13T09:01:01.004976+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3487,8 +3499,8 @@
   "contaspoupanca.pt": "2026-11-12T17:00:52.404790+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-13T08:01:07.494134+00:00",
-  "Apoio fundo ambiental": "2026-11-13T08:01:07.494134+00:00"
+  "Sertã": "2026-11-13T09:01:01.004976+00:00",
+  "Apoio fundo ambiental": "2026-11-13T09:01:01.004976+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4149,7 +4161,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-13T08:01:07.494134+00:00",
+   "verificado": "2026-11-13T09:01:01.004976+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4406,7 +4418,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-13T08:01:07.494134+00:00",
+   "verificado": "2026-11-13T09:01:01.004976+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4716,7 +4728,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-13T08:01:07.494134+00:00",
+   "verificado": "2026-11-13T09:01:01.004976+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
