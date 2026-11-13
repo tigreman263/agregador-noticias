@@ -860,15 +860,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-06T17:16:00.526525+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-06T18:16:01.171266+00:00",
    "titulo": "Mudou: cm-serta",
    "link": "https://cm-serta.pt/comunicacao/noticias",
@@ -1757,48 +1748,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-13T12:01:03.919876+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-11T11:46:18.583727+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 531,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-11T12:46:03.973150+00:00",
    "pesquisas": [
@@ -3487,11 +3448,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-13T12:01:03.919876+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 533,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 485,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-13T11:00:58.547887+00:00",
-  "contaspoupanca.pt": "2026-11-13T11:00:58.547887+00:00"
+  "cm-serta.pt": "2026-11-13T12:01:03.919876+00:00",
+  "contaspoupanca.pt": "2026-11-13T12:01:03.919876+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3499,8 +3499,8 @@
   "contaspoupanca.pt": "2026-11-12T17:00:52.404790+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-13T11:00:58.547887+00:00",
-  "Apoio fundo ambiental": "2026-11-13T11:00:58.547887+00:00"
+  "Sertã": "2026-11-13T12:01:03.919876+00:00",
+  "Apoio fundo ambiental": "2026-11-13T12:01:03.919876+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4161,7 +4161,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-13T11:00:58.547887+00:00",
+   "verificado": "2026-11-13T12:01:03.919876+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4418,7 +4418,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-13T11:00:58.547887+00:00",
+   "verificado": "2026-11-13T12:01:03.919876+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4712,6 +4712,7 @@
     "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais?",
     "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
+    "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "PodTEXT | Antes de entregar o IRS confirme esta página no Portal das Finanças",
@@ -4726,16 +4727,16 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-13T11:00:58.547887+00:00",
+   "verificado": "2026-11-13T12:01:03.919876+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-13T11:00:58.547887+00:00",
+   "mudou": "2026-11-13T12:01:03.919876+00:00",
    "mudanca": {
     "mais": [
-     "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais?"
+     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas"
     ],
     "menos": [],
     "n_mais": 1,
