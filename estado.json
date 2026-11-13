@@ -859,24 +859,6 @@
  "ultima_descoberta": "2026-11-13",
  "enviados": [
   {
-   "tipo": "pagina",
-   "ts": "2026-11-07T07:16:05.563470+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "resumo",
-   "ts": "2026-11-07T08:15:56.628159+00:00",
-   "titulo": "Benavente com garantia para adquirir ceifeira de jacintos através do Fundo Ambiental",
-   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZE5XV2d0ZWktWTlhdllTMExZWnVITkMzRlNVYU85YjRwSHIxaVp4ZFFvSEdiU3ZwOVZIRm5XOXF6QnlqbDljT3lTdTAybHRmREsxNTh3dE9YaGw3X1lsclFYMVVsYnpNTlg0Z0ZhcFRwQW8xc0hUQW1IZnhWQVdheGpCcGFTcVFNaEVSNHdNN2c1MmxkZ1BlZUR3MlRLVDVTc29IOG8yZDhhOTJ0U2IxalFjOFF3c3U4SXhV?oc=5",
-   "fonte": "Notícias do Sorraia",
-   "nota": 30.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
    "tipo": "resumo",
    "ts": "2026-11-07T08:15:56.628159+00:00",
    "titulo": "“As famílias que tinham sido consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão finalmente ter uma nova oportunidade?”",
@@ -1757,47 +1739,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-13T15:01:00.456182+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-13T15:01:00.456182+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-11T14:45:57.854278+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 573,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-11T15:46:05.661492+00:00",
    "pesquisas": [
@@ -3487,11 +3449,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-13T15:01:00.456182+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 533,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 486,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-13T14:00:58.799831+00:00",
-  "contaspoupanca.pt": "2026-11-13T14:00:58.799831+00:00"
+  "cm-serta.pt": "2026-11-13T15:01:00.456182+00:00",
+  "contaspoupanca.pt": "2026-11-13T15:01:00.456182+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3499,8 +3500,8 @@
   "contaspoupanca.pt": "2026-11-12T17:00:52.404790+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-13T14:00:58.799831+00:00",
-  "Apoio fundo ambiental": "2026-11-13T14:00:58.799831+00:00"
+  "Sertã": "2026-11-13T15:01:00.456182+00:00",
+  "Apoio fundo ambiental": "2026-11-13T15:01:00.456182+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4161,7 +4162,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-13T14:00:58.799831+00:00",
+   "verificado": "2026-11-13T15:01:00.456182+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4332,6 +4333,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ: Despiste provoca três feridos leves",
+    "Última hora",
     "SERTÃ: Município inicia procedimento para integrar as ZAER no PDM",
     "Última hora",
     "SERTÃ: Reuniões do Executivo Municipal mudam de horário",
@@ -4350,13 +4353,18 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: Despiste provoca três feridos leves",
+    "Sertã",
+    "Beira Baixa",
+    "13-11-2026",
+    "Última hora",
+    "Nos Faleiros",
     "SERTÃ: Município inicia procedimento para integrar as ZAER no PDM",
     "Beira Baixa",
     "Cernache do Bonjardim",
     "Sertã",
     "13-11-2026",
     "Última hora",
-    "Será definido 1% do território para instalação de energias renováveis",
     "SERTÃ: Reuniões do Executivo Municipal mudam de horário",
     "Sertã",
     "Beira Baixa",
@@ -4408,9 +4416,6 @@
     "Sertã",
     "11-11-2026",
     "Última hora",
-    "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
-    "11-11-2026",
-    "Última hora",
     "1",
     "2",
     "3",
@@ -4424,34 +4429,26 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-13T14:00:58.799831+00:00",
+   "verificado": "2026-11-13T15:01:00.456182+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-13T13:01:02.225537+00:00",
+   "mudou": "2026-11-13T15:01:00.456182+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Município inicia procedimento para integrar as ZAER no PDM",
-     "Última hora",
-     "SERTÃ: Reuniões do Executivo Municipal mudam de horário",
-     "Última hora",
-     "SERTÃ: Município inicia procedimento para integrar as ZAER no PDM",
-     "Cernache do Bonjardim",
-     "Última hora",
-     "Será definido 1% do território para instalação de energias renováveis",
-     "SERTÃ: Reuniões do Executivo Municipal mudam de horário",
-     "Última hora"
+     "SERTÃ: Despiste provoca três feridos leves",
+     "SERTÃ: Despiste provoca três feridos leves",
+     "Sertã",
+     "Beira Baixa",
+     "Nos Faleiros"
     ],
     "menos": [
-     "Foi também uma oportunidade para estreitar relações",
-     "SERTÃ/CASTELO: Associação realiza nova montaria ao javali",
-     "REGIÃO/Charles: Municípios e instituições adotam medidas preventivas",
-     "Médio Tejo",
-     "Nacional"
+     "Será definido 1% do território para instalação de energias renováveis",
+     "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente"
     ],
-    "n_mais": 10,
-    "n_menos": 5
+    "n_mais": 5,
+    "n_menos": 2
    },
    "via": "site",
    "erro_site": ""
@@ -4708,7 +4705,6 @@
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
     "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
-    "Gasolina já custa menos de 2 euros em seis marcas. Veja qual é a mais barata esta semana",
     "Simulador de Juros compostos",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
@@ -4721,6 +4717,7 @@
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
+    "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
@@ -4743,20 +4740,19 @@
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
-    "Vamos a contas: Invisto num PPR ou num ETF e ponho o dinheiro em Certificados de Aforro ou na Trade Republic?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-13T14:00:58.799831+00:00",
+   "verificado": "2026-11-13T15:01:00.456182+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-13T14:00:58.799831+00:00",
+   "mudou": "2026-11-13T15:01:00.456182+00:00",
    "mudanca": {
     "mais": [
-     "Portagens devem subir 3,83% em 2027. Saiba quanto pode pagar a mais"
+     "Quantas faturas pendentes tem neste momento no seu e-fatura?"
     ],
     "menos": [],
     "n_mais": 1,
