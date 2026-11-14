@@ -23,9 +23,34 @@
   "3b0df607940fbbba": "2026-11-09T12:46:00.406852+00:00",
   "461524cdb57ccdea": "2026-11-10T13:46:00.075469+00:00",
   "77a5cf07f29cf865": "2026-11-10T20:46:07.155183+00:00",
-  "1ef7f25deb2d9948": "2026-11-12T17:01:06.994916+00:00"
+  "1ef7f25deb2d9948": "2026-11-12T17:01:06.994916+00:00",
+  "44f1e003e76c154b": "2026-11-14T15:15:55.752589+00:00"
  },
- "resumo": [],
+ "resumo": [
+  {
+   "titulo": "VILA DE REI – Município concretiza mais uma fase do projeto “Separar para criar mais valor 2.0” com a entrega de mais 20 compostores domésticos",
+   "link": "https://radiohertz.pt/vila-de-rei-municipio-concretiza-mais-uma-fase-do-projeto-separar-para-criar-mais-valor-2-0-com-a-entrega-de-mais-20-compostores-domesticos/",
+   "dominio": "radiohertz.pt",
+   "fonte": "Rádio Hertz",
+   "confiavel": true,
+   "nota": 19.5,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Fundo Ambiental"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-14T14:31:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "44f1e003e76c154b"
+   ],
+   "ts": "2026-11-14T15:15:55.752589+00:00"
+  }
+ ],
  "adiados": [],
  "ultimo_resumo": "2026-11-14",
  "sugeridas": {},
@@ -162,14 +187,15 @@
     "c8559c2bc46b8621",
     "b2a121593c559e8d",
     "fbbe50e3738380b8",
-    "7ee0c439e77c1dc1"
+    "7ee0c439e77c1dc1",
+    "44f1e003e76c154b"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-02T07:00:46.733011+00:00"
+   "ultima": "2026-11-14T15:15:55.752589+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -858,15 +884,6 @@
  },
  "ultima_descoberta": "2026-11-14",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-08T19:46:07.703272+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-08T21:46:03.653885+00:00",
@@ -1757,48 +1774,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-14T15:15:55.752589+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-12T16:01:38.622216+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 528,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 483,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-12T17:01:06.994916+00:00",
    "pesquisas": [
@@ -3488,11 +3475,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T15:15:55.752589+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 529,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 477,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T14:15:56.259090+00:00",
-  "contaspoupanca.pt": "2026-11-14T14:15:56.259090+00:00"
+  "cm-serta.pt": "2026-11-14T15:15:55.752589+00:00",
+  "contaspoupanca.pt": "2026-11-14T15:15:55.752589+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3500,8 +3526,8 @@
   "contaspoupanca.pt": "2026-11-13T17:00:58.937270+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T14:15:56.259090+00:00",
-  "Apoio fundo ambiental": "2026-11-14T14:15:56.259090+00:00"
+  "Sertã": "2026-11-14T15:15:55.752589+00:00",
+  "Apoio fundo ambiental": "2026-11-14T15:15:55.752589+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4162,7 +4188,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-14T14:15:56.259090+00:00",
+   "verificado": "2026-11-14T15:15:55.752589+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4439,7 +4465,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-14T14:15:56.259090+00:00",
+   "verificado": "2026-11-14T15:15:55.752589+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4690,26 +4716,26 @@
     "Últimas Notícias",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
+    "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
-    "ERSE lançou hoje novo simulador de eletricidade e gás",
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Simuladores",
-    "Termos e Condições",
     "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
     "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
+    "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
     "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
     "Subscrever Newsletter",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
-    "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
+    "Termos e Condições",
     "Investimentos",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (7 agosto de 2026)",
@@ -4740,6 +4766,7 @@
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
+    "Seguro de saúde padrão: saiba se tem todas as coberturas essenciais",
     "Plataforma dos Certificados de Aforro está em baixo, mas há alternativas",
     "VÍDEO - Como pode baixar o seu IMI no ano que vem",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
@@ -4766,17 +4793,17 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-14T14:15:56.259090+00:00",
+   "verificado": "2026-11-14T15:15:55.752589+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-14T12:15:55.178576+00:00",
+   "mudou": "2026-11-14T15:15:55.752589+00:00",
    "mudanca": {
     "mais": [
-     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
-     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida"
+     "Pedro Andersson",
+     "Seguro de saúde padrão: saiba se tem todas as coberturas essenciais"
     ],
     "menos": [],
     "n_mais": 2,
