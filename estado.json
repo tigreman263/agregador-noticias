@@ -860,15 +860,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-08T13:46:58.913743+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-08T14:46:19.542282+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
@@ -1757,48 +1748,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-14T10:00:58.067470+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-12T10:01:00.657823+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 532,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 483,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-12T11:01:02.030861+00:00",
    "pesquisas": [
@@ -3489,11 +3450,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T10:00:58.067470+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 531,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 477,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T09:00:58.509914+00:00",
-  "contaspoupanca.pt": "2026-11-14T09:00:58.509914+00:00"
+  "cm-serta.pt": "2026-11-14T10:00:58.067470+00:00",
+  "contaspoupanca.pt": "2026-11-14T10:00:58.067470+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3501,8 +3501,8 @@
   "contaspoupanca.pt": "2026-11-13T17:00:58.937270+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T09:00:58.509914+00:00",
-  "Apoio fundo ambiental": "2026-11-14T09:00:58.509914+00:00"
+  "Sertã": "2026-11-14T10:00:58.067470+00:00",
+  "Apoio fundo ambiental": "2026-11-14T10:00:58.067470+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4163,7 +4163,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-14T09:00:58.509914+00:00",
+   "verificado": "2026-11-14T10:00:58.067470+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4430,7 +4430,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-14T09:00:58.509914+00:00",
+   "verificado": "2026-11-14T10:00:58.067470+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4651,10 +4651,10 @@
    "linhas_google": [
     "Contas-Poupança | Dê um aumento a si próprio",
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
-    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
-    "ATUALIZAÇÃO | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Uma casa de 100 m² custa hoje mais de 10 anos de salário médio. Em 2016 eram 6",
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
+    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Portagens devem subir 3,83% em 2027. Saiba quanto pode pagar a mais",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
@@ -4728,6 +4728,7 @@
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
+    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "PodTEXT | Antes de entregar o IRS confirme esta página no Portal das Finanças",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
@@ -4742,19 +4743,20 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-14T09:00:58.509914+00:00",
+   "verificado": "2026-11-14T10:00:58.067470+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-14T09:00:58.509914+00:00",
+   "mudou": "2026-11-14T10:00:58.067470+00:00",
    "mudanca": {
     "mais": [
-     "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)"
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
+     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
