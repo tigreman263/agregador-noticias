@@ -195,7 +195,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-14T15:15:55.752589+00:00"
+   "ultima": "2026-11-14T16:15:57.353701+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -1786,45 +1786,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-12T17:01:06.994916+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 1,
-     "alertas": 1
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 479,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 1,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-12T18:01:06.006566+00:00",
    "pesquisas": [
@@ -3514,20 +3475,61 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T16:15:57.353701+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 450,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 450,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertagin",
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efi",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 2
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T15:15:55.752589+00:00",
-  "contaspoupanca.pt": "2026-11-14T15:15:55.752589+00:00"
+  "cm-serta.pt": "2026-11-14T16:15:57.353701+00:00",
+  "contaspoupanca.pt": "2026-11-14T16:15:57.353701+00:00"
  },
  "lentos": {},
  "testes_diretos": {
-  "cm-serta.pt": "2026-11-13T16:00:45.894609+00:00",
+  "cm-serta.pt": "2026-11-14T16:15:52.536435+00:00",
   "contaspoupanca.pt": "2026-11-13T17:00:58.937270+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T15:15:55.752589+00:00",
-  "Apoio fundo ambiental": "2026-11-14T15:15:55.752589+00:00"
+  "Sertã": "2026-11-14T16:15:57.353701+00:00",
+  "Apoio fundo ambiental": "2026-11-14T16:15:57.353701+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4188,9 +4190,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-14T15:15:55.752589+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-14T16:15:57.353701+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-12T15:00:53.755756+00:00",
@@ -4465,7 +4467,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-14T15:15:55.752589+00:00",
+   "verificado": "2026-11-14T16:15:57.353701+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4793,9 +4795,9 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-14T15:15:55.752589+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-14T16:15:57.353701+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
