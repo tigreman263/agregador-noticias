@@ -195,7 +195,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-14T20:18:56.168657+00:00"
+   "ultima": "2026-11-14T21:31:19.289769+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -1786,45 +1786,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-12T22:01:04.486787+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 530,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 483,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 4,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-12T23:01:10.745796+00:00",
    "pesquisas": [
@@ -3515,11 +3476,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T21:31:19.289769+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 532,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 482,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T20:18:56.168657+00:00",
-  "contaspoupanca.pt": "2026-11-14T20:18:56.168657+00:00"
+  "cm-serta.pt": "2026-11-14T21:31:19.289769+00:00",
+  "contaspoupanca.pt": "2026-11-14T21:31:19.289769+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3527,8 +3527,8 @@
   "contaspoupanca.pt": "2026-11-14T17:15:48.324467+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T20:18:56.168657+00:00",
-  "Apoio fundo ambiental": "2026-11-14T20:18:56.168657+00:00"
+  "Sertã": "2026-11-14T21:31:19.289769+00:00",
+  "Apoio fundo ambiental": "2026-11-14T21:31:19.289769+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4189,7 +4189,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-14T20:18:56.168657+00:00",
+   "verificado": "2026-11-14T21:31:19.289769+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4464,7 +4464,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-14T20:18:56.168657+00:00",
+   "verificado": "2026-11-14T21:31:19.289769+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4780,7 +4780,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-14T20:18:56.168657+00:00",
+   "verificado": "2026-11-14T21:31:19.289769+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
