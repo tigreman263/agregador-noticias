@@ -1761,36 +1761,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-12T06:01:10.383063+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 532,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 482,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
-  {
    "ts": "2026-11-12T07:01:04.855471+00:00",
    "pesquisas": [
     {
@@ -3489,22 +3459,50 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T06:01:04.814071+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 529,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 477,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T05:01:01.333747+00:00",
+  "cm-serta.pt": "2026-11-14T06:01:04.814071+00:00",
   "contaspoupanca.pt": "2026-11-13T22:00:59.666065+00:00"
  },
- "lentos": {
-  "observador.pt": 1
- },
+ "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-13T16:00:45.894609+00:00",
   "contaspoupanca.pt": "2026-11-13T17:00:58.937270+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T05:01:01.333747+00:00",
-  "Apoio fundo ambiental": "2026-11-14T05:01:01.333747+00:00"
+  "Sertã": "2026-11-14T06:01:04.814071+00:00",
+  "Apoio fundo ambiental": "2026-11-14T06:01:04.814071+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
