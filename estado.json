@@ -195,7 +195,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-14T18:16:07.728766+00:00"
+   "ultima": "2026-11-14T19:15:43.505965+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -884,24 +884,6 @@
  },
  "ultima_descoberta": "2026-11-14",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-09T07:46:00.690820+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-09T08:46:02.527610+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-09T09:46:04.826600+00:00",
@@ -1783,48 +1765,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-14T19:15:43.505965+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-14T19:15:43.505965+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-12T20:01:08.045656+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 484,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-12T21:01:01.512670+00:00",
    "pesquisas": [
@@ -3516,11 +3477,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T19:15:43.505965+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 580,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 528,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T18:16:07.728766+00:00",
-  "contaspoupanca.pt": "2026-11-14T18:16:07.728766+00:00"
+  "cm-serta.pt": "2026-11-14T19:15:43.505965+00:00",
+  "contaspoupanca.pt": "2026-11-14T19:15:43.505965+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3528,8 +3527,8 @@
   "contaspoupanca.pt": "2026-11-14T17:15:48.324467+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T18:16:07.728766+00:00",
-  "Apoio fundo ambiental": "2026-11-14T18:16:07.728766+00:00"
+  "Sertã": "2026-11-14T19:15:43.505965+00:00",
+  "Apoio fundo ambiental": "2026-11-14T19:15:43.505965+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4190,15 +4189,15 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-14T18:16:07.728766+00:00",
+   "verificado": "2026-11-14T19:15:43.505965+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-12T15:00:53.755756+00:00",
+   "mudou": "2026-11-14T19:15:43.505965+00:00",
    "mudanca": {
     "mais": [
-     "Formação / Atelier / Oficinas"
+     "Rede de Bibliotecas da Sertã"
     ],
     "menos": [],
     "n_mais": 1,
@@ -4206,39 +4205,40 @@
    },
    "linhas_google": [
     "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
+    "Requerimentos",
     "Câmara Municipal da Sertã — Início",
+    "Revisão do PDM da Sertã mais perto da conclusão",
+    "Espaços Museológicos",
     "Serviços Online",
+    "Maranho da Sertã reconhecido com Prémio Cinco Estrelas Regiões",
+    "Abastecimento de água",
     "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
     "Programa “Férias Ativas” anima verão até final de agosto",
     "Login",
     "Atendimento no Município para apoio após a Tempestade Kristin",
-    "Bem-vindo à Rede de Bibliotecas da Sertã",
+    "Rede de Bibliotecas da Sertã",
     "Eventos Futuros",
     "Águas Residuais",
+    "Câmara Municipal",
     "Praias Fluviais, Zonas de Lazer e Piscinas",
     "Percursos Pedestres",
+    "Estrutura Orgânica",
     "Procedimentos Concursais",
+    "Planos",
     "Bolsas de Estudo",
+    "Casa de Espetáculos e Cultura da Sertã",
     "Turismo",
     "Contactos da Câmara Municipal",
-    "Câmara Municipal",
+    "Formação / Atelier / Oficinas",
     "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
     "Programa Férias Ativas abre candidaturas para monitores",
-    "Requerimentos",
-    "Revisão do PDM da Sertã mais perto da conclusão",
-    "Espaços Museológicos",
-    "Abastecimento de água",
-    "Contactos Úteis",
-    "Regulamentos",
-    "Estrutura Orgânica",
-    "Planos",
-    "Casa de Espetáculos e Cultura da Sertã",
-    "Formação / Atelier / Oficinas",
     "Projetos Cofinanciados",
-    "Maranho da Sertã reconhecido com Prémio Cinco Estrelas Regiões",
+    "União de Freguesias de Cumeada e Marmeleiro",
+    "Contactos Úteis",
     "Espaços de Cowork e Incubação",
     "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
     "Ficha técnica",
+    "Regulamentos",
     "Calendário de Reuniões",
     "Desporto",
     "Bolsas de Estudo do Município da Sertã com novas normas",
@@ -4247,20 +4247,18 @@
     "História e Caracterização",
     "Assembleia Municipal Jovem",
     "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto",
-    "União de Freguesias de Cumeada e Marmeleiro",
-    "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
-    "clds 5g",
-    "Freguesias",
-    "Gabinete Florestal",
-    "Editais / Avisos",
     "Faixas de Gestão de Combustível",
     "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
+    "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
+    "clds 5g",
     "Festas e Romarias",
+    "Gabinete Florestal",
+    "Editais / Avisos",
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "site",
-   "erro_site": ""
+   "via": "google",
+   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4466,7 +4464,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-14T18:16:07.728766+00:00",
+   "verificado": "2026-11-14T19:15:43.505965+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4699,18 +4697,20 @@
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
-    "PPR",
     "Simulador de apoio para os carros elétricos",
     "Simulador de amortização crédito à habitação",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
+    "PPR",
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
+    "ERSE lançou hoje novo simulador de eletricidade e gás",
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Simuladores",
+    "Termos e Condições",
     "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
     "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
@@ -4725,7 +4725,6 @@
     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
-    "Termos e Condições",
     "Investimentos",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (7 agosto de 2026)",
@@ -4756,8 +4755,6 @@
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
-    "Seguro de saúde padrão: saiba se tem todas as coberturas essenciais",
-    "Plataforma dos Certificados de Aforro está em baixo, mas há alternativas",
     "VÍDEO - Como pode baixar o seu IMI no ano que vem",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
@@ -4778,21 +4775,22 @@
     "PodTEXT | \"Para que serve pedir fatura do café se depois paga IRS na mesma?\"",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida",
+    "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-14T18:16:07.728766+00:00",
+   "verificado": "2026-11-14T19:15:43.505965+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-14T18:16:07.728766+00:00",
+   "mudou": "2026-11-14T19:15:43.505965+00:00",
    "mudanca": {
     "mais": [
-     "Seguro de saúde padrão: saiba se tem todas as coberturas essenciais",
-     "Bolsa esta semana: Europa bate recordes e Wall Street recupera"
+     "ERSE lançou hoje novo simulador de eletricidade e gás",
+     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?"
     ],
     "menos": [],
     "n_mais": 2,
