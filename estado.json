@@ -195,7 +195,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-14T19:15:43.505965+00:00"
+   "ultima": "2026-11-14T20:18:56.168657+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -884,15 +884,6 @@
  },
  "ultima_descoberta": "2026-11-14",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-09T09:46:04.826600+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-09T10:46:03.536377+00:00",
@@ -1783,48 +1774,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-14T20:18:56.168657+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-12T21:01:01.512670+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 530,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 483,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-12T22:01:04.486787+00:00",
    "pesquisas": [
@@ -3515,11 +3476,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T20:18:56.168657+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 534,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 482,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T19:15:43.505965+00:00",
-  "contaspoupanca.pt": "2026-11-14T19:15:43.505965+00:00"
+  "cm-serta.pt": "2026-11-14T20:18:56.168657+00:00",
+  "contaspoupanca.pt": "2026-11-14T20:18:56.168657+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3527,8 +3527,8 @@
   "contaspoupanca.pt": "2026-11-14T17:15:48.324467+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T19:15:43.505965+00:00",
-  "Apoio fundo ambiental": "2026-11-14T19:15:43.505965+00:00"
+  "Sertã": "2026-11-14T20:18:56.168657+00:00",
+  "Apoio fundo ambiental": "2026-11-14T20:18:56.168657+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4189,7 +4189,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-14T19:15:43.505965+00:00",
+   "verificado": "2026-11-14T20:18:56.168657+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4257,8 +4257,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4464,7 +4464,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-14T19:15:43.505965+00:00",
+   "verificado": "2026-11-14T20:18:56.168657+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4688,7 +4688,6 @@
   },
   "https://contaspoupanca.pt/": {
    "linhas_google": [
-    "Contas-Poupança | Dê um aumento a si próprio",
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Uma casa de 100 m² custa hoje mais de 10 anos de salário médio. Em 2016 eram 6",
@@ -4699,6 +4698,7 @@
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
     "Simulador de apoio para os carros elétricos",
     "Simulador de amortização crédito à habitação",
+    "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
@@ -4740,6 +4740,7 @@
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Gasolina já custa menos de 2 euros em seis marcas. Veja qual é a mais barata esta semana",
     "Simulador de Juros compostos",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
@@ -4777,23 +4778,21 @@
     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
-    "Carro",
-    "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
+    "Carro"
    ],
-   "verificado": "2026-11-14T19:15:43.505965+00:00",
+   "verificado": "2026-11-14T20:18:56.168657+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-14T19:15:43.505965+00:00",
+   "mudou": "2026-11-14T20:18:56.168657+00:00",
    "mudanca": {
     "mais": [
-     "ERSE lançou hoje novo simulador de eletricidade e gás",
-     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?"
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
