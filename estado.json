@@ -781,7 +781,7 @@
     "Sertã"
    ],
    "exemplo": "Com máxima de 43°C, Floresta, no Sertão de PE, antecipa saída de estudantes das escolas",
-   "ultima": "2026-11-13T09:01:01.004976+00:00"
+   "ultima": "2026-11-14T09:00:58.509914+00:00"
   },
   "folhape.com.br": {
    "nome": "Folha PE",
@@ -829,7 +829,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-13T09:01:01.004976+00:00"
+   "ultima": "2026-11-14T09:00:58.509914+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -853,20 +853,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Lula pede investimentos em fundo ambiental e critica doações",
-   "ultima": "2026-11-13T09:01:01.004976+00:00"
+   "ultima": "2026-11-14T09:00:58.509914+00:00"
   }
  },
- "ultima_descoberta": "2026-11-13",
+ "ultima_descoberta": "2026-11-14",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-08T08:46:05.358616+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-08T13:46:58.913743+00:00",
@@ -1757,48 +1748,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-14T09:00:58.509914+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-12T09:01:03.125620+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 532,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 481,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-12T10:01:00.657823+00:00",
    "pesquisas": [
@@ -3489,11 +3450,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T09:00:58.509914+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 531,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 479,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T08:00:56.790889+00:00",
-  "contaspoupanca.pt": "2026-11-14T08:00:56.790889+00:00"
+  "cm-serta.pt": "2026-11-14T09:00:58.509914+00:00",
+  "contaspoupanca.pt": "2026-11-14T09:00:58.509914+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3501,8 +3501,8 @@
   "contaspoupanca.pt": "2026-11-13T17:00:58.937270+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T08:00:56.790889+00:00",
-  "Apoio fundo ambiental": "2026-11-14T08:00:56.790889+00:00"
+  "Sertã": "2026-11-14T09:00:58.509914+00:00",
+  "Apoio fundo ambiental": "2026-11-14T09:00:58.509914+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4163,7 +4163,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-14T08:00:56.790889+00:00",
+   "verificado": "2026-11-14T09:00:58.509914+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4430,7 +4430,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-14T08:00:56.790889+00:00",
+   "verificado": "2026-11-14T09:00:58.509914+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4680,7 +4680,6 @@
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
     "Subscrever Newsletter",
-    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
@@ -4706,6 +4705,7 @@
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
     "Onde estão os melhores juros com capital garantido - Fevereiro 2026",
+    "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Podcast",
     "Podcast",
@@ -4742,16 +4742,16 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-14T08:00:56.790889+00:00",
+   "verificado": "2026-11-14T09:00:58.509914+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-14T08:00:56.790889+00:00",
+   "mudou": "2026-11-14T09:00:58.509914+00:00",
    "mudanca": {
     "mais": [
-     "Quantas faturas pendentes tem neste momento no seu e-fatura?"
+     "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)"
     ],
     "menos": [],
     "n_mais": 1,
