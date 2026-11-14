@@ -27,7 +27,7 @@
  },
  "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-13",
+ "ultimo_resumo": "2026-11-14",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -858,15 +858,6 @@
  },
  "ultima_descoberta": "2026-11-13",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-08T07:46:03.826783+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-08T08:46:05.358616+00:00",
@@ -1757,48 +1748,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-14T08:00:56.790889+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-12T08:01:02.235553+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 532,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 484,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-12T09:01:03.125620+00:00",
    "pesquisas": [
@@ -3489,11 +3450,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T08:00:56.790889+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 477,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T07:01:01.727829+00:00",
-  "contaspoupanca.pt": "2026-11-14T07:01:01.727829+00:00"
+  "cm-serta.pt": "2026-11-14T08:00:56.790889+00:00",
+  "contaspoupanca.pt": "2026-11-14T08:00:56.790889+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3501,8 +3501,8 @@
   "contaspoupanca.pt": "2026-11-13T17:00:58.937270+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T07:01:01.727829+00:00",
-  "Apoio fundo ambiental": "2026-11-14T07:01:01.727829+00:00"
+  "Sertã": "2026-11-14T08:00:56.790889+00:00",
+  "Apoio fundo ambiental": "2026-11-14T08:00:56.790889+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4163,7 +4163,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-14T07:01:01.727829+00:00",
+   "verificado": "2026-11-14T08:00:56.790889+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4430,7 +4430,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-14T07:01:01.727829+00:00",
+   "verificado": "2026-11-14T08:00:56.790889+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4706,12 +4706,12 @@
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
     "Onde estão os melhores juros com capital garantido - Fevereiro 2026",
-    "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Podcast",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
+    "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
@@ -4722,7 +4722,6 @@
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "Vamos a contas: «Sou divorciada e quero investir para os meus filhos. Posso fazê-lo em meu nome?",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
-    "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais?",
     "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
@@ -4743,22 +4742,19 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-14T07:01:01.727829+00:00",
+   "verificado": "2026-11-14T08:00:56.790889+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-14T07:01:01.727829+00:00",
+   "mudou": "2026-11-14T08:00:56.790889+00:00",
    "mudanca": {
     "mais": [
-     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
-     "Gasolina já custa menos de 2 euros em seis marcas. Veja qual é a mais barata esta semana",
-     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
-     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
+     "Quantas faturas pendentes tem neste momento no seu e-fatura?"
     ],
     "menos": [],
-    "n_mais": 4,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
