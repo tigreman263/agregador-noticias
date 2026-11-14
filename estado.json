@@ -860,24 +860,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-08T14:46:19.542282+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-08T15:45:47.320729+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-08T19:46:07.703272+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
@@ -1757,48 +1739,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-14T12:15:55.178576+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-14T12:15:55.178576+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-12T13:01:09.156632+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 531,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 486,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-12T14:01:01.907289+00:00",
    "pesquisas": [
@@ -3487,11 +3448,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T12:15:55.178576+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 533,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 477,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T11:15:58.282886+00:00",
-  "contaspoupanca.pt": "2026-11-14T11:15:58.282886+00:00"
+  "cm-serta.pt": "2026-11-14T12:15:55.178576+00:00",
+  "contaspoupanca.pt": "2026-11-14T12:15:55.178576+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3499,8 +3499,8 @@
   "contaspoupanca.pt": "2026-11-13T17:00:58.937270+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T11:15:58.282886+00:00",
-  "Apoio fundo ambiental": "2026-11-14T11:15:58.282886+00:00"
+  "Sertã": "2026-11-14T12:15:55.178576+00:00",
+  "Apoio fundo ambiental": "2026-11-14T12:15:55.178576+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4161,7 +4161,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-14T11:15:58.282886+00:00",
+   "verificado": "2026-11-14T12:15:55.178576+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4332,6 +4332,10 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ: Estado de conservação de escola do Carvalhal em destaque",
+    "Última hora",
+    "REGIÃO/futebol: Liga CRP joga-se na Condestável",
+    "Última hora",
     "SERTÃ: Menina de quatro anos ferida em despiste",
     "Última hora",
     "SERTÃ/Cabeçudo: Despiste provoca três feridos leves",
@@ -4354,11 +4358,26 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: Estado de conservação de escola do Carvalhal em destaque",
+    "Beira Baixa",
+    "Sertã",
+    "Política",
+    "14-11-2026",
+    "Última hora",
+    "Vereador do PSD, Fernando Amaral, retomou o assunto para saber o ponto de situação",
+    "REGIÃO/futebol: Liga CRP joga-se na Condestável",
+    "Sertã",
+    "Cernache do Bonjardim",
+    "Proença-a-Nova",
+    "Oleiros",
+    "Beira Baixa",
+    "Desporto",
+    "14-11-2026",
+    "Última hora",
     "MAÇÃO: \"Mercadinho de Natal\" é a novidade da \"Vila Natal\"",
     "Mação",
     "Médio Tejo",
     "13-11-2026",
-    "Mercadinho de Natal, montras e presépios animam o concelho de 8 de dezembro a 6 de janeiro",
     "SERTÃ: Menina de quatro anos ferida em despiste",
     "Sertã",
     "Beira Baixa",
@@ -4406,15 +4425,6 @@
     "Beira Baixa",
     "12-11-2026",
     "Última hora",
-    "SERTÃ: Cidadãos juntam-se em vigília pelo direito à habitação",
-    "Sertã",
-    "Cernache do Bonjardim",
-    "Beira Baixa",
-    "12-11-2026",
-    "PAMPILHOSA DA SERRA: Adjudica requalificação da estrada entre Ponte de Cartamil e Fajão",
-    "Pampilhosa da Serra",
-    "Região",
-    "12-11-2026",
     "1",
     "2",
     "3",
@@ -4428,21 +4438,37 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-14T11:15:58.282886+00:00",
+   "verificado": "2026-11-14T12:15:55.178576+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-14T07:01:01.727829+00:00",
+   "mudou": "2026-11-14T12:15:55.178576+00:00",
    "mudanca": {
     "mais": [
-     "sábado, 14 novembro 2026"
+     "SERTÃ: Estado de conservação de escola do Carvalhal em destaque",
+     "Última hora",
+     "REGIÃO/futebol: Liga CRP joga-se na Condestável",
+     "Última hora",
+     "SERTÃ: Estado de conservação de escola do Carvalhal em destaque",
+     "Política",
+     "Última hora",
+     "Vereador do PSD, Fernando Amaral, retomou o assunto para saber o ponto de situação",
+     "REGIÃO/futebol: Liga CRP joga-se na Condestável",
+     "Proença-a-Nova",
+     "Oleiros",
+     "Desporto",
+     "Última hora"
     ],
     "menos": [
-     "sexta-feira, 13 novembro 2026"
+     "Mercadinho de Natal, montras e presépios animam o concelho de 8 de dezembro a 6 de janeiro",
+     "SERTÃ: Cidadãos juntam-se em vigília pelo direito à habitação",
+     "PAMPILHOSA DA SERRA: Adjudica requalificação da estrada entre Ponte de Cartamil e Fajão",
+     "Pampilhosa da Serra",
+     "Região"
     ],
-    "n_mais": 1,
-    "n_menos": 1
+    "n_mais": 13,
+    "n_menos": 5
    },
    "via": "site",
    "erro_site": ""
@@ -4653,7 +4679,6 @@
     "Uma casa de 100 m² custa hoje mais de 10 anos de salário médio. Em 2016 eram 6",
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
-    "Portagens devem subir 3,83% em 2027. Saiba quanto pode pagar a mais",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
@@ -4678,6 +4703,7 @@
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
     "Subscrever Newsletter",
+    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
@@ -4704,6 +4730,7 @@
     "Onde estão os melhores juros com capital garantido - Fevereiro 2026",
     "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
+    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "Podcast",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
@@ -4724,7 +4751,6 @@
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
-    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "PodTEXT | Antes de entregar o IRS confirme esta página no Portal das Finanças",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
@@ -4733,22 +4759,23 @@
     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
     "PodTEXT | \"Para que serve pedir fatura do café se depois paga IRS na mesma?\"",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
+    "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-14T11:15:58.282886+00:00",
+   "verificado": "2026-11-14T12:15:55.178576+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-14T10:00:58.067470+00:00",
+   "mudou": "2026-11-14T12:15:55.178576+00:00",
    "mudanca": {
     "mais": [
-     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
-     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar"
+     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
+     "Combustíveis | Gasolina desceu 2,1 cêntimos no preço justo esta semana. Gasóleo subiu pela quarta semana seguida"
     ],
     "menos": [],
     "n_mais": 2,
