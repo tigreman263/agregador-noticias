@@ -860,24 +860,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-07T16:15:43.882533+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-08T07:46:03.826783+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-08T07:46:03.826783+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
@@ -1757,48 +1739,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-14T07:01:01.727829+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-14T07:01:01.727829+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-12T07:01:04.855471+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 533,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 484,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-12T08:01:02.235553+00:00",
    "pesquisas": [
@@ -3489,11 +3450,50 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T07:01:01.727829+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 478,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T06:01:04.814071+00:00",
-  "contaspoupanca.pt": "2026-11-13T22:00:59.666065+00:00"
+  "cm-serta.pt": "2026-11-14T07:01:01.727829+00:00",
+  "contaspoupanca.pt": "2026-11-14T07:01:01.727829+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3501,8 +3501,8 @@
   "contaspoupanca.pt": "2026-11-13T17:00:58.937270+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T06:01:04.814071+00:00",
-  "Apoio fundo ambiental": "2026-11-14T06:01:04.814071+00:00"
+  "Sertã": "2026-11-14T07:01:01.727829+00:00",
+  "Apoio fundo ambiental": "2026-11-14T07:01:01.727829+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4163,7 +4163,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-13T22:00:59.666065+00:00",
+   "verificado": "2026-11-14T07:01:01.727829+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4237,7 +4237,7 @@
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
-    "sexta-feira, 13 novembro 2026",
+    "sábado, 14 novembro 2026",
     "Informação",
     "Programação",
     "Ficha Técnica",
@@ -4430,28 +4430,21 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-13T22:00:59.666065+00:00",
+   "verificado": "2026-11-14T07:01:01.727829+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-13T19:01:06.682277+00:00",
+   "mudou": "2026-11-14T07:01:01.727829+00:00",
    "mudanca": {
     "mais": [
-     "MAÇÃO: \"Mercadinho de Natal\" é a novidade da \"Vila Natal\"",
-     "Mação",
-     "Médio Tejo",
-     "Mercadinho de Natal, montras e presépios animam o concelho de 8 de dezembro a 6 de janeiro"
+     "sábado, 14 novembro 2026"
     ],
     "menos": [
-     "Esta tarde, no Outeiro da Lagoa",
-     "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
-     "Castelo Branco",
-     "Beira Baixa",
-     "Última hora"
+     "sexta-feira, 13 novembro 2026"
     ],
-    "n_mais": 4,
-    "n_menos": 5
+    "n_mais": 1,
+    "n_menos": 1
    },
    "via": "site",
    "erro_site": ""
@@ -4660,10 +4653,7 @@
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "ATUALIZAÇÃO | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
-    "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
-    "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
     "Uma casa de 100 m² custa hoje mais de 10 anos de salário médio. Em 2016 eram 6",
-    "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "Portagens devem subir 3,83% em 2027. Saiba quanto pode pagar a mais",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
@@ -4671,14 +4661,16 @@
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
     "PPR",
     "Simulador de apoio para os carros elétricos",
+    "Simulador de amortização crédito à habitação",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
-    "Pedro Andersson",
+    "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
     "ERSE lançou hoje novo simulador de eletricidade e gás",
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
+    "Simuladores",
     "Termos e Condições",
     "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
@@ -4687,15 +4679,14 @@
     "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
-    "Simulador de amortização crédito à habitação",
     "Subscrever Newsletter",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
-    "Investimentos",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
+    "Investimentos",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (7 agosto de 2026)",
@@ -4704,21 +4695,19 @@
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (14 agosto de 2026)",
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (2 a 8 de novembro)",
     "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
-    "Simuladores",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
     "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
+    "Gasolina já custa menos de 2 euros em seis marcas. Veja qual é a mais barata esta semana",
     "Simulador de Juros compostos",
+    "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
     "Onde estão os melhores juros com capital garantido - Fevereiro 2026",
     "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
-    "Combustíveis",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
-    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "Podcast",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
@@ -4730,6 +4719,7 @@
     "VÍDEO - Como pode baixar o seu IMI no ano que vem",
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
+    "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "Vamos a contas: «Sou divorciada e quero investir para os meus filhos. Posso fazê-lo em meu nome?",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Vamos a contas: Quero poupar para a universidade dos meus filhos. Um ETF chega ou preciso de mais?",
@@ -4738,31 +4728,37 @@
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
+    "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
     "PodTEXT | Antes de entregar o IRS confirme esta página no Portal das Finanças",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
+    "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Revista de imprensa de 11 de novembro: Impostos em 2027, petróleo e seguro de catástrofes",
     "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
     "PodTEXT | \"Para que serve pedir fatura do café se depois paga IRS na mesma?\"",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
-    "Carro"
+    "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
+    "Carro",
+    "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-13T22:00:59.666065+00:00",
+   "verificado": "2026-11-14T07:01:01.727829+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-13T22:00:59.666065+00:00",
+   "mudou": "2026-11-14T07:01:01.727829+00:00",
    "mudanca": {
     "mais": [
-     "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
-     "VÍDEO - Como pode baixar o seu IMI no ano que vem"
+     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
+     "Gasolina já custa menos de 2 euros em seis marcas. Veja qual é a mais barata esta semana",
+     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
+     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 4,
     "n_menos": 0
    }
   }
