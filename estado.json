@@ -1761,45 +1761,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-12T11:01:02.030861+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 533,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 485,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-12T12:01:25.850672+00:00",
    "pesquisas": [
     {
@@ -3489,11 +3450,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-14T10:03:20.843454+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 531,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 477,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 4,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-14T10:00:58.067470+00:00",
-  "contaspoupanca.pt": "2026-11-14T10:00:58.067470+00:00"
+  "cm-serta.pt": "2026-11-14T10:03:20.843454+00:00",
+  "contaspoupanca.pt": "2026-11-14T10:03:20.843454+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3501,8 +3501,8 @@
   "contaspoupanca.pt": "2026-11-13T17:00:58.937270+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-14T10:00:58.067470+00:00",
-  "Apoio fundo ambiental": "2026-11-14T10:00:58.067470+00:00"
+  "Sertã": "2026-11-14T10:03:20.843454+00:00",
+  "Apoio fundo ambiental": "2026-11-14T10:03:20.843454+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4163,7 +4163,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-14T10:00:58.067470+00:00",
+   "verificado": "2026-11-14T10:03:20.843454+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4430,7 +4430,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-14T10:00:58.067470+00:00",
+   "verificado": "2026-11-14T10:03:20.843454+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4639,7 +4639,7 @@
     "Esses cookies nos ajudam a entender como os visitantes interagem com nosso site, obter estatísticas de acessos e utilizadores para fornecer uma melhor análise geral.",
     "Aceitar"
    ],
-   "verificado": "2026-11-13T22:00:59.666065+00:00",
+   "verificado": "2026-11-14T10:03:20.843454+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4724,7 +4724,6 @@
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Revista de imprensa de 10 de novembro: Juros do BCE, IMT Jovem e preço das casas",
     "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
-    "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
@@ -4743,7 +4742,7 @@
     "Carro",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)"
    ],
-   "verificado": "2026-11-14T10:00:58.067470+00:00",
+   "verificado": "2026-11-14T10:03:20.843454+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
