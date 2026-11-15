@@ -195,7 +195,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-15T04:31:17.967029+00:00"
+   "ultima": "2026-11-15T05:31:21.089369+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -1786,36 +1786,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-13T06:00:56.214482+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 534,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 480,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-13T07:01:01.553190+00:00",
    "pesquisas": [
@@ -3524,10 +3494,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-15T05:31:21.089369+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 531,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 484,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-15T04:31:17.967029+00:00",
+  "cm-serta.pt": "2026-11-15T05:31:21.089369+00:00",
   "contaspoupanca.pt": "2026-11-14T22:31:12.141019+00:00"
  },
  "lentos": {},
@@ -3536,8 +3536,8 @@
   "contaspoupanca.pt": "2026-11-14T17:15:48.324467+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-15T04:31:17.967029+00:00",
-  "Apoio fundo ambiental": "2026-11-15T04:31:17.967029+00:00"
+  "Sertã": "2026-11-15T05:31:21.089369+00:00",
+  "Apoio fundo ambiental": "2026-11-15T05:31:21.089369+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
