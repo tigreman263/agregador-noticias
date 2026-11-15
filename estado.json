@@ -874,15 +874,6 @@
  "ultima_descoberta": "2026-11-15",
  "enviados": [
   {
-   "tipo": "pagina",
-   "ts": "2026-11-10T07:46:02.396999+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
    "tipo": "resumo",
    "ts": "2026-11-10T08:46:10.751401+00:00",
    "titulo": "E-Lar 2027 – Apoio às famílias de 65,7 milhões previstos para trocar o gás por elétrico",
@@ -1772,48 +1763,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-15T18:30:59.465617+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-13T19:01:06.682277+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 479,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-13T20:01:20.168573+00:00",
    "pesquisas": [
@@ -3511,11 +3472,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-15T18:30:59.465617+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 524,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 483,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-15T17:30:59.843419+00:00",
-  "contaspoupanca.pt": "2026-11-15T17:30:59.843419+00:00"
+  "cm-serta.pt": "2026-11-15T18:30:59.465617+00:00",
+  "contaspoupanca.pt": "2026-11-15T18:30:59.465617+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3523,8 +3523,8 @@
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-15T17:30:59.843419+00:00",
-  "Apoio fundo ambiental": "2026-11-15T17:30:59.843419+00:00"
+  "Sertã": "2026-11-15T18:30:59.465617+00:00",
+  "Apoio fundo ambiental": "2026-11-15T18:30:59.465617+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4185,7 +4185,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-15T17:30:59.843419+00:00",
+   "verificado": "2026-11-15T18:30:59.465617+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4461,7 +4461,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-15T17:30:59.843419+00:00",
+   "verificado": "2026-11-15T18:30:59.465617+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4683,6 +4683,7 @@
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
+    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "Podcast",
@@ -4728,6 +4729,7 @@
     "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Simulador de Juros compostos",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Onde estão os melhores juros com capital garantido - Fevereiro 2026",
@@ -4745,6 +4747,7 @@
     "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
+    "Vamos a contas: «Sou divorciada e quero investir para os meus filhos. Posso fazê-lo em meu nome?",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Bolsa esta semana: Europa bate recordes e Wall Street recupera",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
@@ -4762,19 +4765,21 @@
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-15T17:30:59.843419+00:00",
+   "verificado": "2026-11-15T18:30:59.465617+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-15T17:30:59.843419+00:00",
+   "mudou": "2026-11-15T18:30:59.465617+00:00",
    "mudanca": {
     "mais": [
-     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas"
+     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
+     "Vamos a contas: «Sou divorciada e quero investir para os meus filhos. Posso fazê-lo em meu nome?"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 3,
     "n_menos": 0
    }
   }
