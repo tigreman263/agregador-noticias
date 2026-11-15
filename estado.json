@@ -29,20 +29,7 @@
  "resumo": [],
  "adiados": [],
  "ultimo_resumo": "2026-11-15",
- "sugeridas": {
-  "g1.globo.com": {
-   "dominio": "g1.globo.com",
-   "nome": "G1",
-   "n": 2,
-   "pesquisas": [
-    "Sertã"
-   ],
-   "exemplo": "Com máxima de 43°C, Floresta, no Sertão de PE, antecipa saída de estudantes das escolas",
-   "site": "https://g1.globo.com",
-   "feed": null,
-   "em": "2026-11-15T09:30:58.335070+00:00"
-  }
- },
+ "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
   "noticiasaominuto.com",
@@ -184,7 +171,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-15T09:30:58.335070+00:00"
+   "ultima": "2026-11-15T10:31:02.925056+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -886,15 +873,6 @@
  },
  "ultima_descoberta": "2026-11-15",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-09T15:46:03.801994+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-09T17:46:00.261167+00:00",
@@ -1785,48 +1763,18 @@
    "fonte": "Rádio Hertz",
    "nota": 19.5,
    "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-15T10:31:02.925056+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-13T11:00:58.547887+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 481,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-13T12:01:03.919876+00:00",
    "pesquisas": [
@@ -3517,11 +3465,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-15T10:31:02.925056+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 528,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 484,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 4,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-15T09:30:58.335070+00:00",
-  "contaspoupanca.pt": "2026-11-15T09:30:58.335070+00:00"
+  "cm-serta.pt": "2026-11-15T10:31:02.925056+00:00",
+  "contaspoupanca.pt": "2026-11-15T10:31:02.925056+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3529,8 +3516,8 @@
   "contaspoupanca.pt": "2026-11-14T17:15:48.324467+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-15T09:30:58.335070+00:00",
-  "Apoio fundo ambiental": "2026-11-15T09:30:58.335070+00:00"
+  "Sertã": "2026-11-15T10:31:02.925056+00:00",
+  "Apoio fundo ambiental": "2026-11-15T10:31:02.925056+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4191,7 +4178,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-15T09:30:58.335070+00:00",
+   "verificado": "2026-11-15T10:31:02.925056+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4466,7 +4453,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-15T09:30:58.335070+00:00",
+   "verificado": "2026-11-15T10:31:02.925056+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4675,7 +4662,7 @@
     "Esses cookies nos ajudam a entender como os visitantes interagem com nosso site, obter estatísticas de acessos e utilizadores para fornecer uma melhor análise geral.",
     "Aceitar"
    ],
-   "verificado": "2026-11-14T10:03:20.843454+00:00",
+   "verificado": "2026-11-15T10:31:02.925056+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4687,6 +4674,7 @@
    "linhas_google": [
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
+    "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "Bolsa esta semana: Europa bate recordes e Wall Street recupera",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
@@ -4732,6 +4720,7 @@
     "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Simulador de Juros compostos",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
@@ -4767,19 +4756,20 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-15T09:30:58.335070+00:00",
+   "verificado": "2026-11-15T10:31:02.925056+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-15T07:31:18.725963+00:00",
+   "mudou": "2026-11-15T10:31:02.925056+00:00",
    "mudanca": {
     "mais": [
-     "Seguro de saúde padrão: saiba se tem todas as coberturas essenciais"
+     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
