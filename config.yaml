@@ -24,7 +24,7 @@ pesos:
 fontes:
   confiaveis: ["sapo.pt", "mediotejo.net", "radiocondestavel.pt", "noticiasdecoimbra.pt", "radiohertz.pt", "cmjornal.pt", "dnoticias.pt", "rtp.pt", "cnnportugal.iol.pt", "gazetadointerior.pt", "antenalivre.pt", "diariodigitalcastelobranco.pt", "observador.pt", "reconquista.pt", "centralpress.pt", "portal-energia.com", "razaoautomovel.com", "sicnoticias.pt", "jm-madeira.pt", "correiodelagos.com"]
   neutras: []
-  bloqueadas: ["br"]
+  bloqueadas: ["br", "g1.globo.com"]
   feeds:
     - {nome: "SAPO", url: "https://sapo.pt/rss/destaques"}
     - {nome: "Médio Tejo", url: "https://mediotejo.net/feed/"}
