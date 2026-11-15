@@ -875,15 +875,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-10T09:46:04.973782+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-10T10:46:00.230111+00:00",
    "titulo": "Mudou: Radio condestável",
    "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
@@ -1772,48 +1763,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-15T20:30:59.266072+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-13T21:01:00.176906+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 527,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 479,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-13T22:00:59.666065+00:00",
    "pesquisas": [
@@ -3511,11 +3472,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-15T20:30:59.266072+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 523,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 483,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-15T19:31:01.352422+00:00",
-  "contaspoupanca.pt": "2026-11-15T19:31:01.352422+00:00"
+  "cm-serta.pt": "2026-11-15T20:30:59.266072+00:00",
+  "contaspoupanca.pt": "2026-11-15T20:30:59.266072+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3523,8 +3523,8 @@
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-15T19:31:01.352422+00:00",
-  "Apoio fundo ambiental": "2026-11-15T19:31:01.352422+00:00"
+  "Sertã": "2026-11-15T20:30:59.266072+00:00",
+  "Apoio fundo ambiental": "2026-11-15T20:30:59.266072+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4185,7 +4185,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-15T19:31:01.352422+00:00",
+   "verificado": "2026-11-15T20:30:59.266072+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4461,7 +4461,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-15T19:31:01.352422+00:00",
+   "verificado": "2026-11-15T20:30:59.266072+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4724,7 +4724,6 @@
     "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
-    "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Investimento em ouro: quanto estou a ganhar em agosto?",
     "Simulador de Juros compostos",
@@ -4732,6 +4731,7 @@
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
     "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
+    "Eletricidade: tarifário indexado continua a compensar, mas não é para todos",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
@@ -4762,23 +4762,19 @@
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-15T19:31:01.352422+00:00",
+   "verificado": "2026-11-15T20:30:59.266072+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-15T19:31:01.352422+00:00",
+   "mudou": "2026-11-15T20:30:59.266072+00:00",
    "mudanca": {
     "mais": [
-     "Candidaturas à segunda fase do E-Lar abrem hoje com o dobro do dinheiro",
-     "Investimento em ouro: quanto estou a ganhar em agosto?",
-     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
-     "Vamos a contas: \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
-     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde"
+     "Eletricidade: tarifário indexado continua a compensar, mas não é para todos"
     ],
     "menos": [],
-    "n_mais": 5,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
