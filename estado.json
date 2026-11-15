@@ -26,33 +26,9 @@
   "1ef7f25deb2d9948": "2026-11-12T17:01:06.994916+00:00",
   "44f1e003e76c154b": "2026-11-14T15:15:55.752589+00:00"
  },
- "resumo": [
-  {
-   "titulo": "VILA DE REI – Município concretiza mais uma fase do projeto “Separar para criar mais valor 2.0” com a entrega de mais 20 compostores domésticos",
-   "link": "https://radiohertz.pt/vila-de-rei-municipio-concretiza-mais-uma-fase-do-projeto-separar-para-criar-mais-valor-2-0-com-a-entrega-de-mais-20-compostores-domesticos/",
-   "dominio": "radiohertz.pt",
-   "fonte": "Rádio Hertz",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Fundo Ambiental"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-14T14:31:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "44f1e003e76c154b"
-   ],
-   "ts": "2026-11-14T15:15:55.752589+00:00"
-  }
- ],
+ "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-14",
+ "ultimo_resumo": "2026-11-15",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -195,7 +171,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-15T07:31:18.725963+00:00"
+   "ultima": "2026-11-15T08:31:03.033007+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -884,15 +860,6 @@
  },
  "ultima_descoberta": "2026-11-14",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-09T15:46:03.801994+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-09T15:46:03.801994+00:00",
@@ -1783,48 +1750,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-15T08:31:03.033007+00:00",
+   "titulo": "VILA DE REI – Município concretiza mais uma fase do projeto “Separar para criar mais valor 2.0” com a entrega de mais 20 compostores domésticos",
+   "link": "https://radiohertz.pt/vila-de-rei-municipio-concretiza-mais-uma-fase-do-projeto-separar-para-criar-mais-valor-2-0-com-a-entrega-de-mais-20-compostores-domesticos/",
+   "fonte": "Rádio Hertz",
+   "nota": 19.5,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-13T09:01:01.004976+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 531,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 480,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-13T10:01:00.694754+00:00",
    "pesquisas": [
@@ -3515,11 +3452,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-15T08:31:03.033007+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 528,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 485,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 1,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-15T07:31:18.725963+00:00",
-  "contaspoupanca.pt": "2026-11-15T07:31:18.725963+00:00"
+  "cm-serta.pt": "2026-11-15T08:31:03.033007+00:00",
+  "contaspoupanca.pt": "2026-11-15T08:31:03.033007+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3527,8 +3503,8 @@
   "contaspoupanca.pt": "2026-11-14T17:15:48.324467+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-15T07:31:18.725963+00:00",
-  "Apoio fundo ambiental": "2026-11-15T07:31:18.725963+00:00"
+  "Sertã": "2026-11-15T08:31:03.033007+00:00",
+  "Apoio fundo ambiental": "2026-11-15T08:31:03.033007+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4189,7 +4165,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-15T07:31:18.725963+00:00",
+   "verificado": "2026-11-15T08:31:03.033007+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4464,7 +4440,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-15T07:31:18.725963+00:00",
+   "verificado": "2026-11-15T08:31:03.033007+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4686,7 +4662,6 @@
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Bolsa esta semana: Europa bate recordes e Wall Street recupera",
-    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "Simulador de apoio para os carros elétricos",
@@ -4731,7 +4706,6 @@
     "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Simulador de Juros compostos",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
@@ -4753,7 +4727,6 @@
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "Vamos a contas: «Sou divorciada e quero investir para os meus filhos. Posso fazê-lo em meu nome?",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
-    "Bolsa esta semana: eleições nos EUA derrubam tecnológicas, Lisboa sobe 2%",
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
@@ -4768,7 +4741,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-15T07:31:18.725963+00:00",
+   "verificado": "2026-11-15T08:31:03.033007+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
