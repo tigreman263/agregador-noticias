@@ -29,7 +29,20 @@
  "resumo": [],
  "adiados": [],
  "ultimo_resumo": "2026-11-15",
- "sugeridas": {},
+ "sugeridas": {
+  "g1.globo.com": {
+   "dominio": "g1.globo.com",
+   "nome": "G1",
+   "n": 2,
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Com máxima de 43°C, Floresta, no Sertão de PE, antecipa saída de estudantes das escolas",
+   "site": "https://g1.globo.com",
+   "feed": null,
+   "em": "2026-11-15T09:30:58.335070+00:00"
+  }
+ },
  "sugeridas_antigas": [
   "publico.pt",
   "noticiasaominuto.com",
@@ -171,7 +184,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "SERTÃ – Lídia Carolina e Ricardo Barbosa apresentam “Portugal: Um país em Canções”",
-   "ultima": "2026-11-15T08:31:03.033007+00:00"
+   "ultima": "2026-11-15T09:30:58.335070+00:00"
   },
   "noticiasdecoimbra.pt": {
    "nome": "Notícias de Coimbra",
@@ -777,13 +790,14 @@
    "nome": "G1",
    "site": "https://g1.globo.com",
    "ids": [
-    "7dab5690400f8ca3"
+    "7dab5690400f8ca3",
+    "3f41664d678ec1ba"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "Com máxima de 43°C, Floresta, no Sertão de PE, antecipa saída de estudantes das escolas",
-   "ultima": "2026-11-14T09:00:58.509914+00:00"
+   "ultima": "2026-11-15T09:30:58.335070+00:00"
   },
   "folhape.com.br": {
    "nome": "Folha PE",
@@ -831,7 +845,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "ultima": "2026-11-14T09:00:58.509914+00:00"
+   "ultima": "2026-11-15T09:30:58.335070+00:00"
   },
   "postal.pt": {
    "nome": "Postal do Algarve",
@@ -855,10 +869,22 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Lula pede investimentos em fundo ambiental e critica doações",
-   "ultima": "2026-11-14T09:00:58.509914+00:00"
+   "ultima": "2026-11-15T09:30:58.335070+00:00"
+  },
+  "diariodocentrodomundo.com.br": {
+   "nome": "Diário do Centro do Mundo",
+   "site": "https://www.diariodocentrodomundo.com.br",
+   "ids": [
+    "e3298bdd23d24230"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "Canadá destina US$ 400 milhões a fundo ambiental criado por Lula",
+   "ultima": "2026-11-15T09:30:58.335070+00:00"
   }
  },
- "ultima_descoberta": "2026-11-14",
+ "ultima_descoberta": "2026-11-15",
  "enviados": [
   {
    "tipo": "pagina",
@@ -1762,45 +1788,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-13T10:01:00.694754+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 531,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 481,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-13T11:00:58.547887+00:00",
    "pesquisas": [
@@ -3491,11 +3478,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-15T09:30:58.335070+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 527,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 484,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 1,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-15T08:31:03.033007+00:00",
-  "contaspoupanca.pt": "2026-11-15T08:31:03.033007+00:00"
+  "cm-serta.pt": "2026-11-15T09:30:58.335070+00:00",
+  "contaspoupanca.pt": "2026-11-15T09:30:58.335070+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3503,8 +3529,8 @@
   "contaspoupanca.pt": "2026-11-14T17:15:48.324467+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-15T08:31:03.033007+00:00",
-  "Apoio fundo ambiental": "2026-11-15T08:31:03.033007+00:00"
+  "Sertã": "2026-11-15T09:30:58.335070+00:00",
+  "Apoio fundo ambiental": "2026-11-15T09:30:58.335070+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4165,7 +4191,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-15T08:31:03.033007+00:00",
+   "verificado": "2026-11-15T09:30:58.335070+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4440,7 +4466,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-15T08:31:03.033007+00:00",
+   "verificado": "2026-11-15T09:30:58.335070+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4741,7 +4767,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-15T08:31:03.033007+00:00",
+   "verificado": "2026-11-15T09:30:58.335070+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
