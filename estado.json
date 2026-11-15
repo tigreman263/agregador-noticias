@@ -876,15 +876,6 @@
   {
    "tipo": "pagina",
    "ts": "2026-11-10T10:46:00.230111+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-10T10:46:00.230111+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
    "fonte": "contaspoupanca.pt",
@@ -1772,48 +1763,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-15T21:31:04.034970+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-13T22:00:59.666065+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 528,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 479,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 4,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-13T23:00:58.544081+00:00",
    "pesquisas": [
@@ -3511,11 +3472,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-15T21:31:04.034970+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 523,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 483,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-15T20:30:59.266072+00:00",
-  "contaspoupanca.pt": "2026-11-15T20:30:59.266072+00:00"
+  "cm-serta.pt": "2026-11-15T21:31:04.034970+00:00",
+  "contaspoupanca.pt": "2026-11-15T21:31:04.034970+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3523,8 +3523,8 @@
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-15T20:30:59.266072+00:00",
-  "Apoio fundo ambiental": "2026-11-15T20:30:59.266072+00:00"
+  "Sertã": "2026-11-15T21:31:04.034970+00:00",
+  "Apoio fundo ambiental": "2026-11-15T21:31:04.034970+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4185,7 +4185,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-15T20:30:59.266072+00:00",
+   "verificado": "2026-11-15T21:31:04.034970+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4461,7 +4461,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-15T20:30:59.266072+00:00",
+   "verificado": "2026-11-15T21:31:04.034970+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4685,6 +4685,7 @@
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
+    "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
     "Podcast",
     "Simulador de apoio para os carros elétricos",
     "Simulador de amortização crédito à habitação",
@@ -4762,16 +4763,16 @@
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-15T20:30:59.266072+00:00",
+   "verificado": "2026-11-15T21:31:04.034970+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-15T20:30:59.266072+00:00",
+   "mudou": "2026-11-15T21:31:04.034970+00:00",
    "mudanca": {
     "mais": [
-     "Eletricidade: tarifário indexado continua a compensar, mas não é para todos"
+     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?"
     ],
     "menos": [],
     "n_mais": 1,
