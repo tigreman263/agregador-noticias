@@ -875,15 +875,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-10T10:46:00.230111+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-10T11:45:37.341086+00:00",
    "titulo": "Mudou: Radio condestável",
    "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
@@ -1772,39 +1763,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-15T22:31:00.255869+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-13T23:00:58.544081+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 525,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 479,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-14T00:01:00.489456+00:00",
    "pesquisas": [
@@ -3511,11 +3481,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-15T22:31:00.255869+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 523,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 484,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-15T21:31:04.034970+00:00",
-  "contaspoupanca.pt": "2026-11-15T21:31:04.034970+00:00"
+  "cm-serta.pt": "2026-11-15T22:31:00.255869+00:00",
+  "contaspoupanca.pt": "2026-11-15T22:31:00.255869+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3523,8 +3532,8 @@
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-15T21:31:04.034970+00:00",
-  "Apoio fundo ambiental": "2026-11-15T21:31:04.034970+00:00"
+  "Sertã": "2026-11-15T22:31:00.255869+00:00",
+  "Apoio fundo ambiental": "2026-11-15T22:31:00.255869+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4185,7 +4194,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-15T21:31:04.034970+00:00",
+   "verificado": "2026-11-15T22:31:00.255869+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4461,7 +4470,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-15T21:31:04.034970+00:00",
+   "verificado": "2026-11-15T22:31:00.255869+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4681,6 +4690,7 @@
   "https://contaspoupanca.pt/": {
    "linhas_google": [
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
+    "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
@@ -4728,6 +4738,7 @@
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Investimento em ouro: quanto estou a ganhar em agosto?",
     "Simulador de Juros compostos",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
@@ -4757,22 +4768,21 @@
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
     "PodTEXT | \"Para que serve pedir fatura do café se depois paga IRS na mesma?\"",
     "1.000 € que podem salvar as suas finanças - O que é o Fundo BASE?",
-    "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-15T21:31:04.034970+00:00",
+   "verificado": "2026-11-15T22:31:00.255869+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-15T21:31:04.034970+00:00",
+   "mudou": "2026-11-15T22:31:00.255869+00:00",
    "mudanca": {
     "mais": [
-     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?"
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)"
     ],
     "menos": [],
     "n_mais": 1,
