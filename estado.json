@@ -1776,45 +1776,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-13T15:01:00.456182+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 533,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 486,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-13T16:00:50.460900+00:00",
    "pesquisas": [
     {
@@ -3507,11 +3468,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-15T14:30:56.515600+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 526,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 485,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-15T13:31:41.144102+00:00",
-  "contaspoupanca.pt": "2026-11-15T13:31:41.144102+00:00"
+  "cm-serta.pt": "2026-11-15T14:30:56.515600+00:00",
+  "contaspoupanca.pt": "2026-11-15T14:30:56.515600+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3519,8 +3519,8 @@
   "contaspoupanca.pt": "2026-11-14T17:15:48.324467+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-15T13:31:41.144102+00:00",
-  "Apoio fundo ambiental": "2026-11-15T13:31:41.144102+00:00"
+  "Sertã": "2026-11-15T14:30:56.515600+00:00",
+  "Apoio fundo ambiental": "2026-11-15T14:30:56.515600+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4181,7 +4181,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-15T13:31:41.144102+00:00",
+   "verificado": "2026-11-15T14:30:56.515600+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4456,7 +4456,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-15T13:31:41.144102+00:00",
+   "verificado": "2026-11-15T14:30:56.515600+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4759,7 +4759,7 @@
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-15T13:31:41.144102+00:00",
+   "verificado": "2026-11-15T14:30:56.515600+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
