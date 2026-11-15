@@ -874,15 +874,6 @@
  "ultima_descoberta": "2026-11-15",
  "enviados": [
   {
-   "tipo": "resumo",
-   "ts": "2026-11-10T08:46:10.751401+00:00",
-   "titulo": "E-Lar 2027 – Apoio às famílias de 65,7 milhões previstos para trocar o gás por elétrico",
-   "link": "https://www.portal-energia.com/e-lar-2027-apoio-familias-gas/",
-   "fonte": "Portal Energia",
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
    "tipo": "pagina",
    "ts": "2026-11-10T09:46:04.973782+00:00",
    "titulo": "Mudou: Contas poupanças",
@@ -1772,48 +1763,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-15T19:31:01.352422+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-13T20:01:20.168573+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 526,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 480,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-13T21:01:00.176906+00:00",
    "pesquisas": [
@@ -3511,11 +3472,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-15T19:31:01.352422+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 523,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 483,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-15T18:30:59.465617+00:00",
-  "contaspoupanca.pt": "2026-11-15T18:30:59.465617+00:00"
+  "cm-serta.pt": "2026-11-15T19:31:01.352422+00:00",
+  "contaspoupanca.pt": "2026-11-15T19:31:01.352422+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3523,8 +3523,8 @@
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-15T18:30:59.465617+00:00",
-  "Apoio fundo ambiental": "2026-11-15T18:30:59.465617+00:00"
+  "Sertã": "2026-11-15T19:31:01.352422+00:00",
+  "Apoio fundo ambiental": "2026-11-15T19:31:01.352422+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4185,7 +4185,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-15T18:30:59.465617+00:00",
+   "verificado": "2026-11-15T19:31:01.352422+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4461,7 +4461,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-15T18:30:59.465617+00:00",
+   "verificado": "2026-11-15T19:31:01.352422+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4685,7 +4685,6 @@
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
-    "Combustíveis descem até 12,5 cêntimos na segunda-feira: porque é que o gasóleo e a gasolina vão ficar tão mais baratos",
     "Podcast",
     "Simulador de apoio para os carros elétricos",
     "Simulador de amortização crédito à habitação",
@@ -4717,8 +4716,7 @@
     "Termos e Condições",
     "Investimentos",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
-    "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
-    "Os 10 fundos de investimento nacionais que mais renderam esta semana (7 agosto de 2026)",
+    "Candidaturas à segunda fase do E-Lar abrem hoje com o dobro do dinheiro",
     "IMI",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (14 agosto de 2026)",
@@ -4728,18 +4726,17 @@
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
     "Vamos a contas: \"Devo esperar por uma queda da bolsa para começar a investir?\"",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
+    "Investimento em ouro: quanto estou a ganhar em agosto?",
     "Simulador de Juros compostos",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
-    "Onde estão os melhores juros com capital garantido - Fevereiro 2026",
+    "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
     "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Quantas faturas pendentes tem neste momento no seu e-fatura?",
-    "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
     "Seguro de saúde padrão: saiba se tem todas as coberturas essenciais",
@@ -4753,10 +4750,10 @@
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas",
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
-    "PodTEXT | Antes de entregar o IRS confirme esta página no Portal das Finanças",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
+    "Vamos a contas: \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
+    "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
-    "Revista de imprensa de 9 de novembro: Combustíveis, pensões e IRS",
     "PodTEXT | \"Para que serve pedir fatura do café se depois paga IRS na mesma?\"",
     "1.000 € que podem salvar as suas finanças - O que é o Fundo BASE?",
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
@@ -4765,21 +4762,23 @@
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-15T18:30:59.465617+00:00",
+   "verificado": "2026-11-15T19:31:01.352422+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-15T18:30:59.465617+00:00",
+   "mudou": "2026-11-15T19:31:01.352422+00:00",
    "mudanca": {
     "mais": [
-     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
-     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
-     "Vamos a contas: «Sou divorciada e quero investir para os meus filhos. Posso fazê-lo em meu nome?"
+     "Candidaturas à segunda fase do E-Lar abrem hoje com o dobro do dinheiro",
+     "Investimento em ouro: quanto estou a ganhar em agosto?",
+     "Como escolher um bom PPR para si e para os seus filhos e saber se estou a ganhar ou a perder dinheiro?",
+     "Vamos a contas: \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
+     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde"
     ],
     "menos": [],
-    "n_mais": 3,
+    "n_mais": 5,
     "n_menos": 0
    }
   }
