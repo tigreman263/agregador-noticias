@@ -1,6 +1,5 @@
 {
  "vistos": {
-  "6bdcdd7bfd287b28": "2026-11-02T17:46:19.500650+00:00",
   "b49828abc5664c4e": "2026-11-03T14:01:22.913473+00:00",
   "7733f899db4a3803": "2026-11-03T16:01:01.631263+00:00",
   "5b9cd746e50a2a89": "2026-11-03T16:01:01.631263+00:00",
@@ -873,24 +872,6 @@
  },
  "ultima_descoberta": "2026-11-16",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-10T17:45:56.962241+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-10T18:46:04.000070+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-10T19:46:28.818340+00:00",
@@ -1772,48 +1753,27 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-16T18:31:04.003317+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-16T18:31:04.003317+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-14T18:16:07.728766+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 539,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 486,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-14T19:15:43.505965+00:00",
    "pesquisas": [
@@ -3517,20 +3477,59 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-16T18:31:04.003317+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 525,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 477,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-16T17:31:04.836057+00:00",
-  "contaspoupanca.pt": "2026-11-16T17:31:04.836057+00:00"
+  "cm-serta.pt": "2026-11-16T18:31:04.003317+00:00",
+  "contaspoupanca.pt": "2026-11-16T18:31:04.003317+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-16T16:30:50.201805+00:00",
-  "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
+  "contaspoupanca.pt": "2026-11-16T18:30:50.763980+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-16T17:31:04.836057+00:00",
-  "Apoio fundo ambiental": "2026-11-16T17:31:04.836057+00:00"
+  "Sertã": "2026-11-16T18:31:04.003317+00:00",
+  "Apoio fundo ambiental": "2026-11-16T18:31:04.003317+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4193,7 +4192,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-16T17:31:04.836057+00:00",
+   "verificado": "2026-11-16T18:31:04.003317+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4365,6 +4364,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "REGIÃO: EDP aposta na inovação híbrida na Barragem de Pracana",
+    "Última hora",
     "SERTÃ: Rua Dr. Romão de Mascarenhas cortada ao trânsito",
     "Última hora",
     "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão",
@@ -4379,12 +4380,21 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "REGIÃO: EDP aposta na inovação híbrida na Barragem de Pracana",
+    "Mação",
+    "Vila Velha de Ródão",
+    "Proença-a-Nova",
+    "Beira Baixa",
+    "Médio Tejo",
+    "Região",
+    "16-11-2026",
+    "Última hora",
+    "Barragem junta energia hídrica e solar num investimento pioneiro na Península Ibérica",
     "SERTÃ: Rua Dr. Romão de Mascarenhas cortada ao trânsito",
     "Sertã",
     "Beira Baixa",
     "16-11-2026",
     "Última hora",
-    "Amanhã, dia 17 de novembro",
     "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão",
     "Ferreira do Zêzere",
     "Médio Tejo",
@@ -4440,10 +4450,6 @@
     "Sertã",
     "Beira Baixa",
     "13-11-2026",
-    "PENAMACOR: Município e Valverde del Fresno assinam ata de reconhecimento da fronteira",
-    "Penamacor",
-    "Beira Baixa",
-    "12-11-2026",
     "1",
     "2",
     "3",
@@ -4457,41 +4463,32 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-16T17:31:04.836057+00:00",
+   "verificado": "2026-11-16T18:31:04.003317+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-16T17:31:04.836057+00:00",
+   "mudou": "2026-11-16T18:31:04.003317+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Rua Dr. Romão de Mascarenhas cortada ao trânsito",
+     "REGIÃO: EDP aposta na inovação híbrida na Barragem de Pracana",
      "Última hora",
-     "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão",
+     "REGIÃO: EDP aposta na inovação híbrida na Barragem de Pracana",
+     "Mação",
+     "Vila Velha de Ródão",
+     "Proença-a-Nova",
+     "Médio Tejo",
+     "Região",
      "Última hora",
-     "FUTEBOL/ARCO: Jorge Ramos deixa ARCO",
-     "Última hora",
-     "SERTÃ: Rua Dr. Romão de Mascarenhas cortada ao trânsito",
-     "Sertã",
-     "Última hora",
-     "Amanhã, dia 17 de novembro",
-     "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão",
-     "Última hora",
-     "FUTEBOL/ARCO: Jorge Ramos deixa ARCO",
-     "Oleiros",
-     "Desporto",
-     "Última hora"
+     "Barragem junta energia hídrica e solar num investimento pioneiro na Península Ibérica"
     ],
     "menos": [
-     "Iniciativa juntou mais de duas dezenas de pessoas",
-     "GÓIS: ATL de Natal com inscrições abertas",
-     "Mação",
-     "FERREIRA DO ZÊZERE: Acordeão volta a subir ao palco para mais um festival",
-     "VILA DE REI: Rede de Bibliotecas organiza mais uma “Estafeta de Contos”",
-     "Vila de Rei"
+     "Amanhã, dia 17 de novembro",
+     "PENAMACOR: Município e Valverde del Fresno assinam ata de reconhecimento da fronteira",
+     "Penamacor"
     ],
-    "n_mais": 16,
-    "n_menos": 6
+    "n_mais": 10,
+    "n_menos": 3
    },
    "via": "site",
    "erro_site": ""
@@ -4700,8 +4697,9 @@
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
-    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
+    "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
+    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
     "Simulador de apoio para os carros elétricos",
     "Contas-Poupança | Dê um aumento a si próprio",
@@ -4782,20 +4780,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-16T17:31:04.836057+00:00",
+   "verificado": "2026-11-16T18:31:04.003317+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-16T15:31:04.988711+00:00",
+   "mudou": "2026-11-16T18:31:04.003317+00:00",
    "mudanca": {
     "mais": [
-     "Vamos a contas: \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
-     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?"
+     "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
