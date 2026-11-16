@@ -875,15 +875,6 @@
   {
    "tipo": "pagina",
    "ts": "2026-11-10T19:46:28.818340+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-10T19:46:28.818340+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
    "fonte": "contaspoupanca.pt",
@@ -1771,47 +1762,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-16T19:31:03.569345+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-14T19:15:43.505965+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 580,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 528,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-14T20:18:56.168657+00:00",
    "pesquisas": [
@@ -3516,11 +3478,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-16T19:31:03.569345+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 524,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 478,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-16T18:31:04.003317+00:00",
-  "contaspoupanca.pt": "2026-11-16T18:31:04.003317+00:00"
+  "cm-serta.pt": "2026-11-16T19:31:03.569345+00:00",
+  "contaspoupanca.pt": "2026-11-16T19:31:03.569345+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3528,8 +3529,8 @@
   "contaspoupanca.pt": "2026-11-16T18:30:50.763980+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-16T18:31:04.003317+00:00",
-  "Apoio fundo ambiental": "2026-11-16T18:31:04.003317+00:00"
+  "Sertã": "2026-11-16T19:31:03.569345+00:00",
+  "Apoio fundo ambiental": "2026-11-16T19:31:03.569345+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4192,7 +4193,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-16T18:31:04.003317+00:00",
+   "verificado": "2026-11-16T19:31:03.569345+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4463,7 +4464,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-16T18:31:04.003317+00:00",
+   "verificado": "2026-11-16T19:31:03.569345+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4731,6 +4732,7 @@
     "Simulador de amortização crédito à habitação",
     "Investimentos",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
+    "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "IMI",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
@@ -4745,7 +4747,6 @@
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "Certificados de Aforro",
-    "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "Podcast",
@@ -4767,7 +4768,6 @@
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
-    "Vamos a contas: \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
@@ -4778,21 +4778,23 @@
     "Vamos a contas: (1) Uma app para amortizar o crédito à habitação e (2) devo investir para comprar casa daqui a 3 anos?",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
+    "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-16T18:31:04.003317+00:00",
+   "verificado": "2026-11-16T19:31:03.569345+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-16T18:31:04.003317+00:00",
+   "mudou": "2026-11-16T19:31:03.569345+00:00",
    "mudanca": {
     "mais": [
-     "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?"
+     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
+     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
