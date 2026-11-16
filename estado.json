@@ -876,15 +876,6 @@
   {
    "tipo": "pagina",
    "ts": "2026-11-10T13:46:00.075469+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-10T13:46:00.075469+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
    "fonte": "contaspoupanca.pt",
@@ -1772,48 +1763,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-16T11:31:01.118018+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-14T11:15:58.282886+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 531,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 477,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-14T12:15:55.178576+00:00",
    "pesquisas": [
@@ -3520,11 +3481,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-16T11:31:01.118018+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 522,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 478,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-16T10:31:28.738217+00:00",
-  "contaspoupanca.pt": "2026-11-16T10:31:28.738217+00:00"
+  "cm-serta.pt": "2026-11-16T11:31:01.118018+00:00",
+  "contaspoupanca.pt": "2026-11-16T11:31:01.118018+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3532,8 +3532,8 @@
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-16T10:31:28.738217+00:00",
-  "Apoio fundo ambiental": "2026-11-16T10:31:28.738217+00:00"
+  "Sertã": "2026-11-16T11:31:01.118018+00:00",
+  "Apoio fundo ambiental": "2026-11-16T11:31:01.118018+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4194,9 +4194,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-16T10:31:28.738217+00:00",
-   "falhas": 1,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-16T11:31:01.118018+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-15T16:30:50.076308+00:00",
@@ -4470,7 +4470,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-16T10:31:28.738217+00:00",
+   "verificado": "2026-11-16T11:31:01.118018+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4737,10 +4737,10 @@
     "Simulador de Juros compostos",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
+    "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "Certificados de Aforro",
     "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
-    "Eletricidade: tarifário indexado continua a compensar, mas não é para todos",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "Podcast",
@@ -4753,7 +4753,6 @@
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
     "Seguro de saúde padrão: saiba se tem todas as coberturas essenciais",
     "VÍDEO - Como pode baixar o seu IMI no ano que vem",
-    "Combustíveis | Preço justo da gasolina e do gasóleo desce quase 10 cêntimos por litro",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
@@ -4771,21 +4770,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-16T10:31:28.738217+00:00",
-   "falhas": 1,
-   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
+   "verificado": "2026-11-16T11:31:01.118018+00:00",
+   "falhas": 0,
+   "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-16T09:31:08.116604+00:00",
+   "mudou": "2026-11-16T11:31:01.118018+00:00",
    "mudanca": {
     "mais": [
-     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
-     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
-     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social"
+     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas"
     ],
     "menos": [],
-    "n_mais": 3,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
