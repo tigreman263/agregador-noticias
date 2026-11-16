@@ -875,24 +875,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-10T14:45:49.364803+00:00",
-   "titulo": "Mudou: cm-serta",
-   "link": "https://cm-serta.pt/comunicacao/noticias",
-   "fonte": "cm-serta.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-10T14:45:49.364803+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-10T15:45:59.574674+00:00",
    "titulo": "Mudou: Radio condestável",
    "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
@@ -1772,48 +1754,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-16T13:31:07.616943+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-16T13:31:07.616943+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-14T13:16:02.344315+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 477,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-14T14:15:56.259090+00:00",
    "pesquisas": [
@@ -3520,11 +3481,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-16T13:31:07.616943+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 523,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 478,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-16T12:31:00.881718+00:00",
-  "contaspoupanca.pt": "2026-11-16T12:31:00.881718+00:00"
+  "cm-serta.pt": "2026-11-16T13:31:07.616943+00:00",
+  "contaspoupanca.pt": "2026-11-16T13:31:07.616943+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3532,8 +3532,8 @@
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-16T12:31:00.881718+00:00",
-  "Apoio fundo ambiental": "2026-11-16T12:31:00.881718+00:00"
+  "Sertã": "2026-11-16T13:31:07.616943+00:00",
+  "Apoio fundo ambiental": "2026-11-16T13:31:07.616943+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4194,7 +4194,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-16T12:31:00.881718+00:00",
+   "verificado": "2026-11-16T13:31:07.616943+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4365,37 +4365,24 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ: Vigília apela ao direito à habitação",
+    "Última hora",
     "SERTÃ: Estado de conservação de escola do Carvalhal em destaque",
-    "Última hora",
-    "REGIÃO/futebol: Liga CRP joga-se na Condestável",
-    "Última hora",
-    "SERTÃ: Menina de quatro anos ferida em despiste",
-    "Última hora",
-    "SERTÃ/Cabeçudo: Despiste provoca três feridos leves",
-    "Última hora",
-    "SERTÃ: Município inicia procedimento para integrar as ZAER no PDM",
-    "Última hora",
-    "SERTÃ: Reuniões do Executivo Municipal mudam de horário",
-    "Última hora",
-    "PENAMACOR: Município e Valverde del Fresno assinam ata de reconhecimento da fronteira",
-    "Última hora",
-    "SERTÃ: Vereador do Chega volta a pedir passagem pedonal sobre o IC8",
-    "Última hora",
-    "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
-    "Última hora",
-    "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
-    "Última hora",
-    "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
     "Última hora",
     "Todas as notícias",
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: Vigília apela ao direito à habitação",
+    "Sertã",
+    "Beira Baixa",
+    "16-11-2026",
+    "Última hora",
+    "Iniciativa juntou mais de duas dezenas de pessoas",
     "VILA DE REI: Biblioteca promove “Entre Histórias e Descobertas”",
     "Vila de Rei",
     "Beira Baixa",
     "14-11-2026",
-    "No dia 21 de novembro",
     "SERTÃ: Estado de conservação de escola do Carvalhal em destaque",
     "Beira Baixa",
     "Sertã",
@@ -4410,7 +4397,6 @@
     "Beira Baixa",
     "Desporto",
     "14-11-2026",
-    "Última hora",
     "MAÇÃO: \"Mercadinho de Natal\" é a novidade da \"Vila Natal\"",
     "Mação",
     "Médio Tejo",
@@ -4419,28 +4405,23 @@
     "Sertã",
     "Beira Baixa",
     "13-11-2026",
-    "Última hora",
     "SERTÃ/Cabeçudo: Despiste provoca três feridos leves",
     "Sertã",
     "Beira Baixa",
     "13-11-2026",
-    "Última hora",
     "SERTÃ: Município inicia procedimento para integrar as ZAER no PDM",
     "Beira Baixa",
     "Cernache do Bonjardim",
     "Sertã",
     "13-11-2026",
-    "Última hora",
     "SERTÃ: Reuniões do Executivo Municipal mudam de horário",
     "Sertã",
     "Beira Baixa",
     "13-11-2026",
-    "Última hora",
     "PENAMACOR: Município e Valverde del Fresno assinam ata de reconhecimento da fronteira",
     "Penamacor",
     "Beira Baixa",
     "12-11-2026",
-    "Última hora",
     "GÓIS: ATL de Natal com inscrições abertas",
     "Mação",
     "Beira Baixa",
@@ -4451,10 +4432,6 @@
     "12-11-2026",
     "VILA DE REI: Rede de Bibliotecas organiza mais uma “Estafeta de Contos”",
     "Vila de Rei",
-    "Beira Baixa",
-    "12-11-2026",
-    "SERTÃ: Município promove sessão de esclarecimentos sobre aviso PEPAC",
-    "Sertã",
     "Beira Baixa",
     "12-11-2026",
     "1",
@@ -4470,21 +4447,34 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-16T12:31:00.881718+00:00",
+   "verificado": "2026-11-16T13:31:07.616943+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-16T07:30:56.842663+00:00",
+   "mudou": "2026-11-16T13:31:07.616943+00:00",
    "mudanca": {
     "mais": [
-     "segunda-feira, 16 novembro 2026"
+     "SERTÃ: Vigília apela ao direito à habitação",
+     "SERTÃ: Vigília apela ao direito à habitação",
+     "Iniciativa juntou mais de duas dezenas de pessoas"
     ],
     "menos": [
-     "domingo, 15 novembro 2026"
+     "REGIÃO/futebol: Liga CRP joga-se na Condestável",
+     "SERTÃ: Menina de quatro anos ferida em despiste",
+     "SERTÃ/Cabeçudo: Despiste provoca três feridos leves",
+     "SERTÃ: Município inicia procedimento para integrar as ZAER no PDM",
+     "SERTÃ: Reuniões do Executivo Municipal mudam de horário",
+     "PENAMACOR: Município e Valverde del Fresno assinam ata de reconhecimento da fronteira",
+     "SERTÃ: Vereador do Chega volta a pedir passagem pedonal sobre o IC8",
+     "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
+     "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
+     "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
+     "No dia 21 de novembro",
+     "SERTÃ: Município promove sessão de esclarecimentos sobre aviso PEPAC"
     ],
-    "n_mais": 1,
-    "n_menos": 1
+    "n_mais": 3,
+    "n_menos": 12
    },
    "via": "site",
    "erro_site": ""
@@ -4757,6 +4747,7 @@
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Bolsa esta semana: Europa bate recordes e Wall Street recupera",
+    "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
@@ -4772,20 +4763,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-16T12:31:00.881718+00:00",
+   "verificado": "2026-11-16T13:31:07.616943+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-16T12:31:00.881718+00:00",
+   "mudou": "2026-11-16T13:31:07.616943+00:00",
    "mudanca": {
     "mais": [
-     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
-     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar"
+     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
