@@ -1776,47 +1776,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-14T16:15:57.353701+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 450,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 450,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertagin",
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efi",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-14T17:15:59.668355+00:00",
    "pesquisas": [
     {
@@ -3520,20 +3479,58 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-16T16:30:54.948597+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 566,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 520,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-16T15:31:04.988711+00:00",
-  "contaspoupanca.pt": "2026-11-16T15:31:04.988711+00:00"
+  "cm-serta.pt": "2026-11-16T16:30:54.948597+00:00",
+  "contaspoupanca.pt": "2026-11-16T16:30:54.948597+00:00"
  },
  "lentos": {},
  "testes_diretos": {
-  "cm-serta.pt": "2026-11-15T16:30:45.863075+00:00",
+  "cm-serta.pt": "2026-11-16T16:30:50.201805+00:00",
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-16T15:31:04.988711+00:00",
-  "Apoio fundo ambiental": "2026-11-16T15:31:04.988711+00:00"
+  "Sertã": "2026-11-16T16:30:54.948597+00:00",
+  "Apoio fundo ambiental": "2026-11-16T16:30:54.948597+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4194,7 +4191,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-16T15:31:04.988711+00:00",
+   "verificado": "2026-11-16T16:30:54.948597+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4267,8 +4264,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "site",
-   "erro_site": ""
+   "via": "google",
+   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4451,7 +4448,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-16T15:31:04.988711+00:00",
+   "verificado": "2026-11-16T16:30:54.948597+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4683,7 +4680,6 @@
   },
   "https://contaspoupanca.pt/": {
    "linhas_google": [
-    "Simulador de amortização crédito à habitação",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
@@ -4718,6 +4714,7 @@
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
     "Termos e Condições",
+    "Simulador de amortização crédito à habitação",
     "Investimentos",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "IMI",
@@ -4769,7 +4766,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-16T15:31:04.988711+00:00",
+   "verificado": "2026-11-16T16:30:54.948597+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
