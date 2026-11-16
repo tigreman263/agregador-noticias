@@ -1775,36 +1775,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-14T23:31:29.807113+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 574,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 525,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
-  {
    "ts": "2026-11-15T00:31:10.808268+00:00",
    "pesquisas": [
     {
@@ -3524,10 +3494,43 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-16T23:30:49.908684+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 570,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 450,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-16T22:30:56.259650+00:00",
+  "cm-serta.pt": "2026-11-16T23:30:49.908684+00:00",
   "contaspoupanca.pt": "2026-11-16T22:30:56.259650+00:00"
  },
  "lentos": {},
@@ -3536,8 +3539,8 @@
   "contaspoupanca.pt": "2026-11-16T18:30:50.763980+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-16T22:30:56.259650+00:00",
-  "Apoio fundo ambiental": "2026-11-16T22:30:56.259650+00:00"
+  "Sertã": "2026-11-16T23:30:49.908684+00:00",
+  "Apoio fundo ambiental": "2026-11-16T23:30:49.908684+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
