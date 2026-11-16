@@ -876,24 +876,6 @@
   {
    "tipo": "pagina",
    "ts": "2026-11-10T17:45:56.962241+00:00",
-   "titulo": "Mudou: cm-serta",
-   "link": "https://cm-serta.pt/comunicacao/noticias",
-   "fonte": "cm-serta.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-10T17:45:56.962241+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-10T17:45:56.962241+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
    "fonte": "contaspoupanca.pt",
@@ -1772,48 +1754,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-16T17:31:04.836057+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-16T17:31:04.836057+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-14T17:15:59.668355+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 535,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 482,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-14T18:16:07.728766+00:00",
    "pesquisas": [
@@ -3517,11 +3478,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-16T17:31:04.836057+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 525,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 477,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-16T16:30:54.948597+00:00",
-  "contaspoupanca.pt": "2026-11-16T16:30:54.948597+00:00"
+  "cm-serta.pt": "2026-11-16T17:31:04.836057+00:00",
+  "contaspoupanca.pt": "2026-11-16T17:31:04.836057+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3529,8 +3529,8 @@
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-16T16:30:54.948597+00:00",
-  "Apoio fundo ambiental": "2026-11-16T16:30:54.948597+00:00"
+  "Sertã": "2026-11-16T17:31:04.836057+00:00",
+  "Apoio fundo ambiental": "2026-11-16T17:31:04.836057+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3597,6 +3597,7 @@
     "Pessoas 2030",
     "Interreg Sudoe",
     "Centro 2030",
+    "Fundo para a Mobilidade e Transportes",
     "Horários de Atendimento e Contactos",
     "Sugestões e Reclamações",
     "Canal de Denúncia",
@@ -4010,6 +4011,7 @@
     "Pessoas 2030",
     "Interreg Sudoe",
     "Centro 2030",
+    "Fundo para a Mobilidade e Transportes",
     "Horários de Atendimento e Contactos",
     "Sugestões e Reclamações",
     "Canal de Denúncia",
@@ -4191,23 +4193,20 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-16T16:30:54.948597+00:00",
+   "verificado": "2026-11-16T17:31:04.836057+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-16T15:31:04.988711+00:00",
+   "mudou": "2026-11-16T17:31:04.836057+00:00",
    "mudanca": {
     "mais": [
-     "Rua Dr. Romão de Mascarenhas cortada ao trânsito na manhã de 17 de novembro",
-     "Esta terça-feira, dia 17 de novembro, a Rua Dr. Romão de Mascarenhas (vulgo Rua do ..."
+     "Fundo para a Mobilidade e Transportes",
+     "Fundo para a Mobilidade e Transportes"
     ],
-    "menos": [
-     "Município da Sertã recebeu comitiva de Granollers para intercâmbio de experiências de desenvolvimento local",
-     "O Município da Sertã recebeu, entre os dias 17 e 19 de outubro, uma comitiva do M..."
-    ],
+    "menos": [],
     "n_mais": 2,
-    "n_menos": 2
+    "n_menos": 0
    },
    "linhas_google": [
     "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
@@ -4264,8 +4263,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4366,6 +4365,12 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ: Rua Dr. Romão de Mascarenhas cortada ao trânsito",
+    "Última hora",
+    "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão",
+    "Última hora",
+    "FUTEBOL/ARCO: Jorge Ramos deixa ARCO",
+    "Última hora",
     "SERTÃ: Vigília apela ao direito à habitação",
     "Última hora",
     "SERTÃ: Estado de conservação de escola do Carvalhal em destaque",
@@ -4374,12 +4379,28 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: Rua Dr. Romão de Mascarenhas cortada ao trânsito",
+    "Sertã",
+    "Beira Baixa",
+    "16-11-2026",
+    "Última hora",
+    "Amanhã, dia 17 de novembro",
+    "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão",
+    "Ferreira do Zêzere",
+    "Médio Tejo",
+    "16-11-2026",
+    "Última hora",
+    "FUTEBOL/ARCO: Jorge Ramos deixa ARCO",
+    "Oleiros",
+    "Beira Baixa",
+    "Desporto",
+    "16-11-2026",
+    "Última hora",
     "SERTÃ: Vigília apela ao direito à habitação",
     "Sertã",
     "Beira Baixa",
     "16-11-2026",
     "Última hora",
-    "Iniciativa juntou mais de duas dezenas de pessoas",
     "VILA DE REI: Biblioteca promove “Entre Histórias e Descobertas”",
     "Vila de Rei",
     "Beira Baixa",
@@ -4423,18 +4444,6 @@
     "Penamacor",
     "Beira Baixa",
     "12-11-2026",
-    "GÓIS: ATL de Natal com inscrições abertas",
-    "Mação",
-    "Beira Baixa",
-    "12-11-2026",
-    "FERREIRA DO ZÊZERE: Acordeão volta a subir ao palco para mais um festival",
-    "Ferreira do Zêzere",
-    "Médio Tejo",
-    "12-11-2026",
-    "VILA DE REI: Rede de Bibliotecas organiza mais uma “Estafeta de Contos”",
-    "Vila de Rei",
-    "Beira Baixa",
-    "12-11-2026",
     "1",
     "2",
     "3",
@@ -4448,34 +4457,41 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-16T16:30:54.948597+00:00",
+   "verificado": "2026-11-16T17:31:04.836057+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-16T13:31:07.616943+00:00",
+   "mudou": "2026-11-16T17:31:04.836057+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Vigília apela ao direito à habitação",
-     "SERTÃ: Vigília apela ao direito à habitação",
-     "Iniciativa juntou mais de duas dezenas de pessoas"
+     "SERTÃ: Rua Dr. Romão de Mascarenhas cortada ao trânsito",
+     "Última hora",
+     "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão",
+     "Última hora",
+     "FUTEBOL/ARCO: Jorge Ramos deixa ARCO",
+     "Última hora",
+     "SERTÃ: Rua Dr. Romão de Mascarenhas cortada ao trânsito",
+     "Sertã",
+     "Última hora",
+     "Amanhã, dia 17 de novembro",
+     "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão",
+     "Última hora",
+     "FUTEBOL/ARCO: Jorge Ramos deixa ARCO",
+     "Oleiros",
+     "Desporto",
+     "Última hora"
     ],
     "menos": [
-     "REGIÃO/futebol: Liga CRP joga-se na Condestável",
-     "SERTÃ: Menina de quatro anos ferida em despiste",
-     "SERTÃ/Cabeçudo: Despiste provoca três feridos leves",
-     "SERTÃ: Município inicia procedimento para integrar as ZAER no PDM",
-     "SERTÃ: Reuniões do Executivo Municipal mudam de horário",
-     "PENAMACOR: Município e Valverde del Fresno assinam ata de reconhecimento da fronteira",
-     "SERTÃ: Vereador do Chega volta a pedir passagem pedonal sobre o IC8",
-     "CASTELO BRANCO: Homem detido por posse de uma arma proibida",
-     "CERNACHE DO BONJARDIM: Muro cai na Calvaria",
-     "CERNACHE DO BONJARDIM: Serviços da UFCBNP encerram antecipadamente",
-     "No dia 21 de novembro",
-     "SERTÃ: Município promove sessão de esclarecimentos sobre aviso PEPAC"
+     "Iniciativa juntou mais de duas dezenas de pessoas",
+     "GÓIS: ATL de Natal com inscrições abertas",
+     "Mação",
+     "FERREIRA DO ZÊZERE: Acordeão volta a subir ao palco para mais um festival",
+     "VILA DE REI: Rede de Bibliotecas organiza mais uma “Estafeta de Contos”",
+     "Vila de Rei"
     ],
-    "n_mais": 3,
-    "n_menos": 12
+    "n_mais": 16,
+    "n_menos": 6
    },
    "via": "site",
    "erro_site": ""
@@ -4766,7 +4782,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-16T16:30:54.948597+00:00",
+   "verificado": "2026-11-16T17:31:04.836057+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
