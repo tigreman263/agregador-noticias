@@ -28,7 +28,7 @@
  },
  "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-15",
+ "ultimo_resumo": "2026-11-16",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -1776,45 +1776,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-14T09:00:58.509914+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 531,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 479,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-14T10:00:58.067470+00:00",
    "pesquisas": [
     {
@@ -3512,11 +3473,52 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-16T08:31:11.943426+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 456,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 456,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertagin",
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efi",
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-16T07:30:56.842663+00:00",
-  "contaspoupanca.pt": "2026-11-16T07:30:56.842663+00:00"
+  "cm-serta.pt": "2026-11-16T08:31:11.943426+00:00",
+  "contaspoupanca.pt": "2026-11-16T08:31:11.943426+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3524,8 +3526,8 @@
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-16T07:30:56.842663+00:00",
-  "Apoio fundo ambiental": "2026-11-16T07:30:56.842663+00:00"
+  "Sertã": "2026-11-16T08:31:11.943426+00:00",
+  "Apoio fundo ambiental": "2026-11-16T08:31:11.943426+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4186,7 +4188,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-16T07:30:56.842663+00:00",
+   "verificado": "2026-11-16T08:31:11.943426+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4462,7 +4464,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-16T07:30:56.842663+00:00",
+   "verificado": "2026-11-16T08:31:11.943426+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4760,9 +4762,9 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-16T07:30:56.842663+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-16T08:31:11.943426+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
