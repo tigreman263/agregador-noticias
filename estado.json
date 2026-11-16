@@ -875,15 +875,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-10T15:45:59.574674+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-10T16:46:02.272286+00:00",
    "titulo": "Mudou: Radio condestável",
    "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
@@ -1772,48 +1763,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-16T14:30:58.146707+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-14T14:15:56.259090+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 531,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 478,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-14T15:15:55.752589+00:00",
    "pesquisas": [
@@ -3520,11 +3481,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-16T14:30:58.146707+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 524,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 478,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-16T13:31:07.616943+00:00",
-  "contaspoupanca.pt": "2026-11-16T13:31:07.616943+00:00"
+  "cm-serta.pt": "2026-11-16T14:30:58.146707+00:00",
+  "contaspoupanca.pt": "2026-11-16T14:30:58.146707+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3532,8 +3532,8 @@
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-16T13:31:07.616943+00:00",
-  "Apoio fundo ambiental": "2026-11-16T13:31:07.616943+00:00"
+  "Sertã": "2026-11-16T14:30:58.146707+00:00",
+  "Apoio fundo ambiental": "2026-11-16T14:30:58.146707+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4194,7 +4194,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-16T13:31:07.616943+00:00",
+   "verificado": "2026-11-16T14:30:58.146707+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4447,7 +4447,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-16T13:31:07.616943+00:00",
+   "verificado": "2026-11-16T14:30:58.146707+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4679,11 +4679,11 @@
   },
   "https://contaspoupanca.pt/": {
    "linhas_google": [
-    "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "Simulador de amortização crédito à habitação",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
+    "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
@@ -4704,6 +4704,7 @@
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
     "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
+    "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
     "Subscrever Newsletter",
@@ -4715,13 +4716,13 @@
     "Termos e Condições",
     "Investimentos",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
-    "Candidaturas à segunda fase do E-Lar abrem hoje com o dobro do dinheiro",
+    "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "IMI",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
-    "Os 10 fundos de investimento nacionais que mais renderam esta semana (14 agosto de 2026)",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
+    "Apoios Sociais",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Simulador de Juros compostos",
@@ -4739,6 +4740,7 @@
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
+    "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
     "Seguro de saúde padrão: saiba se tem todas as coberturas essenciais",
@@ -4747,11 +4749,9 @@
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Bolsa esta semana: Europa bate recordes e Wall Street recupera",
-    "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
-    "Vamos a contas: \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
@@ -4759,23 +4759,27 @@
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "1.000 € que podem salvar as suas finanças - O que é o Fundo BASE?",
+    "Vamos a contas: (1) Uma app para amortizar o crédito à habitação e (2) devo investir para comprar casa daqui a 3 anos?",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-16T13:31:07.616943+00:00",
+   "verificado": "2026-11-16T14:30:58.146707+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-16T13:31:07.616943+00:00",
+   "mudou": "2026-11-16T14:30:58.146707+00:00",
    "mudanca": {
     "mais": [
-     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)"
+     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
+     "Apoios Sociais",
+     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
+     "Vamos a contas: (1) Uma app para amortizar o crédito à habitação e (2) devo investir para comprar casa daqui a 3 anos?"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 4,
     "n_menos": 0
    }
   }
