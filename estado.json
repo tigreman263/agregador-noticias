@@ -856,7 +856,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Lula pede investimentos em fundo ambiental e critica doações",
-   "ultima": "2026-11-15T09:30:58.335070+00:00"
+   "ultima": "2026-11-16T09:31:08.116604+00:00"
   },
   "diariodocentrodomundo.com.br": {
    "nome": "Diário do Centro do Mundo",
@@ -868,20 +868,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Canadá destina US$ 400 milhões a fundo ambiental criado por Lula",
-   "ultima": "2026-11-15T09:30:58.335070+00:00"
+   "ultima": "2026-11-16T09:31:08.116604+00:00"
   }
  },
- "ultima_descoberta": "2026-11-15",
+ "ultima_descoberta": "2026-11-16",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-10T12:45:59.270560+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-10T13:46:00.075469+00:00",
@@ -1772,48 +1763,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-16T09:31:08.116604+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-14T10:00:58.067470+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 531,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 477,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-14T10:03:20.843454+00:00",
    "pesquisas": [
@@ -3514,11 +3475,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-16T09:31:08.116604+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 521,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 478,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-16T08:31:11.943426+00:00",
-  "contaspoupanca.pt": "2026-11-16T08:31:11.943426+00:00"
+  "cm-serta.pt": "2026-11-16T09:31:08.116604+00:00",
+  "contaspoupanca.pt": "2026-11-16T09:31:08.116604+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3526,8 +3526,8 @@
   "contaspoupanca.pt": "2026-11-15T17:30:48.084331+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-16T08:31:11.943426+00:00",
-  "Apoio fundo ambiental": "2026-11-16T08:31:11.943426+00:00"
+  "Sertã": "2026-11-16T09:31:08.116604+00:00",
+  "Apoio fundo ambiental": "2026-11-16T09:31:08.116604+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4188,7 +4188,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-16T08:31:11.943426+00:00",
+   "verificado": "2026-11-16T09:31:08.116604+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4464,7 +4464,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-16T08:31:11.943426+00:00",
+   "verificado": "2026-11-16T09:31:08.116604+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4731,10 +4731,12 @@
     "Simulador de Juros compostos",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
+    "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "Certificados de Aforro",
     "Vale a pena comprar um painel solar? Balanço de dezembro de 2025 (Mês #109)",
     "Eletricidade: tarifário indexado continua a compensar, mas não é para todos",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
+    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
@@ -4756,28 +4758,28 @@
     "Vamos a contas: \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
+    "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "1.000 € que podem salvar as suas finanças - O que é o Fundo BASE?",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-16T08:31:11.943426+00:00",
-   "falhas": 1,
-   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
+   "verificado": "2026-11-16T09:31:08.116604+00:00",
+   "falhas": 0,
+   "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-16T07:30:56.842663+00:00",
+   "mudou": "2026-11-16T09:31:08.116604+00:00",
    "mudanca": {
     "mais": [
-     "Certificados de Aforro",
-     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
-     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
-     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?"
+     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
+     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
+     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social"
     ],
     "menos": [],
-    "n_mais": 4,
+    "n_mais": 3,
     "n_menos": 0
    }
   }
