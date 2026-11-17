@@ -885,15 +885,6 @@
  "ultima_descoberta": "2026-11-17",
  "enviados": [
   {
-   "tipo": "resumo",
-   "ts": "2026-11-11T08:46:08.907791+00:00",
-   "titulo": "“As famílias consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão ter uma nova oportunidade?”",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWjVJYVV5QWpfd1ZGRDNQbEVpUmk2LVhfeXB6bXFmdno0Smc2eE93eENFczZKb09kV2w0MnM0SDVXdVlaZGpDSUJBcHNQanZ1SDR3WnIzRjJ4TWJkV3I1bXlkZ0tXeVc2eEw0Z2w5bThxNTJwTGVkb1BVLWpCdVJqTlFPZV9RVk5ZWHJpTnhLcllIeUh2UzVpM2R1WFh1ZXRQTDhPNkFsOUltZXZPVjcwRGs3eXBKYU1EU1FjR3pMREFzVzVjTnhQczFub2NkT0s0cXl0b3hUbTFNYW10ZzgzeHBWT0Q?oc=5",
-   "fonte": "Postal do Algarve",
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
    "tipo": "pagina",
    "ts": "2026-11-11T09:46:02.251132+00:00",
    "titulo": "Mudou: Contas poupanças",
@@ -1783,48 +1774,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-17T13:30:57.661506+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-15T13:31:41.144102+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 526,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 485,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-15T14:30:56.515600+00:00",
    "pesquisas": [
@@ -3549,11 +3510,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-17T13:30:57.661506+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 569,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 469,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-17T12:30:47.508777+00:00",
-  "contaspoupanca.pt": "2026-11-17T12:30:47.508777+00:00"
+  "cm-serta.pt": "2026-11-17T13:30:57.661506+00:00",
+  "contaspoupanca.pt": "2026-11-17T13:30:57.661506+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3561,8 +3562,8 @@
   "contaspoupanca.pt": "2026-11-16T18:30:50.763980+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-17T12:30:47.508777+00:00",
-  "Apoio fundo ambiental": "2026-11-17T12:30:47.508777+00:00"
+  "Sertã": "2026-11-17T13:30:57.661506+00:00",
+  "Apoio fundo ambiental": "2026-11-17T13:30:57.661506+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4225,25 +4226,24 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-17T12:30:47.508777+00:00",
+   "verificado": "2026-11-17T13:30:57.661506+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-16T17:31:04.836057+00:00",
+   "mudou": "2026-11-17T13:30:57.661506+00:00",
    "mudanca": {
     "mais": [
-     "Fundo para a Mobilidade e Transportes",
-     "Fundo para a Mobilidade e Transportes"
+     "Bem-vindo à Rede de Bibliotecas da Sertã"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    },
    "linhas_google": [
     "Câmara Municipal da Sertã — Início",
     "Turismo",
-    "Rede de Bibliotecas da Sertã",
+    "Bem-vindo à Rede de Bibliotecas da Sertã",
     "Praias Fluviais, Zonas de Lazer e Piscinas",
     "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
     "Serviços Online",
@@ -4503,7 +4503,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-17T12:30:47.508777+00:00",
+   "verificado": "2026-11-17T13:30:57.661506+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4731,7 +4731,6 @@
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
-    "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Simulador de apoio para os carros elétricos",
@@ -4815,7 +4814,7 @@
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-17T12:30:47.508777+00:00",
+   "verificado": "2026-11-17T13:30:57.661506+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
