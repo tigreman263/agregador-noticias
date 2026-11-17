@@ -1,6 +1,5 @@
 {
  "vistos": {
-  "27d383339cd74dfb": "2026-11-03T21:01:09.280935+00:00",
   "3393efb515bbdb5d": "2026-11-04T07:45:57.520045+00:00",
   "262b6d4a3e5cf6a9": "2026-11-04T11:16:11.933918+00:00",
   "3dd133dba22282ca": "2026-11-04T14:16:15.609883+00:00",
@@ -879,15 +878,6 @@
  },
  "ultima_descoberta": "2026-11-17",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-11T17:46:01.331141+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-11T19:46:03.935452+00:00",
@@ -1778,48 +1768,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-17T21:30:45.393591+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-15T21:31:04.034970+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 523,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 483,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-15T22:31:00.255869+00:00",
    "pesquisas": [
@@ -3538,11 +3498,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-17T21:30:45.393591+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 568,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 522,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-17T20:30:51.317437+00:00",
-  "contaspoupanca.pt": "2026-11-17T20:30:51.317437+00:00"
+  "cm-serta.pt": "2026-11-17T21:30:45.393591+00:00",
+  "contaspoupanca.pt": "2026-11-17T21:30:45.393591+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3550,8 +3548,8 @@
   "contaspoupanca.pt": "2026-11-17T19:30:47.129890+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-17T20:30:51.317437+00:00",
-  "Apoio fundo ambiental": "2026-11-17T20:30:51.317437+00:00"
+  "Sertã": "2026-11-17T21:30:45.393591+00:00",
+  "Apoio fundo ambiental": "2026-11-17T21:30:45.393591+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4214,7 +4212,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-17T20:30:51.317437+00:00",
+   "verificado": "2026-11-17T21:30:45.393591+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4388,7 +4386,7 @@
     "Última hora",
     "OLEIROS: ARCO celebra 50 anos de história e união",
     "Última hora",
-    "CERNACHE DO BONJARDIM: Casal de meia-idade roubaram ouro",
+    "CERNACHE DO BONJARDIM: Falsos lojistas enganam moradores e roubam ouro",
     "Última hora",
     "SERTÃ: Vereador do PSD pede maior aposta na repavimentação",
     "Última hora",
@@ -4416,7 +4414,7 @@
     "Desporto",
     "17-11-2026",
     "Última hora",
-    "CERNACHE DO BONJARDIM: Casal de meia-idade roubaram ouro",
+    "CERNACHE DO BONJARDIM: Falsos lojistas enganam moradores e roubam ouro",
     "Cernache do Bonjardim",
     "Beira Baixa",
     "17-11-2026",
@@ -4487,30 +4485,23 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-17T20:30:51.317437+00:00",
+   "verificado": "2026-11-17T21:30:45.393591+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-17T19:30:47.383766+00:00",
+   "mudou": "2026-11-17T21:30:45.393591+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Sede da ADOC alvo de arrombamento",
-     "Última hora",
-     "SERTÃ: Sede da ADOC alvo de arrombamento",
-     "Última hora",
-     "A associação não apresentou queixa"
+     "CERNACHE DO BONJARDIM: Falsos lojistas enganam moradores e roubam ouro",
+     "CERNACHE DO BONJARDIM: Falsos lojistas enganam moradores e roubam ouro"
     ],
     "menos": [
-     "Com uma gala realizada no dia 14 de novembro",
-     "REGIÃO/futebol: Liga CRP joga-se na Condestável",
-     "Cernache do Bonjardim",
-     "Proença-a-Nova",
-     "Oleiros",
-     "Desporto"
+     "CERNACHE DO BONJARDIM: Casal de meia-idade roubaram ouro",
+     "CERNACHE DO BONJARDIM: Casal de meia-idade roubaram ouro"
     ],
-    "n_mais": 5,
-    "n_menos": 6
+    "n_mais": 2,
+    "n_menos": 2
    },
    "via": "site",
    "erro_site": ""
@@ -4803,7 +4794,7 @@
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
     "Carro"
    ],
-   "verificado": "2026-11-17T20:30:51.317437+00:00",
+   "verificado": "2026-11-17T21:30:45.393591+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
