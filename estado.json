@@ -1781,45 +1781,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-15T22:31:00.255869+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 523,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 484,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-15T23:31:02.912291+00:00",
    "pesquisas": [
     {
@@ -3536,11 +3497,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-17T22:30:53.387095+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 516,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 522,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-17T21:30:45.393591+00:00",
-  "contaspoupanca.pt": "2026-11-17T21:30:45.393591+00:00"
+  "cm-serta.pt": "2026-11-17T22:30:53.387095+00:00",
+  "contaspoupanca.pt": "2026-11-17T22:30:53.387095+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3548,8 +3549,8 @@
   "contaspoupanca.pt": "2026-11-17T19:30:47.129890+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-17T21:30:45.393591+00:00",
-  "Apoio fundo ambiental": "2026-11-17T21:30:45.393591+00:00"
+  "Sertã": "2026-11-17T22:30:53.387095+00:00",
+  "Apoio fundo ambiental": "2026-11-17T22:30:53.387095+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4212,7 +4213,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-17T21:30:45.393591+00:00",
+   "verificado": "2026-11-17T22:30:53.387095+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4485,7 +4486,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-17T21:30:45.393591+00:00",
+   "verificado": "2026-11-17T22:30:53.387095+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4794,7 +4795,7 @@
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
     "Carro"
    ],
-   "verificado": "2026-11-17T21:30:45.393591+00:00",
+   "verificado": "2026-11-17T22:30:53.387095+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
