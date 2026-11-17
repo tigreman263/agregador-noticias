@@ -887,15 +887,6 @@
   {
    "tipo": "resumo",
    "ts": "2026-11-11T08:46:08.907791+00:00",
-   "titulo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
-   "link": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPVG1DZms2ZlZvUS10XzRpZUZrejloX1FJRlpFQ3J0eDlpOGs2c0c3YVBlVnp1S2tVb01pUGF6dDItRUN6VmFOMnktXy1md3FqdXZoam5nZER0RzFobVoxcEdfbEJyTEZIaDVjYTFuOTRCVWg0NVVIaGphUEczUTRaVHRVT0NzTWZwWWlyUC0xWVEyRmpWMTVydkVfVFFxMmJ2NEI5SkFGR3RWQWdDT0NnRXVxV2ZuSlAxOHBSdDdNaVRlZHVSUFp5RERYM0dac3VEdGJGRw?oc=5",
-   "fonte": "Rondoniaovivo.com",
-   "nota": 23.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
-  {
-   "tipo": "resumo",
-   "ts": "2026-11-11T08:46:08.907791+00:00",
    "titulo": "“As famílias consideradas elegíveis para o Vale Eficiência II, mas que nunca receberam o apoio, vão ter uma nova oportunidade?”",
    "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPWjVJYVV5QWpfd1ZGRDNQbEVpUmk2LVhfeXB6bXFmdno0Smc2eE93eENFczZKb09kV2w0MnM0SDVXdVlaZGpDSUJBcHNQanZ1SDR3WnIzRjJ4TWJkV3I1bXlkZ0tXeVc2eEw0Z2w5bThxNTJwTGVkb1BVLWpCdVJqTlFPZV9RVk5ZWHJpTnhLcllIeUh2UzVpM2R1WFh1ZXRQTDhPNkFsOUltZXZPVjcwRGs3eXBKYU1EU1FjR3pMREFzVzVjTnhQczFub2NkT0s0cXl0b3hUbTFNYW10ZzgzeHBWT0Q?oc=5",
    "fonte": "Postal do Algarve",
@@ -1783,48 +1774,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-17T12:30:47.508777+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-15T12:31:00.674308+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 526,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 484,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-15T13:31:41.144102+00:00",
    "pesquisas": [
@@ -3548,11 +3509,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-17T12:30:47.508777+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 567,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 469,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-17T11:30:47.550763+00:00",
-  "contaspoupanca.pt": "2026-11-17T11:30:47.550763+00:00"
+  "cm-serta.pt": "2026-11-17T12:30:47.508777+00:00",
+  "contaspoupanca.pt": "2026-11-17T12:30:47.508777+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3560,8 +3561,8 @@
   "contaspoupanca.pt": "2026-11-16T18:30:50.763980+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-17T11:30:47.550763+00:00",
-  "Apoio fundo ambiental": "2026-11-17T11:30:47.550763+00:00"
+  "Sertã": "2026-11-17T12:30:47.508777+00:00",
+  "Apoio fundo ambiental": "2026-11-17T12:30:47.508777+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4224,7 +4225,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-17T11:30:47.550763+00:00",
+   "verificado": "2026-11-17T12:30:47.508777+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4416,12 +4417,17 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "CERNACHE DO BONJARDIM: “Em Nome da Beira” destaca Nuno Álvares Pereira",
+    "Cernache do Bonjardim",
+    "Sertã",
+    "Beira Baixa",
+    "17-11-2026",
+    "No dia 19 de novembro",
     "SERTÃ: Vereador do PSD pede maior aposta na repavimentação",
     "Sertã",
     "Beira Baixa",
     "17-11-2026",
     "Última hora",
-    "José Carlos Fernandes pede também mais informação sobre este tipo de trabalhos",
     "SERTÃ: Há falta de papel no Centro de Saúde",
     "Sertã",
     "Beira Baixa",
@@ -4484,10 +4490,6 @@
     "Sertã",
     "Beira Baixa",
     "13-11-2026",
-    "SERTÃ/Cabeçudo: Despiste provoca três feridos leves",
-    "Sertã",
-    "Beira Baixa",
-    "13-11-2026",
     "1",
     "2",
     "3",
@@ -4501,27 +4503,24 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-17T11:30:47.550763+00:00",
+   "verificado": "2026-11-17T12:30:47.508777+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-17T11:30:47.550763+00:00",
+   "mudou": "2026-11-17T12:30:47.508777+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Vereador do PSD pede maior aposta na repavimentação",
-     "Última hora",
-     "SERTÃ: Vereador do PSD pede maior aposta na repavimentação",
-     "Última hora",
-     "José Carlos Fernandes pede também mais informação sobre este tipo de trabalhos"
+     "CERNACHE DO BONJARDIM: “Em Nome da Beira” destaca Nuno Álvares Pereira",
+     "Cernache do Bonjardim",
+     "No dia 19 de novembro"
     ],
     "menos": [
-     "Utentes recebem receitas por e-mail",
-     "SERTÃ: Município inicia procedimento para integrar as ZAER no PDM",
-     "Cernache do Bonjardim"
+     "José Carlos Fernandes pede também mais informação sobre este tipo de trabalhos",
+     "SERTÃ/Cabeçudo: Despiste provoca três feridos leves"
     ],
-    "n_mais": 5,
-    "n_menos": 3
+    "n_mais": 3,
+    "n_menos": 2
    },
    "via": "site",
    "erro_site": ""
@@ -4816,7 +4815,7 @@
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-17T11:30:47.550763+00:00",
+   "verificado": "2026-11-17T12:30:47.508777+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
