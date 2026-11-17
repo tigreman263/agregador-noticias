@@ -1,6 +1,5 @@
 {
  "vistos": {
-  "b49828abc5664c4e": "2026-11-03T14:01:22.913473+00:00",
   "7733f899db4a3803": "2026-11-03T16:01:01.631263+00:00",
   "5b9cd746e50a2a89": "2026-11-03T16:01:01.631263+00:00",
   "1194d62fe1b4c0cd": "2026-11-03T16:01:01.631263+00:00",
@@ -1787,45 +1786,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-15T14:30:56.515600+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 526,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 485,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-15T15:31:08.893566+00:00",
    "pesquisas": [
     {
@@ -3550,11 +3510,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-17T14:30:52.073554+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 568,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 523,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-17T13:30:57.661506+00:00",
-  "contaspoupanca.pt": "2026-11-17T13:30:57.661506+00:00"
+  "cm-serta.pt": "2026-11-17T14:30:52.073554+00:00",
+  "contaspoupanca.pt": "2026-11-17T14:30:52.073554+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3562,8 +3561,8 @@
   "contaspoupanca.pt": "2026-11-16T18:30:50.763980+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-17T13:30:57.661506+00:00",
-  "Apoio fundo ambiental": "2026-11-17T13:30:57.661506+00:00"
+  "Sertã": "2026-11-17T14:30:52.073554+00:00",
+  "Apoio fundo ambiental": "2026-11-17T14:30:52.073554+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4226,7 +4225,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-17T13:30:57.661506+00:00",
+   "verificado": "2026-11-17T14:30:52.073554+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4503,7 +4502,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-17T13:30:57.661506+00:00",
+   "verificado": "2026-11-17T14:30:52.073554+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4814,9 +4813,9 @@
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-17T13:30:57.661506+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-17T14:30:52.073554+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
