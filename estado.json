@@ -27,7 +27,7 @@
  },
  "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-16",
+ "ultimo_resumo": "2026-11-17",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -1775,45 +1775,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-15T08:31:03.033007+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 528,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 485,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 1,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-15T09:30:58.335070+00:00",
    "pesquisas": [
     {
@@ -3539,11 +3500,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-17T08:30:46.804089+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 568,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 522,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-17T07:30:48.855731+00:00",
-  "contaspoupanca.pt": "2026-11-17T07:30:48.855731+00:00"
+  "cm-serta.pt": "2026-11-17T08:30:46.804089+00:00",
+  "contaspoupanca.pt": "2026-11-17T08:30:46.804089+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3551,8 +3551,8 @@
   "contaspoupanca.pt": "2026-11-16T18:30:50.763980+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-17T07:30:48.855731+00:00",
-  "Apoio fundo ambiental": "2026-11-17T07:30:48.855731+00:00"
+  "Sertã": "2026-11-17T08:30:46.804089+00:00",
+  "Apoio fundo ambiental": "2026-11-17T08:30:46.804089+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4215,9 +4215,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-17T07:30:48.855731+00:00",
-   "falhas": 2,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-17T08:30:46.804089+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-16T17:31:04.836057+00:00",
@@ -4285,8 +4285,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "site",
-   "erro_site": ""
+   "via": "google",
+   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4486,7 +4486,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-17T07:30:48.855731+00:00",
+   "verificado": "2026-11-17T08:30:46.804089+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4791,8 +4791,8 @@
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-17T07:30:48.855731+00:00",
-   "falhas": 1,
+   "verificado": "2026-11-17T08:30:46.804089+00:00",
+   "falhas": 2,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
