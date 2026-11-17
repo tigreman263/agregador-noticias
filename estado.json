@@ -885,24 +885,6 @@
  "ultima_descoberta": "2026-11-17",
  "enviados": [
   {
-   "tipo": "pagina",
-   "ts": "2026-11-11T07:46:04.992984+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-11T08:46:08.907791+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
    "tipo": "resumo",
    "ts": "2026-11-11T08:46:08.907791+00:00",
    "titulo": "COP: Fundo ambiental de Rondônia paga 15 dias de secretário da Sedam na Turquia",
@@ -1783,51 +1765,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-17T11:30:47.550763+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-17T11:30:47.550763+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-15T11:31:11.488678+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 755,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 623,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças",
-    "Médio Tejo",
-    "Portal Energia",
-    "Rádio Hertz"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-15T12:31:00.674308+00:00",
    "pesquisas": [
@@ -3550,11 +3508,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-17T11:30:47.550763+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 568,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 469,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-17T10:30:46.459136+00:00",
-  "contaspoupanca.pt": "2026-11-17T10:30:46.459136+00:00"
+  "cm-serta.pt": "2026-11-17T11:30:47.550763+00:00",
+  "contaspoupanca.pt": "2026-11-17T11:30:47.550763+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3562,8 +3560,8 @@
   "contaspoupanca.pt": "2026-11-16T18:30:50.763980+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-17T10:30:46.459136+00:00",
-  "Apoio fundo ambiental": "2026-11-17T10:30:46.459136+00:00"
+  "Sertã": "2026-11-17T11:30:47.550763+00:00",
+  "Apoio fundo ambiental": "2026-11-17T11:30:47.550763+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4226,7 +4224,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-17T10:30:46.459136+00:00",
+   "verificado": "2026-11-17T11:30:47.550763+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4242,57 +4240,57 @@
     "n_menos": 0
    },
    "linhas_google": [
-    "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
     "Câmara Municipal da Sertã — Início",
-    "Serviços Online",
+    "Turismo",
+    "Rede de Bibliotecas da Sertã",
+    "Praias Fluviais, Zonas de Lazer e Piscinas",
     "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
+    "Serviços Online",
+    "Procedimentos Concursais",
+    "Câmara Municipal",
+    "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
+    "Bolsas de Estudo",
+    "Programa Férias Ativas abre candidaturas para monitores",
     "Programa “Férias Ativas” anima verão até final de agosto",
     "Login",
-    "Atendimento no Município para apoio após a Tempestade Kristin",
-    "Rede de Bibliotecas da Sertã",
     "Eventos Futuros",
-    "Águas Residuais",
-    "Praias Fluviais, Zonas de Lazer e Piscinas",
-    "Percursos Pedestres",
-    "Procedimentos Concursais",
-    "Bolsas de Estudo",
-    "Turismo",
     "Contactos da Câmara Municipal",
-    "Câmara Municipal",
+    "Atendimento no Município para apoio após a Tempestade Kristin",
+    "Águas Residuais",
+    "Abastecimento de água",
+    "Percursos Pedestres",
+    "Formação / Atelier / Oficinas",
     "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
-    "Programa Férias Ativas abre candidaturas para monitores",
     "Requerimentos",
+    "Casa de Espetáculos e Cultura da Sertã",
+    "Estrutura Orgânica",
     "Revisão do PDM da Sertã mais perto da conclusão",
     "Espaços Museológicos",
-    "Abastecimento de água",
+    "Maranho da Sertã reconhecido com Prémio Cinco Estrelas Regiões",
     "Contactos Úteis",
     "Regulamentos",
-    "Estrutura Orgânica",
     "Planos",
-    "Casa de Espetáculos e Cultura da Sertã",
-    "Formação / Atelier / Oficinas",
     "Projetos Cofinanciados",
-    "Maranho da Sertã reconhecido com Prémio Cinco Estrelas Regiões",
-    "Espaços de Cowork e Incubação",
-    "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
-    "Ficha técnica",
     "Calendário de Reuniões",
     "Desporto",
-    "Bolsas de Estudo do Município da Sertã com novas normas",
+    "Espaços de Cowork e Incubação",
+    "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
     "Mercados e Feiras",
     "Mapa de Pessoal",
-    "História e Caracterização",
     "Assembleia Municipal Jovem",
     "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto",
+    "História e Caracterização",
+    "Ficha técnica",
     "União de Freguesias de Cumeada e Marmeleiro",
+    "Bolsas de Estudo do Município da Sertã com novas normas",
+    "Ficha técnica",
+    "Faixas de Gestão de Combustível",
     "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
     "clds 5g",
-    "Freguesias",
     "Gabinete Florestal",
-    "Editais / Avisos",
-    "Faixas de Gestão de Combustível",
-    "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
     "Festas e Romarias",
+    "Editais / Avisos",
+    "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
@@ -4398,6 +4396,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ: Vereador do PSD pede maior aposta na repavimentação",
+    "Última hora",
     "SERTÃ: Há falta de papel no Centro de Saúde",
     "Última hora",
     "REGIÃO: EDP aposta na inovação híbrida na Barragem de Pracana",
@@ -4416,13 +4416,18 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: Vereador do PSD pede maior aposta na repavimentação",
+    "Sertã",
+    "Beira Baixa",
+    "17-11-2026",
+    "Última hora",
+    "José Carlos Fernandes pede também mais informação sobre este tipo de trabalhos",
     "SERTÃ: Há falta de papel no Centro de Saúde",
     "Sertã",
     "Beira Baixa",
     "Saúde",
     "17-11-2026",
     "Última hora",
-    "Utentes recebem receitas por e-mail",
     "REGIÃO: EDP aposta na inovação híbrida na Barragem de Pracana",
     "Mação",
     "Vila Velha de Ródão",
@@ -4483,11 +4488,6 @@
     "Sertã",
     "Beira Baixa",
     "13-11-2026",
-    "SERTÃ: Município inicia procedimento para integrar as ZAER no PDM",
-    "Beira Baixa",
-    "Cernache do Bonjardim",
-    "Sertã",
-    "13-11-2026",
     "1",
     "2",
     "3",
@@ -4501,27 +4501,27 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-17T10:30:46.459136+00:00",
+   "verificado": "2026-11-17T11:30:47.550763+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-17T10:30:46.459136+00:00",
+   "mudou": "2026-11-17T11:30:47.550763+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Há falta de papel no Centro de Saúde",
+     "SERTÃ: Vereador do PSD pede maior aposta na repavimentação",
      "Última hora",
-     "SERTÃ: Há falta de papel no Centro de Saúde",
-     "Saúde",
+     "SERTÃ: Vereador do PSD pede maior aposta na repavimentação",
      "Última hora",
-     "Utentes recebem receitas por e-mail"
+     "José Carlos Fernandes pede também mais informação sobre este tipo de trabalhos"
     ],
     "menos": [
-     "Barragem junta energia hídrica e solar num investimento pioneiro na Península Ibérica",
-     "SERTÃ: Reuniões do Executivo Municipal mudam de horário"
+     "Utentes recebem receitas por e-mail",
+     "SERTÃ: Município inicia procedimento para integrar as ZAER no PDM",
+     "Cernache do Bonjardim"
     ],
-    "n_mais": 6,
-    "n_menos": 2
+    "n_mais": 5,
+    "n_menos": 3
    },
    "via": "site",
    "erro_site": ""
@@ -4726,75 +4726,73 @@
   },
   "https://contaspoupanca.pt/": {
    "linhas_google": [
+    "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
-    "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
+    "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
-    "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
-    "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Simulador de apoio para os carros elétricos",
-    "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
+    "PPR",
+    "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
-    "Pedro Andersson",
-    "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
-    "PPR",
+    "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
+    "Simuladores",
     "Automatizar poupanças e investimentos: a forma mais simples de garantir resultados",
     "Política de Privacidade",
-    "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
-    "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
+    "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
     "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
-    "Simuladores",
-    "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
+    "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
+    "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
+    "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
+    "IRS",
     "Subscrever Newsletter",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
-    "IRS",
     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "As 5 lições financeiras que 2025 me ensinou",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
-    "Simulador de amortização crédito à habitação",
-    "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
-    "Tem o PPR errado? Compare todos os PPR em poucos minutos",
-    "IMI",
-    "Investimentos",
     "Termos e Condições",
+    "Simulador de amortização crédito à habitação",
+    "Investimentos",
+    "Tem o PPR errado? Compare todos os PPR em poucos minutos",
+    "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
+    "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
+    "IMI",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
-    "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
-    "Crédito à habitação",
-    "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Simulador de Juros compostos",
+    "Crédito à habitação",
+    "Combustíveis",
+    "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
+    "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "Certificados de Aforro",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
-    "Combustíveis",
-    "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
-    "Podcast",
     "GÁS - Qual é a empresa mais barata este mês? (Novembro 2026)",
+    "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Quantas faturas pendentes tem neste momento no seu e-fatura?",
-    "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
+    "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
     "Seguro de saúde padrão: saiba se tem todas as coberturas essenciais",
-    "OTRV 2031: vale a pena investir nas novas Obrigações do Tesouro?",
     "VÍDEO - Como pode baixar o seu IMI no ano que vem",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
@@ -4804,30 +4802,35 @@
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Revista de imprensa de 17 de novembro: Fundo de Resolução e Investimentos",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
+    "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
+    "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "1.000 € que podem salvar as suas finanças - O que é o Fundo BASE?",
+    "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-17T10:30:46.459136+00:00",
+   "verificado": "2026-11-17T11:30:47.550763+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-17T10:30:46.459136+00:00",
+   "mudou": "2026-11-17T11:30:47.550763+00:00",
    "mudanca": {
     "mais": [
-     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas"
+     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
+     "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
+     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 3,
     "n_menos": 0
    }
   }
