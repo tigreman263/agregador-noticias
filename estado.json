@@ -1,8 +1,5 @@
 {
  "vistos": {
-  "7733f899db4a3803": "2026-11-03T16:01:01.631263+00:00",
-  "5b9cd746e50a2a89": "2026-11-03T16:01:01.631263+00:00",
-  "1194d62fe1b4c0cd": "2026-11-03T16:01:01.631263+00:00",
   "eb5fa106f83d6962": "2026-11-03T18:01:18.323033+00:00",
   "27d383339cd74dfb": "2026-11-03T21:01:09.280935+00:00",
   "3393efb515bbdb5d": "2026-11-04T07:45:57.520045+00:00",
@@ -1786,44 +1783,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-15T16:30:50.076308+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 568,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 526,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-15T17:30:59.843419+00:00",
    "pesquisas": [
     {
@@ -3548,11 +3507,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-17T16:30:47.481844+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 570,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 522,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-17T15:30:55.565115+00:00",
-  "contaspoupanca.pt": "2026-11-17T15:30:55.565115+00:00"
+  "cm-serta.pt": "2026-11-17T16:30:47.481844+00:00",
+  "contaspoupanca.pt": "2026-11-17T16:30:47.481844+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3560,8 +3557,8 @@
   "contaspoupanca.pt": "2026-11-16T18:30:50.763980+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-17T15:30:55.565115+00:00",
-  "Apoio fundo ambiental": "2026-11-17T15:30:55.565115+00:00"
+  "Sertã": "2026-11-17T16:30:47.481844+00:00",
+  "Apoio fundo ambiental": "2026-11-17T16:30:47.481844+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4224,7 +4221,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-17T15:30:55.565115+00:00",
+   "verificado": "2026-11-17T16:30:47.481844+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4500,7 +4497,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-17T15:30:55.565115+00:00",
+   "verificado": "2026-11-17T16:30:47.481844+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4811,7 +4808,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-17T15:30:55.565115+00:00",
+   "verificado": "2026-11-17T16:30:47.481844+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
