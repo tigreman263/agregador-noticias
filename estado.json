@@ -1,6 +1,5 @@
 {
  "vistos": {
-  "eb5fa106f83d6962": "2026-11-03T18:01:18.323033+00:00",
   "27d383339cd74dfb": "2026-11-03T21:01:09.280935+00:00",
   "3393efb515bbdb5d": "2026-11-04T07:45:57.520045+00:00",
   "262b6d4a3e5cf6a9": "2026-11-04T11:16:11.933918+00:00",
@@ -882,24 +881,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-11T12:46:03.973150+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-11T13:45:58.047619+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-11T13:45:58.047619+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
@@ -1779,48 +1760,27 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-17T18:30:48.718825+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-17T18:30:48.718825+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-15T18:30:59.465617+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 524,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 483,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-15T19:31:01.352422+00:00",
    "pesquisas": [
@@ -3542,11 +3502,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-17T18:30:48.718825+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 569,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 522,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-17T17:30:50.906693+00:00",
-  "contaspoupanca.pt": "2026-11-17T17:30:50.906693+00:00"
+  "cm-serta.pt": "2026-11-17T18:30:48.718825+00:00",
+  "contaspoupanca.pt": "2026-11-17T18:30:48.718825+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3554,8 +3552,8 @@
   "contaspoupanca.pt": "2026-11-16T18:30:50.763980+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-17T17:30:50.906693+00:00",
-  "Apoio fundo ambiental": "2026-11-17T17:30:50.906693+00:00"
+  "Sertã": "2026-11-17T18:30:48.718825+00:00",
+  "Apoio fundo ambiental": "2026-11-17T18:30:48.718825+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4218,7 +4216,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-17T17:30:50.906693+00:00",
+   "verificado": "2026-11-17T18:30:48.718825+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4388,7 +4386,9 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
-    "CERNACHE DO BONJARDIM: Casal de meia-idade tenta roubar ouro",
+    "OLEIROS: ARCO celebra 50 anos de história e união",
+    "Última hora",
+    "CERNACHE DO BONJARDIM: Casal de meia-idade roubaram ouro",
     "Última hora",
     "SERTÃ: Vereador do PSD pede maior aposta na repavimentação",
     "Última hora",
@@ -4400,22 +4400,22 @@
     "Última hora",
     "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão",
     "Última hora",
-    "FUTEBOL/ARCO: Jorge Ramos deixa ARCO",
-    "Última hora",
-    "SERTÃ: Vigília apela ao direito à habitação",
-    "Última hora",
-    "SERTÃ: Estado de conservação de escola do Carvalhal em destaque",
-    "Última hora",
     "Todas as notícias",
     "Início",
     "Notícias",
     "Todas as notícias",
-    "CERNACHE DO BONJARDIM: Casal de meia-idade tenta roubar ouro",
+    "OLEIROS: ARCO celebra 50 anos de história e união",
+    "Oleiros",
+    "Beira Baixa",
+    "Desporto",
+    "17-11-2026",
+    "Última hora",
+    "Com uma gala realizada no dia 14 de novembro",
+    "CERNACHE DO BONJARDIM: Casal de meia-idade roubaram ouro",
     "Cernache do Bonjardim",
     "Beira Baixa",
     "17-11-2026",
     "Última hora",
-    "Suspeitos abordavam moradores com a desculpa de abrir uma nova loja",
     "CERNACHE DO BONJARDIM: “Em Nome da Beira” destaca Nuno Álvares Pereira",
     "Cernache do Bonjardim",
     "Sertã",
@@ -4456,12 +4456,10 @@
     "Beira Baixa",
     "Desporto",
     "16-11-2026",
-    "Última hora",
     "SERTÃ: Vigília apela ao direito à habitação",
     "Sertã",
     "Beira Baixa",
     "16-11-2026",
-    "Última hora",
     "VILA DE REI: Biblioteca promove “Entre Histórias e Descobertas”",
     "Vila de Rei",
     "Beira Baixa",
@@ -4471,7 +4469,6 @@
     "Sertã",
     "Política",
     "14-11-2026",
-    "Última hora",
     "REGIÃO/futebol: Liga CRP joga-se na Condestável",
     "Sertã",
     "Cernache do Bonjardim",
@@ -4480,10 +4477,6 @@
     "Beira Baixa",
     "Desporto",
     "14-11-2026",
-    "MAÇÃO: \"Mercadinho de Natal\" é a novidade da \"Vila Natal\"",
-    "Mação",
-    "Médio Tejo",
-    "13-11-2026",
     "1",
     "2",
     "3",
@@ -4497,28 +4490,36 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-17T17:30:50.906693+00:00",
+   "verificado": "2026-11-17T18:30:48.718825+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-17T17:30:50.906693+00:00",
+   "mudou": "2026-11-17T18:30:48.718825+00:00",
    "mudanca": {
     "mais": [
-     "CERNACHE DO BONJARDIM: Casal de meia-idade tenta roubar ouro",
-     "Última hora",
-     "CERNACHE DO BONJARDIM: Casal de meia-idade tenta roubar ouro",
-     "Cernache do Bonjardim",
-     "Última hora",
-     "Suspeitos abordavam moradores com a desculpa de abrir uma nova loja"
+     "OLEIROS: ARCO celebra 50 anos de história e união",
+     "CERNACHE DO BONJARDIM: Casal de meia-idade roubaram ouro",
+     "OLEIROS: ARCO celebra 50 anos de história e união",
+     "Oleiros",
+     "Beira Baixa",
+     "Desporto",
+     "Com uma gala realizada no dia 14 de novembro",
+     "CERNACHE DO BONJARDIM: Casal de meia-idade roubaram ouro"
     ],
     "menos": [
-     "No dia 19 de novembro",
-     "SERTÃ: Menina de quatro anos ferida em despiste",
-     "Sertã"
+     "CERNACHE DO BONJARDIM: Casal de meia-idade tenta roubar ouro",
+     "FUTEBOL/ARCO: Jorge Ramos deixa ARCO",
+     "SERTÃ: Vigília apela ao direito à habitação",
+     "SERTÃ: Estado de conservação de escola do Carvalhal em destaque",
+     "CERNACHE DO BONJARDIM: Casal de meia-idade tenta roubar ouro",
+     "Suspeitos abordavam moradores com a desculpa de abrir uma nova loja",
+     "MAÇÃO: \"Mercadinho de Natal\" é a novidade da \"Vila Natal\"",
+     "Mação",
+     "Médio Tejo"
     ],
-    "n_mais": 6,
-    "n_menos": 3
+    "n_mais": 8,
+    "n_menos": 9
    },
    "via": "site",
    "erro_site": ""
@@ -4779,7 +4780,6 @@
     "Certificados de Aforro",
     "Simulador de IRS: Quanto devolve o seu município?",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
-    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "GÁS - Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
@@ -4803,6 +4803,7 @@
     "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
+    "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
@@ -4812,21 +4813,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-17T17:30:50.906693+00:00",
+   "verificado": "2026-11-17T18:30:48.718825+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-17T15:30:55.565115+00:00",
+   "mudou": "2026-11-17T18:30:48.718825+00:00",
    "mudanca": {
     "mais": [
-     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
-     "Simulador de IRS: Quanto devolve o seu município?",
-     "OTRV 2031: vale a pena investir nas novas Obrigações do Tesouro?"
+     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?"
     ],
     "menos": [],
-    "n_mais": 3,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
