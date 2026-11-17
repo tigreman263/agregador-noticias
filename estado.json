@@ -855,7 +855,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Lula pede investimentos em fundo ambiental e critica doações",
-   "ultima": "2026-11-16T09:31:08.116604+00:00"
+   "ultima": "2026-11-17T09:30:54.172564+00:00"
   },
   "diariodocentrodomundo.com.br": {
    "nome": "Diário do Centro do Mundo",
@@ -867,20 +867,23 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Canadá destina US$ 400 milhões a fundo ambiental criado por Lula",
-   "ultima": "2026-11-16T09:31:08.116604+00:00"
+   "ultima": "2026-11-17T09:30:54.172564+00:00"
+  },
+  "sertaodaparaiba.com.br": {
+   "nome": "Portal Sertão da Paraíba",
+   "site": "https://www.sertaodaparaiba.com.br",
+   "ids": [
+    "d9402e01ccfba120"
+   ],
+   "pesquisas": [
+    "Sertã"
+   ],
+   "exemplo": "Câmara aprova proposta para fortalecer a agricultura urbana e a segurança alimentar",
+   "ultima": "2026-11-17T09:30:54.172564+00:00"
   }
  },
- "ultima_descoberta": "2026-11-16",
+ "ultima_descoberta": "2026-11-17",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-10T20:46:07.155183+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-10T21:46:03.071202+00:00",
@@ -1771,48 +1774,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-17T09:30:54.172564+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-15T09:30:58.335070+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 527,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 484,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 1,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-15T10:31:02.925056+00:00",
    "pesquisas": [
@@ -3539,11 +3512,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-17T09:30:54.172564+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 568,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 522,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-17T08:30:46.804089+00:00",
-  "contaspoupanca.pt": "2026-11-17T08:30:46.804089+00:00"
+  "cm-serta.pt": "2026-11-17T09:30:54.172564+00:00",
+  "contaspoupanca.pt": "2026-11-17T09:30:54.172564+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3551,8 +3563,8 @@
   "contaspoupanca.pt": "2026-11-16T18:30:50.763980+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-17T08:30:46.804089+00:00",
-  "Apoio fundo ambiental": "2026-11-17T08:30:46.804089+00:00"
+  "Sertã": "2026-11-17T09:30:54.172564+00:00",
+  "Apoio fundo ambiental": "2026-11-17T09:30:54.172564+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4215,9 +4227,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-17T08:30:46.804089+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-17T09:30:54.172564+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-16T17:31:04.836057+00:00",
@@ -4486,7 +4498,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-17T08:30:46.804089+00:00",
+   "verificado": "2026-11-17T09:30:54.172564+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4706,12 +4718,15 @@
   "https://contaspoupanca.pt/": {
    "linhas_google": [
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
+    "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
+    "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
+    "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Perguntas e Respostas: Se a corretora falir, perco os meus ETF?",
-    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
+    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Simulador de apoio para os carros elétricos",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
@@ -4723,6 +4738,7 @@
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Simuladores",
+    "Automatizar poupanças e investimentos: a forma mais simples de garantir resultados",
     "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
     "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
@@ -4733,10 +4749,10 @@
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
     "Subscrever Newsletter",
-    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
+    "As 5 lições financeiras que 2025 me ensinou",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
     "Termos e Condições",
     "Simulador de amortização crédito à habitação",
@@ -4748,36 +4764,37 @@
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
-    "Apoios Sociais",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Simulador de Juros compostos",
+    "Crédito à habitação",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
-    "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "Certificados de Aforro",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
+    "GÁS - Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
-    "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
     "Seguro de saúde padrão: saiba se tem todas as coberturas essenciais",
+    "OTRV 2031: vale a pena investir nas novas Obrigações do Tesouro?",
     "VÍDEO - Como pode baixar o seu IMI no ano que vem",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Bolsa esta semana: Europa bate recordes e Wall Street recupera",
-    "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
+    "Revista de imprensa de 17 de novembro: Fundo de Resolução e Investimentos",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
+    "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
@@ -4785,26 +4802,32 @@
     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "1.000 € que podem salvar as suas finanças - O que é o Fundo BASE?",
-    "Vamos a contas: (1) Uma app para amortizar o crédito à habitação e (2) devo investir para comprar casa daqui a 3 anos?",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano",
     "Carro"
    ],
-   "verificado": "2026-11-17T08:30:46.804089+00:00",
-   "falhas": 2,
-   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
+   "verificado": "2026-11-17T09:30:54.172564+00:00",
+   "falhas": 0,
+   "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-16T19:31:03.569345+00:00",
+   "mudou": "2026-11-17T09:30:54.172564+00:00",
    "mudanca": {
     "mais": [
-     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
-     "Retenção na fonte cai para metade em novembro. Atenção ao acerto do próximo ano"
+     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
+     "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
+     "Automatizar poupanças e investimentos: a forma mais simples de garantir resultados",
+     "As 5 lições financeiras que 2025 me ensinou",
+     "Crédito à habitação",
+     "GÁS - Qual é a empresa mais barata este mês? (Novembro 2026)",
+     "OTRV 2031: vale a pena investir nas novas Obrigações do Tesouro?",
+     "Revista de imprensa de 17 de novembro: Fundo de Resolução e Investimentos",
+     "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 9,
     "n_menos": 0
    }
   }
