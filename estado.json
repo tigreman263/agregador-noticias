@@ -1781,36 +1781,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-16T06:31:05.299612+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 516,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 474,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
-  {
    "ts": "2026-11-16T07:30:56.842663+00:00",
    "pesquisas": [
     {
@@ -3535,10 +3505,42 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-18T06:30:52.672384+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 566,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 502,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-18T05:30:46.946304+00:00",
+  "cm-serta.pt": "2026-11-18T06:30:52.672384+00:00",
   "contaspoupanca.pt": "2026-11-17T22:30:53.387095+00:00"
  },
  "lentos": {},
@@ -3547,8 +3549,8 @@
   "contaspoupanca.pt": "2026-11-17T19:30:47.129890+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-18T05:30:46.946304+00:00",
-  "Apoio fundo ambiental": "2026-11-18T05:30:46.946304+00:00"
+  "Sertã": "2026-11-18T06:30:52.672384+00:00",
+  "Apoio fundo ambiental": "2026-11-18T06:30:52.672384+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
