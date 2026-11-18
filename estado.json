@@ -1,6 +1,5 @@
 {
  "vistos": {
-  "3393efb515bbdb5d": "2026-11-04T07:45:57.520045+00:00",
   "262b6d4a3e5cf6a9": "2026-11-04T11:16:11.933918+00:00",
   "3dd133dba22282ca": "2026-11-04T14:16:15.609883+00:00",
   "e5f153cc4ab2fd7e": "2026-11-04T14:16:15.609883+00:00",
@@ -21,7 +20,7 @@
  },
  "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-17",
+ "ultimo_resumo": "2026-11-18",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -878,15 +877,6 @@
  },
  "ultima_descoberta": "2026-11-17",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-12T07:01:04.855471+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-12T07:01:04.855471+00:00",
@@ -1777,50 +1767,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-18T08:30:43.520425+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-16T08:31:11.943426+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 456,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 456,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertagin",
-    "Apoio fundo ambiental · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efi",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-16T09:31:08.116604+00:00",
    "pesquisas": [
@@ -3536,11 +3494,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-18T08:30:43.520425+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 566,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 469,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-18T07:30:48.270233+00:00",
-  "contaspoupanca.pt": "2026-11-18T07:30:48.270233+00:00"
+  "cm-serta.pt": "2026-11-18T08:30:43.520425+00:00",
+  "contaspoupanca.pt": "2026-11-18T08:30:43.520425+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3548,8 +3546,8 @@
   "contaspoupanca.pt": "2026-11-17T19:30:47.129890+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-18T07:30:48.270233+00:00",
-  "Apoio fundo ambiental": "2026-11-18T07:30:48.270233+00:00"
+  "Sertã": "2026-11-18T08:30:43.520425+00:00",
+  "Apoio fundo ambiental": "2026-11-18T08:30:43.520425+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4212,9 +4210,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-18T07:30:48.270233+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-18T08:30:43.520425+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-17T15:30:55.565115+00:00",
@@ -4485,7 +4483,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-18T07:30:48.270233+00:00",
+   "verificado": "2026-11-18T08:30:43.520425+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4720,6 +4718,7 @@
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
+    "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Simuladores",
     "Automatizar poupanças e investimentos: a forma mais simples de garantir resultados",
@@ -4759,7 +4758,6 @@
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
-    "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
@@ -4791,20 +4789,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-18T07:30:48.270233+00:00",
+   "verificado": "2026-11-18T08:30:43.520425+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-18T07:30:48.270233+00:00",
+   "mudou": "2026-11-18T08:30:43.520425+00:00",
    "mudanca": {
     "mais": [
-     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
-     "Vamos a contas: Vale a pena amortizar um pouco todos os meses na prestação do crédito à habitação?"
+     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
