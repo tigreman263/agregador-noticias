@@ -875,15 +875,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-12T11:01:02.030861+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-12T12:01:25.850672+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
@@ -1772,48 +1763,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-18T17:30:47.468408+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-16T17:31:04.836057+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 525,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 477,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-16T18:31:04.003317+00:00",
    "pesquisas": [
@@ -3536,11 +3497,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-18T17:30:47.468408+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 565,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 521,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-18T16:30:46.683144+00:00",
-  "contaspoupanca.pt": "2026-11-18T16:30:46.683144+00:00"
+  "cm-serta.pt": "2026-11-18T17:30:47.468408+00:00",
+  "contaspoupanca.pt": "2026-11-18T17:30:47.468408+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3548,8 +3548,8 @@
   "contaspoupanca.pt": "2026-11-17T19:30:47.129890+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-18T16:30:46.683144+00:00",
-  "Apoio fundo ambiental": "2026-11-18T16:30:46.683144+00:00"
+  "Sertã": "2026-11-18T17:30:47.468408+00:00",
+  "Apoio fundo ambiental": "2026-11-18T17:30:47.468408+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4212,9 +4212,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-18T16:30:46.683144+00:00",
-   "falhas": 1,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-18T17:30:47.468408+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-18T15:30:51.218440+00:00",
@@ -4382,6 +4382,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
+    "Última hora",
     "CERNACHE DO BONJARDIM: Ruas D. Nuno Álvares Pereira e Prof. Gil Marçal cortadas ao trânsito",
     "Última hora",
     "SERTÃ: Vereador do PSD questiona estratégia de valorização dos produtos endógenos",
@@ -4394,11 +4396,20 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "FERREIRA DO ZÊZERE: Município acompanha pedido de prospeção mineira",
+    "Ferreira do Zêzere",
+    "Médio Tejo",
+    "18-11-2026",
+    "Autarquia promove sessões de esclarecimento",
+    "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
+    "Mação",
+    "Médio Tejo",
+    "18-11-2026",
+    "Última hora",
     "CASTANHEIRA DE PERA: Condomínio dos Esconhais avança para captação de empresas",
     "Castanheira de Pera",
     "Região",
     "18-11-2026",
-    "Requalificação custou quatro milhões de euros",
     "SERTÃ: Gala Eugénia Lima celebra centenário da “Diva do Acordeão”",
     "Sertã",
     "Beira Baixa",
@@ -4451,14 +4462,6 @@
     "Médio Tejo",
     "Região",
     "16-11-2026",
-    "SERTÃ: Rua Dr. Romão de Mascarenhas cortada ao trânsito",
-    "Sertã",
-    "Beira Baixa",
-    "16-11-2026",
-    "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão",
-    "Ferreira do Zêzere",
-    "Médio Tejo",
-    "16-11-2026",
     "1",
     "2",
     "3",
@@ -4472,40 +4475,31 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-18T16:30:46.683144+00:00",
+   "verificado": "2026-11-18T17:30:47.468408+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-18T12:30:57.631340+00:00",
+   "mudou": "2026-11-18T17:30:47.468408+00:00",
    "mudanca": {
     "mais": [
-     "CERNACHE DO BONJARDIM: Ruas D. Nuno Álvares Pereira e Prof. Gil Marçal cortadas ao trânsito",
-     "CASTANHEIRA DE PERA: Condomínio dos Esconhais avança para captação de empresas",
-     "Castanheira de Pera",
-     "Região",
-     "Requalificação custou quatro milhões de euros",
-     "SERTÃ: Gala Eugénia Lima celebra centenário da “Diva do Acordeão”",
-     "CERNACHE DO BONJARDIM: Ruas D. Nuno Álvares Pereira e Prof. Gil Marçal cortadas ao trânsito",
-     "Cernache do Bonjardim"
+     "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
+     "Última hora",
+     "FERREIRA DO ZÊZERE: Município acompanha pedido de prospeção mineira",
+     "Autarquia promove sessões de esclarecimento",
+     "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
+     "Mação",
+     "Última hora"
     ],
     "menos": [
-     "CERNACHE DO BONJARDIM: Falsos lojistas enganam moradores e roubam ouro",
-     "SERTÃ: Vereador do PSD pede maior aposta na repavimentação",
-     "SERTÃ: Há falta de papel no Centro de Saúde",
-     "REGIÃO: EDP aposta na inovação híbrida na Barragem de Pracana",
+     "Requalificação custou quatro milhões de euros",
      "SERTÃ: Rua Dr. Romão de Mascarenhas cortada ao trânsito",
-     "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão",
-     "Presidente da câmara rebate e considera que se está no bom caminho",
-     "FUTEBOL/ARCO: Jorge Ramos deixa ARCO",
-     "Oleiros",
-     "Desporto",
-     "SERTÃ: Vigília apela ao direito à habitação",
-     "VILA DE REI: Biblioteca promove “Entre Histórias e Descobertas”",
-     "Vila de Rei"
+     "Sertã",
+     "Beira Baixa",
+     "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão"
     ],
-    "n_mais": 8,
-    "n_menos": 13
+    "n_mais": 7,
+    "n_menos": 5
    },
    "via": "site",
    "erro_site": ""
@@ -4797,8 +4791,8 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-18T16:30:46.683144+00:00",
-   "falhas": 1,
+   "verificado": "2026-11-18T17:30:47.468408+00:00",
+   "falhas": 2,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
