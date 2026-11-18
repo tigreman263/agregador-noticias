@@ -848,7 +848,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Lula pede investimentos em fundo ambiental e critica doações",
-   "ultima": "2026-11-17T09:30:54.172564+00:00"
+   "ultima": "2026-11-18T09:30:56.648545+00:00"
   },
   "diariodocentrodomundo.com.br": {
    "nome": "Diário do Centro do Mundo",
@@ -860,7 +860,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Canadá destina US$ 400 milhões a fundo ambiental criado por Lula",
-   "ultima": "2026-11-17T09:30:54.172564+00:00"
+   "ultima": "2026-11-18T09:30:56.648545+00:00"
   },
   "sertaodaparaiba.com.br": {
    "nome": "Portal Sertão da Paraíba",
@@ -875,17 +875,8 @@
    "ultima": "2026-11-17T09:30:54.172564+00:00"
   }
  },
- "ultima_descoberta": "2026-11-17",
+ "ultima_descoberta": "2026-11-18",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-12T07:01:04.855471+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-12T08:01:02.235553+00:00",
@@ -1776,48 +1767,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-18T09:30:56.648545+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-16T09:31:08.116604+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 521,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 478,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-16T10:31:28.738217+00:00",
    "pesquisas": [
@@ -3534,11 +3495,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-18T09:30:56.648545+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 565,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 521,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-18T08:30:43.520425+00:00",
-  "contaspoupanca.pt": "2026-11-18T08:30:43.520425+00:00"
+  "cm-serta.pt": "2026-11-18T09:30:56.648545+00:00",
+  "contaspoupanca.pt": "2026-11-18T09:30:56.648545+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3546,8 +3545,8 @@
   "contaspoupanca.pt": "2026-11-17T19:30:47.129890+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-18T08:30:43.520425+00:00",
-  "Apoio fundo ambiental": "2026-11-18T08:30:43.520425+00:00"
+  "Sertã": "2026-11-18T09:30:56.648545+00:00",
+  "Apoio fundo ambiental": "2026-11-18T09:30:56.648545+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4210,9 +4209,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-18T08:30:43.520425+00:00",
-   "falhas": 1,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-18T09:30:56.648545+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-17T15:30:55.565115+00:00",
@@ -4483,7 +4482,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-18T08:30:43.520425+00:00",
+   "verificado": "2026-11-18T09:30:56.648545+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4718,7 +4717,6 @@
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
-    "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Simuladores",
     "Automatizar poupanças e investimentos: a forma mais simples de garantir resultados",
@@ -4758,6 +4756,7 @@
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
+    "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
@@ -4773,6 +4772,7 @@
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
+    "Revista de imprensa de 18 de novembro: Inflação, alimentos e comissões de amortização",
     "Revista de imprensa de 17 de novembro: Fundo de Resolução e Investimentos",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
     "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
@@ -4789,19 +4789,20 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-18T08:30:43.520425+00:00",
+   "verificado": "2026-11-18T09:30:56.648545+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-18T08:30:43.520425+00:00",
+   "mudou": "2026-11-18T09:30:56.648545+00:00",
    "mudanca": {
     "mais": [
-     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana"
+     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
+     "Revista de imprensa de 18 de novembro: Inflação, alimentos e comissões de amortização"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
