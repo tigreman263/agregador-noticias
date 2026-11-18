@@ -875,33 +875,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-12T13:01:09.156632+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-12T13:01:09.156632+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-12T15:00:53.755756+00:00",
-   "titulo": "Mudou: cm-serta",
-   "link": "https://cm-serta.pt/comunicacao/noticias",
-   "fonte": "cm-serta.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-12T15:00:53.755756+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
@@ -1772,48 +1745,36 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-18T19:30:51.396866+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-18T19:30:51.396866+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-18T19:30:51.396866+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-16T19:31:03.569345+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 524,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 478,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-16T20:31:09.823754+00:00",
    "pesquisas": [
@@ -3536,20 +3497,60 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-18T19:30:51.396866+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 512,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 521,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 3,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-18T18:30:49.554232+00:00",
-  "contaspoupanca.pt": "2026-11-18T18:30:49.554232+00:00"
+  "cm-serta.pt": "2026-11-18T19:30:51.396866+00:00",
+  "contaspoupanca.pt": "2026-11-18T19:30:51.396866+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-18T18:30:49.236027+00:00",
-  "contaspoupanca.pt": "2026-11-17T19:30:47.129890+00:00"
+  "contaspoupanca.pt": "2026-11-18T19:30:51.202122+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-18T18:30:49.554232+00:00",
-  "Apoio fundo ambiental": "2026-11-18T18:30:49.554232+00:00"
+  "Sertã": "2026-11-18T19:30:51.396866+00:00",
+  "Apoio fundo ambiental": "2026-11-18T19:30:51.396866+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4212,15 +4213,15 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-18T18:30:49.554232+00:00",
+   "verificado": "2026-11-18T19:30:51.396866+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-18T15:30:51.218440+00:00",
+   "mudou": "2026-11-18T19:30:51.396866+00:00",
    "mudanca": {
     "mais": [
-     "BUPi"
+     "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto"
     ],
     "menos": [],
     "n_mais": 1,
@@ -4252,7 +4253,6 @@
     "Abastecimento de água",
     "Contactos Úteis",
     "Regulamentos",
-    "BUPi",
     "Estrutura Orgânica",
     "Planos",
     "Casa de Espetáculos e Cultura da Sertã",
@@ -4269,6 +4269,7 @@
     "Mapa de Pessoal",
     "História e Caracterização",
     "Assembleia Municipal Jovem",
+    "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto",
     "União de Freguesias de Cumeada e Marmeleiro",
     "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
     "clds 5g",
@@ -4384,7 +4385,7 @@
     "Última hora",
     "CASTELO BRANCO: Deputado do Chega constituído arguido",
     "Última hora",
-    "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
+    "MAÇÃO: Município investe cerca de 50 mil euros na nova Vila Natal",
     "Última hora",
     "CERNACHE DO BONJARDIM: Ruas D. Nuno Álvares Pereira e Prof. Gil Marçal cortadas ao trânsito",
     "Última hora",
@@ -4409,7 +4410,7 @@
     "Ferreira do Zêzere",
     "Médio Tejo",
     "18-11-2026",
-    "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
+    "MAÇÃO: Município investe cerca de 50 mil euros na nova Vila Natal",
     "Mação",
     "Médio Tejo",
     "18-11-2026",
@@ -4475,31 +4476,23 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-18T18:30:49.554232+00:00",
+   "verificado": "2026-11-18T19:30:51.396866+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-18T18:30:49.554232+00:00",
+   "mudou": "2026-11-18T19:30:51.396866+00:00",
    "mudanca": {
     "mais": [
-     "CASTELO BRANCO: Deputado do Chega constituído arguido",
-     "Última hora",
-     "CASTELO BRANCO: Deputado do Chega constituído arguido",
-     "Castelo Branco",
-     "Última hora",
-     "Juntamente com líder parlamentar do partido"
+     "MAÇÃO: Município investe cerca de 50 mil euros na nova Vila Natal",
+     "MAÇÃO: Município investe cerca de 50 mil euros na nova Vila Natal"
     ],
     "menos": [
-     "Autarquia promove sessões de esclarecimento",
-     "REGIÃO: EDP aposta na inovação híbrida na Barragem de Pracana",
-     "Mação",
-     "Vila Velha de Ródão",
-     "Proença-a-Nova",
-     "Médio Tejo"
+     "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
+     "MAÇÃO: Município investe 50 mil euros na nova Vila Natal"
     ],
-    "n_mais": 6,
-    "n_menos": 6
+    "n_mais": 2,
+    "n_menos": 2
    },
    "via": "site",
    "erro_site": ""
@@ -4706,7 +4699,6 @@
    "linhas_google": [
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
-    "Revista de imprensa de 12 de novembro: Combustíveis, burlas bancárias e poupança",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "PPR",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
@@ -4734,6 +4726,7 @@
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
     "Subscrever Newsletter",
+    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
@@ -4771,6 +4764,7 @@
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
+    "Eletricidade da EDP vai ficar mais cara em 2027, aumentos chegam aos 31%. Veja quanto vai pagar a mais",
     "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "Bolsa esta semana: Europa bate recordes e Wall Street recupera",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
@@ -4791,19 +4785,20 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-18T18:30:49.554232+00:00",
-   "falhas": 3,
-   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
+   "verificado": "2026-11-18T19:30:51.396866+00:00",
+   "falhas": 0,
+   "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-18T15:30:51.218440+00:00",
+   "mudou": "2026-11-18T19:30:51.396866+00:00",
    "mudanca": {
     "mais": [
-     "Inflação na zona euro sobe para 4%, a mais alta em três anos"
+     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
+     "Eletricidade da EDP vai ficar mais cara em 2027, aumentos chegam aos 31%. Veja quanto vai pagar a mais"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
