@@ -1780,51 +1780,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-16T10:31:28.738217+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 430,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 430,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertagin",
-    "Sertã · Rádio Hertz: ParseError: mismatched tag: line 93, column 2",
-    "Sertã · Portal Energia: ParseError: mismatched tag: line 93, column 2",
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efi",
-    "Apoio fundo ambiental · Rádio Hertz: ParseError: mismatched tag: line 93, column 2",
-    "Apoio fundo ambiental · Portal Energia: ParseError: mismatched tag: line 93, column 2",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 4,
-    "mudaram": 0,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-16T11:31:01.118018+00:00",
    "pesquisas": [
     {
@@ -3533,11 +3488,52 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-18T10:30:50.617051+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 564,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 450,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 4,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-18T09:30:56.648545+00:00",
-  "contaspoupanca.pt": "2026-11-18T09:30:56.648545+00:00"
+  "cm-serta.pt": "2026-11-18T10:30:50.617051+00:00",
+  "contaspoupanca.pt": "2026-11-18T10:30:50.617051+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3545,8 +3541,8 @@
   "contaspoupanca.pt": "2026-11-17T19:30:47.129890+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-18T09:30:56.648545+00:00",
-  "Apoio fundo ambiental": "2026-11-18T09:30:56.648545+00:00"
+  "Sertã": "2026-11-18T10:30:50.617051+00:00",
+  "Apoio fundo ambiental": "2026-11-18T10:30:50.617051+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4209,7 +4205,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-18T09:30:56.648545+00:00",
+   "verificado": "2026-11-18T10:30:50.617051+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4482,7 +4478,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-18T09:30:56.648545+00:00",
+   "verificado": "2026-11-18T10:30:50.617051+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4691,7 +4687,7 @@
     "Esses cookies nos ajudam a entender como os visitantes interagem com nosso site, obter estatísticas de acessos e utilizadores para fornecer uma melhor análise geral.",
     "Aceitar"
    ],
-   "verificado": "2026-11-17T10:30:46.459136+00:00",
+   "verificado": "2026-11-18T10:30:50.617051+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4780,7 +4776,6 @@
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
-    "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
@@ -4789,7 +4784,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-18T09:30:56.648545+00:00",
+   "verificado": "2026-11-18T10:30:50.617051+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
