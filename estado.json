@@ -875,15 +875,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-12T12:01:25.850672+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-12T13:01:09.156632+00:00",
    "titulo": "Mudou: Radio condestável",
    "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
@@ -1772,48 +1763,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-18T18:30:49.554232+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-16T18:31:04.003317+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 525,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 477,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-16T19:31:03.569345+00:00",
    "pesquisas": [
@@ -3536,20 +3497,59 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-18T18:30:49.554232+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 564,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 521,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-18T17:30:47.468408+00:00",
-  "contaspoupanca.pt": "2026-11-18T17:30:47.468408+00:00"
+  "cm-serta.pt": "2026-11-18T18:30:49.554232+00:00",
+  "contaspoupanca.pt": "2026-11-18T18:30:49.554232+00:00"
  },
  "lentos": {},
  "testes_diretos": {
-  "cm-serta.pt": "2026-11-17T17:30:50.624104+00:00",
+  "cm-serta.pt": "2026-11-18T18:30:49.236027+00:00",
   "contaspoupanca.pt": "2026-11-17T19:30:47.129890+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-18T17:30:47.468408+00:00",
-  "Apoio fundo ambiental": "2026-11-18T17:30:47.468408+00:00"
+  "Sertã": "2026-11-18T18:30:49.554232+00:00",
+  "Apoio fundo ambiental": "2026-11-18T18:30:49.554232+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4212,7 +4212,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-18T17:30:47.468408+00:00",
+   "verificado": "2026-11-18T18:30:49.554232+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4382,6 +4382,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "CASTELO BRANCO: Deputado do Chega constituído arguido",
+    "Última hora",
     "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
     "Última hora",
     "CERNACHE DO BONJARDIM: Ruas D. Nuno Álvares Pereira e Prof. Gil Marçal cortadas ao trânsito",
@@ -4396,11 +4398,17 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "CASTELO BRANCO: Deputado do Chega constituído arguido",
+    "Castelo Branco",
+    "Beira Baixa",
+    "Região",
+    "18-11-2026",
+    "Última hora",
+    "Juntamente com líder parlamentar do partido",
     "FERREIRA DO ZÊZERE: Município acompanha pedido de prospeção mineira",
     "Ferreira do Zêzere",
     "Médio Tejo",
     "18-11-2026",
-    "Autarquia promove sessões de esclarecimento",
     "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
     "Mação",
     "Médio Tejo",
@@ -4454,14 +4462,6 @@
     "Beira Baixa",
     "Saúde",
     "17-11-2026",
-    "REGIÃO: EDP aposta na inovação híbrida na Barragem de Pracana",
-    "Mação",
-    "Vila Velha de Ródão",
-    "Proença-a-Nova",
-    "Beira Baixa",
-    "Médio Tejo",
-    "Região",
-    "16-11-2026",
     "1",
     "2",
     "3",
@@ -4475,31 +4475,31 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-18T17:30:47.468408+00:00",
+   "verificado": "2026-11-18T18:30:49.554232+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-18T17:30:47.468408+00:00",
+   "mudou": "2026-11-18T18:30:49.554232+00:00",
    "mudanca": {
     "mais": [
-     "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
+     "CASTELO BRANCO: Deputado do Chega constituído arguido",
      "Última hora",
-     "FERREIRA DO ZÊZERE: Município acompanha pedido de prospeção mineira",
-     "Autarquia promove sessões de esclarecimento",
-     "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
-     "Mação",
-     "Última hora"
+     "CASTELO BRANCO: Deputado do Chega constituído arguido",
+     "Castelo Branco",
+     "Última hora",
+     "Juntamente com líder parlamentar do partido"
     ],
     "menos": [
-     "Requalificação custou quatro milhões de euros",
-     "SERTÃ: Rua Dr. Romão de Mascarenhas cortada ao trânsito",
-     "Sertã",
-     "Beira Baixa",
-     "FERREIRA DO ZÊZERE: Música e poesia marcaram festival de acordeão"
+     "Autarquia promove sessões de esclarecimento",
+     "REGIÃO: EDP aposta na inovação híbrida na Barragem de Pracana",
+     "Mação",
+     "Vila Velha de Ródão",
+     "Proença-a-Nova",
+     "Médio Tejo"
     ],
-    "n_mais": 7,
-    "n_menos": 5
+    "n_mais": 6,
+    "n_menos": 6
    },
    "via": "site",
    "erro_site": ""
@@ -4791,8 +4791,8 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-18T17:30:47.468408+00:00",
-   "falhas": 2,
+   "verificado": "2026-11-18T18:30:49.554232+00:00",
+   "falhas": 3,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
