@@ -879,15 +879,6 @@
   {
    "tipo": "pagina",
    "ts": "2026-11-12T10:01:00.657823+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-12T10:01:00.657823+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
    "fonte": "contaspoupanca.pt",
@@ -1775,48 +1766,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-18T13:30:50.314437+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-16T13:31:07.616943+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 523,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 478,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-16T14:30:58.146707+00:00",
    "pesquisas": [
@@ -3535,11 +3496,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-18T13:30:50.314437+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 564,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 521,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-18T12:30:57.631340+00:00",
-  "contaspoupanca.pt": "2026-11-18T12:30:57.631340+00:00"
+  "cm-serta.pt": "2026-11-18T13:30:50.314437+00:00",
+  "contaspoupanca.pt": "2026-11-18T13:30:50.314437+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3547,8 +3546,8 @@
   "contaspoupanca.pt": "2026-11-17T19:30:47.129890+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-18T12:30:57.631340+00:00",
-  "Apoio fundo ambiental": "2026-11-18T12:30:57.631340+00:00"
+  "Sertã": "2026-11-18T13:30:50.314437+00:00",
+  "Apoio fundo ambiental": "2026-11-18T13:30:50.314437+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4211,9 +4210,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-18T12:30:57.631340+00:00",
-   "falhas": 1,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-18T13:30:50.314437+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-17T15:30:55.565115+00:00",
@@ -4471,7 +4470,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-18T12:30:57.631340+00:00",
+   "verificado": "2026-11-18T13:30:50.314437+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4715,9 +4714,8 @@
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "PPR",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
-    "Inflação de outubro sobe para 3,8% e a energia dispara. Quanto pesa no orçamento da sua família?",
-    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Simulador de apoio para os carros elétricos",
+    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
@@ -4725,8 +4723,10 @@
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
+    "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Simuladores",
+    "O que é a liberdade financeira e como a posso alcançar?",
     "Automatizar poupanças e investimentos: a forma mais simples de garantir resultados",
     "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
@@ -4757,14 +4757,13 @@
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Simulador de Juros compostos",
     "Crédito à habitação",
+    "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
-    "Certificados de Aforro",
     "Simulador de IRS: Quanto devolve o seu município?",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
-    "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
@@ -4775,6 +4774,7 @@
     "VÍDEO - Como pode baixar o seu IMI no ano que vem",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
+    "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Bolsa esta semana: Europa bate recordes e Wall Street recupera",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
@@ -4786,8 +4786,8 @@
     "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
-    "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
+    "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
@@ -4796,20 +4796,23 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-18T12:30:57.631340+00:00",
-   "falhas": 2,
-   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
+   "verificado": "2026-11-18T13:30:50.314437+00:00",
+   "falhas": 0,
+   "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-18T09:30:56.648545+00:00",
+   "mudou": "2026-11-18T13:30:50.314437+00:00",
    "mudanca": {
     "mais": [
-     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
-     "Revista de imprensa de 18 de novembro: Inflação, alimentos e comissões de amortização"
+     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
+     "O que é a liberdade financeira e como a posso alcançar?",
+     "Combustíveis",
+     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
+     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 5,
     "n_menos": 0
    }
   }
