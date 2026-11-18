@@ -1781,36 +1781,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-16T02:31:14.855573+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 517,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 475,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
-  {
    "ts": "2026-11-16T03:31:01.557198+00:00",
    "pesquisas": [
     {
@@ -3537,10 +3507,41 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-18T02:30:49.837045+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 516,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 470,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-18T01:30:47.697630+00:00",
+  "cm-serta.pt": "2026-11-18T02:30:49.837045+00:00",
   "contaspoupanca.pt": "2026-11-17T22:30:53.387095+00:00"
  },
  "lentos": {},
@@ -3549,8 +3550,8 @@
   "contaspoupanca.pt": "2026-11-17T19:30:47.129890+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-18T01:30:47.697630+00:00",
-  "Apoio fundo ambiental": "2026-11-18T01:30:47.697630+00:00"
+  "Sertã": "2026-11-18T02:30:49.837045+00:00",
+  "Apoio fundo ambiental": "2026-11-18T02:30:49.837045+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
