@@ -875,24 +875,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-12T17:01:06.994916+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "alerta",
-   "ts": "2026-11-12T17:01:06.994916+00:00",
-   "titulo": "SERTÃ: Município promove sessão de esclarecimentos sobre aviso PEPAC",
-   "link": "https://sapo.pt/artigo/serta-municipio-promove-sessao-de-esclarecimentos-sobre-aviso-pepac-6af5efb48caa48e7be897756",
-   "fonte": "SAPO",
-   "nota": 19.5,
-   "pesquisa": "Sertã"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-12T18:01:06.006566+00:00",
    "titulo": "Mudou: Radio condestável",
    "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
@@ -1772,49 +1754,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T07:30:48.153886+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T07:30:48.153886+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-17T07:30:48.855731+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 516,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 522,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-17T08:30:46.804089+00:00",
    "pesquisas": [
@@ -3532,11 +3492,50 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-19T07:30:48.153886+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 565,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 520,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-19T06:30:47.607023+00:00",
-  "contaspoupanca.pt": "2026-11-18T22:30:46.419947+00:00"
+  "cm-serta.pt": "2026-11-19T07:30:48.153886+00:00",
+  "contaspoupanca.pt": "2026-11-19T07:30:48.153886+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3544,8 +3543,8 @@
   "contaspoupanca.pt": "2026-11-18T19:30:51.202122+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-19T06:30:47.607023+00:00",
-  "Apoio fundo ambiental": "2026-11-19T06:30:47.607023+00:00"
+  "Sertã": "2026-11-19T07:30:48.153886+00:00",
+  "Apoio fundo ambiental": "2026-11-19T07:30:48.153886+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4208,9 +4207,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-18T22:30:46.419947+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-19T07:30:48.153886+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-18T22:30:46.419947+00:00",
@@ -4281,7 +4280,7 @@
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
-    "quarta-feira, 18 novembro 2026",
+    "quinta-feira, 19 novembro 2026",
     "Informação",
     "Programação",
     "Ficha Técnica",
@@ -4471,23 +4470,21 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-18T22:30:46.419947+00:00",
+   "verificado": "2026-11-19T07:30:48.153886+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-18T19:30:51.396866+00:00",
+   "mudou": "2026-11-19T07:30:48.153886+00:00",
    "mudanca": {
     "mais": [
-     "MAÇÃO: Município investe cerca de 50 mil euros na nova Vila Natal",
-     "MAÇÃO: Município investe cerca de 50 mil euros na nova Vila Natal"
+     "quinta-feira, 19 novembro 2026"
     ],
     "menos": [
-     "MAÇÃO: Município investe 50 mil euros na nova Vila Natal",
-     "MAÇÃO: Município investe 50 mil euros na nova Vila Natal"
+     "quarta-feira, 18 novembro 2026"
     ],
-    "n_mais": 2,
-    "n_menos": 2
+    "n_mais": 1,
+    "n_menos": 1
    },
    "via": "site",
    "erro_site": ""
@@ -4692,11 +4689,11 @@
   },
   "https://contaspoupanca.pt/": {
    "linhas_google": [
-    "Eletricidade da EDP vai ficar mais cara em 2027, aumentos chegam aos 31%. Veja quanto vai pagar a mais",
-    "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
-    "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
+    "Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
+    "Simuladores",
+    "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "PPR",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Simulador de apoio para os carros elétricos",
@@ -4708,8 +4705,6 @@
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
-    "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
-    "Simuladores",
     "O que é a liberdade financeira e como a posso alcançar?",
     "Automatizar poupanças e investimentos: a forma mais simples de garantir resultados",
     "Política de Privacidade",
@@ -4719,15 +4714,16 @@
     "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
     "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
-    "Simulador de IRS: Quanto devolve o seu município?",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
+    "Simulador de IRS: Quanto devolve o seu município?",
     "Subscrever Newsletter",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "As 5 lições financeiras que 2025 me ensinou",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
+    "Termos e Condições",
     "Simulador de amortização crédito à habitação",
     "Investimentos",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
@@ -4740,26 +4736,24 @@
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
-    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Simulador de Juros compostos",
-    "Crédito à habitação",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
+    "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "Certificados de Aforro",
+    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
+    "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
-    "Depósitos a Prazo: segurança ou perda silenciosa?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
-    "Seguro de saúde padrão: saiba se tem todas as coberturas essenciais",
     "OTRV 2031: vale a pena investir nas novas Obrigações do Tesouro?",
+    "VÍDEO - Como pode baixar o seu IMI no ano que vem",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
-    "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
-    "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "Bolsa esta semana: Europa bate recordes e Wall Street recupera",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
@@ -4770,29 +4764,35 @@
     "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
+    "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
-    "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
+    "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
     "Vamos a contas: Vale a pena amortizar um pouco todos os meses na prestação do crédito à habitação?",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-18T22:30:46.419947+00:00",
+   "verificado": "2026-11-19T07:30:48.153886+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-18T22:30:46.419947+00:00",
+   "mudou": "2026-11-19T07:30:48.153886+00:00",
    "mudanca": {
     "mais": [
-     "Certificados de Aforro"
+     "Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
+     "Termos e Condições",
+     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
+     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
+     "VÍDEO - Como pode baixar o seu IMI no ano que vem",
+     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 6,
     "n_menos": 0
    }
   }
