@@ -276,7 +276,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-19T22:31:02.134128+00:00"
+   "ultima": "2026-11-19T23:31:15.336252+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -1816,36 +1816,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-17T23:30:46.765942+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 567,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 522,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-18T00:30:52.621611+00:00",
    "pesquisas": [
@@ -3584,10 +3554,42 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-19T23:31:15.336252+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 460,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-19T22:31:02.134128+00:00",
+  "cm-serta.pt": "2026-11-19T23:31:15.336252+00:00",
   "contaspoupanca.pt": "2026-11-19T22:31:02.134128+00:00"
  },
  "lentos": {},
@@ -3596,8 +3598,8 @@
   "contaspoupanca.pt": "2026-11-19T19:30:55.504544+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-19T22:31:02.134128+00:00",
-  "Apoio fundo ambiental": "2026-11-19T22:31:02.134128+00:00"
+  "Sertã": "2026-11-19T23:31:15.336252+00:00",
+  "Apoio fundo ambiental": "2026-11-19T23:31:15.336252+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
