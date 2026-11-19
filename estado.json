@@ -251,7 +251,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-19T13:31:47.646605+00:00"
+   "ultima": "2026-11-19T14:31:05.297890+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -1779,45 +1779,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-17T14:30:52.073554+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 568,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 523,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-17T15:30:55.565115+00:00",
    "pesquisas": [
@@ -3535,11 +3496,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-19T14:31:05.297890+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 524,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 478,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-19T13:31:47.646605+00:00",
-  "contaspoupanca.pt": "2026-11-19T13:31:47.646605+00:00"
+  "cm-serta.pt": "2026-11-19T14:31:05.297890+00:00",
+  "contaspoupanca.pt": "2026-11-19T14:31:05.297890+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3547,8 +3547,8 @@
   "contaspoupanca.pt": "2026-11-18T19:30:51.202122+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-19T13:31:47.646605+00:00",
-  "Apoio fundo ambiental": "2026-11-19T13:31:47.646605+00:00"
+  "Sertã": "2026-11-19T14:31:05.297890+00:00",
+  "Apoio fundo ambiental": "2026-11-19T14:31:05.297890+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4211,7 +4211,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-19T13:31:47.646605+00:00",
+   "verificado": "2026-11-19T14:31:05.297890+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4496,7 +4496,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-19T13:31:47.646605+00:00",
+   "verificado": "2026-11-19T14:31:05.297890+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4832,9 +4832,9 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-19T13:31:47.646605+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-19T14:31:05.297890+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
