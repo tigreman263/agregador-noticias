@@ -251,7 +251,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-19T11:31:13.852003+00:00"
+   "ultima": "2026-11-19T12:31:02.428487+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -877,15 +877,6 @@
  },
  "ultima_descoberta": "2026-11-19",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-13T08:01:07.494134+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-13T10:01:00.694754+00:00",
@@ -1776,49 +1767,18 @@
    "fonte": "cm-serta.pt",
    "nota": 13.0,
    "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T12:31:02.428487+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-17T12:30:47.508777+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 567,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 469,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-17T13:30:57.661506+00:00",
    "pesquisas": [
@@ -3537,11 +3497,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-19T12:31:02.428487+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 526,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 478,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-19T11:31:13.852003+00:00",
-  "contaspoupanca.pt": "2026-11-19T11:31:13.852003+00:00"
+  "cm-serta.pt": "2026-11-19T12:31:02.428487+00:00",
+  "contaspoupanca.pt": "2026-11-19T12:31:02.428487+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3549,8 +3548,8 @@
   "contaspoupanca.pt": "2026-11-18T19:30:51.202122+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-19T11:31:13.852003+00:00",
-  "Apoio fundo ambiental": "2026-11-19T11:31:13.852003+00:00"
+  "Sertã": "2026-11-19T12:31:02.428487+00:00",
+  "Apoio fundo ambiental": "2026-11-19T12:31:02.428487+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4213,7 +4212,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-19T11:31:13.852003+00:00",
+   "verificado": "2026-11-19T12:31:02.428487+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4420,13 +4419,17 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: Casa da Cultura recebe simpósio internacional",
+    "Sertã",
+    "Beira Baixa",
+    "19-11-2026",
+    "No dia 5 de dezembro",
     "CASTELO BRANCO: Deputado do Chega constituído arguido",
     "Castelo Branco",
     "Beira Baixa",
     "Região",
     "18-11-2026",
     "Última hora",
-    "Juntamente com líder parlamentar do partido",
     "FERREIRA DO ZÊZERE: Município acompanha pedido de prospeção mineira",
     "Ferreira do Zêzere",
     "Médio Tejo",
@@ -4479,11 +4482,6 @@
     "Sertã",
     "Beira Baixa",
     "17-11-2026",
-    "SERTÃ: Há falta de papel no Centro de Saúde",
-    "Sertã",
-    "Beira Baixa",
-    "Saúde",
-    "17-11-2026",
     "1",
     "2",
     "3",
@@ -4497,21 +4495,24 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-19T11:31:13.852003+00:00",
+   "verificado": "2026-11-19T12:31:02.428487+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-19T07:30:48.153886+00:00",
+   "mudou": "2026-11-19T12:31:02.428487+00:00",
    "mudanca": {
     "mais": [
-     "quinta-feira, 19 novembro 2026"
+     "SERTÃ: Casa da Cultura recebe simpósio internacional",
+     "No dia 5 de dezembro"
     ],
     "menos": [
-     "quarta-feira, 18 novembro 2026"
+     "Juntamente com líder parlamentar do partido",
+     "SERTÃ: Há falta de papel no Centro de Saúde",
+     "Saúde"
     ],
-    "n_mais": 1,
-    "n_menos": 1
+    "n_mais": 2,
+    "n_menos": 3
    },
    "via": "site",
    "erro_site": ""
@@ -4821,9 +4822,9 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-19T11:31:13.852003+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-19T12:31:02.428487+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
