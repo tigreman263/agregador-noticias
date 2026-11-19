@@ -276,7 +276,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-19T19:31:11.883120+00:00"
+   "ultima": "2026-11-19T21:31:12.109971+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -914,15 +914,6 @@
  },
  "ultima_descoberta": "2026-11-19",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-13T20:01:20.168573+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-13T21:01:00.176906+00:00",
@@ -1813,47 +1804,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T21:31:12.109971+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-17T21:30:45.393591+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 568,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 522,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-17T22:30:53.387095+00:00",
    "pesquisas": [
@@ -3577,11 +3539,52 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-19T21:31:12.109971+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 529,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 460,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-19T20:32:32.894443+00:00",
-  "contaspoupanca.pt": "2026-11-19T20:32:32.894443+00:00"
+  "cm-serta.pt": "2026-11-19T21:31:12.109971+00:00",
+  "contaspoupanca.pt": "2026-11-19T21:31:12.109971+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3589,8 +3592,8 @@
   "contaspoupanca.pt": "2026-11-19T19:30:55.504544+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-19T20:32:32.894443+00:00",
-  "Apoio fundo ambiental": "2026-11-19T20:32:32.894443+00:00"
+  "Sertã": "2026-11-19T21:31:12.109971+00:00",
+  "Apoio fundo ambiental": "2026-11-19T21:31:12.109971+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4253,7 +4256,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-19T20:32:32.894443+00:00",
+   "verificado": "2026-11-19T21:31:12.109971+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4321,8 +4324,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4511,7 +4514,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-19T20:32:32.894443+00:00",
+   "verificado": "2026-11-19T21:31:12.109971+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4849,22 +4852,22 @@
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
+    "Crédito à habitação",
     "Carro"
    ],
-   "verificado": "2026-11-19T20:32:32.894443+00:00",
+   "verificado": "2026-11-19T21:31:12.109971+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-19T20:32:32.894443+00:00",
+   "mudou": "2026-11-19T21:31:12.109971+00:00",
    "mudanca": {
     "mais": [
-     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
-     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento"
+     "Crédito à habitação"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
