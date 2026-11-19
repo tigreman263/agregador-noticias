@@ -276,7 +276,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-19T17:31:40.704035+00:00"
+   "ultima": "2026-11-19T19:31:11.883120+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -909,20 +909,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-19T18:31:42.279871+00:00"
+   "ultima": "2026-11-19T19:31:11.883120+00:00"
   }
  },
  "ultima_descoberta": "2026-11-19",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-13T19:01:06.682277+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-13T19:01:06.682277+00:00",
@@ -1813,47 +1804,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T19:31:11.883120+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-17T19:30:47.383766+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 569,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 522,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-17T20:30:51.317437+00:00",
    "pesquisas": [
@@ -3576,20 +3538,59 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-19T19:31:11.883120+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 479,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-19T18:31:42.279871+00:00",
-  "contaspoupanca.pt": "2026-11-19T18:31:42.279871+00:00"
+  "cm-serta.pt": "2026-11-19T19:31:11.883120+00:00",
+  "contaspoupanca.pt": "2026-11-19T19:31:11.883120+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-19T18:31:03.565264+00:00",
-  "contaspoupanca.pt": "2026-11-18T19:30:51.202122+00:00"
+  "contaspoupanca.pt": "2026-11-19T19:30:55.504544+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-19T18:31:42.279871+00:00",
-  "Apoio fundo ambiental": "2026-11-19T18:31:42.279871+00:00"
+  "Sertã": "2026-11-19T19:31:11.883120+00:00",
+  "Apoio fundo ambiental": "2026-11-19T19:31:11.883120+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4252,7 +4253,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-19T18:31:42.279871+00:00",
+   "verificado": "2026-11-19T19:31:11.883120+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4321,8 +4322,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4511,7 +4512,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-19T18:31:42.279871+00:00",
+   "verificado": "2026-11-19T19:31:11.883120+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4794,9 +4795,9 @@
     "As 5 lições financeiras que 2025 me ensinou",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
     "Termos e Condições",
-    "Simulador de amortização crédito à habitação",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
+    "Simulador de amortização crédito à habitação",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "IMI",
     "Investimentos",
@@ -4806,6 +4807,7 @@
     "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
+    "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Simulador de Juros compostos",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
@@ -4819,6 +4821,7 @@
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
+    "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
     "OTRV 2031: vale a pena investir nas novas Obrigações do Tesouro?",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
@@ -4830,7 +4833,6 @@
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Revista de imprensa de 18 de novembro: Inflação, alimentos e comissões de amortização",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
-    "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
     "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
@@ -4844,43 +4846,24 @@
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
-    "Vamos a contas: Vale a pena amortizar um pouco todos os meses na prestação do crédito à habitação?",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-19T18:31:42.279871+00:00",
+   "verificado": "2026-11-19T19:31:11.883120+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-19T18:31:42.279871+00:00",
+   "mudou": "2026-11-19T19:31:11.883120+00:00",
    "mudanca": {
     "mais": [
-     "Termos e Condições",
-     "Simulador de amortização crédito à habitação",
-     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
-     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
-     "IMI",
-     "Investimentos",
-     "PodTEXT | Como investir para os filhos e pagar menos impostos",
-     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
-     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
-     "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
-     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
-     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
-     "Simulador de Juros compostos",
-     "Combustíveis",
-     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
-     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
-     "Certificados de Aforro",
-     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
-     "Podcast",
-     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\""
+     "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
+     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber"
     ],
     "menos": [],
-    "n_mais": 53,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
