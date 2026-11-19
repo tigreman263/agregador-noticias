@@ -16,7 +16,7 @@
  },
  "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-18",
+ "ultimo_resumo": "2026-11-19",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -873,15 +873,6 @@
  },
  "ultima_descoberta": "2026-11-18",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-12T18:01:06.006566+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-12T18:01:06.006566+00:00",
@@ -1772,48 +1763,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T08:30:47.745357+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-17T08:30:46.804089+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 568,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 522,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-17T09:30:54.172564+00:00",
    "pesquisas": [
@@ -3531,11 +3492,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-19T08:30:47.745357+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 563,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 520,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-19T07:30:48.153886+00:00",
-  "contaspoupanca.pt": "2026-11-19T07:30:48.153886+00:00"
+  "cm-serta.pt": "2026-11-19T08:30:47.745357+00:00",
+  "contaspoupanca.pt": "2026-11-19T08:30:47.745357+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3543,8 +3542,8 @@
   "contaspoupanca.pt": "2026-11-18T19:30:51.202122+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-19T07:30:48.153886+00:00",
-  "Apoio fundo ambiental": "2026-11-19T07:30:48.153886+00:00"
+  "Sertã": "2026-11-19T08:30:47.745357+00:00",
+  "Apoio fundo ambiental": "2026-11-19T08:30:47.745357+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4207,9 +4206,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-19T07:30:48.153886+00:00",
-   "falhas": 1,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-19T08:30:47.745357+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-18T22:30:46.419947+00:00",
@@ -4470,7 +4469,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-19T07:30:48.153886+00:00",
+   "verificado": "2026-11-19T08:30:47.745357+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4765,7 +4764,9 @@
     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
+    "Vamos a contas: \"Fiz um crédito pessoal para pagar a entrada da casa. Continuo a amortizar ou começo a investir para a reforma?\"",
     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
+    "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
@@ -4775,24 +4776,20 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-19T07:30:48.153886+00:00",
+   "verificado": "2026-11-19T08:30:47.745357+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-19T07:30:48.153886+00:00",
+   "mudou": "2026-11-19T08:30:47.745357+00:00",
    "mudanca": {
     "mais": [
-     "Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
-     "Termos e Condições",
-     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
-     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
-     "VÍDEO - Como pode baixar o seu IMI no ano que vem",
-     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?"
+     "Vamos a contas: \"Fiz um crédito pessoal para pagar a entrada da casa. Continuo a amortizar ou começo a investir para a reforma?\"",
+     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%"
     ],
     "menos": [],
-    "n_mais": 6,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
