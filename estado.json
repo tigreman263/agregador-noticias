@@ -13,7 +13,8 @@
   "77a5cf07f29cf865": "2026-11-10T20:46:07.155183+00:00",
   "1ef7f25deb2d9948": "2026-11-12T17:01:06.994916+00:00",
   "44f1e003e76c154b": "2026-11-14T15:15:55.752589+00:00",
-  "865f04f184654ba5": "2026-11-19T09:30:46.635543+00:00"
+  "865f04f184654ba5": "2026-11-19T09:30:46.635543+00:00",
+  "37bb30d77e5f5aac": "2026-11-19T11:31:13.852003+00:00"
  },
  "resumo": [],
  "adiados": [],
@@ -243,13 +244,14 @@
     "13cd5ff993a82d4b",
     "ea3b54856b251a0b",
     "da5971435552497c",
-    "c6ec79f1ebef8e45"
+    "c6ec79f1ebef8e45",
+    "37bb30d77e5f5aac"
    ],
    "pesquisas": [
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-08T13:46:58.913743+00:00"
+   "ultima": "2026-11-19T11:31:13.852003+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -875,33 +877,6 @@
  },
  "ultima_descoberta": "2026-11-19",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-12T21:01:01.512670+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-13T07:01:01.553190+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-13T07:01:01.553190+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-13T08:01:07.494134+00:00",
@@ -1774,49 +1749,36 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T11:31:13.852003+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T11:31:13.852003+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "alerta",
+   "ts": "2026-11-19T11:31:13.852003+00:00",
+   "titulo": "“Sertã Espírito de Natal” volta a dinamizar o Comércio Tradicional",
+   "link": "https://cm-serta.pt/comunicacao/noticias/serta-espirito-de-natal-volta-a-dinamizar-o-comercio-tradicional-nov-26",
+   "fonte": "cm-serta.pt",
+   "nota": 13.0,
+   "pesquisa": "Sertã"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-17T11:30:47.550763+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 568,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 469,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-17T12:30:47.508777+00:00",
    "pesquisas": [
@@ -3536,11 +3498,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-19T11:31:13.852003+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 524,
+     "relevantes": 1,
+     "alertas": 1
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 478,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 1,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-19T10:30:46.265687+00:00",
-  "contaspoupanca.pt": "2026-11-19T10:30:46.265687+00:00"
+  "cm-serta.pt": "2026-11-19T11:31:13.852003+00:00",
+  "contaspoupanca.pt": "2026-11-19T11:31:13.852003+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3548,8 +3549,8 @@
   "contaspoupanca.pt": "2026-11-18T19:30:51.202122+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-19T10:30:46.265687+00:00",
-  "Apoio fundo ambiental": "2026-11-19T10:30:46.265687+00:00"
+  "Sertã": "2026-11-19T11:31:13.852003+00:00",
+  "Apoio fundo ambiental": "2026-11-19T11:31:13.852003+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -3808,7 +3809,7 @@
     "Pesquisar",
     "Categorias",
     "Câmara Municipal",
-    "(146)",
+    "(147)",
     "Desporto",
     "(77)",
     "Educação",
@@ -3823,6 +3824,46 @@
     "(26)",
     "Exposições",
     "(3)",
+    "Noticias",
+    "19 novembro 2026",
+    "“Sertã Espírito de Natal” volta a dinamizar o Comércio Tradicional",
+    "O Concurso “Natal no Comércio Tradicional” volta a dinamizar o comércio do concel...",
+    "Tweetar",
+    "Share",
+    "Share",
+    "share with Whatsapp",
+    "share with Telegram",
+    "Send by email",
+    "Câmara Municipal",
+    "18 novembro 2026",
+    "27.ª Edição do Boletim Municipal já disponível",
+    "Já se encontra disponível a 27.ª edição do Boletim Municipal. Esta publicação relem...",
+    "Tweetar",
+    "Share",
+    "Share",
+    "share with Whatsapp",
+    "share with Telegram",
+    "Send by email",
+    "Noticias",
+    "18 novembro 2026",
+    "Ruas D. Nuno Álvares Pereira e Prof. Gil Marçal cortadas ao trânsito a 19 de novembro",
+    "Na próxima quinta-feira, dia 19 de novembro, as ruas D. Nuno Álvares Pereira e Prof...",
+    "Tweetar",
+    "Share",
+    "Share",
+    "share with Whatsapp",
+    "share with Telegram",
+    "Send by email",
+    "Noticias",
+    "17 novembro 2026",
+    "«Sertã Espírito de Natal» promete quadra natalícia repleta de animação para toda a família",
+    "O Município da Sertã volta a assinalar a época natalícia com magia e atividades cul...",
+    "Tweetar",
+    "Share",
+    "Share",
+    "share with Whatsapp",
+    "share with Telegram",
+    "Send by email",
     "Noticias",
     "16 novembro 2026",
     "Rua Dr. Romão de Mascarenhas cortada ao trânsito na manhã de 17 de novembro",
@@ -3877,46 +3918,6 @@
     "31 outubro 2026",
     "SertÃgenda - Agenda Cultural novembro e dezembro",
     "Já está disponível a versão online da SertÃgenda - a agenda cultural onde encontra ...",
-    "Tweetar",
-    "Share",
-    "Share",
-    "share with Whatsapp",
-    "share with Telegram",
-    "Send by email",
-    "Desporto",
-    "30 outubro 2026",
-    "Férias Ativas de Natal – inscrições já se encontram abertas",
-    "Estão já abertas as inscrições para o programa Férias Ativas de Natal. Esta inici...",
-    "Tweetar",
-    "Share",
-    "Share",
-    "share with Whatsapp",
-    "share with Telegram",
-    "Send by email",
-    "Noticias",
-    "28 outubro 2026",
-    "Sertã acolheu Bootcamp de soluções colaborativas para a integração de migrantes",
-    "O concelho da Sertã acolheu, entre os dias 14 e 16 de outubro, o Bootcamp A+I – \"...",
-    "Tweetar",
-    "Share",
-    "Share",
-    "share with Whatsapp",
-    "share with Telegram",
-    "Send by email",
-    "Desporto",
-    "27 outubro 2026",
-    "Equipa Feminina do CCD Sertã garante apuramento para o Campeonato Nacional de Clubes",
-    "A equipa feminina de natação do Centro de Cultura e Desporto do Pessoal da Câmara M...",
-    "Tweetar",
-    "Share",
-    "Share",
-    "share with Whatsapp",
-    "share with Telegram",
-    "Send by email",
-    "Noticias",
-    "26 outubro 2026",
-    "Excelência dos vinhos do concelho da Sertã reforçada com prémio e distinções",
-    "O vinho Alto dos Cucos, de Cernache do Bonjardim, foi novamente distinguido com u...",
     "Tweetar",
     "Share",
     "Share",
@@ -4212,19 +4213,40 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-19T10:30:46.265687+00:00",
+   "verificado": "2026-11-19T11:31:13.852003+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-18T22:30:46.419947+00:00",
+   "mudou": "2026-11-19T11:31:13.852003+00:00",
    "mudanca": {
     "mais": [
-     "BUPi"
+     "(147)",
+     "“Sertã Espírito de Natal” volta a dinamizar o Comércio Tradicional",
+     "O Concurso “Natal no Comércio Tradicional” volta a dinamizar o comércio do concel...",
+     "Câmara Municipal",
+     "27.ª Edição do Boletim Municipal já disponível",
+     "Já se encontra disponível a 27.ª edição do Boletim Municipal. Esta publicação relem...",
+     "Ruas D. Nuno Álvares Pereira e Prof. Gil Marçal cortadas ao trânsito a 19 de novembro",
+     "Na próxima quinta-feira, dia 19 de novembro, as ruas D. Nuno Álvares Pereira e Prof...",
+     "«Sertã Espírito de Natal» promete quadra natalícia repleta de animação para toda a família",
+     "O Município da Sertã volta a assinalar a época natalícia com magia e atividades cul..."
     ],
-    "menos": [],
-    "n_mais": 1,
-    "n_menos": 0
+    "menos": [
+     "(146)",
+     "Desporto",
+     "Férias Ativas de Natal – inscrições já se encontram abertas",
+     "Estão já abertas as inscrições para o programa Férias Ativas de Natal. Esta inici...",
+     "Sertã acolheu Bootcamp de soluções colaborativas para a integração de migrantes",
+     "O concelho da Sertã acolheu, entre os dias 14 e 16 de outubro, o Bootcamp A+I – \"...",
+     "Desporto",
+     "Equipa Feminina do CCD Sertã garante apuramento para o Campeonato Nacional de Clubes",
+     "A equipa feminina de natação do Centro de Cultura e Desporto do Pessoal da Câmara M...",
+     "Excelência dos vinhos do concelho da Sertã reforçada com prémio e distinções",
+     "O vinho Alto dos Cucos, de Cernache do Bonjardim, foi novamente distinguido com u..."
+    ],
+    "n_mais": 10,
+    "n_menos": 11
    },
    "linhas_google": [
     "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
@@ -4280,8 +4302,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4475,7 +4497,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-19T10:30:46.265687+00:00",
+   "verificado": "2026-11-19T11:31:13.852003+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4730,6 +4752,7 @@
     "Automatizar poupanças e investimentos: a forma mais simples de garantir resultados",
     "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
+    "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
     "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
@@ -4764,7 +4787,6 @@
     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "Certificados de Aforro",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
-    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
@@ -4773,8 +4795,8 @@
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
     "OTRV 2031: vale a pena investir nas novas Obrigações do Tesouro?",
-    "VÍDEO - Como pode baixar o seu IMI no ano que vem",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
+    "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
     "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "Bolsa esta semana: Europa bate recordes e Wall Street recupera",
@@ -4791,26 +4813,26 @@
     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%",
     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
+    "Gasolina já está abaixo dos 2 euros em todas as marcas. Veja onde é mais barata esta semana",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
-    "Vamos a contas: Vale a pena amortizar um pouco todos os meses na prestação do crédito à habitação?",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-19T10:30:46.265687+00:00",
+   "verificado": "2026-11-19T11:31:13.852003+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-19T10:30:46.265687+00:00",
+   "mudou": "2026-11-19T11:31:13.852003+00:00",
    "mudanca": {
     "mais": [
-     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
-     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
-     "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027"
+     "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
+     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
+     "Gasolina já está abaixo dos 2 euros em todas as marcas. Veja onde é mais barata esta semana"
     ],
     "menos": [],
     "n_mais": 3,
