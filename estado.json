@@ -251,7 +251,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-19T15:32:17.189484+00:00"
+   "ultima": "2026-11-19T16:31:36.247528+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -877,24 +877,6 @@
  },
  "ultima_descoberta": "2026-11-19",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-13T13:01:02.225537+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-13T13:01:02.225537+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-13T14:00:58.799831+00:00",
@@ -1776,47 +1758,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T16:31:36.247528+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T16:31:36.247528+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-17T16:30:47.481844+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 570,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 522,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-17T17:30:50.906693+00:00",
    "pesquisas": [
@@ -3534,11 +3496,53 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-19T16:31:36.247528+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 460,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 460,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertaginen",
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-19T15:32:17.189484+00:00",
-  "contaspoupanca.pt": "2026-11-19T15:32:17.189484+00:00"
+  "cm-serta.pt": "2026-11-19T16:31:36.247528+00:00",
+  "contaspoupanca.pt": "2026-11-19T16:31:36.247528+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3546,8 +3550,8 @@
   "contaspoupanca.pt": "2026-11-18T19:30:51.202122+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-19T15:32:17.189484+00:00",
-  "Apoio fundo ambiental": "2026-11-19T15:32:17.189484+00:00"
+  "Sertã": "2026-11-19T16:31:36.247528+00:00",
+  "Apoio fundo ambiental": "2026-11-19T16:31:36.247528+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4210,7 +4214,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-19T15:32:17.189484+00:00",
+   "verificado": "2026-11-19T16:31:36.247528+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4419,12 +4423,16 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "FIGUEIRÓ DOS VINHOS: Quinta Ciência Viva ganha novo impulso",
+    "Figueiró dos Vinhos",
+    "Região",
+    "19-11-2026",
+    "Concurso público para o futuro Centro Ciência Viva poderá avançar este ano",
     "SERTÃ: Programação de Natal gera troca de argumentos",
     "Sertã",
     "Beira Baixa",
     "19-11-2026",
     "Última hora",
-    "Entre oposição e presidente da câmara",
     "FERREIRA DO ZÊZERE: Mercado municipal recebe Feira de Outono",
     "Ferreira do Zêzere",
     "Médio Tejo",
@@ -4478,10 +4486,6 @@
     "Desporto",
     "17-11-2026",
     "Última hora",
-    "CERNACHE DO BONJARDIM: Falsos lojistas enganam moradores e roubam ouro",
-    "Cernache do Bonjardim",
-    "Beira Baixa",
-    "17-11-2026",
     "1",
     "2",
     "3",
@@ -4495,30 +4499,26 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-19T15:32:17.189484+00:00",
+   "verificado": "2026-11-19T16:31:36.247528+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-19T13:31:47.646605+00:00",
+   "mudou": "2026-11-19T16:31:36.247528+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Programação de Natal gera troca de argumentos",
-     "Última hora",
-     "SERTÃ: Programação de Natal gera troca de argumentos",
-     "Última hora",
-     "Entre oposição e presidente da câmara",
-     "FERREIRA DO ZÊZERE: Mercado municipal recebe Feira de Outono",
-     "Ferreira do Zêzere",
-     "Médio Tejo"
+     "FIGUEIRÓ DOS VINHOS: Quinta Ciência Viva ganha novo impulso",
+     "Figueiró dos Vinhos",
+     "Região",
+     "Concurso público para o futuro Centro Ciência Viva poderá avançar este ano"
     ],
     "menos": [
-     "No dia 5 de dezembro",
-     "CERNACHE DO BONJARDIM: “Em Nome da Beira” destaca Nuno Álvares Pereira",
+     "Entre oposição e presidente da câmara",
+     "CERNACHE DO BONJARDIM: Falsos lojistas enganam moradores e roubam ouro",
      "Cernache do Bonjardim",
-     "SERTÃ: Vereador do PSD pede maior aposta na repavimentação"
+     "Beira Baixa"
     ],
-    "n_mais": 8,
+    "n_mais": 4,
     "n_menos": 4
    },
    "via": "site",
@@ -4743,6 +4743,7 @@
    "linhas_google": [
     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
+    "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Simuladores",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
@@ -4775,6 +4776,7 @@
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "As 5 lições financeiras que 2025 me ensinou",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
+    "Termos e Condições",
     "Simulador de amortização crédito à habitação",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
@@ -4787,7 +4789,6 @@
     "A corrida dos 1.000 euros: Quanto valem hoje 1.000 € investidos em Certificados de Aforro, Certificados do Tesouro, SP500, ouro e PPR?",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
-    "Investir em PPR: Quanto estou a ganhar (ou a perder) em Fevereiro de 2025",
     "Simulador de Juros compostos",
     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Combustíveis",
@@ -4813,7 +4814,6 @@
     "Vamos a Contas: Onde investir 50 € por mês para o seu filho? Compare as opções",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Revista de imprensa de 18 de novembro: Inflação, alimentos e comissões de amortização",
-    "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
     "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
@@ -4828,29 +4828,24 @@
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
-    "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
     "Vamos a contas: Vale a pena amortizar um pouco todos os meses na prestação do crédito à habitação?",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-19T15:32:17.189484+00:00",
+   "verificado": "2026-11-19T16:31:36.247528+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-19T15:32:17.189484+00:00",
+   "mudou": "2026-11-19T16:31:36.247528+00:00",
    "mudanca": {
     "mais": [
-     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
-     "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
-     "Máquinas volta já devolvem o dinheiro das embalagens por MB WAY: veja onde",
-     "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
-     "Vamos a contas: Vale a pena amortizar um pouco todos os meses na prestação do crédito à habitação?"
+     "Termos e Condições"
     ],
     "menos": [],
-    "n_mais": 5,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
