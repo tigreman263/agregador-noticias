@@ -877,24 +877,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-12T19:01:03.461512+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-12T20:01:08.045656+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-12T21:01:01.512670+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
@@ -1774,47 +1756,27 @@
    "fonte": "Rádio Hertz",
    "nota": 49.5,
    "pesquisa": "Sertã"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T10:30:46.265687+00:00",
+   "titulo": "Mudou: Junta freguesia",
+   "link": "https://www.jf-cernachebonjardim.pt/",
+   "fonte": "jf-cernachebonjardim.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-19T10:30:46.265687+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-17T10:30:46.459136+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 568,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 522,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 4,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-17T11:30:47.550763+00:00",
    "pesquisas": [
@@ -3534,11 +3496,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-19T10:30:46.265687+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 550,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 468,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 4,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-19T09:30:46.635543+00:00",
-  "contaspoupanca.pt": "2026-11-19T09:30:46.635543+00:00"
+  "cm-serta.pt": "2026-11-19T10:30:46.265687+00:00",
+  "contaspoupanca.pt": "2026-11-19T10:30:46.265687+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3546,8 +3548,8 @@
   "contaspoupanca.pt": "2026-11-18T19:30:51.202122+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-19T09:30:46.635543+00:00",
-  "Apoio fundo ambiental": "2026-11-19T09:30:46.635543+00:00"
+  "Sertã": "2026-11-19T10:30:46.265687+00:00",
+  "Apoio fundo ambiental": "2026-11-19T10:30:46.265687+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4210,7 +4212,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-19T09:30:46.635543+00:00",
+   "verificado": "2026-11-19T10:30:46.265687+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4473,7 +4475,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-19T09:30:46.635543+00:00",
+   "verificado": "2026-11-19T10:30:46.265687+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4497,6 +4499,8 @@
     "União das Freguesias de Cernache do Bonjardim, Nesperal e Palhais",
     "274809318",
     "j.f@jf-cernachebonjardim.pt",
+    ">",
+    ">",
     "União das Freguesias de Cernache do Bonjardim, Nesperal e Palhais",
     "Início",
     "Freguesia",
@@ -4575,7 +4579,7 @@
     "Ver mais...",
     "XVII Romaria a São Nuno de Santa Maria",
     "01-ABR-2026",
-    "Nos dias 25 e 26 de abril, a vila de Cernache do Bonjardim volta a reunir-se para assinalar o 17º aniversário da Canonização de São Nuno de Santa Maria.Na sequência da tempestade que recentemente assolou a região, a celebração deste ano será mais simples e recolhida, privilegiando a vertente religiosa e institucional, num ambiente de fé, oração e respeito pela tradição que honra o Santo Condestável.A Romaria a São Nuno de Santa Maria inicia-se a 25 de abril (sábado) pelas 21 horas, com a Procissão das Velas e Vigília a S. Nuno de Santa Maria, a partir da Igreja Matriz de Cernache do Bonjardim. No dia seguinte, 26 de abril, as celebrações arrancam às 9h30 com a Romagem das Capelanias do concelho até à rotunda da Estátua de Nuno Álvares Pereira, em Cernache do Bonjardim, local onde, às 10h30, decorrerá o Hastear da Bandeira Nacional. Este momento contará com o acompanhamento musical da Filarmónica União Sertaginense e com a participação dos Bombeiros Voluntários de Cernache do Bonjardim e da GNR da Sertã. A procissão com as capelanias procede até à Igreja Matriz de Cernache do Bonjardim para, às 11 horas, se celebrar a Eucaristia Dominical de Ação de Graças a S. Nuno de Santa Maria. Segue-se o cortejo até aos Paços do Bonjardim, marcando assim o encerramento simbólico e devoto desta Romaria. Refira-se que alguns momentos da romaria poderão provocar alguns condicionamentos no trânsito.Nascido a 24 de junho de 1360 em Cernache do Bonjardim, D. Nuno Álvares Pereira foi um intrépido cavaleiro e autor de várias façanhas militares. Foi uma figura central no reino português e um dos homens mais poderosos do país. Na última década da sua vida, abdicou de todos os seus títulos e propriedades, entrou para o Convento do Carmo, em Lisboa, e aqui iniciou uma vida dedicada à caridade, onde passou a chamar-se Frei Nuno de Santa Maria. Ainda em vida foi chamado de Santo Condestável pelo povo. Morreu a 1 de novembro de 1431 e, em 1918, foi beatificado pelo Papa Bento XV. A sua canonização como São Nuno de Santa Maria aconteceu em 2009 pelo Papa Bento XVI que lembrou uma \"figura exemplar” destacando a sua “vida de fé e oração em contextos aparentemente pouco favoráveis à mesma, sendo a prova de que em qualquer situação, mesmo de carácter militar e bélico, é possível atuar e realizar os valores e princípios da vida cristã\".A Romaria a São Nuno de Santa Maria é organizada pela Câmara Municipal da Sertã em parceria com a Paróquia de Cernache do Bonjardim e a União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.",
+    "Nos dias 25 e 26 de abril, a vila de Cernache do Bonjardim volta a reunir-se para assinalar o 17º aniversário da Canonização de São Nuno de Santa Maria.Na sequência da tempestade que recentemente assolou a região, a celebração deste ano será mais simples e recolhida, privilegiando a vertente religiosa e institucional, num ambiente de fé, oração e respeito pela tradição que honra o Santo Condestável.A Romaria a São Nuno de Santa Maria&nbsp;inicia-se a&nbsp;25 de abril&nbsp;(sábado) pelas&nbsp;21 horas, com a&nbsp;Procissão das Velas e Vigília a S. Nuno de Santa Maria, a partir da&nbsp;Igreja Matriz de Cernache do Bonjardim. No dia seguinte,&nbsp;26 de abril, as celebrações arrancam às&nbsp;9h30&nbsp;com a&nbsp;Romagem das Capelanias&nbsp;do concelho até à&nbsp;rotunda da Estátua de Nuno Álvares Pereira, em&nbsp;Cernache do Bonjardim, local onde, às&nbsp;10h30, decorrerá o&nbsp;Hastear da Bandeira Nacional. Este momento contará com o acompanhamento musical da&nbsp;Filarmónica União Sertaginense&nbsp;e com a participação dos&nbsp;Bombeiros Voluntários de Cernache do Bonjardim&nbsp;e da&nbsp;GNR&nbsp;da Sertã. A procissão com as capelanias procede até à&nbsp;Igreja Matriz de Cernache do Bonjardim&nbsp;para, às&nbsp;11 horas, se celebrar a&nbsp;Eucaristia Dominical de Ação de Graças a S. Nuno de Santa Maria. Segue-se o&nbsp;cortejo até aos Paços do Bonjardim, marcando assim o encerramento simbólico e devoto desta Romaria. Refira-se que alguns momentos da romaria poderão provocar alguns condicionamentos no trânsito.Nascido a 24 de junho de 1360 em Cernache do Bonjardim,&nbsp;D. Nuno Álvares Pereira&nbsp;foi um intrépido cavaleiro e autor de várias façanhas militares. Foi uma figura central no reino português e um dos homens mais poderosos do país. Na última década da sua vida, abdicou de todos os seus títulos e propriedades, entrou para o Convento do Carmo, em Lisboa, e aqui iniciou uma vida dedicada à caridade, onde passou a chamar-se&nbsp;Frei Nuno de Santa Maria. Ainda em vida foi chamado de&nbsp;Santo Condestável&nbsp;pelo povo. Morreu a 1 de novembro de 1431 e, em 1918, foi beatificado pelo Papa Bento XV. A sua canonização como&nbsp;São Nuno de Santa Maria&nbsp;aconteceu em 2009 pelo Papa Bento XVI que lembrou uma \"figura exemplar” destacando a sua “vida de fé e oração em contextos aparentemente pouco favoráveis à mesma, sendo a prova de que em qualquer situação, mesmo de carácter militar e bélico, é possível atuar e realizar os valores e princípios da vida cristã\".A&nbsp;Romaria a São Nuno de Santa Maria&nbsp;é organizada pela Câmara Municipal da Sertã em parceria com a Paróquia de Cernache do Bonjardim e a União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.",
     "Partilhar",
     "Ver mais...",
     "Recrutamento de Membros para Mesas de Voto",
@@ -4590,7 +4594,7 @@
     "Ver mais...",
     "Aviso à População - Gripe Aviária",
     "02-DEZ-2025",
-    "Na passada semana foram confirmados 6 novos focos de infeção por vírus da Gripe Aviária de Alta Patogenicidade (GAAP) do subtipo H5N1 em Portugal.Entre estes, destaca-se um foco no concelho vizinho de Ferreira do Zêzere, cujas zonas de restrição abrangem o concelho da Sertã, em particular as Freguesias do Castelo e da União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.Com o objetivo de proteger a saúde animal e a saúde pública, mantém-se:- Confinamento obrigatório de todas as aves domésticas em território continental, evitando contacto com aves selvagens;- Proibição de eventos, exposições e concursos de aves em cativeiro, incluindo aves ornamentais e exóticas;- Proibição de ajuntamentos de aves domésticas em feiras e mercados, exceto quando cumpridas rigorosamente as condições de biossegurança;- Obrigação de reportar qualquer mortalidade ou morbilidade anormal nas aves domésticas.Estas medidas permanecem em vigor, pelo menos, até 22 de dezembro de 2025. Consulte o Edital n.º 38 da DGAV em: https://www.dgav.pt/.../2025/11/Edital-38-GAAP-22112025.pdfContamos com a colaboração de todos na divulgação desta informação essencial para a proteção das aves e da população.",
+    "Na passada semana foram confirmados 6 novos focos de infeção por vírus da Gripe Aviária de Alta Patogenicidade (GAAP) do subtipo H5N1 em Portugal.Entre estes, destaca-se um foco no concelho vizinho de Ferreira do Zêzere, cujas zonas de restrição abrangem o concelho da Sertã, em particular as Freguesias do Castelo e da União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.Com o objetivo de proteger a saúde animal e a saúde pública, mantém-se:- Confinamento obrigatório de todas as aves domésticas em território continental, evitando contacto com aves selvagens;- Proibição de eventos, exposições e concursos de aves em cativeiro, incluindo aves ornamentais e exóticas;- Proibição de ajuntamentos de aves domésticas em feiras e mercados, exceto quando cumpridas rigorosamente as condições de biossegurança;- Obrigação de reportar qualquer mortalidade ou morbilidade anormal nas aves domésticas.Estas medidas permanecem em vigor, pelo menos, até 22 de dezembro de 2025.&nbsp;Consulte o Edital n.º 38 da DGAV em: https://www.dgav.pt/.../2025/11/Edital-38-GAAP-22112025.pdfContamos com a colaboração de todos na divulgação desta informação essencial para a proteção das aves e da população.",
     "Partilhar",
     "Ver mais...",
     "Mais Notícias",
@@ -4682,23 +4686,37 @@
     "Esses cookies nos ajudam a entender como os visitantes interagem com nosso site, obter estatísticas de acessos e utilizadores para fornecer uma melhor análise geral.",
     "Aceitar"
    ],
-   "verificado": "2026-11-18T10:30:50.617051+00:00",
+   "verificado": "2026-11-19T10:30:46.265687+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-06T12:16:27.716358+00:00",
    "via": "site",
-   "erro_site": ""
+   "erro_site": "",
+   "mudou": "2026-11-19T10:30:46.265687+00:00",
+   "mudanca": {
+    "mais": [
+     ">",
+     ">",
+     "Nos dias 25 e 26 de abril, a vila de Cernache do Bonjardim volta a reunir-se para assinalar o 17º aniversário da Canonização de São Nuno de Santa Maria.Na sequência da tempestade que recentemente assolou a região, a celebração deste ano será mais simples e recolhida, privilegiando a vertente religiosa e institucional, num ambiente de fé, oração e respeito pela tradição que honra o Santo Condestável.A Romaria a São Nuno de Santa Maria&nbsp;inicia-se a&nbsp;25 de abril&nbsp;(sábado) pelas&nbsp;21 horas, com a&nbsp;Procissão das Velas e Vigília a S. Nuno de Santa Maria, a partir da&nbsp;Igreja Matriz de Cernache do Bonjardim. No dia seguinte,&nbsp;26 de abril, as celebrações arrancam às&nbsp;9h30&nbsp;com a&nbsp;Romagem das Capelanias&nbsp;do concelho até à&nbsp;rotunda da Estátua de Nuno Álvares Pereira, em&nbsp;Cernache do Bonjardim, local onde, às&nbsp;10h30, decorrerá o&nbsp;Hastear da Bandeira Nacional. Este momento contará com o acompanhamento musical da&nbsp;Filarmónica União Sertaginense&nbsp;e com a participação dos&nbsp;Bombeiros Voluntários de Cernache do Bonjardim&nbsp;e da&nbsp;GNR&nbsp;da Sertã. A procissão com as capelanias procede até à&nbsp;Igreja Matriz de Cernache do Bonjardim&nbsp;para, às&nbsp;11 horas, se celebrar a&nbsp;Eucaristia Dominical de Ação de Graças a S. Nuno de Santa Maria. Segue-se o&nbsp;cortejo até aos Paços do Bonjardim, marcando assim o encerramento simbólico e devoto desta Romaria. Refira-se que alguns momentos da romaria poderão provocar alguns condicionamentos no trânsito.Nascido a 24 de junho de 1360 em Cernache do Bonjardim,&nbsp;D. Nuno Álvares Pereira&nbsp;foi um intrépido cavaleiro e autor de várias façanhas militares. Foi uma figura central no reino português e um dos homens mais poderosos do país. Na última década da sua vida, abdicou de todos os seus títulos e propriedades, entrou para o Convento do Carmo, em Lisboa, e aqui iniciou uma vida dedicada à caridade, onde passou a chamar-se&nbsp;Frei Nuno de Santa Maria. Ainda em vida foi chamado de&nbsp;Santo Condestável&nbsp;pelo povo. Morreu a 1 de novembro de 1431 e, em 1918, foi beatificado pelo Papa Bento XV. A sua canonização como&nbsp;São Nuno de Santa Maria&nbsp;aconteceu em 2009 pelo Papa Bento XVI que lembrou uma \"figura exemplar” destacando a sua “vida de fé e oração em contextos aparentemente pouco favoráveis à mesma, sendo a prova de que em qualquer situação, mesmo de carácter militar e bélico, é possível atuar e realizar os valores e princípios da vida cristã\".A&nbsp;Romaria a São Nuno de Santa Maria&nbsp;é organizada pela Câmara Municipal da Sertã em parceria com a Paróquia de Cernache do Bonjardim e a União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.",
+     "Na passada semana foram confirmados 6 novos focos de infeção por vírus da Gripe Aviária de Alta Patogenicidade (GAAP) do subtipo H5N1 em Portugal.Entre estes, destaca-se um foco no concelho vizinho de Ferreira do Zêzere, cujas zonas de restrição abrangem o concelho da Sertã, em particular as Freguesias do Castelo e da União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.Com o objetivo de proteger a saúde animal e a saúde pública, mantém-se:- Confinamento obrigatório de todas as aves domésticas em território continental, evitando contacto com aves selvagens;- Proibição de eventos, exposições e concursos de aves em cativeiro, incluindo aves ornamentais e exóticas;- Proibição de ajuntamentos de aves domésticas em feiras e mercados, exceto quando cumpridas rigorosamente as condições de biossegurança;- Obrigação de reportar qualquer mortalidade ou morbilidade anormal nas aves domésticas.Estas medidas permanecem em vigor, pelo menos, até 22 de dezembro de 2025.&nbsp;Consulte o Edital n.º 38 da DGAV em: https://www.dgav.pt/.../2025/11/Edital-38-GAAP-22112025.pdfContamos com a colaboração de todos na divulgação desta informação essencial para a proteção das aves e da população."
+    ],
+    "menos": [
+     "Nos dias 25 e 26 de abril, a vila de Cernache do Bonjardim volta a reunir-se para assinalar o 17º aniversário da Canonização de São Nuno de Santa Maria.Na sequência da tempestade que recentemente assolou a região, a celebração deste ano será mais simples e recolhida, privilegiando a vertente religiosa e institucional, num ambiente de fé, oração e respeito pela tradição que honra o Santo Condestável.A Romaria a São Nuno de Santa Maria inicia-se a 25 de abril (sábado) pelas 21 horas, com a Procissão das Velas e Vigília a S. Nuno de Santa Maria, a partir da Igreja Matriz de Cernache do Bonjardim. No dia seguinte, 26 de abril, as celebrações arrancam às 9h30 com a Romagem das Capelanias do concelho até à rotunda da Estátua de Nuno Álvares Pereira, em Cernache do Bonjardim, local onde, às 10h30, decorrerá o Hastear da Bandeira Nacional. Este momento contará com o acompanhamento musical da Filarmónica União Sertaginense e com a participação dos Bombeiros Voluntários de Cernache do Bonjardim e da GNR da Sertã. A procissão com as capelanias procede até à Igreja Matriz de Cernache do Bonjardim para, às 11 horas, se celebrar a Eucaristia Dominical de Ação de Graças a S. Nuno de Santa Maria. Segue-se o cortejo até aos Paços do Bonjardim, marcando assim o encerramento simbólico e devoto desta Romaria. Refira-se que alguns momentos da romaria poderão provocar alguns condicionamentos no trânsito.Nascido a 24 de junho de 1360 em Cernache do Bonjardim, D. Nuno Álvares Pereira foi um intrépido cavaleiro e autor de várias façanhas militares. Foi uma figura central no reino português e um dos homens mais poderosos do país. Na última década da sua vida, abdicou de todos os seus títulos e propriedades, entrou para o Convento do Carmo, em Lisboa, e aqui iniciou uma vida dedicada à caridade, onde passou a chamar-se Frei Nuno de Santa Maria. Ainda em vida foi chamado de Santo Condestável pelo povo. Morreu a 1 de novembro de 1431 e, em 1918, foi beatificado pelo Papa Bento XV. A sua canonização como São Nuno de Santa Maria aconteceu em 2009 pelo Papa Bento XVI que lembrou uma \"figura exemplar” destacando a sua “vida de fé e oração em contextos aparentemente pouco favoráveis à mesma, sendo a prova de que em qualquer situação, mesmo de carácter militar e bélico, é possível atuar e realizar os valores e princípios da vida cristã\".A Romaria a São Nuno de Santa Maria é organizada pela Câmara Municipal da Sertã em parceria com a Paróquia de Cernache do Bonjardim e a União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.",
+     "Na passada semana foram confirmados 6 novos focos de infeção por vírus da Gripe Aviária de Alta Patogenicidade (GAAP) do subtipo H5N1 em Portugal.Entre estes, destaca-se um foco no concelho vizinho de Ferreira do Zêzere, cujas zonas de restrição abrangem o concelho da Sertã, em particular as Freguesias do Castelo e da União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.Com o objetivo de proteger a saúde animal e a saúde pública, mantém-se:- Confinamento obrigatório de todas as aves domésticas em território continental, evitando contacto com aves selvagens;- Proibição de eventos, exposições e concursos de aves em cativeiro, incluindo aves ornamentais e exóticas;- Proibição de ajuntamentos de aves domésticas em feiras e mercados, exceto quando cumpridas rigorosamente as condições de biossegurança;- Obrigação de reportar qualquer mortalidade ou morbilidade anormal nas aves domésticas.Estas medidas permanecem em vigor, pelo menos, até 22 de dezembro de 2025. Consulte o Edital n.º 38 da DGAV em: https://www.dgav.pt/.../2025/11/Edital-38-GAAP-22112025.pdfContamos com a colaboração de todos na divulgação desta informação essencial para a proteção das aves e da população."
+    ],
+    "n_mais": 4,
+    "n_menos": 2
+   }
   },
   "https://contaspoupanca.pt/": {
    "linhas_google": [
+    "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
-    "Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Simuladores",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "PPR",
-    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Simulador de apoio para os carros elétricos",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
@@ -4745,8 +4763,8 @@
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "Certificados de Aforro",
-    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
+    "ELETRICIDADE: Qual é a empresa mais barata este mês? (Novembro 2026)",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
@@ -4757,6 +4775,7 @@
     "OTRV 2031: vale a pena investir nas novas Obrigações do Tesouro?",
     "VÍDEO - Como pode baixar o seu IMI no ano que vem",
     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
+    "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
     "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "Bolsa esta semana: Europa bate recordes e Wall Street recupera",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
@@ -4766,7 +4785,7 @@
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
     "Vamos a contas: Afinal é possível amortizar no prazo do crédito à habitação! (Recebi dezenas de mensagens)",
     "Entrevista: Como ensinar os filhos a gerir bem o dinheiro? A especialista Cristina Judas responde",
-    "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
+    "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Vamos a contas: \"Fiz um crédito pessoal para pagar a entrada da casa. Continuo a amortizar ou começo a investir para a reforma?\"",
     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
@@ -4780,20 +4799,21 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Carro"
    ],
-   "verificado": "2026-11-19T09:30:46.635543+00:00",
-   "falhas": 1,
-   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
+   "verificado": "2026-11-19T10:30:46.265687+00:00",
+   "falhas": 0,
+   "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-19T08:30:47.745357+00:00",
+   "mudou": "2026-11-19T10:30:46.265687+00:00",
    "mudanca": {
     "mais": [
-     "Vamos a contas: \"Fiz um crédito pessoal para pagar a entrada da casa. Continuo a amortizar ou começo a investir para a reforma?\"",
-     "Euribor: taxa a seis meses é a única a subir esta semana e mantém-se acima dos 3%"
+     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
+     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
+     "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 3,
     "n_menos": 0
    }
   }
