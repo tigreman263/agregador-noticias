@@ -272,7 +272,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-20T16:31:07.741665+00:00"
+   "ultima": "2026-11-20T17:31:13.053072+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -907,7 +907,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-20T16:31:07.741665+00:00"
+   "ultima": "2026-11-20T17:31:13.053072+00:00"
   },
   "radiocampomaior.com": {
    "nome": "Rádio Campo Maior",
@@ -919,29 +919,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-20T16:31:07.741665+00:00"
+   "ultima": "2026-11-20T17:31:13.053072+00:00"
   }
  },
  "ultima_descoberta": "2026-11-20",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-14T19:15:43.505965+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-14T20:18:56.168657+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-15T07:31:18.725963+00:00",
@@ -1823,48 +1805,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-20T17:31:13.053072+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-20T17:31:13.053072+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-18T17:30:47.468408+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 565,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 521,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-18T18:30:49.554232+00:00",
    "pesquisas": [
@@ -3600,11 +3561,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-20T17:31:13.053072+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 535,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 490,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-20T16:31:07.741665+00:00",
-  "contaspoupanca.pt": "2026-11-20T16:31:07.741665+00:00"
+  "cm-serta.pt": "2026-11-20T17:31:13.053072+00:00",
+  "contaspoupanca.pt": "2026-11-20T17:31:13.053072+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3612,8 +3612,8 @@
   "contaspoupanca.pt": "2026-11-19T19:30:55.504544+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-20T16:31:07.741665+00:00",
-  "Apoio fundo ambiental": "2026-11-20T16:31:07.741665+00:00"
+  "Sertã": "2026-11-20T17:31:13.053072+00:00",
+  "Apoio fundo ambiental": "2026-11-20T17:31:13.053072+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4276,7 +4276,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-20T16:31:07.741665+00:00",
+   "verificado": "2026-11-20T17:31:13.053072+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4535,6 +4535,20 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: “Natal no Comércio Tradicional” irá entregar mais de 3500 euros em prémios",
+    "Sertã",
+    "Beira Baixa",
+    "20-11-2026",
+    "Concurso decorre até ao dia 7 de janeiro de 2027",
+    "VILA DE REI: ADRC Estevais promove Passeio Pedestre ‘Rota dos Z’",
+    "Vila de Rei",
+    "Beira Baixa",
+    "Desporto",
+    "20-11-2026",
+    "VILA VELHA DE RÓDÃO: Município investe 30 mil euros em gerador",
+    "Vila Velha de Ródão",
+    "Beira Baixa",
+    "20-11-2026",
     "SERTÃ: ULSCB rejeita falta de papel para imprimir receitas",
     "Castelo Branco",
     "Sertã",
@@ -4542,7 +4556,6 @@
     "Beira Baixa",
     "20-11-2026",
     "Última hora",
-    "Argumentando com substituição progressiva das receitas em papel",
     "SERTÃ: III Jornadas da CPCJ debatem os desafios da educação",
     "Sertã",
     "Beira Baixa",
@@ -4582,20 +4595,6 @@
     "Beira Baixa",
     "19-11-2026",
     "Última hora",
-    "FERREIRA DO ZÊZERE: Mercado municipal recebe Feira de Outono",
-    "Ferreira do Zêzere",
-    "Médio Tejo",
-    "19-11-2026",
-    "SERTÃ: Casa da Cultura recebe simpósio internacional",
-    "Sertã",
-    "Beira Baixa",
-    "19-11-2026",
-    "CASTELO BRANCO: Deputado do Chega constituído arguido",
-    "Castelo Branco",
-    "Beira Baixa",
-    "Região",
-    "18-11-2026",
-    "Última hora",
     "1",
     "2",
     "3",
@@ -4609,25 +4608,35 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-20T16:31:07.741665+00:00",
+   "verificado": "2026-11-20T17:31:13.053072+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-20T15:31:03.580374+00:00",
+   "mudou": "2026-11-20T17:31:13.053072+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: ULSCB rejeita falta de papel para imprimir receitas",
-     "SERTÃ: ULSCB rejeita falta de papel para imprimir receitas",
-     "Argumentando com substituição progressiva das receitas em papel"
+     "SERTÃ: “Natal no Comércio Tradicional” irá entregar mais de 3500 euros em prémios",
+     "Concurso decorre até ao dia 7 de janeiro de 2027",
+     "VILA DE REI: ADRC Estevais promove Passeio Pedestre ‘Rota dos Z’",
+     "Vila de Rei",
+     "Desporto",
+     "VILA VELHA DE RÓDÃO: Município investe 30 mil euros em gerador",
+     "Vila Velha de Ródão"
     ],
     "menos": [
-     "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
-     "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
-     "ULSCB lembra ainda que esta medida está a ser implementada desde há 13 anos"
+     "Argumentando com substituição progressiva das receitas em papel",
+     "FERREIRA DO ZÊZERE: Mercado municipal recebe Feira de Outono",
+     "Ferreira do Zêzere",
+     "Médio Tejo",
+     "SERTÃ: Casa da Cultura recebe simpósio internacional",
+     "CASTELO BRANCO: Deputado do Chega constituído arguido",
+     "Castelo Branco",
+     "Região",
+     "Última hora"
     ],
-    "n_mais": 3,
-    "n_menos": 3
+    "n_mais": 7,
+    "n_menos": 9
    },
    "via": "site",
    "erro_site": ""
@@ -4861,7 +4870,6 @@
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
-    "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
     "PPR",
     "Pedro Andersson",
@@ -4884,25 +4892,24 @@
     "Subscrever Newsletter",
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
+    "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
+    "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
     "Termos e Condições",
-    "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
+    "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
     "Simulador de amortização crédito à habitação",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "IMI",
-    "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
     "Investimentos",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (14 a 20 de setembro)",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
+    "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
-    "Gás",
     "Simulador de Juros compostos",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (27 de julho a 2 de agosto)",
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
@@ -4914,6 +4921,7 @@
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
+    "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
@@ -4937,6 +4945,7 @@
     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
     "Gasolina já está abaixo dos 2 euros em todas as marcas. Veja onde é mais barata esta semana",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
+    "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "Vale a pena comprar painéis solares para poupar na eletricidade? Balanço de outubro de 2026",
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
@@ -4944,28 +4953,24 @@
     "Crédito à habitação",
     "Carro"
    ],
-   "verificado": "2026-11-20T16:31:07.741665+00:00",
+   "verificado": "2026-11-20T17:31:13.053072+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-20T16:31:07.741665+00:00",
+   "mudou": "2026-11-20T17:31:13.053072+00:00",
    "mudanca": {
     "mais": [
-     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
-     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
-     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
-     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (14 a 20 de setembro)",
-     "Gás",
-     "Simulador de Juros compostos",
-     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (27 de julho a 2 de agosto)",
-     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
-     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
-     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?"
+     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
+     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
+     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
+     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
+     "Quantas faturas pendentes tem neste momento no seu e-fatura?",
+     "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais"
     ],
     "menos": [],
-    "n_mais": 10,
+    "n_mais": 6,
     "n_menos": 0
    }
   }
