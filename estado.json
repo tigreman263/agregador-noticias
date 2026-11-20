@@ -17,33 +17,9 @@
   "37bb30d77e5f5aac": "2026-11-19T11:31:13.852003+00:00",
   "7607f0d295b56dbb": "2026-11-19T18:31:42.279871+00:00"
  },
- "resumo": [
-  {
-   "titulo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOamxFVlpYZnE2UWtMLVJ3TU9lZVE1ODgzUHVYN0J1clYwbkU2OHd2WGVuVFlNUnVZZkw3RTEyX0FHNFh1VHdPMU1IMnNWMEtYT2kxeW8yWi1zQnBLZW1sWmh3bjV4eGtrUDNJZ1FZbGFNelhMeExsTmNxQ0d5NTRETVM1MEZ4ZXB6THo4QU9wLWU3N0diVTFwQTd4czlpd1I2U2kyUjZGLTVNQndjYlYwUFNKYlJxOWM?oc=5",
-   "dominio": "jornalptgreen.pt",
-   "fonte": "Jornal PT Green",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Fundo Ambiental"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-19T17:02:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "7607f0d295b56dbb"
-   ],
-   "ts": "2026-11-19T18:31:42.279871+00:00"
-  }
- ],
+ "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-19",
+ "ultimo_resumo": "2026-11-20",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -276,7 +252,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-20T07:31:02.403779+00:00"
+   "ultima": "2026-11-20T08:31:11.916960+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -909,20 +885,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-20T07:31:02.403779+00:00"
+   "ultima": "2026-11-20T08:31:11.916960+00:00"
   }
  },
  "ultima_descoberta": "2026-11-19",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-14T07:01:01.727829+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-14T07:01:01.727829+00:00",
@@ -1813,49 +1780,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-20T08:31:11.916960+00:00",
+   "titulo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOamxFVlpYZnE2UWtMLVJ3TU9lZVE1ODgzUHVYN0J1clYwbkU2OHd2WGVuVFlNUnVZZkw3RTEyX0FHNFh1VHdPMU1IMnNWMEtYT2kxeW8yWi1zQnBLZW1sWmh3bjV4eGtrUDNJZ1FZbGFNelhMeExsTmNxQ0d5NTRETVM1MEZ4ZXB6THo4QU9wLWU3N0diVTFwQTd4czlpd1I2U2kyUjZGLTVNQndjYlYwUFNKYlJxOWM?oc=5",
+   "fonte": "Jornal PT Green",
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-18T08:30:43.520425+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 566,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 469,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-18T09:30:56.648545+00:00",
    "pesquisas": [
@@ -3592,11 +3528,52 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-20T08:31:11.916960+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 469,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertaginen"
+   ],
+   "alertas": 0,
+   "resumo": 1,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-20T07:31:02.403779+00:00",
-  "contaspoupanca.pt": "2026-11-20T07:31:02.403779+00:00"
+  "cm-serta.pt": "2026-11-20T08:31:11.916960+00:00",
+  "contaspoupanca.pt": "2026-11-20T08:31:11.916960+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3604,8 +3581,8 @@
   "contaspoupanca.pt": "2026-11-19T19:30:55.504544+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-20T07:31:02.403779+00:00",
-  "Apoio fundo ambiental": "2026-11-20T07:31:02.403779+00:00"
+  "Sertã": "2026-11-20T08:31:11.916960+00:00",
+  "Apoio fundo ambiental": "2026-11-20T08:31:11.916960+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4268,7 +4245,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-20T07:31:02.403779+00:00",
+   "verificado": "2026-11-20T08:31:11.916960+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4526,7 +4503,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-20T07:31:02.403779+00:00",
+   "verificado": "2026-11-20T08:31:11.916960+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4853,7 +4830,7 @@
     "Crédito à habitação",
     "Carro"
    ],
-   "verificado": "2026-11-20T07:31:02.403779+00:00",
+   "verificado": "2026-11-20T08:31:11.916960+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
