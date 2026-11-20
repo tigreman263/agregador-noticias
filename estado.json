@@ -274,7 +274,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-20T14:31:10.379929+00:00"
+   "ultima": "2026-11-20T15:31:03.580374+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -909,20 +909,23 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-20T13:32:00.054660+00:00"
+   "ultima": "2026-11-20T15:31:03.580374+00:00"
+  },
+  "radiocampomaior.com": {
+   "nome": "Rádio Campo Maior",
+   "site": "https://radiocampomaior.com",
+   "ids": [
+    "072cdd6ee9e396fd"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
+   "ultima": "2026-11-20T15:31:03.580374+00:00"
   }
  },
  "ultima_descoberta": "2026-11-20",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-14T18:16:07.728766+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-14T19:15:43.505965+00:00",
@@ -1813,51 +1816,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-20T15:31:03.580374+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-18T15:30:51.218440+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 702,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 559,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · Rádio Hertz: ParseError: mismatched tag: line 93, column 2"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "Portal Energia",
-    "Rádio Hertz",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-18T16:30:46.683144+00:00",
    "pesquisas": [
@@ -3593,11 +3563,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-20T15:31:03.580374+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 469,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 490,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertaginen",
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-20T14:31:10.379929+00:00",
-  "contaspoupanca.pt": "2026-11-20T14:31:10.379929+00:00"
+  "cm-serta.pt": "2026-11-20T15:31:03.580374+00:00",
+  "contaspoupanca.pt": "2026-11-20T15:31:03.580374+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3605,8 +3615,8 @@
   "contaspoupanca.pt": "2026-11-19T19:30:55.504544+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-20T14:31:10.379929+00:00",
-  "Apoio fundo ambiental": "2026-11-20T14:31:10.379929+00:00"
+  "Sertã": "2026-11-20T15:31:03.580374+00:00",
+  "Apoio fundo ambiental": "2026-11-20T15:31:03.580374+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4269,7 +4279,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-20T14:31:10.379929+00:00",
+   "verificado": "2026-11-20T15:31:03.580374+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4506,7 +4516,7 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
-    "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
+    "SERTÃ: ULSCB rejeita falta de papel para imprimir receitas",
     "Última hora",
     "CERNACHE DO BONJARDIM: Solução para trânsito no centro da vila em análise",
     "Última hora",
@@ -4528,14 +4538,14 @@
     "Início",
     "Notícias",
     "Todas as notícias",
-    "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
+    "SERTÃ: ULSCB rejeita falta de papel para imprimir receitas",
     "Castelo Branco",
     "Sertã",
     "Cernache do Bonjardim",
     "Beira Baixa",
     "20-11-2026",
     "Última hora",
-    "ULSCB lembra ainda que esta medida está a ser implementada desde há 13 anos",
+    "Argumentando com substituição progressiva das receitas em papel",
     "SERTÃ: III Jornadas da CPCJ debatem os desafios da educação",
     "Sertã",
     "Beira Baixa",
@@ -4602,36 +4612,25 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-20T14:31:10.379929+00:00",
+   "verificado": "2026-11-20T15:31:03.580374+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-20T13:32:00.054660+00:00",
+   "mudou": "2026-11-20T15:31:03.580374+00:00",
    "mudanca": {
     "mais": [
-     "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
-     "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
-     "Castelo Branco",
-     "Sertã",
-     "Cernache do Bonjardim",
-     "Beira Baixa",
-     "ULSCB lembra ainda que esta medida está a ser implementada desde há 13 anos",
-     "SERTÃ: III Jornadas da CPCJ debatem os desafios da educação",
-     "Sertã",
-     "Beira Baixa"
+     "SERTÃ: ULSCB rejeita falta de papel para imprimir receitas",
+     "SERTÃ: ULSCB rejeita falta de papel para imprimir receitas",
+     "Argumentando com substituição progressiva das receitas em papel"
     ],
     "menos": [
-     "Inscrições abertas para a edição de 2026 até 30 de novembro",
-     "FERREIRA DO ZÊZERE: Município acompanha pedido de prospeção mineira",
-     "Ferreira do Zêzere",
-     "Médio Tejo",
-     "MAÇÃO: Município investe cerca de 50 mil euros na nova Vila Natal",
-     "Mação",
-     "Médio Tejo"
+     "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
+     "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
+     "ULSCB lembra ainda que esta medida está a ser implementada desde há 13 anos"
     ],
-    "n_mais": 10,
-    "n_menos": 7
+    "n_mais": 3,
+    "n_menos": 3
    },
    "via": "site",
    "erro_site": ""
@@ -4946,8 +4945,8 @@
     "Crédito à habitação",
     "Carro"
    ],
-   "verificado": "2026-11-20T14:31:10.379929+00:00",
-   "falhas": 1,
+   "verificado": "2026-11-20T15:31:03.580374+00:00",
+   "falhas": 2,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
