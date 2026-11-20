@@ -1,6 +1,5 @@
 {
  "vistos": {
-  "b4acd23ecea8311c": "2026-11-06T22:16:08.554432+00:00",
   "3b0df607940fbbba": "2026-11-09T12:46:00.406852+00:00",
   "461524cdb57ccdea": "2026-11-10T13:46:00.075469+00:00",
   "77a5cf07f29cf865": "2026-11-10T20:46:07.155183+00:00",
@@ -270,7 +269,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-20T21:31:06.253303+00:00"
+   "ultima": "2026-11-20T22:31:16.344954+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -905,7 +904,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-20T21:31:06.253303+00:00"
+   "ultima": "2026-11-20T22:31:16.344954+00:00"
   },
   "radiocampomaior.com": {
    "nome": "Rádio Campo Maior",
@@ -917,7 +916,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-20T21:31:06.253303+00:00"
+   "ultima": "2026-11-20T22:31:16.344954+00:00"
   }
  },
  "ultima_descoberta": "2026-11-20",
@@ -1824,46 +1823,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-18T22:30:46.419947+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 564,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 469,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-18T23:30:53.340138+00:00",
    "pesquisas": [
@@ -3594,11 +3553,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-20T22:31:16.344954+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 529,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 486,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-20T21:31:06.253303+00:00",
-  "contaspoupanca.pt": "2026-11-20T21:31:06.253303+00:00"
+  "cm-serta.pt": "2026-11-20T22:31:16.344954+00:00",
+  "contaspoupanca.pt": "2026-11-20T22:31:16.344954+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3606,8 +3604,8 @@
   "contaspoupanca.pt": "2026-11-20T20:30:45.759311+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-20T21:31:06.253303+00:00",
-  "Apoio fundo ambiental": "2026-11-20T21:31:06.253303+00:00"
+  "Sertã": "2026-11-20T22:31:16.344954+00:00",
+  "Apoio fundo ambiental": "2026-11-20T22:31:16.344954+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4270,7 +4268,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-20T21:31:06.253303+00:00",
+   "verificado": "2026-11-20T22:31:16.344954+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4546,7 +4544,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-20T21:31:06.253303+00:00",
+   "verificado": "2026-11-20T22:31:16.344954+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4831,11 +4829,11 @@
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
+    "Simulador de amortização crédito à habitação",
     "Termos e Condições",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
-    "Simulador de amortização crédito à habitação",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "IMI",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
@@ -4892,9 +4890,9 @@
     "Crédito à habitação",
     "Carro"
    ],
-   "verificado": "2026-11-20T21:31:06.253303+00:00",
-   "falhas": 1,
-   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
+   "verificado": "2026-11-20T22:31:16.344954+00:00",
+   "falhas": 0,
+   "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
