@@ -271,7 +271,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-20T18:30:58.317901+00:00"
+   "ultima": "2026-11-20T20:30:58.815270+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -1825,48 +1825,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-18T20:31:01.856315+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 644,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 659,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · Portal Energia: ParseError: mismatched tag: line 93, column 2"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "Portal Energia",
-    "Rádio Hertz",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-18T21:30:56.403488+00:00",
    "pesquisas": [
@@ -3597,20 +3555,61 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-20T20:30:58.815270+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 531,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 465,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-20T19:30:50.401600+00:00",
-  "contaspoupanca.pt": "2026-11-20T19:30:50.401600+00:00"
+  "cm-serta.pt": "2026-11-20T20:30:58.815270+00:00",
+  "contaspoupanca.pt": "2026-11-20T20:30:58.815270+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-20T19:30:46.006080+00:00",
-  "contaspoupanca.pt": "2026-11-19T19:30:55.504544+00:00"
+  "contaspoupanca.pt": "2026-11-20T20:30:45.759311+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-20T19:30:50.401600+00:00",
-  "Apoio fundo ambiental": "2026-11-20T19:30:50.401600+00:00"
+  "Sertã": "2026-11-20T20:30:58.815270+00:00",
+  "Apoio fundo ambiental": "2026-11-20T20:30:58.815270+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4273,7 +4272,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-20T19:30:50.401600+00:00",
+   "verificado": "2026-11-20T20:30:58.815270+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4347,8 +4346,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4549,7 +4548,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-20T19:30:50.401600+00:00",
+   "verificado": "2026-11-20T20:30:58.815270+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4802,7 +4801,6 @@
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
-    "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
@@ -4869,6 +4867,7 @@
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
+    "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
@@ -4895,7 +4894,7 @@
     "Crédito à habitação",
     "Carro"
    ],
-   "verificado": "2026-11-20T19:30:50.401600+00:00",
+   "verificado": "2026-11-20T20:30:58.815270+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
