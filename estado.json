@@ -274,7 +274,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-20T13:32:00.054660+00:00"
+   "ultima": "2026-11-20T14:31:10.379929+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -1816,45 +1816,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-18T14:30:48.264173+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 565,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 521,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-18T15:30:51.218440+00:00",
    "pesquisas": [
@@ -3591,11 +3552,52 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-20T14:31:10.379929+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 469,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 469,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertaginen",
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici",
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-20T13:32:00.054660+00:00",
-  "contaspoupanca.pt": "2026-11-20T13:32:00.054660+00:00"
+  "cm-serta.pt": "2026-11-20T14:31:10.379929+00:00",
+  "contaspoupanca.pt": "2026-11-20T14:31:10.379929+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3603,8 +3605,8 @@
   "contaspoupanca.pt": "2026-11-19T19:30:55.504544+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-20T13:32:00.054660+00:00",
-  "Apoio fundo ambiental": "2026-11-20T13:32:00.054660+00:00"
+  "Sertã": "2026-11-20T14:31:10.379929+00:00",
+  "Apoio fundo ambiental": "2026-11-20T14:31:10.379929+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4267,7 +4269,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-20T13:32:00.054660+00:00",
+   "verificado": "2026-11-20T14:31:10.379929+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4600,7 +4602,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-20T13:32:00.054660+00:00",
+   "verificado": "2026-11-20T14:31:10.379929+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4944,9 +4946,9 @@
     "Crédito à habitação",
     "Carro"
    ],
-   "verificado": "2026-11-20T13:32:00.054660+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-20T14:31:10.379929+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
