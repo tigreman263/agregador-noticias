@@ -1,7 +1,5 @@
 {
  "vistos": {
-  "020c80fa520425b4": "2026-11-06T16:15:59.803023+00:00",
-  "dcfb944fc803001d": "2026-11-06T16:15:59.803023+00:00",
   "c6ec79f1ebef8e45": "2026-11-06T18:16:01.171266+00:00",
   "1dd99f8e256ebb30": "2026-11-06T21:15:57.428831+00:00",
   "b4acd23ecea8311c": "2026-11-06T22:16:08.554432+00:00",
@@ -274,7 +272,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-20T15:31:03.580374+00:00"
+   "ultima": "2026-11-20T16:31:07.741665+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -909,7 +907,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-20T15:31:03.580374+00:00"
+   "ultima": "2026-11-20T16:31:07.741665+00:00"
   },
   "radiocampomaior.com": {
    "nome": "Rádio Campo Maior",
@@ -921,20 +919,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-20T15:31:03.580374+00:00"
+   "ultima": "2026-11-20T16:31:07.741665+00:00"
   }
  },
  "ultima_descoberta": "2026-11-20",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-14T19:15:43.505965+00:00",
-   "titulo": "Mudou: cm-serta",
-   "link": "https://cm-serta.pt/comunicacao/noticias",
-   "fonte": "cm-serta.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-14T19:15:43.505965+00:00",
@@ -1825,49 +1814,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-20T16:31:07.741665+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-18T16:30:46.683144+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 566,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 469,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 2
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-18T17:30:47.468408+00:00",
    "pesquisas": [
@@ -3603,11 +3561,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-20T16:31:07.741665+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 534,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 569,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-20T15:31:03.580374+00:00",
-  "contaspoupanca.pt": "2026-11-20T15:31:03.580374+00:00"
+  "cm-serta.pt": "2026-11-20T16:31:07.741665+00:00",
+  "contaspoupanca.pt": "2026-11-20T16:31:07.741665+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3615,8 +3612,8 @@
   "contaspoupanca.pt": "2026-11-19T19:30:55.504544+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-20T15:31:03.580374+00:00",
-  "Apoio fundo ambiental": "2026-11-20T15:31:03.580374+00:00"
+  "Sertã": "2026-11-20T16:31:07.741665+00:00",
+  "Apoio fundo ambiental": "2026-11-20T16:31:07.741665+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4279,7 +4276,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-20T15:31:03.580374+00:00",
+   "verificado": "2026-11-20T16:31:07.741665+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4612,7 +4609,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-20T15:31:03.580374+00:00",
+   "verificado": "2026-11-20T16:31:07.741665+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4852,21 +4849,21 @@
   },
   "https://contaspoupanca.pt/": {
    "linhas_google": [
+    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
-    "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
-    "Segurança Social antecipa pagamentos antes do Natal: desemprego e RSI chegam 6 dias mais cedo",
     "Inflação na zona euro sobe para 4%, a mais alta em três anos",
-    "PPR",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Podcast",
     "Simulador de apoio para os carros elétricos",
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
+    "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
+    "PPR",
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
@@ -4887,25 +4884,25 @@
     "Subscrever Newsletter",
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
-    "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
-    "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
-    "As 5 lições financeiras que 2025 me ensinou",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
     "Termos e Condições",
-    "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
+    "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
     "Simulador de amortização crédito à habitação",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "IMI",
+    "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
     "Investimentos",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (14 a 20 de setembro)",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
-    "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
-    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
+    "Gás",
+    "Simulador de Juros compostos",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (27 de julho a 2 de agosto)",
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
@@ -4917,22 +4914,24 @@
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
-    "Quantas faturas pendentes tem neste momento no seu e-fatura?",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
     "Qual a marca de combustíveis mais barata entre 13 e 19 de abril?",
     "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
+    "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
+    "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
+    "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
     "Máquinas volta já devolvem o dinheiro das embalagens por MB WAY: veja onde",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Revista de imprensa de 20 de novembro: Crédito habitação, rendas e OE2027",
     "Revista de imprensa de 18 de novembro: Inflação, alimentos e comissões de amortização",
     "Crédito à habitação: juros já levam 217 euros da prestação média",
-    "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
     "Vamos a contas: Tenho 32.500 € no banco. Faz sentido investir agora 100 € por mês no S&P 500 e em ouro?",
     "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
+    "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?",
     "Vamos a contas: \"Fiz um crédito pessoal para pagar a entrada da casa. Continuo a amortizar ou começo a investir para a reforma?\"",
     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
     "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
@@ -4945,26 +4944,28 @@
     "Crédito à habitação",
     "Carro"
    ],
-   "verificado": "2026-11-20T15:31:03.580374+00:00",
-   "falhas": 2,
-   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
+   "verificado": "2026-11-20T16:31:07.741665+00:00",
+   "falhas": 0,
+   "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-20T12:31:25.890074+00:00",
+   "mudou": "2026-11-20T16:31:07.741665+00:00",
    "mudanca": {
     "mais": [
-     "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
-     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
-     "As 5 lições financeiras que 2025 me ensinou",
-     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
-     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
-     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
-     "Quantas faturas pendentes tem neste momento no seu e-fatura?",
-     "Crédito à habitação: juros já levam 217 euros da prestação média"
+     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
+     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
+     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (14 a 20 de setembro)",
+     "Gás",
+     "Simulador de Juros compostos",
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (27 de julho a 2 de agosto)",
+     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
+     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
+     "A corrida dos 1.000 euros: SP 500, ouro, PPR ou certificados — quem vai à frente em novembro?"
     ],
     "menos": [],
-    "n_mais": 8,
+    "n_mais": 10,
     "n_menos": 0
    }
   }
