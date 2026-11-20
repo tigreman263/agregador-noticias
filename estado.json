@@ -12,9 +12,34 @@
   "44f1e003e76c154b": "2026-11-14T15:15:55.752589+00:00",
   "865f04f184654ba5": "2026-11-19T09:30:46.635543+00:00",
   "37bb30d77e5f5aac": "2026-11-19T11:31:13.852003+00:00",
-  "7607f0d295b56dbb": "2026-11-19T18:31:42.279871+00:00"
+  "7607f0d295b56dbb": "2026-11-19T18:31:42.279871+00:00",
+  "072cdd6ee9e396fd": "2026-11-20T13:32:00.054660+00:00"
  },
- "resumo": [],
+ "resumo": [
+  {
+   "titulo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdExfRkU1ZmEwMjBxT253UXVfVGRHY2Q5ZzZ4TnZmYlpWR210QkJScmV1bzNnSXlSTmU0YjBUMFBGOXl2Z3o0Y3NUaGZDMUZNNHdBY0Q3OWVhaW5YdG9zZE56ZUhwNU9pQTJvRmFQMzJpNC1xWDdHRDRqUGpObXRjb3VibEFYYWQ0c2Q4d21YQUo0ZldodnRZT3kzbG9LR3o3M3FFOXdnZmJZQnoxWmJoWjRwcFZDTVZoVXkyaEh3WlJwUGFLNUctS1Y3UDFhb2lpeTNhLV9GRHMxdw?oc=5",
+   "dominio": "radionovaantena.com",
+   "fonte": "Rádio Nova Antena",
+   "confiavel": false,
+   "nota": 23.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Vale Eficiência"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-20T12:50:53+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "072cdd6ee9e396fd"
+   ],
+   "ts": "2026-11-20T13:32:00.054660+00:00"
+  }
+ ],
  "adiados": [],
  "ultimo_resumo": "2026-11-20",
  "sugeridas": {},
@@ -249,7 +274,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-20T12:31:25.890074+00:00"
+   "ultima": "2026-11-20T13:32:00.054660+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -293,13 +318,15 @@
    "nome": "Rádio Nova Antena",
    "site": "https://radionovaantena.com",
    "ids": [
-    "81534c90169ea260"
+    "81534c90169ea260",
+    "072cdd6ee9e396fd"
    ],
    "pesquisas": [
-    "Sertã"
+    "Sertã",
+    "Apoio fundo ambiental"
    ],
    "exemplo": "Montemor-o-Novo reforça apoios às famílias e prepara recuperação da Escola Básica n.º 1",
-   "ultima": "2026-11-01T21:45:48.326067+00:00"
+   "ultima": "2026-11-20T13:32:00.054660+00:00"
   },
   "alentejo.sulinformacao.pt": {
    "nome": "Sul Informação Alentejo",
@@ -882,20 +909,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-20T12:31:25.890074+00:00"
+   "ultima": "2026-11-20T13:32:00.054660+00:00"
   }
  },
  "ultima_descoberta": "2026-11-20",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-14T18:16:07.728766+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-14T18:16:07.728766+00:00",
@@ -1786,47 +1804,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-20T13:32:00.054660+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-18T13:30:50.314437+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 564,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 521,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-18T14:30:48.264173+00:00",
    "pesquisas": [
@@ -3563,11 +3552,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-20T13:32:00.054660+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 537,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 490,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-20T12:31:25.890074+00:00",
-  "contaspoupanca.pt": "2026-11-20T12:31:25.890074+00:00"
+  "cm-serta.pt": "2026-11-20T13:32:00.054660+00:00",
+  "contaspoupanca.pt": "2026-11-20T13:32:00.054660+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3575,8 +3603,8 @@
   "contaspoupanca.pt": "2026-11-19T19:30:55.504544+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-20T12:31:25.890074+00:00",
-  "Apoio fundo ambiental": "2026-11-20T12:31:25.890074+00:00"
+  "Sertã": "2026-11-20T13:32:00.054660+00:00",
+  "Apoio fundo ambiental": "2026-11-20T13:32:00.054660+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4239,7 +4267,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-20T12:31:25.890074+00:00",
+   "verificado": "2026-11-20T13:32:00.054660+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4476,6 +4504,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
+    "Última hora",
     "CERNACHE DO BONJARDIM: Solução para trânsito no centro da vila em análise",
     "Última hora",
     "SERTÃ: Programação de Natal gera troca de argumentos",
@@ -4496,11 +4526,22 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
+    "Castelo Branco",
+    "Sertã",
+    "Cernache do Bonjardim",
+    "Beira Baixa",
+    "20-11-2026",
+    "Última hora",
+    "ULSCB lembra ainda que esta medida está a ser implementada desde há 13 anos",
+    "SERTÃ: III Jornadas da CPCJ debatem os desafios da educação",
+    "Sertã",
+    "Beira Baixa",
+    "20-11-2026",
     "PROENÇA-A-NOVA: “Proença ComVida” incentiva à criatividade do comércio local",
     "Proença-a-Nova",
     "Beira Baixa",
     "20-11-2026",
-    "Inscrições abertas para a edição de 2026 até 30 de novembro",
     "CERNACHE DO BONJARDIM: Solução para trânsito no centro da vila em análise",
     "Cernache do Bonjardim",
     "Sertã",
@@ -4546,15 +4587,6 @@
     "Região",
     "18-11-2026",
     "Última hora",
-    "FERREIRA DO ZÊZERE: Município acompanha pedido de prospeção mineira",
-    "Ferreira do Zêzere",
-    "Médio Tejo",
-    "18-11-2026",
-    "MAÇÃO: Município investe cerca de 50 mil euros na nova Vila Natal",
-    "Mação",
-    "Médio Tejo",
-    "18-11-2026",
-    "Última hora",
     "1",
     "2",
     "3",
@@ -4568,32 +4600,36 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-20T12:31:25.890074+00:00",
+   "verificado": "2026-11-20T13:32:00.054660+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-20T12:31:25.890074+00:00",
+   "mudou": "2026-11-20T13:32:00.054660+00:00",
    "mudanca": {
     "mais": [
-     "CERNACHE DO BONJARDIM: Solução para trânsito no centro da vila em análise",
-     "Última hora",
-     "PROENÇA-A-NOVA: “Proença ComVida” incentiva à criatividade do comércio local",
-     "Proença-a-Nova",
-     "Inscrições abertas para a edição de 2026 até 30 de novembro",
-     "CERNACHE DO BONJARDIM: Solução para trânsito no centro da vila em análise",
+     "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
+     "ULSCB: Não é falta de papel, mas sim “substituição progressiva das receitas em papel”",
+     "Castelo Branco",
+     "Sertã",
      "Cernache do Bonjardim",
-     "Última hora"
+     "Beira Baixa",
+     "ULSCB lembra ainda que esta medida está a ser implementada desde há 13 anos",
+     "SERTÃ: III Jornadas da CPCJ debatem os desafios da educação",
+     "Sertã",
+     "Beira Baixa"
     ],
     "menos": [
-     "Campanha decorre até 31 de dezembro",
-     "CASTANHEIRA DE PERA: Condomínio dos Esconhais avança para captação de empresas",
-     "Castanheira de Pera",
-     "Região",
-     "SERTÃ: Gala Eugénia Lima celebra centenário da “Diva do Acordeão”"
+     "Inscrições abertas para a edição de 2026 até 30 de novembro",
+     "FERREIRA DO ZÊZERE: Município acompanha pedido de prospeção mineira",
+     "Ferreira do Zêzere",
+     "Médio Tejo",
+     "MAÇÃO: Município investe cerca de 50 mil euros na nova Vila Natal",
+     "Mação",
+     "Médio Tejo"
     ],
-    "n_mais": 8,
-    "n_menos": 5
+    "n_mais": 10,
+    "n_menos": 7
    },
    "via": "site",
    "erro_site": ""
@@ -4869,10 +4905,10 @@
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
-    "Simulador de Juros compostos",
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "Certificados de Aforro",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
@@ -4894,7 +4930,6 @@
     "Crédito à habitação: juros já levam 217 euros da prestação média",
     "Falha da Microsoft está a ser usada para burlas. Saiba como as reconhecer",
     "Vamos a contas: Tenho 32.500 € no banco. Faz sentido investir agora 100 € por mês no S&P 500 e em ouro?",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
     "Salário médio sobe para 1.696 euros, mas a inflação leva mais de dois terços do aumento",
     "Vamos a contas: \"Fiz um crédito pessoal para pagar a entrada da casa. Continuo a amortizar ou começo a investir para a reforma?\"",
@@ -4909,7 +4944,7 @@
     "Crédito à habitação",
     "Carro"
    ],
-   "verificado": "2026-11-20T12:31:25.890074+00:00",
+   "verificado": "2026-11-20T13:32:00.054660+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
