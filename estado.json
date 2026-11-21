@@ -894,7 +894,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-21T12:30:57.588360+00:00"
+   "ultima": "2026-11-21T13:31:12.778853+00:00"
   },
   "radiocampomaior.com": {
    "nome": "Rádio Campo Maior",
@@ -906,7 +906,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-21T12:30:57.588360+00:00"
+   "ultima": "2026-11-21T13:31:12.778853+00:00"
   }
  },
  "ultima_descoberta": "2026-11-21",
@@ -1813,45 +1813,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-19T13:31:47.646605+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 525,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 478,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-19T14:31:05.297890+00:00",
    "pesquisas": [
@@ -3574,11 +3535,52 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-21T13:31:12.778853+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 469,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 490,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertaginen"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-21T12:30:57.588360+00:00",
-  "contaspoupanca.pt": "2026-11-21T12:30:57.588360+00:00"
+  "cm-serta.pt": "2026-11-21T13:31:12.778853+00:00",
+  "contaspoupanca.pt": "2026-11-21T13:31:12.778853+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3586,8 +3588,8 @@
   "contaspoupanca.pt": "2026-11-20T20:30:45.759311+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-21T12:30:57.588360+00:00",
-  "Apoio fundo ambiental": "2026-11-21T12:30:57.588360+00:00"
+  "Sertã": "2026-11-21T13:31:12.778853+00:00",
+  "Apoio fundo ambiental": "2026-11-21T13:31:12.778853+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4250,7 +4252,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-21T12:30:57.588360+00:00",
+   "verificado": "2026-11-21T13:31:12.778853+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4522,7 +4524,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-21T12:30:57.588360+00:00",
+   "verificado": "2026-11-21T13:31:12.778853+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4751,9 +4753,9 @@
   },
   "https://contaspoupanca.pt/": {
    "linhas_google": [
-    "Combustíveis",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
+    "Combustíveis",
     "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
@@ -4840,7 +4842,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Crédito à habitação"
    ],
-   "verificado": "2026-11-21T12:30:57.588360+00:00",
+   "verificado": "2026-11-21T13:31:12.778853+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
