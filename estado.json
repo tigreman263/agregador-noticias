@@ -894,7 +894,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-21T10:31:05.267635+00:00"
+   "ultima": "2026-11-21T12:30:57.588360+00:00"
   },
   "radiocampomaior.com": {
    "nome": "Rádio Campo Maior",
@@ -906,7 +906,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-21T10:31:05.267635+00:00"
+   "ultima": "2026-11-21T12:30:57.588360+00:00"
   }
  },
  "ultima_descoberta": "2026-11-21",
@@ -1813,45 +1813,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-19T12:31:02.428487+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 526,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 478,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-19T13:31:47.646605+00:00",
    "pesquisas": [
@@ -3574,11 +3535,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-21T12:30:57.588360+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 537,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-21T11:30:51.903687+00:00",
-  "contaspoupanca.pt": "2026-11-21T11:30:51.903687+00:00"
+  "cm-serta.pt": "2026-11-21T12:30:57.588360+00:00",
+  "contaspoupanca.pt": "2026-11-21T12:30:57.588360+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3586,8 +3586,8 @@
   "contaspoupanca.pt": "2026-11-20T20:30:45.759311+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-21T11:30:51.903687+00:00",
-  "Apoio fundo ambiental": "2026-11-21T11:30:51.903687+00:00"
+  "Sertã": "2026-11-21T12:30:57.588360+00:00",
+  "Apoio fundo ambiental": "2026-11-21T12:30:57.588360+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4250,7 +4250,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-21T11:30:51.903687+00:00",
+   "verificado": "2026-11-21T12:30:57.588360+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4320,8 +4320,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4522,7 +4522,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-21T11:30:51.903687+00:00",
+   "verificado": "2026-11-21T12:30:57.588360+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4798,7 +4798,6 @@
     "Investimentos",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
-    "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
@@ -4833,7 +4832,6 @@
     "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
     "Vamos a contas: \"Fiz um crédito pessoal para pagar a entrada da casa. Continuo a amortizar ou começo a investir para a reforma?\"",
     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
-    "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
     "Gasolina já está abaixo dos 2 euros em todas as marcas. Veja onde é mais barata esta semana",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
@@ -4842,7 +4840,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Crédito à habitação"
    ],
-   "verificado": "2026-11-21T11:30:51.903687+00:00",
+   "verificado": "2026-11-21T12:30:57.588360+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
