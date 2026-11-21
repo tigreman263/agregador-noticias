@@ -906,7 +906,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-21T20:46:19.097719+00:00"
+   "ultima": "2026-11-21T21:46:06.417170+00:00"
   }
  },
  "ultima_descoberta": "2026-11-21",
@@ -1813,47 +1813,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-19T21:31:12.109971+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 460,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-19T22:31:02.134128+00:00",
    "pesquisas": [
@@ -3573,11 +3532,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-21T21:46:06.417170+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 529,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-21T20:46:19.097719+00:00",
-  "contaspoupanca.pt": "2026-11-21T20:46:19.097719+00:00"
+  "cm-serta.pt": "2026-11-21T21:46:06.417170+00:00",
+  "contaspoupanca.pt": "2026-11-21T21:46:06.417170+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3585,8 +3583,8 @@
   "contaspoupanca.pt": "2026-11-21T20:45:44.617753+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-21T20:46:19.097719+00:00",
-  "Apoio fundo ambiental": "2026-11-21T20:46:19.097719+00:00"
+  "Sertã": "2026-11-21T21:46:06.417170+00:00",
+  "Apoio fundo ambiental": "2026-11-21T21:46:06.417170+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4249,7 +4247,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-21T20:46:19.097719+00:00",
+   "verificado": "2026-11-21T21:46:06.417170+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4324,8 +4322,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4540,7 +4538,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-21T20:46:19.097719+00:00",
+   "verificado": "2026-11-21T21:46:06.417170+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4810,8 +4808,8 @@
     "IRS",
     "Simulador de IRS: Quanto devolve o seu município?",
     "Subscrever Newsletter",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
     "Termos e Condições",
@@ -4866,7 +4864,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Crédito à habitação"
    ],
-   "verificado": "2026-11-21T20:46:19.097719+00:00",
+   "verificado": "2026-11-21T21:46:06.417170+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
