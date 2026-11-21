@@ -906,20 +906,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-21T19:46:08.432373+00:00"
+   "ultima": "2026-11-21T20:46:19.097719+00:00"
   }
  },
  "ultima_descoberta": "2026-11-21",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-16T09:31:08.116604+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-16T11:31:01.118018+00:00",
@@ -1810,47 +1801,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-21T20:46:19.097719+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-19T20:32:32.894443+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 571,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 521,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-19T21:31:12.109971+00:00",
    "pesquisas": [
@@ -3573,20 +3535,58 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-21T20:46:19.097719+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 573,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 533,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-21T19:46:08.432373+00:00",
-  "contaspoupanca.pt": "2026-11-21T19:46:08.432373+00:00"
+  "cm-serta.pt": "2026-11-21T20:46:19.097719+00:00",
+  "contaspoupanca.pt": "2026-11-21T20:46:19.097719+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-21T19:46:03.102071+00:00",
-  "contaspoupanca.pt": "2026-11-20T20:30:45.759311+00:00"
+  "contaspoupanca.pt": "2026-11-21T20:45:44.617753+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-21T19:46:08.432373+00:00",
-  "Apoio fundo ambiental": "2026-11-21T19:46:08.432373+00:00"
+  "Sertã": "2026-11-21T20:46:19.097719+00:00",
+  "Apoio fundo ambiental": "2026-11-21T20:46:19.097719+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4249,59 +4249,38 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-21T19:46:08.432373+00:00",
+   "verificado": "2026-11-21T20:46:19.097719+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-21T19:46:08.432373+00:00",
+   "mudou": "2026-11-21T20:46:19.097719+00:00",
    "mudanca": {
     "mais": [
-     "Untitled",
-     "Untitled",
-     "Untitled",
-     "EDITAL N.º77/2026",
-     "Untitled",
-     "XIV Rali Histórico Vila da Sertã",
-     "Untitled",
-     "Contactos",
-     "LICENÇA ESPECIAL DE RUÍDO PARA ESPETÁCULOS, DIVERSÕES, MANIFESTAÇÕES DESPORTIVAS, FEIRAS E MERCADOS",
-     "EDITAL N.º 15 / 2026",
-     "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO",
-     "Conselho Municipal de Educação",
-     "INSCRIÇÃO NO PROGRAMA DE APOIO À FAMÍLIA – TEMPO DE ACOLHER",
-     "Equipamentos Desportivos",
-     "A alma aos pés de Baco",
-     "Mandato 2025/2029 EDITAL N.º156/2025",
-     "CADERNO DE ENCARGOS",
-     "Formação / Atelier / Oficinas",
-     "MUNICÍPIO DE SERTÃ Aviso Procedimento concursal comum para a constituição de relação jurídica de emprego público, por te",
-     "Informação Geográfica Urbanismo"
+     "Gabinete Florestal",
+     "Faixas de Gestão de Combustível",
+     "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
+     "Festas e Romarias",
+     "Mel em destaque no mercado Produtos da Terra de agosto",
+     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
     ],
     "menos": [],
-    "n_mais": 53,
+    "n_mais": 6,
     "n_menos": 0
    },
    "linhas_google": [
-    "Untitled",
-    "Untitled",
-    "Untitled",
-    "EDITAL N.º77/2026",
-    "Untitled",
     "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
     "Câmara Municipal da Sertã — Início",
     "Serviços Online",
     "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
     "Programa “Férias Ativas” anima verão até final de agosto",
     "Login",
-    "XIV Rali Histórico Vila da Sertã",
     "Atendimento no Município para apoio após a Tempestade Kristin",
     "Bem-vindo à Rede de Bibliotecas da Sertã",
     "Eventos Futuros",
     "Águas Residuais",
     "Praias Fluviais, Zonas de Lazer e Piscinas",
     "Percursos Pedestres",
-    "Untitled",
     "Procedimentos Concursais",
     "Bolsas de Estudo",
     "Turismo",
@@ -4309,80 +4288,41 @@
     "Câmara Municipal",
     "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
     "Programa Férias Ativas abre candidaturas para monitores",
-    "Contactos",
     "Requerimentos",
     "Comitiva da Turismo Centro de Portugal visitou o concelho da Sertã",
-    "LICENÇA ESPECIAL DE RUÍDO PARA ESPETÁCULOS, DIVERSÕES, MANIFESTAÇÕES DESPORTIVAS, FEIRAS E MERCADOS",
     "Revisão do PDM da Sertã mais perto da conclusão",
     "Espaços Museológicos",
     "Abastecimento de água",
     "Contactos Úteis",
-    "EDITAL N.º 15 / 2026",
     "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO",
     "Regulamentos",
     "BUPi",
-    "Conselho Municipal de Educação",
     "Estrutura Orgânica",
-    "INSCRIÇÃO NO PROGRAMA DE APOIO À FAMÍLIA – TEMPO DE ACOLHER",
-    "Equipamentos Desportivos",
     "Planos",
     "Casa de Espetáculos e Cultura da Sertã",
-    "A alma aos pés de Baco",
-    "Mandato 2025/2029 EDITAL N.º156/2025",
-    "CADERNO DE ENCARGOS",
-    "Formação / Atelier / Oficinas",
-    "MUNICÍPIO DE SERTÃ Aviso Procedimento concursal comum para a constituição de relação jurídica de emprego público, por te",
-    "Informação Geográfica Urbanismo",
     "Editais / Avisos",
-    "Serviço de Atendimento e Acompanhamento Social (SAAS)",
-    "Sugestões e Reclamações",
     "Projetos Cofinanciados",
-    "Untitled",
-    "Untitled",
-    "Untitled",
-    "Mandato 2025/2029 EDITAL N.º134/2025",
-    "Maranho da Sertã reconhecido com Prémio Cinco Estrelas Regiões",
-    "Mandato 2025/2029 EDITAL N.º32/2026",
     "Espaços de Cowork e Incubação",
-    "BOLSAS DE ESTUDO: CANDIDATURA RENOVAÇÃO",
-    "BiblioAndante",
     "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
     "Ficha técnica",
     "Calendário de Reuniões",
-    "Eventos Literários",
     "Desporto",
     "Bolsas de Estudo do Município da Sertã com novas normas",
-    "AIGP 2.0/OIGP 2.0 - TEMPESTADE KRISTIN CANDIDATURA A APOIOS FINANCEIROS RESULTANTES DAS COMUNICAÇÕES DE COMPROMISSO DE EXECUÇ",
     "Mercados e Feiras",
-    "CERTIDÃO COMPROVATIVA DE DESPESAS ESCOLARES",
     "Mapa de Pessoal",
-    "Modalidades Ginásio Municipal",
     "História e Caracterização",
-    "Tarifas",
-    "Notícias",
     "Assembleia Municipal Jovem",
-    "Assembleia Municipal da Sertã",
-    "Untitled",
-    "Mandato 2025/2029 EDITAL N.º137/2025",
-    "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto",
-    "EDITAL N",
     "Academia Sénior",
-    "Caderno de Encargos.odt",
     "União de Freguesias de Cumeada e Marmeleiro",
     "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
-    "Festas e Feiras",
     "clds 5g",
-    "Junta de Freguesia do Troviscal",
-    "ASA (Área de Serviço para Autocaravanas)",
-    "Vespas",
-    "Sertã celebra o 25 de Abril com música, tradição e memória",
-    "EDITAL N.º 152/2025",
-    "EDITAL N",
-    "Untitled",
-    "Horários",
-    "Impostos e Taxas Municipais",
-    "Biblioteca Municipal Padre Manuel Antunes",
-    "Freguesias"
+    "Freguesias",
+    "Gabinete Florestal",
+    "Faixas de Gestão de Combustível",
+    "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
+    "Festas e Romarias",
+    "Mel em destaque no mercado Produtos da Terra de agosto",
+    "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
    "via": "google",
    "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
@@ -4600,7 +4540,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-21T19:46:08.432373+00:00",
+   "verificado": "2026-11-21T20:46:19.097719+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4849,6 +4789,7 @@
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
+    "Simulador de amortização crédito à habitação",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
     "PPR",
     "Pedro Andersson",
@@ -4864,16 +4805,15 @@
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
     "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
     "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
     "Simulador de IRS: Quanto devolve o seu município?",
     "Subscrever Newsletter",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
-    "Simulador de amortização crédito à habitação",
     "Termos e Condições",
     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
@@ -4926,7 +4866,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Crédito à habitação"
    ],
-   "verificado": "2026-11-21T19:46:08.432373+00:00",
+   "verificado": "2026-11-21T20:46:19.097719+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
