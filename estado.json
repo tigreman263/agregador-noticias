@@ -10,33 +10,9 @@
   "7607f0d295b56dbb": "2026-11-19T18:31:42.279871+00:00",
   "072cdd6ee9e396fd": "2026-11-20T13:32:00.054660+00:00"
  },
- "resumo": [
-  {
-   "titulo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdExfRkU1ZmEwMjBxT253UXVfVGRHY2Q5ZzZ4TnZmYlpWR210QkJScmV1bzNnSXlSTmU0YjBUMFBGOXl2Z3o0Y3NUaGZDMUZNNHdBY0Q3OWVhaW5YdG9zZE56ZUhwNU9pQTJvRmFQMzJpNC1xWDdHRDRqUGpObXRjb3VibEFYYWQ0c2Q4d21YQUo0ZldodnRZT3kzbG9LR3o3M3FFOXdnZmJZQnoxWmJoWjRwcFZDTVZoVXkyaEh3WlJwUGFLNUctS1Y3UDFhb2lpeTNhLV9GRHMxdw?oc=5",
-   "dominio": "radionovaantena.com",
-   "fonte": "Rádio Nova Antena",
-   "confiavel": false,
-   "nota": 23.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-20T12:50:53+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "072cdd6ee9e396fd"
-   ],
-   "ts": "2026-11-20T13:32:00.054660+00:00"
-  }
- ],
+ "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-20",
+ "ultimo_resumo": "2026-11-21",
  "sugeridas": {},
  "sugeridas_antigas": [
   "publico.pt",
@@ -269,7 +245,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-21T07:31:00.450073+00:00"
+   "ultima": "2026-11-21T08:31:06.516307+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -904,7 +880,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-21T07:31:00.450073+00:00"
+   "ultima": "2026-11-21T08:31:06.516307+00:00"
   },
   "radiocampomaior.com": {
    "nome": "Rádio Campo Maior",
@@ -916,20 +892,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-21T07:31:00.450073+00:00"
+   "ultima": "2026-11-21T08:31:06.516307+00:00"
   }
  },
  "ultima_descoberta": "2026-11-20",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-15T16:30:50.076308+00:00",
-   "titulo": "Mudou: cm-serta",
-   "link": "https://cm-serta.pt/comunicacao/noticias",
-   "fonte": "cm-serta.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-15T16:30:50.076308+00:00",
@@ -1820,47 +1787,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-21T08:31:06.516307+00:00",
+   "titulo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
+   "link": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNdExfRkU1ZmEwMjBxT253UXVfVGRHY2Q5ZzZ4TnZmYlpWR210QkJScmV1bzNnSXlSTmU0YjBUMFBGOXl2Z3o0Y3NUaGZDMUZNNHdBY0Q3OWVhaW5YdG9zZE56ZUhwNU9pQTJvRmFQMzJpNC1xWDdHRDRqUGpObXRjb3VibEFYYWQ0c2Q4d21YQUo0ZldodnRZT3kzbG9LR3o3M3FFOXdnZmJZQnoxWmJoWjRwcFZDTVZoVXkyaEh3WlJwUGFLNUctS1Y3UDFhb2lpeTNhLV9GRHMxdw?oc=5",
+   "fonte": "Rádio Nova Antena",
+   "nota": 23.0,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-19T08:30:47.745357+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 563,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 520,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-19T09:30:46.635543+00:00",
    "pesquisas": [
@@ -3583,11 +3521,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-21T08:31:06.516307+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 537,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 1,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-21T07:31:00.450073+00:00",
-  "contaspoupanca.pt": "2026-11-21T07:31:00.450073+00:00"
+  "cm-serta.pt": "2026-11-21T08:31:06.516307+00:00",
+  "contaspoupanca.pt": "2026-11-21T08:31:06.516307+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3595,8 +3572,8 @@
   "contaspoupanca.pt": "2026-11-20T20:30:45.759311+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-21T07:31:00.450073+00:00",
-  "Apoio fundo ambiental": "2026-11-21T07:31:00.450073+00:00"
+  "Sertã": "2026-11-21T08:31:06.516307+00:00",
+  "Apoio fundo ambiental": "2026-11-21T08:31:06.516307+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4259,7 +4236,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-21T07:31:00.450073+00:00",
+   "verificado": "2026-11-21T08:31:06.516307+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4535,7 +4512,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-21T07:31:00.450073+00:00",
+   "verificado": "2026-11-21T08:31:06.516307+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4863,9 +4840,9 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Crédito à habitação"
    ],
-   "verificado": "2026-11-21T07:31:00.450073+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-21T08:31:06.516307+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
