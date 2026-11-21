@@ -259,7 +259,7 @@
     "Sertã"
    ],
    "exemplo": "Município da Sertã distinguido com Prémios de Excelência Autárquica",
-   "ultima": "2026-11-21T09:30:59.051467+00:00"
+   "ultima": "2026-11-21T10:31:05.267635+00:00"
   },
   "tribunadosertao.com.br": {
    "nome": "Tribuna do Sertão",
@@ -894,7 +894,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-21T09:30:59.051467+00:00"
+   "ultima": "2026-11-21T10:31:05.267635+00:00"
   },
   "radiocampomaior.com": {
    "nome": "Rádio Campo Maior",
@@ -906,29 +906,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-21T09:30:59.051467+00:00"
+   "ultima": "2026-11-21T10:31:05.267635+00:00"
   }
  },
  "ultima_descoberta": "2026-11-21",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-15T17:30:59.843419+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-15T18:30:59.465617+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-15T19:31:01.352422+00:00",
@@ -1810,49 +1792,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-21T10:31:05.267635+00:00",
+   "titulo": "Mudou: Junta freguesia",
+   "link": "https://www.jf-cernachebonjardim.pt/",
+   "fonte": "jf-cernachebonjardim.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-21T10:31:05.267635+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-19T10:30:46.265687+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 550,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 468,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 4,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-19T11:31:13.852003+00:00",
    "pesquisas": [
@@ -3574,11 +3534,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-21T10:31:05.267635+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 538,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 4,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-21T09:30:59.051467+00:00",
-  "contaspoupanca.pt": "2026-11-21T09:30:59.051467+00:00"
+  "cm-serta.pt": "2026-11-21T10:31:05.267635+00:00",
+  "contaspoupanca.pt": "2026-11-21T10:31:05.267635+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3586,8 +3585,8 @@
   "contaspoupanca.pt": "2026-11-20T20:30:45.759311+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-21T09:30:59.051467+00:00",
-  "Apoio fundo ambiental": "2026-11-21T09:30:59.051467+00:00"
+  "Sertã": "2026-11-21T10:31:05.267635+00:00",
+  "Apoio fundo ambiental": "2026-11-21T10:31:05.267635+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4250,7 +4249,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-21T09:30:59.051467+00:00",
+   "verificado": "2026-11-21T10:31:05.267635+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4526,7 +4525,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-21T09:30:59.051467+00:00",
+   "verificado": "2026-11-21T10:31:05.267635+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4550,8 +4549,6 @@
     "União das Freguesias de Cernache do Bonjardim, Nesperal e Palhais",
     "274809318",
     "j.f@jf-cernachebonjardim.pt",
-    ">",
-    ">",
     "União das Freguesias de Cernache do Bonjardim, Nesperal e Palhais",
     "Início",
     "Freguesia",
@@ -4737,26 +4734,21 @@
     "Esses cookies nos ajudam a entender como os visitantes interagem com nosso site, obter estatísticas de acessos e utilizadores para fornecer uma melhor análise geral.",
     "Aceitar"
    ],
-   "verificado": "2026-11-20T10:31:03.711444+00:00",
+   "verificado": "2026-11-21T10:31:05.267635+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-06T12:16:27.716358+00:00",
    "via": "site",
    "erro_site": "",
-   "mudou": "2026-11-19T10:30:46.265687+00:00",
+   "mudou": "2026-11-21T10:31:05.267635+00:00",
    "mudanca": {
-    "mais": [
-     ">",
-     ">",
-     "Nos dias 25 e 26 de abril, a vila de Cernache do Bonjardim volta a reunir-se para assinalar o 17º aniversário da Canonização de São Nuno de Santa Maria.Na sequência da tempestade que recentemente assolou a região, a celebração deste ano será mais simples e recolhida, privilegiando a vertente religiosa e institucional, num ambiente de fé, oração e respeito pela tradição que honra o Santo Condestável.A Romaria a São Nuno de Santa Maria&nbsp;inicia-se a&nbsp;25 de abril&nbsp;(sábado) pelas&nbsp;21 horas, com a&nbsp;Procissão das Velas e Vigília a S. Nuno de Santa Maria, a partir da&nbsp;Igreja Matriz de Cernache do Bonjardim. No dia seguinte,&nbsp;26 de abril, as celebrações arrancam às&nbsp;9h30&nbsp;com a&nbsp;Romagem das Capelanias&nbsp;do concelho até à&nbsp;rotunda da Estátua de Nuno Álvares Pereira, em&nbsp;Cernache do Bonjardim, local onde, às&nbsp;10h30, decorrerá o&nbsp;Hastear da Bandeira Nacional. Este momento contará com o acompanhamento musical da&nbsp;Filarmónica União Sertaginense&nbsp;e com a participação dos&nbsp;Bombeiros Voluntários de Cernache do Bonjardim&nbsp;e da&nbsp;GNR&nbsp;da Sertã. A procissão com as capelanias procede até à&nbsp;Igreja Matriz de Cernache do Bonjardim&nbsp;para, às&nbsp;11 horas, se celebrar a&nbsp;Eucaristia Dominical de Ação de Graças a S. Nuno de Santa Maria. Segue-se o&nbsp;cortejo até aos Paços do Bonjardim, marcando assim o encerramento simbólico e devoto desta Romaria. Refira-se que alguns momentos da romaria poderão provocar alguns condicionamentos no trânsito.Nascido a 24 de junho de 1360 em Cernache do Bonjardim,&nbsp;D. Nuno Álvares Pereira&nbsp;foi um intrépido cavaleiro e autor de várias façanhas militares. Foi uma figura central no reino português e um dos homens mais poderosos do país. Na última década da sua vida, abdicou de todos os seus títulos e propriedades, entrou para o Convento do Carmo, em Lisboa, e aqui iniciou uma vida dedicada à caridade, onde passou a chamar-se&nbsp;Frei Nuno de Santa Maria. Ainda em vida foi chamado de&nbsp;Santo Condestável&nbsp;pelo povo. Morreu a 1 de novembro de 1431 e, em 1918, foi beatificado pelo Papa Bento XV. A sua canonização como&nbsp;São Nuno de Santa Maria&nbsp;aconteceu em 2009 pelo Papa Bento XVI que lembrou uma \"figura exemplar” destacando a sua “vida de fé e oração em contextos aparentemente pouco favoráveis à mesma, sendo a prova de que em qualquer situação, mesmo de carácter militar e bélico, é possível atuar e realizar os valores e princípios da vida cristã\".A&nbsp;Romaria a São Nuno de Santa Maria&nbsp;é organizada pela Câmara Municipal da Sertã em parceria com a Paróquia de Cernache do Bonjardim e a União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.",
-     "Na passada semana foram confirmados 6 novos focos de infeção por vírus da Gripe Aviária de Alta Patogenicidade (GAAP) do subtipo H5N1 em Portugal.Entre estes, destaca-se um foco no concelho vizinho de Ferreira do Zêzere, cujas zonas de restrição abrangem o concelho da Sertã, em particular as Freguesias do Castelo e da União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.Com o objetivo de proteger a saúde animal e a saúde pública, mantém-se:- Confinamento obrigatório de todas as aves domésticas em território continental, evitando contacto com aves selvagens;- Proibição de eventos, exposições e concursos de aves em cativeiro, incluindo aves ornamentais e exóticas;- Proibição de ajuntamentos de aves domésticas em feiras e mercados, exceto quando cumpridas rigorosamente as condições de biossegurança;- Obrigação de reportar qualquer mortalidade ou morbilidade anormal nas aves domésticas.Estas medidas permanecem em vigor, pelo menos, até 22 de dezembro de 2025.&nbsp;Consulte o Edital n.º 38 da DGAV em: https://www.dgav.pt/.../2025/11/Edital-38-GAAP-22112025.pdfContamos com a colaboração de todos na divulgação desta informação essencial para a proteção das aves e da população."
-    ],
+    "mais": [],
     "menos": [
-     "Nos dias 25 e 26 de abril, a vila de Cernache do Bonjardim volta a reunir-se para assinalar o 17º aniversário da Canonização de São Nuno de Santa Maria.Na sequência da tempestade que recentemente assolou a região, a celebração deste ano será mais simples e recolhida, privilegiando a vertente religiosa e institucional, num ambiente de fé, oração e respeito pela tradição que honra o Santo Condestável.A Romaria a São Nuno de Santa Maria inicia-se a 25 de abril (sábado) pelas 21 horas, com a Procissão das Velas e Vigília a S. Nuno de Santa Maria, a partir da Igreja Matriz de Cernache do Bonjardim. No dia seguinte, 26 de abril, as celebrações arrancam às 9h30 com a Romagem das Capelanias do concelho até à rotunda da Estátua de Nuno Álvares Pereira, em Cernache do Bonjardim, local onde, às 10h30, decorrerá o Hastear da Bandeira Nacional. Este momento contará com o acompanhamento musical da Filarmónica União Sertaginense e com a participação dos Bombeiros Voluntários de Cernache do Bonjardim e da GNR da Sertã. A procissão com as capelanias procede até à Igreja Matriz de Cernache do Bonjardim para, às 11 horas, se celebrar a Eucaristia Dominical de Ação de Graças a S. Nuno de Santa Maria. Segue-se o cortejo até aos Paços do Bonjardim, marcando assim o encerramento simbólico e devoto desta Romaria. Refira-se que alguns momentos da romaria poderão provocar alguns condicionamentos no trânsito.Nascido a 24 de junho de 1360 em Cernache do Bonjardim, D. Nuno Álvares Pereira foi um intrépido cavaleiro e autor de várias façanhas militares. Foi uma figura central no reino português e um dos homens mais poderosos do país. Na última década da sua vida, abdicou de todos os seus títulos e propriedades, entrou para o Convento do Carmo, em Lisboa, e aqui iniciou uma vida dedicada à caridade, onde passou a chamar-se Frei Nuno de Santa Maria. Ainda em vida foi chamado de Santo Condestável pelo povo. Morreu a 1 de novembro de 1431 e, em 1918, foi beatificado pelo Papa Bento XV. A sua canonização como São Nuno de Santa Maria aconteceu em 2009 pelo Papa Bento XVI que lembrou uma \"figura exemplar” destacando a sua “vida de fé e oração em contextos aparentemente pouco favoráveis à mesma, sendo a prova de que em qualquer situação, mesmo de carácter militar e bélico, é possível atuar e realizar os valores e princípios da vida cristã\".A Romaria a São Nuno de Santa Maria é organizada pela Câmara Municipal da Sertã em parceria com a Paróquia de Cernache do Bonjardim e a União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.",
-     "Na passada semana foram confirmados 6 novos focos de infeção por vírus da Gripe Aviária de Alta Patogenicidade (GAAP) do subtipo H5N1 em Portugal.Entre estes, destaca-se um foco no concelho vizinho de Ferreira do Zêzere, cujas zonas de restrição abrangem o concelho da Sertã, em particular as Freguesias do Castelo e da União de Freguesias de Cernache do Bonjardim, Nesperal e Palhais.Com o objetivo de proteger a saúde animal e a saúde pública, mantém-se:- Confinamento obrigatório de todas as aves domésticas em território continental, evitando contacto com aves selvagens;- Proibição de eventos, exposições e concursos de aves em cativeiro, incluindo aves ornamentais e exóticas;- Proibição de ajuntamentos de aves domésticas em feiras e mercados, exceto quando cumpridas rigorosamente as condições de biossegurança;- Obrigação de reportar qualquer mortalidade ou morbilidade anormal nas aves domésticas.Estas medidas permanecem em vigor, pelo menos, até 22 de dezembro de 2025. Consulte o Edital n.º 38 da DGAV em: https://www.dgav.pt/.../2025/11/Edital-38-GAAP-22112025.pdfContamos com a colaboração de todos na divulgação desta informação essencial para a proteção das aves e da população."
+     ">",
+     ">"
     ],
-    "n_mais": 4,
+    "n_mais": 0,
     "n_menos": 2
    }
   },
@@ -4765,7 +4757,6 @@
     "Combustíveis",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
-    "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em setembro de 2026",
     "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
@@ -4774,127 +4765,118 @@
     "Contas-Poupança | Dê um aumento a si próprio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
     "Últimas Notícias",
-    "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
-    "IMI: pode estar a pagar imposto a mais (e como saber hoje)",
     "PPR",
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
-    "PODCAST | #127 – Eletricidade e gás – Qual é a diferença entre Mercado Liberalizado ou Regulado?",
-    "ERSE lançou hoje novo simulador de eletricidade e gás",
-    "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
     "Simuladores",
-    "E-Lar fecha candidaturas após esgotar verba em 6 dias",
-    "GPL em 2026: Ainda compensa converter o carro para gás?",
-    "PODCAST | #115 – A Euribor a 6 meses também já está positiva – O que é que eu faço?",
-    "PODCAST | #110 – O meu PPR está negativo. É normal?",
-    "PODCAST | #81 – Como posso melhorar a minha vida se ganho pouco?",
-    "O que muda no arrendamento com as novas medidas de desagravamento fiscal?",
-    "PODCAST | #125 – Onde devo Investir O meu Fundo De Emergência? (A pergunta do Tiago Castelão)",
-    "PODCAST | #83 – Por onde começo se quiser começar a investir? (P&R)",
-    "PODCAST | #33 – Sabe calcular a Prestação do seu crédito à habitação?",
-    "PODCAST | #93 – Devo ter todo o meu dinheiro só num banco? (A pergunta da Bita)",
     "O que é a liberdade financeira e como a posso alcançar?",
-    "Automatizar poupanças e investimentos: a forma mais simples de garantir resultados",
-    "Se quiser investir é melhor um PPR ou um ETF? (Mês #34 a #38 – Outubro 24)",
-    "Simulador de prestação do crédito à habitação: descubra quanto vai pagar na próxima revisão da Euribor",
     "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
     "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
     "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
-    "Como ter mais dinheiro ao fim do mês em 2026, mesmo ganhando pouco",
     "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
-    "IRS Mini-dúvida 1 – As rendas não me aparecem",
     "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
-    "Pacote habitação 2026: As novas regras que podem fazer poupar milhares de euros em impostos (isenção de mais-valias)",
-    "Exemplos reais de Orçamento mensal (Excel) para pôr as suas contas em ordem",
-    "Tem eletricidade bi-horária? As horas mais baratas vão mudar a partir de 2027",
-    "Via Verde começa a cobrar mensalidade para pagar estacionamento e outros serviços",
-    "Esta semana no Podcast: Organização financeira, depósitos a prazo e PPR. Já ouviu todos?",
-    "Certificados de Aforro voltam a perder rentabilidade em junho",
-    "E-Lar: Faça já o registo antes do programa começar para receber os eletrodomésticos grátis",
-    "A sua fatura de eletricidade diz-lhe quanto está a poupar (ou não)",
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
-    "Contas Poupança 16 Setembro",
-    "IRS – Sabia que se tem Atestado Multiuso pode deduzir o seguro de vida?",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
     "Simulador de IRS: Quanto devolve o seu município?",
-    "Contadores inteligentes de eletricidade – São bons ou maus",
     "Subscrever Newsletter",
-    "Esta semana no podcast Contas-poupança: três decisões financeiras que podem fazer muita diferença nas suas contas",
-    "O seu contador diz-lhe qual é a potência contratada ideal para si",
-    "Episódios do podcast desta semana – O que o apagão me ensinou sobre dinheiro? E uma pergunta essencial sobre PPRs",
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
-    "IRS e atestados, seguro de vida e o GPL compensa? Os 3 episódios desta semana",
-    "Política de Cookies",
-    "Revolut lança sucursal em Portugal e avança com disponibilização de IBAN português",
-    "Autoridade da Concorrência quer comparador de depósitos. Objetivo é ajudar os portugueses a ganhar mais juros",
-    "Como faço para vender a eletricidade dos meus painéis solares?",
-    "Entrevista: André Pedro, CEO da Manie, explica como funciona a plataforma para poupar na eletricidade de forma automática",
-    "Investir em PPR: Quanto estou a ganhar (ou a perder) em agosto de 2025",
-    "Ganhamos bem e mesmo assim não sobra dinheiro: o que estamos a fazer mal? (Reposição)",
-    "Investir em PPR: Quanto estou a ganhar (ou a perder) em dezembro de 2025",
-    "Grupo de trabalho da Segurança Social propõe mecanismos para reforçar reformas",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
-    "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
-    "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
-    "NOVA ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (20 a 26 de julho)",
-    "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Junho 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
-    "ELETRICIDADE | Qual é a empresa mais barata neste momento? (Abril 2024)",
-    "Previstas grandes descidas dos combustíveis na semana que vem",
     "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
     "Simulador de amortização crédito à habitação",
-    "PodTEXT | Aumentaram-me as comissões no banco porque estou de baixa. É legal?",
-    "Atualização ISP | Preço dos combustíveis na próxima semana (3 a 9 de agosto)",
-    "Saúde",
-    "Vem aí o IRS, como investir e cuidado com a inflação: os 3 episódios desta semana",
     "Termos e Condições",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (10 a 16 de agosto)",
-    "PodTEXT | Quais são os 10 investimentos mais acessíveis em Portugal? Descubra os melhores para o seu perfil",
-    "Preço dos combustíveis a subir: como preparar o seu orçamento familiar",
-    "Os contadores inteligentes da eletricidade são bons ou maus? Parte II",
-    "Vamos a contas: \"Faz sentido ter vários PPR?\"",
-    "Ministério das Finanças esclarece polémica sobre limites impostos pela AT para a isenção de mais-valias",
     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (24 a 30 de agosto)"
+    "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
+    "Tem o PPR errado? Compare todos os PPR em poucos minutos",
+    "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
+    "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
+    "IMI",
+    "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
+    "Investimentos",
+    "PodTEXT | Como investir para os filhos e pagar menos impostos",
+    "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
+    "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
+    "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
+    "Os pais que investem para os filhos e poupam milhares de euros em impostos",
+    "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
+    "Gás",
+    "Simulador de Juros compostos",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (27 de julho a 2 de agosto)",
+    "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
+    "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
+    "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
+    "Certificados de Aforro",
+    "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
+    "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
+    "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
+    "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
+    "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
+    "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
+    "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
+    "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
+    "Preço dos combustíveis: gasolina abaixo dos 2 euros em oito marcas. Veja a mais barata esta semana",
+    "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
+    "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
+    "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
+    "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
+    "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
+    "Máquinas volta já devolvem o dinheiro das embalagens por MB WAY: veja onde",
+    "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
+    "Revista de imprensa de 20 de novembro: Crédito habitação, rendas e OE2027",
+    "Revista de imprensa de 18 de novembro: Inflação, alimentos e comissões de amortização",
+    "Crédito à habitação: juros já levam 217 euros da prestação média",
+    "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
+    "Vamos a contas: Tenho 32.500 € no banco. Faz sentido investir agora 100 € por mês no S&P 500 e em ouro?",
+    "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
+    "Vamos a contas: \"Fiz um crédito pessoal para pagar a entrada da casa. Continuo a amortizar ou começo a investir para a reforma?\"",
+    "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
+    "Revista de imprensa de 16 de novembro: Crédito habitação, alimentos e Segurança Social",
+    "Gasolina já está abaixo dos 2 euros em todas as marcas. Veja onde é mais barata esta semana",
+    "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
+    "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
+    "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
+    "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
+    "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
+    "Crédito à habitação"
    ],
-   "verificado": "2026-11-21T09:30:59.051467+00:00",
+   "verificado": "2026-11-21T10:31:05.267635+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-21T09:30:59.051467+00:00",
+   "mudou": "2026-11-21T10:31:05.267635+00:00",
    "mudanca": {
     "mais": [
-     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
-     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em setembro de 2026",
-     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
-     "IMI: pode estar a pagar imposto a mais (e como saber hoje)",
-     "PODCAST | #127 – Eletricidade e gás – Qual é a diferença entre Mercado Liberalizado ou Regulado?",
-     "ERSE lançou hoje novo simulador de eletricidade e gás",
-     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
-     "E-Lar fecha candidaturas após esgotar verba em 6 dias",
-     "GPL em 2026: Ainda compensa converter o carro para gás?",
-     "PODCAST | #115 – A Euribor a 6 meses também já está positiva – O que é que eu faço?",
-     "PODCAST | #110 – O meu PPR está negativo. É normal?",
-     "PODCAST | #81 – Como posso melhorar a minha vida se ganho pouco?",
-     "O que muda no arrendamento com as novas medidas de desagravamento fiscal?",
-     "PODCAST | #125 – Onde devo Investir O meu Fundo De Emergência? (A pergunta do Tiago Castelão)",
-     "PODCAST | #83 – Por onde começo se quiser começar a investir? (P&R)",
-     "PODCAST | #33 – Sabe calcular a Prestação do seu crédito à habitação?",
-     "PODCAST | #93 – Devo ter todo o meu dinheiro só num banco? (A pergunta da Bita)",
-     "Automatizar poupanças e investimentos: a forma mais simples de garantir resultados",
-     "Se quiser investir é melhor um PPR ou um ETF? (Mês #34 a #38 – Outubro 24)",
-     "Simulador de prestação do crédito à habitação: descubra quanto vai pagar na próxima revisão da Euribor"
+     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
+     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
+     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
+     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
+     "IMI",
+     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
+     "Investimentos",
+     "PodTEXT | Como investir para os filhos e pagar menos impostos",
+     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
+     "Depósitos a prazo já pagam 3,25%, mas a inflação subiu para 3,8%: onde estão os melhores juros em novembro",
+     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
+     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
+     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
+     "Gás",
+     "Simulador de Juros compostos",
+     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (27 de julho a 2 de agosto)",
+     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
+     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
+     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
+     "Certificados de Aforro"
     ],
     "menos": [],
-    "n_mais": 63,
+    "n_mais": 52,
     "n_menos": 0
    }
   }
