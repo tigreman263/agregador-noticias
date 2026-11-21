@@ -906,20 +906,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-21T17:33:19.766936+00:00"
+   "ultima": "2026-11-21T18:45:59.282416+00:00"
   }
  },
  "ultima_descoberta": "2026-11-21",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-15T22:31:00.255869+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-16T07:30:56.842663+00:00",
@@ -1810,47 +1801,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-21T18:45:59.282416+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-19T18:31:42.279871+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 573,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 522,
-     "relevantes": 1,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 3,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-19T19:31:11.883120+00:00",
    "pesquisas": [
@@ -3573,11 +3535,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-21T18:45:59.282416+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 537,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-21T17:33:19.766936+00:00",
-  "contaspoupanca.pt": "2026-11-21T17:33:19.766936+00:00"
+  "cm-serta.pt": "2026-11-21T18:45:59.282416+00:00",
+  "contaspoupanca.pt": "2026-11-21T18:45:59.282416+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3585,8 +3586,8 @@
   "contaspoupanca.pt": "2026-11-20T20:30:45.759311+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-21T17:33:19.766936+00:00",
-  "Apoio fundo ambiental": "2026-11-21T17:33:19.766936+00:00"
+  "Sertã": "2026-11-21T18:45:59.282416+00:00",
+  "Apoio fundo ambiental": "2026-11-21T18:45:59.282416+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4249,7 +4250,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-21T17:33:19.766936+00:00",
+   "verificado": "2026-11-21T18:45:59.282416+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4318,8 +4319,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4420,6 +4421,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "REGIÃO: Mau tempo provoca inundações e derrocadas",
+    "Última hora",
     "SERTÃ: Vereador do PSD questiona futuro de edifícios municipais",
     "Última hora",
     "MAU TEMPO: Proteção Civil alerta para precipitação persistente",
@@ -4450,11 +4453,21 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "REGIÃO: Mau tempo provoca inundações e derrocadas",
+    "Proença-a-Nova",
+    "Sardoal",
+    "Oleiros",
+    "Mação",
+    "Vila Velha de Ródão",
+    "Beira Baixa",
+    "Região",
+    "21-11-2026",
+    "Última hora",
+    "Chuva intensa desta tarde afetou os concelhos de Oleiros, Proença-a-Nova, Sardoal, Vila Velha de Ródão e Mação",
     "CASTANHEIRA DE PERA: \"Regulamento de Gestão de Combustíveis\" aprovado",
     "Castanheira de Pera",
     "Região",
     "21-11-2026",
-    "Regulamento estabelece regras e obrigações relativas à limpeza e manutenção de terrenos",
     "SERTÃ: Vereador do PSD questiona futuro de edifícios municipais",
     "Sertã",
     "Beira Baixa",
@@ -4509,10 +4522,6 @@
     "Sertã",
     "Beira Baixa",
     "20-11-2026",
-    "PROENÇA-A-NOVA: “Proença ComVida” incentiva à criatividade do comércio local",
-    "Proença-a-Nova",
-    "Beira Baixa",
-    "20-11-2026",
     "1",
     "2",
     "3",
@@ -4526,30 +4535,31 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-21T17:33:19.766936+00:00",
+   "verificado": "2026-11-21T18:45:59.282416+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-21T17:33:19.766936+00:00",
+   "mudou": "2026-11-21T18:45:59.282416+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Vereador do PSD questiona futuro de edifícios municipais",
-     "CASTANHEIRA DE PERA: \"Regulamento de Gestão de Combustíveis\" aprovado",
-     "Castanheira de Pera",
-     "Regulamento estabelece regras e obrigações relativas à limpeza e manutenção de terrenos",
-     "SERTÃ: Vereador do PSD questiona futuro de edifícios municipais",
-     "PAMPILHOSA DA SERRA: Município acolheu I Congresso Internacional do Medronheiro e do Medronho"
+     "REGIÃO: Mau tempo provoca inundações e derrocadas",
+     "Última hora",
+     "REGIÃO: Mau tempo provoca inundações e derrocadas",
+     "Sardoal",
+     "Oleiros",
+     "Mação",
+     "Vila Velha de Ródão",
+     "Região",
+     "Última hora",
+     "Chuva intensa desta tarde afetou os concelhos de Oleiros, Proença-a-Nova, Sardoal, Vila Velha de Ródão e Mação"
     ],
     "menos": [
-     "Para os próximos dias",
-     "CERNACHE DO BONJARDIM: Solução para trânsito no centro da vila em análise",
-     "Cernache do Bonjardim",
-     "PAMPILHOSA DA SERRA: «Natal no Comércio Local» oferece 2 mil euros em prémios",
-     "SERTÃ: «Sertã Espírito de Natal» promete quadra natalícia repleta de animação"
+     "Regulamento estabelece regras e obrigações relativas à limpeza e manutenção de terrenos",
+     "PROENÇA-A-NOVA: “Proença ComVida” incentiva à criatividade do comércio local"
     ],
-    "n_mais": 6,
-    "n_menos": 5
+    "n_mais": 10,
+    "n_menos": 2
    },
    "via": "site",
    "erro_site": ""
@@ -4771,9 +4781,9 @@
     "Podcast",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Simulador de apoio para os carros elétricos",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Contas-Poupança | Dê um aumento a si próprio",
     "Simuladores",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "Simulador de IRS: Quanto devolve o seu município?",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (6 a 12 de julho)",
@@ -4829,7 +4839,6 @@
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
     "Máquinas volta já devolvem o dinheiro das embalagens por MB WAY: veja onde",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
-    "Revista de imprensa de 20 de novembro: Crédito habitação, rendas e OE2027",
     "Revista de imprensa de 18 de novembro: Inflação, alimentos e comissões de amortização",
     "Crédito à habitação: juros já levam 217 euros da prestação média",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
@@ -4852,7 +4861,7 @@
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-21T17:33:19.766936+00:00",
+   "verificado": "2026-11-21T18:45:59.282416+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
