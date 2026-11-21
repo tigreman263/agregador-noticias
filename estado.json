@@ -906,7 +906,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-21T21:46:06.417170+00:00"
+   "ultima": "2026-11-21T22:45:57.693923+00:00"
   }
  },
  "ultima_descoberta": "2026-11-21",
@@ -1813,50 +1813,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-19T22:31:02.134128+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 666,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 497,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici",
-    "Apoio fundo ambiental · Rádio Hertz: ParseError: mismatched tag: line 93, column 2",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Portal Energia",
-    "Rádio Hertz"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-19T23:31:15.336252+00:00",
    "pesquisas": [
@@ -3571,11 +3527,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-21T22:45:57.693923+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 529,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-21T21:46:06.417170+00:00",
-  "contaspoupanca.pt": "2026-11-21T21:46:06.417170+00:00"
+  "cm-serta.pt": "2026-11-21T22:45:57.693923+00:00",
+  "contaspoupanca.pt": "2026-11-21T22:45:57.693923+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3583,8 +3578,8 @@
   "contaspoupanca.pt": "2026-11-21T20:45:44.617753+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-21T21:46:06.417170+00:00",
-  "Apoio fundo ambiental": "2026-11-21T21:46:06.417170+00:00"
+  "Sertã": "2026-11-21T22:45:57.693923+00:00",
+  "Apoio fundo ambiental": "2026-11-21T22:45:57.693923+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4247,7 +4242,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-21T21:46:06.417170+00:00",
+   "verificado": "2026-11-21T22:45:57.693923+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4538,7 +4533,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-21T21:46:06.417170+00:00",
+   "verificado": "2026-11-21T22:45:57.693923+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4864,7 +4859,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Crédito à habitação"
    ],
-   "verificado": "2026-11-21T21:46:06.417170+00:00",
+   "verificado": "2026-11-21T22:45:57.693923+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
