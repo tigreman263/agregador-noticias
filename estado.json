@@ -1829,45 +1829,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-20T16:31:07.741665+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 534,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 569,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-20T17:31:13.053072+00:00",
    "pesquisas": [
     {
@@ -3568,11 +3529,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-22T17:00:59.845366+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 569,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-22T15:48:21.039121+00:00",
-  "contaspoupanca.pt": "2026-11-22T15:48:21.039121+00:00"
+  "cm-serta.pt": "2026-11-22T17:00:59.845366+00:00",
+  "contaspoupanca.pt": "2026-11-22T17:00:59.845366+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3580,8 +3580,8 @@
   "contaspoupanca.pt": "2026-11-21T20:45:44.617753+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-22T15:48:21.039121+00:00",
-  "Apoio fundo ambiental": "2026-11-22T15:48:21.039121+00:00"
+  "Sertã": "2026-11-22T17:00:59.845366+00:00",
+  "Apoio fundo ambiental": "2026-11-22T17:00:59.845366+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4244,7 +4244,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-22T15:48:21.039121+00:00",
+   "verificado": "2026-11-22T17:00:59.845366+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4313,8 +4313,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4533,7 +4533,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-22T15:48:21.039121+00:00",
+   "verificado": "2026-11-22T17:00:59.845366+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4856,7 +4856,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Crédito à habitação"
    ],
-   "verificado": "2026-11-22T15:48:21.039121+00:00",
+   "verificado": "2026-11-22T17:00:59.845366+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
