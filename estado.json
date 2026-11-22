@@ -1829,47 +1829,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-20T20:30:58.815270+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 531,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 465,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-20T21:31:06.253303+00:00",
    "pesquisas": [
     {
@@ -3568,20 +3527,60 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-22T21:01:04.658544+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 469,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertaginen",
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-22T20:00:49.655220+00:00",
-  "contaspoupanca.pt": "2026-11-22T20:00:49.655220+00:00"
+  "cm-serta.pt": "2026-11-22T21:01:04.658544+00:00",
+  "contaspoupanca.pt": "2026-11-22T21:01:04.658544+00:00"
  },
  "lentos": {},
  "testes_diretos": {
   "cm-serta.pt": "2026-11-22T20:00:45.459399+00:00",
-  "contaspoupanca.pt": "2026-11-21T20:45:44.617753+00:00"
+  "contaspoupanca.pt": "2026-11-22T21:00:53.020742+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-22T20:00:49.655220+00:00",
-  "Apoio fundo ambiental": "2026-11-22T20:00:49.655220+00:00"
+  "Sertã": "2026-11-22T21:01:04.658544+00:00",
+  "Apoio fundo ambiental": "2026-11-22T21:01:04.658544+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4244,7 +4243,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-22T20:00:49.655220+00:00",
+   "verificado": "2026-11-22T21:01:04.658544+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4314,8 +4313,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4534,7 +4533,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-22T20:00:49.655220+00:00",
+   "verificado": "2026-11-22T21:01:04.658544+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4857,9 +4856,9 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Crédito à habitação"
    ],
-   "verificado": "2026-11-22T20:00:49.655220+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-22T21:01:04.658544+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
