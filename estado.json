@@ -928,15 +928,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-16T17:31:04.836057+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-16T18:31:04.003317+00:00",
    "titulo": "Mudou: Radio condestável",
    "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
@@ -1825,48 +1816,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-22T19:01:31.955690+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-20T18:30:58.317901+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 536,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 490,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-20T19:30:50.401600+00:00",
    "pesquisas": [
@@ -3568,11 +3529,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-22T19:01:31.955690+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 530,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-22T18:01:07.320384+00:00",
-  "contaspoupanca.pt": "2026-11-22T18:01:07.320384+00:00"
+  "cm-serta.pt": "2026-11-22T19:01:31.955690+00:00",
+  "contaspoupanca.pt": "2026-11-22T19:01:31.955690+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3580,8 +3580,8 @@
   "contaspoupanca.pt": "2026-11-21T20:45:44.617753+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-22T18:01:07.320384+00:00",
-  "Apoio fundo ambiental": "2026-11-22T18:01:07.320384+00:00"
+  "Sertã": "2026-11-22T19:01:31.955690+00:00",
+  "Apoio fundo ambiental": "2026-11-22T19:01:31.955690+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4244,7 +4244,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-22T18:01:07.320384+00:00",
+   "verificado": "2026-11-22T19:01:31.955690+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4533,7 +4533,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-22T18:01:07.320384+00:00",
+   "verificado": "2026-11-22T19:01:31.955690+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4835,12 +4835,12 @@
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
     "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?",
+    "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
     "Máquinas volta já devolvem o dinheiro das embalagens por MB WAY: veja onde",
-    "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Crédito à habitação: juros já levam 217 euros da prestação média",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
     "Vamos a contas: Tenho 32.500 € no banco. Faz sentido investir agora 100 € por mês no S&P 500 e em ouro?",
@@ -4856,16 +4856,16 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Crédito à habitação"
    ],
-   "verificado": "2026-11-22T18:01:07.320384+00:00",
-   "falhas": 1,
-   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
+   "verificado": "2026-11-22T19:01:31.955690+00:00",
+   "falhas": 0,
+   "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-22T15:48:21.039121+00:00",
+   "mudou": "2026-11-22T19:01:31.955690+00:00",
    "mudanca": {
     "mais": [
-     "PodTEXT | 10 maneiras inteligentes (mais uma de bónus) de usar o seu reembolso do IRS em 2025"
+     "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\""
     ],
     "menos": [],
     "n_mais": 1,
