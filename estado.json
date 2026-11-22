@@ -929,15 +929,6 @@
   {
    "tipo": "pagina",
    "ts": "2026-11-16T18:31:04.003317+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-16T18:31:04.003317+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
    "fonte": "contaspoupanca.pt",
@@ -1825,47 +1816,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-22T20:00:49.655220+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-20T19:30:50.401600+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 579,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 533,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-20T20:30:58.815270+00:00",
    "pesquisas": [
@@ -3568,20 +3530,58 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-22T20:00:49.655220+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 577,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 533,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-22T19:01:31.955690+00:00",
-  "contaspoupanca.pt": "2026-11-22T19:01:31.955690+00:00"
+  "cm-serta.pt": "2026-11-22T20:00:49.655220+00:00",
+  "contaspoupanca.pt": "2026-11-22T20:00:49.655220+00:00"
  },
  "lentos": {},
  "testes_diretos": {
-  "cm-serta.pt": "2026-11-21T19:46:03.102071+00:00",
+  "cm-serta.pt": "2026-11-22T20:00:45.459399+00:00",
   "contaspoupanca.pt": "2026-11-21T20:45:44.617753+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-22T19:01:31.955690+00:00",
-  "Apoio fundo ambiental": "2026-11-22T19:01:31.955690+00:00"
+  "Sertã": "2026-11-22T20:00:49.655220+00:00",
+  "Apoio fundo ambiental": "2026-11-22T20:00:49.655220+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4244,77 +4244,78 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-22T19:01:31.955690+00:00",
+   "verificado": "2026-11-22T20:00:49.655220+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-22T15:48:21.039121+00:00",
+   "mudou": "2026-11-22T20:00:49.655220+00:00",
    "mudanca": {
     "mais": [
-     "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto"
+     "Freguesias"
     ],
     "menos": [],
     "n_mais": 1,
     "n_menos": 0
    },
    "linhas_google": [
-    "Câmara Municipal da Sertã — Início",
-    "Bem-vindo à Rede de Bibliotecas da Sertã",
-    "Turismo",
-    "Praias Fluviais, Zonas de Lazer e Piscinas",
-    "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
-    "Serviços Online",
-    "Procedimentos Concursais",
-    "Câmara Municipal",
     "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
-    "Bolsas de Estudo",
-    "Programa Férias Ativas abre candidaturas para monitores",
+    "Câmara Municipal da Sertã — Início",
+    "Serviços Online",
+    "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
     "Programa “Férias Ativas” anima verão até final de agosto",
-    "Eventos Futuros",
     "Login",
-    "Contactos da Câmara Municipal",
+    "Bem-vindo à Rede de Bibliotecas da Sertã",
+    "Eventos Futuros",
     "Águas Residuais",
-    "Abastecimento de água",
+    "Praias Fluviais, Zonas de Lazer e Piscinas",
     "Percursos Pedestres",
+    "Procedimentos Concursais",
+    "Bolsas de Estudo",
+    "Turismo",
+    "Contactos da Câmara Municipal",
+    "Câmara Municipal",
     "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
+    "Programa Férias Ativas abre candidaturas para monitores",
     "Requerimentos",
-    "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO",
-    "Casa de Espetáculos e Cultura da Sertã",
-    "Estrutura Orgânica",
-    "Editais / Avisos",
     "Comitiva da Turismo Centro de Portugal visitou o concelho da Sertã",
-    "Espaços Museológicos",
     "Revisão do PDM da Sertã mais perto da conclusão",
-    "Planos",
-    "Projetos Cofinanciados",
+    "Espaços Museológicos",
+    "Abastecimento de água",
     "Contactos Úteis",
+    "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO",
     "Regulamentos",
-    "Calendário de Reuniões",
     "BUPi",
-    "Desporto",
-    "Mercados e Feiras",
-    "Mapa de Pessoal",
+    "Estrutura Orgânica",
+    "Planos",
+    "Casa de Espetáculos e Cultura da Sertã",
+    "Editais / Avisos",
+    "Projetos Cofinanciados",
     "Espaços de Cowork e Incubação",
     "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
+    "Ficha técnica",
+    "Calendário de Reuniões",
+    "Desporto",
+    "Bolsas de Estudo do Município da Sertã com novas normas",
+    "Mercados e Feiras",
+    "Mapa de Pessoal",
+    "História e Caracterização",
     "Assembleia Municipal Jovem",
     "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto",
-    "Ficha técnica",
-    "História e Caracterização",
-    "Bolsas de Estudo do Município da Sertã com novas normas",
+    "Academia Sénior",
     "União de Freguesias de Cumeada e Marmeleiro",
-    "Faixas de Gestão de Combustível",
     "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
     "clds 5g",
-    "Academia Sénior",
+    "Freguesias",
     "Gabinete Florestal",
-    "Festas e Romarias",
+    "Faixas de Gestão de Combustível",
     "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
+    "Festas e Romarias",
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "site",
-   "erro_site": ""
+   "via": "google",
+   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4533,7 +4534,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-22T19:01:31.955690+00:00",
+   "verificado": "2026-11-22T20:00:49.655220+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4856,7 +4857,7 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Crédito à habitação"
    ],
-   "verificado": "2026-11-22T19:01:31.955690+00:00",
+   "verificado": "2026-11-22T20:00:49.655220+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
