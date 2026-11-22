@@ -603,7 +603,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Município de Vila Viçosa entrega novo apoio financeiro a família no âmbito do Programa de Apoio à Natalidade",
-   "ultima": "2026-11-22T12:46:05.913603+00:00"
+   "ultima": "2026-11-22T13:46:08.767214+00:00"
   },
   "cnnportugal.iol.pt": {
    "nome": "CNN Portugal",
@@ -1828,45 +1828,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-20T13:32:00.054660+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 537,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 490,
-     "relevantes": 1,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-20T14:31:10.379929+00:00",
    "pesquisas": [
@@ -3570,11 +3531,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-22T13:46:08.767214+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 534,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-22T12:46:05.913603+00:00",
-  "contaspoupanca.pt": "2026-11-22T12:46:05.913603+00:00"
+  "cm-serta.pt": "2026-11-22T13:46:08.767214+00:00",
+  "contaspoupanca.pt": "2026-11-22T13:46:08.767214+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3582,8 +3582,8 @@
   "contaspoupanca.pt": "2026-11-21T20:45:44.617753+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-22T12:46:05.913603+00:00",
-  "Apoio fundo ambiental": "2026-11-22T12:46:05.913603+00:00"
+  "Sertã": "2026-11-22T13:46:08.767214+00:00",
+  "Apoio fundo ambiental": "2026-11-22T13:46:08.767214+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4246,7 +4246,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-22T12:46:05.913603+00:00",
+   "verificado": "2026-11-22T13:46:08.767214+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4541,7 +4541,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-22T12:46:05.913603+00:00",
+   "verificado": "2026-11-22T13:46:08.767214+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4781,6 +4781,7 @@
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "P2P vs. Certificados de Aforro: investi o mesmo valor - quem está a ganhar? (Outubro 2026)",
     "PPR",
+    "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Carro",
     "Simulador de apoio para os carros elétricos",
@@ -4833,11 +4834,10 @@
     "Simulador de Juros compostos",
     "Combustíveis",
     "Podcast",
-    "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
@@ -4848,7 +4848,6 @@
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
-    "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
     "Os 10 fundos de investimento nacionais que mais renderam esta semana (6 novembro 2026)",
     "Máquinas volta já devolvem o dinheiro das embalagens por MB WAY: veja onde",
@@ -4865,7 +4864,7 @@
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "Crédito à habitação"
    ],
-   "verificado": "2026-11-22T12:46:05.913603+00:00",
+   "verificado": "2026-11-22T13:46:08.767214+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
