@@ -12,7 +12,7 @@
  },
  "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-21",
+ "ultimo_resumo": "2026-11-22",
  "sugeridas": {
   "radionovaantena.com": {
    "dominio": "radionovaantena.com",
@@ -590,7 +590,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Município de Vila Viçosa entrega novo apoio financeiro a família no âmbito do Programa de Apoio à Natalidade",
-   "ultima": "2026-11-22T07:45:57.665698+00:00"
+   "ultima": "2026-11-22T08:46:05.041583+00:00"
   },
   "cnnportugal.iol.pt": {
    "nome": "CNN Portugal",
@@ -913,15 +913,6 @@
  },
  "ultima_descoberta": "2026-11-21",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-16T13:31:07.616943+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-16T13:31:07.616943+00:00",
@@ -1812,50 +1803,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-22T08:46:05.041583+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-20T08:31:11.916960+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 469,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertaginen"
-   ],
-   "alertas": 0,
-   "resumo": 1,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-20T09:31:38.485364+00:00",
    "pesquisas": [
@@ -3562,11 +3521,52 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-22T08:46:05.041583+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 469,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertaginen"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-22T07:45:57.665698+00:00",
-  "contaspoupanca.pt": "2026-11-22T07:45:57.665698+00:00"
+  "cm-serta.pt": "2026-11-22T08:46:05.041583+00:00",
+  "contaspoupanca.pt": "2026-11-22T08:46:05.041583+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3574,8 +3574,8 @@
   "contaspoupanca.pt": "2026-11-21T20:45:44.617753+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-22T07:45:57.665698+00:00",
-  "Apoio fundo ambiental": "2026-11-22T07:45:57.665698+00:00"
+  "Sertã": "2026-11-22T08:46:05.041583+00:00",
+  "Apoio fundo ambiental": "2026-11-22T08:46:05.041583+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4238,7 +4238,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-22T07:45:57.665698+00:00",
+   "verificado": "2026-11-22T08:46:05.041583+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4529,7 +4529,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-22T07:45:57.665698+00:00",
+   "verificado": "2026-11-22T08:46:05.041583+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4809,8 +4809,8 @@
     "Gás",
     "Simulador de Juros compostos",
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Como poupar centenas de euros por ano: as despesas que pode negociar, reduzir ou eliminar",
     "Certificados de Aforro",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
@@ -4835,6 +4835,7 @@
     "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
     "Vamos a contas: \"Fiz um crédito pessoal para pagar a entrada da casa. Continuo a amortizar ou começo a investir para a reforma?\"",
     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
+    "P2P vs. Certificados de Aforro: investi o mesmo valor - quem está a ganhar? (Outubro 2026)",
     "Gasolina já está abaixo dos 2 euros em todas as marcas. Veja onde é mais barata esta semana",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
@@ -4842,20 +4843,19 @@
     "Entrevista: Os Certificados de Aforro em papel vão acabar. O que tenho de fazer para não perder dinheiro?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-22T07:45:57.665698+00:00",
+   "verificado": "2026-11-22T08:46:05.041583+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-22T07:45:57.665698+00:00",
+   "mudou": "2026-11-22T08:46:05.041583+00:00",
    "mudanca": {
     "mais": [
-     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
-     "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?"
+     "P2P vs. Certificados de Aforro: investi o mesmo valor - quem está a ganhar? (Outubro 2026)"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
