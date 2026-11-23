@@ -655,7 +655,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-23T17:30:56.136899+00:00"
+   "ultima": "2026-11-23T19:30:48.493038+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -951,15 +951,6 @@
  },
  "ultima_descoberta": "2026-11-23",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-18T11:30:48.925988+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-18T12:30:57.631340+00:00",
@@ -1850,48 +1841,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-23T19:30:48.493038+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-21T18:45:59.282416+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 537,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-21T19:46:08.432373+00:00",
    "pesquisas": [
@@ -3594,11 +3555,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-23T19:30:48.493038+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 578,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 534,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-23T18:31:01.028876+00:00",
-  "contaspoupanca.pt": "2026-11-23T18:31:01.028876+00:00"
+  "cm-serta.pt": "2026-11-23T19:30:48.493038+00:00",
+  "contaspoupanca.pt": "2026-11-23T19:30:48.493038+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3606,8 +3605,8 @@
   "contaspoupanca.pt": "2026-11-22T21:00:53.020742+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-23T18:31:01.028876+00:00",
-  "Apoio fundo ambiental": "2026-11-23T18:31:01.028876+00:00"
+  "Sertã": "2026-11-23T19:30:48.493038+00:00",
+  "Apoio fundo ambiental": "2026-11-23T19:30:48.493038+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4270,7 +4269,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-23T18:31:01.028876+00:00",
+   "verificado": "2026-11-23T19:30:48.493038+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4541,7 +4540,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-23T18:31:01.028876+00:00",
+   "verificado": "2026-11-23T19:30:48.493038+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4784,12 +4783,13 @@
     "PPR",
     "Simuladores",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
-    "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "Carro",
+    "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "Simulador de apoio para os carros elétricos",
     "Contas-Poupança | Dê um aumento a si próprio",
     "Últimas Notícias",
     "Simulador de amortização crédito à habitação",
+    "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Pedro Andersson",
@@ -4810,7 +4810,6 @@
     "Subscrever Newsletter",
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
-    "As 5 lições financeiras que 2025 me ensinou",
     "Termos e Condições",
     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
@@ -4833,7 +4832,6 @@
     "Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "PodTEXT | 10 maneiras inteligentes (mais uma de bónus) de usar o seu reembolso do IRS em 2025",
     "Certificados de Aforro",
-    "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "Podcast",
@@ -4852,8 +4850,8 @@
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
     "Máquinas volta já devolvem o dinheiro das embalagens por MB WAY: veja onde",
     "Revista de imprensa de 20 de novembro: Crédito habitação, rendas e OE2027",
+    "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
-    "Vamos a contas: Tenho 32.500 € no banco. Faz sentido investir agora 100 € por mês no S&P 500 e em ouro?",
     "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger",
     "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
     "Revista de imprensa de 6 de novembro: Salário mínimo, inflação e crédito à habitação",
@@ -4868,20 +4866,19 @@
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas"
    ],
-   "verificado": "2026-11-23T18:31:01.028876+00:00",
+   "verificado": "2026-11-23T19:30:48.493038+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-23T18:31:01.028876+00:00",
+   "mudou": "2026-11-23T19:30:48.493038+00:00",
    "mudanca": {
     "mais": [
-     "Combustíveis",
-     "Preço dos combustíveis na próxima semana (9 a 15 de novembro)"
+     "ATESTADO MULTIUSO – Quem pode ter e para que serve?"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
