@@ -1,6 +1,5 @@
 {
  "vistos": {
-  "3b0df607940fbbba": "2026-11-09T12:46:00.406852+00:00",
   "461524cdb57ccdea": "2026-11-10T13:46:00.075469+00:00",
   "77a5cf07f29cf865": "2026-11-10T20:46:07.155183+00:00",
   "1ef7f25deb2d9948": "2026-11-12T17:01:06.994916+00:00",
@@ -656,7 +655,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-23T12:32:07.437626+00:00"
+   "ultima": "2026-11-23T13:31:04.055766+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -952,24 +951,6 @@
  },
  "ultima_descoberta": "2026-11-23",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-17T15:30:55.565115+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-17T17:30:50.906693+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-17T18:30:48.718825+00:00",
@@ -1851,48 +1832,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-23T13:31:04.055766+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-23T13:31:04.055766+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-21T12:30:57.588360+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 537,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-21T13:31:12.778853+00:00",
    "pesquisas": [
@@ -3598,11 +3558,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-23T13:31:04.055766+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 537,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 489,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "pelo_google": [
+    "Contas poupanças"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-23T12:32:07.437626+00:00",
-  "contaspoupanca.pt": "2026-11-23T12:32:07.437626+00:00"
+  "cm-serta.pt": "2026-11-23T13:31:04.055766+00:00",
+  "contaspoupanca.pt": "2026-11-23T13:31:04.055766+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3610,8 +3609,8 @@
   "contaspoupanca.pt": "2026-11-22T21:00:53.020742+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-23T12:32:07.437626+00:00",
-  "Apoio fundo ambiental": "2026-11-23T12:32:07.437626+00:00"
+  "Sertã": "2026-11-23T13:31:04.055766+00:00",
+  "Apoio fundo ambiental": "2026-11-23T13:31:04.055766+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4274,7 +4273,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-23T12:32:07.437626+00:00",
+   "verificado": "2026-11-23T13:31:04.055766+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4343,8 +4342,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "google",
-   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   "via": "site",
+   "erro_site": ""
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4453,21 +4452,21 @@
     "Última hora",
     "CERNACHE DO BONJARDIM: Estrada descendente de S. Macário condicionada",
     "Última hora",
-    "REGIÃO: Mau tempo provoca inundações e derrocadas",
-    "Última hora",
-    "SERTÃ: Vereador do PSD questiona futuro de edifícios municipais",
-    "Última hora",
     "Todas as notícias",
     "Início",
     "Notícias",
     "Todas as notícias",
+    "PENAMACOR: Município aprova investimento de 2,15 milhões no quartel dos bombeiros",
+    "Penamacor",
+    "Beira Baixa",
+    "23-11-2026",
+    "Executivo deu também luz verde ao regulamento de apoio ao comércio e restauração e atribuiu 40 mil euros à União de Freguesias de Pedrógão de São Pedro e Bemposta.",
     "SERTÃ/Hóquei: Vikings com vitória expressiva no Campeonato Nacional de Hóquei no Gelo 3x3",
     "Sertã",
     "Beira Baixa",
     "Desporto",
     "23-11-2026",
     "Última hora",
-    "Formação da freguesia do Castelo goleou o Hockey Club do Porto por 20-9 na 1.ª jornada disputada na Serra da Estrela",
     "CERNACHE DO BONJARDIM: Vitória de Sernache eliminado da Taça de Portugal",
     "Cernache do Bonjardim",
     "Sertã",
@@ -4495,7 +4494,6 @@
     "Beira Baixa",
     "Região",
     "21-11-2026",
-    "Última hora",
     "CASTANHEIRA DE PERA: \"Regulamento de Gestão de Combustíveis\" aprovado",
     "Castanheira de Pera",
     "Região",
@@ -4504,7 +4502,6 @@
     "Sertã",
     "Beira Baixa",
     "21-11-2026",
-    "Última hora",
     "PAMPILHOSA DA SERRA: Município acolheu I Congresso Internacional do Medronheiro e do Medronho",
     "Pampilhosa da Serra",
     "Região",
@@ -4527,10 +4524,6 @@
     "Vila de Rei",
     "Beira Baixa",
     "20-11-2026",
-    "SERTÃ: “Natal no Comércio Tradicional” irá entregar mais de 3500 euros em prémios",
-    "Sertã",
-    "Beira Baixa",
-    "20-11-2026",
     "1",
     "2",
     "3",
@@ -4544,28 +4537,31 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-23T12:32:07.437626+00:00",
+   "verificado": "2026-11-23T13:31:04.055766+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-23T12:32:07.437626+00:00",
+   "mudou": "2026-11-23T13:31:04.055766+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ/Hóquei: Vikings com vitória expressiva no Campeonato Nacional de Hóquei no Gelo 3x3",
-     "Última hora",
-     "SERTÃ/Hóquei: Vikings com vitória expressiva no Campeonato Nacional de Hóquei no Gelo 3x3",
-     "Sertã",
-     "Última hora",
-     "Formação da freguesia do Castelo goleou o Hockey Club do Porto por 20-9 na 1.ª jornada disputada na Serra da Estrela"
+     "PENAMACOR: Município aprova investimento de 2,15 milhões no quartel dos bombeiros",
+     "Penamacor",
+     "Executivo deu também luz verde ao regulamento de apoio ao comércio e restauração e atribuiu 40 mil euros à União de Freguesias de Pedrógão de São Pedro e Bemposta."
     ],
     "menos": [
-     "Formação de Cernache do Bonjardim perdeu por 0-1 em casa, na 4.ª eliminatória",
-     "VILA DE REI: ADRC Estevais promove Passeio Pedestre ‘Rota dos Z’",
-     "Vila de Rei"
+     "REGIÃO: Mau tempo provoca inundações e derrocadas",
+     "Última hora",
+     "SERTÃ: Vereador do PSD questiona futuro de edifícios municipais",
+     "Última hora",
+     "Formação da freguesia do Castelo goleou o Hockey Club do Porto por 20-9 na 1.ª jornada disputada na Serra da Estrela",
+     "Última hora",
+     "Última hora",
+     "SERTÃ: “Natal no Comércio Tradicional” irá entregar mais de 3500 euros em prémios",
+     "Sertã"
     ],
-    "n_mais": 6,
-    "n_menos": 3
+    "n_mais": 3,
+    "n_menos": 9
    },
    "via": "site",
    "erro_site": ""
@@ -4782,6 +4778,7 @@
    "linhas_google": [
     "Os meus investimentos caíram 17% . Vendo, reforço ou espero?",
     "Simulador de Juros compostos",
+    "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
     "Bolsa esta semana: Wall Street afunda 8,6% e entra em correção",
     "P2P vs. Certificados de Aforro: investi o mesmo valor - quem está a ganhar? (Outubro 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
@@ -4839,16 +4836,16 @@
     "Certificados de Aforro",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Podcast",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
     "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?",
-    "Vamos a contas: \"Queremos amortizar para reduzir o prazo do crédito mas o banco não deixa. O que fazemos?\"",
     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
+    "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "Propinas não vão aumentar em 2027: veja quanto vai pagar e o que passa a ser gratuito",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
@@ -4856,7 +4853,6 @@
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Revista de imprensa de 20 de novembro: Crédito habitação, rendas e OE2027",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
-    "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
     "Vamos a contas: Tenho 32.500 € no banco. Faz sentido investir agora 100 € por mês no S&P 500 e em ouro?",
     "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger",
     "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
@@ -4868,21 +4864,19 @@
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-23T12:32:07.437626+00:00",
+   "verificado": "2026-11-23T13:31:04.055766+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-23T12:32:07.437626+00:00",
+   "mudou": "2026-11-23T13:31:04.055766+00:00",
    "mudanca": {
     "mais": [
-     "Propinas não vão aumentar em 2027: veja quanto vai pagar e o que passa a ser gratuito",
-     "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
-     "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger"
+     "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições"
     ],
     "menos": [],
-    "n_mais": 3,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
