@@ -655,7 +655,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-23T14:30:33.751074+00:00"
+   "ultima": "2026-11-23T15:30:51.023694+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -951,15 +951,6 @@
  },
  "ultima_descoberta": "2026-11-23",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-17T18:30:48.718825+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-17T19:30:47.383766+00:00",
@@ -1850,49 +1841,18 @@
    "fonte": "cm-serta.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-23T15:30:51.023694+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-21T14:31:04.182082+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 537,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 469,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici",
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-21T15:31:10.923746+00:00",
    "pesquisas": [
@@ -3594,11 +3554,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-23T15:30:51.023694+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 526,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 532,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-23T14:30:33.751074+00:00",
-  "contaspoupanca.pt": "2026-11-23T14:30:33.751074+00:00"
+  "cm-serta.pt": "2026-11-23T15:30:51.023694+00:00",
+  "contaspoupanca.pt": "2026-11-23T15:30:51.023694+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3606,8 +3606,8 @@
   "contaspoupanca.pt": "2026-11-22T21:00:53.020742+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-23T14:30:33.751074+00:00",
-  "Apoio fundo ambiental": "2026-11-23T14:30:33.751074+00:00"
+  "Sertã": "2026-11-23T15:30:51.023694+00:00",
+  "Apoio fundo ambiental": "2026-11-23T15:30:51.023694+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4270,9 +4270,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-23T14:30:33.751074+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-23T15:30:51.023694+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-23T14:30:33.751074+00:00",
@@ -4536,7 +4536,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-23T14:30:33.751074+00:00",
+   "verificado": "2026-11-23T15:30:51.023694+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4810,6 +4810,7 @@
     "Subscrever Newsletter",
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
+    "As 5 lições financeiras que 2025 me ensinou",
     "Termos e Condições",
     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
@@ -4817,7 +4818,6 @@
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "IMI",
-    "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
     "Investimentos",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
@@ -4832,7 +4832,9 @@
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "PodTEXT | 10 maneiras inteligentes (mais uma de bónus) de usar o seu reembolso do IRS em 2025",
     "Certificados de Aforro",
+    "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
+    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
@@ -4862,19 +4864,21 @@
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-23T14:30:33.751074+00:00",
+   "verificado": "2026-11-23T15:30:51.023694+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-23T13:31:04.055766+00:00",
+   "mudou": "2026-11-23T15:30:51.023694+00:00",
    "mudanca": {
     "mais": [
-     "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições"
+     "As 5 lições financeiras que 2025 me ensinou",
+     "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
+     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 3,
     "n_menos": 0
    }
   }
