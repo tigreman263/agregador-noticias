@@ -655,7 +655,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-23T19:30:48.493038+00:00"
+   "ultima": "2026-11-23T20:30:51.025187+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -951,15 +951,6 @@
  },
  "ultima_descoberta": "2026-11-23",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-18T12:30:57.631340+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-18T13:30:50.314437+00:00",
@@ -1850,47 +1841,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-23T20:30:51.025187+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-21T19:46:08.432373+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 618,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 659,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-21T20:46:19.097719+00:00",
    "pesquisas": [
@@ -3593,20 +3555,60 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-23T20:30:51.025187+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 527,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 534,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-23T19:30:48.493038+00:00",
-  "contaspoupanca.pt": "2026-11-23T19:30:48.493038+00:00"
+  "cm-serta.pt": "2026-11-23T20:30:51.025187+00:00",
+  "contaspoupanca.pt": "2026-11-23T20:30:51.025187+00:00"
  },
  "lentos": {},
  "testes_diretos": {
-  "cm-serta.pt": "2026-11-22T20:00:45.459399+00:00",
+  "cm-serta.pt": "2026-11-23T20:30:50.814496+00:00",
   "contaspoupanca.pt": "2026-11-22T21:00:53.020742+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-23T19:30:48.493038+00:00",
-  "Apoio fundo ambiental": "2026-11-23T19:30:48.493038+00:00"
+  "Sertã": "2026-11-23T20:30:51.025187+00:00",
+  "Apoio fundo ambiental": "2026-11-23T20:30:51.025187+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4269,9 +4271,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-23T19:30:48.493038+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-23T20:30:51.025187+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-23T18:31:01.028876+00:00",
@@ -4540,7 +4542,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-23T19:30:48.493038+00:00",
+   "verificado": "2026-11-23T20:30:51.025187+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4777,108 +4779,136 @@
     "Os meus investimentos caíram 17% . Vendo, reforço ou espero?",
     "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
     "Simulador de Juros compostos",
+    "Simulador de prestação do crédito à habitação: descubra quanto vai pagar na próxima revisão da Euribor",
+    "Simulador de IRS: Quanto devolve o seu município?",
     "Bolsa esta semana: Wall Street afunda 8,6% e entra em correção",
     "P2P vs. Certificados de Aforro: investi o mesmo valor - quem está a ganhar? (Outubro 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "PPR",
     "Simuladores",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
+    "ETF",
     "Carro",
     "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "Simulador de apoio para os carros elétricos",
     "Contas-Poupança | Dê um aumento a si próprio",
     "Últimas Notícias",
-    "Simulador de amortização crédito à habitação",
     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
+    "IMI: pode estar a pagar imposto a mais (e como saber hoje)",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
+    "Simulador de amortização crédito à habitação",
     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
+    "PODCAST | #127 – Eletricidade e gás – Qual é a diferença entre Mercado Liberalizado ou Regulado?",
+    "ERSE lançou hoje novo simulador de eletricidade e gás",
+    "E-Lar fecha candidaturas após esgotar verba em 6 dias",
+    "GPL em 2026: Ainda compensa converter o carro para gás?",
+    "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
+    "PODCAST | #85 – “Eu não tenho jeito nenhum para lidar com dinheiro…”",
+    "PODCAST | #115 – A Euribor a 6 meses também já está positiva – O que é que eu faço?",
+    "PODCAST | #110 – O meu PPR está negativo. É normal?",
+    "PODCAST | #99 – Devo tirar o dinheiro dos investimentos para fazer o Fundo de Emergência?",
+    "PODCAST | #149 – Os Combustíveis São Todos Iguais? Vale a pena comprar aditivados? (Parte II)",
+    "PODCAST | #81 – Como posso melhorar a minha vida se ganho pouco?",
+    "Aproveite o confinamento para pôr as contas em ordem",
+    "PODCAST | #78 – (Para recibos verdes) Como posso rentabilizar o IVA trimestral?",
+    "O que muda no arrendamento com as novas medidas de desagravamento fiscal?",
+    "PODCAST | #125 – Onde devo Investir O meu Fundo De Emergência? (A pergunta do Tiago Castelão)",
+    "PODCAST | #83 – Por onde começo se quiser começar a investir? (P&R)",
+    "PODCAST | #60 – Investir na bolsa é para mim? (Passo a passo)",
+    "PODCAST | #33 – Sabe calcular a Prestação do seu crédito à habitação?",
+    "PODCAST | #93 – Devo ter todo o meu dinheiro só num banco? (A pergunta da Bita)",
     "O que é a liberdade financeira e como a posso alcançar?",
+    "Automatizar poupanças e investimentos: a forma mais simples de garantir resultados",
+    "Se quiser investir é melhor um PPR ou um ETF? (Mês #34 a #38 – Outubro 24)",
     "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
     "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
     "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
+    "Como ter mais dinheiro ao fim do mês em 2026, mesmo ganhando pouco",
     "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
+    "IRS Mini-dúvida 1 – As rendas não me aparecem",
+    "Pacote habitação 2026: As novas regras que podem fazer poupar milhares de euros em impostos (isenção de mais-valias)",
+    "Exemplos reais de Orçamento mensal (Excel) para pôr as suas contas em ordem",
+    "Tem eletricidade bi-horária? As horas mais baratas vão mudar a partir de 2027",
+    "Via Verde começa a cobrar mensalidade para pagar estacionamento e outros serviços",
+    "Esta semana no Podcast: Organização financeira, depósitos a prazo e PPR. Já ouviu todos?",
+    "Certificados de Aforro voltam a perder rentabilidade em junho",
+    "E-Lar: Faça já o registo antes do programa começar para receber os eletrodomésticos grátis",
+    "PODCAST | #53 – Vale a pena ser poupado?",
     "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
+    "Contas Poupança 16 Setembro",
+    "IRS – Sabia que se tem Atestado Multiuso pode deduzir o seguro de vida?",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
     "IRS",
     "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
     "Subscrever Newsletter",
+    "Esta semana no podcast Contas-poupança: três decisões financeiras que podem fazer muita diferença nas suas contas",
+    "Episódios do podcast desta semana – O que o apagão me ensinou sobre dinheiro? E uma pergunta essencial sobre PPRs",
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
+    "IRS e atestados, seguro de vida e o GPL compensa? Os 3 episódios desta semana",
+    "Política de Cookies",
+    "Revolut lança sucursal em Portugal e avança com disponibilização de IBAN português",
+    "Autoridade da Concorrência quer comparador de depósitos. Objetivo é ajudar os portugueses a ganhar mais juros",
+    "Como faço para vender a eletricidade dos meus painéis solares?",
+    "Entrevista: André Pedro, CEO da Manie, explica como funciona a plataforma para poupar na eletricidade de forma automática",
+    "Investir em PPR: Quanto estou a ganhar (ou a perder) em agosto de 2025",
+    "A eletricidade vai aumentar este mês por causa do apagão?",
+    "Ganhamos bem e mesmo assim não sobra dinheiro: o que estamos a fazer mal? (Reposição)",
+    "Vamos a Contas: Bolsas a cair — devo investir agora ou esperar?",
+    "Entrevista: Como baixar o IMI, com Magda Canas, jurista da DECO PROTESTE",
+    "Investir em PPR: Quanto estou a ganhar (ou a perder) em dezembro de 2025",
+    "COMBUSTÍVEIS | Qual é o preço justo esta semana? (15 a 21 de abril)",
+    "Grupo de trabalho da Segurança Social propõe mecanismos para reforçar reformas",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
-    "Termos e Condições",
-    "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
-    "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
-    "Tem o PPR errado? Compare todos os PPR em poucos minutos",
-    "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
-    "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
-    "IMI",
-    "Investimentos",
-    "PodTEXT | Como investir para os filhos e pagar menos impostos",
-    "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
-    "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
-    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
-    "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
-    "Os pais que investem para os filhos e poupam milhares de euros em impostos",
-    "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
-    "Gás",
-    "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
-    "Combustíveis",
-    "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
-    "Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
-    "PodTEXT | 10 maneiras inteligentes (mais uma de bónus) de usar o seu reembolso do IRS em 2025",
-    "Certificados de Aforro",
-    "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
-    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
-    "Podcast",
-    "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
-    "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
-    "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
-    "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
-    "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
-    "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
-    "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?",
-    "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
-    "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-    "Propinas não vão aumentar em 2027: veja quanto vai pagar e o que passa a ser gratuito",
-    "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
-    "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
-    "Máquinas volta já devolvem o dinheiro das embalagens por MB WAY: veja onde",
-    "Revista de imprensa de 20 de novembro: Crédito habitação, rendas e OE2027",
-    "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
-    "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
-    "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger",
-    "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
-    "Revista de imprensa de 6 de novembro: Salário mínimo, inflação e crédito à habitação",
-    "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
-    "E-Lar: novo apoio em 2027 para trocar fogões e esquentadores a gás em zonas rurais",
-    "Gasolina já está abaixo dos 2 euros em todas as marcas. Veja onde é mais barata esta semana",
-    "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
-    "Revista de imprensa de 23 de novembro: Pensões, combustíveis e seguros do crédito casa",
-    "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
-    "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
-    "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
-    "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
-    "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas"
+    "VÍDEO - Conheça os preços da DIGI e da concorrência nas telecomunicações",
+    "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
+    "Entrevista: Certificados de Aforro - Sandra Moás, Diretora de retalho dos CTT, explica as recentes alterações",
+    "NOVA ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (20 a 26 de julho)",
+    "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Junho 2026)",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
+    "ELETRICIDADE | Qual é a empresa mais barata neste momento? (Abril 2024)",
+    "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
+    "Vamos a contas: Como posso evitar as comissões dos bancos por ter lá um PPR?",
+    "PodTEXT | Aumentaram-me as comissões no banco porque estou de baixa. É legal?",
+    "Atualização ISP | Preço dos combustíveis na próxima semana (3 a 9 de agosto)"
    ],
-   "verificado": "2026-11-23T19:30:48.493038+00:00",
+   "verificado": "2026-11-23T20:30:51.025187+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-23T19:30:48.493038+00:00",
+   "mudou": "2026-11-23T20:30:51.025187+00:00",
    "mudanca": {
     "mais": [
-     "ATESTADO MULTIUSO – Quem pode ter e para que serve?"
+     "Simulador de prestação do crédito à habitação: descubra quanto vai pagar na próxima revisão da Euribor",
+     "Simulador de IRS: Quanto devolve o seu município?",
+     "ETF",
+     "IMI: pode estar a pagar imposto a mais (e como saber hoje)",
+     "PODCAST | #127 – Eletricidade e gás – Qual é a diferença entre Mercado Liberalizado ou Regulado?",
+     "ERSE lançou hoje novo simulador de eletricidade e gás",
+     "E-Lar fecha candidaturas após esgotar verba em 6 dias",
+     "GPL em 2026: Ainda compensa converter o carro para gás?",
+     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
+     "PODCAST | #85 – “Eu não tenho jeito nenhum para lidar com dinheiro…”",
+     "PODCAST | #115 – A Euribor a 6 meses também já está positiva – O que é que eu faço?",
+     "PODCAST | #110 – O meu PPR está negativo. É normal?",
+     "PODCAST | #99 – Devo tirar o dinheiro dos investimentos para fazer o Fundo de Emergência?",
+     "PODCAST | #149 – Os Combustíveis São Todos Iguais? Vale a pena comprar aditivados? (Parte II)",
+     "PODCAST | #81 – Como posso melhorar a minha vida se ganho pouco?",
+     "Aproveite o confinamento para pôr as contas em ordem",
+     "PODCAST | #78 – (Para recibos verdes) Como posso rentabilizar o IVA trimestral?",
+     "O que muda no arrendamento com as novas medidas de desagravamento fiscal?",
+     "PODCAST | #125 – Onde devo Investir O meu Fundo De Emergência? (A pergunta do Tiago Castelão)",
+     "PODCAST | #83 – Por onde começo se quiser começar a investir? (P&R)"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 64,
     "n_menos": 0
    }
   }
