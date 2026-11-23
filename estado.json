@@ -655,7 +655,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-23T15:30:51.023694+00:00"
+   "ultima": "2026-11-23T16:30:59.234833+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -951,33 +951,6 @@
  },
  "ultima_descoberta": "2026-11-23",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-17T19:30:47.383766+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-17T19:30:47.383766+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-17T20:30:51.317437+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-17T21:30:45.393591+00:00",
@@ -1850,48 +1823,36 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-23T16:30:59.234833+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-23T16:30:59.234833+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-23T16:30:59.234833+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-21T15:31:10.923746+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 569,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 1
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-21T16:31:01.159643+00:00",
    "pesquisas": [
@@ -3594,11 +3555,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-23T16:30:59.234833+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 578,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 533,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 3,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-23T15:30:51.023694+00:00",
-  "contaspoupanca.pt": "2026-11-23T15:30:51.023694+00:00"
+  "cm-serta.pt": "2026-11-23T16:30:59.234833+00:00",
+  "contaspoupanca.pt": "2026-11-23T16:30:59.234833+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3606,8 +3605,8 @@
   "contaspoupanca.pt": "2026-11-22T21:00:53.020742+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-23T15:30:51.023694+00:00",
-  "Apoio fundo ambiental": "2026-11-23T15:30:51.023694+00:00"
+  "Sertã": "2026-11-23T16:30:59.234833+00:00",
+  "Apoio fundo ambiental": "2026-11-23T16:30:59.234833+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4270,19 +4269,18 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-23T15:30:51.023694+00:00",
-   "falhas": 1,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-23T16:30:59.234833+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-23T14:30:33.751074+00:00",
+   "mudou": "2026-11-23T16:30:59.234833+00:00",
    "mudanca": {
     "mais": [
-     "Comitiva da Turismo Centro de Portugal visitou o concelho da Sertã",
-     "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO"
+     "Atendimento no Município para apoio após a Tempestade Kristin"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    },
    "linhas_google": [
@@ -4292,6 +4290,7 @@
     "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
     "Programa “Férias Ativas” anima verão até final de agosto",
     "Login",
+    "Atendimento no Município para apoio após a Tempestade Kristin",
     "Bem-vindo à Rede de Bibliotecas da Sertã",
     "Eventos Futuros",
     "Águas Residuais",
@@ -4305,12 +4304,10 @@
     "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
     "Programa Férias Ativas abre candidaturas para monitores",
     "Requerimentos",
-    "Comitiva da Turismo Centro de Portugal visitou o concelho da Sertã",
     "Revisão do PDM da Sertã mais perto da conclusão",
     "Espaços Museológicos",
     "Abastecimento de água",
     "Contactos Úteis",
-    "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO",
     "Regulamentos",
     "BUPi",
     "Estrutura Orgânica",
@@ -4443,6 +4440,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ: Concelho acolheu estreia nacional da peça “Quem Matou Edgar Allan Poe?”",
+    "Última hora",
     "SERTÃ/Hóquei: Vikings com vitória expressiva no Campeonato Nacional de Hóquei no Gelo 3x3",
     "Última hora",
     "CERNACHE DO BONJARDIM: Vitória de Sernache eliminado da Taça de Portugal",
@@ -4455,11 +4454,21 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "FERREIRA DO ZÊZERE: Município dinamiza comércio local neste Natal",
+    "Ferreira do Zêzere",
+    "Médio Tejo",
+    "23-11-2026",
+    "Iniciativa decorre de 1 a 31 de dezembro",
+    "SERTÃ: Concelho acolheu estreia nacional da peça “Quem Matou Edgar Allan Poe?”",
+    "Sardoal",
+    "Sertã",
+    "Beira Baixa",
+    "23-11-2026",
+    "Última hora",
     "PENAMACOR: Município aprova investimento de 2,15 milhões no quartel dos bombeiros",
     "Penamacor",
     "Beira Baixa",
     "23-11-2026",
-    "Executivo deu também luz verde ao regulamento de apoio ao comércio e restauração e atribuiu 40 mil euros à União de Freguesias de Pedrógão de São Pedro e Bemposta.",
     "SERTÃ/Hóquei: Vikings com vitória expressiva no Campeonato Nacional de Hóquei no Gelo 3x3",
     "Sertã",
     "Beira Baixa",
@@ -4512,17 +4521,6 @@
     "Vila de Rei",
     "Beira Baixa",
     "21-11-2026",
-    "REGIÃO/Futebol: Fim de semana desportivo na Condestável",
-    "Oleiros",
-    "Cernache do Bonjardim",
-    "Proença-a-Nova",
-    "Médio Tejo",
-    "Desporto",
-    "20-11-2026",
-    "VILA DE REI: Concerto de Natal e luzes dão início às festividades",
-    "Vila de Rei",
-    "Beira Baixa",
-    "20-11-2026",
     "1",
     "2",
     "3",
@@ -4536,31 +4534,36 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-23T15:30:51.023694+00:00",
+   "verificado": "2026-11-23T16:30:59.234833+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-23T13:31:04.055766+00:00",
+   "mudou": "2026-11-23T16:30:59.234833+00:00",
    "mudanca": {
     "mais": [
-     "PENAMACOR: Município aprova investimento de 2,15 milhões no quartel dos bombeiros",
-     "Penamacor",
-     "Executivo deu também luz verde ao regulamento de apoio ao comércio e restauração e atribuiu 40 mil euros à União de Freguesias de Pedrógão de São Pedro e Bemposta."
+     "SERTÃ: Concelho acolheu estreia nacional da peça “Quem Matou Edgar Allan Poe?”",
+     "Última hora",
+     "FERREIRA DO ZÊZERE: Município dinamiza comércio local neste Natal",
+     "Ferreira do Zêzere",
+     "Iniciativa decorre de 1 a 31 de dezembro",
+     "SERTÃ: Concelho acolheu estreia nacional da peça “Quem Matou Edgar Allan Poe?”",
+     "Sardoal",
+     "Sertã",
+     "Última hora"
     ],
     "menos": [
-     "REGIÃO: Mau tempo provoca inundações e derrocadas",
-     "Última hora",
-     "SERTÃ: Vereador do PSD questiona futuro de edifícios municipais",
-     "Última hora",
-     "Formação da freguesia do Castelo goleou o Hockey Club do Porto por 20-9 na 1.ª jornada disputada na Serra da Estrela",
-     "Última hora",
-     "Última hora",
-     "SERTÃ: “Natal no Comércio Tradicional” irá entregar mais de 3500 euros em prémios",
-     "Sertã"
+     "Executivo deu também luz verde ao regulamento de apoio ao comércio e restauração e atribuiu 40 mil euros à União de Freguesias de Pedrógão de São Pedro e Bemposta.",
+     "REGIÃO/Futebol: Fim de semana desportivo na Condestável",
+     "Oleiros",
+     "Cernache do Bonjardim",
+     "Proença-a-Nova",
+     "Desporto",
+     "VILA DE REI: Concerto de Natal e luzes dão início às festividades",
+     "Vila de Rei"
     ],
-    "n_mais": 3,
-    "n_menos": 9
+    "n_mais": 9,
+    "n_menos": 8
    },
    "via": "site",
    "erro_site": ""
@@ -4862,23 +4865,22 @@
     "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
-    "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
+    "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
+    "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas"
    ],
-   "verificado": "2026-11-23T15:30:51.023694+00:00",
+   "verificado": "2026-11-23T16:30:59.234833+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-23T15:30:51.023694+00:00",
+   "mudou": "2026-11-23T16:30:59.234833+00:00",
    "mudanca": {
     "mais": [
-     "As 5 lições financeiras que 2025 me ensinou",
-     "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
-     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana"
+     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas"
     ],
     "menos": [],
-    "n_mais": 3,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
