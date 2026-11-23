@@ -9,7 +9,8 @@
   "7607f0d295b56dbb": "2026-11-19T18:31:42.279871+00:00",
   "072cdd6ee9e396fd": "2026-11-20T13:32:00.054660+00:00",
   "bc0abb0a1dc500c2": "2026-11-23T12:32:07.437626+00:00",
-  "338eee09ef9812be": "2026-11-23T21:30:47.792900+00:00"
+  "338eee09ef9812be": "2026-11-23T21:30:47.792900+00:00",
+  "9f6723afe79e3dbf": "2026-11-23T22:30:46.267412+00:00"
  },
  "resumo": [
   {
@@ -57,6 +58,30 @@
     "338eee09ef9812be"
    ],
    "ts": "2026-11-23T21:30:47.792900+00:00"
+  },
+  {
+   "titulo": "OE2027: Parlamento alarga tarifa social de energia e assegura execução do Vale Eficiência",
+   "link": "https://sapo.pt/artigo/oe2027-parlamento-alarga-tarifa-social-de-energia-e-assegura-execucao-do-vale-eficiencia-6b04ba995fe32317ae0e33ca",
+   "dominio": "sapo.pt",
+   "fonte": "SAPO",
+   "confiavel": true,
+   "nota": 42.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Vale Eficiência"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 2,
+   "data": "2026-11-23T22:12:27+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "9f6723afe79e3dbf",
+    "9f6723afe79e3dbf"
+   ],
+   "ts": "2026-11-23T22:30:46.267412+00:00"
   }
  ],
  "adiados": [],
@@ -106,7 +131,6 @@
    "nome": "SAPO",
    "site": "https://sapo.pt",
    "ids": [
-    "2ebddc8f6582ce2d",
     "607a60efa2ab6b9d",
     "86e21b6273ef5fd5",
     "30d90b08fb70f0c7",
@@ -125,14 +149,15 @@
     "3dd133dba22282ca",
     "f13ca35730748cfa",
     "6df922739d84e757",
-    "1ef7f25deb2d9948"
+    "1ef7f25deb2d9948",
+    "9f6723afe79e3dbf"
    ],
    "pesquisas": [
     "Sertã",
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-13T09:01:01.004976+00:00"
+   "ultima": "2026-11-23T22:30:46.267412+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -679,7 +704,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-23T21:30:47.792900+00:00"
+   "ultima": "2026-11-23T22:30:46.267412+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -983,19 +1008,22 @@
    ],
    "exemplo": "Vale Eficiência II reabre com apoio único de até 1.599 € para candidaturas retidas",
    "ultima": "2026-11-23T21:30:47.792900+00:00"
+  },
+  "executivedigest.sapo.pt": {
+   "nome": "Executive Digest",
+   "site": "https://executivedigest.sapo.pt",
+   "ids": [
+    "9f6723afe79e3dbf"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "OE2027: Parlamento alarga tarifa social de energia e assegura execução do Vale Eficiência",
+   "ultima": "2026-11-23T22:30:46.267412+00:00"
   }
  },
  "ultima_descoberta": "2026-11-23",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-18T15:30:51.218440+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-18T17:30:47.468408+00:00",
@@ -1886,48 +1914,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-23T22:30:46.267412+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-21T21:46:06.417170+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 529,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-21T22:45:57.693923+00:00",
    "pesquisas": [
@@ -3631,11 +3629,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-23T22:30:46.267412+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 749,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 659,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "Portal Energia",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-23T21:30:47.792900+00:00",
-  "contaspoupanca.pt": "2026-11-23T21:30:47.792900+00:00"
+  "cm-serta.pt": "2026-11-23T22:30:46.267412+00:00",
+  "contaspoupanca.pt": "2026-11-23T22:30:46.267412+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3643,8 +3681,8 @@
   "contaspoupanca.pt": "2026-11-23T21:30:47.525176+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-23T21:30:47.792900+00:00",
-  "Apoio fundo ambiental": "2026-11-23T21:30:47.792900+00:00"
+  "Sertã": "2026-11-23T22:30:46.267412+00:00",
+  "Apoio fundo ambiental": "2026-11-23T22:30:46.267412+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4307,9 +4345,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-23T21:30:47.792900+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-23T22:30:46.267412+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-23T18:31:01.028876+00:00",
@@ -4581,7 +4619,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-23T21:30:47.792900+00:00",
+   "verificado": "2026-11-23T22:30:46.267412+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4819,75 +4857,76 @@
   },
   "https://contaspoupanca.pt/": {
    "linhas_google": [
+    "Contas-Poupança | Dê um aumento a si próprio",
     "Os meus investimentos caíram 17% . Vendo, reforço ou espero?",
     "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
+    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "P2P vs. Certificados de Aforro: investi o mesmo valor - quem está a ganhar? (Outubro 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
-    "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
     "PPR",
     "Simuladores",
+    "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
     "Carro",
     "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "Simulador de apoio para os carros elétricos",
-    "Simulador de amortização crédito à habitação",
-    "Contas-Poupança | Dê um aumento a si próprio",
     "Últimas Notícias",
     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
+    "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
+    "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
-    "Pedro Andersson",
-    "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
+    "Simulador de amortização crédito à habitação",
     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
-    "Política de Privacidade",
     "O que é a liberdade financeira e como a posso alcançar?",
-    "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
-    "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
-    "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
-    "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
-    "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
-    "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
+    "Política de Privacidade",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
+    "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
+    "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
+    "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
+    "VÍDEO - IRS Jovem: O que mudou e como pode ganhar mais dinheiro em 2025",
+    "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
-    "Subscrever Newsletter",
-    "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "IRS",
+    "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
+    "Subscrever Newsletter",
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
+    "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "As 5 lições financeiras que 2025 me ensinou",
+    "Termos e Condições",
     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
+    "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
-    "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "IMI",
-    "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
-    "Termos e Condições",
-    "PodTEXT | Como investir para os filhos e pagar menos impostos",
     "Investimentos",
+    "PodTEXT | Como investir para os filhos e pagar menos impostos",
+    "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
-    "Os pais que investem para os filhos e poupam milhares de euros em impostos",
-    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
-    "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
-    "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
+    "Os pais que investem para os filhos e poupam milhares de euros em impostos",
+    "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
+    "Gás",
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
-    "Certificados de Aforro",
-    "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
-    "PodTEXT | 10 maneiras inteligentes (mais uma de bónus) de usar o seu reembolso do IRS em 2025",
-    "Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "Combustíveis",
+    "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
+    "Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
+    "PodTEXT | 10 maneiras inteligentes (mais uma de bónus) de usar o seu reembolso do IRS em 2025",
+    "Certificados de Aforro",
     "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
+    "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
-    "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
-    "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
+    "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
     "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?",
     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
+    "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "Propinas não vão aumentar em 2027: veja quanto vai pagar e o que passa a ser gratuito",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
@@ -4904,43 +4943,23 @@
     "Revista de imprensa de 23 de novembro: Pensões, combustíveis e seguros do crédito casa",
     "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
-    "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas"
    ],
-   "verificado": "2026-11-23T21:30:47.792900+00:00",
+   "verificado": "2026-11-23T22:30:46.267412+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-23T21:30:47.792900+00:00",
+   "mudou": "2026-11-23T22:30:46.267412+00:00",
    "mudanca": {
     "mais": [
-     "As 5 lições financeiras que 2025 me ensinou",
-     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
-     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
-     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
-     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
-     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
-     "IMI",
-     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
-     "Termos e Condições",
-     "PodTEXT | Como investir para os filhos e pagar menos impostos",
-     "Investimentos",
-     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
-     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
-     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
-     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
-     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
-     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
-     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
-     "Certificados de Aforro",
-     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida"
+     "Gás"
     ],
     "menos": [],
-    "n_mais": 54,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
