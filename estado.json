@@ -928,15 +928,6 @@
  "enviados": [
   {
    "tipo": "pagina",
-   "ts": "2026-11-17T11:30:47.550763+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
    "ts": "2026-11-17T12:30:47.508777+00:00",
    "titulo": "Mudou: Radio condestável",
    "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
@@ -1825,48 +1816,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-23T11:18:28.134475+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-21T10:31:05.267635+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 538,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 4,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-21T11:30:51.903687+00:00",
    "pesquisas": [
@@ -3572,11 +3533,52 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-23T11:18:28.134475+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 459,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 459,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertagin",
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efi",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 4,
+    "mudaram": 1,
+    "falharam": 2
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-23T10:03:58.729478+00:00",
-  "contaspoupanca.pt": "2026-11-23T10:03:58.729478+00:00"
+  "cm-serta.pt": "2026-11-23T11:18:28.134475+00:00",
+  "contaspoupanca.pt": "2026-11-23T11:18:28.134475+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3584,8 +3586,8 @@
   "contaspoupanca.pt": "2026-11-22T21:00:53.020742+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-23T10:03:58.729478+00:00",
-  "Apoio fundo ambiental": "2026-11-23T10:03:58.729478+00:00"
+  "Sertã": "2026-11-23T11:18:28.134475+00:00",
+  "Apoio fundo ambiental": "2026-11-23T11:18:28.134475+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4248,9 +4250,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-23T10:03:58.729478+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-23T11:18:28.134475+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-22T20:00:49.655220+00:00",
@@ -4420,6 +4422,10 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "CERNACHE DO BONJARDIM: Vitória de Sernache eliminado da Taça de Portugal",
+    "Última hora",
+    "SERTÃ/Cabeçudo: Antiga Escola Primária reviveu tempos idos",
+    "Última hora",
     "CERNACHE DO BONJARDIM: Estrada descendente de S. Macário condicionada",
     "Última hora",
     "REGIÃO: Mau tempo provoca inundações e derrocadas",
@@ -4430,13 +4436,25 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "CERNACHE DO BONJARDIM: Vitória de Sernache eliminado da Taça de Portugal",
+    "Cernache do Bonjardim",
+    "Sertã",
+    "Beira Baixa",
+    "Desporto",
+    "23-11-2026",
+    "Última hora",
+    "Formação de Cernache do Bonjardim perdeu por 0-1 em casa, na 4.ª eliminatória",
+    "SERTÃ/Cabeçudo: Antiga Escola Primária reviveu tempos idos",
+    "Sertã",
+    "Beira Baixa",
+    "23-11-2026",
+    "Última hora",
     "CERNACHE DO BONJARDIM: Estrada descendente de S. Macário condicionada",
     "Cernache do Bonjardim",
     "Beira Baixa",
     "Região",
     "22-11-2026",
     "Última hora",
-    "Devido a deslizamento de um cepo e pedras",
     "REGIÃO: Mau tempo provoca inundações e derrocadas",
     "Proença-a-Nova",
     "Sardoal",
@@ -4487,16 +4505,6 @@
     "Beira Baixa",
     "Desporto",
     "20-11-2026",
-    "VILA VELHA DE RÓDÃO: Município investe 30 mil euros em gerador",
-    "Vila Velha de Ródão",
-    "Beira Baixa",
-    "20-11-2026",
-    "SERTÃ: ULSCB rejeita falta de papel para imprimir receitas",
-    "Castelo Branco",
-    "Sertã",
-    "Cernache do Bonjardim",
-    "Beira Baixa",
-    "20-11-2026",
     "1",
     "2",
     "3",
@@ -4510,38 +4518,34 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-23T10:03:58.729478+00:00",
+   "verificado": "2026-11-23T11:18:28.134475+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-23T10:03:58.729478+00:00",
+   "mudou": "2026-11-23T11:18:28.134475+00:00",
    "mudanca": {
-    "mais": [],
-    "menos": [
-     "MAU TEMPO: Proteção Civil alerta para precipitação persistente",
+    "mais": [
+     "CERNACHE DO BONJARDIM: Vitória de Sernache eliminado da Taça de Portugal",
      "Última hora",
-     "VILA DE REI: Mau tempo obriga ao corte de estradas",
+     "SERTÃ/Cabeçudo: Antiga Escola Primária reviveu tempos idos",
      "Última hora",
-     "REGIÃO/Futebol: Fim de semana desportivo na Condestável",
+     "CERNACHE DO BONJARDIM: Vitória de Sernache eliminado da Taça de Portugal",
+     "Desporto",
      "Última hora",
-     "SERTÃ: ULSCB rejeita falta de papel para imprimir receitas",
-     "Última hora",
-     "CERNACHE DO BONJARDIM: Solução para trânsito no centro da vila em análise",
-     "Última hora",
-     "SERTÃ: Programação de Natal gera troca de argumentos",
-     "Última hora",
-     "CASTELO BRANCO: Deputado do Chega constituído arguido",
-     "Última hora",
-     "MAÇÃO: Município investe cerca de 50 mil euros na nova Vila Natal",
-     "Última hora",
-     "CERNACHE DO BONJARDIM: Ruas D. Nuno Álvares Pereira e Prof. Gil Marçal cortadas ao trânsito",
-     "Última hora",
-     "SERTÃ: Vereador do PSD questiona estratégia de valorização dos produtos endógenos",
+     "Formação de Cernache do Bonjardim perdeu por 0-1 em casa, na 4.ª eliminatória",
+     "SERTÃ/Cabeçudo: Antiga Escola Primária reviveu tempos idos",
      "Última hora"
     ],
-    "n_mais": 0,
-    "n_menos": 28
+    "menos": [
+     "Devido a deslizamento de um cepo e pedras",
+     "VILA VELHA DE RÓDÃO: Município investe 30 mil euros em gerador",
+     "Vila Velha de Ródão",
+     "SERTÃ: ULSCB rejeita falta de papel para imprimir receitas",
+     "Castelo Branco"
+    ],
+    "n_mais": 10,
+    "n_menos": 5
    },
    "via": "site",
    "erro_site": ""
@@ -4736,7 +4740,7 @@
     "Esses cookies nos ajudam a entender como os visitantes interagem com nosso site, obter estatísticas de acessos e utilizadores para fornecer uma melhor análise geral.",
     "Aceitar"
    ],
-   "verificado": "2026-11-22T10:46:55.985295+00:00",
+   "verificado": "2026-11-23T11:18:28.134475+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4843,9 +4847,9 @@
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-23T10:03:58.729478+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-23T11:18:28.134475+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
