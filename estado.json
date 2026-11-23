@@ -655,7 +655,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-23T13:31:04.055766+00:00"
+   "ultima": "2026-11-23T14:30:33.751074+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -951,15 +951,6 @@
  },
  "ultima_descoberta": "2026-11-23",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-17T18:30:48.718825+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-17T18:30:48.718825+00:00",
@@ -1850,50 +1841,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-23T14:30:33.751074+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-21T13:31:12.778853+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 469,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 490,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertaginen"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-21T14:31:04.182082+00:00",
    "pesquisas": [
@@ -3597,11 +3556,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-23T14:30:33.751074+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 582,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 534,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-23T13:31:04.055766+00:00",
-  "contaspoupanca.pt": "2026-11-23T13:31:04.055766+00:00"
+  "cm-serta.pt": "2026-11-23T14:30:33.751074+00:00",
+  "contaspoupanca.pt": "2026-11-23T14:30:33.751074+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3609,8 +3606,8 @@
   "contaspoupanca.pt": "2026-11-22T21:00:53.020742+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-23T13:31:04.055766+00:00",
-  "Apoio fundo ambiental": "2026-11-23T13:31:04.055766+00:00"
+  "Sertã": "2026-11-23T14:30:33.751074+00:00",
+  "Apoio fundo ambiental": "2026-11-23T14:30:33.751074+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4273,18 +4270,19 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-23T13:31:04.055766+00:00",
+   "verificado": "2026-11-23T14:30:33.751074+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-23T12:32:07.437626+00:00",
+   "mudou": "2026-11-23T14:30:33.751074+00:00",
    "mudanca": {
     "mais": [
-     "Atendimento no Município para apoio após a Tempestade Kristin"
+     "Comitiva da Turismo Centro de Portugal visitou o concelho da Sertã",
+     "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 2,
     "n_menos": 0
    },
    "linhas_google": [
@@ -4294,7 +4292,6 @@
     "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
     "Programa “Férias Ativas” anima verão até final de agosto",
     "Login",
-    "Atendimento no Município para apoio após a Tempestade Kristin",
     "Bem-vindo à Rede de Bibliotecas da Sertã",
     "Eventos Futuros",
     "Águas Residuais",
@@ -4308,10 +4305,12 @@
     "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
     "Programa Férias Ativas abre candidaturas para monitores",
     "Requerimentos",
+    "Comitiva da Turismo Centro de Portugal visitou o concelho da Sertã",
     "Revisão do PDM da Sertã mais perto da conclusão",
     "Espaços Museológicos",
     "Abastecimento de água",
     "Contactos Úteis",
+    "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO",
     "Regulamentos",
     "BUPi",
     "Estrutura Orgânica",
@@ -4342,8 +4341,8 @@
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
-   "via": "site",
-   "erro_site": ""
+   "via": "google",
+   "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
@@ -4537,7 +4536,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-23T13:31:04.055766+00:00",
+   "verificado": "2026-11-23T14:30:33.751074+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4782,7 +4781,6 @@
     "Bolsa esta semana: Wall Street afunda 8,6% e entra em correção",
     "P2P vs. Certificados de Aforro: investi o mesmo valor - quem está a ganhar? (Outubro 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
-    "Revista de imprensa de 23 de novembro: Pensões, combustíveis e seguros do crédito casa",
     "PPR",
     "Simuladores",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
@@ -4850,7 +4848,6 @@
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
     "Máquinas volta já devolvem o dinheiro das embalagens por MB WAY: veja onde",
-    "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Revista de imprensa de 20 de novembro: Crédito habitação, rendas e OE2027",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
     "Vamos a contas: Tenho 32.500 € no banco. Faz sentido investir agora 100 € por mês no S&P 500 e em ouro?",
@@ -4859,12 +4856,13 @@
     "Combustíveis | Gasóleo desce 5 cêntimos e encher o depósito fica quase 3 euros mais barato",
     "Gasolina já está abaixo dos 2 euros em todas as marcas. Veja onde é mais barata esta semana",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
+    "Revista de imprensa de 23 de novembro: Pensões, combustíveis e seguros do crédito casa",
     "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-23T13:31:04.055766+00:00",
+   "verificado": "2026-11-23T14:30:33.751074+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
