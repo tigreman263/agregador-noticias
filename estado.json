@@ -752,7 +752,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-24T03:30:56.268859+00:00"
+   "ultima": "2026-11-24T04:30:51.964778+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -779,7 +779,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-24T03:30:56.268859+00:00"
+   "ultima": "2026-11-24T04:30:51.964778+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -1056,7 +1056,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre com apoio único de até 1.599 € para candidaturas retidas",
-   "ultima": "2026-11-24T02:30:45.857384+00:00"
+   "ultima": "2026-11-24T04:30:51.964778+00:00"
   },
   "executivedigest.sapo.pt": {
    "nome": "Executive Digest",
@@ -1080,7 +1080,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Parlamento aprova alargamento da tarifa social de energia e financiamento integral do Vale Eficiência II",
-   "ultima": "2026-11-24T02:30:45.857384+00:00"
+   "ultima": "2026-11-24T04:30:51.964778+00:00"
   }
  },
  "ultima_descoberta": "2026-11-23",
@@ -1987,38 +1987,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-22T03:46:05.378379+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 623,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 579,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Médio Tejo"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-22T04:45:59.011582+00:00",
    "pesquisas": [
@@ -3721,10 +3689,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-24T04:30:51.964778+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 659,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 584,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-24T03:30:56.268859+00:00",
+  "cm-serta.pt": "2026-11-24T04:30:51.964778+00:00",
   "contaspoupanca.pt": "2026-11-23T22:30:46.267412+00:00"
  },
  "lentos": {},
@@ -3733,8 +3731,8 @@
   "contaspoupanca.pt": "2026-11-23T21:30:47.525176+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-24T03:30:56.268859+00:00",
-  "Apoio fundo ambiental": "2026-11-24T03:30:56.268859+00:00"
+  "Sertã": "2026-11-24T04:30:51.964778+00:00",
+  "Apoio fundo ambiental": "2026-11-24T04:30:51.964778+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
