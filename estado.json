@@ -10,7 +10,9 @@
   "072cdd6ee9e396fd": "2026-11-20T13:32:00.054660+00:00",
   "bc0abb0a1dc500c2": "2026-11-23T12:32:07.437626+00:00",
   "338eee09ef9812be": "2026-11-23T21:30:47.792900+00:00",
-  "9f6723afe79e3dbf": "2026-11-23T22:30:46.267412+00:00"
+  "9f6723afe79e3dbf": "2026-11-23T22:30:46.267412+00:00",
+  "d9a028ebc9b27fd2": "2026-11-24T01:30:53.201005+00:00",
+  "928c1f79aa742c04": "2026-11-24T01:30:53.201005+00:00"
  },
  "resumo": [
   {
@@ -82,6 +84,52 @@
     "9f6723afe79e3dbf"
    ],
    "ts": "2026-11-23T22:30:46.267412+00:00"
+  },
+  {
+   "titulo": "Parlamento alarga tarifa social de energia e assegura execução do Vale Eficiência",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQTlBod3V5MkQ4bWd0LW41a05BMWU1ZU5GeGQ1eGtwdkdxbzVwbC1VUGZfdUx2eFd5Tnd6SVI1VDR1YkdkOFVrdTZvTlpWTlJRczhzTmhiTFY3cTZXTnNpQlJtclRvZGF2LWxoeU1MSW1WbjkzWWJhaUQxdHlkMDFFcDZsdHFYeUllRWxLQ05hb0RpOHpzbTJTc1lETXVRczVBc1BZZUtuWW5aMUh1VkNVa1ZsakJtVV9PUHJHc3JSNWdhRjFJRHlBUG94STB4M25STWRnak1uRHlWUEN5aVlYM3ZwNzR2a3p6T1E?oc=5",
+   "dominio": "sicnoticias.pt",
+   "fonte": "SIC Notícias",
+   "confiavel": true,
+   "nota": 34.5,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Vale Eficiência"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-24T01:03:35+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "d9a028ebc9b27fd2"
+   ],
+   "ts": "2026-11-24T01:30:53.201005+00:00"
+  },
+  {
+   "titulo": "Parlamento aprova alargamento da tarifa social de energia e financiamento integral do Vale Eficiência II",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxPd1g2d2VvaU5WNFNLeWVTQlh1ZnBIZmFPYkNRaHh6NzhweVZ1WmVRbGtWMEtSVXZsTGdIdElVdENteXRlaExEVGZOQTk0VnJVdXdqMkxXUGhLeHNrbTVXUGhsbzhmVzZWWkJQcHFFd3FZdXJrZkhrZWRLQ21IT0lTNU5NeU14OXU3VlBIQ0tFb1NWSU1MbElsdkZka2xxcmJUNWhTX1NPNHFFckVEaEk5RjBVbmdLNm9xRG9KM05XNXpuMl8zYTRkWUhzdkRaaXdlM1E?oc=5",
+   "dominio": "pressnet.pt",
+   "fonte": "pressnet.pt",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Vale Eficiência"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-23T22:25:03+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "928c1f79aa742c04"
+   ],
+   "ts": "2026-11-24T01:30:53.201005+00:00"
   }
  ],
  "adiados": [],
@@ -704,7 +752,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-24T00:30:44.253129+00:00"
+   "ultima": "2026-11-24T01:30:53.201005+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -724,13 +772,14 @@
    "ids": [
     "b49828abc5664c4e",
     "eb5fa106f83d6962",
-    "27d383339cd74dfb"
+    "27d383339cd74dfb",
+    "d9a028ebc9b27fd2"
    ],
    "pesquisas": [
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-10T09:46:04.973782+00:00"
+   "ultima": "2026-11-24T01:30:53.201005+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -1007,7 +1056,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre com apoio único de até 1.599 € para candidaturas retidas",
-   "ultima": "2026-11-23T21:30:47.792900+00:00"
+   "ultima": "2026-11-24T01:30:53.201005+00:00"
   },
   "executivedigest.sapo.pt": {
    "nome": "Executive Digest",
@@ -1020,6 +1069,18 @@
    ],
    "exemplo": "OE2027: Parlamento alarga tarifa social de energia e assegura execução do Vale Eficiência",
    "ultima": "2026-11-24T00:30:44.253129+00:00"
+  },
+  "pressnet.pt": {
+   "nome": "pressnet.pt",
+   "site": "https://pressnet.pt",
+   "ids": [
+    "928c1f79aa742c04"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "Parlamento aprova alargamento da tarifa social de energia e financiamento integral do Vale Eficiência II",
+   "ultima": "2026-11-24T01:30:53.201005+00:00"
   }
  },
  "ultima_descoberta": "2026-11-23",
@@ -1926,36 +1987,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-22T00:46:04.276238+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 532,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-22T01:46:00.483594+00:00",
    "pesquisas": [
@@ -3660,10 +3691,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-24T01:30:53.201005+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 625,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 583,
+     "relevantes": 2,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-24T00:30:44.253129+00:00",
+  "cm-serta.pt": "2026-11-24T01:30:53.201005+00:00",
   "contaspoupanca.pt": "2026-11-23T22:30:46.267412+00:00"
  },
  "lentos": {},
@@ -3672,8 +3733,8 @@
   "contaspoupanca.pt": "2026-11-23T21:30:47.525176+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-24T00:30:44.253129+00:00",
-  "Apoio fundo ambiental": "2026-11-24T00:30:44.253129+00:00"
+  "Sertã": "2026-11-24T01:30:53.201005+00:00",
+  "Apoio fundo ambiental": "2026-11-24T01:30:53.201005+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
