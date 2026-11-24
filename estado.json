@@ -13,7 +13,8 @@
   "9f6723afe79e3dbf": "2026-11-23T22:30:46.267412+00:00",
   "d9a028ebc9b27fd2": "2026-11-24T01:30:53.201005+00:00",
   "928c1f79aa742c04": "2026-11-24T01:30:53.201005+00:00",
-  "e78917a0191374e5": "2026-11-24T09:30:51.116931+00:00"
+  "e78917a0191374e5": "2026-11-24T09:30:51.116931+00:00",
+  "0f29548579d2c7a8": "2026-11-24T12:30:45.851649+00:00"
  },
  "resumo": [
   {
@@ -38,6 +39,29 @@
     "e78917a0191374e5"
    ],
    "ts": "2026-11-24T09:30:51.116931+00:00"
+  },
+  {
+   "titulo": "Vale Eficiência II reabre candidaturas: famílias podem receber até 1.599 euros",
+   "link": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBXUFU4TU95VmJEOUlaeVV2RVdlVjdNY1ZpOGtwZ3ptN0FvQ1h3Rm5PVDBpczZrVUE3eGZrdDhDQzRMY0ZhazBkRkNTTHc?oc=5",
+   "dominio": "e-konomista.pt",
+   "fonte": "Ekonomista",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Vale Eficiência"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-24T11:00:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "0f29548579d2c7a8"
+   ],
+   "ts": "2026-11-24T12:30:45.851649+00:00"
   }
  ],
  "adiados": [],
@@ -672,7 +696,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-24T11:30:52.442798+00:00"
+   "ultima": "2026-11-24T12:30:45.851649+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -699,7 +723,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-24T11:30:52.442798+00:00"
+   "ultima": "2026-11-24T12:30:45.851649+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -976,7 +1000,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre com apoio único de até 1.599 € para candidaturas retidas",
-   "ultima": "2026-11-24T10:30:45.006048+00:00"
+   "ultima": "2026-11-24T12:30:45.851649+00:00"
   },
   "executivedigest.sapo.pt": {
    "nome": "Executive Digest",
@@ -1000,7 +1024,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Parlamento aprova alargamento da tarifa social de energia e financiamento integral do Vale Eficiência II",
-   "ultima": "2026-11-24T10:30:45.006048+00:00"
+   "ultima": "2026-11-24T12:30:45.851649+00:00"
   },
   "pplware.sapo.pt": {
    "nome": "Pplware",
@@ -1012,20 +1036,23 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência (2.ª fase): apoio de até 1.599 euros para janelas, bombas de calor entre outros",
-   "ultima": "2026-11-24T11:30:52.442798+00:00"
+   "ultima": "2026-11-24T12:30:45.851649+00:00"
+  },
+  "e-konomista.pt": {
+   "nome": "Ekonomista",
+   "site": "https://www.e-konomista.pt",
+   "ids": [
+    "0f29548579d2c7a8"
+   ],
+   "pesquisas": [
+    "Apoio fundo ambiental"
+   ],
+   "exemplo": "Vale Eficiência II reabre candidaturas: famílias podem receber até 1.599 euros",
+   "ultima": "2026-11-24T12:30:45.851649+00:00"
   }
  },
  "ultima_descoberta": "2026-11-24",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-19T11:31:13.852003+00:00",
-   "titulo": "Mudou: cm-serta",
-   "link": "https://cm-serta.pt/comunicacao/noticias",
-   "fonte": "cm-serta.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-19T11:31:13.852003+00:00",
@@ -1916,48 +1943,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-24T12:30:45.851649+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-22T11:46:00.484094+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 534,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-22T12:46:05.913603+00:00",
    "pesquisas": [
@@ -3656,11 +3653,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-24T12:30:45.851649+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 624,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 585,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-24T11:30:52.442798+00:00",
-  "contaspoupanca.pt": "2026-11-24T11:30:52.442798+00:00"
+  "cm-serta.pt": "2026-11-24T12:30:45.851649+00:00",
+  "contaspoupanca.pt": "2026-11-24T12:30:45.851649+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3668,8 +3704,8 @@
   "contaspoupanca.pt": "2026-11-23T21:30:47.525176+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-24T11:30:52.442798+00:00",
-  "Apoio fundo ambiental": "2026-11-24T11:30:52.442798+00:00"
+  "Sertã": "2026-11-24T12:30:45.851649+00:00",
+  "Apoio fundo ambiental": "2026-11-24T12:30:45.851649+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4332,7 +4368,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-24T11:30:52.442798+00:00",
+   "verificado": "2026-11-24T12:30:45.851649+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4569,6 +4605,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
+    "Última hora",
     "SERTÃ/Hóquei: Atletas sertaginenses destacam-se internacionalmente",
     "Última hora",
     "FERREIRA DO ZÊZERE: Colisão entre ligeiros faz três feridos",
@@ -4587,13 +4625,20 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "FIGUEIRÓ DOS VINHOS: Época natalícia regressa ao concelho",
+    "Figueiró dos Vinhos",
+    "Médio Tejo",
+    "24-11-2026",
+    "De 4 a 23 de dezembro",
+    "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
+    "24-11-2026",
+    "Última hora",
     "SERTÃ/Hóquei: Atletas sertaginenses destacam-se internacionalmente",
     "Beira Baixa",
     "Sertã",
     "Desporto",
     "24-11-2026",
     "Última hora",
-    "Tiago Martins e Martim Marçal contribuem para marco histórico do Andorra Hoquei Gel",
     "FERREIRA DO ZÊZERE: Colisão entre ligeiros faz três feridos",
     "Ferreira do Zêzere",
     "Médio Tejo",
@@ -4645,19 +4690,6 @@
     "Região",
     "22-11-2026",
     "Última hora",
-    "REGIÃO: Mau tempo provoca inundações e derrocadas",
-    "Proença-a-Nova",
-    "Sardoal",
-    "Oleiros",
-    "Mação",
-    "Vila Velha de Ródão",
-    "Beira Baixa",
-    "Região",
-    "21-11-2026",
-    "CASTANHEIRA DE PERA: \"Regulamento de Gestão de Combustíveis\" aprovado",
-    "Castanheira de Pera",
-    "Região",
-    "21-11-2026",
     "1",
     "2",
     "3",
@@ -4671,27 +4703,39 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-24T11:30:52.442798+00:00",
+   "verificado": "2026-11-24T12:30:45.851649+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-24T10:30:45.006048+00:00",
+   "mudou": "2026-11-24T12:30:45.851649+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ/Hóquei: Atletas sertaginenses destacam-se internacionalmente",
+     "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
      "Última hora",
-     "SERTÃ/Hóquei: Atletas sertaginenses destacam-se internacionalmente",
-     "Desporto",
-     "Última hora",
-     "Tiago Martins e Martim Marçal contribuem para marco histórico do Andorra Hoquei Gel"
+     "FIGUEIRÓ DOS VINHOS: Época natalícia regressa ao concelho",
+     "Figueiró dos Vinhos",
+     "Médio Tejo",
+     "De 4 a 23 de dezembro",
+     "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
+     "Última hora"
     ],
     "menos": [
-     "Esta tarde na localidade de Vale Serrão",
-     "SERTÃ: Vereador do PSD questiona futuro de edifícios municipais"
+     "Tiago Martins e Martim Marçal contribuem para marco histórico do Andorra Hoquei Gel",
+     "REGIÃO: Mau tempo provoca inundações e derrocadas",
+     "Proença-a-Nova",
+     "Sardoal",
+     "Oleiros",
+     "Mação",
+     "Vila Velha de Ródão",
+     "Beira Baixa",
+     "Região",
+     "CASTANHEIRA DE PERA: \"Regulamento de Gestão de Combustíveis\" aprovado",
+     "Castanheira de Pera",
+     "Região"
     ],
-    "n_mais": 6,
-    "n_menos": 2
+    "n_mais": 8,
+    "n_menos": 12
    },
    "via": "site",
    "erro_site": ""
@@ -5007,9 +5051,9 @@
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Junho 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)"
    ],
-   "verificado": "2026-11-24T11:30:52.442798+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-24T12:30:45.851649+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
