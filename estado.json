@@ -149,7 +149,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-24T11:30:52.442798+00:00"
+   "ultima": "2026-11-24T13:30:46.882448+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -696,7 +696,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-24T12:30:45.851649+00:00"
+   "ultima": "2026-11-24T13:30:46.882448+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -723,7 +723,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-24T12:30:45.851649+00:00"
+   "ultima": "2026-11-24T13:30:46.882448+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -1036,7 +1036,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência (2.ª fase): apoio de até 1.599 euros para janelas, bombas de calor entre outros",
-   "ultima": "2026-11-24T12:30:45.851649+00:00"
+   "ultima": "2026-11-24T13:30:46.882448+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -1048,38 +1048,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre candidaturas: famílias podem receber até 1.599 euros",
-   "ultima": "2026-11-24T12:30:45.851649+00:00"
+   "ultima": "2026-11-24T13:30:46.882448+00:00"
   }
  },
  "ultima_descoberta": "2026-11-24",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-19T11:31:13.852003+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "alerta",
-   "ts": "2026-11-19T11:31:13.852003+00:00",
-   "titulo": "“Sertã Espírito de Natal” volta a dinamizar o Comércio Tradicional",
-   "link": "https://cm-serta.pt/comunicacao/noticias/serta-espirito-de-natal-volta-a-dinamizar-o-comercio-tradicional-nov-26",
-   "fonte": "cm-serta.pt",
-   "nota": 13.0,
-   "pesquisa": "Sertã"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-19T12:31:02.428487+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-19T13:31:47.646605+00:00",
@@ -1952,48 +1925,36 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-24T13:30:46.882448+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-24T13:30:46.882448+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-24T13:30:46.882448+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-22T12:46:05.913603+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 534,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-22T13:46:08.767214+00:00",
    "pesquisas": [
@@ -3692,11 +3653,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-24T13:30:46.882448+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 612,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 612,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 3,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-24T12:30:45.851649+00:00",
-  "contaspoupanca.pt": "2026-11-24T12:30:45.851649+00:00"
+  "cm-serta.pt": "2026-11-24T13:30:46.882448+00:00",
+  "contaspoupanca.pt": "2026-11-24T13:30:46.882448+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3704,8 +3703,8 @@
   "contaspoupanca.pt": "2026-11-23T21:30:47.525176+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-24T12:30:45.851649+00:00",
-  "Apoio fundo ambiental": "2026-11-24T12:30:45.851649+00:00"
+  "Sertã": "2026-11-24T13:30:46.882448+00:00",
+  "Apoio fundo ambiental": "2026-11-24T13:30:46.882448+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4368,58 +4367,38 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-24T12:30:45.851649+00:00",
+   "verificado": "2026-11-24T13:30:46.882448+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-24T11:30:52.442798+00:00",
+   "mudou": "2026-11-24T13:30:46.882448+00:00",
    "mudanca": {
     "mais": [
-     "Untitled",
-     "Untitled",
-     "Untitled",
-     "Untitled",
-     "XIV Rali Histórico Vila da Sertã",
-     "Untitled",
-     "Contactos",
-     "Comitiva da Turismo Centro de Portugal visitou o concelho da Sertã",
-     "Os aromas do amor",
-     "LICENÇA ESPECIAL DE RUÍDO PARA ESPETÁCULOS, DIVERSÕES, MANIFESTAÇÕES DESPORTIVAS, FEIRAS E MERCADOS",
-     "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO",
-     "Conselho Municipal de Educação",
-     "INSCRIÇÃO NO PROGRAMA DE APOIO À FAMÍLIA – TEMPO DE ACOLHER",
-     "Equipamentos Desportivos",
-     "Mandato 2025/2029 EDITAL N.º156/2025",
-     "CADERNO DE ENCARGOS",
-     "Formação / Atelier / Oficinas",
-     "MUNICÍPIO DE SERTÃ Aviso Procedimento concursal comum para a constituição de relação jurídica de emprego público, por te",
-     "Informação Geográfica Urbanismo",
-     "Serviço de Atendimento e Acompanhamento Social (SAAS)"
+     "Gabinete Florestal",
+     "Faixas de Gestão de Combustível",
+     "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
+     "Festas e Romarias",
+     "Mel em destaque no mercado Produtos da Terra de agosto",
+     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
     ],
     "menos": [],
-    "n_mais": 53,
+    "n_mais": 6,
     "n_menos": 0
    },
    "linhas_google": [
-    "Untitled",
-    "Untitled",
-    "Untitled",
-    "Untitled",
     "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
     "Câmara Municipal da Sertã — Início",
     "Serviços Online",
     "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
     "Programa “Férias Ativas” anima verão até final de agosto",
     "Login",
-    "XIV Rali Histórico Vila da Sertã",
     "Atendimento no Município para apoio após a Tempestade Kristin",
     "Bem-vindo à Rede de Bibliotecas da Sertã",
     "Eventos Futuros",
     "Águas Residuais",
     "Praias Fluviais, Zonas de Lazer e Piscinas",
     "Percursos Pedestres",
-    "Untitled",
     "Procedimentos Concursais",
     "Bolsas de Estudo",
     "Turismo",
@@ -4427,81 +4406,40 @@
     "Câmara Municipal",
     "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
     "Programa Férias Ativas abre candidaturas para monitores",
-    "Contactos",
     "Requerimentos",
-    "Comitiva da Turismo Centro de Portugal visitou o concelho da Sertã",
-    "Os aromas do amor",
-    "LICENÇA ESPECIAL DE RUÍDO PARA ESPETÁCULOS, DIVERSÕES, MANIFESTAÇÕES DESPORTIVAS, FEIRAS E MERCADOS",
     "Revisão do PDM da Sertã mais perto da conclusão",
     "Espaços Museológicos",
     "Abastecimento de água",
     "Contactos Úteis",
-    "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO",
     "Regulamentos",
     "BUPi",
-    "Conselho Municipal de Educação",
     "Estrutura Orgânica",
-    "INSCRIÇÃO NO PROGRAMA DE APOIO À FAMÍLIA – TEMPO DE ACOLHER",
-    "Equipamentos Desportivos",
     "Planos",
     "Casa de Espetáculos e Cultura da Sertã",
-    "Mandato 2025/2029 EDITAL N.º156/2025",
-    "CADERNO DE ENCARGOS",
-    "Formação / Atelier / Oficinas",
-    "MUNICÍPIO DE SERTÃ Aviso Procedimento concursal comum para a constituição de relação jurídica de emprego público, por te",
-    "Informação Geográfica Urbanismo",
     "Editais / Avisos",
-    "Serviço de Atendimento e Acompanhamento Social (SAAS)",
-    "Sugestões e Reclamações",
     "Projetos Cofinanciados",
-    "Untitled",
-    "Untitled",
-    "Untitled",
-    "Mandato 2025/2029 EDITAL N.º134/2025",
-    "Maranho da Sertã reconhecido com Prémio Cinco Estrelas Regiões",
-    "Mandato 2025/2029 EDITAL N.º32/2026",
     "Espaços de Cowork e Incubação",
-    "BOLSAS DE ESTUDO: CANDIDATURA RENOVAÇÃO",
-    "BiblioAndante",
     "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
     "Ficha técnica",
     "Calendário de Reuniões",
-    "Eventos Literários",
     "Desporto",
     "Bolsas de Estudo do Município da Sertã com novas normas",
-    "AIGP 2.0/OIGP 2.0 - TEMPESTADE KRISTIN CANDIDATURA A APOIOS FINANCEIROS RESULTANTES DAS COMUNICAÇÕES DE COMPROMISSO DE EXECUÇ",
     "Mercados e Feiras",
-    "CERTIDÃO COMPROVATIVA DE DESPESAS ESCOLARES",
     "Mapa de Pessoal",
-    "Modalidades Ginásio Municipal",
     "História e Caracterização",
-    "Tarifas",
-    "Notícias",
-    "Ficha técnica",
     "Assembleia Municipal Jovem",
-    "Assembleia Municipal da Sertã",
-    "Untitled",
-    "Mandato 2025/2029 EDITAL N.º137/2025",
     "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto",
-    "EDITAL N",
-    "Untitled",
     "Academia Sénior",
-    "Caderno de Encargos.odt",
     "União de Freguesias de Cumeada e Marmeleiro",
     "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
     "clds 5g",
-    "Junta de Freguesia do Troviscal",
-    "ASA (Área de Serviço para Autocaravanas)",
-    "Untitled",
-    "Untitled",
-    "Vespas",
-    "Sertã celebra o 25 de Abril com música, tradição e memória",
-    "EDITAL N",
-    "Untitled",
-    "Horários",
-    "Impostos e Taxas Municipais",
-    "Biblioteca Municipal Padre Manuel Antunes",
-    "Freguesias"
+    "Freguesias",
+    "Gabinete Florestal",
+    "Faixas de Gestão de Combustível",
+    "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
+    "Festas e Romarias",
+    "Mel em destaque no mercado Produtos da Terra de agosto",
+    "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
    "via": "google",
    "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
@@ -4605,6 +4543,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "GAVIÃO: Feriado Municipal marcado por criticas ao Governo e pensamento no futuro",
+    "Última hora",
     "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
     "Última hora",
     "SERTÃ/Hóquei: Atletas sertaginenses destacam-se internacionalmente",
@@ -4625,11 +4565,19 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "GAVIÃO: Feriado Municipal marcado por criticas ao Governo e pensamento no futuro",
+    "Região",
+    "24-11-2026",
+    "Última hora",
+    "Presidente da Câmara lamentou falta de apoios concretos do Governo após o mau tempo e assinou protocolos com instituições sociais",
+    "PROENÇA-A-NOVA: “Museu Experimenta Paisagem” assinala sete anos",
+    "Proença-a-Nova",
+    "Beira Baixa",
+    "24-11-2026",
     "FIGUEIRÓ DOS VINHOS: Época natalícia regressa ao concelho",
     "Figueiró dos Vinhos",
     "Médio Tejo",
     "24-11-2026",
-    "De 4 a 23 de dezembro",
     "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
     "24-11-2026",
     "Última hora",
@@ -4679,17 +4627,6 @@
     "Desporto",
     "23-11-2026",
     "Última hora",
-    "SERTÃ/Cabeçudo: Antiga Escola Primária reviveu tempos idos",
-    "Sertã",
-    "Beira Baixa",
-    "23-11-2026",
-    "Última hora",
-    "CERNACHE DO BONJARDIM: Estrada descendente de S. Macário condicionada",
-    "Cernache do Bonjardim",
-    "Beira Baixa",
-    "Região",
-    "22-11-2026",
-    "Última hora",
     "1",
     "2",
     "3",
@@ -4703,39 +4640,29 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-24T12:30:45.851649+00:00",
+   "verificado": "2026-11-24T13:30:46.882448+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-24T12:30:45.851649+00:00",
+   "mudou": "2026-11-24T13:30:46.882448+00:00",
    "mudanca": {
     "mais": [
-     "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
-     "Última hora",
-     "FIGUEIRÓ DOS VINHOS: Época natalícia regressa ao concelho",
-     "Figueiró dos Vinhos",
-     "Médio Tejo",
-     "De 4 a 23 de dezembro",
-     "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
-     "Última hora"
+     "GAVIÃO: Feriado Municipal marcado por criticas ao Governo e pensamento no futuro",
+     "GAVIÃO: Feriado Municipal marcado por criticas ao Governo e pensamento no futuro",
+     "Presidente da Câmara lamentou falta de apoios concretos do Governo após o mau tempo e assinou protocolos com instituições sociais",
+     "PROENÇA-A-NOVA: “Museu Experimenta Paisagem” assinala sete anos",
+     "Proença-a-Nova"
     ],
     "menos": [
-     "Tiago Martins e Martim Marçal contribuem para marco histórico do Andorra Hoquei Gel",
-     "REGIÃO: Mau tempo provoca inundações e derrocadas",
-     "Proença-a-Nova",
-     "Sardoal",
-     "Oleiros",
-     "Mação",
-     "Vila Velha de Ródão",
-     "Beira Baixa",
-     "Região",
-     "CASTANHEIRA DE PERA: \"Regulamento de Gestão de Combustíveis\" aprovado",
-     "Castanheira de Pera",
-     "Região"
+     "De 4 a 23 de dezembro",
+     "SERTÃ/Cabeçudo: Antiga Escola Primária reviveu tempos idos",
+     "Sertã",
+     "CERNACHE DO BONJARDIM: Estrada descendente de S. Macário condicionada",
+     "Cernache do Bonjardim"
     ],
-    "n_mais": 8,
-    "n_menos": 12
+    "n_mais": 5,
+    "n_menos": 5
    },
    "via": "site",
    "erro_site": ""
@@ -4957,9 +4884,9 @@
     "Simulador de IRS: Quanto devolve o seu município?",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "E-Lar: novo apoio em 2027 para trocar fogões e esquentadores a gás em zonas rurais",
+    "P2P vs. Certificados de Aforro: investi o mesmo valor - quem está a ganhar? (Outubro 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
-    "Revista de imprensa de 24 de novembro: Pensões, combustíveis e endividamento das famílias",
     "Simulador de prestação do crédito à habitação: descubra quanto vai pagar na próxima revisão da Euribor",
     "PPR",
     "Simuladores",
@@ -5016,6 +4943,7 @@
     "Tem eletricidade bi-horária? As horas mais baratas vão mudar a partir de 2027",
     "Via Verde começa a cobrar mensalidade para pagar estacionamento e outros serviços",
     "Esta semana no Podcast: Organização financeira, depósitos a prazo e PPR. Já ouviu todos?",
+    "PODCAST | #175 – Dá trabalho (e vale a pena) mudar de empresa de eletricidade?",
     "Certificados de Aforro voltam a perder rentabilidade em junho",
     "E-Lar: Faça já o registo antes do programa começar para receber os eletrodomésticos grátis",
     "PODCAST | #53 – Vale a pena ser poupado?",
@@ -5048,41 +4976,22 @@
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em março de 2026",
     "Entrevista: Certificados de Aforro - Sandra Moás, Diretora de retalho dos CTT, explica as recentes alterações",
     "NOVA ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (20 a 26 de julho)",
-    "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Junho 2026)",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)"
+    "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Junho 2026)"
    ],
-   "verificado": "2026-11-24T12:30:45.851649+00:00",
-   "falhas": 1,
-   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
+   "verificado": "2026-11-24T13:30:46.882448+00:00",
+   "falhas": 0,
+   "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-24T11:30:52.442798+00:00",
+   "mudou": "2026-11-24T13:30:46.882448+00:00",
    "mudanca": {
     "mais": [
-     "Simulador de IRS: Quanto devolve o seu município?",
-     "Simulador de prestação do crédito à habitação: descubra quanto vai pagar na próxima revisão da Euribor",
-     "ETF",
-     "IMI: pode estar a pagar imposto a mais (e como saber hoje)",
-     "PODCAST | #127 – Eletricidade e gás – Qual é a diferença entre Mercado Liberalizado ou Regulado?",
-     "ERSE lançou hoje novo simulador de eletricidade e gás",
-     "E-Lar fecha candidaturas após esgotar verba em 6 dias",
-     "GPL em 2026: Ainda compensa converter o carro para gás?",
-     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
-     "PODCAST | #85 – “Eu não tenho jeito nenhum para lidar com dinheiro…”",
-     "PODCAST | #115 – A Euribor a 6 meses também já está positiva – O que é que eu faço?",
-     "PODCAST | #110 – O meu PPR está negativo. É normal?",
-     "PODCAST | #126 – Devo Investir aos Poucos Ou Tudo De Uma Vez? (A pergunta do Nuno)",
-     "PODCAST | #99 – Devo tirar o dinheiro dos investimentos para fazer o Fundo de Emergência?",
-     "PODCAST | #149 – Os Combustíveis São Todos Iguais? Vale a pena comprar aditivados? (Parte II)",
-     "PODCAST | #171 – Certificados de Aforro – Há alternativas nos bancos que rendem mais?",
-     "PODCAST | #81 – Como posso melhorar a minha vida se ganho pouco?",
-     "Aproveite o confinamento para pôr as contas em ordem",
-     "PODCAST | #78 – (Para recibos verdes) Como posso rentabilizar o IVA trimestral?",
-     "O que muda no arrendamento com as novas medidas de desagravamento fiscal?"
+     "P2P vs. Certificados de Aforro: investi o mesmo valor - quem está a ganhar? (Outubro 2026)",
+     "PODCAST | #175 – Dá trabalho (e vale a pena) mudar de empresa de eletricidade?"
     ],
     "menos": [],
-    "n_mais": 64,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
