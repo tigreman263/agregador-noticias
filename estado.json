@@ -672,7 +672,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-24T09:30:51.116931+00:00"
+   "ultima": "2026-11-24T10:30:45.006048+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -699,7 +699,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-24T09:30:51.116931+00:00"
+   "ultima": "2026-11-24T10:30:45.006048+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -976,7 +976,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre com apoio único de até 1.599 € para candidaturas retidas",
-   "ultima": "2026-11-24T09:30:51.116931+00:00"
+   "ultima": "2026-11-24T10:30:45.006048+00:00"
   },
   "executivedigest.sapo.pt": {
    "nome": "Executive Digest",
@@ -1000,7 +1000,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Parlamento aprova alargamento da tarifa social de energia e financiamento integral do Vale Eficiência II",
-   "ultima": "2026-11-24T09:30:51.116931+00:00"
+   "ultima": "2026-11-24T10:30:45.006048+00:00"
   },
   "pplware.sapo.pt": {
    "nome": "Pplware",
@@ -1012,29 +1012,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência (2.ª fase): apoio de até 1.599 euros para janelas, bombas de calor entre outros",
-   "ultima": "2026-11-24T09:30:51.116931+00:00"
+   "ultima": "2026-11-24T10:30:45.006048+00:00"
   }
  },
  "ultima_descoberta": "2026-11-24",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-19T08:30:47.745357+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "alerta",
-   "ts": "2026-11-19T09:30:46.635543+00:00",
-   "titulo": "SERTÃ – Candidaturas para investimentos em diversificação, comércio e serviços associados decorrem até 23 de dezembro",
-   "link": "https://radiohertz.pt/serta-candidaturas-para-investimentos-em-diversificacao-comercio-e-servicos-associados-decorrem-ate-23-de-dezembro-2/",
-   "fonte": "Rádio Hertz",
-   "nota": 49.5,
-   "pesquisa": "Sertã"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-19T10:30:46.265687+00:00",
@@ -1916,48 +1898,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-24T10:30:45.006048+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-24T10:30:45.006048+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-22T09:46:06.324756+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 532,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 487,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 1,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 0,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-22T10:46:55.985295+00:00",
    "pesquisas": [
@@ -3656,11 +3617,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-24T10:30:45.006048+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 570,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 535,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-24T09:30:51.116931+00:00",
-  "contaspoupanca.pt": "2026-11-24T09:30:51.116931+00:00"
+  "cm-serta.pt": "2026-11-24T10:30:45.006048+00:00",
+  "contaspoupanca.pt": "2026-11-24T10:30:45.006048+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3668,8 +3667,8 @@
   "contaspoupanca.pt": "2026-11-23T21:30:47.525176+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-24T09:30:51.116931+00:00",
-  "Apoio fundo ambiental": "2026-11-24T09:30:51.116931+00:00"
+  "Sertã": "2026-11-24T10:30:45.006048+00:00",
+  "Apoio fundo ambiental": "2026-11-24T10:30:45.006048+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4332,7 +4331,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-24T09:30:51.116931+00:00",
+   "verificado": "2026-11-24T10:30:45.006048+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4352,57 +4351,56 @@
     "n_menos": 0
    },
    "linhas_google": [
-    "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
     "Câmara Municipal da Sertã — Início",
-    "Serviços Online",
+    "Bem-vindo à Rede de Bibliotecas da Sertã",
+    "Turismo",
+    "Praias Fluviais, Zonas de Lazer e Piscinas",
     "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
+    "Serviços Online",
+    "Procedimentos Concursais",
+    "Câmara Municipal",
+    "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
+    "Bolsas de Estudo",
     "Programa “Férias Ativas” anima verão até final de agosto",
+    "Programa Férias Ativas abre candidaturas para monitores",
+    "Eventos Futuros",
+    "Contactos da Câmara Municipal",
     "Login",
     "Atendimento no Município para apoio após a Tempestade Kristin",
-    "Bem-vindo à Rede de Bibliotecas da Sertã",
-    "Eventos Futuros",
     "Águas Residuais",
-    "Praias Fluviais, Zonas de Lazer e Piscinas",
-    "Percursos Pedestres",
-    "Procedimentos Concursais",
-    "Bolsas de Estudo",
-    "Turismo",
-    "Contactos da Câmara Municipal",
-    "Câmara Municipal",
-    "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
-    "Programa Férias Ativas abre candidaturas para monitores",
-    "Requerimentos",
-    "Revisão do PDM da Sertã mais perto da conclusão",
-    "Espaços Museológicos",
     "Abastecimento de água",
+    "Percursos Pedestres",
+    "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
+    "Requerimentos",
+    "Casa de Espetáculos e Cultura da Sertã",
+    "Estrutura Orgânica",
+    "Editais / Avisos",
+    "Espaços Museológicos",
+    "Revisão do PDM da Sertã mais perto da conclusão",
+    "Planos",
+    "Projetos Cofinanciados",
     "Contactos Úteis",
     "Regulamentos",
-    "BUPi",
-    "Estrutura Orgânica",
-    "Planos",
-    "Casa de Espetáculos e Cultura da Sertã",
-    "Editais / Avisos",
-    "Projetos Cofinanciados",
-    "Espaços de Cowork e Incubação",
-    "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
-    "Ficha técnica",
     "Calendário de Reuniões",
+    "BUPi",
     "Desporto",
-    "Bolsas de Estudo do Município da Sertã com novas normas",
+    "Espaços de Cowork e Incubação",
     "Mercados e Feiras",
     "Mapa de Pessoal",
-    "História e Caracterização",
+    "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
     "Assembleia Municipal Jovem",
     "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto",
-    "Academia Sénior",
+    "Ficha técnica",
+    "História e Caracterização",
     "União de Freguesias de Cumeada e Marmeleiro",
-    "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
+    "Bolsas de Estudo do Município da Sertã com novas normas",
     "clds 5g",
-    "Freguesias",
-    "Gabinete Florestal",
     "Faixas de Gestão de Combustível",
-    "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
+    "Academia Sénior",
+    "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
+    "Gabinete Florestal",
     "Festas e Romarias",
+    "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
     "Mel em destaque no mercado Produtos da Terra de agosto",
     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
@@ -4508,6 +4506,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ/Hóquei: Atletas sertaginenses destacam-se internacionalmente",
+    "Última hora",
     "FERREIRA DO ZÊZERE: Colisão entre ligeiros faz três feridos",
     "Última hora",
     "SERTÃ: Concelho acolheu estreia nacional da peça “Quem Matou Edgar Allan Poe?”",
@@ -4524,12 +4524,18 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ/Hóquei: Atletas sertaginenses destacam-se internacionalmente",
+    "Beira Baixa",
+    "Sertã",
+    "Desporto",
+    "24-11-2026",
+    "Última hora",
+    "Tiago Martins e Martim Marçal contribuem para marco histórico do Andorra Hoquei Gel",
     "FERREIRA DO ZÊZERE: Colisão entre ligeiros faz três feridos",
     "Ferreira do Zêzere",
     "Médio Tejo",
     "23-11-2026",
     "Última hora",
-    "Esta tarde na localidade de Vale Serrão",
     "VILA DE REI: Executivo aprova orçamento de 15.500.000 €",
     "Vila de Rei",
     "Beira Baixa",
@@ -4589,10 +4595,6 @@
     "Castanheira de Pera",
     "Região",
     "21-11-2026",
-    "SERTÃ: Vereador do PSD questiona futuro de edifícios municipais",
-    "Sertã",
-    "Beira Baixa",
-    "21-11-2026",
     "1",
     "2",
     "3",
@@ -4606,21 +4608,27 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-24T09:30:51.116931+00:00",
+   "verificado": "2026-11-24T10:30:45.006048+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-24T07:30:46.524328+00:00",
+   "mudou": "2026-11-24T10:30:45.006048+00:00",
    "mudanca": {
     "mais": [
-     "terça-feira, 24 novembro 2026"
+     "SERTÃ/Hóquei: Atletas sertaginenses destacam-se internacionalmente",
+     "Última hora",
+     "SERTÃ/Hóquei: Atletas sertaginenses destacam-se internacionalmente",
+     "Desporto",
+     "Última hora",
+     "Tiago Martins e Martim Marçal contribuem para marco histórico do Andorra Hoquei Gel"
     ],
     "menos": [
-     "segunda-feira, 23 novembro 2026"
+     "Esta tarde na localidade de Vale Serrão",
+     "SERTÃ: Vereador do PSD questiona futuro de edifícios municipais"
     ],
-    "n_mais": 1,
-    "n_menos": 1
+    "n_mais": 6,
+    "n_menos": 2
    },
    "via": "site",
    "erro_site": ""
@@ -4838,10 +4846,13 @@
     "Contas-Poupança | Dê um aumento a si próprio",
     "Os meus investimentos caíram 17% . Vendo, reforço ou espero?",
     "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
+    "Simulador de Juros compostos",
     "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "E-Lar: novo apoio em 2027 para trocar fogões e esquentadores a gás em zonas rurais",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
+    "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
+    "Revista de imprensa de 24 de novembro: Pensões, combustíveis e endividamento das famílias",
     "PPR",
     "Simuladores",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
@@ -4869,9 +4880,9 @@
     "Subscrever Newsletter",
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
-    "Carro",
     "As 5 lições financeiras que 2025 me ensinou",
     "Termos e Condições",
+    "Carro",
     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
@@ -4905,12 +4916,10 @@
     "Propinas não vão aumentar em 2027: veja quanto vai pagar e o que passa a ser gratuito",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
-    "Revista de imprensa de 24 de novembro: Pensões, combustíveis e endividamento das famílias",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
-    "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
+    "Vamos a contas: Tenho 32.500 € no banco. Faz sentido investir agora 100 € por mês no S&P 500 e em ouro?",
     "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger",
     "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
-    "Revista de imprensa de 6 de novembro: Salário mínimo, inflação e crédito à habitação",
     "Bolsa esta semana: Wall Street afunda 8,6% e entra em correção",
     "Gasolina já está abaixo dos 2 euros em todas as marcas. Veja onde é mais barata esta semana",
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
@@ -4919,38 +4928,20 @@
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-24T09:30:51.116931+00:00",
+   "verificado": "2026-11-24T10:30:45.006048+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-24T09:30:51.116931+00:00",
+   "mudou": "2026-11-24T10:30:45.006048+00:00",
    "mudanca": {
     "mais": [
-     "As 5 lições financeiras que 2025 me ensinou",
-     "Termos e Condições",
-     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
-     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
-     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
-     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
-     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
-     "IMI",
-     "Investimentos",
-     "PodTEXT | Como investir para os filhos e pagar menos impostos",
-     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
-     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
-     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
-     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
-     "Apoios Sociais",
-     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
-     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
-     "Combustíveis",
-     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
-     "Preço dos combustíveis na próxima semana (9 a 15 de novembro)"
+     "Simulador de Juros compostos",
+     "Vamos a contas: Tenho 32.500 € no banco. Faz sentido investir agora 100 € por mês no S&P 500 e em ouro?"
     ],
     "menos": [],
-    "n_mais": 48,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
