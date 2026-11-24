@@ -205,7 +205,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-24T03:30:56.268859+00:00"
+   "ultima": "2026-11-24T07:30:46.524328+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -752,7 +752,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-24T06:30:44.864856+00:00"
+   "ultima": "2026-11-24T07:30:46.524328+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -779,7 +779,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-24T06:30:44.864856+00:00"
+   "ultima": "2026-11-24T07:30:46.524328+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -1085,24 +1085,6 @@
  },
  "ultima_descoberta": "2026-11-23",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-18T17:30:47.468408+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-18T18:30:49.554232+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-18T19:30:51.396866+00:00",
@@ -1984,39 +1966,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-24T07:30:46.524328+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-24T07:30:46.524328+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-22T06:46:06.442832+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 533,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 489,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-22T07:45:57.665698+00:00",
    "pesquisas": [
@@ -3719,11 +3689,50 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-24T07:30:46.524328+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 659,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 659,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-24T06:30:44.864856+00:00",
-  "contaspoupanca.pt": "2026-11-23T22:30:46.267412+00:00"
+  "cm-serta.pt": "2026-11-24T07:30:46.524328+00:00",
+  "contaspoupanca.pt": "2026-11-24T07:30:46.524328+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3731,8 +3740,8 @@
   "contaspoupanca.pt": "2026-11-23T21:30:47.525176+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-24T06:30:44.864856+00:00",
-  "Apoio fundo ambiental": "2026-11-24T06:30:44.864856+00:00"
+  "Sertã": "2026-11-24T07:30:46.524328+00:00",
+  "Apoio fundo ambiental": "2026-11-24T07:30:46.524328+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4395,8 +4404,8 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-23T22:30:46.267412+00:00",
-   "falhas": 1,
+   "verificado": "2026-11-24T07:30:46.524328+00:00",
+   "falhas": 2,
    "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
@@ -4474,7 +4483,7 @@
   },
   "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/": {
    "linhas": [
-    "segunda-feira, 23 novembro 2026",
+    "terça-feira, 24 novembro 2026",
     "Informação",
     "Programação",
     "Ficha Técnica",
@@ -4669,30 +4678,21 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-23T22:30:46.267412+00:00",
+   "verificado": "2026-11-24T07:30:46.524328+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-23T21:30:47.792900+00:00",
+   "mudou": "2026-11-24T07:30:46.524328+00:00",
    "mudanca": {
     "mais": [
-     "FERREIRA DO ZÊZERE: Colisão entre ligeiros faz três feridos",
-     "Última hora",
-     "FERREIRA DO ZÊZERE: Colisão entre ligeiros faz três feridos",
-     "Ferreira do Zêzere",
-     "Médio Tejo",
-     "Última hora",
-     "Esta tarde na localidade de Vale Serrão"
+     "terça-feira, 24 novembro 2026"
     ],
     "menos": [
-     "O maior de sempre",
-     "PAMPILHOSA DA SERRA: Município acolheu I Congresso Internacional do Medronheiro e do Medronho",
-     "Pampilhosa da Serra",
-     "Região"
+     "segunda-feira, 23 novembro 2026"
     ],
-    "n_mais": 7,
-    "n_menos": 4
+    "n_mais": 1,
+    "n_menos": 1
    },
    "via": "site",
    "erro_site": ""
@@ -4910,23 +4910,22 @@
     "Contas-Poupança | Dê um aumento a si próprio",
     "Os meus investimentos caíram 17% . Vendo, reforço ou espero?",
     "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
+    "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
-    "P2P vs. Certificados de Aforro: investi o mesmo valor - quem está a ganhar? (Outubro 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "PPR",
     "Simuladores",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
-    "Carro",
     "Inflação na zona euro sobe para 4%, a mais alta em três anos",
     "Simulador de apoio para os carros elétricos",
     "Últimas Notícias",
+    "Simulador de amortização crédito à habitação",
     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
     "Conversão de certificados de aforro em papel para digital arranca hoje",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Pedro Andersson",
     "Subscrever Newsletter “Contas-poupança”",
     "Entrevista: O que deve saber antes de comprar um carro elétrico? Henrique Sánchez (UVE)",
-    "Simulador de amortização crédito à habitação",
     "Erros no IRS, mercados em queda e juros dos Certificados de Aforro: os 3 episódios desta semana",
     "O que é a liberdade financeira e como a posso alcançar?",
     "Política de Privacidade",
@@ -4942,6 +4941,7 @@
     "Subscrever Newsletter",
     "Combustíveis, bolsas e carros elétricos: 3 episódios do podcast para proteger o seu dinheiro",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
+    "Carro",
     "As 5 lições financeiras que 2025 me ensinou",
     "Termos e Condições",
     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
@@ -4956,17 +4956,15 @@
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
+    "Apoios Sociais",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
-    "Gás",
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Combustíveis",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Preço dos combustíveis na próxima semana (9 a 15 de novembro)",
     "PodTEXT | 10 maneiras inteligentes (mais uma de bónus) de usar o seu reembolso do IRS em 2025",
     "Certificados de Aforro",
-    "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
-    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
@@ -4976,11 +4974,9 @@
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
     "SOS Finanças: O seu Fundo de emergência aguentava uma inundação?",
     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
-    "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
     "Propinas não vão aumentar em 2027: veja quanto vai pagar e o que passa a ser gratuito",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
-    "Máquinas volta já devolvem o dinheiro das embalagens por MB WAY: veja onde",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
     "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger",
@@ -4992,21 +4988,20 @@
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Revista de imprensa de 23 de novembro: Pensões, combustíveis e seguros do crédito casa",
     "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
-    "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "Pensões chegam mais cedo em novembro: Segurança Social paga a 6. Veja todas as datas"
    ],
-   "verificado": "2026-11-23T22:30:46.267412+00:00",
+   "verificado": "2026-11-24T07:30:46.524328+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-23T22:30:46.267412+00:00",
+   "mudou": "2026-11-24T07:30:46.524328+00:00",
    "mudanca": {
     "mais": [
-     "Gás"
+     "Apoios Sociais"
     ],
     "menos": [],
     "n_mais": 1,
