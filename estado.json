@@ -102,7 +102,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-25T10:30:49.962654+00:00"
+   "ultima": "2026-11-25T12:30:46.876785+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -989,7 +989,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência (2.ª fase): apoio de até 1.599 euros para janelas, bombas de calor entre outros",
-   "ultima": "2026-11-25T10:30:49.962654+00:00"
+   "ultima": "2026-11-25T12:30:46.876785+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -1001,7 +1001,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre candidaturas: famílias podem receber até 1.599 euros",
-   "ultima": "2026-11-25T10:30:49.962654+00:00"
+   "ultima": "2026-11-25T12:30:46.876785+00:00"
   },
   "rfm.pt": {
    "nome": "RFM",
@@ -1013,7 +1013,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II está de volta: podes receber até 1.599 euros para melhorar a tua casa",
-   "ultima": "2026-11-25T10:30:49.962654+00:00"
+   "ultima": "2026-11-25T12:30:46.876785+00:00"
   },
   "diariodistrito.sapo.pt": {
    "nome": "Diário do Distrito",
@@ -1025,7 +1025,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: apoio até 1.599 € para janelas e bombas de calor",
-   "ultima": "2026-11-25T10:30:49.962654+00:00"
+   "ultima": "2026-11-25T12:30:46.876785+00:00"
   },
   "rtp.pt": {
    "nome": "RTP",
@@ -1037,7 +1037,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Parlamento alarga tarifa social de energia e assegura execução do Vale Eficiência",
-   "ultima": "2026-11-25T10:30:49.962654+00:00"
+   "ultima": "2026-11-25T12:30:46.876785+00:00"
   },
   "cm-alcacerdosal.pt": {
    "nome": "CM - Alcácer do Sal",
@@ -1054,24 +1054,6 @@
  },
  "ultima_descoberta": "2026-11-25",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-20T18:30:58.317901+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-20T19:30:50.401600+00:00",
-   "titulo": "Mudou: cm-serta",
-   "link": "https://cm-serta.pt/comunicacao/noticias",
-   "fonte": "cm-serta.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-20T19:30:50.401600+00:00",
@@ -1953,47 +1935,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-25T12:30:46.876785+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-25T12:30:46.876785+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-23T12:32:07.437626+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 612,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 532,
-     "relevantes": 1,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 3,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-23T13:31:04.055766+00:00",
    "pesquisas": [
@@ -3682,11 +3644,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-25T12:30:46.876785+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 615,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 550,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-25T11:30:49.328605+00:00",
-  "contaspoupanca.pt": "2026-11-25T11:30:49.328605+00:00"
+  "cm-serta.pt": "2026-11-25T12:30:46.876785+00:00",
+  "contaspoupanca.pt": "2026-11-25T12:30:46.876785+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3694,8 +3696,8 @@
   "contaspoupanca.pt": "2026-11-24T21:30:49.005112+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-25T11:30:49.328605+00:00",
-  "Apoio fundo ambiental": "2026-11-25T11:30:49.328605+00:00"
+  "Sertã": "2026-11-25T12:30:46.876785+00:00",
+  "Apoio fundo ambiental": "2026-11-25T12:30:46.876785+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4358,7 +4360,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-25T11:30:49.328605+00:00",
+   "verificado": "2026-11-25T12:30:46.876785+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4595,6 +4597,8 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ/Natação: CCD Sertã brilha na Guarda e prepara-se para os Nacionais da 3.ª Divisão",
+    "Última hora",
     "GAVIÃO: Feriado Municipal marcado por críticas ao Governo e pensamento no futuro",
     "Última hora",
     "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
@@ -4607,11 +4611,21 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ/Natação: CCD Sertã brilha na Guarda e prepara-se para os Nacionais da 3.ª Divisão",
+    "Sertã",
+    "Desporto",
+    "Beira Baixa",
+    "25-11-2026",
+    "Última hora",
+    "Com 25 nadadores em prova na Guarda, o clube garantiu o segundo lugar e foca-se agora na manutenção na 3.ª Divisão Nacional",
+    "VILA VELHA DE RÓDÃO: Marca “Terras de Oiro” desafia consumidores",
+    "Vila Velha de Ródão",
+    "Beira Baixa",
+    "25-11-2026",
     "SERTÃ: “Biblioteca com Saúde” aborda técnicas para gestão da ansiedade em jovens",
     "Sertã",
     "Beira Baixa",
     "25-11-2026",
-    "No dia 28 de novembro",
     "SERTÃ: Música sobe a diversos palcos do concelho nesta quadra",
     "Sertã",
     "Beira Baixa",
@@ -4653,15 +4667,6 @@
     "Figueiró dos Vinhos",
     "Médio Tejo",
     "24-11-2026",
-    "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
-    "24-11-2026",
-    "Última hora",
-    "SERTÃ/Hóquei: Atletas sertaginenses destacam-se internacionalmente",
-    "Beira Baixa",
-    "Sertã",
-    "Desporto",
-    "24-11-2026",
-    "Última hora",
     "1",
     "2",
     "3",
@@ -4675,28 +4680,27 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-25T11:30:49.328605+00:00",
+   "verificado": "2026-11-25T12:30:46.876785+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-25T11:30:49.328605+00:00",
+   "mudou": "2026-11-25T12:30:46.876785+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: “Biblioteca com Saúde” aborda técnicas para gestão da ansiedade em jovens",
-     "Sertã",
-     "Beira Baixa",
-     "No dia 28 de novembro"
+     "SERTÃ/Natação: CCD Sertã brilha na Guarda e prepara-se para os Nacionais da 3.ª Divisão",
+     "SERTÃ/Natação: CCD Sertã brilha na Guarda e prepara-se para os Nacionais da 3.ª Divisão",
+     "Com 25 nadadores em prova na Guarda, o clube garantiu o segundo lugar e foca-se agora na manutenção na 3.ª Divisão Nacional",
+     "VILA VELHA DE RÓDÃO: Marca “Terras de Oiro” desafia consumidores",
+     "Vila Velha de Ródão"
     ],
     "menos": [
-     "Concertos animam concelho este Natal",
-     "FERREIRA DO ZÊZERE: Colisão entre ligeiros faz três feridos",
-     "Ferreira do Zêzere",
-     "Médio Tejo",
-     "Última hora"
+     "No dia 28 de novembro",
+     "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
+     "SERTÃ/Hóquei: Atletas sertaginenses destacam-se internacionalmente"
     ],
-    "n_mais": 4,
-    "n_menos": 5
+    "n_mais": 5,
+    "n_menos": 3
    },
    "via": "site",
    "erro_site": "",
@@ -5015,12 +5019,12 @@
    "linhas_google": [
     "Contas-Poupança | Dê um aumento a si próprio",
     "Os meus investimentos caíram 17% . Vendo, reforço ou espero?",
-    "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
     "Orçamento do Estado 2027: as mudanças que vão mexer na sua carteira a partir de janeiro",
+    "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
     "E-Lar: novo apoio em 2027 para trocar fogões e esquentadores a gás em zonas rurais",
     "P2P vs. Certificados de Aforro: investi o mesmo valor - quem está a ganhar? (Outubro 2026)",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
-    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
+    "Simulador de Juros compostos",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
     "Combustíveis",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
@@ -5040,7 +5044,6 @@
     "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
-    "Simulador de IRS: Quanto devolve o seu município?",
     "Simuladores",
     "Evitar erros nas férias e poupar nas mais-valias: os dois podcasts da semana",
     "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
@@ -5050,12 +5053,12 @@
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "IRS",
     "As 5 lições financeiras que 2025 me ensinou",
-    "Tem 60% ou mais de incapacidade? O Estado pode pagar parte dos juros do seu crédito à habitação e a prestação pode baixar quase 200 euros",
     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
+    "Simulador de IRS: Quanto devolve o seu município?",
     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
     "IMI",
     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
@@ -5070,52 +5073,58 @@
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
+    "Tem 60% ou mais de incapacidade? O Estado pode pagar parte dos juros do seu crédito à habitação e a prestação pode baixar quase 200 euros",
     "Certificados de Aforro",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "PodTEXT | 10 maneiras inteligentes (mais uma de bónus) de usar o seu reembolso do IRS em 2025",
+    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
+    "Carro",
     "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
+    "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
+    "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger",
+    "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
+    "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
+    "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
     "Propinas não vão aumentar em 2027: veja quanto vai pagar e o que passa a ser gratuito",
-    "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
     "Revista de imprensa de 24 de novembro: Pensões, combustíveis e endividamento das famílias",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Revista de imprensa de 20 de novembro: Crédito habitação, rendas e OE2027",
     "Crédito à habitação: juros já levam 217 euros da prestação média",
     "Vamos a contas: Tenho 32.500 € no banco. Faz sentido investir agora 100 € por mês no S&P 500 e em ouro?",
-    "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger",
     "Revista de imprensa de 19 de novembro: Pensões, burlas bancárias e OE2027",
     "Revista de imprensa de 25 de novembro: OE2027, rendas em Lisboa e rating da banca",
+    "Avaliação bancária das casas bate novo recorde: 2.282 euros por m2 em outubro",
     "Bolsa esta semana: Wall Street afunda 8,6% e entra em correção",
     "Gasolina já está abaixo dos 2 euros em todas as marcas. Veja onde é mais barata esta semana",
-    "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Tarifa social de energia: mais famílias poderão ter 34% de desconto na eletricidade e no gás. Veja os novos limites",
     "Revista de imprensa de 23 de novembro: Pensões, combustíveis e seguros do crédito casa",
     "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
-    "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
-    "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
-    "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
+    "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar"
    ],
-   "verificado": "2026-11-25T11:30:49.328605+00:00",
+   "verificado": "2026-11-25T12:30:46.876785+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-25T11:30:49.328605+00:00",
+   "mudou": "2026-11-25T12:30:46.876785+00:00",
    "mudanca": {
     "mais": [
-     "Combustíveis"
+     "Simulador de Juros compostos",
+     "Carro",
+     "Avaliação bancária das casas bate novo recorde: 2.282 euros por m2 em outubro"
     ],
     "menos": [],
-    "n_mais": 1,
+    "n_mais": 3,
     "n_menos": 0
    }
   }
