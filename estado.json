@@ -195,7 +195,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-25T03:30:47.967573+00:00"
+   "ultima": "2026-11-25T04:30:51.202879+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -742,7 +742,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-25T03:30:47.967573+00:00"
+   "ultima": "2026-11-25T04:30:51.202879+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -1082,7 +1082,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência (2.ª fase): apoio de até 1.599 euros para janelas, bombas de calor entre outros",
-   "ultima": "2026-11-25T03:30:47.967573+00:00"
+   "ultima": "2026-11-25T04:30:51.202879+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -1094,7 +1094,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre candidaturas: famílias podem receber até 1.599 euros",
-   "ultima": "2026-11-25T03:30:47.967573+00:00"
+   "ultima": "2026-11-25T04:30:51.202879+00:00"
   },
   "rfm.pt": {
    "nome": "RFM",
@@ -1106,7 +1106,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II está de volta: podes receber até 1.599 euros para melhorar a tua casa",
-   "ultima": "2026-11-25T03:30:47.967573+00:00"
+   "ultima": "2026-11-25T04:30:51.202879+00:00"
   },
   "diariodistrito.sapo.pt": {
    "nome": "Diário do Distrito",
@@ -1118,7 +1118,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: apoio até 1.599 € para janelas e bombas de calor",
-   "ultima": "2026-11-25T03:30:47.967573+00:00"
+   "ultima": "2026-11-25T04:30:51.202879+00:00"
   },
   "rtp.pt": {
    "nome": "RTP",
@@ -1130,7 +1130,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Parlamento alarga tarifa social de energia e assegura execução do Vale Eficiência",
-   "ultima": "2026-11-25T03:30:47.967573+00:00"
+   "ultima": "2026-11-25T04:30:51.202879+00:00"
   }
  },
  "ultima_descoberta": "2026-11-24",
@@ -2037,36 +2037,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-23T04:01:03.033778+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 569,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 488,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [
-    "cm-serta.pt"
-   ],
-   "pelo_google": [],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-23T05:01:07.345481+00:00",
    "pesquisas": [
@@ -3770,10 +3740,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-25T04:30:51.202879+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 568,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 603,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-25T03:30:47.967573+00:00",
+  "cm-serta.pt": "2026-11-25T04:30:51.202879+00:00",
   "contaspoupanca.pt": "2026-11-24T22:30:48.770841+00:00"
  },
  "lentos": {},
@@ -3782,8 +3782,8 @@
   "contaspoupanca.pt": "2026-11-24T21:30:49.005112+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-25T03:30:47.967573+00:00",
-  "Apoio fundo ambiental": "2026-11-25T03:30:47.967573+00:00"
+  "Sertã": "2026-11-25T04:30:51.202879+00:00",
+  "Apoio fundo ambiental": "2026-11-25T04:30:51.202879+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
