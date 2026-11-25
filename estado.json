@@ -102,7 +102,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-25T10:30:49.962654+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -649,7 +649,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-25T10:30:49.962654+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -989,7 +989,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência (2.ª fase): apoio de até 1.599 euros para janelas, bombas de calor entre outros",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-25T10:30:49.962654+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -1001,7 +1001,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre candidaturas: famílias podem receber até 1.599 euros",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-25T10:30:49.962654+00:00"
   },
   "rfm.pt": {
    "nome": "RFM",
@@ -1013,7 +1013,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II está de volta: podes receber até 1.599 euros para melhorar a tua casa",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-25T10:30:49.962654+00:00"
   },
   "diariodistrito.sapo.pt": {
    "nome": "Diário do Distrito",
@@ -1025,7 +1025,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: apoio até 1.599 € para janelas e bombas de calor",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-25T10:30:49.962654+00:00"
   },
   "rtp.pt": {
    "nome": "RTP",
@@ -1037,7 +1037,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Parlamento alarga tarifa social de energia e assegura execução do Vale Eficiência",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-25T10:30:49.962654+00:00"
   },
   "cm-alcacerdosal.pt": {
    "nome": "CM - Alcácer do Sal",
@@ -1054,24 +1054,6 @@
  },
  "ultima_descoberta": "2026-11-25",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-20T15:31:03.580374+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-20T16:31:07.741665+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-20T17:31:13.053072+00:00",
@@ -1953,48 +1935,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-25T10:30:49.962654+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-25T10:30:49.962654+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-23T10:03:58.729478+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 533,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 487,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "pelo_google": [
-    "Contas poupanças"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-23T11:18:28.134475+00:00",
    "pesquisas": [
@@ -3682,11 +3643,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-25T10:30:49.962654+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 568,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 603,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-25T09:30:45.523126+00:00",
-  "contaspoupanca.pt": "2026-11-25T09:30:45.523126+00:00"
+  "cm-serta.pt": "2026-11-25T10:30:49.962654+00:00",
+  "contaspoupanca.pt": "2026-11-25T10:30:49.962654+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3694,8 +3694,8 @@
   "contaspoupanca.pt": "2026-11-24T21:30:49.005112+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-25T09:30:45.523126+00:00",
-  "Apoio fundo ambiental": "2026-11-25T09:30:45.523126+00:00"
+  "Sertã": "2026-11-25T10:30:49.962654+00:00",
+  "Apoio fundo ambiental": "2026-11-25T10:30:49.962654+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4358,127 +4358,77 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-25T09:30:45.523126+00:00",
-   "falhas": 2,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-25T10:30:49.962654+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-25T07:30:45.206139+00:00",
+   "mudou": "2026-11-25T10:30:49.962654+00:00",
    "mudanca": {
     "mais": [
-     "EDITAL N.º 15 / 2026",
-     "Outros Eventos",
-     "Festas e Feiras",
-     "Resíduos Sólidos Urbanos",
-     "Faixas de Gestão de Combustível",
-     "Incentivos à Fixação e Captação de Médicos",
-     "Gabinete Florestal"
+     "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
+     "Festas e Romarias",
+     "Mel em destaque no mercado Produtos da Terra de agosto",
+     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
     ],
     "menos": [],
-    "n_mais": 7,
+    "n_mais": 4,
     "n_menos": 0
    },
    "linhas_google": [
-    "Câmara Municipal da Sertã — Início",
-    "Bem-vindo à Rede de Bibliotecas da Sertã",
-    "Turismo",
-    "Praias Fluviais, Zonas de Lazer e Piscinas",
-    "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
-    "Bolsas de Estudo",
-    "Serviços Online",
-    "XIV Rali Histórico Vila da Sertã",
-    "Procedimentos Concursais",
-    "Câmara Municipal",
     "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
+    "Câmara Municipal da Sertã — Início",
+    "Serviços Online",
+    "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
     "Programa “Férias Ativas” anima verão até final de agosto",
-    "Programa Férias Ativas abre candidaturas para monitores",
-    "Eventos Futuros",
-    "Contactos da Câmara Municipal",
     "Login",
     "Atendimento no Município para apoio após a Tempestade Kristin",
+    "Bem-vindo à Rede de Bibliotecas da Sertã",
+    "Eventos Futuros",
     "Águas Residuais",
-    "Abastecimento de água",
+    "Praias Fluviais, Zonas de Lazer e Piscinas",
     "Percursos Pedestres",
+    "Procedimentos Concursais",
+    "Bolsas de Estudo",
+    "Turismo",
+    "Contactos da Câmara Municipal",
+    "Câmara Municipal",
     "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
+    "Programa Férias Ativas abre candidaturas para monitores",
     "Requerimentos",
-    "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO",
-    "Casa de Espetáculos e Cultura da Sertã",
-    "Conselho Municipal de Educação",
-    "Estrutura Orgânica",
-    "Editais / Avisos",
-    "Comitiva da Turismo Centro de Portugal visitou o concelho da Sertã",
-    "Espaços Museológicos",
-    "MUNICÍPIO DE SERTÃ Aviso Procedimento concursal comum para a constituição de relação jurídica de emprego público, por te",
     "Revisão do PDM da Sertã mais perto da conclusão",
-    "Maranho da Sertã reconhecido com Prémio Cinco Estrelas Regiões",
-    "Equipamentos Desportivos",
-    "Planos",
-    "Sugestões e Reclamações",
-    "Projetos Cofinanciados",
-    "LICENÇA ESPECIAL DE RUÍDO PARA ESPETÁCULOS, DIVERSÕES, MANIFESTAÇÕES DESPORTIVAS, FEIRAS E MERCADOS",
+    "Espaços Museológicos",
+    "Abastecimento de água",
     "Contactos Úteis",
-    "EDITAL N.º 15 / 2026",
     "Regulamentos",
-    "Calendário de Reuniões",
     "BUPi",
-    "Desporto",
-    "INSCRIÇÃO NO PROGRAMA DE APOIO À FAMÍLIA – TEMPO DE ACOLHER",
+    "Estrutura Orgânica",
+    "Planos",
+    "Casa de Espetáculos e Cultura da Sertã",
+    "Editais / Avisos",
+    "Projetos Cofinanciados",
     "Espaços de Cowork e Incubação",
-    "BiblioAndante",
+    "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
+    "Ficha técnica",
+    "Calendário de Reuniões",
+    "Desporto",
+    "Bolsas de Estudo do Município da Sertã com novas normas",
     "Mercados e Feiras",
     "Mapa de Pessoal",
-    "Untitled",
-    "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
-    "Eventos Literários",
-    "Untitled",
-    "Tarifas",
-    "Mandato 2025/2029 EDITAL N.º156/2025",
-    "Assembleia Municipal da Sertã",
-    "Contactos",
+    "História e Caracterização",
     "Assembleia Municipal Jovem",
     "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto",
-    "Serviço de Atendimento e Acompanhamento Social (SAAS)",
-    "Outros Eventos",
-    "Notícias",
-    "CADERNO DE ENCARGOS",
-    "Mandato 2025/2029 EDITAL N.º32/2026",
-    "Ficha técnica",
-    "Vespas",
-    "História e Caracterização",
-    "Freguesias",
-    "União de Freguesias de Cumeada e Marmeleiro",
-    "Untitled",
-    "Sertã celebra o 25 de Abril com música, tradição e memória",
-    "Bolsas de Estudo do Município da Sertã com novas normas",
-    "Mandato 2025/2029 EDITAL N.º137/2025",
-    "Impostos e Taxas Municipais",
-    "Modalidades Ginásio Municipal",
-    "Festas e Feiras",
-    "Ficha técnica",
-    "Untitled",
-    "Junta de Freguesia do Troviscal",
-    "Resíduos Sólidos Urbanos",
-    "Untitled",
-    "clds 5g",
-    "Untitled",
-    "Untitled",
-    "AIGP 2.0/OIGP 2.0 - TEMPESTADE KRISTIN CANDIDATURA A APOIOS FINANCEIROS RESULTANTES DAS COMUNICAÇÕES DE COMPROMISSO DE EXECUÇ",
-    "Untitled",
-    "Faixas de Gestão de Combustível",
     "Academia Sénior",
-    "Untitled",
+    "União de Freguesias de Cumeada e Marmeleiro",
     "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
-    "BOLSAS DE ESTUDO: CANDIDATURA RENOVAÇÃO",
-    "Horários",
-    "CERTIDÃO COMPROVATIVA DE DESPESAS ESCOLARES",
-    "EDITAL N",
-    "Mandato 2025/2029 EDITAL N.º134/2025",
-    "ASA (Área de Serviço para Autocaravanas)",
-    "Untitled",
-    "Untitled",
-    "Incentivos à Fixação e Captação de Médicos",
-    "Biblioteca Municipal Padre Manuel Antunes",
-    "Gabinete Florestal"
+    "clds 5g",
+    "Freguesias",
+    "Gabinete Florestal",
+    "Faixas de Gestão de Combustível",
+    "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
+    "Festas e Romarias",
+    "Mel em destaque no mercado Produtos da Terra de agosto",
+    "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
    ],
    "via": "google",
    "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
@@ -4594,11 +4544,19 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "SERTÃ: Música sobe a diversos palcos do concelho nesta quadra",
+    "Sertã",
+    "Beira Baixa",
+    "25-11-2026",
+    "Concertos animam concelho este Natal",
+    "OLEIROS: “A Magia do Natal” regressa com música e diversão",
+    "Oleiros",
+    "Beira Baixa",
+    "25-11-2026",
     "SERTÃ: “A Caminho das Estrelas” celebra gastronomia e produtos regionais",
     "Sertã",
     "Beira Baixa",
     "24-11-2026",
-    "No dia 29 de novembro",
     "SARDOAL: “Sorteio no Comércio Local” com 1500 euros em prémios",
     "Sardoal",
     "Beira Baixa",
@@ -4642,14 +4600,6 @@
     "Médio Tejo",
     "23-11-2026",
     "Última hora",
-    "VILA DE REI: Executivo aprova orçamento de 15.500.000 €",
-    "Vila de Rei",
-    "Beira Baixa",
-    "23-11-2026",
-    "VILA DE REI: Pedidos de prospeção de ouro e outros minérios geram dúvidas",
-    "Vila de Rei",
-    "Beira Baixa",
-    "23-11-2026",
     "1",
     "2",
     "3",
@@ -4663,21 +4613,29 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-25T09:30:45.523126+00:00",
+   "verificado": "2026-11-25T10:30:49.962654+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-25T07:30:45.206139+00:00",
+   "mudou": "2026-11-25T10:30:49.962654+00:00",
    "mudanca": {
     "mais": [
-     "quarta-feira, 25 novembro 2026"
+     "SERTÃ: Música sobe a diversos palcos do concelho nesta quadra",
+     "Sertã",
+     "Concertos animam concelho este Natal",
+     "OLEIROS: “A Magia do Natal” regressa com música e diversão",
+     "Oleiros"
     ],
     "menos": [
-     "terça-feira, 24 novembro 2026"
+     "No dia 29 de novembro",
+     "VILA DE REI: Executivo aprova orçamento de 15.500.000 €",
+     "Vila de Rei",
+     "VILA DE REI: Pedidos de prospeção de ouro e outros minérios geram dúvidas",
+     "Vila de Rei"
     ],
-    "n_mais": 1,
-    "n_menos": 1
+    "n_mais": 5,
+    "n_menos": 5
    },
    "via": "site",
    "erro_site": "",
@@ -5084,9 +5042,9 @@
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-25T09:30:45.523126+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-25T10:30:49.962654+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
