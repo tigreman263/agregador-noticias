@@ -102,7 +102,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-25T13:30:44.347481+00:00"
+   "ultima": "2026-11-25T14:30:56.706296+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -953,7 +953,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre com apoio único de até 1.599 € para candidaturas retidas",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-25T14:30:56.706296+00:00"
   },
   "executivedigest.sapo.pt": {
    "nome": "Executive Digest",
@@ -989,7 +989,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência (2.ª fase): apoio de até 1.599 euros para janelas, bombas de calor entre outros",
-   "ultima": "2026-11-25T13:30:44.347481+00:00"
+   "ultima": "2026-11-25T14:30:56.706296+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -1001,7 +1001,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre candidaturas: famílias podem receber até 1.599 euros",
-   "ultima": "2026-11-25T13:30:44.347481+00:00"
+   "ultima": "2026-11-25T14:30:56.706296+00:00"
   },
   "rfm.pt": {
    "nome": "RFM",
@@ -1013,7 +1013,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II está de volta: podes receber até 1.599 euros para melhorar a tua casa",
-   "ultima": "2026-11-25T13:30:44.347481+00:00"
+   "ultima": "2026-11-25T14:30:56.706296+00:00"
   },
   "diariodistrito.sapo.pt": {
    "nome": "Diário do Distrito",
@@ -1025,7 +1025,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: apoio até 1.599 € para janelas e bombas de calor",
-   "ultima": "2026-11-25T13:30:44.347481+00:00"
+   "ultima": "2026-11-25T14:30:56.706296+00:00"
   },
   "rtp.pt": {
    "nome": "RTP",
@@ -1037,7 +1037,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Parlamento alarga tarifa social de energia e assegura execução do Vale Eficiência",
-   "ultima": "2026-11-25T13:30:44.347481+00:00"
+   "ultima": "2026-11-25T14:30:56.706296+00:00"
   },
   "cm-alcacerdosal.pt": {
    "nome": "CM - Alcácer do Sal",
@@ -1956,44 +1956,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-23T14:30:33.751074+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 582,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 534,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-23T15:30:51.023694+00:00",
    "pesquisas": [
@@ -3685,11 +3647,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-25T14:30:56.706296+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 550,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 576,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertaginen",
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-25T13:30:44.347481+00:00",
-  "contaspoupanca.pt": "2026-11-25T13:30:44.347481+00:00"
+  "cm-serta.pt": "2026-11-25T14:30:56.706296+00:00",
+  "contaspoupanca.pt": "2026-11-25T14:30:56.706296+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3697,8 +3699,8 @@
   "contaspoupanca.pt": "2026-11-24T21:30:49.005112+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-25T13:30:44.347481+00:00",
-  "Apoio fundo ambiental": "2026-11-25T13:30:44.347481+00:00"
+  "Sertã": "2026-11-25T14:30:56.706296+00:00",
+  "Apoio fundo ambiental": "2026-11-25T14:30:56.706296+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4361,9 +4363,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-25T13:30:44.347481+00:00",
-   "falhas": 1,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-25T14:30:56.706296+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-25T11:30:49.328605+00:00",
@@ -4683,7 +4685,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-25T13:30:44.347481+00:00",
+   "verificado": "2026-11-25T14:30:56.706296+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -5127,9 +5129,9 @@
     "ELETRICIDADE | Qual é a empresa mais barata neste momento? (Abril 2024)",
     "As 5 lições financeiras que 2025 me ensinou"
    ],
-   "verificado": "2026-11-25T13:30:44.347481+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-25T14:30:56.706296+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
