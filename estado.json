@@ -102,7 +102,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-25T19:30:47.091370+00:00"
+   "ultima": "2026-11-25T20:30:48.632708+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -953,7 +953,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre com apoio único de até 1.599 € para candidaturas retidas",
-   "ultima": "2026-11-25T19:30:47.091370+00:00"
+   "ultima": "2026-11-25T20:30:48.632708+00:00"
   },
   "executivedigest.sapo.pt": {
    "nome": "Executive Digest",
@@ -977,7 +977,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Parlamento aprova alargamento da tarifa social de energia e financiamento integral do Vale Eficiência II",
-   "ultima": "2026-11-25T19:30:47.091370+00:00"
+   "ultima": "2026-11-25T20:30:48.632708+00:00"
   },
   "pplware.sapo.pt": {
    "nome": "Pplware",
@@ -989,7 +989,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência (2.ª fase): apoio de até 1.599 euros para janelas, bombas de calor entre outros",
-   "ultima": "2026-11-25T19:30:47.091370+00:00"
+   "ultima": "2026-11-25T20:30:48.632708+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -1001,7 +1001,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre candidaturas: famílias podem receber até 1.599 euros",
-   "ultima": "2026-11-25T19:30:47.091370+00:00"
+   "ultima": "2026-11-25T20:30:48.632708+00:00"
   },
   "rfm.pt": {
    "nome": "RFM",
@@ -1013,7 +1013,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II está de volta: podes receber até 1.599 euros para melhorar a tua casa",
-   "ultima": "2026-11-25T19:30:47.091370+00:00"
+   "ultima": "2026-11-25T20:30:48.632708+00:00"
   },
   "diariodistrito.sapo.pt": {
    "nome": "Diário do Distrito",
@@ -1025,7 +1025,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: apoio até 1.599 € para janelas e bombas de calor",
-   "ultima": "2026-11-25T19:30:47.091370+00:00"
+   "ultima": "2026-11-25T20:30:48.632708+00:00"
   },
   "rtp.pt": {
    "nome": "RTP",
@@ -1037,7 +1037,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Parlamento alarga tarifa social de energia e assegura execução do Vale Eficiência",
-   "ultima": "2026-11-25T19:30:47.091370+00:00"
+   "ultima": "2026-11-25T20:30:48.632708+00:00"
   },
   "cm-alcacerdosal.pt": {
    "nome": "CM - Alcácer do Sal",
@@ -1054,15 +1054,6 @@
  },
  "ultima_descoberta": "2026-11-25",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-21T18:45:59.282416+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-21T19:46:08.432373+00:00",
@@ -1953,49 +1944,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-25T20:30:48.632708+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-23T20:30:51.025187+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 527,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 534,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-23T21:30:47.792900+00:00",
    "pesquisas": [
@@ -3687,11 +3647,50 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-25T20:30:48.632708+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 574,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 532,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-25T19:30:47.091370+00:00",
-  "contaspoupanca.pt": "2026-11-25T19:30:47.091370+00:00"
+  "cm-serta.pt": "2026-11-25T20:30:48.632708+00:00",
+  "contaspoupanca.pt": "2026-11-25T20:30:48.632708+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3699,8 +3698,8 @@
   "contaspoupanca.pt": "2026-11-24T21:30:49.005112+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-25T19:30:47.091370+00:00",
-  "Apoio fundo ambiental": "2026-11-25T19:30:47.091370+00:00"
+  "Sertã": "2026-11-25T20:30:48.632708+00:00",
+  "Apoio fundo ambiental": "2026-11-25T20:30:48.632708+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4363,9 +4362,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-25T19:30:47.091370+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-25T20:30:48.632708+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-25T19:30:47.091370+00:00",
@@ -4694,7 +4693,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-25T19:30:47.091370+00:00",
+   "verificado": "2026-11-25T20:30:48.632708+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -5039,8 +5038,8 @@
     "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "Simulador de Juros compostos",
-    "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
     "Revista de imprensa de 25 de novembro: OE2027, rendas em Lisboa e rating da banca",
+    "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
     "Simulador de prestação do crédito à habitação: descubra quanto vai pagar na próxima revisão da Euribor",
     "Combustíveis",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
@@ -5097,7 +5096,6 @@
     "Certificados de Aforro voltam a perder rentabilidade em junho",
     "E-Lar: Faça já o registo antes do programa começar para receber os eletrodomésticos grátis",
     "PODCAST | #154 – É possível ter eletricidade quase de graça em 2023?",
-    "Quanto vai receber de subsídio de Natal? Calcule o valor líquido com o simulador do Contas-poupança",
     "Contas Poupança 16 Setembro",
     "IRS – Sabia que se tem Atestado Multiuso pode deduzir o seguro de vida?",
     "Subscrevi mais 3 fundos PPR - Porquê e quais?",
@@ -5133,40 +5131,22 @@
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
     "ELETRICIDADE | Qual é a empresa mais barata neste momento? (Abril 2024)",
     "As 5 lições financeiras que 2025 me ensinou",
-    "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)"
+    "ELETRICIDADE | Qual é a empresa mais barata este mês? (Fevereiro 2026)",
+    "Os contadores inteligentes da eletricidade são bons ou maus? Parte II"
    ],
-   "verificado": "2026-11-25T19:30:47.091370+00:00",
+   "verificado": "2026-11-25T20:30:48.632708+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-25T19:30:47.091370+00:00",
+   "mudou": "2026-11-25T20:30:48.632708+00:00",
    "mudanca": {
     "mais": [
-     "Simulador de prestação do crédito à habitação: descubra quanto vai pagar na próxima revisão da Euribor",
-     "ETF",
-     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
-     "IMI: pode estar a pagar imposto a mais (e como saber hoje)",
-     "PODCAST | #127 – Eletricidade e gás – Qual é a diferença entre Mercado Liberalizado ou Regulado?",
-     "ERSE lançou hoje novo simulador de eletricidade e gás",
-     "E-Lar fecha candidaturas após esgotar verba em 6 dias",
-     "GPL em 2026: Ainda compensa converter o carro para gás?",
-     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
-     "PODCAST | #85 – “Eu não tenho jeito nenhum para lidar com dinheiro…”",
-     "PODCAST | #110 – O meu PPR está negativo. É normal?",
-     "PODCAST | #126 – Devo Investir aos Poucos Ou Tudo De Uma Vez? (A pergunta do Nuno)",
-     "PODCAST | #99 – Devo tirar o dinheiro dos investimentos para fazer o Fundo de Emergência?",
-     "PODCAST | #149 – Os Combustíveis São Todos Iguais? Vale a pena comprar aditivados? (Parte II)",
-     "PODCAST | #171 – Certificados de Aforro – Há alternativas nos bancos que rendem mais?",
-     "PODCAST | #81 – Como posso melhorar a minha vida se ganho pouco?",
-     "Aproveite o confinamento para pôr as contas em ordem",
-     "PODCAST | #78 – (Para recibos verdes) Como posso rentabilizar o IVA trimestral?",
-     "O que muda no arrendamento com as novas medidas de desagravamento fiscal?",
-     "PODCAST | #125 – Onde devo Investir O meu Fundo De Emergência? (A pergunta do Tiago Castelão)"
+     "Os contadores inteligentes da eletricidade são bons ou maus? Parte II"
     ],
     "menos": [],
-    "n_mais": 64,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
