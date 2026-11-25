@@ -1057,15 +1057,6 @@
   {
    "tipo": "pagina",
    "ts": "2026-11-21T10:31:05.267635+00:00",
-   "titulo": "Mudou: Junta freguesia",
-   "link": "https://www.jf-cernachebonjardim.pt/",
-   "fonte": "jf-cernachebonjardim.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-21T10:31:05.267635+00:00",
    "titulo": "Mudou: Contas poupanças",
    "link": "https://contaspoupanca.pt/",
    "fonte": "contaspoupanca.pt",
@@ -1953,47 +1944,18 @@
    "fonte": "radiocondestavel.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-25T17:30:44.967074+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-23T17:30:56.136899+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 626,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 581,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 3,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-23T18:31:01.028876+00:00",
    "pesquisas": [
@@ -3686,11 +3648,52 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-25T17:30:44.967074+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 451,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 451,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertagin",
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efi",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 2
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-25T16:30:49.562815+00:00",
-  "contaspoupanca.pt": "2026-11-25T16:30:49.562815+00:00"
+  "cm-serta.pt": "2026-11-25T17:30:44.967074+00:00",
+  "contaspoupanca.pt": "2026-11-25T17:30:44.967074+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3698,8 +3701,8 @@
   "contaspoupanca.pt": "2026-11-24T21:30:49.005112+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-25T16:30:49.562815+00:00",
-  "Apoio fundo ambiental": "2026-11-25T16:30:49.562815+00:00"
+  "Sertã": "2026-11-25T17:30:44.967074+00:00",
+  "Apoio fundo ambiental": "2026-11-25T17:30:44.967074+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4362,9 +4365,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-25T16:30:49.562815+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-25T17:30:44.967074+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-25T16:30:49.562815+00:00",
@@ -4539,13 +4542,13 @@
     "Agenda Cultural",
     "Ouvir online",
     "Última hora",
+    "SERTÃ: Memória coletiva ganha casa digital no novo site da Sartagografia",
+    "Última hora",
     "REGIÃO: Pinhal Maior avança para criação de Centro de Formação Agroturística no Príncipe",
     "Última hora",
     "GAVIÃO: Município estabelece parceria para dinamizar rotas equestres",
     "Última hora",
     "SERTÃ/Natação: CCD Sertã brilha na Guarda e prepara-se para os Nacionais da 3.ª Divisão",
-    "Última hora",
-    "GAVIÃO: Feriado Municipal marcado por críticas ao Governo e pensamento no futuro",
     "Última hora",
     "FERREIRA DO ZÊZERE: Sessões sobre prospeção mineira marcadas por oposição popular",
     "Última hora",
@@ -4557,6 +4560,16 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "PROENÇA-A-NOVA: Sorteio “Comprar é Ganhar” arranca em dezembro",
+    "Proença-a-Nova",
+    "Beira Baixa",
+    "25-11-2026",
+    "No dia 1 de dezembro",
+    "SERTÃ: Memória coletiva ganha casa digital no novo site da Sartagografia",
+    "Sertã",
+    "Beira Baixa",
+    "25-11-2026",
+    "Última hora",
     "REGIÃO: Pinhal Maior avança para criação de Centro de Formação Agroturística no Príncipe",
     "Mação",
     "Oleiros",
@@ -4568,7 +4581,6 @@
     "Médio Tejo",
     "25-11-2026",
     "Última hora",
-    "Protocolo entre associação com sede na Sertã e Governo da Ilha do Príncipe foi assinado esta semana",
     "MAÇÃO: Campismo em Ortiga tem dois novos teepees",
     "Mação",
     "Médio Tejo",
@@ -4611,15 +4623,6 @@
     "Sertã",
     "Beira Baixa",
     "24-11-2026",
-    "SERTÃ: Aldeia Natal volta para fazer as delícias de toda a família",
-    "Sertã",
-    "Beira Baixa",
-    "24-11-2026",
-    "SERTÃ/Atletismo: CCD em primeiro, por equipas, no Trail do Zêzere",
-    "Sertã",
-    "Beira Baixa",
-    "Desporto",
-    "24-11-2026",
     "1",
     "2",
     "3",
@@ -4633,31 +4636,29 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-25T16:30:49.562815+00:00",
+   "verificado": "2026-11-25T17:30:44.967074+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-25T16:30:49.562815+00:00",
+   "mudou": "2026-11-25T17:30:44.967074+00:00",
    "mudanca": {
     "mais": [
-     "REGIÃO: Pinhal Maior avança para criação de Centro de Formação Agroturística no Príncipe",
-     "REGIÃO: Pinhal Maior avança para criação de Centro de Formação Agroturística no Príncipe",
-     "Mação",
-     "Oleiros",
-     "Sertã",
-     "Vila de Rei",
+     "SERTÃ: Memória coletiva ganha casa digital no novo site da Sartagografia",
+     "PROENÇA-A-NOVA: Sorteio “Comprar é Ganhar” arranca em dezembro",
      "Proença-a-Nova",
-     "Beira Baixa",
-     "Médio Tejo",
-     "Protocolo entre associação com sede na Sertã e Governo da Ilha do Príncipe foi assinado esta semana"
+     "No dia 1 de dezembro",
+     "SERTÃ: Memória coletiva ganha casa digital no novo site da Sartagografia"
     ],
     "menos": [
-     "Oferta reforçada convida visitantes",
-     "GAVIÃO: Feriado Municipal marcado por críticas ao Governo e pensamento no futuro"
+     "GAVIÃO: Feriado Municipal marcado por críticas ao Governo e pensamento no futuro",
+     "Protocolo entre associação com sede na Sertã e Governo da Ilha do Príncipe foi assinado esta semana",
+     "SERTÃ: Aldeia Natal volta para fazer as delícias de toda a família",
+     "SERTÃ/Atletismo: CCD em primeiro, por equipas, no Trail do Zêzere",
+     "Desporto"
     ],
-    "n_mais": 10,
-    "n_menos": 2
+    "n_mais": 5,
+    "n_menos": 5
    },
    "via": "site",
    "erro_site": "",
@@ -5075,8 +5076,8 @@
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (11 a 17 de maio)",
     "ELETRICIDADE | Qual é a empresa mais barata neste momento? (Abril 2024)"
    ],
-   "verificado": "2026-11-25T16:30:49.562815+00:00",
-   "falhas": 1,
+   "verificado": "2026-11-25T17:30:44.967074+00:00",
+   "falhas": 2,
    "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
