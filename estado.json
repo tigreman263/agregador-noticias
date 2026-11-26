@@ -1,6 +1,5 @@
 {
  "vistos": {
-  "1ef7f25deb2d9948": "2026-11-12T17:01:06.994916+00:00",
   "44f1e003e76c154b": "2026-11-14T15:15:55.752589+00:00",
   "865f04f184654ba5": "2026-11-19T09:30:46.635543+00:00",
   "37bb30d77e5f5aac": "2026-11-19T11:31:13.852003+00:00",
@@ -176,7 +175,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-26T16:30:47.837555+00:00"
+   "ultima": "2026-11-26T17:30:55.789385+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -725,7 +724,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-26T16:30:47.837555+00:00"
+   "ultima": "2026-11-26T17:30:55.789385+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -1130,15 +1129,6 @@
  },
  "ultima_descoberta": "2026-11-26",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-23T13:31:04.055766+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-23T13:31:04.055766+00:00",
@@ -2029,49 +2019,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-26T17:30:55.789385+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-24T17:30:44.992932+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 650,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 479,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-24T18:30:55.517795+00:00",
    "pesquisas": [
@@ -3768,11 +3727,52 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-26T17:30:55.789385+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 615,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 744,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "Portal Energia",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-26T16:30:47.837555+00:00",
-  "contaspoupanca.pt": "2026-11-26T16:30:47.837555+00:00"
+  "cm-serta.pt": "2026-11-26T17:30:55.789385+00:00",
+  "contaspoupanca.pt": "2026-11-26T17:30:55.789385+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3780,8 +3780,8 @@
   "contaspoupanca.pt": "2026-11-25T21:30:51.337292+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-26T16:30:47.837555+00:00",
-  "Apoio fundo ambiental": "2026-11-26T16:30:47.837555+00:00"
+  "Sertã": "2026-11-26T17:30:55.789385+00:00",
+  "Apoio fundo ambiental": "2026-11-26T17:30:55.789385+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4444,7 +4444,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-26T16:30:47.837555+00:00",
+   "verificado": "2026-11-26T17:30:55.789385+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4705,11 +4705,19 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "VILA DE REI: Alunos apresentam propostas ao Executivo Municipal",
+    "Vila de Rei",
+    "Beira Baixa",
+    "26-11-2026",
+    "Estudantes dos 9.º e 10.º anos participaram na reunião de câmara de 20 de novembro, destacando-se os contributos sobre habitação no âmbito do Parlamento dos Jovens",
+    "PAMPILHOSA DA SERRA: Concelho renova galardão “Território da Longevidade”",
+    "Pampilhosa da Serra",
+    "Região",
+    "26-11-2026",
     "OLEIROS: Município inicia levantamento da toponímia",
     "Oleiros",
     "Beira Baixa",
     "26-11-2026",
-    "Esta sexta-feira, dia 27 de novembro",
     "VILA DE REI: Município continua a promover envelhecimento ativo",
     "Oleiros",
     "Beira Baixa",
@@ -4758,21 +4766,6 @@
     "Beira Baixa",
     "25-11-2026",
     "Última hora",
-    "REGIÃO: Pinhal Maior avança para criação de Centro de Formação Agroturística no Príncipe",
-    "Mação",
-    "Oleiros",
-    "Sertã",
-    "Vila de Rei",
-    "Proença-a-Nova",
-    "Região",
-    "Beira Baixa",
-    "Médio Tejo",
-    "25-11-2026",
-    "Última hora",
-    "MAÇÃO: Campismo em Ortiga tem dois novos teepees",
-    "Mação",
-    "Médio Tejo",
-    "25-11-2026",
     "1",
     "2",
     "3",
@@ -4786,34 +4779,34 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-26T16:30:47.837555+00:00",
+   "verificado": "2026-11-26T17:30:55.789385+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-26T16:30:47.837555+00:00",
+   "mudou": "2026-11-26T17:30:55.789385+00:00",
    "mudanca": {
     "mais": [
-     "OLEIROS: Município inicia levantamento da toponímia",
-     "Oleiros",
-     "Esta sexta-feira, dia 27 de novembro",
-     "VILA DE REI: Município continua a promover envelhecimento ativo",
-     "Oleiros",
-     "SERTÃ: Dia Mundial da Oliveira dá a provar azeites do concelho"
+     "VILA DE REI: Alunos apresentam propostas ao Executivo Municipal",
+     "Estudantes dos 9.º e 10.º anos participaram na reunião de câmara de 20 de novembro, destacando-se os contributos sobre habitação no âmbito do Parlamento dos Jovens",
+     "PAMPILHOSA DA SERRA: Concelho renova galardão “Território da Longevidade”",
+     "Pampilhosa da Serra"
     ],
     "menos": [
-     "Comissão de Proteção de Crianças e Jovens da Sertã celebra 25 anos com jornadas dedicadas aos jovens. Hoje e amanhã",
-     "GAVIÃO: Município estabelece parceria para dinamizar rotas equestres",
-     "Região",
+     "Esta sexta-feira, dia 27 de novembro",
+     "REGIÃO: Pinhal Maior avança para criação de Centro de Formação Agroturística no Príncipe",
+     "Mação",
+     "Oleiros",
+     "Sertã",
+     "Proença-a-Nova",
+     "Médio Tejo",
      "Última hora",
-     "SERTÃ/Natação: CCD Sertã brilha na Guarda e prepara-se para os Nacionais da 3.ª Divisão",
-     "Desporto",
-     "Última hora",
-     "VILA VELHA DE RÓDÃO: Marca “Terras de Oiro” desafia consumidores",
-     "Vila Velha de Ródão"
+     "MAÇÃO: Campismo em Ortiga tem dois novos teepees",
+     "Mação",
+     "Médio Tejo"
     ],
-    "n_mais": 6,
-    "n_menos": 9
+    "n_mais": 4,
+    "n_menos": 11
    },
    "via": "site",
    "erro_site": "",
@@ -5180,6 +5173,7 @@
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
+    "Vale Eficiência II: Como confirmar a candidatura para receber até 1.599 euros de apoio (passo a passo)",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "Apoios Sociais",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
@@ -5206,12 +5200,10 @@
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
     "Revista de imprensa de 24 de novembro: Pensões, combustíveis e endividamento das famílias",
-    "Comparação de postos de combustíveis desta semana. Qual o mais barato?",
     "Aumento das pensões em 2027: veja quanto pode receber a mais, com exemplos dos 300 aos 4.000 euros",
     "Revista de imprensa de 20 de novembro: Crédito habitação, rendas e OE2027",
     "Crédito à habitação: juros já levam 217 euros da prestação média",
     "Tem direito à tarifa social de energia? Veja como confirmar em 2 minutos e não perder apoios",
-    "Vale Eficiência II: Como confirmar a candidatura para receber até 1.599 euros de apoio (passo a passo)",
     "Combustíveis | Comparação de postos de combustíveis desta semana. Qual o mais barato?",
     "Vamos a contas: Tenho 32.500 € no banco. Faz sentido investir agora 100 € por mês no S&P 500 e em ouro?",
     "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger",
@@ -5228,7 +5220,7 @@
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-26T16:30:47.837555+00:00",
+   "verificado": "2026-11-26T17:30:55.789385+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
