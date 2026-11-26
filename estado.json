@@ -103,7 +103,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-26T08:30:47.601300+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -622,7 +622,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Município de Vila Viçosa entrega novo apoio financeiro a família no âmbito do Programa de Apoio à Natalidade",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "cnnportugal.iol.pt": {
    "nome": "CNN Portugal",
@@ -644,13 +644,14 @@
    "site": "https://contaspoupanca.pt",
    "ids": [
     "24ccbfe16a1d0cdc",
-    "bc0abb0a1dc500c2"
+    "bc0abb0a1dc500c2",
+    "45ac2c2affa56242"
    ],
    "pesquisas": [
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-25T10:30:49.962654+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -677,7 +678,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: família elegíveis que tinham ficado de fora contactadas para confirmar interesse",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "sol.iol.pt": {
    "nome": "Jornal SOL",
@@ -930,7 +931,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Fundo Ambiental investiu mais de 78,2 ME na descarbonização e mobilidade em outubro",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "radiocampomaior.com": {
    "nome": "Rádio Campo Maior",
@@ -942,7 +943,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Denúncia da DECO beneficia 27.800 famílias elegíveis para o Vale Eficiência II que vão receber o apoio",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "tugatech.com.pt": {
    "nome": "TugaTech",
@@ -954,7 +955,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre com apoio único de até 1.599 € para candidaturas retidas",
-   "ultima": "2026-11-25T20:30:48.632708+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "executivedigest.sapo.pt": {
    "nome": "Executive Digest",
@@ -978,7 +979,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Parlamento aprova alargamento da tarifa social de energia e financiamento integral do Vale Eficiência II",
-   "ultima": "2026-11-25T21:30:51.563345+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "pplware.sapo.pt": {
    "nome": "Pplware",
@@ -990,7 +991,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência (2.ª fase): apoio de até 1.599 euros para janelas, bombas de calor entre outros",
-   "ultima": "2026-11-26T07:30:46.821599+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "e-konomista.pt": {
    "nome": "Ekonomista",
@@ -1002,7 +1003,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre candidaturas: famílias podem receber até 1.599 euros",
-   "ultima": "2026-11-26T08:30:47.601300+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "rfm.pt": {
    "nome": "RFM",
@@ -1014,7 +1015,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II está de volta: podes receber até 1.599 euros para melhorar a tua casa",
-   "ultima": "2026-11-26T08:30:47.601300+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "diariodistrito.sapo.pt": {
    "nome": "Diário do Distrito",
@@ -1026,7 +1027,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: apoio até 1.599 € para janelas e bombas de calor",
-   "ultima": "2026-11-26T08:30:47.601300+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "rtp.pt": {
    "nome": "RTP",
@@ -1038,7 +1039,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Parlamento alarga tarifa social de energia e assegura execução do Vale Eficiência",
-   "ultima": "2026-11-25T22:30:46.915788+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   },
   "cm-alcacerdosal.pt": {
    "nome": "CM - Alcácer do Sal",
@@ -1050,20 +1051,11 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Ainda aguarda o Vale Eficiência? Há novidades!",
-   "ultima": "2026-11-25T09:30:45.523126+00:00"
+   "ultima": "2026-11-26T09:30:49.246693+00:00"
   }
  },
- "ultima_descoberta": "2026-11-25",
+ "ultima_descoberta": "2026-11-26",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-22T12:46:05.913603+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-22T15:48:21.039121+00:00",
@@ -1954,47 +1946,18 @@
    "fonte": "Diário do Distrito",
    "nota": 30.0,
    "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-26T09:30:49.246693+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-24T09:30:51.116931+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 612,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 538,
-     "relevantes": 1,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 1,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-24T10:30:45.006048+00:00",
    "pesquisas": [
@@ -3687,11 +3650,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-26T09:30:49.246693+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 577,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 551,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-26T08:30:47.601300+00:00",
-  "contaspoupanca.pt": "2026-11-26T08:30:47.601300+00:00"
+  "cm-serta.pt": "2026-11-26T09:30:49.246693+00:00",
+  "contaspoupanca.pt": "2026-11-26T09:30:49.246693+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3699,8 +3702,8 @@
   "contaspoupanca.pt": "2026-11-25T21:30:51.337292+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-26T08:30:47.601300+00:00",
-  "Apoio fundo ambiental": "2026-11-26T08:30:47.601300+00:00"
+  "Sertã": "2026-11-26T09:30:49.246693+00:00",
+  "Apoio fundo ambiental": "2026-11-26T09:30:49.246693+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4363,9 +4366,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-26T08:30:47.601300+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-26T09:30:49.246693+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-26T07:30:46.821599+00:00",
@@ -4635,7 +4638,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-26T08:30:47.601300+00:00",
+   "verificado": "2026-11-26T09:30:49.246693+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4999,7 +5002,6 @@
     "Subscrever Newsletter",
     "Simulador de IRS: Quanto devolve o seu município?",
     "Amortizar o crédito à habitação: quanto baixa a prestação e quanto poupa em juros? Use o simulador do Contas-poupança",
-    "Os meus investimentos caíram 17% . Vendo, reforço ou espero?",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias",
     "As 5 lições financeiras que 2025 me ensinou",
     "Termos e Condições",
@@ -5059,19 +5061,20 @@
     "Revista de imprensa de 23 de novembro: Pensões, combustíveis e seguros do crédito casa",
     "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
     "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
+    "Revista de imprensa de 26 de novembro: IVA zero, IRS das rendas e avaliação das casas",
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-26T08:30:47.601300+00:00",
+   "verificado": "2026-11-26T09:30:49.246693+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-26T08:30:47.601300+00:00",
+   "mudou": "2026-11-26T09:30:49.246693+00:00",
    "mudanca": {
     "mais": [
-     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana"
+     "Revista de imprensa de 26 de novembro: IVA zero, IRS das rendas e avaliação das casas"
     ],
     "menos": [],
     "n_mais": 1,
