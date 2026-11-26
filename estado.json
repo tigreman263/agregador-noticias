@@ -14,11 +14,12 @@
   "e78917a0191374e5": "2026-11-24T09:30:51.116931+00:00",
   "0f29548579d2c7a8": "2026-11-24T12:30:45.851649+00:00",
   "f10ce58980c024f7": "2026-11-24T14:30:51.091775+00:00",
-  "1f8a2010913e3d73": "2026-11-24T14:30:51.091775+00:00"
+  "1f8a2010913e3d73": "2026-11-24T14:30:51.091775+00:00",
+  "6cb0830ab7a9ae91": "2026-11-26T08:30:47.601300+00:00"
  },
  "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-25",
+ "ultimo_resumo": "2026-11-26",
  "sugeridas": {
   "radionovaantena.com": {
    "dominio": "radionovaantena.com",
@@ -102,7 +103,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-26T07:30:46.821599+00:00"
+   "ultima": "2026-11-26T08:30:47.601300+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -1001,7 +1002,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II reabre candidaturas: famílias podem receber até 1.599 euros",
-   "ultima": "2026-11-26T07:30:46.821599+00:00"
+   "ultima": "2026-11-26T08:30:47.601300+00:00"
   },
   "rfm.pt": {
    "nome": "RFM",
@@ -1013,7 +1014,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II está de volta: podes receber até 1.599 euros para melhorar a tua casa",
-   "ultima": "2026-11-26T07:30:46.821599+00:00"
+   "ultima": "2026-11-26T08:30:47.601300+00:00"
   },
   "diariodistrito.sapo.pt": {
    "nome": "Diário do Distrito",
@@ -1025,7 +1026,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência: apoio até 1.599 € para janelas e bombas de calor",
-   "ultima": "2026-11-26T07:30:46.821599+00:00"
+   "ultima": "2026-11-26T08:30:47.601300+00:00"
   },
   "rtp.pt": {
    "nome": "RTP",
@@ -1054,24 +1055,6 @@
  },
  "ultima_descoberta": "2026-11-25",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-22T11:46:00.484094+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-22T12:46:05.913603+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-22T12:46:05.913603+00:00",
@@ -1953,47 +1936,27 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-26T08:30:47.601300+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-26T08:30:47.601300+00:00",
+   "titulo": "Vale Eficiência: apoio até 1.599 € para janelas e bombas de calor",
+   "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxNSGVGb05jd1Npc1VpUFZ4NFVvbHhuUXVCUVY3NWRYcnBzZDJ2OUlLazJBaDVWOElucFk0VTBPWkhfVG9QREQyZFJUQ1VQVDY3cjRxZHdVeGl2a1oteWdaeTZPc0d5eXRXaURhTGlBVzlQUHQ1YjJjbVBsNU9SMXdJQlByU3dlN0VQN1d4Y2VrZ0c3WHhxOC1pWmFuSlY5NHJncEM1QkJaNFp2bFFDZlVwdkVKQXp5N1FqVGgzM0tDLWI5YWdvSy10ZVJ2cktBVGl0NW5pTnpyRDd1OWNpbUlBeFU3R2dwOEpaa2VkbQ?oc=5",
+   "fonte": "Diário do Distrito",
+   "nota": 30.0,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-24T08:30:48.841528+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 574,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 612,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 5,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-24T09:30:51.116931+00:00",
    "pesquisas": [
@@ -3686,11 +3649,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-26T08:30:47.601300+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 605,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 605,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 1,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-26T07:30:46.821599+00:00",
-  "contaspoupanca.pt": "2026-11-26T07:30:46.821599+00:00"
+  "cm-serta.pt": "2026-11-26T08:30:47.601300+00:00",
+  "contaspoupanca.pt": "2026-11-26T08:30:47.601300+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3698,8 +3699,8 @@
   "contaspoupanca.pt": "2026-11-25T21:30:51.337292+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-26T07:30:46.821599+00:00",
-  "Apoio fundo ambiental": "2026-11-26T07:30:46.821599+00:00"
+  "Sertã": "2026-11-26T08:30:47.601300+00:00",
+  "Apoio fundo ambiental": "2026-11-26T08:30:47.601300+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4362,7 +4363,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-26T07:30:46.821599+00:00",
+   "verificado": "2026-11-26T08:30:47.601300+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4634,7 +4635,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-26T07:30:46.821599+00:00",
+   "verificado": "2026-11-26T08:30:47.601300+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -5027,6 +5028,7 @@
     "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
     "Carro",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
+    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "Podcast",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
@@ -5060,38 +5062,19 @@
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-26T07:30:46.821599+00:00",
+   "verificado": "2026-11-26T08:30:47.601300+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-26T07:30:46.821599+00:00",
+   "mudou": "2026-11-26T08:30:47.601300+00:00",
    "mudanca": {
     "mais": [
-     "OE2027: Governo recusa IVA zero nos alimentos e mantém IRS de 10% nas rendas até 2.300 euros",
-     "Vamos a contas: \"Onde devo guardar o meu fundo de maneio: em Certificados de Aforro ou numa conta remunerada?\"",
-     "Contas Poupança | Dê um aumento a si próprio!",
-     "Termos e Condições",
-     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
-     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
-     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
-     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
-     "Tem 60% ou mais de incapacidade? O Estado pode pagar parte dos juros do seu crédito à habitação e a prestação pode baixar quase 200 euros",
-     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
-     "IMI",
-     "Investimentos",
-     "PodTEXT | Como investir para os filhos e pagar menos impostos",
-     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
-     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
-     "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
-     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
-     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
-     "Apoios Sociais",
-     "PodTEXT | Se tiver 4 mil euros onde é que invisto?"
+     "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana"
     ],
     "menos": [],
-    "n_mais": 60,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
