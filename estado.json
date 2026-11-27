@@ -199,7 +199,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-27T03:30:45.510026+00:00"
+   "ultima": "2026-11-27T04:30:45.361260+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -599,7 +599,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-27T03:30:45.510026+00:00"
+   "ultima": "2026-11-27T04:30:45.361260+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -749,7 +749,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-27T03:30:45.510026+00:00"
+   "ultima": "2026-11-27T04:30:45.361260+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -2056,36 +2056,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-25T04:30:51.202879+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 568,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 603,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-25T05:30:46.760567+00:00",
    "pesquisas": [
@@ -3796,10 +3766,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-27T04:30:45.361260+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 583,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 538,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-27T03:30:45.510026+00:00",
+  "cm-serta.pt": "2026-11-27T04:30:45.361260+00:00",
   "contaspoupanca.pt": "2026-11-26T22:30:50.070560+00:00"
  },
  "lentos": {},
@@ -3808,8 +3808,8 @@
   "contaspoupanca.pt": "2026-11-26T22:30:49.796895+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-27T03:30:45.510026+00:00",
-  "Apoio fundo ambiental": "2026-11-27T03:30:45.510026+00:00"
+  "Sertã": "2026-11-27T04:30:45.361260+00:00",
+  "Apoio fundo ambiental": "2026-11-27T04:30:45.361260+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
