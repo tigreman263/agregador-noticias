@@ -106,7 +106,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-27T19:15:49.406409+00:00"
+   "ultima": "2026-11-27T20:15:49.787475+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -656,7 +656,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-27T19:15:49.406409+00:00"
+   "ultima": "2026-11-27T20:15:49.787475+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -1061,15 +1061,6 @@
  },
  "ultima_descoberta": "2026-11-27",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-24T18:30:55.517795+00:00",
-   "titulo": "Mudou: cm-serta",
-   "link": "https://cm-serta.pt/comunicacao/noticias",
-   "fonte": "cm-serta.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-24T18:30:55.517795+00:00",
@@ -1960,48 +1951,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-27T20:15:49.787475+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-25T20:30:48.632708+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 574,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 532,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-25T21:30:51.563345+00:00",
    "pesquisas": [
@@ -3709,11 +3670,53 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-27T20:15:49.787475+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 790,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 690,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · Rádio Hertz: ParseError: mismatched tag: line 93, column 2"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "Portal Energia",
+    "Rádio Hertz",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-27T19:15:49.406409+00:00",
-  "contaspoupanca.pt": "2026-11-27T19:15:49.406409+00:00"
+  "cm-serta.pt": "2026-11-27T20:15:49.787475+00:00",
+  "contaspoupanca.pt": "2026-11-27T20:15:49.787475+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3721,8 +3724,8 @@
   "contaspoupanca.pt": "2026-11-26T22:30:49.796895+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-27T19:15:49.406409+00:00",
-  "Apoio fundo ambiental": "2026-11-27T19:15:49.406409+00:00"
+  "Sertã": "2026-11-27T20:15:49.787475+00:00",
+  "Apoio fundo ambiental": "2026-11-27T20:15:49.787475+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4385,7 +4388,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-27T19:15:49.406409+00:00",
+   "verificado": "2026-11-27T20:15:49.787475+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4643,7 +4646,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-27T19:15:49.406409+00:00",
+   "verificado": "2026-11-27T20:15:49.787475+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4996,6 +4999,7 @@
     "OE2027: Governo recusa IVA zero nos alimentos e mantém IRS de 10% nas rendas até 2.300 euros",
     "Combustíveis | Comparação de postos de combustíveis desta semana. Qual o mais barato?",
     "Combustíveis | Preço Justo do gasóleo desce quase 5 cêntimos e gasolina baixa pela sexta semana seguida",
+    "Simulador de Juros compostos",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
     "Revista de imprensa de 25 de novembro: OE2027, rendas em Lisboa e rating da banca",
@@ -5082,20 +5086,19 @@
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-27T19:15:49.406409+00:00",
+   "verificado": "2026-11-27T20:15:49.787475+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-27T19:15:49.406409+00:00",
+   "mudou": "2026-11-27T20:15:49.787475+00:00",
    "mudanca": {
     "mais": [
-     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
-     "Gás"
+     "Simulador de Juros compostos"
     ],
     "menos": [],
-    "n_mais": 2,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
