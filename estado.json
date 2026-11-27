@@ -599,7 +599,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-27T04:30:45.361260+00:00"
+   "ultima": "2026-11-27T06:30:45.808363+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -2056,36 +2056,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-25T06:30:44.002410+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 615,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 650,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-25T07:30:45.206139+00:00",
    "pesquisas": [
@@ -3798,10 +3768,43 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-27T06:30:45.808363+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 628,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 456,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-27T05:30:49.709821+00:00",
+  "cm-serta.pt": "2026-11-27T06:30:45.808363+00:00",
   "contaspoupanca.pt": "2026-11-26T22:30:50.070560+00:00"
  },
  "lentos": {},
@@ -3810,8 +3813,8 @@
   "contaspoupanca.pt": "2026-11-26T22:30:49.796895+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-27T05:30:49.709821+00:00",
-  "Apoio fundo ambiental": "2026-11-27T05:30:49.709821+00:00"
+  "Sertã": "2026-11-27T06:30:45.808363+00:00",
+  "Apoio fundo ambiental": "2026-11-27T06:30:45.808363+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
