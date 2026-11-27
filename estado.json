@@ -106,7 +106,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-27T15:15:48.976593+00:00"
+   "ultima": "2026-11-27T16:15:43.621221+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -656,7 +656,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-27T15:15:48.976593+00:00"
+   "ultima": "2026-11-27T16:15:43.621221+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -1061,15 +1061,6 @@
  },
  "ultima_descoberta": "2026-11-27",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-24T15:30:49.693146+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-24T15:30:49.693146+00:00",
@@ -1960,48 +1951,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-27T16:15:43.621221+00:00",
+   "titulo": "Mudou: Radio condestável",
+   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
+   "fonte": "radiocondestavel.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-25T16:30:49.562815+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 604,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 531,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-25T17:30:44.967074+00:00",
    "pesquisas": [
@@ -3709,11 +3670,52 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-27T16:15:43.621221+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 795,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 795,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 1
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "Portal Energia",
+    "Rádio Hertz",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-27T15:15:48.976593+00:00",
-  "contaspoupanca.pt": "2026-11-27T15:15:48.976593+00:00"
+  "cm-serta.pt": "2026-11-27T16:15:43.621221+00:00",
+  "contaspoupanca.pt": "2026-11-27T16:15:43.621221+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3721,8 +3723,8 @@
   "contaspoupanca.pt": "2026-11-26T22:30:49.796895+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-27T15:15:48.976593+00:00",
-  "Apoio fundo ambiental": "2026-11-27T15:15:48.976593+00:00"
+  "Sertã": "2026-11-27T16:15:43.621221+00:00",
+  "Apoio fundo ambiental": "2026-11-27T16:15:43.621221+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4385,9 +4387,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-27T15:15:48.976593+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-27T16:15:43.621221+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-27T14:15:45.596848+00:00",
@@ -4569,13 +4571,17 @@
     "Início",
     "Notícias",
     "Todas as notícias",
+    "GÓIS: Município renova distinção de \"Território da Longevidade\"",
+    "Região",
+    "Góis",
+    "27-11-2026",
+    "Galardão foi entregue esta semana",
     "SERTÃ: Família relata caso de bulliyng no AES",
     "Sertã",
     "Beira Baixa",
     "Educação",
     "27-11-2026",
     "Última hora",
-    "Comissão Administrativa Provisória garante que já identificou aluno e vai a tomar medidas",
     "REFORMA: Idade sobe para os 67 anos em 2028",
     "Beira Baixa",
     "Médio Tejo",
@@ -4623,10 +4629,6 @@
     "Oleiros",
     "Beira Baixa",
     "26-11-2026",
-    "SERTÃ: Dia Mundial da Oliveira dá a provar azeites do concelho",
-    "Sertã",
-    "Beira Baixa",
-    "26-11-2026",
     "1",
     "2",
     "3",
@@ -4640,27 +4642,27 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-27T15:15:48.976593+00:00",
+   "verificado": "2026-11-27T16:15:43.621221+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-05T09:31:02.437387+00:00",
-   "mudou": "2026-11-27T14:15:45.596848+00:00",
+   "mudou": "2026-11-27T16:15:43.621221+00:00",
    "mudanca": {
     "mais": [
-     "SERTÃ: Família relata caso de bulliyng no AES",
-     "Última hora",
-     "SERTÃ: Família relata caso de bulliyng no AES",
-     "Última hora",
-     "Comissão Administrativa Provisória garante que já identificou aluno e vai a tomar medidas"
+     "GÓIS: Município renova distinção de \"Território da Longevidade\"",
+     "Região",
+     "Góis",
+     "Galardão foi entregue esta semana"
     ],
     "menos": [
-     "De acordo com dados divulgados hoje pelo INE",
-     "SERTÃ: Jornadas da CPCJ da Sertã desafiam a escola a olhar para além dos resultados",
-     "Cernache do Bonjardim"
+     "Comissão Administrativa Provisória garante que já identificou aluno e vai a tomar medidas",
+     "SERTÃ: Dia Mundial da Oliveira dá a provar azeites do concelho",
+     "Sertã",
+     "Beira Baixa"
     ],
-    "n_mais": 5,
-    "n_menos": 3
+    "n_mais": 4,
+    "n_menos": 4
    },
    "via": "site",
    "erro_site": "",
@@ -4981,9 +4983,9 @@
    "linhas_google": [
     "Contas-Poupança | Dê um aumento a si próprio",
     "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
+    "Tarifa social de energia: o desconto de 33,8% que também abre a porta ao Vale Eficiência",
     "Vamos a contas: \"Quero reformar-me aos 55 anos. Tenho 2 ETF. Devo ter também um fundo PPR?\"",
     "Preço dos combustíveis na próxima semana (30 de novembro a 6 de dezembro)",
-    "Tarifa social de energia: o desconto de 33,8% que também abre a porta ao Vale Eficiência",
     "OE2027: Governo recusa IVA zero nos alimentos e mantém IRS de 10% nas rendas até 2.300 euros",
     "Combustíveis | Comparação de postos de combustíveis desta semana. Qual o mais barato?",
     "Combustíveis | Preço Justo do gasóleo desce quase 5 cêntimos e gasolina baixa pela sexta semana seguida",
@@ -5008,7 +5010,6 @@
     "AMT propõe que carros elétricos paguem imposto pela manutenção das estradas",
     "Carros elétricos: Governo vai dar até 16.000 euros às famílias mais carenciadas. Saiba o que já se sabe",
     "Já só tem 3 dias para poupar no IMI: use este novo simulador para saber quanto pode poupar",
-    "Simulador de IRS: Quanto devolve o seu município?",
     "Evitar erros nas férias e poupar nas mais-valias: os dois podcasts da semana",
     "Euribor sobe em todos os prazos e taxa a seis meses passa os 3%",
     "PPR | Quanto estou a ganhar (ou a perder) com os meus PPR (Agosto de 2024)",
@@ -5018,63 +5019,64 @@
     "IRS",
     "As 5 lições financeiras que 2025 me ensinou",
     "PodTEXT | A minha vida não está estável, devo fazer um PPR ou ETF para ter mais equilíbrio?",
-    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
-    "Tem 60% ou mais de incapacidade? O Estado pode pagar parte dos juros do seu crédito à habitação e a prestação pode baixar quase 200 euros",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
     "IRS 2026: ainda vai a tempo de aumentar o seu reembolso (falta 1 semana)",
     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
+    "Simulador de IRS: Quanto devolve o seu município?",
     "IMI",
     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
+    "Apoio até 17 mil euros para comprar um carro elétrico: novas regras, quem tem direito e quanto vai pagar",
     "Termos e Condições",
     "PodTEXT | Como investir para os filhos e pagar menos impostos",
-    "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
     "Investimentos",
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
-    "Vale Eficiência II: Como confirmar a candidatura para receber até 1.599 euros de apoio (passo a passo)",
     "Apoios Sociais",
     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
-    "Orçamento do Estado 2027: as mudanças que vão mexer na sua carteira a partir de janeiro",
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
+    "Tem 60% ou mais de incapacidade? O Estado pode pagar parte dos juros do seu crédito à habitação e a prestação pode baixar quase 200 euros",
     "Certificados de Aforro",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
+    "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
+    "Vale Eficiência II: Como confirmar a candidatura para receber até 1.599 euros de apoio (passo a passo)",
+    "Orçamento do Estado 2027: as mudanças que vão mexer na sua carteira a partir de janeiro",
     "Combustíveis",
     "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
-    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
     "IRS: Vários prazos terminam amanhã",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
+    "Simulador de combustíveis: saiba quanto vai gastar a mais ou a menos esta semana",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
     "Plataforma dos Certificados de Aforro está em baixo, mas há alternativas",
+    "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
+    "IRS | Novas tabelas de retenção já estão aprovadas. O que muda?",
+    "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger",
+    "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
+    "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
+    "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "Propinas não vão aumentar em 2027: veja quanto vai pagar e o que passa a ser gratuito",
-    "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
     "Idade da reforma sobe para 67 anos em 2028. Veja quando pode pedir a sua pensão",
     "Revista de imprensa de 27 de novembro: Crédito habitação, IVA zero e IRS das rendas",
-    "IRS | Novas tabelas de retenção já estão aprovadas. O que muda?",
-    "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger",
     "Vamos a contas: \"Onde devo guardar o meu fundo de maneio: em Certificados de Aforro ou numa conta remunerada?\"",
     "Avaliação bancária das casas bate novo recorde: 2.282 euros por m2 em outubro",
     "E-Lar: novo apoio em 2027 para trocar fogões e esquentadores a gás em zonas rurais",
     "Bolsa esta semana: Wall Street afunda 8,6% e entra em correção",
-    "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Tarifa social de energia: mais famílias poderão ter 34% de desconto na eletricidade e no gás. Veja os novos limites",
     "Revista de imprensa de 23 de novembro: Pensões, combustíveis e seguros do crédito casa",
     "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
-    "Revista de imprensa de 26 de novembro: IVA zero, IRS das rendas e avaliação das casas",
-    "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
-    "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
+    "Revista de imprensa de 26 de novembro: IVA zero, IRS das rendas e avaliação das casas"
    ],
-   "verificado": "2026-11-27T15:15:48.976593+00:00",
+   "verificado": "2026-11-27T16:15:43.621221+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
