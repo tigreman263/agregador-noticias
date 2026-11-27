@@ -20,102 +20,9 @@
   "a51c1a686a7dd199": "2026-11-26T14:30:44.169874+00:00",
   "a553c71ed194a65d": "2026-11-26T23:30:45.668079+00:00"
  },
- "resumo": [
-  {
-   "titulo": "Vale Eficiência II: Como confirmar a candidatura para receber até 1.599 euros de apoio (passo a passo)",
-   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQb2NYcExtaXIzdjhXTEJhOGFZZTFtMS1tSHRzZjlWZUs4YWdtN01fRXJCWHdVaFhndF9mQWdBTXdRRUlodWlqYjdCMGpqejBYWVFncmd6a282cFI2d2hDcU5WVHh0UmJxemxkWlQ2ajN1eHRFeFlnQTYxUWM1ME4yNl8yVGdPWVN4VnZneThfa09Ka2dBRjNQeFRpaVhSM0w0cEZhbC1jN2Q3ZW5KaVBJakJjTmJTOUR6QVlGSjVBcWk4SFhTTW1VZ3NJMGpGbUlXLVZOX1d2Vm9QN3JSVnFoYXdseEtDRm8?oc=5",
-   "dominio": "contaspoupanca.pt",
-   "fonte": "Contas Poupança",
-   "confiavel": false,
-   "nota": 20.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-25T12:58:54+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "45ac2c2affa56242"
-   ],
-   "ts": "2026-11-26T11:30:47.206015+00:00"
-  },
-  {
-   "titulo": "Ainda aguarda o Vale Eficiência? Há novidades! Cerca de 27.800 famílias elegív…",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSW9iUlJVSkJJR1ZHbFhSQXJyeFlwQVEwbmdUcWdUeGtYU0VwbE90eG9lLTVOTkJJdVhwQnd4Z1JJQTI4aV8wRzBhUkpUblFYakZIRXJBbDlmTmNTWG1kV3VrSW5GQVAzUkdrNWpJdkVRb0toTjVMWHlNUmpQUzhkdGRldDJsUkw4U2xteVYtWkd5Rm9HNGhaaWtVY2JnSS01emVpSmhFQUNsWmFjcE45ZnNySm1GY1RaOGkyTXFYeGtQZw?oc=5",
-   "dominio": "sapo.pt",
-   "fonte": "SAPO",
-   "confiavel": true,
-   "nota": 30.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-26T08:30:00+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "071fcfe0e69baf73"
-   ],
-   "ts": "2026-11-26T12:30:47.990886+00:00"
-  },
-  {
-   "titulo": "E-Lar Rural aprovado no OE2027: o que se sabe do apoio para trocar equipamentos a gás por elétricos",
-   "link": "https://www.portal-energia.com/e-lar-rural-aprovado-apoio-trocar-gas-eletricos/",
-   "dominio": "portal-energia.com",
-   "fonte": "Portal Energia",
-   "confiavel": true,
-   "nota": 19.5,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Fundo Ambiental"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-26T13:55:33+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "a51c1a686a7dd199"
-   ],
-   "ts": "2026-11-26T14:30:44.169874+00:00"
-  },
-  {
-   "titulo": "Tarifa social de energia: o desconto de 33,8% que também abre a porta ao Vale Eficiência",
-   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVG1Da3VUUDhWbk9TZGxVVTdhaUFKaUx6MXZLWEl2VTNtekZhYm9TeDhsbmxmZHZ5UWRmRWVrczl1QmtKWjcwUDRVSXd0X3JmZHg0d3RvXzZiR3M2WUdBUlFtZFhXXzEycFl3dkF4elE0a2xiV0RLejNSWWQ0YndJSV9LQUFmYkU4ZTBYY1Rwd0ZJN3l0NWJxeDZqOEFUQ0luSHJaMl9WMk9YTlA2cDVfVVJSeUVQQk5mWmhORW5FYkJtbXZFdXRRT0g0MmtIREswcGNqVTdnRGxVMDVQSWhSZnJWTjB1TFpLR2c?oc=5",
-   "dominio": "contaspoupanca.pt",
-   "fonte": "Contas Poupança",
-   "confiavel": false,
-   "nota": 23.0,
-   "pesquisa": "Apoio fundo ambiental",
-   "achadas": {
-    "alta": [
-     "Vale Eficiência"
-    ],
-    "media": [],
-    "baixa": []
-   },
-   "n_fontes": 1,
-   "data": "2026-11-26T23:27:10+00:00",
-   "nivel": "resumo",
-   "ids": [
-    "a553c71ed194a65d"
-   ],
-   "ts": "2026-11-26T23:30:45.668079+00:00"
-  }
- ],
+ "resumo": [],
  "adiados": [],
- "ultimo_resumo": "2026-11-26",
+ "ultimo_resumo": "2026-11-27",
  "sugeridas": {
   "radionovaantena.com": {
    "dominio": "radionovaantena.com",
@@ -199,7 +106,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-27T07:30:42.593114+00:00"
+   "ultima": "2026-11-27T08:30:52.651218+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -749,7 +656,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-27T07:30:42.593114+00:00"
+   "ultima": "2026-11-27T08:30:52.651218+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -1154,60 +1061,6 @@
  },
  "ultima_descoberta": "2026-11-26",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-23T20:30:51.025187+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-23T21:30:47.792900+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-23T21:30:47.792900+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-23T22:30:46.267412+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-24T07:30:46.524328+00:00",
-   "titulo": "Mudou: Radio condestável",
-   "link": "https://radiocondestavel.pt/noticias-categorias/todas-as-noticias/",
-   "fonte": "radiocondestavel.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-24T07:30:46.524328+00:00",
-   "titulo": "Mudou: Contas poupanças",
-   "link": "https://contaspoupanca.pt/",
-   "fonte": "contaspoupanca.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-24T08:30:48.841528+00:00",
@@ -2053,49 +1906,63 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-27T08:30:52.651218+00:00",
+   "titulo": "Mudou: cm-serta",
+   "link": "https://cm-serta.pt/comunicacao/noticias",
+   "fonte": "cm-serta.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-27T08:30:52.651218+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-27T08:30:52.651218+00:00",
+   "titulo": "Ainda aguarda o Vale Eficiência? Há novidades! Cerca de 27.800 famílias elegív…",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQSW9iUlJVSkJJR1ZHbFhSQXJyeFlwQVEwbmdUcWdUeGtYU0VwbE90eG9lLTVOTkJJdVhwQnd4Z1JJQTI4aV8wRzBhUkpUblFYakZIRXJBbDlmTmNTWG1kV3VrSW5GQVAzUkdrNWpJdkVRb0toTjVMWHlNUmpQUzhkdGRldDJsUkw4U2xteVYtWkd5Rm9HNGhaaWtVY2JnSS01emVpSmhFQUNsWmFjcE45ZnNySm1GY1RaOGkyTXFYeGtQZw?oc=5",
+   "fonte": "SAPO",
+   "nota": 30.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-27T08:30:52.651218+00:00",
+   "titulo": "Tarifa social de energia: o desconto de 33,8% que também abre a porta ao Vale Eficiência",
+   "link": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxQVG1Da3VUUDhWbk9TZGxVVTdhaUFKaUx6MXZLWEl2VTNtekZhYm9TeDhsbmxmZHZ5UWRmRWVrczl1QmtKWjcwUDRVSXd0X3JmZHg0d3RvXzZiR3M2WUdBUlFtZFhXXzEycFl3dkF4elE0a2xiV0RLejNSWWQ0YndJSV9LQUFmYkU4ZTBYY1Rwd0ZJN3l0NWJxeDZqOEFUQ0luSHJaMl9WMk9YTlA2cDVfVVJSeUVQQk5mWmhORW5FYkJtbXZFdXRRT0g0MmtIREswcGNqVTdnRGxVMDVQSWhSZnJWTjB1TFpLR2c?oc=5",
+   "fonte": "Contas Poupança",
+   "nota": 23.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-27T08:30:52.651218+00:00",
+   "titulo": "Vale Eficiência II: Como confirmar a candidatura para receber até 1.599 euros de apoio (passo a passo)",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxQb2NYcExtaXIzdjhXTEJhOGFZZTFtMS1tSHRzZjlWZUs4YWdtN01fRXJCWHdVaFhndF9mQWdBTXdRRUlodWlqYjdCMGpqejBYWVFncmd6a282cFI2d2hDcU5WVHh0UmJxemxkWlQ2ajN1eHRFeFlnQTYxUWM1ME4yNl8yVGdPWVN4VnZneThfa09Ka2dBRjNQeFRpaVhSM0w0cEZhbC1jN2Q3ZW5KaVBJakJjTmJTOUR6QVlGSjVBcWk4SFhTTW1VZ3NJMGpGbUlXLVZOX1d2Vm9QN3JSVnFoYXdseEtDRm8?oc=5",
+   "fonte": "Contas Poupança",
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental"
+  },
+  {
+   "tipo": "resumo",
+   "ts": "2026-11-27T08:30:52.651218+00:00",
+   "titulo": "E-Lar Rural aprovado no OE2027: o que se sabe do apoio para trocar equipamentos a gás por elétricos",
+   "link": "https://www.portal-energia.com/e-lar-rural-aprovado-apoio-trocar-gas-eletricos/",
+   "fonte": "Portal Energia",
+   "nota": 19.5,
+   "pesquisa": "Apoio fundo ambiental"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-25T08:30:48.709400+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 603,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 550,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 4,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 1,
-    "falharam": 1
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-25T09:30:45.523126+00:00",
    "pesquisas": [
@@ -3803,11 +3670,51 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-27T08:30:52.651218+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 795,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 795,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 4,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 2,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "Portal Energia",
+    "Rádio Hertz",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-27T07:30:42.593114+00:00",
-  "contaspoupanca.pt": "2026-11-27T07:30:42.593114+00:00"
+  "cm-serta.pt": "2026-11-27T08:30:52.651218+00:00",
+  "contaspoupanca.pt": "2026-11-27T08:30:52.651218+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3815,8 +3722,8 @@
   "contaspoupanca.pt": "2026-11-26T22:30:49.796895+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-27T07:30:42.593114+00:00",
-  "Apoio fundo ambiental": "2026-11-27T07:30:42.593114+00:00"
+  "Sertã": "2026-11-27T08:30:52.651218+00:00",
+  "Apoio fundo ambiental": "2026-11-27T08:30:52.651218+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4479,39 +4386,56 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-27T07:30:42.593114+00:00",
+   "verificado": "2026-11-27T08:30:52.651218+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
-   "mudou": "2026-11-27T07:30:42.593114+00:00",
+   "mudou": "2026-11-27T08:30:52.651218+00:00",
    "mudanca": {
     "mais": [
-     "Freguesias",
-     "Gabinete Florestal",
-     "Faixas de Gestão de Combustível",
-     "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
-     "Festas e Romarias",
-     "Mel em destaque no mercado Produtos da Terra de agosto",
-     "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
+     "Untitled",
+     "XIV Rali Histórico Vila da Sertã",
+     "Untitled",
+     "Untitled",
+     "Contactos",
+     "Comitiva da Turismo Centro de Portugal visitou o concelho da Sertã",
+     "Os aromas do amor",
+     "LICENÇA ESPECIAL DE RUÍDO PARA ESPETÁCULOS, DIVERSÕES, MANIFESTAÇÕES DESPORTIVAS, FEIRAS E MERCADOS",
+     "EDITAL N.º 15 / 2026",
+     "EDITAL N.º84/2026",
+     "Conselho Municipal de Educação",
+     "INSCRIÇÃO NO PROGRAMA DE APOIO À FAMÍLIA – TEMPO DE ACOLHER",
+     "Equipamentos Desportivos",
+     "Mandato 2025/2029 EDITAL N.º156/2025",
+     "CADERNO DE ENCARGOS",
+     "Formação / Atelier / Oficinas",
+     "MUNICÍPIO DE SERTÃ Aviso Procedimento concursal comum para a constituição de relação jurídica de emprego público, por te",
+     "Informação Geográfica Urbanismo",
+     "Serviço de Atendimento e Acompanhamento Social (SAAS)",
+     "Sugestões e Reclamações"
     ],
     "menos": [],
-    "n_mais": 7,
+    "n_mais": 53,
     "n_menos": 0
    },
    "linhas_google": [
+    "Untitled",
     "Município da Sertã aprovou projeto de regulamento para atrair médicos para o concelho",
     "Câmara Municipal da Sertã — Início",
     "Serviços Online",
     "Hemeroteca Digital da Sertã - A Biblioteca digital no Portal",
     "Programa “Férias Ativas” anima verão até final de agosto",
     "Login",
+    "XIV Rali Histórico Vila da Sertã",
+    "Untitled",
     "Atendimento no Município para apoio após a Tempestade Kristin",
     "Bem-vindo à Rede de Bibliotecas da Sertã",
     "Eventos Futuros",
     "Águas Residuais",
     "Praias Fluviais, Zonas de Lazer e Piscinas",
     "Percursos Pedestres",
+    "Untitled",
     "Procedimentos Concursais",
     "Bolsas de Estudo",
     "Turismo",
@@ -4519,41 +4443,83 @@
     "Câmara Municipal",
     "CONTRATO FORNECIMENTO DE ÁGUA / SERVIÇOS DE SANEAMENTO E R.S.U.",
     "Programa Férias Ativas abre candidaturas para monitores",
+    "Contactos",
     "Requerimentos",
+    "Comitiva da Turismo Centro de Portugal visitou o concelho da Sertã",
+    "Os aromas do amor",
+    "LICENÇA ESPECIAL DE RUÍDO PARA ESPETÁCULOS, DIVERSÕES, MANIFESTAÇÕES DESPORTIVAS, FEIRAS E MERCADOS",
     "Revisão do PDM da Sertã mais perto da conclusão",
     "Espaços Museológicos",
     "Abastecimento de água",
     "Contactos Úteis",
+    "EDITAL N.º 15 / 2026",
     "PEDIDO DE CONSULTA E REPRODUÇÃO DE DOCUMENTOS E INFORMAÇÃO",
+    "EDITAL N.º84/2026",
     "Regulamentos",
     "BUPi",
+    "Conselho Municipal de Educação",
     "Estrutura Orgânica",
+    "INSCRIÇÃO NO PROGRAMA DE APOIO À FAMÍLIA – TEMPO DE ACOLHER",
+    "Equipamentos Desportivos",
     "Planos",
     "Casa de Espetáculos e Cultura da Sertã",
+    "Mandato 2025/2029 EDITAL N.º156/2025",
+    "CADERNO DE ENCARGOS",
+    "Formação / Atelier / Oficinas",
+    "MUNICÍPIO DE SERTÃ Aviso Procedimento concursal comum para a constituição de relação jurídica de emprego público, por te",
+    "Informação Geográfica Urbanismo",
     "Editais / Avisos",
+    "Serviço de Atendimento e Acompanhamento Social (SAAS)",
+    "Sugestões e Reclamações",
     "Projetos Cofinanciados",
+    "Untitled",
+    "Untitled",
+    "Untitled",
+    "Mandato 2025/2029 EDITAL N.º134/2025",
+    "Maranho da Sertã reconhecido com Prémio Cinco Estrelas Regiões",
+    "Mandato 2025/2029 EDITAL N.º32/2026",
     "Espaços de Cowork e Incubação",
+    "BOLSAS DE ESTUDO: CANDIDATURA RENOVAÇÃO",
+    "EDITAL N.º87/ 2026",
+    "BiblioAndante",
+    "RESERVA DO PAVILHÃO DESPORTIVO",
     "Farmácia Morgado Duarte conquista o Torneio de Futsal Luís Gouveia",
     "Ficha técnica",
+    "Projeto “Territórios 5 Sentidos” apresentado no FOLIO",
     "Calendário de Reuniões",
+    "Eventos Literários",
+    "Desporto",
     "Bolsas de Estudo do Município da Sertã com novas normas",
+    "AIGP 2.0/OIGP 2.0 - TEMPESTADE KRISTIN CANDIDATURA A APOIOS FINANCEIROS RESULTANTES DAS COMUNICAÇÕES DE COMPROMISSO DE EXECUÇ",
     "Mercados e Feiras",
+    "CERTIDÃO COMPROVATIVA DE DESPESAS ESCOLARES",
     "Mapa de Pessoal",
+    "Modalidades Ginásio Municipal",
+    "EDITAL N.º 81/2026",
     "História e Caracterização",
+    "Tarifas",
+    "Notícias",
+    "Ficha técnica",
     "Assembleia Municipal Jovem",
+    "Assembleia Municipal da Sertã",
+    "Untitled",
+    "Mandato 2025/2029 EDITAL N.º137/2025",
     "Serra do Picoto Rainho vai ser palco de um dos 10 concertos mais bonitos de Portugal a 18 de agosto",
+    "EDITAL N",
     "Academia Sénior",
+    "Caderno de Encargos.odt",
     "União de Freguesias de Cumeada e Marmeleiro",
     "Ginástica Sénior chega a todas as freguesias do concelho da Sertã",
+    "Festas e Feiras",
     "clds 5g",
-    "Desporto",
-    "Freguesias",
-    "Gabinete Florestal",
-    "Faixas de Gestão de Combustível",
-    "Município da Sertã sensibiliza para a reciclagem e correta separação de resíduos",
-    "Festas e Romarias",
-    "Mel em destaque no mercado Produtos da Terra de agosto",
-    "Comemoração do Dia Internacional do Idoso juntou mil pessoas na Alameda da Carvalha"
+    "Junta de Freguesia do Troviscal",
+    "ASA (Área de Serviço para Autocaravanas)",
+    "Untitled",
+    "Vespas",
+    "Sertã celebra o 25 de Abril com música, tradição e memória",
+    "EDITAL N.º 152/2025",
+    "EDITAL N",
+    "Horários"
    ],
    "via": "google",
    "erro_site": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
@@ -4757,7 +4723,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-27T07:30:42.593114+00:00",
+   "verificado": "2026-11-27T08:30:52.651218+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -5092,9 +5058,7 @@
     "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
     "Tarifa social de energia: o desconto de 33,8% que também abre a porta ao Vale Eficiência",
     "OE2027: Governo recusa IVA zero nos alimentos e mantém IRS de 10% nas rendas até 2.300 euros",
-    "Combustíveis | Comparação de postos de combustíveis desta semana. Qual o mais barato?",
     "Vamos a contas: \"Onde devo guardar o meu fundo de maneio: em Certificados de Aforro ou numa conta remunerada?\"",
-    "Revista de imprensa de 26 de novembro: IVA zero, IRS das rendas e avaliação das casas",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
     "Revista de imprensa de 25 de novembro: OE2027, rendas em Lisboa e rating da banca",
@@ -5141,10 +5105,9 @@
     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
     "Vale Eficiência II: Como confirmar a candidatura para receber até 1.599 euros de apoio (passo a passo)",
-    "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "Apoios Sociais",
+    "Os pais que investem para os filhos e poupam milhares de euros em impostos",
     "PodTEXT | Se tiver 4 mil euros onde é que invisto?",
-    "Gás",
     "Orçamento do Estado 2027: as mudanças que vão mexer na sua carteira a partir de janeiro",
     "Carro elétrico é mais barato do que gasolina ou gasóleo? Este simulador faz as contas",
     "Fundos de investimento: o que são e como funcionam para ganhar dinheiro?",
@@ -5157,9 +5120,11 @@
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
     "PodTEXT | \"Quero transferir os PPR para outro melhor, mas não me deixam. O que faço?\"",
+    "IRS: Vários prazos terminam amanhã",
     "Qual vai ser a sua reforma? O simulador da Segurança Social já lhe dá uma resposta",
     "Baixa, desemprego, maternidade e abono: a Segurança Social já lhe diz ao cêntimo quanto vai receber",
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
+    "Plataforma dos Certificados de Aforro está em baixo, mas há alternativas",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
@@ -5169,7 +5134,7 @@
     "Revista de imprensa de 24 de novembro: Pensões, combustíveis e endividamento das famílias",
     "Crédito à habitação: juros já levam 217 euros da prestação média",
     "Vamos a contas: \"Quero reformar-me aos 55 anos. Tenho 2 ETF. Devo ter também um fundo PPR?\"",
-    "IRS | Novas tabelas de retenção já estão aprovadas. O que muda?",
+    "Combustíveis | Comparação de postos de combustíveis desta semana. Qual o mais barato?",
     "Entrevista: O seu seguro cobre mesmo tempestades e sismos? ASF dá dicas para se proteger",
     "Avaliação bancária das casas bate novo recorde: 2.282 euros por m2 em outubro",
     "E-Lar: novo apoio em 2027 para trocar fogões e esquentadores a gás em zonas rurais",
@@ -5178,29 +5143,27 @@
     "Vamos a contas: Quando renegociar o crédito à habitação, escolho taxa fixa ou variável?",
     "Tarifa social de energia: mais famílias poderão ter 34% de desconto na eletricidade e no gás. Veja os novos limites",
     "Combustíveis | Preço Justo do gasóleo desce quase 5 cêntimos e gasolina baixa pela sexta semana seguida",
+    "Revista de imprensa de 23 de novembro: Pensões, combustíveis e seguros do crédito casa",
     "IVA zero nos alimentos volta em janeiro: o que muda no supermercado e quem vai pagar mais",
-    "Vai deixar de pagar 0,5% para amortizar a casa? Pode valer a pena esperar",
+    "Revista de imprensa de 26 de novembro: IVA zero, IRS das rendas e avaliação das casas",
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-27T07:30:42.593114+00:00",
+   "verificado": "2026-11-27T08:30:52.651218+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-27T07:30:42.593114+00:00",
+   "mudou": "2026-11-27T08:30:52.651218+00:00",
    "mudanca": {
     "mais": [
-     "Tarifa social de energia: o desconto de 33,8% que também abre a porta ao Vale Eficiência",
-     "IRS 2026: ainda vai a tempo de aumentar o seu reembolso (falta 1 semana)",
-     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
-     "Gás",
-     "Vamos a contas: \"Quero reformar-me aos 55 anos. Tenho 2 ETF. Devo ter também um fundo PPR?\"",
-     "IRS | Novas tabelas de retenção já estão aprovadas. O que muda?"
+     "IRS: Vários prazos terminam amanhã",
+     "Plataforma dos Certificados de Aforro está em baixo, mas há alternativas",
+     "Revista de imprensa de 23 de novembro: Pensões, combustíveis e seguros do crédito casa"
     ],
     "menos": [],
-    "n_mais": 6,
+    "n_mais": 3,
     "n_menos": 0
    }
   }
