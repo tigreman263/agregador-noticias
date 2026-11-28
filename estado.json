@@ -1,6 +1,5 @@
 {
  "vistos": {
-  "44f1e003e76c154b": "2026-11-14T15:15:55.752589+00:00",
   "865f04f184654ba5": "2026-11-19T09:30:46.635543+00:00",
   "37bb30d77e5f5aac": "2026-11-19T11:31:13.852003+00:00",
   "7607f0d295b56dbb": "2026-11-19T18:31:42.279871+00:00",
@@ -177,7 +176,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-11-28T14:15:45.206047+00:00"
+   "ultima": "2026-11-28T16:15:45.051956+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -683,7 +682,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-28T14:15:45.206047+00:00"
+   "ultima": "2026-11-28T16:15:45.051956+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -1991,44 +1990,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-26T16:30:47.837555+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 624,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 651,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-26T17:30:55.789385+00:00",
    "pesquisas": [
@@ -3757,11 +3718,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-28T16:15:45.051956+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 610,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 610,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-28T15:15:52.684761+00:00",
-  "contaspoupanca.pt": "2026-11-28T15:15:52.684761+00:00"
+  "cm-serta.pt": "2026-11-28T16:15:45.051956+00:00",
+  "contaspoupanca.pt": "2026-11-28T16:15:45.051956+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3769,8 +3768,8 @@
   "contaspoupanca.pt": "2026-11-27T23:15:51.316330+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-28T15:15:52.684761+00:00",
-  "Apoio fundo ambiental": "2026-11-28T15:15:52.684761+00:00"
+  "Sertã": "2026-11-28T16:15:45.051956+00:00",
+  "Apoio fundo ambiental": "2026-11-28T16:15:45.051956+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4433,9 +4432,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-28T15:15:52.684761+00:00",
-   "falhas": 1,
-   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+   "verificado": "2026-11-28T16:15:45.051956+00:00",
+   "falhas": 0,
+   "erro": "",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-28T13:15:44.804237+00:00",
@@ -4706,7 +4705,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-28T15:15:52.684761+00:00",
+   "verificado": "2026-11-28T16:15:45.051956+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -5065,8 +5064,8 @@
     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
     "Revista de imprensa de 25 de novembro: OE2027, rendas em Lisboa e rating da banca",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "Podcast",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)",
     "Carro",
     "Simulador de apoio para os carros elétricos",
@@ -5153,9 +5152,9 @@
     "Grupo de trabalho da Segurança Social propõe mecanismos para reforçar reformas",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias"
    ],
-   "verificado": "2026-11-28T15:15:52.684761+00:00",
-   "falhas": 1,
-   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
+   "verificado": "2026-11-28T16:15:45.051956+00:00",
+   "falhas": 0,
+   "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
