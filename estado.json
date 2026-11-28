@@ -1992,48 +1992,6 @@
  ],
  "execucoes": [
   {
-   "ts": "2026-11-26T15:30:46.012889+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 805,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 658,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "Portal Energia",
-    "Rádio Hertz",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
-  {
    "ts": "2026-11-26T16:30:47.837555+00:00",
    "pesquisas": [
     {
@@ -3754,11 +3712,56 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-28T15:15:52.684761+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 436,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 436,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [
+    "Sertã · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=Sert%C3%A3+OR+sertanense+OR+sertagin",
+    "Sertã · Rádio Hertz: ParseError: mismatched tag: line 93, column 2",
+    "Sertã · Portal Energia: ParseError: mismatched tag: line 93, column 2",
+    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Apoio fundo ambiental · Google Notícias: HTTPError: 503 Server Error: Service Unavailable for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efi",
+    "Apoio fundo ambiental · Rádio Hertz: ParseError: mismatched tag: line 93, column 2",
+    "Apoio fundo ambiental · Portal Energia: ParseError: mismatched tag: line 93, column 2",
+    "Apoio fundo ambiental · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · cm-serta: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
+    "Página vigiada · Contas poupanças: o site recusou o acesso (erro 403); pode estar a bloquear o GitHub"
+   ],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 0,
+    "falharam": 2
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-28T14:15:45.206047+00:00",
-  "contaspoupanca.pt": "2026-11-28T14:15:45.206047+00:00"
+  "cm-serta.pt": "2026-11-28T15:15:52.684761+00:00",
+  "contaspoupanca.pt": "2026-11-28T15:15:52.684761+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3766,8 +3769,8 @@
   "contaspoupanca.pt": "2026-11-27T23:15:51.316330+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-28T14:15:45.206047+00:00",
-  "Apoio fundo ambiental": "2026-11-28T14:15:45.206047+00:00"
+  "Sertã": "2026-11-28T15:15:52.684761+00:00",
+  "Apoio fundo ambiental": "2026-11-28T15:15:52.684761+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4430,9 +4433,9 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-28T14:15:45.206047+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-28T15:15:52.684761+00:00",
+   "falhas": 1,
+   "erro": "não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
    "parte": "",
    "desde": "2026-11-03T09:46:28.704027+00:00",
    "mudou": "2026-11-28T13:15:44.804237+00:00",
@@ -4703,7 +4706,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-28T14:15:45.206047+00:00",
+   "verificado": "2026-11-28T15:15:52.684761+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -5150,9 +5153,9 @@
     "Grupo de trabalho da Segurança Social propõe mecanismos para reforçar reformas",
     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias"
    ],
-   "verificado": "2026-11-28T14:15:45.206047+00:00",
-   "falhas": 0,
-   "erro": "",
+   "verificado": "2026-11-28T15:15:52.684761+00:00",
+   "falhas": 1,
+   "erro": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
