@@ -152,7 +152,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-11-28T09:15:46.876495+00:00"
+   "ultima": "2026-11-28T10:15:46.350463+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -508,7 +508,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-28T09:15:46.876495+00:00"
+   "ultima": "2026-11-28T10:15:46.350463+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -658,7 +658,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-28T09:15:46.876495+00:00"
+   "ultima": "2026-11-28T10:15:46.350463+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -1063,15 +1063,6 @@
  },
  "ultima_descoberta": "2026-11-28",
  "enviados": [
-  {
-   "tipo": "resumo",
-   "ts": "2026-11-25T08:30:48.709400+00:00",
-   "titulo": "Atenção aos prazos: Janelas eficientes, bombas de calor e painéis solares: conheça os prazos do Vale Eficiência até 1.599 euros",
-   "link": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOZFplZ0ZUSnRVWnl2QUZiS0JkZllEZXJDalVOZmx2U2laN2dGQjdZQUR1RXJjdTJPNUc4WTloazZGbzM5c1pjaGVWUVhfT2hXdXFlOWlfdG81dnNyeHN5aTltZEtnTUJJZGRVWktzYzZMek52Tl9GZmt3NkVocGNwdnl2bE9jZ3RxcGxrOTF0c3lFVWVtdHlMLTljak5XUC16Q1pYaGFDSXowM0ZXbXhJcE05eU1yd0t0NklHWDNYeGstNXV4UFFwaW5oZl9hVkxlZk5aU2ZaSlZwbDloZzQ3SUlleUVTNGNTTGxGakZYSUdaS3RqYUxnOHozallFcTIyLUE?oc=5",
-   "fonte": "SAPO",
-   "nota": 30.0,
-   "pesquisa": "Apoio fundo ambiental"
-  },
   {
    "tipo": "resumo",
    "ts": "2026-11-25T08:30:48.709400+00:00",
@@ -1962,47 +1953,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-28T10:15:46.350463+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-26T10:30:45.633983+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 623,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 651,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-26T11:30:47.206015+00:00",
    "pesquisas": [
@@ -3726,11 +3688,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-28T10:15:46.350463+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 632,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 656,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-28T09:15:46.876495+00:00",
-  "contaspoupanca.pt": "2026-11-28T09:15:46.876495+00:00"
+  "cm-serta.pt": "2026-11-28T10:15:46.350463+00:00",
+  "contaspoupanca.pt": "2026-11-28T10:15:46.350463+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3738,8 +3738,8 @@
   "contaspoupanca.pt": "2026-11-27T23:15:51.316330+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-28T09:15:46.876495+00:00",
-  "Apoio fundo ambiental": "2026-11-28T09:15:46.876495+00:00"
+  "Sertã": "2026-11-28T10:15:46.350463+00:00",
+  "Apoio fundo ambiental": "2026-11-28T10:15:46.350463+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4402,7 +4402,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-28T09:15:46.876495+00:00",
+   "verificado": "2026-11-28T10:15:46.350463+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4719,7 +4719,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-28T09:15:46.876495+00:00",
+   "verificado": "2026-11-28T10:15:46.350463+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -5118,6 +5118,7 @@
     "Combustíveis",
     "Certificados de Aforro",
     "Simulador de Inflação - Quanto valem hoje o seu salário e as suas poupanças?",
+    "Investimentos em queda, poupanças à mão e reforma aos 55 anos: ouça os três episódios da semana",
     "Lei do Esquecimento: Como pode reduzir até 1.440€ no seu seguro de vida",
     "PodTEXT | \"Quais as vantagens e desvantagens de colocar o PPR no IRS?\"",
     "PodTEXT | Bolsas a cair: devo investir agora ou esperar?",
@@ -5128,6 +5129,7 @@
     "PodTEXT | Vivo de Recibos verdes - como organizo as minhas finanças?",
     "Plataforma dos Certificados de Aforro está em baixo, mas há alternativas",
     "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (16 a 22 de novembro)",
+    "Euribor a seis meses dá o maior salto de novembro e chega aos 3,08%",
     "Propinas não vão aumentar em 2027: veja quanto vai pagar e o que passa a ser gratuito",
     "TOP 10 | Qual a marca de combustíveis mais barata entre 27 de janeiro a 2 de fevereiro?",
     "Pensionistas: bónus de até 200 euros pode passar a aumento para sempre em 2027",
@@ -5146,38 +5148,20 @@
     "Governo aprova criação da Prestação Social Única: o que se sabe sobre o novo apoio?",
     "SOS Finanças: O seu seguro multirriscos habitação e do automóvel pagam mesmo os estragos de fenómenos da natureza?"
    ],
-   "verificado": "2026-11-28T09:15:46.876495+00:00",
+   "verificado": "2026-11-28T10:15:46.350463+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-28T09:15:46.876495+00:00",
+   "mudou": "2026-11-28T10:15:46.350463+00:00",
    "mudanca": {
     "mais": [
-     "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
-     "As 5 lições financeiras que 2025 me ensinou",
-     "Investir em PPR: Quanto estou a ganhar (ou a perder) em fevereiro de 2026",
-     "Tem o PPR errado? Compare todos os PPR em poucos minutos",
-     "Vamos a contas: Já tenho PPR e ETFs - Onde invisto a seguir?",
-     "Tem 60% ou mais de incapacidade? O Estado pode pagar parte dos juros do seu crédito à habitação e a prestação pode baixar quase 200 euros",
-     "IRS: Doentes oncológicos (e não só) podem recuperar benefícios fiscais perdidos até 2024",
-     "IMI",
-     "Investimentos",
-     "Tenho 15 PPR: Quanto estou a ganhar (ou a perder) em agosto de 2026",
-     "IRS 2026: ainda vai a tempo de aumentar o seu reembolso (falta 1 semana)",
-     "Apoio até 17 mil euros para comprar um carro elétrico: quem tem direito, quanto recebe e como pedir?",
-     "PodTEXT | Como investir para os filhos e pagar menos impostos",
-     "Vamos a contas: Vivo de Recibos verdes - Como organizo as minhas finanças?",
-     "Entrevista: O seu PPR dá-lhe lucro ou prejuízo? Emília Vieira, da Casa de Investimentos, explica como pode confirmar",
-     "Há pelo menos 44 lojas online falsas a preparar-se para enganar portugueses na Black Friday (e até o ChatGPT as recomenda)",
-     "Esta semana no Podcast: Duas decisões que podem mudar as suas finanças em 2026",
-     "Apoios Sociais",
-     "Os pais que investem para os filhos e poupam milhares de euros em impostos",
-     "PodTEXT | Se tiver 4 mil euros onde é que invisto?"
+     "Investimentos em queda, poupanças à mão e reforma aos 55 anos: ouça os três episódios da semana",
+     "Euribor a seis meses dá o maior salto de novembro e chega aos 3,08%"
     ],
     "menos": [],
-    "n_mais": 54,
+    "n_mais": 2,
     "n_menos": 0
    }
   }
