@@ -19,9 +19,34 @@
   "071fcfe0e69baf73": "2026-11-26T12:30:47.990886+00:00",
   "a51c1a686a7dd199": "2026-11-26T14:30:44.169874+00:00",
   "a553c71ed194a65d": "2026-11-26T23:30:45.668079+00:00",
-  "80e3e6fb111106f5": "2026-11-27T21:15:44.126957+00:00"
+  "80e3e6fb111106f5": "2026-11-27T21:15:44.126957+00:00",
+  "49c1a626639d9560": "2026-11-28T14:15:45.206047+00:00"
  },
- "resumo": [],
+ "resumo": [
+  {
+   "titulo": "OE2027: Governo alarga tarifa social de energia e reforça Vale Eficiência",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQNVZiQmVKR29CalU5OUdsdGwzMm5KZmJGdmYzVmFXYUY0RWdWeGhaSXdHZlFaSDA0RDQxR3JzNW9lb1A5dGFZWlpYdGdkN29GLTBLQmk1WHFuYjdYUUJrdGlqbkRpX01ZV2R5MkdJWHJHMTQtWWJMTXE2RWZMSElrSUFuQVRPTnRhYTM0MV9ZOFFFbVZ0X0pkTFJnUGpMUlhNOTZiSXdKcWxvR3VUbGc?oc=5",
+   "dominio": "avozdoalgarve.pt",
+   "fonte": "A voz do Algarve",
+   "confiavel": false,
+   "nota": 20.0,
+   "pesquisa": "Apoio fundo ambiental",
+   "achadas": {
+    "alta": [
+     "Vale Eficiência"
+    ],
+    "media": [],
+    "baixa": []
+   },
+   "n_fontes": 1,
+   "data": "2026-11-26T16:35:00+00:00",
+   "nivel": "resumo",
+   "ids": [
+    "49c1a626639d9560"
+   ],
+   "ts": "2026-11-28T14:15:45.206047+00:00"
+  }
+ ],
  "adiados": [],
  "ultimo_resumo": "2026-11-28",
  "sugeridas": {
@@ -152,7 +177,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-11-28T13:15:44.804237+00:00"
+   "ultima": "2026-11-28T14:15:45.206047+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -658,7 +683,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-28T13:15:44.804237+00:00"
+   "ultima": "2026-11-28T14:15:45.206047+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -763,13 +788,14 @@
    "nome": "A voz do Algarve",
    "site": "https://www.avozdoalgarve.pt",
    "ids": [
-    "dcfb944fc803001d"
+    "dcfb944fc803001d",
+    "49c1a626639d9560"
    ],
    "pesquisas": [
     "Apoio fundo ambiental"
    ],
    "exemplo": "DECO informa sobre... Vale Eficiência",
-   "ultima": "2026-11-13T09:01:01.004976+00:00"
+   "ultima": "2026-11-28T14:15:45.206047+00:00"
   },
   "regiao-sul.pt": {
    "nome": "diariOnline Região Sul",
@@ -1063,15 +1089,6 @@
  },
  "ultima_descoberta": "2026-11-28",
  "enviados": [
-  {
-   "tipo": "pagina",
-   "ts": "2026-11-25T11:30:49.328605+00:00",
-   "titulo": "Mudou: cm-serta",
-   "link": "https://cm-serta.pt/comunicacao/noticias",
-   "fonte": "cm-serta.pt",
-   "nota": 0,
-   "pesquisa": "Páginas vigiadas"
-  },
   {
    "tipo": "pagina",
    "ts": "2026-11-25T11:30:49.328605+00:00",
@@ -1962,47 +1979,18 @@
    "fonte": "contaspoupanca.pt",
    "nota": 0,
    "pesquisa": "Páginas vigiadas"
+  },
+  {
+   "tipo": "pagina",
+   "ts": "2026-11-28T14:15:45.206047+00:00",
+   "titulo": "Mudou: Contas poupanças",
+   "link": "https://contaspoupanca.pt/",
+   "fonte": "contaspoupanca.pt",
+   "nota": 0,
+   "pesquisa": "Páginas vigiadas"
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-26T14:30:44.169874+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 578,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 531,
-     "relevantes": 1,
-     "alertas": 0
-    }
-   ],
-   "falhas": [],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": false,
-   "erros": [],
-   "paginas": {
-    "verificadas": 3,
-    "mudaram": 2,
-    "falharam": 0
-   },
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "Contas poupanças",
-    "cm-serta",
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt",
-    "contaspoupanca.pt"
-   ]
-  },
   {
    "ts": "2026-11-26T15:30:46.012889+00:00",
    "pesquisas": [
@@ -3728,11 +3716,49 @@
     "cm-serta.pt",
     "contaspoupanca.pt"
    ]
+  },
+  {
+   "ts": "2026-11-28T14:15:45.206047+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 587,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 533,
+     "relevantes": 1,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": false,
+   "erros": [],
+   "paginas": {
+    "verificadas": 3,
+    "mudaram": 1,
+    "falharam": 0
+   },
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "Contas poupanças",
+    "cm-serta",
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt",
+    "contaspoupanca.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-28T13:15:44.804237+00:00",
-  "contaspoupanca.pt": "2026-11-28T13:15:44.804237+00:00"
+  "cm-serta.pt": "2026-11-28T14:15:45.206047+00:00",
+  "contaspoupanca.pt": "2026-11-28T14:15:45.206047+00:00"
  },
  "lentos": {},
  "testes_diretos": {
@@ -3740,8 +3766,8 @@
   "contaspoupanca.pt": "2026-11-27T23:15:51.316330+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-28T13:15:44.804237+00:00",
-  "Apoio fundo ambiental": "2026-11-28T13:15:44.804237+00:00"
+  "Sertã": "2026-11-28T14:15:45.206047+00:00",
+  "Apoio fundo ambiental": "2026-11-28T14:15:45.206047+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
@@ -4404,7 +4430,7 @@
     "Publicações",
     "Contactos"
    ],
-   "verificado": "2026-11-28T13:15:44.804237+00:00",
+   "verificado": "2026-11-28T14:15:45.206047+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -4677,7 +4703,7 @@
     "Contactos",
     "Política de Privacidade"
    ],
-   "verificado": "2026-11-28T13:15:44.804237+00:00",
+   "verificado": "2026-11-28T14:15:45.206047+00:00",
    "falhas": 0,
    "erro": "",
    "parte": "",
@@ -5026,18 +5052,17 @@
     "Contas-Poupança | Dê um aumento a si próprio",
     "Vale Eficiência II: Como confirmar a candidatura para receber até 1.599 euros de apoio (passo a passo)",
     "Vale Eficiência II já reabriu: saiba como receber até 1.599 euros para melhorar a sua casa e evite perder o apoio",
-    "Tarifa social de energia: o desconto de 33,8% que também abre a porta ao Vale Eficiência",
-    "Vamos a contas: \"Quero reformar-me aos 55 anos. Tenho 2 ETF. Devo ter também um fundo PPR?\"",
     "Preço dos combustíveis na próxima semana (30 de novembro a 6 de dezembro)",
+    "Tarifa social de energia: o desconto de 33,8% que também abre a porta ao Vale Eficiência",
     "OE2027: Governo recusa IVA zero nos alimentos e mantém IRS de 10% nas rendas até 2.300 euros",
     "Combustíveis | Comparação de postos de combustíveis desta semana. Qual o mais barato?",
     "Combustíveis | Preço Justo do gasóleo desce quase 5 cêntimos e gasolina baixa pela sexta semana seguida",
     "Simulador de Juros compostos",
     "E-Lar: novo apoio em 2027 para trocar fogões e esquentadores a gás em zonas rurais",
-    "Revista de imprensa de 25 de novembro: OE2027, rendas em Lisboa e rating da banca",
     "ATUALIZAÇÃO: Eletricidade da EDP vai ficar mais cara em 2027. Veja quanto vai pagar a mais",
-    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
+    "Revista de imprensa de 25 de novembro: OE2027, rendas em Lisboa e rating da banca",
     "Acaba a comissão de amortização do crédito à habitação com taxa variável: o que muda em 2027 e quanto pode poupar",
+    "ATUALIZAÇÃO ISP | Preço dos combustíveis na próxima semana (23 a 29 de novembro)",
     "Podcast",
     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)",
     "Carro",
@@ -5122,40 +5147,22 @@
     "Vamos a Contas: Bolsas a cair — devo investir agora ou esperar?",
     "Os meus investimentos caíram 17% . Vendo, reforço ou espero?",
     "Investir em PPR: Quanto estou a ganhar (ou a perder) em dezembro de 2025",
-    "Grupo de trabalho da Segurança Social propõe mecanismos para reforçar reformas"
+    "Grupo de trabalho da Segurança Social propõe mecanismos para reforçar reformas",
+    "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias"
    ],
-   "verificado": "2026-11-28T13:15:44.804237+00:00",
+   "verificado": "2026-11-28T14:15:45.206047+00:00",
    "falhas": 0,
    "erro": "",
    "via": "google",
    "erro_site": "o site recusou o acesso (erro 403); pode estar a bloquear o GitHub",
    "desde": "2026-11-07T21:44:53.744250+00:00",
-   "mudou": "2026-11-28T13:15:44.804237+00:00",
+   "mudou": "2026-11-28T14:15:45.206047+00:00",
    "mudanca": {
     "mais": [
-     "Podcast",
-     "PPR ou ETF: Qual o melhor investimento a longo prazo? (Análise mensal - Outubro 2026)",
-     "ATESTADO MULTIUSO – Quem pode ter e para que serve?",
-     "IMI: pode estar a pagar imposto a mais (e como saber hoje)",
-     "PODCAST | #127 – Eletricidade e gás – Qual é a diferença entre Mercado Liberalizado ou Regulado?",
-     "ERSE lançou hoje novo simulador de eletricidade e gás",
-     "E-Lar fecha candidaturas após esgotar verba em 6 dias",
-     "GPL em 2026: Ainda compensa converter o carro para gás?",
-     "PODCAST | #110 – O meu PPR está negativo. É normal?",
-     "PODCAST | #99 – Devo tirar o dinheiro dos investimentos para fazer o Fundo de Emergência?",
-     "PODCAST | #168 – Comprar casa pode ser uma armadilha financeira?",
-     "PODCAST | #149 – Os Combustíveis São Todos Iguais? Vale a pena comprar aditivados? (Parte II)",
-     "Aproveite o confinamento para pôr as contas em ordem",
-     "PODCAST | #78 – (Para recibos verdes) Como posso rentabilizar o IVA trimestral?",
-     "O que muda no arrendamento com as novas medidas de desagravamento fiscal?",
-     "PODCAST | #32 – Qual é o segredo para escolher o melhor PPR? (Não vá na publicidade dos benefícios fiscais)",
-     "PODCAST | #125 – Onde devo Investir O meu Fundo De Emergência? (A pergunta do Tiago Castelão)",
-     "PODCAST | #83 – Por onde começo se quiser começar a investir? (P&R)",
-     "PODCAST | #60 – Investir na bolsa é para mim? (Passo a passo)",
-     "PODCAST | #33 – Sabe calcular a Prestação do seu crédito à habitação?"
+     "Vendeu a sua casa e está reformado ou tem mais de 65 anos? Pode poupar dezenas de milhares de euros em mais-valias"
     ],
     "menos": [],
-    "n_mais": 61,
+    "n_mais": 1,
     "n_menos": 0
    }
   }
