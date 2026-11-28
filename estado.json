@@ -107,7 +107,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Feira da Saúde de Penafiel reúne 27 participantes e debate o impacto da inteligência artificial",
-   "ultima": "2026-11-28T01:15:51.213790+00:00"
+   "ultima": "2026-11-28T02:15:52.971052+00:00"
   },
   "radiocondestavel.pt": {
    "nome": "Rádio Condestável",
@@ -152,7 +152,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "NeuroTalks leva debate sobre atenção e ecrãs à Biblioteca da Sertã",
-   "ultima": "2026-11-28T01:15:51.213790+00:00"
+   "ultima": "2026-11-28T02:15:52.971052+00:00"
   },
   "centralpress.pt": {
    "nome": "Central Press",
@@ -508,7 +508,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: Famílias elegíveis podem obter 1.599 € em apoios",
-   "ultima": "2026-11-28T01:15:51.213790+00:00"
+   "ultima": "2026-11-28T02:15:52.971052+00:00"
   },
   "zap.aeiou.pt": {
    "nome": "ZAP Notícias",
@@ -658,7 +658,7 @@
     "Apoio fundo ambiental"
    ],
    "exemplo": "Vale Eficiência II: famílias começam a receber e-mails para obter 1.599 euros. Há novos prazos e condições",
-   "ultima": "2026-11-28T01:15:51.213790+00:00"
+   "ultima": "2026-11-28T02:15:52.971052+00:00"
   },
   "dn.pt": {
    "nome": "Diário de Notícias",
@@ -1965,39 +1965,6 @@
   }
  ],
  "execucoes": [
-  {
-   "ts": "2026-11-26T02:30:48.219814+00:00",
-   "pesquisas": [
-    {
-     "nome": "Sertã",
-     "recolhidas": 522,
-     "relevantes": 0,
-     "alertas": 0
-    },
-    {
-     "nome": "Apoio fundo ambiental",
-     "recolhidas": 551,
-     "relevantes": 0,
-     "alertas": 0
-    }
-   ],
-   "falhas": [
-    "Sertã · cm-serta.pt: SiteInacessivel: não consegui ligar ao site (endereço errado, site em baixo ou a bloquear o GitHub)",
-    "Apoio fundo ambiental · Google Notícias: HTTPError: 429 Client Error: Too Many Requests for url: https://news.google.com/rss/search?q=%22Fundo+Ambiental%22+OR+%22Vale+Efici"
-   ],
-   "alertas": 0,
-   "resumo": 0,
-   "sugestoes": 0,
-   "silencio": true,
-   "erros": [],
-   "pelo_telemovel": [],
-   "pelo_google": [
-    "cm-serta.pt"
-   ],
-   "bloqueados": [
-    "cm-serta.pt"
-   ]
-  },
   {
    "ts": "2026-11-26T03:30:47.647809+00:00",
    "pesquisas": [
@@ -3720,10 +3687,40 @@
    "bloqueados": [
     "cm-serta.pt"
    ]
+  },
+  {
+   "ts": "2026-11-28T02:15:52.971052+00:00",
+   "pesquisas": [
+    {
+     "nome": "Sertã",
+     "recolhidas": 643,
+     "relevantes": 0,
+     "alertas": 0
+    },
+    {
+     "nome": "Apoio fundo ambiental",
+     "recolhidas": 660,
+     "relevantes": 0,
+     "alertas": 0
+    }
+   ],
+   "falhas": [],
+   "alertas": 0,
+   "resumo": 0,
+   "sugestoes": 0,
+   "silencio": true,
+   "erros": [],
+   "pelo_telemovel": [],
+   "pelo_google": [
+    "cm-serta.pt"
+   ],
+   "bloqueados": [
+    "cm-serta.pt"
+   ]
   }
  ],
  "bloqueados": {
-  "cm-serta.pt": "2026-11-28T01:15:51.213790+00:00",
+  "cm-serta.pt": "2026-11-28T02:15:52.971052+00:00",
   "contaspoupanca.pt": "2026-11-27T22:15:46.706209+00:00"
  },
  "lentos": {},
@@ -3732,8 +3729,8 @@
   "contaspoupanca.pt": "2026-11-27T23:15:51.316330+00:00"
  },
  "ultima_pesquisa": {
-  "Sertã": "2026-11-28T01:15:51.213790+00:00",
-  "Apoio fundo ambiental": "2026-11-28T01:15:51.213790+00:00"
+  "Sertã": "2026-11-28T02:15:52.971052+00:00",
+  "Apoio fundo ambiental": "2026-11-28T02:15:52.971052+00:00"
  },
  "vigiadas": {
   "https://cm-serta.pt/comunicacao/noticias": {
